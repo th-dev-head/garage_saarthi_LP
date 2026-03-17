@@ -132,7 +132,7 @@ const Header = () => {
 
             {/* Nav Links */}
             <ul className="flex items-center gap-10">
-              {navLinks.filter(l => !l.isHome).map((link) => {
+              {navLinks.map((link) => {
                 const isActive = active === link.name;
                 return (
                   <li key={link.name} className="relative">
