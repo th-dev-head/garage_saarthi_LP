@@ -3,13 +3,50 @@ import GformBg from "../assets/icons/Gform.svg";
 import BookDemoIcon from "../assets/icons/Bookd.png";
 import Button from "./common/Button";
 
+const FORMSPREE_URL = "https://formspree.io/f/mdkwbyjr";
+
 const ContactSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-  const handleBookDemo = (e) => {
+  const handleBookDemo = async (e) => {
     e.preventDefault();
-    setIsModalOpen(true);
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setIsModalOpen(true);
+        e.target.reset();
+        setEmail("");
+        setPhone("");
+        setDate("");
+        setTime("");
+      } else {
+        const data = await response.json();
+        setSubmitError(
+          data?.errors?.map((err) => err.message).join(", ") ||
+            "Something went wrong. Please try again."
+        );
+      }
+    } catch {
+      setSubmitError("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -26,10 +63,10 @@ const ContactSection = () => {
         <div className="absolute inset-0 bg-gradient-to-l from-black/90 via-black/60 to-black/90" />
 
         {/* Content */}
-        <div className="relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 px-6 md:px-12 lg:px-16">
+        <div className="relative z-10 w-full flex flex-col lg:flex-row items-center justify-between gap-5 px-6 md:px-12 lg:px-16 h-full">
           {/* Left Content */}
-          <div className="flex-1 text-white">
-            <h2 className="text-xl md:text-2xl lg:text-[40px] font-semibold leading-tight mb-6 mt-6">
+          <div className="flex-1 text-white flex flex-col justify-center h-full pt-6 lg:pt-0">
+            <h2 className="text-xl md:text-2xl lg:text-[40px] font-semibold leading-tight mb-6">
               Ready to Simplify Your Garage
               <br className="hidden md:block" /> Management?
             </h2>
@@ -45,7 +82,7 @@ const ContactSection = () => {
           </div>
 
           {/* Right Form */}
-          <form onSubmit={handleBookDemo} className="w-full lg:max-w-[380px]">
+          <form onSubmit={handleBookDemo} className="w-full lg:max-w-[380px] mt-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label className="text-white text-xs mb-1 block">
@@ -53,6 +90,7 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="text"
+                  name="full_name"
                   required
                   placeholder="Full name"
                   className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
@@ -63,6 +101,7 @@ const ContactSection = () => {
                 <label className="text-white text-xs mb-1 block">Email</label>
                 <input
                   type="email"
+                  name="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -72,16 +111,69 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="mb-4">
-              <label className="text-white text-xs mb-1 block">
-                Garage/Workshop Name
-              </label>
-              <input
-                type="text"
-                required
-                placeholder="Garage name"
-                className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
-              />
+
+            {/* Date & Time */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label className="text-white text-xs mb-1 block">Date</label>
+                <input
+                  type="date"
+                  name="demo_date"
+                  required
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                  min={new Date().toISOString().split("T")[0]}
+                  className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
+                />
+              </div>
+              <div>
+                <label className="text-white text-xs mb-1 block">Time</label>
+                <input
+                  type="time"
+                  name="demo_time"
+                  required
+                  value={time}
+                  onChange={(e) => setTime(e.target.value)}
+                  className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
+                />
+              </div>
+            </div>
+
+            {/* Garage/Workshop Name + Phone Number */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label className="text-white text-xs mb-1 block">
+                  Garage/Workshop Name
+                </label>
+                <input
+                  type="text"
+                  name="garage_name"
+                  required
+                  placeholder="Garage Name"
+                  className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
+                />
+              </div>
+              <div>
+                <label className="text-white text-xs mb-1 block">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (!/[0-9]/.test(e.key) && !["Backspace","Delete","Tab","ArrowLeft","ArrowRight"].includes(e.key)) {
+                      e.preventDefault();
+                    }
+                  }}
+                  placeholder="Phone Number"
+                  pattern="[0-9]{10}"
+                  maxLength={10}
+                  className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
+                />
+              </div>
             </div>
 
             <div className="mb-6">
@@ -89,6 +181,7 @@ const ContactSection = () => {
                 Your Message
               </label>
               <textarea
+                name="message"
                 rows="3"
                 required
                 placeholder="Write your message"
@@ -96,26 +189,33 @@ const ContactSection = () => {
               />
             </div>
 
+            {submitError && (
+              <p className="text-red-400 text-xs mb-3 text-center">{submitError}</p>
+            )}
+
             <div className="relative flex justify-center sm:justify-end pb-6">
               <Button
                 type="submit"
                 variant="hero"
                 className="w-full sm:w-auto justify-center"
+                disabled={isSubmitting}
               >
-                Book Demo
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                {isSubmitting ? "Submitting..." : "Book Demo"}
+                {!isSubmitting && (
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                )}
               </Button>
             </div>
           </form>
