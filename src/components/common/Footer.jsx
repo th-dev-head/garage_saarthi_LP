@@ -9,7 +9,7 @@ import BgVector2 from "../../assets/icons/Bgvector-2.svg";
 
 const Footer = () => {
   return (
-    <footer className="relative px-4 lg:px-15 2xl:px-25 py-6 bg-white overflow-hidden">
+    <footer className="relative px-4 lg:px-15 2xl:px-50 py-6 bg-white overflow-hidden">
       {/* Bottom Left Shadow Vector */}
       <img
         src={BgVector1}
