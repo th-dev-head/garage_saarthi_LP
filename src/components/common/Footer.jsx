@@ -86,11 +86,11 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:contact@techifyhouse.com"
+              href="mailto:contact@garagesaarthi.com"
               className="flex items-center gap-2"
             >
               <img src={EmailIcon} alt="Email" className="w-4 h-4" />
-              <span className="font-medium">contact@techifyhouse.com</span>
+              <span className="font-medium hover:text-primary transition-colors">contact@garagesaarthi.com</span>
             </a>
           </div>
         </div>
