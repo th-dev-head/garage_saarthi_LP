@@ -1,0 +1,24 @@
+name: Deploy to DEV VPS
+ 
+on:
+  push:
+    branches:
+      - development
+ 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Deploy to DEV Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEV_HOST }}
+          username: ${{ secrets.DEV_USER }}
+          key: ${{ secrets.DEV_SSH_KEY }}
+          script: |
+            cd /var/www/garage-saarthi/garage_saarthi_LP
+            git pull origin development
+            npm install
+            npm run build
+            sudo systemctl reload nginx
