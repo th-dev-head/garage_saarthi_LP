@@ -7,6 +7,8 @@ import Button from "./Button";
 import BgVector1 from "../../assets/icons/Bgvector-1.svg";
 import BgVector2 from "../../assets/icons/Bgvector-2.svg";
 
+import { trackEvent } from "../../utils/pixel";
+
 const Footer = () => {
   return (
     <footer className="relative px-4 lg:px-15 2xl:px-50 py-6 bg-white overflow-hidden">
@@ -69,7 +71,10 @@ const Footer = () => {
                     />
                   </svg>
                 }
-                onClick={() => window.open('https://platform.garagesaarthi.com/login', '_blank')}
+                onClick={() => {
+                  trackEvent('InitiateCheckout');
+                  window.open('https://platform.garagesaarthi.com/login', '_blank');
+                }}
               >
                 Access Platform
               </Button>

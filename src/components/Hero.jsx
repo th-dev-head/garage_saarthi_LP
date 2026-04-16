@@ -3,6 +3,8 @@ import Button from "./common/Button";
 import HeroBg from "../assets/optimized/Gimage_extracted_0.png";
 import DashboardImg from "../assets/icons/Gvector.svg";
 
+import { trackEvent } from "../utils/pixel";
+
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
 
@@ -49,12 +51,8 @@ const Hero = () => {
               variant="hero" 
               className="ring-4 ring-white/10 !px-8 !py-2 text-lg min-[350px]:text-lg"
               onClick={() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  const offset = 100; 
-                  const top = contactSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                  window.scrollTo({ top, behavior: "smooth" });
-                }
+                trackEvent('Lead');
+                window.open('https://platform.garagesaarthi.com/signup', '_blank');
               }}
             >
               Get Started

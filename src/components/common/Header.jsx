@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Button from './Button';
 import GLogo from '../../assets/icons/Glogo.png';
+import { trackEvent } from '../../utils/pixel';
 
 const Header = () => {
   const [active, setActive] = useState('');
@@ -111,7 +112,10 @@ const Header = () => {
             {/* Login Button */}
             <div className="w-20 flex justify-end">
               <button 
-                onClick={() => window.open('https://platform.garagesaarthi.com/login', '_blank')}
+                onClick={() => {
+                  trackEvent('InitiateCheckout');
+                  window.open('https://platform.garagesaarthi.com/login', '_blank');
+                }}
                 className="border border-black rounded-full px-4 py-1.5 text-xs font-semibold hover:bg-black hover:text-white transition-colors"
               >
                 Login
@@ -161,7 +165,10 @@ const Header = () => {
             {/* Buttons */}
             <div className="flex items-center gap-3">
               <button 
-                onClick={() => window.open('https://platform.garagesaarthi.com/login', '_blank')}
+                onClick={() => {
+                  trackEvent('InitiateCheckout');
+                  window.open('https://platform.garagesaarthi.com/login', '_blank');
+                }}
                 className="text-sm font-medium border border-[#1e1e1e] rounded-full px-4 py-2 cursor-pointer "
               >
                 Login
@@ -169,7 +176,10 @@ const Header = () => {
               <Button 
                 variant="hero" 
                 className="!px-4 !py-2 "
-                onClick={scrollToContact}
+                onClick={() => {
+                  trackEvent('Lead');
+                  window.open('https://platform.garagesaarthi.com/signup', '_blank');
+                }}
               >
                 Get Started
                 <svg
@@ -220,7 +230,10 @@ const Header = () => {
               <Button 
                 variant="hero" 
                 className="w-fit !justify-center !rounded-2xl py-2 shadow-lg"
-                onClick={scrollToContact}
+                onClick={() => {
+                  trackEvent('Lead');
+                  window.open('https://platform.garagesaarthi.com/signup', '_blank');
+                }}
               >
                 Get Started
                 <svg
