@@ -12,8 +12,6 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home', isHome: true },
-    { name: 'Features', href: '#features' },
-    { name: 'Showcase', href: '#showcase' },
     { name: 'Download App', href: '#download-app' },
     { name: 'Contact', href: '#contact' },
     { name: 'Pricing', href: '/pricing' },
@@ -59,12 +57,12 @@ const Header = () => {
   };
 
   const handleNavClick = (e, link) => {
+    e.preventDefault();
     if (link.href.startsWith('/')) {
       navigate(link.href);
       setIsMenuOpen(false);
       return;
     }
-    e.preventDefault();
     const sectionId = link.href.replace('#', '');
     scrollToSection(sectionId, link.name);
   };
@@ -117,8 +115,7 @@ const Header = () => {
               <button 
                 onClick={() => {
                   trackEvent('InitiateCheckout');
-                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
-                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/login${redirectSuffix}`, '_blank');
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/login`, '_blank');
                 }}
                 className="border border-black rounded-full px-4 py-1.5 text-xs font-semibold hover:bg-black hover:text-white transition-colors"
               >
@@ -171,8 +168,7 @@ const Header = () => {
               <button 
                 onClick={() => {
                   trackEvent('InitiateCheckout');
-                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
-                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/login${redirectSuffix}`, '_blank');
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/login`, '_blank');
                 }}
                 className="text-sm font-medium border border-[#1e1e1e] rounded-full px-4 py-2 cursor-pointer "
               >
@@ -183,8 +179,7 @@ const Header = () => {
                 className="!px-4 !py-2 "
                 onClick={() => {
                   trackEvent('Lead');
-                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
-                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/signup${redirectSuffix}`, '_blank');
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/signup`, '_blank');
                 }}
               >
                 Get Started
@@ -238,8 +233,7 @@ const Header = () => {
                 className="w-fit !justify-center !rounded-2xl py-2 shadow-lg"
                 onClick={() => {
                   trackEvent('Lead');
-                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
-                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/signup${redirectSuffix}`, '_blank');
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/signup`, '_blank');
                 }}
               >
                 Get Started

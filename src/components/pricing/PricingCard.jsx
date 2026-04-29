@@ -75,32 +75,31 @@ export default function PricingCard({ plan, isTarget, handleBuyNow, onContactUs 
             </p>
           </div>
           <div className="flex items-center gap-2">
-            {!isLifetime && (
+            {!isLifetime ? (
               <button
                 onClick={() =>
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/login`,
+                    `${import.meta.env.VITE_FRONTEND_URL}/login?redirect=/pricing`,
                     "_blank",
                   )
                 }
-                className="flex-1 border border-[#0F172A] text-[#0F172A] py-2 rounded-full font-medium text-[13px] transition-all hover:bg-slate-50 whitespace-nowrap cursor-pointer"
+                className="w-full border border-[#0F172A] text-[#0F172A] py-2 rounded-full font-medium text-[13px] transition-all hover:bg-slate-50 whitespace-nowrap cursor-pointer"
               >
                 Start Free Trial
               </button>
+            ) : (
+              <button
+                onClick={onContactUs}
+                className={cn(
+                  "w-full py-2 rounded-full font-bold transition-all flex items-center justify-center gap-2 text-[13px] whitespace-nowrap cursor-pointer",
+                  isTarget
+                    ? "bg-[#B02E0C] text-white hover:bg-[#B83520]"
+                    : "text-[#B02E0C] border border-[#B02E0C]",
+                )}
+              >
+                Contact Us <ArrowRight className="h-4 w-4" />
+              </button>
             )}
-            <button
-              onClick={isLifetime ? onContactUs : handleBuyNow}
-              className={cn(
-                "py-2 rounded-full font-bold transition-all flex items-center justify-center gap-2 text-[13px] whitespace-nowrap cursor-pointer",
-                isLifetime ? "w-full" : "flex-1",
-                isTarget
-                  ? "bg-[#B02E0C] text-white hover:bg-[#B83520]"
-                  : "text-[#B02E0C] border border-[#B02E0C]",
-              )}
-            >
-              {isLifetime ? "Contact Us" : "Buy Now"}{" "}
-              <ArrowRight className="h-4 w-4" />
-            </button>
           </div>
         </div>
         <div className="p-4 flex-grow">
