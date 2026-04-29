@@ -4,7 +4,12 @@ import { Check, ArrowRight } from "lucide-react";
 import fireIcon from "../../assets/pricing/fire.svg";
 import ellipseIcon from "../../assets/pricing/ellipse.svg";
 
-export default function PricingCard({ plan, isTarget, handleBuyNow, onContactUs }) {
+export default function PricingCard({
+  plan,
+  isTarget,
+  handleBuyNow,
+  onContactUs,
+}) {
   const isLifetime = plan.name?.toLowerCase().includes("life");
   const perMonthPrice = Math.round(plan.price / plan.durationMonths);
 
@@ -28,7 +33,7 @@ export default function PricingCard({ plan, isTarget, handleBuyNow, onContactUs 
       <div className="relative z-10 h-full w-full bg-white p-4 flex flex-col">
         <div
           className="relative p-5 space-y-4 rounded-[28px] mb-2"
-          style={{ 
+          style={{
             backgroundColor: isTarget ? "#F0E6E2" : "#F6F6F6",
           }}
         >
@@ -43,8 +48,8 @@ export default function PricingCard({ plan, isTarget, handleBuyNow, onContactUs 
             </h3>
             {plan.durationMonths >= 6 && !isLifetime && (
               <div className="flex items-center gap-1 py-1 px-3 bg-white rounded-full border border-white/20 text-[11px] font-semibold">
-                <img src={fireIcon} className="h-3 w-3" alt="fire icon" /> Save ₹
-                {plan.durationMonths * 100}
+                <img src={fireIcon} className="h-3 w-3" alt="fire icon" /> Save
+                ₹{plan.durationMonths * 100}
               </div>
             )}
           </div>
@@ -75,7 +80,7 @@ export default function PricingCard({ plan, isTarget, handleBuyNow, onContactUs 
             </p>
           </div>
           <div className="flex items-center gap-2">
-            {!isLifetime && (
+            {!isLifetime ? (
               <button
                 onClick={() =>
                   window.open(
@@ -83,25 +88,25 @@ export default function PricingCard({ plan, isTarget, handleBuyNow, onContactUs 
                     "_blank",
                   )
                 }
-                className="flex-1 border border-[#0F172A] text-[#0F172A] py-2 rounded-full font-medium text-[13px] transition-all hover:bg-slate-50 whitespace-nowrap cursor-pointer"
+                className="w-full border border-[#0F172A] text-[#0F172A] py-2.5 rounded-full font-bold transition-all hover:bg-slate-50 cursor-pointer flex flex-col items-center leading-tight"
               >
-                Start Free Trial
+                <span className="text-[13px]">Start 7 Days Free Trial</span>
+              </button>
+            ) : (
+              <button
+                onClick={onContactUs}
+                className={cn(
+                  "w-full py-2 rounded-full font-bold transition-all flex items-center justify-center gap-2 text-[13px] whitespace-nowrap cursor-pointer",
+                  isTarget
+                    ? "bg-[#B02E0C] text-white hover:bg-[#B83520]"
+                    : "text-[#B02E0C] border border-[#B02E0C]",
+                )}
+              >
+                Contact Us <ArrowRight className="h-4 w-4" />
               </button>
             )}
-            <button
-              onClick={isLifetime ? onContactUs : handleBuyNow}
-              className={cn(
-                "py-2 rounded-full font-bold transition-all flex items-center justify-center gap-2 text-[13px] whitespace-nowrap cursor-pointer",
-                isLifetime ? "w-full" : "flex-1",
-                isTarget
-                  ? "bg-[#B02E0C] text-white hover:bg-[#B83520]"
-                  : "text-[#B02E0C] border border-[#B02E0C]",
-              )}
-            >
-              {isLifetime ? "Contact Us" : "Buy Now"}{" "}
-              <ArrowRight className="h-4 w-4" />
-            </button>
           </div>
+          <span className="text-[12px] font-normal">*No payment details needed</span>
         </div>
         <div className="p-4 flex-grow">
           <p className="text-[15px] font-bold text-[#080B23] mb-2">Features</p>
