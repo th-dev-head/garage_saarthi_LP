@@ -16,9 +16,9 @@ const Header = () => {
     { name: 'Showcase', href: '#showcase' },
     { name: 'Download App', href: '#download-app' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Pricing', href: '/pricing' },
   ];
 
-  // Clear active state when not on home page
   useEffect(() => {
     if (location.pathname !== '/') {
       setActive('');
@@ -26,9 +26,8 @@ const Header = () => {
   }, [location.pathname]);
 
   const scrollToSection = (sectionId, linkName) => {
-    const offset = 100; // Height of fixed header + some padding
+    const offset = 100;
     
-    // If we're on the home page, just scroll
     if (location.pathname === '/') {
       if (sectionId === 'home') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -40,11 +39,9 @@ const Header = () => {
         }
       }
       setActive(linkName);
-      setIsMenuOpen(false); // Close menu after clicking
+      setIsMenuOpen(false);
     } else {
-      // If we're on another page, navigate to home first
       navigate('/');
-      // Wait for navigation and DOM update, then scroll
       setTimeout(() => {
         if (sectionId === 'home') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -56,12 +53,17 @@ const Header = () => {
           }
         }
         setActive(linkName);
-        setIsMenuOpen(false); // Close menu after clicking
+        setIsMenuOpen(false);
       }, 100);
     }
   };
 
   const handleNavClick = (e, link) => {
+    if (link.href.startsWith('/')) {
+      navigate(link.href);
+      setIsMenuOpen(false);
+      return;
+    }
     e.preventDefault();
     const sectionId = link.href.replace('#', '');
     scrollToSection(sectionId, link.name);
@@ -73,7 +75,7 @@ const Header = () => {
 
   const scrollToHome = () => {
     scrollToSection('home', 'Home');
-    setActive(''); // Clear active state when clicking logo
+    setActive('');
   };
 
   return (
@@ -81,7 +83,7 @@ const Header = () => {
       <div className="relative mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <nav className="bg-white/80 backdrop-blur-md rounded-full border border-white/20 px-4 py-3 flex items-center justify-between shadow-lg transition-all duration-300 overflow-hidden relative z-10">
           
-          {/* ================= MOBILE / TABLET ================= */}
+          {/*MOBILE / TABLET */}
           <div className="flex items-center justify-between w-full lg:hidden">
             
             {/* Hamburger / Close Icon */}
@@ -115,7 +117,8 @@ const Header = () => {
               <button 
                 onClick={() => {
                   trackEvent('InitiateCheckout');
-                  window.open('https://platform.garagesaarthi.com/login', '_blank');
+                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/login${redirectSuffix}`, '_blank');
                 }}
                 className="border border-black rounded-full px-4 py-1.5 text-xs font-semibold hover:bg-black hover:text-white transition-colors"
               >
@@ -168,7 +171,8 @@ const Header = () => {
               <button 
                 onClick={() => {
                   trackEvent('InitiateCheckout');
-                  window.open('https://platform.garagesaarthi.com/login', '_blank');
+                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/login${redirectSuffix}`, '_blank');
                 }}
                 className="text-sm font-medium border border-[#1e1e1e] rounded-full px-4 py-2 cursor-pointer "
               >
@@ -179,7 +183,8 @@ const Header = () => {
                 className="!px-4 !py-2 "
                 onClick={() => {
                   trackEvent('Lead');
-                  window.open('https://platform.garagesaarthi.com/signup', '_blank');
+                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/signup${redirectSuffix}`, '_blank');
                 }}
               >
                 Get Started
@@ -233,7 +238,8 @@ const Header = () => {
                 className="w-fit !justify-center !rounded-2xl py-2 shadow-lg"
                 onClick={() => {
                   trackEvent('Lead');
-                  window.open('https://platform.garagesaarthi.com/signup', '_blank');
+                  const redirectSuffix = location.pathname === '/pricing' ? '?redirect=/pricing' : '';
+                  window.open(`${import.meta.env.VITE_FRONTEND_URL}/signup${redirectSuffix}`, '_blank');
                 }}
               >
                 Get Started

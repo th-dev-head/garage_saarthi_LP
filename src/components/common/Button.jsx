@@ -23,7 +23,7 @@ const Button = ({
     dark:
       "bg-text-dark text-white hover:bg-black px-6 py-2.5 text-sm",
 
-    // 🔥 HERO GRADIENT BUTTON
+    // HERO GRADIENT BUTTON
     hero:
       "px-6 py-2.5 text-base font-medium text-white shadow-lg " +
       "bg-[linear-gradient(92.52deg,#B22F0E_2.1%,#D73D17_105.99%)] " +
