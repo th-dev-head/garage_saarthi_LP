@@ -24,25 +24,42 @@ export default function PricingWalletTopup({ creditPlans, handleBuyNow }) {
             <button
               key={cp._id}
               onClick={handleBuyNow}
-              className="group relative bg-white p-5 rounded-[24px] border border-[#FFCFC3] hover:border-[#B02E0C]/20 transition-all shadow-sm hover:shadow-xl hover:-translate-y-1 text-left flex flex-col justify-between overflow-hidden min-h-[90px]"
+              className="group relative bg-white p-5 rounded-[24px] border border-[#FFCFC3] hover:border-[#B02E0C]/20 transition-all shadow-sm hover:shadow-xl hover:-translate-y-1 overflow-hidden min-h-[90px]"
             >
               {cp.isPopular && (
                 <div className="absolute top-4 right-4 bg-[#B02E0C] text-white text-[9px] font-black px-3 py-1 rounded-full tracking-widest shadow-sm z-10">
                   Popular
                 </div>
               )}
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-[16px] bg-[#F0EBE9] flex-shrink-0 flex items-center justify-center text-[#B02E0C] group-hover:bg-[#B02E0C] group-hover:text-white transition-colors">
-                  <IndianRupee className="h-6 w-6" />
+              <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-4 items-center">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-[16px] bg-[#F0EBE9] flex-shrink-0 flex items-center justify-center text-[#B02E0C] group-hover:bg-[#B02E0C] group-hover:text-white transition-colors">
+                    <IndianRupee className="h-6 w-6" />
+                  </div>
+                  <div className="space-y-0">
+                    <p className="text-sm text-slate-500 font-medium">
+                      {cp.credits} Credits
+                    </p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-2xl font-black text-slate-900">
+                        ₹{cp.price}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div className="space-y-0">
-                  <p className="text-sm text-slate-500 font-medium">
-                    {cp.credits} Credits
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl font-black text-slate-900">
-                      ₹{cp.price}
+
+                <div className="flex flex-col lg:items-end items-start justify-center gap-2 lg:text-right text-left">
+                  <div className="text-xs font-medium">
+                    <span className="text-xs text-slate-500  ">
+                      WhatsApp Message{" "}
                     </span>
+                    <span>0.50 Credits</span>
+                  </div>
+                  <div className="text-xs text-slate-900 font-medium">
+                    <span className="text-xs text-slate-500">
+                      Promotions{" "}
+                    </span>
+                    <span>1.50 Credits</span>
                   </div>
                 </div>
               </div>
