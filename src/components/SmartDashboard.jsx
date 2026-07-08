@@ -36,6 +36,7 @@ const SmartDashboard = () => {
             variant="hero" 
             className="!px-8"
             onClick={() => {
+              window.history.pushState(null, "", "/#book-demo");
               const contactSection = document.getElementById('contact');
               if (contactSection) {
                 const offset = 100;

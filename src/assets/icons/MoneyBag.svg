@@ -1,0 +1,11 @@
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main currency bill rectangle -->
+  <rect x="6" y="10" width="30" height="18" rx="3" stroke="#B02E0C" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Bill detail circle and side lines -->
+  <circle cx="21" cy="19" r="4" stroke="#B02E0C" stroke-width="2"/>
+  <path d="M11 19H13" stroke="#B02E0C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M29 19H31" stroke="#B02E0C" stroke-width="2" stroke-linecap="round"/>
+  <!-- Stacking effect underneath -->
+  <path d="M9 32H33" stroke="#B02E0C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M12 36H30" stroke="#B02E0C" stroke-width="3" stroke-linecap="round"/>
+</svg>

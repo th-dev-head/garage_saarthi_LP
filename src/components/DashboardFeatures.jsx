@@ -1,9 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { HiArrowRight } from "react-icons/hi";
 import JobIcon from "../assets/icons/Job.svg";
 import DashboardIcon from "../assets/icons/Gdashboard.svg";
 import FinanceIcon from "../assets/icons/Gfinance.svg";
 import PortalIcon from "../assets/icons/Portal.svg";
 import AnalyticsIcon from "../assets/icons/Analytics.svg";
+import GarageIcon from "../assets/icons/Garage.svg";
+import PaymentsIcon from "../assets/icons/Payments.svg";
+import InventoryIcon from "../assets/icons/Inventory.svg";
+import WhatsAppIcon from "../assets/icons/WhatsApp.svg";
 import Button from "./common/Button";
 
 const features = [
@@ -22,30 +28,52 @@ const features = [
     iconColor: "#D13F26",
   },
   {
-    title: "Finance Management",
-    description: "All your garage finances, managed in one place",
-    icon: FinanceIcon,
+    title: "Finance & Counter Sales",
+    description: "Manage billing, payments, counter sales, and invoices in one place",
+    icon: PaymentsIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
   },
   {
-    title: "Customer Portal",
-    description: "Monitor operations with live analytics and insights",
+    title: "Multi-Branch System",
+    description: "Manage inventory, staff, and analytics across multiple branches",
+    icon: GarageIcon,
+    bgColor: "bg-orange-50",
+    iconColor: "#D13F26",
+  },
+  {
+    title: "Inventory & CRM",
+    description: "Track parts stock levels, manage low-stock and upcoming service alerts",
+    icon: InventoryIcon,
+    bgColor: "bg-orange-50",
+    iconColor: "#D13F26",
+  },
+  {
+    title: "Staff & Payroll",
+    description: "Track staff attendance, calculate commissions, and generate wage slips",
     icon: PortalIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
   },
   {
-    title: "Smart Analytics",
-    description: "Data-driven decisions with comprehensive reporting",
-    icon: AnalyticsIcon,
+    title: "WhatsApp Notifications",
+    description: "Auto-send bookings, service alerts, and invoice links directly to customer WhatsApp",
+    icon: WhatsAppIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    isSpecial: true,
+  },
+  {
+    title: "Estimates",
+    description: "Send professional estimates in seconds. Get approvals faster and get to work sooner.",
+    icon: FinanceIcon,
+    bgColor: "bg-orange-50",
+    iconColor: "#D13F26",
   },
 ];
 
 const DashboardFeatures = () => {
+  const navigate = useNavigate();
+
   return (
     <div id="features" className="bg-white">
       {/* Dashboard Preview Section */}
@@ -79,19 +107,7 @@ const DashboardFeatures = () => {
                 }}
               >
                 Explore Now
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                <HiArrowRight className="w-5 h-5" />
               </Button>
             </div>
           </div>
@@ -101,14 +117,11 @@ const DashboardFeatures = () => {
       {/* Features Section */}
       <section className="pb-10 lg:pb-20 px-4 lg:px-15 2xl:px-50 bg-white">
         <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`relative p-4 border border-[#EEE] 
-          transition-all duration-300 hover:shadow-sm hover:-translate-y-1 cursor-pointer
-          ${feature.isSpecial ? "bg-[#EFE9E7] rounded-tr-[150px]" : "bg-white"
-                  }`}
+                className="relative p-4 border border-[#EEE] bg-white transition-all duration-300 hover:shadow-sm hover:-translate-y-1 cursor-pointer rounded-lg"
               >
                 {/* Icon */}
                 <div className="w-12 h-12 flex items-center justify-center mb-6">
@@ -131,6 +144,16 @@ const DashboardFeatures = () => {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* View All Features Button */}
+          <div className="flex justify-center mt-12">
+            <Button
+              onClick={() => navigate("/features")}
+            >
+              View All Features
+              <HiArrowRight className="w-5 h-5" />
+            </Button>
           </div>
         </div>
       </section>

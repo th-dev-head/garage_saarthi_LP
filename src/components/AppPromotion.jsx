@@ -1,7 +1,6 @@
 import React from 'react';
 import MockupBg from '../assets/icons/Mockup dashboard 1.png';
 import AppHand from '../assets/icons/Appdl.png';
-import AppStoreIcon from '../assets/icons/Apple.png';
 import PlayStoreIcon from '../assets/icons/Playstore.png';
 
 const AppPromotion = () => {

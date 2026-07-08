@@ -31,18 +31,15 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 min-h-[300px] md:min-h-[400px] lg:min-h-[500px] xl:min-h-[600px] flex flex-col items-center justify-center px-4 
-      pt-35 md:pt-40 lg:pt-40 xl:pt-48  
-      pb-32 md:pb-40 lg:pb-48 xl:pb-56 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-white font-semibold text-2xl md:text-4xl lg:text-5xl leading-tight mb-6">
-            Your Digital Partner in <br />
-            <span className="text-white">Garage & Workshop Management</span>
+      <div className="relative z-10 min-h-[300px] md:min-h-[400px] lg:min-h-[500px] xl:min-h-[600px] flex flex-col items-center justify-center px-4 pt-35 md:pt-40 lg:pt-40 xl:pt-48 pb-32 md:pb-40 lg:pb-48 xl:pb-56 text-center">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-white font-semibold leading-tight mb-6">
+            <span className="text-2xl md:text-[33px]">Your Digital Partner in</span> <br />
+            <span className="text-white md:text-[47px]">Garage & Workshop Management Software</span>
           </h1>
 
-          <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto mb-10">
-            Simplify your garage operations with smart automation, from job
-            cards and billing to parts, customers, and team tracking.
+          <p className="text-white/80 text-base md:text-md max-w-3xl mx-auto mb-10">
+           Simplify Job Cards, Billing, Inventory, Customer Management & Team Tracking with One Powerful Platform.
           </p>
 
           <div className="flex flex-col min-[430px]:flex-row  justify-center gap-4 w-fit mx-auto">
@@ -96,7 +93,7 @@ const Hero = () => {
           <div className="relative w-full max-w-4xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <button 
               onClick={() => setShowVideo(false)}
-              className="absolute top-4 right-4 z-10 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
+              className="absolute top-4 right-4 z-10 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors cursor-pointer"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
