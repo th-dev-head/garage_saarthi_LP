@@ -5,6 +5,7 @@ import DashboardFeatures from '../components/DashboardFeatures';
 import SmartDashboard from '../components/SmartDashboard';
 import IndustrialBenefits from '../components/IndustrialBenefits';
 import AppPromotion from '../components/AppPromotion';
+import ReviewSection from '../components/ReviewSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/common/Footer';
@@ -18,6 +19,7 @@ const Home = () => {
         <Hero />
         <DashboardFeatures />
         <SmartDashboard />
+        <ReviewSection />
         <IndustrialBenefits />
         <AppPromotion />
         <FAQSection />

@@ -12,6 +12,7 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", href: "#home", isHome: true },
+    { name: "Features", href: "#features" },
     { name: "Download App", href: "#download-app" },
     { name: "Contact", href: "#contact" },
     { name: "Pricing", href: "/pricing" },
@@ -30,32 +31,22 @@ const Header = () => {
     if (location.pathname === "/") {
       if (sectionId === "home") {
         window.scrollTo({ top: 0, behavior: "smooth" });
+        window.history.pushState(null, "", "/");
       } else {
         const section = document.getElementById(sectionId);
         if (section) {
           const top =
             section.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({ top, behavior: "smooth" });
+          window.history.pushState(null, "", `/#${sectionId}`);
         }
       }
       setActive(linkName);
       setIsMenuOpen(false);
     } else {
-      navigate("/");
-      setTimeout(() => {
-        if (sectionId === "home") {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } else {
-          const section = document.getElementById(sectionId);
-          if (section) {
-            const top =
-              section.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top, behavior: "smooth" });
-          }
-        }
-        setActive(linkName);
-        setIsMenuOpen(false);
-      }, 100);
+      navigate(`/#${sectionId}`);
+      setActive(linkName);
+      setIsMenuOpen(false);
     }
   };
 

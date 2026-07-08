@@ -2,19 +2,14 @@ import React, { useState } from "react";
 import GformBg from "../assets/optimized/Gform_extracted_0.png";
 import BookDemoIcon from "../assets/icons/Bookd.png";
 import Button from "./common/Button";
-import DatePicker from "./common/DatePicker";
-import dayjs from "dayjs";
 
 const FORMSPREE_URL = import.meta.env.VITE_FORMSPREE_URL;
 
 const ContactSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [email, setEmail] = useState("");
-  const [date, setDate] = useState(null);
   const [mobile, setMobile] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
-  const [submittedEmail, setSubmittedEmail] = useState("");
   const [submittedMobile, setSubmittedMobile] = useState("");
 
   const handleBookDemo = async (e) => {
@@ -23,9 +18,6 @@ const ContactSection = () => {
     setSubmitError("");
 
     const formData = new FormData(e.target);
-    if (date) {
-      formData.set("demo_date", dayjs(date).format("YYYY-MM-DD"));
-    }
 
     try {
       const response = await fetch(FORMSPREE_URL, {
@@ -35,12 +27,9 @@ const ContactSection = () => {
       });
 
       if (response.ok) {
-        setSubmittedEmail(email);
         setSubmittedMobile(mobile);
         setIsModalOpen(true);
         e.target.reset();
-        setEmail("");
-        setDate(null);
         setMobile("");
       } else {
         const data = await response.json();
@@ -90,66 +79,39 @@ const ContactSection = () => {
 
           {/* Right Form */}
           <form onSubmit={handleBookDemo} className="w-full lg:max-w-[380px] mt-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <label className="text-white text-xs mb-1 block">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="full_name"
-                  required
-                  placeholder="Full name"
-                  className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
-                />
-              </div>
-
-              <div>
-                <label className="text-white text-xs mb-1 block">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email address"
-                  className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
-                />
-              </div>
+            {/* Full Name - Full Width */}
+            <div className="mb-4">
+              <label className="text-white text-xs mb-1 block">
+                Full Name
+              </label>
+              <input
+                type="text"
+                name="full_name"
+                required
+                placeholder="Full name"
+                className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
+              />
             </div>
 
-
-            {/* Date & Mobile Number */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <label className="text-white text-xs mb-1 block">Date</label>
-                <DatePicker
-                  name="demo_date"
-                  required
-                  value={date}
-                  onChange={(newValue) => setDate(newValue)}
-                  minDate={new Date()}
-                />
-              </div>
-              <div>
-                <label className="text-white text-xs mb-1 block">Phone Number</label>
-                <input
-                  type="tel"
-                  name="mobile"
-                  required
-                  value={mobile}
-                  onChange={(e) => setMobile(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (!/[0-9]/.test(e.key) && !["Backspace","Delete","Tab","ArrowLeft","ArrowRight"].includes(e.key)) {
-                      e.preventDefault();
-                    }
-                  }}
-                  placeholder="Phone Number"
-                  pattern="[0-9]{10}"
-                  maxLength={10}
-                  className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
-                />
-              </div>
+            {/* Phone Number - Full Width */}
+            <div className="mb-4">
+              <label className="text-white text-xs mb-1 block">Phone Number</label>
+              <input
+                type="tel"
+                name="mobile"
+                required
+                value={mobile}
+                onChange={(e) => setMobile(e.target.value)}
+                onKeyDown={(e) => {
+                  if (!/[0-9]/.test(e.key) && !["Backspace","Delete","Tab","ArrowLeft","ArrowRight"].includes(e.key)) {
+                    e.preventDefault();
+                  }
+                }}
+                placeholder="Phone Number"
+                pattern="[0-9]{10}"
+                maxLength={10}
+                className="w-full rounded-xl px-4 py-3 text-sm bg-white outline-none"
+              />
             </div>
 
             {/* Garage/Workshop Name - Full Width */}
