@@ -2,45 +2,45 @@ import React from "react";
 
 const reviews = [
   {
-    name: "Harish Salunkhe",
-    role: "Owner, Salunkhe Auto Works",
-    location: "Pune",
-    initials: "HS",
+    name: "Egun",
+    role: "Owner, Egun",
+    location: "Ahmedabad",
+    initials: "EG",
     text: "GarageSaarthi has completely transformed how we track job cards. We used to lose paper cards, but now everything is digital. Our customers love getting invoice links directly on WhatsApp!"
   },
   {
-    name: "Gurpreet Singh",
-    role: "Founder, GS Motors & Detailing",
-    location: "Ludhiana",
-    initials: "GS",
+    name: "BHAGWATI SERVICE CENTER",
+    role: "Owner, Bhagwati Service Center",
+    location: "Uttrakhand",
+    initials: "BS",
     text: "The staff tracking and inventory alerts are absolute lifesavers. I get notifications when parts stock is low, so we never run out of critical items. Highly recommended to all workshop owners."
   },
   {
-    name: "Prashant Gowda",
-    role: "Manager, Gowda Auto Care",
-    location: "Bangalore",
-    initials: "PG",
+    name: "Rishabh",
+    role: "Owner, The Big Wheels",
+    location: "Madhya Pradesh",
+    initials: "TBW",
     text: "Counter sales and instant billing have reduced customer wait times by half. The daily cash and online payment reconciliation screen makes tallying at the end of the day extremely simple."
   },
   {
-    name: "Devendra Choudhary",
-    role: "Owner, Choudhary Car Garage",
-    location: "Jaipur",
-    initials: "DC",
+    name: "Smit Koladiya",
+    role: "Owner, Auto Touch Cars",
+    location: "Vadodara",
+    initials: "AT",
     text: "Managing multiple branches was a nightmare before. With GarageSaarthi, I can see branch-wise analytics and transfer parts inventory in seconds. The central control is amazing!"
   },
   {
-    name: "Abhishek Naskar",
-    role: "Partner, Naskar Motors",
-    location: "Kolkata",
-    initials: "AN",
+    name: "Himmat Lal",
+    role: "Owner, Khatu Shyam Automobiles",
+    location: "West Bengal ",
+    initials: "HL",
     text: "The GST billing feature is very simple to use. Generating invoices takes seconds and sending them straight to WhatsApp is very convenient. Our billing flow has never been this smooth."
   },
   {
-    name: "M. Karthik",
-    role: "Owner, Karthik Auto Tech",
-    location: "Chennai",
-    initials: "MK",
+    name: "Aditya Bhusan Rout",
+    role: "Owner, Bikemech",
+    location: "Odisha",
+    initials: "ABR",
     text: "Customer service reminders are brilliant. It automatically sends service alerts, which has increased our repeat customers by 30%. Very happy with the platform!"
   }
 ];
