@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import GLogo from "../../assets/icons/Glogo.svg";
@@ -10,21 +10,6 @@ import BgVector2 from "../../assets/icons/Bgvector-2.svg";
 import { trackEvent } from "../../utils/pixel";
 
 const Footer = () => {
-  const navigate = useNavigate();
-
-  const scrollToSection = (id) => {
-    if (window.location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 300);
-    } else {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <footer className="relative px-4 lg:px-15 2xl:px-50 py-12 bg-white overflow-hidden">
       {/* Bottom Left Shadow Vector */}
@@ -87,26 +72,18 @@ const Footer = () => {
             <h3 className="text-text-dark font-bold text-sm tracking-wide uppercase">Quick Links</h3>
             <ul className="space-y-2.5 ">
               {[
-                { label: "Home", action: () => scrollToSection("home") },
-                { label: "Features", action: () => scrollToSection("features") },
+                { label: "Home", link: "/" },
+                { label: "Features", link: "/feature" },
                 { label: "Pricing", link: "/pricing" },
-                { label: "Book Demo", action: () => scrollToSection("contact") },
-                { label: "Contact", action: () => scrollToSection("contact") },
-              ].map((item) =>
-                item.link ? (
-                  <li key={item.label}>
-                    <Link to={item.link} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
-                      {item.label}
-                    </Link>
-                  </li>
-                ) : (
-                  <li key={item.label}>
-                    <button onClick={item.action} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium text-left cursor-pointer">
-                      {item.label}
-                    </button>
-                  </li>
-                )
-              )}
+                { label: "Book Demo", link: "/contact" },
+                { label: "Contact", link: "/contact" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link to={item.link} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

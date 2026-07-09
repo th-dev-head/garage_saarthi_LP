@@ -17,6 +17,10 @@ function RouterContent() {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/feature" element={<Home />} />
+        <Route path="/download-app" element={<Home />} />
+        <Route path="/contact" element={<Home />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

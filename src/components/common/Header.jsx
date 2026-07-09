@@ -11,63 +11,41 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Home", href: "#home", isHome: true },
-    { name: "Features", href: "#features" },
-    { name: "Download App", href: "#download-app" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "Features", href: "/feature" },
+    { name: "Download App", href: "/download-app" },
+    { name: "Contact", href: "/contact" },
     { name: "Pricing", href: "/pricing" },
   ];
 
   useEffect(() => {
     if (location.pathname === "/pricing") {
       setActive("Pricing");
-    } else if (location.pathname === "/") {
+    } else if (location.pathname === "/feature" || location.pathname === "/features") {
+      setActive("Features");
+    } else if (location.pathname === "/download-app") {
+      setActive("Download App");
+    } else if (location.pathname === "/contact" || location.pathname === "/book-demo") {
+      setActive("Contact");
+    } else if (location.pathname === "/" || location.pathname === "/home") {
+      setActive("Home");
+    } else {
+      setActive("");
     }
   }, [location.pathname]);
 
-  const scrollToSection = (sectionId, linkName) => {
-    const offset = 100;
-
-    if (location.pathname === "/") {
-      if (sectionId === "home") {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        window.history.pushState(null, "", "/");
-      } else {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          const top =
-            section.getBoundingClientRect().top + window.pageYOffset - offset;
-          window.scrollTo({ top, behavior: "smooth" });
-          window.history.pushState(null, "", `/#${sectionId}`);
-        }
-      }
-      setActive(linkName);
-      setIsMenuOpen(false);
-    } else {
-      navigate(`/#${sectionId}`);
-      setActive(linkName);
-      setIsMenuOpen(false);
-    }
-  };
-
   const handleNavClick = (e, link) => {
     e.preventDefault();
-    if (link.href.startsWith("/")) {
-      navigate(link.href);
-      setIsMenuOpen(false);
-      return;
-    }
-    const sectionId = link.href.replace("#", "");
-    scrollToSection(sectionId, link.name);
+    navigate(link.href);
+    setIsMenuOpen(false);
   };
 
   const scrollToContact = () => {
-    scrollToSection("contact", "Contact");
+    navigate("/contact");
   };
 
   const scrollToHome = () => {
-    scrollToSection("home", "Home");
-    setActive("");
+    navigate("/");
   };
 
   return (

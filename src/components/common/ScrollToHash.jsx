@@ -2,18 +2,26 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export default function ScrollToHash() {
-  const { pathname, hash } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    const currentHash = hash || window.location.hash;
-    if (currentHash) {
-      let id = currentHash.replace("#", "");
-      
-      if (id === "book-demo") {
-        id = "contact";
-      }
+    let id = "";
+    if (pathname === "/contact" || pathname === "/book-demo") {
+      id = "contact";
+    } else if (pathname === "/download-app") {
+      id = "download-app";
+    } else if (pathname === "/feature") {
+      id = "features";
+    } else if (pathname === "/home" || pathname === "/") {
+      id = "home";
+    }
 
+    if (id) {
       const scroll = () => {
+        if (id === "home") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        }
         const element = document.getElementById(id);
         if (element) {
           const offset = 100;
@@ -26,7 +34,7 @@ export default function ScrollToHash() {
       const timer = setTimeout(scroll, 150);
       return () => clearTimeout(timer);
     }
-  }, [pathname, hash]);
+  }, [pathname]);
 
   return null;
 }
