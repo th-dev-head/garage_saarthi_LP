@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaPlay, FaTimes } from "react-icons/fa";
 import Button from "./common/Button";
 import HeroBg from "../assets/optimized/Gimage_extracted_0.png";
 import DashboardImg from "../assets/icons/Gvector.svg";
@@ -73,13 +74,7 @@ const Hero = () => {
               className="flex items-center gap-3 px-5 py-2 rounded-full bg-white text-gray-900 font-medium hover:bg-gray-100 transition shadow-lg cursor-pointer text-sm min-[350px]:text-lg"
             >
               <span className="w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center">
-                <svg
-                  className="w-4 h-4 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
+                <FaPlay className="w-2.5 h-2.5 text-white ml-0.5" />
               </span>
               Watch Demo
             </button>
@@ -93,11 +88,9 @@ const Hero = () => {
           <div className="relative w-full max-w-4xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <button 
               onClick={() => setShowVideo(false)}
-              className="absolute top-4 right-4 z-10 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors cursor-pointer"
+              className="absolute top-4 right-4 z-10 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors cursor-pointer flex items-center justify-center"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <FaTimes className="w-5 h-5" />
             </button>
             <iframe
               className="w-full h-full"
