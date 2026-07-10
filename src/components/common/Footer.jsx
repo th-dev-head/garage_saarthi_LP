@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaArrowRight } from "react-icons/fa";
 import GLogo from "../../assets/icons/Glogo.svg";
 import Button from "./Button";
 import BgVector1 from "../../assets/icons/Bgvector-1.svg";
@@ -53,9 +53,7 @@ const Footer = () => {
               <Button
                 variant="hero"
                 icon={
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                  <FaArrowRight className="w-4 h-4" />
                 }
                 onClick={() => {
                   trackEvent("InitiateCheckout");
@@ -79,7 +77,7 @@ const Footer = () => {
                 { label: "Contact", link: "/contact" },
               ].map((item) => (
                 <li key={item.label}>
-                  <Link to={item.link} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
+                  <Link href={item.link} scroll={item.link === "/pricing" || item.link === "/features"} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
                     {item.label}
                   </Link>
                 </li>
@@ -93,7 +91,7 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {["Job Cards", "GST Billing", "Inventory", "Reports", "Customer History"].map((f) => (
                 <li key={f}>
-                  <Link to="/features" className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
+                  <Link href="/features" className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
                     {f}
                   </Link>
                 </li>
@@ -166,10 +164,10 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-8">
-            <Link to="/privacy-policy" className="text-sm hover:text-primary transition-colors">
+            <Link href="/privacy-policy" className="text-sm hover:text-primary transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/terms-and-conditions" className="text-sm hover:text-primary transition-colors">
+            <Link href="/terms-and-conditions" className="text-sm hover:text-primary transition-colors">
               Terms of Service
             </Link>
           </div>

@@ -1,4 +1,4 @@
-const BASE_URL = (import.meta.env.VITE_API_BASE_URL) + '/api';
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL + '/api';
 
 export const subscriptionApi = {
   getActivePlans: async () => {
@@ -12,7 +12,7 @@ export const subscriptionApi = {
   },
 
   submitInterest: async (data) => {
-    const response = await fetch(import.meta.env.VITE_FORMSPREE_URL, {
+    const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL, {
       method: "POST",
       headers: {
         Accept: "application/json",

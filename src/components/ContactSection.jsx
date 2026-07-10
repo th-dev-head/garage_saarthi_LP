@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { FaTimes, FaArrowRight } from "react-icons/fa";
 import GformBg from "../assets/optimized/Gform_extracted_0.png";
 import BookDemoIcon from "../assets/icons/Bookd.png";
 import Button from "./common/Button";
 
-const FORMSPREE_URL = import.meta.env.VITE_FORMSPREE_URL;
+const FORMSPREE_URL = process.env.NEXT_PUBLIC_FORMSPREE_URL;
 
 const ContactSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -154,19 +155,7 @@ const ContactSection = () => {
               >
                 {isSubmitting ? "Submitting..." : "Book Demo"}
                 {!isSubmitting && (
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
+                  <FaArrowRight className="w-4 h-4 ml-2" />
                 )}
               </Button>
             </div>
@@ -188,11 +177,9 @@ const ContactSection = () => {
             {/* Close Button */}
             <button 
               onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 p-2 rounded-full bg-[#EFE9E7] hover:bg-[#f3e6e1] transition-colors z-20 cursor-pointer"
+              className="absolute top-4 right-4 p-2 rounded-full bg-[#EFE9E7] hover:bg-[#f3e6e1] transition-colors z-20 cursor-pointer flex items-center justify-center"
             >
-              <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <FaTimes className="w-4 h-4 text-gray-600" />
             </button>
 
             <div className="py-12 md:py-10 2xl:py-15 px-8 flex flex-col items-center text-center">

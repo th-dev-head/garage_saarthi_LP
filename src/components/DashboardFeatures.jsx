@@ -1,11 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { HiArrowRight } from "react-icons/hi";
 import JobIcon from "../assets/icons/Job.svg";
 import DashboardIcon from "../assets/icons/Gdashboard.svg";
 import FinanceIcon from "../assets/icons/Gfinance.svg";
 import PortalIcon from "../assets/icons/Portal.svg";
-import AnalyticsIcon from "../assets/icons/Analytics.svg";
 import GarageIcon from "../assets/icons/Garage.svg";
 import PaymentsIcon from "../assets/icons/Payments.svg";
 import InventoryIcon from "../assets/icons/Inventory.svg";
@@ -72,7 +71,7 @@ const features = [
 ];
 
 const DashboardFeatures = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div id="features" className="bg-white">
@@ -81,10 +80,10 @@ const DashboardFeatures = () => {
         <div className="max-w-7xl w-full">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
-              Your entire workshop. <br />
-              One powerf
+              Your Entire Workshop. <br />
+              One Powerf
               <span className="relative">
-                ul dashboard.
+                ul Dashboard.
                 <span className="absolute bottom-0 left-0 w-full rounded-full hidden md:block  h-1 bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)] "></span>
               </span>
             </h2>
@@ -149,7 +148,8 @@ const DashboardFeatures = () => {
           {/* View All Features Button */}
           <div className="flex justify-center mt-12">
             <Button
-              onClick={() => navigate("/features")}
+              onClick={() => router.push("/features")}
+              className="cursor-pointer"
             >
               View All Features
               <HiArrowRight className="w-5 h-5" />

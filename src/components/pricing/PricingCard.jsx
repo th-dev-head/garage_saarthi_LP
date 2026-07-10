@@ -84,7 +84,7 @@ export default function PricingCard({
               <button
                 onClick={() =>
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/login`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/login`,
                     "_blank",
                   )
                 }

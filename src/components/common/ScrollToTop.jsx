@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaChevronUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,19 +37,7 @@ const ScrollToTop = () => {
           className="bg-[#B02E0C] hover:bg-[#B83520] text-white p-3 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-100 cursor-pointer flex items-center justify-center group"
           aria-label="Scroll to top"
         >
-          <svg
-            className="w-6 h-6 transform transition-transform "
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2.5}
-              d="M5 15l7-7 7 7"
-            />
-          </svg>
+          <FaChevronUp className="w-5 h-5 transform transition-transform" />
         </button>
       )}
     </div>

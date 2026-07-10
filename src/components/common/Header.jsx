@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useRouter, usePathname } from "next/navigation";
+import { FaTimes, FaArrowRight } from "react-icons/fa";
 import Button from "./Button";
 import GLogo from "../../assets/icons/Glogo.png";
 import { trackEvent } from "../../utils/pixel";
@@ -7,8 +8,8 @@ import { trackEvent } from "../../utils/pixel";
 const Header = () => {
   const [active, setActive] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
+  const router = useRouter();
+  const pathname = usePathname();
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -19,33 +20,34 @@ const Header = () => {
   ];
 
   useEffect(() => {
-    if (location.pathname === "/pricing") {
+    if (pathname === "/pricing") {
       setActive("Pricing");
-    } else if (location.pathname === "/feature" || location.pathname === "/features") {
+    } else if (pathname === "/feature" || pathname === "/features") {
       setActive("Features");
-    } else if (location.pathname === "/download-app") {
+    } else if (pathname === "/download-app") {
       setActive("Download App");
-    } else if (location.pathname === "/contact" || location.pathname === "/book-demo") {
+    } else if (pathname === "/contact" || pathname === "/book-demo") {
       setActive("Contact");
-    } else if (location.pathname === "/" || location.pathname === "/home") {
+    } else if (pathname === "/" || pathname === "/home") {
       setActive("Home");
     } else {
       setActive("");
     }
-  }, [location.pathname]);
+  }, [pathname]);
 
   const handleNavClick = (e, link) => {
     e.preventDefault();
-    navigate(link.href);
+    const shouldScroll = link.href === "/pricing" || link.href === "/features";
+    router.push(link.href, { scroll: shouldScroll });
     setIsMenuOpen(false);
   };
 
   const scrollToContact = () => {
-    navigate("/contact");
+    router.push("/contact", { scroll: false });
   };
 
   const scrollToHome = () => {
-    navigate("/");
+    router.push("/", { scroll: false });
   };
 
   return (
@@ -60,19 +62,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <FaTimes className="w-6 h-6" />
               ) : (
                 <div className="space-y-1.5">
                   <span className="block w-[21px] h-[2px] bg-black rounded"></span>
@@ -96,7 +86,7 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("InitiateCheckout");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/login`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/login`,
                     "_blank",
                   );
                 }}
@@ -151,7 +141,7 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("InitiateCheckout");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/login`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/login`,
                     "_blank",
                   );
                 }}
@@ -165,25 +155,13 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("Lead");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/signup`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/signup`,
                     "_blank",
                   );
                 }}
               >
                 Get Started
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                <FaArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
           </div>
@@ -222,25 +200,13 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("Lead");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/signup`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/signup`,
                     "_blank",
                   );
                 }}
               >
                 Get Started
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                <FaArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
           </div>
