@@ -1,6 +1,6 @@
 import Script from "next/script";
-import ScrollToHash from "../src/components/common/ScrollToHash";
-import "../src/index.css";
+import ScrollToHash from "../components/common/ScrollToHash";
+import "../index.css";
 
 export const viewport = {
   themeColor: "#f97316",
