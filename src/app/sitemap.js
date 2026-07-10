@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 /** @type {import('next').MetadataRoute.Sitemap} */
 export default function sitemap() {
   const baseUrl = "https://garagesaarthi.com";
