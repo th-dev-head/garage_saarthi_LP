@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaPlay, FaTimes } from "react-icons/fa";
+import { FaPlay, FaTimes, FaArrowRight } from "react-icons/fa";
 import Button from "./common/Button";
 import HeroBg from "../assets/optimized/Gimage_extracted_0.png";
 import DashboardImg from "../assets/icons/Gvector.svg";
@@ -54,19 +54,7 @@ const Hero = () => {
               }}
             >
               Get Started
-              <svg
-                className="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
+              <FaArrowRight className="w-4 h-4 ml-2" />
             </Button>
 
             <button 

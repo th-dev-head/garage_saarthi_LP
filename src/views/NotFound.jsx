@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import { FaArrowLeft } from "react-icons/fa";
 import Button from "../components/common/Button";
 import ErrorSvg from "../assets/icons/error.svg";
 
@@ -28,19 +29,7 @@ const NotFound = () => {
           className="mx-auto flex items-center gap-2"
           onClick={() => router.push("/")}
         >
-          <svg
-            className="w-5 h-5 rotate-180"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            />
-          </svg>
+          <FaArrowLeft className="w-4 h-4" />
           Back to Home
         </Button>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaArrowRight } from "react-icons/fa";
 import Button from "./Button";
 import GLogo from "../../assets/icons/Glogo.png";
 import { trackEvent } from "../../utils/pixel";
@@ -161,19 +161,7 @@ const Header = () => {
                 }}
               >
                 Get Started
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                <FaArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
           </div>
@@ -218,19 +206,7 @@ const Header = () => {
                 }}
               >
                 Get Started
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                <FaArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
           </div>
