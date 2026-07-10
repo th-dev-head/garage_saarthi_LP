@@ -13,19 +13,13 @@ const nextConfig = {
     config.plugins.push(
       new nextWebpack.DefinePlugin({
         "import.meta.env.VITE_FRONTEND_URL": JSON.stringify(
-          process.env.NEXT_PUBLIC_FRONTEND_URL ||
-            process.env.VITE_FRONTEND_URL ||
-            "https://platform.garagesaarthi.com"
+          process.env.NEXT_PUBLIC_FRONTEND_URL
         ),
         "import.meta.env.VITE_FORMSPREE_URL": JSON.stringify(
-          process.env.NEXT_PUBLIC_FORMSPREE_URL ||
-            process.env.VITE_FORMSPREE_URL ||
-            "https://formspree.io/f/mdkaowld"
+          process.env.NEXT_PUBLIC_FORMSPREE_URL
         ),
         "import.meta.env.VITE_API_BASE_URL": JSON.stringify(
-          process.env.NEXT_PUBLIC_API_BASE_URL ||
-            process.env.VITE_API_BASE_URL ||
-            "https://api.garagesaarthi.com"
+          process.env.NEXT_PUBLIC_API_BASE_URL
         ),
       })
     );
