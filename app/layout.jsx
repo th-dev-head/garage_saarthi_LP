@@ -1,4 +1,5 @@
 import Script from "next/script";
+import ScrollToHash from "../src/components/common/ScrollToHash";
 import "../src/index.css";
 
 export const viewport = {
@@ -45,7 +46,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         {/* Favicon */}
         <link rel="icon" type="image/svg+xml" href="/GS.svg" />
@@ -93,6 +94,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body>
+        <ScrollToHash />
         {/* Meta Pixel Code (noscript) */}
         <noscript>
           <img
