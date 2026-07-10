@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaArrowRight } from "react-icons/fa";
 import GLogo from "../../assets/icons/Glogo.svg";
 import Button from "./Button";
 import BgVector1 from "../../assets/icons/Bgvector-1.svg";
@@ -53,9 +53,7 @@ const Footer = () => {
               <Button
                 variant="hero"
                 icon={
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                  <FaArrowRight className="w-4 h-4" />
                 }
                 onClick={() => {
                   trackEvent("InitiateCheckout");

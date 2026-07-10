@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaArrowRight } from "react-icons/fa";
 import DemoImg from '../assets/icons/Demo.png';
 import MockupBg from '../assets/icons/Mockup dashboard 1.png'; 
 import Button from './common/Button';
@@ -46,19 +47,7 @@ const SmartDashboard = () => {
             }}
           >
             Book a Free Demo
-            <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+            <FaArrowRight className="w-4 h-4 ml-2" />
           </Button>
         </div>
 
