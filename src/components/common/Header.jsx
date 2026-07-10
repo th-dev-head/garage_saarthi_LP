@@ -36,16 +36,17 @@ const Header = () => {
 
   const handleNavClick = (e, link) => {
     e.preventDefault();
-    router.push(link.href);
+    const shouldScroll = link.href === "/pricing" || link.href === "/features";
+    router.push(link.href, { scroll: shouldScroll });
     setIsMenuOpen(false);
   };
 
   const scrollToContact = () => {
-    router.push("/contact");
+    router.push("/contact", { scroll: false });
   };
 
   const scrollToHome = () => {
-    router.push("/");
+    router.push("/", { scroll: false });
   };
 
   return (

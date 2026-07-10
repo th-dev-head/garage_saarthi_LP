@@ -79,7 +79,7 @@ const Footer = () => {
                 { label: "Contact", link: "/contact" },
               ].map((item) => (
                 <li key={item.label}>
-                  <Link href={item.link} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
+                  <Link href={item.link} scroll={item.link === "/pricing" || item.link === "/features"} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
                     {item.label}
                   </Link>
                 </li>
