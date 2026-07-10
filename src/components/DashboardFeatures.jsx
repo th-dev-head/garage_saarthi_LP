@@ -1,11 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { HiArrowRight } from "react-icons/hi";
 import JobIcon from "../assets/icons/Job.svg";
 import DashboardIcon from "../assets/icons/Gdashboard.svg";
 import FinanceIcon from "../assets/icons/Gfinance.svg";
 import PortalIcon from "../assets/icons/Portal.svg";
-import AnalyticsIcon from "../assets/icons/Analytics.svg";
 import GarageIcon from "../assets/icons/Garage.svg";
 import PaymentsIcon from "../assets/icons/Payments.svg";
 import InventoryIcon from "../assets/icons/Inventory.svg";
@@ -72,7 +71,7 @@ const features = [
 ];
 
 const DashboardFeatures = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div id="features" className="bg-white">
@@ -149,7 +148,7 @@ const DashboardFeatures = () => {
           {/* View All Features Button */}
           <div className="flex justify-center mt-12">
             <Button
-              onClick={() => navigate("/features")}
+              onClick={() => router.push("/features")}
             >
               View All Features
               <HiArrowRight className="w-5 h-5" />

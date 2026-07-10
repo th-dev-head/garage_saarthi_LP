@@ -1,10 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import Button from "../components/common/Button";
 import ErrorSvg from "../assets/icons/error.svg";
 
 const NotFound = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 text-center">
@@ -24,7 +24,7 @@ const NotFound = () => {
         <Button
           variant="hero"
           className="mx-auto flex items-center gap-2"
-          onClick={() => navigate("/")}
+          onClick={() => router.push("/")}
         >
           <svg
             className="w-5 h-5 rotate-180"

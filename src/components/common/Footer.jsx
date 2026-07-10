@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import GLogo from "../../assets/icons/Glogo.svg";
@@ -79,7 +79,7 @@ const Footer = () => {
                 { label: "Contact", link: "/contact" },
               ].map((item) => (
                 <li key={item.label}>
-                  <Link to={item.link} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
+                  <Link href={item.link} className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
                     {item.label}
                   </Link>
                 </li>
@@ -93,7 +93,7 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {["Job Cards", "GST Billing", "Inventory", "Reports", "Customer History"].map((f) => (
                 <li key={f}>
-                  <Link to="/features" className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
+                  <Link href="/features" className="text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
                     {f}
                   </Link>
                 </li>
@@ -166,10 +166,10 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-8">
-            <Link to="/privacy-policy" className="text-sm hover:text-primary transition-colors">
+            <Link href="/privacy-policy" className="text-sm hover:text-primary transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/terms-and-conditions" className="text-sm hover:text-primary transition-colors">
+            <Link href="/terms-and-conditions" className="text-sm hover:text-primary transition-colors">
               Terms of Service
             </Link>
           </div>

@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
 
 const usePageTracking = () => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (window.fbq) {
       window.fbq('track', 'PageView');
     }
-  }, [location]);
+  }, [pathname]);
 };
 
 export default usePageTracking;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import PricingPage from './pages/PricingPage';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsAndConditions from './pages/TermsAndConditions';
-import NotFound from './pages/NotFound';
+import Home from './views/Home';
+import PricingPage from './views/PricingPage';
+import PrivacyPolicy from './views/PrivacyPolicy';
+import TermsAndConditions from './views/TermsAndConditions';
+import NotFound from './views/NotFound';
 import ScrollToHash from './components/common/ScrollToHash';
-import FeaturesPage from './pages/FeaturesPage';
+import FeaturesPage from './views/FeaturesPage';
 
 import usePageTracking from './usePageTracking';
 

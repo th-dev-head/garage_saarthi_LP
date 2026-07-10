@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useRouter, usePathname } from "next/navigation";
 import Button from "./Button";
 import GLogo from "../../assets/icons/Glogo.png";
 import { trackEvent } from "../../utils/pixel";
@@ -7,8 +7,8 @@ import { trackEvent } from "../../utils/pixel";
 const Header = () => {
   const [active, setActive] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
+  const router = useRouter();
+  const pathname = usePathname();
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -19,33 +19,33 @@ const Header = () => {
   ];
 
   useEffect(() => {
-    if (location.pathname === "/pricing") {
+    if (pathname === "/pricing") {
       setActive("Pricing");
-    } else if (location.pathname === "/feature" || location.pathname === "/features") {
+    } else if (pathname === "/feature" || pathname === "/features") {
       setActive("Features");
-    } else if (location.pathname === "/download-app") {
+    } else if (pathname === "/download-app") {
       setActive("Download App");
-    } else if (location.pathname === "/contact" || location.pathname === "/book-demo") {
+    } else if (pathname === "/contact" || pathname === "/book-demo") {
       setActive("Contact");
-    } else if (location.pathname === "/" || location.pathname === "/home") {
+    } else if (pathname === "/" || pathname === "/home") {
       setActive("Home");
     } else {
       setActive("");
     }
-  }, [location.pathname]);
+  }, [pathname]);
 
   const handleNavClick = (e, link) => {
     e.preventDefault();
-    navigate(link.href);
+    router.push(link.href);
     setIsMenuOpen(false);
   };
 
   const scrollToContact = () => {
-    navigate("/contact");
+    router.push("/contact");
   };
 
   const scrollToHome = () => {
-    navigate("/");
+    router.push("/");
   };
 
   return (
