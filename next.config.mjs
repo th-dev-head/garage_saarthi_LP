@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     disableStaticImages: true,
   },
+  devIndicators: {
+    buildActivity: false,
+    appIsrStatus: false,
+  },
   webpack: (config, { webpack: nextWebpack }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|svg|webp|ttf|woff2?)$/i,
