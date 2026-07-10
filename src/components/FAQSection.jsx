@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 
 const faqs = [
   {
@@ -81,11 +81,11 @@ const FAQSection = () => {
                       isOpen ? " text-primary" : " text-gray-500"
                     }`}
                   >
-                    {isOpen ? (
-                      <FaMinus className="w-3.5 h-3.5" />
-                    ) : (
-                      <FaPlus className="w-3.5 h-3.5" />
-                    )}
+                    <FaChevronDown
+                      className={`w-4 h-4 transition-transform duration-300 ${
+                        isOpen ? "rotate-180" : "rotate-0"
+                      }`}
+                    />
                   </div>
                 </button>
                 
