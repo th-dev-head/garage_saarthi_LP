@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect, useMemo } from 'react';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';

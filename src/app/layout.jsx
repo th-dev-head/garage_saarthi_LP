@@ -92,6 +92,44 @@ export default function RootLayout({ children }) {
           fbq('init', '1485087049745586');
           fbq('track', 'PageView');`}
         </Script>
+
+        {/* JSON-LD Structured Data for Google Rich Snippets */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "GarageSaarthi",
+              applicationCategory: "BusinessApplication",
+              operatingSystem: "Web, Android, iOS",
+              description:
+                "GarageSaarthi is India's leading garage management software. Manage job cards, GST billing, inventory, staff payroll, WhatsApp notifications and customer history for auto workshops.",
+              url: "https://garagesaarthi.com",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "INR",
+                description: "7-day free trial available",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                reviewCount: "200",
+                bestRating: "5",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "GarageSaarthi",
+                url: "https://garagesaarthi.com",
+                logo: "https://garagesaarthi.com/GS.svg",
+                sameAs: [
+                  "https://www.instagram.com/garagesaarthi/",
+                ],
+              },
+            }),
+          }}
+        />
       </head>
       <body>
         <ScrollToHash />
