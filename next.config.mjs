@@ -1,13 +1,19 @@
+import { loadEnvConfig } from "@next/env";
+import webpack from "webpack";
+
+// Explicitly load env variables from .env files so Webpack's DefinePlugin has access to them
+loadEnvConfig(process.cwd());
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
     disableStaticImages: true,
   },
-  webpack: (config, { webpack }) => {
-    // 1. Map import.meta.env.VITE_* variables to process.env in Next.js
+  webpack: (config, { webpack: nextWebpack }) => {
+    // 1. Map import.meta.env.VITE_* variables to process.env in Next.js client-side bundle
     config.plugins.push(
-      new webpack.DefinePlugin({
+      new nextWebpack.DefinePlugin({
         "import.meta.env.VITE_FRONTEND_URL": JSON.stringify(
           process.env.NEXT_PUBLIC_FRONTEND_URL ||
             process.env.VITE_FRONTEND_URL ||
