@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import { FaTimes } from "react-icons/fa";
 import Button from "./Button";
 import GLogo from "../../assets/icons/Glogo.png";
 import { trackEvent } from "../../utils/pixel";
@@ -61,19 +62,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <FaTimes className="w-6 h-6" />
               ) : (
                 <div className="space-y-1.5">
                   <span className="block w-[21px] h-[2px] bg-black rounded"></span>
