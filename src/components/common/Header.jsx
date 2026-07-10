@@ -96,7 +96,7 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("InitiateCheckout");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/login`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/login`,
                     "_blank",
                   );
                 }}
@@ -151,7 +151,7 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("InitiateCheckout");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/login`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/login`,
                     "_blank",
                   );
                 }}
@@ -165,7 +165,7 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("Lead");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/signup`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/signup`,
                     "_blank",
                   );
                 }}
@@ -222,7 +222,7 @@ const Header = () => {
                 onClick={() => {
                   trackEvent("Lead");
                   window.open(
-                    `${import.meta.env.VITE_FRONTEND_URL}/signup`,
+                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/signup`,
                     "_blank",
                   );
                 }}

@@ -3,7 +3,7 @@ import GformBg from "../assets/optimized/Gform_extracted_0.png";
 import BookDemoIcon from "../assets/icons/Bookd.png";
 import Button from "./common/Button";
 
-const FORMSPREE_URL = import.meta.env.VITE_FORMSPREE_URL;
+const FORMSPREE_URL = process.env.NEXT_PUBLIC_FORMSPREE_URL;
 
 const ContactSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
