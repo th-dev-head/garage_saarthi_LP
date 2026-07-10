@@ -1,7 +1,6 @@
-import { loadEnvConfig } from "@next/env";
-import webpack from "webpack";
+import envPkg from "@next/env";
+const { loadEnvConfig } = envPkg;
 
-// Explicitly load env variables from .env files so Webpack's DefinePlugin has access to them
 loadEnvConfig(process.cwd());
 
 /** @type {import('next').NextConfig} */
@@ -11,7 +10,6 @@ const nextConfig = {
     disableStaticImages: true,
   },
   webpack: (config, { webpack: nextWebpack }) => {
-    // 1. Map import.meta.env.VITE_* variables to process.env in Next.js client-side bundle
     config.plugins.push(
       new nextWebpack.DefinePlugin({
         "import.meta.env.VITE_FRONTEND_URL": JSON.stringify(
@@ -32,7 +30,6 @@ const nextConfig = {
       })
     );
 
-    // 2. Load static assets as URL strings matching Vite's behavior
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|svg|webp|ttf|woff2?)$/i,
       type: "asset/resource",
