@@ -1,7 +1,7 @@
 import Home from "@/src/views/Home";
 
 export const metadata = {
-  title: "GarageSaarthi – #1 Garage Management Software India | Free Trial",
+  title: "GarageSaarthi – Garage Management Software India | Free Trial",
   description:
     "GarageSaarthi is India's leading garage management software. Manage job cards, GST billing, inventory, staff & customer history. Start your 7-day free trial today!",
   keywords:
@@ -10,7 +10,7 @@ export const metadata = {
     canonical: "https://garagesaarthi.com/",
   },
   openGraph: {
-    title: "GarageSaarthi – #1 Garage Management Software India",
+    title: "GarageSaarthi – Garage Management Software India",
     description:
       "Streamline your auto workshop with digital job cards, GST billing, inventory & WhatsApp alerts. Trusted by garages across India.",
     url: "https://garagesaarthi.com/",
