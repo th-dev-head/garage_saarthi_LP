@@ -74,7 +74,7 @@ const ContactSection = () => {
 
             <p className="text-white/70 text-base md:text-lg max-w-xl">
               We'll help you set up GarageSaarthi, understand all features, and
-              get your garage running smarter from day one.
+              get your garage running smarter from day one...
             </p>
           </div>
 
@@ -163,7 +163,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      
+
 
       {/* Success Modal */}
       {isModalOpen && (
