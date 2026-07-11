@@ -20,15 +20,16 @@ const Header = () => {
   ];
 
   useEffect(() => {
-    if (pathname === "/pricing") {
+    const cleanPath = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
+    if (cleanPath === "/pricing") {
       setActive("Pricing");
-    } else if (pathname === "/feature" || pathname === "/features") {
+    } else if (cleanPath === "/feature" || cleanPath === "/features") {
       setActive("Features");
-    } else if (pathname === "/download-app") {
+    } else if (cleanPath === "/download-app") {
       setActive("Download App");
-    } else if (pathname === "/contact" || pathname === "/book-demo") {
+    } else if (cleanPath === "/contact" || cleanPath === "/book-demo") {
       setActive("Contact");
-    } else if (pathname === "/" || pathname === "/home") {
+    } else if (cleanPath === "/" || cleanPath === "/home") {
       setActive("Home");
     } else {
       setActive("");
