@@ -1,14 +1,14 @@
 name: Deploy to Production VPS
- 
+
 on:
   push:
     branches:
       - main
- 
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Deploy to PROD Server
         uses: appleboy/ssh-action@v1.0.3
@@ -18,10 +18,12 @@ jobs:
           key: ${{ secrets.PROD_SSH_KEY }}
           port: 22
           script: |
+            export PATH="$HOME/.local/share/pnpm:$PATH"
             cd /var/www/garage/garage-landing
             git fetch origin
             git reset --hard origin/main
             git clean -fd
-            npm install
-            CI=true npm run build
+            pnpm install
+            CI=true pnpm build
+            pm2 restart garage-landing
             sudo systemctl reload nginx
