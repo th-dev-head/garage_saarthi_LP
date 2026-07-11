@@ -7,7 +7,7 @@ loadEnvConfig(process.cwd());
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  distDir: 'dist',
+  trailingSlash: true,
   images: {
     disableStaticImages: true,
     unoptimized: true,
