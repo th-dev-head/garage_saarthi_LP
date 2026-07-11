@@ -20,6 +20,7 @@ export default function ScrollToHash() {
     }
 
     if (id) {
+      let attempts = 0;
       const scroll = () => {
         if (id === "home") {
           window.scrollTo({ top: 0, behavior: "smooth" });
@@ -31,10 +32,13 @@ export default function ScrollToHash() {
           const top =
             element.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({ top, behavior: "smooth" });
+        } else if (attempts < 30) {
+          attempts++;
+          setTimeout(scroll, 50);
         }
       };
 
-      const timer = setTimeout(scroll, 150);
+      const timer = setTimeout(scroll, 50);
       return () => clearTimeout(timer);
     }
   }, [pathname]);
