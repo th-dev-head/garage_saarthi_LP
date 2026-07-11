@@ -7,14 +7,15 @@ export default function ScrollToHash() {
   const pathname = usePathname();
 
   useEffect(() => {
+    const cleanPath = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
     let id = "";
-    if (pathname === "/contact" || pathname === "/book-demo") {
+    if (cleanPath === "/contact" || cleanPath === "/book-demo") {
       id = "contact";
-    } else if (pathname === "/download-app") {
+    } else if (cleanPath === "/download-app") {
       id = "download-app";
-    } else if (pathname === "/feature") {
+    } else if (cleanPath === "/feature") {
       id = "features";
-    } else if (pathname === "/home" || pathname === "/") {
+    } else if (cleanPath === "/home" || cleanPath === "/") {
       id = "home";
     }
 
