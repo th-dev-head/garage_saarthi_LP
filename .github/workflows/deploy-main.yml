@@ -23,5 +23,5 @@ jobs:
             git reset --hard origin/main
             git clean -fd
             npm install
-            npm run build
+            CI=true npm run build
             sudo systemctl reload nginx
