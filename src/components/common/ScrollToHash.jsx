@@ -8,6 +8,25 @@ export default function ScrollToHash() {
 
   useEffect(() => {
     const cleanPath = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
+    const validRoutes = [
+      "/",
+      "/home",
+      "/pricing",
+      "/feature",
+      "/features",
+      "/download-app",
+      "/contact",
+      "/privacy-policy",
+      "/terms-and-conditions",
+      "/404",
+      "/_not-found"
+    ];
+
+    if (!validRoutes.includes(cleanPath)) {
+      window.location.replace("/404/");
+      return;
+    }
+
     let id = "";
     if (cleanPath === "/contact" || cleanPath === "/book-demo") {
       id = "contact";
