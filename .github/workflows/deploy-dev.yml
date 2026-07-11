@@ -17,11 +17,10 @@ jobs:
           username: ${{ secrets.DEV_USER }}
           key: ${{ secrets.DEV_SSH_KEY }}
           script: |
-            export PATH="$HOME/.local/share/pnpm:$PATH"
             cd /var/www/garage-saarthi/garage_saarthi_LP
             git fetch origin
             git reset --hard origin/development
             git clean -fd
-            pnpm install
-            CI=true pnpm build
+            npm install
+            CI=true npm run build
             sudo systemctl reload nginx
