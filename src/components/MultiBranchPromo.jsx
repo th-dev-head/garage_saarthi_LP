@@ -8,7 +8,7 @@ export default function MultiBranchPromo() {
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
+            <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
               Manage Multiple Garage Branches with Centralized Control
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">

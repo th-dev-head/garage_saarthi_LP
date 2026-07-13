@@ -21,7 +21,7 @@ export default function CustomerRetentionPromo() {
             </div>
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
+            <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
               Stay Connected with Customers Through Service Alerts
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8">

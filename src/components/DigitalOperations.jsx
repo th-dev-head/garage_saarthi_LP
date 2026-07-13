@@ -15,7 +15,7 @@ export default function DigitalOperations() {
     <section className="py-20 px-4 bg-white border-b border-slate-200/80">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Replace Manual Garage Work with a Digital Management System
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">

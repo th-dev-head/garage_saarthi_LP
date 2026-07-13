@@ -14,7 +14,7 @@ export default function StaffManagementPromo() {
     <section className="py-20 px-4 bg-slate-50 border-b border-slate-200/80">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Manage Your Garage Team, Attendance and Payroll
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">

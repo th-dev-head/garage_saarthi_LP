@@ -8,7 +8,7 @@ export default function FinalCTA() {
   return (
     <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white py-20 px-4 text-center">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
+        <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-6 text-white">
           Ready to Manage Your Garage with GarageSaarthi?
         </h2>
         <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">

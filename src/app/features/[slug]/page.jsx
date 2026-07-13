@@ -84,7 +84,7 @@ export default function FeaturePage({ params }) {
               </a>
               <Link
                 href="/pricing"
-                className="rounded-full bg-transparent text-white border border-white hover:bg-white/10 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2"
+                className="rounded-full bg-transparent text-white border border-white hover:bg-white/10 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
               >
                 View Pricing Plans
               </Link>
