@@ -13,7 +13,7 @@ export const metadata = {
   keywords:
     "garage management, auto workshop software, car service management, GarageSaarthi, vehicle repair software, garage billing, service center management",
   authors: [{ name: "GarageSaarthi" }],
-  robots: "index, follow",
+  robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   alternates: {
     canonical: "https://garagesaarthi.com/",
   },
