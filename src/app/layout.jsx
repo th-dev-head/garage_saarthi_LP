@@ -17,6 +17,9 @@ export const metadata = {
   alternates: {
     canonical: "https://garagesaarthi.com/",
   },
+  verification: {
+    google: "jIZJKHDfWrzNp11N6RbFEM5wTDMr6QHZk6nyO7BG0X8",
+  },
   openGraph: {
     type: "website",
     url: "https://garagesaarthi.com/",
