@@ -102,34 +102,58 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "GarageSaarthi",
-              applicationCategory: "BusinessApplication",
-              operatingSystem: "Web, Android, iOS",
-              description:
-                "GarageSaarthi is India's leading garage management software. Manage job cards, GST billing, inventory, staff payroll, WhatsApp notifications and customer history for auto workshops.",
-              url: "https://garagesaarthi.com",
-              offers: {
-                "@type": "Offer",
-                price: "0",
-                priceCurrency: "INR",
-                description: "7-day free trial available",
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.8",
-                reviewCount: "200",
-                bestRating: "5",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "GarageSaarthi",
-                url: "https://garagesaarthi.com",
-                logo: "https://garagesaarthi.com/GS.svg",
-                sameAs: [
-                  "https://www.instagram.com/garagesaarthi/",
-                ],
-              },
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.garagesaarthi.com/#organization",
+                  "name": "GarageSaarthi",
+                  "url": "https://www.garagesaarthi.com/",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.garagesaarthi.com/GS.svg"
+                  },
+                  "sameAs": [
+                    "https://www.instagram.com/garagesaarthi/"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.garagesaarthi.com/#website",
+                  "name": "GarageSaarthi",
+                  "url": "https://www.garagesaarthi.com/",
+                  "publisher": {
+                    "@id": "https://www.garagesaarthi.com/#organization"
+                  }
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "@id": "https://www.garagesaarthi.com/#software",
+                  "name": "GarageSaarthi",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web, Android",
+                  "description": "Manage job cards, billing, inventory, customers, vehicles, staff and finances with GarageSaarthi garage management software.",
+                  "url": "https://www.garagesaarthi.com/",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "INR",
+                    "description": "7-day free trial available"
+                  }
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.garagesaarthi.com/#webpage",
+                  "url": "https://www.garagesaarthi.com/",
+                  "name": "Garage Management Software in India | GarageSaarthi",
+                  "description": "Manage job cards, billing, inventory, customers, vehicles, staff and finances with GarageSaarthi garage management software. Start your 7-day free trial.",
+                  "isPartOf": {
+                    "@id": "https://www.garagesaarthi.com/#website"
+                  },
+                  "about": {
+                    "@id": "https://www.garagesaarthi.com/#software"
+                  }
+                }
+              ]
             }),
           }}
         />

@@ -47,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="px-4 lg:px-15 2xl:px-50 pb-10 lg:pb-20 flex justify-center">
+    <section id="contact" className="px-4 lg:px-15 2xl:px-50 pt-10 lg:pt-20 pb-10 lg:pb-20 flex justify-center">
       <div
         className="relative w-full mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full min-h-[420px] rounded-[28px] overflow-hidden flex items-center"
         style={{

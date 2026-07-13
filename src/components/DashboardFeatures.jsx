@@ -13,61 +13,69 @@ import Button from "./common/Button";
 
 const features = [
   {
-    title: "Job Management",
-    description: "Track repairs from start to finish with digital job cards",
+    title: "Digital Job Cards",
+    description: "Create, manage, and track professional repair orders digitally in under a minute.",
     icon: JobIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
+    link: "/features/job-cards"
   },
   {
     title: "Real-time Dashboard",
-    description: "Monitor operations with live analytics and insights",
+    description: "Monitor operations with live analytics, revenues, and active mechanics.",
     icon: DashboardIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
+    link: "/features/dashboard"
   },
   {
-    title: "Finance & Counter Sales",
-    description: "Manage billing, payments, counter sales, and invoices in one place",
+    title: "Counter Sales",
+    description: "Sell spare parts and items directly to walk-in clients without a job card.",
     icon: PaymentsIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
+    link: "/features/counter-sales"
   },
   {
-    title: "Multi-Branch System",
-    description: "Manage inventory, staff, and analytics across multiple branches",
-    icon: GarageIcon,
-    bgColor: "bg-orange-50",
-    iconColor: "#D13F26",
-  },
-  {
-    title: "Inventory & CRM",
-    description: "Track parts stock levels, manage low-stock and upcoming service alerts",
+    title: "Inventory Management",
+    description: "Track spare parts, stock levels, set low-stock alerts, and manage purchases.",
     icon: InventoryIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
+    link: "/features/inventory"
   },
   {
-    title: "Staff & Payroll",
-    description: "Track staff attendance, calculate commissions, and generate wage slips",
-    icon: PortalIcon,
-    bgColor: "bg-orange-50",
-    iconColor: "#D13F26",
-  },
-  {
-    title: "WhatsApp Notifications",
-    description: "Auto-send bookings, service alerts, and invoice links directly to customer WhatsApp",
+    title: "Garage CRM",
+    description: "Manage customer records, inquiries, bookings, and marketing campaigns.",
     icon: WhatsAppIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
+    link: "/features/crm"
   },
   {
-    title: "Estimates",
-    description: "Send professional estimates in seconds. Get approvals faster and get to work sooner.",
+    title: "Staff & Payroll",
+    description: "Track check-in, check-out times, leaves, and calculate salaries automatically.",
+    icon: PortalIcon,
+    bgColor: "bg-orange-50",
+    iconColor: "#D13F26",
+    link: "/features/attendance"
+  },
+  {
+    title: "Service Alerts",
+    description: "Send service reminders and booking updates directly to customer WhatsApp.",
+    icon: WhatsAppIcon,
+    bgColor: "bg-orange-50",
+    iconColor: "#D13F26",
+    link: "/features/service-alerts"
+  },
+  {
+    title: "Reports & Analytics",
+    description: "Export GST billing, sales logs, and mechanic productivity metrics in Excel.",
     icon: FinanceIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-  },
+    link: "/features/reports"
+  }
 ];
 
 const DashboardFeatures = () => {
@@ -80,32 +88,24 @@ const DashboardFeatures = () => {
         <div className="max-w-7xl w-full">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
-              Your Entire Workshop. <br />
-              One Powerf
+              Manage Your Entire Garage <br />
               <span className="relative">
-                ul Dashboard.
-                <span className="absolute bottom-0 left-0 w-full rounded-full hidden md:block  h-1 bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)] "></span>
+                from One Platform.
+                <span className="absolute bottom-0 left-0 w-full rounded-full hidden md:block h-1 bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)] "></span>
               </span>
             </h2>
-            <p className="text-sm md:text-base mb-6">
-              GarageSaarthi by Techifyhouse is a cloud-based platform for
-              automobile workshops to manage jobs, billing, inventory,
-              customers, and staff - all in one place.
+            <p className="text-sm md:text-base mb-6 text-slate-600">
+              GarageSaarthi is a cloud-based platform for automotive workshops to manage job cards, GST billing, inventory, CRM, staff, and service alerts - all in one place.
             </p>
             <div className="flex justify-center">
               <Button
                 variant="hero"
                 className="cursor-pointer"
                 onClick={() => {
-                  const showcaseSection = document.getElementById('showcase');
-                  if (showcaseSection) {
-                    const offset = 100;
-                    const top = showcaseSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                  }
+                  router.push("/features");
                 }}
               >
-                Explore Now
+                Explore Features
                 <HiArrowRight className="w-5 h-5" />
               </Button>
             </div>
@@ -120,27 +120,33 @@ const DashboardFeatures = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="relative p-4 border border-[#EEE] bg-white transition-all duration-300 hover:shadow-sm hover:-translate-y-1 cursor-pointer rounded-lg"
+                onClick={() => router.push(feature.link)}
+                className="relative p-6 border border-slate-100 bg-white transition-all duration-300 hover:shadow-md hover:border-orange-200 hover:-translate-y-1 cursor-pointer rounded-lg flex flex-col justify-between"
               >
-                {/* Icon */}
-                <div className="w-12 h-12 flex items-center justify-center mb-6">
-                  <img
-                    src={feature.icon}
-                    alt={feature.title}
-                    className="w-9 h-9"
-                  />
+                <div>
+                  {/* Icon */}
+                  <div className="w-12 h-12 flex items-center justify-center mb-6">
+                    <img
+                      src={feature.icon}
+                      alt={feature.title}
+                      className="w-9 h-9"
+                    />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-lg font-bold text-slate-950 mb-2 leading-snug">
+                    {feature.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {feature.description}
+                  </p>
                 </div>
-
-                {/* Title */}
-                <h3 className="text-lg font-semibold mb-2">
-                  {feature.title.split(" ").slice(0, -1).join(" ")} <br />
-                  {feature.title.split(" ").slice(-1)}
-                </h3>
-
-                {/* Description */}
-                <p className="text-sm leading-relaxed">
-                  {feature.description}
-                </p>
+                
+                <span className="text-orange-600 text-xs font-bold mt-4 inline-flex items-center gap-1">
+                  Explore Feature <HiArrowRight className="w-3.5 h-3.5" />
+                </span>
               </div>
             ))}
           </div>

@@ -34,26 +34,26 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 min-h-[300px] md:min-h-[400px] lg:min-h-[500px] xl:min-h-[600px] flex flex-col items-center justify-center px-4 pt-35 md:pt-40 lg:pt-40 xl:pt-48 pb-32 md:pb-40 lg:pb-48 xl:pb-56 text-center">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-white font-semibold leading-tight mb-6">
-            <span className="text-2xl md:text-[33px]">Your Digital Partner in</span> <br />
-            <span className="text-white md:text-[47px]">Garage & Workshop Management Software</span>
+          <h1 className="text-white font-extrabold leading-tight mb-6">
+            <span className="text-3xl md:text-5xl">Garage Management Software</span> <br className="hidden md:inline" />
+            <span className="text-white text-2xl md:text-4xl font-semibold">for Modern Workshops in India</span>
           </h1>
 
-          <p className="text-white/80 text-base md:text-md max-w-3xl mx-auto mb-10">
-           Simplify Job Cards, Billing, Inventory, Customer Management & Team Tracking with One Powerful Platform.
+          <p className="text-white/80 text-base md:text-lg max-w-3xl mx-auto mb-10">
+            All-in-one garage management platform to simplify digital job cards, billing, counter sales, inventory, CRM, staff, and service alerts.
           </p>
 
           <div className="flex flex-col min-[430px]:flex-row  justify-center gap-4 w-fit mx-auto">
 
             <Button 
               variant="hero" 
-              className=" !px-8 !py-2 text-lg min-[350px]:text-lg pulse-border-effect"
+              className=" !px-8 !py-3 text-lg min-[350px]:text-lg pulse-border-effect"
               onClick={() => {
                 trackEvent('Lead');
                 window.open('https://platform.garagesaarthi.com/signup', '_blank');
               }}
             >
-              Get Started
+              Start 7-Day Free Trial
               <FaArrowRight className="w-4 h-4 ml-2" />
             </Button>
 
@@ -97,7 +97,7 @@ const Hero = () => {
         <div className="">
           <img
             src={DashboardImg}
-            alt="Garage Dashboard"
+            alt="GarageSaarthi garage management software dashboard"
             className="w-full h-auto object-cover"
           />
         </div>

@@ -53,9 +53,9 @@ const ReviewSection = () => {
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
-            Loved By{" "}
-            <span className="relative inline-block">
-              Workshop Owners
+            Garages Using GarageSaarthi <br />
+            <span className="relative inline-block mt-2">
+              to Manage Daily Operations
               <span className="absolute -bottom-1 left-0 w-full h-1.5 rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span>
             </span>
           </h2>
