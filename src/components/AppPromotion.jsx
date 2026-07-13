@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 import MockupBg from '../assets/icons/Mockup dashboard 1.png';
 import AppHand from '../assets/icons/Appdl.png';
 import PlayStoreIcon from '../assets/icons/Playstore.png';
@@ -68,6 +69,7 @@ const AppPromotion = () => {
               }}
             >
               Start Free Trial
+              <FaArrowRight className="w-4 h-4 ml-2" />
             </Button>
 
             {/* Play Store Button */}

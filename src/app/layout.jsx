@@ -51,9 +51,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
-        {/* Favicon */}
+        {/* Favicon - PNG required for Google Search to display favicon */}
+        <link rel="icon" type="image/png" href="/garagesarthi.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/GS.png" sizes="192x192" />
         <link rel="icon" type="image/svg+xml" href="/GS.svg" />
-        <link rel="apple-touch-icon" href="/GS.svg" />
+        <link rel="shortcut icon" href="/garagesarthi.png" />
+        <link rel="apple-touch-icon" href="/GS.png" />
 
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
