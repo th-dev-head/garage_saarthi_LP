@@ -4,8 +4,8 @@ import { FaBuilding, FaExchangeAlt, FaChartLine, FaArrowRight } from "react-icon
 
 export default function MultiBranchPromo() {
   return (
-    <section className="py-20 px-4 bg-slate-50 border-b border-slate-200/80">
-      <div className="max-w-5xl mx-auto">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">

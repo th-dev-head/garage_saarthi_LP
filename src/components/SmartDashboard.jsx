@@ -20,13 +20,8 @@ const SmartDashboard = () => {
     >
       <div className="max-w-7xl mx-auto text-center">
         
-        <h2 className="text-xl md:text-3xl font-extrabold text-slate-900 mb-4">
-          See What’s Happening in Your Garage from <br />
-          One{' '}
-          <span className="relative inline-block">
-            Smart Dashboard
-            <span className="absolute -bottom-1 left-0 w-full h-1 rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span>
-          </span>
+        <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
+          See What’s Happening in Your Garage from <span className="relative inline-block">One Smart Dashboard.<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
         </h2>
 
         <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto mb-8">

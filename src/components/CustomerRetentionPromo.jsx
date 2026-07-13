@@ -4,8 +4,8 @@ import { FaWhatsapp, FaBell, FaHistory, FaArrowRight } from "react-icons/fa";
 
 export default function CustomerRetentionPromo() {
   return (
-    <section className="py-20 px-4 bg-white border-b border-slate-200/80">
-      <div className="max-w-5xl mx-auto">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 bg-gradient-to-tr from-slate-900 via-slate-800 to-orange-950 rounded-2xl p-8 text-white border border-slate-700/50 shadow-lg relative overflow-hidden group">
             <div className="absolute -top-10 -right-10 w-48 h-48 bg-orange-500/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>

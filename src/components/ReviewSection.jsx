@@ -1,5 +1,6 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const reviews = [
   {
@@ -53,11 +54,7 @@ const ReviewSection = () => {
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
-            Garages Using GarageSaarthi <br />
-            <span className="relative inline-block mt-2">
-              to Manage Daily Operations
-              <span className="absolute -bottom-1 left-0 w-full h-1.5 rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span>
-            </span>
+            Garages Using GarageSaarthi <span className="relative inline-block">to Manage Daily Operations.<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
           </h2>
           <p className="text-[#575757] text-sm md:text-base mt-6">
             Hear from workshop and garage owners across India who are growing their businesses and simplifying operations with GarageSaarthi.
@@ -103,6 +100,17 @@ const ReviewSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View Customer Stories CTA */}
+        <div className="flex justify-center mt-12">
+          <Link
+            href="/customers"
+            className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors cursor-pointer"
+          >
+            View Customer Stories
+            <FaArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

@@ -6,8 +6,8 @@ export default function ProductDefinition() {
   const router = useRouter();
 
   return (
-    <section className="py-20 px-4 bg-slate-50 border-b border-slate-200/80">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full text-center">
         <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
           All-in-One Garage Management Software for Your Workshop
         </h2>

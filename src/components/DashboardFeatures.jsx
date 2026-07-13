@@ -88,11 +88,7 @@ const DashboardFeatures = () => {
         <div className="max-w-7xl w-full">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
-              Manage Your Entire Garage <br />
-              <span className="relative">
-                from One Platform.
-                <span className="absolute bottom-0 left-0 w-full rounded-full hidden md:block h-1 bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)] "></span>
-              </span>
+              Manage Your Entire Garage <span className="relative inline-block">from One Platform.<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
             </h2>
             <p className="text-sm md:text-base mb-6 text-slate-600">
               GarageSaarthi is a cloud-based platform for automotive workshops to manage job cards, GST billing, inventory, CRM, staff, and service alerts - all in one place.
@@ -121,7 +117,7 @@ const DashboardFeatures = () => {
               <div
                 key={index}
                 onClick={() => router.push(feature.link)}
-                className="relative p-6 border border-slate-100 bg-white transition-all duration-300 hover:shadow-md hover:border-orange-200 hover:-translate-y-1 cursor-pointer rounded-lg flex flex-col justify-between"
+                className="relative p-6 border border-slate-100 bg-white transition-all duration-300 hover:shadow-md hover:border-primary/30 hover:-translate-y-1 cursor-pointer rounded-lg flex flex-col justify-between"
               >
                 <div>
                   {/* Icon */}
@@ -144,7 +140,7 @@ const DashboardFeatures = () => {
                   </p>
                 </div>
                 
-                <span className="text-orange-600 text-xs font-bold mt-4 inline-flex items-center gap-1">
+                <span className="text-primary text-xs font-bold mt-4 inline-flex items-center gap-1">
                   Explore Feature <HiArrowRight className="w-3.5 h-3.5" />
                 </span>
               </div>

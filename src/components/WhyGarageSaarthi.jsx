@@ -12,11 +12,11 @@ export default function WhyGarageSaarthi() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-slate-50 border-b border-slate-200/80">
-      <div className="max-w-5xl mx-auto">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
-            Why Garage Owners Choose GarageSaarthi
+            Why Garage Owners <span className="relative inline-block">Choose GarageSaarthi.<span className="absolute -bottom-1 left-0 w-full h-1 rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
             Discover why workshops across India trust us to run their daily garage operations.

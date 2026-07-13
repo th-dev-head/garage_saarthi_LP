@@ -94,7 +94,7 @@ export default function SolutionPage({ params }) {
         <section className="py-16 px-4 max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-extrabold text-slate-950 tracking-tight mb-6">
+              <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
                 Tailored Features for Your Business
               </h2>
               <p className="text-slate-600 mb-8 leading-relaxed">
@@ -103,7 +103,7 @@ export default function SolutionPage({ params }) {
               <ul className="space-y-4">
                 {data.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
-                    <FaCheckCircle className="text-orange-500 w-5 h-5 mt-1 mr-3 flex-shrink-0" />
+                    <FaCheckCircle className="text-primary w-5 h-5 mt-1 mr-3 flex-shrink-0" />
                     <span className="text-slate-800 font-medium">{feature}</span>
                   </li>
                 ))}
@@ -121,7 +121,7 @@ export default function SolutionPage({ params }) {
                 <span className="text-xs font-semibold text-orange-950/60">
                   Ready to deploy
                 </span>
-                <span className="text-xs font-bold text-orange-600 bg-white px-3 py-1 rounded-full border border-orange-200 shadow-sm">
+                <span className="text-xs font-bold text-primary bg-white px-3 py-1 rounded-full border border-primary/20 shadow-sm">
                   Active
                 </span>
               </div>
@@ -133,7 +133,7 @@ export default function SolutionPage({ params }) {
         <section className="bg-white border-y border-slate-200/80 py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <FaQuestionCircle className="text-orange-500 w-10 h-10 mx-auto mb-4" />
+              <FaQuestionCircle className="text-primary w-10 h-10 mx-auto mb-4" />
               <h2 className="text-3xl font-extrabold text-slate-950 tracking-tight">
                 Frequently Asked Questions
               </h2>

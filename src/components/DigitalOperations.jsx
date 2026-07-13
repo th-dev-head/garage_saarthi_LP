@@ -3,56 +3,88 @@ import { FaTimes, FaCheck } from "react-icons/fa";
 
 export default function DigitalOperations() {
   const comparisons = [
-    { label: "Job Card Management", manual: "Messy paper job cards & manual checklists", digital: "Professional digital job cards with photos" },
-    { label: "Customer Inquiries", manual: "Scattered records & forgotten details", digital: "Centralized database & clean service history" },
-    { label: "Inventory & Stock", manual: "Separate spreadsheets & surprise stockouts", digital: "Automated stock logs & low-stock reminders" },
-    { label: "Employee Operations", manual: "Manual attendance registers & salary sheets", digital: "One-click attendance logs & auto-payroll calculation" },
-    { label: "Customer Loyalty", manual: "Missed follow-ups & lost opportunities", digital: "Next-service due alerts & custom updates" },
-    { label: "Financial Records", manual: "Scattered bills, paper notes, and tax issues", digital: "GST billing, logs, and CA report downloads" }
+    {
+      label: "Job Card Management",
+      manual: "Paper job cards, handwritten checklists, and manual entries that easily get lost or soiled.",
+      digital: "Professional digital job cards with customer details, photos of vehicle issues, and automatic WhatsApp sharing."
+    },
+    {
+      label: "Customer Inquiries",
+      manual: "Scattered paper records, forgotten phone updates, and zero history when a vehicle returns for repairs.",
+      digital: "Centralized database with complete service history, past mechanic logs, and instant customer lookup."
+    },
+    {
+      label: "Inventory & Stock",
+      manual: "Manual tracking in spreadsheets, surprise stockouts of critical parts, and leakage from untracked items.",
+      digital: "Automated stock reduction on billing, low-stock alerts, and purchase order logs."
+    },
+    {
+      label: "Staff & Attendance",
+      manual: "Paper attendance registers, manual wage calculations, and confusion over mechanic task assignments.",
+      digital: "One-click staff check-in, real-time mechanic task logs, and automatic payroll calculation."
+    },
+    {
+      label: "Customer Retention",
+      manual: "Missed follow-ups, lost repeat business, and manually typing WhatsApp reminders one by one.",
+      digital: "Automated service reminders, vehicle due alerts, and direct templates sent via WhatsApp."
+    },
+    {
+      label: "Financial Tracking",
+      manual: "Scattered bill books, separate cash/online registers, and stress during monthly tax filing.",
+      digital: "Professional GST invoicing, live sales graphs, and instant CA-ready audit report downloads."
+    }
   ];
 
   return (
-    <section className="py-20 px-4 bg-white border-b border-slate-200/80">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
+        {/* Title Block */}
+        <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Replace Manual Garage Work with a Digital Management System
           </h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
-            See how migrating to a digital garage management system transforms your workshop's daily routines.
+          <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+            See how migrating to a digital garage management system transforms your workshop's daily routines and boosts profitability.
           </p>
         </div>
 
-        {/* Comparison Layout */}
-        <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
-          <table className="w-full text-left border-collapse bg-white">
-            <thead>
-              <tr className="bg-slate-900 text-white text-sm uppercase tracking-wider">
-                <th className="py-4 px-6 font-bold">Process</th>
-                <th className="py-4 px-6 font-bold bg-red-950/20 text-red-500">Manual Process</th>
-                <th className="py-4 px-6 font-bold bg-green-950/20 text-green-500">With GarageSaarthi</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100 text-slate-700">
-              {comparisons.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-50 transition-colors">
-                  <td className="py-4 px-6 font-semibold text-slate-900">{row.label}</td>
-                  <td className="py-4 px-6 bg-red-50/30 text-slate-600">
-                    <span className="inline-flex items-center gap-2">
-                      <FaTimes className="text-red-500 flex-shrink-0" />
-                      {row.manual}
-                    </span>
-                  </td>
-                  <td className="py-4 px-6 bg-green-50/30 text-slate-900 font-medium">
-                    <span className="inline-flex items-center gap-2">
-                      <FaCheck className="text-green-600 flex-shrink-0" />
-                      {row.digital}
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        {/* Clean Comparison Grid Container */}
+        <div className="border border-slate-100 rounded-2xl overflow-hidden shadow-sm bg-white">
+          {/* Header Row */}
+          <div className="hidden md:grid grid-cols-12 gap-4 bg-slate-50/80 px-6 py-4 border-b border-slate-100 text-xs font-bold uppercase tracking-wider text-slate-500">
+            <div className="col-span-3">Operational Area</div>
+            <div className="col-span-4 text-slate-700">The Manual Way</div>
+            <div className="col-span-5 text-slate-900">The GarageSaarthi Way</div>
+          </div>
+
+          {/* Rows */}
+          <div className="divide-y divide-slate-100">
+            {comparisons.map((row, idx) => (
+              <div
+                key={idx}
+                className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start p-6 hover:bg-slate-50/40 transition-colors duration-200"
+              >
+                {/* Operational Area Title */}
+                <div className="col-span-1 md:col-span-3 flex items-center md:pt-1">
+                  <span className="text-sm font-bold text-slate-900 border-l-2 border-primary/40 pl-3">
+                    {row.label}
+                  </span>
+                </div>
+
+                {/* Manual Pain Points Description */}
+                <div className="col-span-1 md:col-span-4 flex items-start gap-2.5 text-slate-500 text-sm leading-relaxed">
+                  <FaTimes className="text-rose-500 w-3.5 h-3.5 mt-1 flex-shrink-0" />
+                  <span>{row.manual}</span>
+                </div>
+
+                {/* Digital Solutions Description */}
+                <div className="col-span-1 md:col-span-5 flex items-start gap-2.5 text-slate-900 font-medium text-sm leading-relaxed">
+                  <FaCheck className="text-primary w-3.5 h-3.5 mt-1 flex-shrink-0" />
+                  <span>{row.digital}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

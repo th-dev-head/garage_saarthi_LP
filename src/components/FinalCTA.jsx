@@ -6,8 +6,8 @@ export default function FinalCTA() {
   const router = useRouter();
 
   return (
-    <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white py-20 px-4 text-center">
-      <div className="max-w-4xl mx-auto">
+    <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white py-20 px-4 lg:px-15 2xl:px-50 text-center flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-6 text-white">
           Ready to Manage Your Garage with GarageSaarthi?
         </h2>

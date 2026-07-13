@@ -57,7 +57,7 @@ const FAQSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
-            Frequently Asked Questions
+            Frequently Asked Questions About <span className="relative inline-block">Garage Management Software.<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
           </h2>
           <p className="text-sm md:text-base max-w-2xl mx-auto">
             Everything you need to know about GarageSaarthi and how it can transform your workshop.
