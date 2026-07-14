@@ -29,6 +29,7 @@ const Header = () => {
     { name: "Workshop Management", href: "/workshop-management-software" },
     { name: "Automobile Workshop", href: "/automobile-workshop-software" },
     { name: "Auto Repair Shop", href: "/auto-repair-shop-software" },
+    { name: "Garage Management App", href: "/garage-management-app" },
   ];
 
   useEffect(() => {
@@ -45,7 +46,8 @@ const Header = () => {
       cleanPath.startsWith("/solutions/") ||
       cleanPath === "/workshop-management-software" ||
       cleanPath === "/automobile-workshop-software" ||
-      cleanPath === "/auto-repair-shop-software"
+      cleanPath === "/auto-repair-shop-software" ||
+      cleanPath === "/garage-management-app"
     ) {
       setActive("Solutions");
     } else if (cleanPath === "/" || cleanPath === "/home") {
