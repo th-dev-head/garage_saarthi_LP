@@ -1,4 +1,5 @@
-"use client";import { FRONTEND_URL } from "@/src/config/env";
+"use client";
+import { FRONTEND_URL } from "@/src/config/env";
 
 
 import React, { useState, useEffect } from "react";
@@ -174,7 +175,7 @@ const Header = () => {
 
                       {isActive && (
                         <span
-                          className="absolute left-0 right-0 -bottom-1 h-[5px] w-7 mx-auto rounded-full"
+                          className="absolute left-0 -right-0 -bottom-1 h-[5px] w-7 mx-auto rounded-full"
                           style={{
                             background:
                               "linear-gradient(90deg, #B02E0C 0%, #FF643C 100%)",
@@ -197,7 +198,7 @@ const Header = () => {
 
                     {isActive && (
                       <span
-                        className="absolute left-0 right-0 -bottom-1 h-[5px] w-7 rounded-full"
+                        className="absolute left-0 -right-0 -bottom-1 h-[5px] w-7 mx-auto rounded-full"
                         style={{
                           background:
                             "linear-gradient(90deg, #B02E0C 0%, #FF643C 100%)",
@@ -243,11 +244,10 @@ const Header = () => {
 
         {/* Mobile Menu Overlay - Positioned Below */}
         <div
-          className={`absolute left-0 right-0 mt-3 lg:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen
+          className={`absolute left-0 right-0 mt-3 lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen
               ? "opacity-100 translate-y-0 visible"
               : "opacity-0 -translate-y-4 invisible"
-          }`}
+            }`}
         >
           <div className="bg-white/95 backdrop-blur-md rounded-[28px] shadow-2xl border border-gray-100 p-3 flex flex-col gap-1">
             {navLinks.map((link) => {
@@ -257,9 +257,8 @@ const Header = () => {
                   <div key={link.name} className="flex flex-col">
                     <button
                       onClick={() => setIsSolutionsOpenMobile(!isSolutionsOpenMobile)}
-                      className={`px-6 py-3 rounded-2xl text-base font-semibold text-left transition-all duration-200 flex items-center justify-between ${
-                        isActive ? "bg-[#F5EAE7] text-[#B02E0C]" : "text-gray-700"
-                      }`}
+                      className={`px-6 py-3 rounded-2xl text-base font-semibold text-left transition-all duration-200 flex items-center justify-between ${isActive ? "bg-[#F5EAE7] text-[#B02E0C]" : "text-gray-700"
+                        }`}
                     >
                       <span>{link.name}</span>
                       <FaChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isSolutionsOpenMobile ? "rotate-180" : ""}`} />
@@ -286,11 +285,10 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link)}
-                  className={`px-6 py-3 rounded-2xl text-base font-semibold transition-all duration-200 ${
-                    isActive
+                  className={`px-6 py-3 rounded-2xl text-base font-semibold transition-all duration-200 ${isActive
                       ? "bg-[#F5EAE7] text-[#B02E0C]"
                       : "text-gray-700 hover:bg-gray-50 active:scale-[0.98]"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>

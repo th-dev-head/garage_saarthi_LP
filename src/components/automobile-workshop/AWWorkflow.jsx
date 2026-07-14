@@ -6,13 +6,13 @@ import {
 } from "react-icons/fa";
 
 const steps = [
-  { icon: <FaUserAlt />, label: "Customer & Vehicle" },
-  { icon: <FaFileAlt />, label: "Estimate" },
-  { icon: <FaTools />, label: "Job Card" },
-  { icon: <FaWrench />, label: "Repair Progress" },
-  { icon: <FaFileInvoiceDollar />, label: "Invoice" },
-  { icon: <FaCreditCard />, label: "Payment" },
-  { icon: <FaBell />, label: "Service Follow-up" },
+  { icon: <FaUserAlt />, label: "Customer & Vehicle", href: "/features/job-cards" },
+  { icon: <FaFileAlt />, label: "Estimate", href: "/features/estimates" },
+  { icon: <FaTools />, label: "Job Card", href: "/features/job-cards" },
+  { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-cards" },
+  { icon: <FaFileInvoiceDollar />, label: "Invoice", href: "/features/billing" },
+  { icon: <FaCreditCard />, label: "Payment", href: "/features/payments" },
+  { icon: <FaBell />, label: "Service Follow-up", href: "/features/service-reminders" },
 ];
 
 const featureCards = [
@@ -64,10 +64,13 @@ export default function AWWorkflow() {
         <div className="flex flex-wrap items-center justify-center gap-4 mb-16 bg-slate-50 border border-slate-200/80 p-6 rounded-2xl">
           {steps.map((item, idx) => (
             <React.Fragment key={idx}>
-              <div className="flex flex-col items-center gap-2 px-4 py-2 bg-white border border-slate-200/80 rounded-xl shadow-sm text-center min-w-[120px]">
+              <Link
+                href={item.href}
+                className="flex flex-col items-center gap-2 px-4 py-2 bg-white border border-slate-200/80 rounded-xl shadow-sm text-center min-w-[120px] hover:border-primary/40 hover:shadow-md transition-all duration-200 cursor-pointer"
+              >
                 <div className="text-primary text-base">{item.icon}</div>
                 <span className="text-[11px] font-bold text-slate-800">{item.label}</span>
-              </div>
+              </Link>
               {idx < steps.length - 1 && (
                 <FaChevronRight className="text-slate-400 w-3.5 h-3.5 hidden md:block" />
               )}

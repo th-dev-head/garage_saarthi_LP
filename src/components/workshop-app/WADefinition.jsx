@@ -6,7 +6,7 @@ export default function WADefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -29,28 +29,58 @@ export default function WADefinition() {
           {/* Traditional Way */}
           <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl">
             <h3 className="text-lg font-bold text-red-700 mb-6 flex items-center gap-2">
-              <FaTimesCircle /> Traditional Paper Registers
+              <FaTimesCircle className="text-red-600 flex-shrink-0" /> Traditional Paper Registers
             </h3>
             <ul className="space-y-4 text-sm text-slate-600">
-              <li>• Paper job cards are easily soiled, torn, or misplaced.</li>
-              <li>• Mechanics can find handwritten complaints hard to read.</li>
-              <li>• Physical inventory counts require manual stock calculations.</li>
-              <li>• Lost attendance cards make payroll verification difficult.</li>
-              <li>• No easy logs for scheduling future customer reminders.</li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Paper job cards are easily soiled, torn, or misplaced.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Mechanics can find handwritten complaints hard to read.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Physical inventory counts require manual stock calculations.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Lost attendance cards make payroll verification difficult.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>No easy logs for scheduling future customer reminders.</span>
+              </li>
             </ul>
           </div>
 
           {/* Saarthi Way */}
           <div className="bg-[#EFE9E7]/40 border border-primary/20 p-8 rounded-2xl">
             <h3 className="text-lg font-bold text-primary mb-6 flex items-center gap-2">
-              <FaCheckCircle /> Digital Workshop Management App
+              <FaCheckCircle className="text-primary flex-shrink-0" /> Digital Workshop Management App
             </h3>
             <ul className="space-y-4 text-sm text-slate-700 font-medium">
-              <li>✔ Access and update job cards anywhere from any mobile device.</li>
-              <li>✔ Clear diagnostics, parts consumption, and technician details.</li>
-              <li>✔ Real-time stock counts and counter sales calculations.</li>
-              <li>✔ Integrated clock-in lists and mechanic commissions log.</li>
-              <li>✔ WhatsApp reminder notifications sent in one click.</li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Access and update job cards anywhere from any mobile device.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Clear diagnostics, parts consumption, and technician details.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Real-time stock counts and counter sales calculations.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Integrated clock-in lists and mechanic commissions log.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>WhatsApp reminder notifications sent in one click.</span>
+              </li>
             </ul>
           </div>
         </div>

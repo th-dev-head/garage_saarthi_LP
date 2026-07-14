@@ -6,7 +6,7 @@ export default function GADefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -29,28 +29,58 @@ export default function GADefinition() {
           {/* Hard Way */}
           <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl">
             <h3 className="text-lg font-bold text-red-700 mb-6 flex items-center gap-2">
-              <FaTimesCircle /> The Traditional Messy Way
+              <FaTimesCircle className="text-red-600 flex-shrink-0" /> The Traditional Messy Way
             </h3>
             <ul className="space-y-4 text-sm text-slate-600">
-              <li>• Paper registers that get damaged or misplaced easily.</li>
-              <li>• Handwritten job cards that mechanics find hard to read.</li>
-              <li>• WhatsApp chats causing client complaints to get forgotten.</li>
-              <li>• Loose receipts making billing and payments hard to track.</li>
-              <li>• Manual phone logs that make customer follow-ups a headache.</li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Paper registers that get damaged or misplaced easily.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Handwritten job cards that mechanics find hard to read.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>WhatsApp chats causing client complaints to get forgotten.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Loose receipts making billing and payments hard to track.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Manual phone logs that make customer follow-ups a headache.</span>
+              </li>
             </ul>
           </div>
 
           {/* Saarthi Way */}
           <div className="bg-[#EFE9E7]/40 border border-primary/20 p-8 rounded-2xl">
             <h3 className="text-lg font-bold text-primary mb-6 flex items-center gap-2">
-              <FaCheckCircle /> The GarageSaarthi App Way
+              <FaCheckCircle className="text-primary flex-shrink-0" /> The GarageSaarthi App Way
             </h3>
             <ul className="space-y-4 text-sm text-slate-700 font-medium">
-              <li>✔ Everything saved securely in the cloud instantly.</li>
-              <li>✔ Digital job cards accessible on any mechanic's phone.</li>
-              <li>✔ Clear customer check-in records with vehicle photos.</li>
-              <li>✔ Dynamic billing, parts tracking, and payment history.</li>
-              <li>✔ Automated WhatsApp reminders sent with one simple click.</li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Everything saved securely in the cloud instantly.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Digital job cards accessible on any mechanic's phone.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Clear customer check-in records with vehicle photos.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Dynamic billing, parts tracking, and payment history.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>Automated WhatsApp reminders sent with one simple click.</span>
+              </li>
             </ul>
           </div>
         </div>
