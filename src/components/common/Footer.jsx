@@ -1,4 +1,5 @@
-"use client";
+"use client";import { FRONTEND_URL } from "@/src/config/env";
+
 
 import React from "react";
 import Link from "next/link";
@@ -59,7 +60,7 @@ const Footer = () => {
                 }
                 onClick={() => {
                   trackEvent("InitiateCheckout");
-                  window.open("https://platform.garagesaarthi.com/login", "_blank");
+                  window.open(`${FRONTEND_URL}/login`, "_blank");
                 }}
               >
                 Access Platform

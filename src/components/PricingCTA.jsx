@@ -1,10 +1,9 @@
-import { useRouter } from "next/navigation";
+import { FRONTEND_URL } from "@/src/config/env";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "./common/Button";
 
 export default function PricingCTA() {
-  const router = useRouter();
-
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full text-center">
@@ -18,18 +17,18 @@ export default function PricingCTA() {
           <Button
             variant="hero"
             onClick={() => {
-              window.open("https://platform.garagesaarthi.com/register", "_blank");
+              window.open(`${FRONTEND_URL}/register`, "_blank");
             }}
           >
             Start 7-Day Free Trial
             <FaArrowRight className="w-4 h-4 ml-2" />
           </Button>
-          <Button
-            variant="secondary"
-            onClick={() => router.push("/pricing")}
+          <Link
+            href="/pricing"
+            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 text-sm font-medium text-slate-700 hover:border-primary/40 hover:text-primary transition-colors cursor-pointer"
           >
             View Pricing
-          </Button>
+          </Link>
         </div>
       </div>
     </section>

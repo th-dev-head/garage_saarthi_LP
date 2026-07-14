@@ -1,3 +1,4 @@
+import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import { cn } from "../../utils/cn";
 import { Check, ArrowRight } from "lucide-react";
@@ -84,7 +85,7 @@ export default function PricingCard({
               <button
                 onClick={() =>
                   window.open(
-                    `${process.env.NEXT_PUBLIC_FRONTEND_URL}/login`,
+                    `${FRONTEND_URL}/login`,
                     "_blank",
                   )
                 }

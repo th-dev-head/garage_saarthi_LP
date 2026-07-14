@@ -19,6 +19,12 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/solutions/workshop-management-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/features`,
       lastModified,
       changeFrequency: "monthly",

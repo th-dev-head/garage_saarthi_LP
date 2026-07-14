@@ -1,3 +1,4 @@
+import { FRONTEND_URL } from "@/src/config/env";
 import React, { useState, useEffect } from "react";
 import { FaPlay, FaTimes, FaArrowRight } from "react-icons/fa";
 import Button from "./common/Button";
@@ -50,7 +51,7 @@ const Hero = () => {
               className=" !px-8 !py-3 text-lg min-[350px]:text-lg pulse-border-effect"
               onClick={() => {
                 trackEvent('Lead');
-                window.open('https://platform.garagesaarthi.com/signup', '_blank');
+                window.open(`${FRONTEND_URL}/signup`, '_blank');
               }}
             >
               Start 7-Day Free Trial

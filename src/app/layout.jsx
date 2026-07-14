@@ -1,3 +1,4 @@
+import { FRONTEND_URL } from "@/src/config/env";
 import Script from "next/script";
 import ScrollToHash from "../components/common/ScrollToHash";
 import "../index.css";
@@ -199,7 +200,8 @@ export default function RootLayout({ children }) {
             });
 
             if (utmQueryString) {
-              const appLinks = document.querySelectorAll('a[href*="platform.garagesaarthi.com"]');
+              const targetHost = "${new URL(FRONTEND_URL).hostname}";
+              const appLinks = document.querySelectorAll('a[href*="' + targetHost + '"]');
               appLinks.forEach(link => {
                 try {
                   const url = new URL(link.href);
@@ -215,7 +217,7 @@ export default function RootLayout({ children }) {
 
               const originalWindowOpen = window.open;
               window.open = function (url, target, features) {
-                if (url && url.includes('platform.garagesaarthi.com')) {
+                if (url && url.includes(targetHost)) {
                   try {
                     const newUrl = new URL(url.startsWith('http') ? url : window.location.origin + url);
                     const newParams = new URLSearchParams(utmQueryString);

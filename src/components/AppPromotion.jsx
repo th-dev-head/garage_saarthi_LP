@@ -1,3 +1,4 @@
+import { FRONTEND_URL } from "@/src/config/env";
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import MockupBg from '../assets/icons/Mockup dashboard 1.png';
@@ -65,7 +66,7 @@ const AppPromotion = () => {
             <Button
               variant="hero"
               onClick={() => {
-                window.open("https://platform.garagesaarthi.com/register", "_blank");
+                window.open(`${FRONTEND_URL}/register`, "_blank");
               }}
             >
               Start Free Trial
