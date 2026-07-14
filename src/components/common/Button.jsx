@@ -8,7 +8,7 @@ const Button = ({
   ...props
 }) => {
   const baseStyles =
-    "rounded-full font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer";
+    "rounded-full font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap";
 
   const variants = {
     primary:

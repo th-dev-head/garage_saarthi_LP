@@ -26,7 +26,9 @@ const Header = () => {
   ];
 
   const solutionsList = [
-    { name: "Workshop Management", href: "/solutions/workshop-management-software" },
+    { name: "Workshop Management", href: "/workshop-management-software" },
+    { name: "Automobile Workshop", href: "/automobile-workshop-software" },
+    { name: "Auto Repair Shop", href: "/auto-repair-shop-software" },
   ];
 
   useEffect(() => {
@@ -39,7 +41,12 @@ const Header = () => {
       setActive("Download App");
     } else if (cleanPath === "/contact" || cleanPath === "/book-demo") {
       setActive("Contact");
-    } else if (cleanPath.startsWith("/solutions/")) {
+    } else if (
+      cleanPath.startsWith("/solutions/") ||
+      cleanPath === "/workshop-management-software" ||
+      cleanPath === "/automobile-workshop-software" ||
+      cleanPath === "/auto-repair-shop-software"
+    ) {
       setActive("Solutions");
     } else if (cleanPath === "/" || cleanPath === "/home") {
       setActive("Home");

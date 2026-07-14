@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "workshop management software, workshop software, workshop management system, workshop management app, automobile workshop software, automotive workshop software, auto workshop software, digital workshop management, workshop management software India",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/workshop-management-software",
+    canonical: "https://www.garagesaarthi.com/workshop-management-software",
   },
   robots: "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Workshop Management Software for Automotive Workshops | GarageSaarthi",
     description:
       "Digitize and manage daily workshop operations with GarageSaarthi. Handle job cards, inventory, customers, staff, finance and service follow-ups from one platform.",
-    url: "https://www.garagesaarthi.com/solutions/workshop-management-software",
+    url: "https://www.garagesaarthi.com/workshop-management-software",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -41,32 +41,26 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.garagesaarthi.com/solutions/workshop-management-software",
+      "@id": "https://www.garagesaarthi.com/workshop-management-software",
       name: "Workshop Management Software in India | GarageSaarthi",
       description:
         "Manage job cards, inventory, customers, billing, staff and workshop operations with GarageSaarthi workshop management software.",
-      url: "https://www.garagesaarthi.com/solutions/workshop-management-software",
+      url: "https://www.garagesaarthi.com/workshop-management-software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
-        "@id": "https://www.garagesaarthi.com/solutions/workshop-management-software#breadcrumb",
+        "@id": "https://www.garagesaarthi.com/workshop-management-software#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.garagesaarthi.com/solutions/workshop-management-software#breadcrumb",
+      "@id": "https://www.garagesaarthi.com/workshop-management-software#breadcrumb",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.garagesaarthi.com/" },
         {
           "@type": "ListItem",
           position: 2,
-          name: "Solutions",
-          item: "https://www.garagesaarthi.com/solutions/workshop-management-software",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
           name: "Workshop Management Software",
-          item: "https://www.garagesaarthi.com/solutions/workshop-management-software",
+          item: "https://www.garagesaarthi.com/workshop-management-software",
         },
       ],
     },

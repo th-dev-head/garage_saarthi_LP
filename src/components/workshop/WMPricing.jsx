@@ -42,7 +42,7 @@ export default function WMPricing() {
               </Button>
               <Link
                 href="/pricing"
-                className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 text-sm font-medium text-slate-700 hover:border-primary/40 hover:text-primary transition-colors"
+                className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-full whitespace-nowrap border border-slate-300 text-sm font-medium text-slate-700 hover:border-primary/40 hover:text-primary transition-colors"
               >
                 View Pricing Plans
               </Link>
@@ -66,7 +66,7 @@ export default function WMPricing() {
             </ul>
             <div className="mt-6 pt-5 border-t border-slate-700/60 flex items-center justify-between">
               <span className="text-xs text-slate-400">After trial</span>
-              <span className="text-xs font-bold text-orange-400 bg-orange-950/40 px-3 py-1 rounded-full border border-orange-500/20">
+              <span className="text-xs font-bold text-orange-400 bg-orange-950/40 px-3 py-1 rounded-full whitespace-nowrap border border-orange-500/20">
                 Affordable Plans Available
               </span>
             </div>

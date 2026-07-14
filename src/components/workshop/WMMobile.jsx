@@ -69,7 +69,7 @@ export default function WMMobile() {
               href="https://play.google.com/store/apps/details?id=com.th.garagesaarthi&hl=en_IN"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full transition-all hover:-translate-y-1 active:scale-95 group h-[46px]"
+              className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full whitespace-nowrap transition-all hover:-translate-y-1 active:scale-95 group h-[46px]"
             >
               <div className="p-0.5">
                 <img src={PlayStoreIcon} alt="" className="w-6 h-6 object-contain" />

@@ -3,8 +3,8 @@ import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import MockupBg from '../assets/icons/Mockup dashboard 1.png';
 import AppHand from '../assets/icons/Appdl.png';
-import PlayStoreIcon from '../assets/icons/Playstore.png';
 import Button from './common/Button';
+import PlayStoreBadge from './common/PlayStoreBadge';
 
 const AppPromotion = () => {
   return (
@@ -74,20 +74,7 @@ const AppPromotion = () => {
             </Button>
 
             {/* Play Store Button */}
-            <a 
-              href="https://play.google.com/store/apps/details?id=com.th.garagesaarthi&hl=en_IN" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full transition-all hover:-translate-y-1 active:scale-95 group h-[46px]"
-            >
-              <div className="p-0.5">
-                <img src={PlayStoreIcon} alt="" className="w-6 h-6 object-contain" />
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="text-[9px] font-normal opacity-70 leading-none">Download on the</span>
-                <span className="text-xs font-semibold leading-tight mt-0.5">Play Store</span>
-              </div>
-            </a>
+            <PlayStoreBadge />
           </div>
         </div>
       </div>
