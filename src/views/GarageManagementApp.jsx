@@ -41,7 +41,7 @@ export default function GarageManagementApp() {
         <GAStaffManagement />
         <GAServiceAlerts />
         <GAReports />
-        <GAWebMobileConnection />
+        {/* <GAWebMobileConnection /> */}
         <GAAndroidApp />
         <GAWhyUse />
         <GAProductProof />

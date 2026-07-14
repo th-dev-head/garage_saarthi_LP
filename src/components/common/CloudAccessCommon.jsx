@@ -32,14 +32,14 @@ export default function CloudAccessCommon({
 
             <div className="space-y-4 mb-8">
               {features.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <div className="text-primary text-base mt-1 flex-shrink-0">
-                    {item.icon}
+                <div key={idx} className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary text-base flex-shrink-0 inline-flex items-center">
+                      {item.icon}
+                    </span>
+                    <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
                   </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-slate-900 mb-0.5">{item.title}</h3>
-                    <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
-                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed pl-6">{item.desc}</p>
                 </div>
               ))}
             </div>

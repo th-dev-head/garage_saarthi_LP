@@ -54,10 +54,10 @@ export default function AWServiceReminders() {
             </h3>
             <div className="bg-white border border-slate-300 p-5 rounded-xl shadow-sm">
               <div className="text-xs text-slate-700 bg-[#EFE9E7]/50 p-4 rounded-xl border-l-4 border-primary font-sans">
-                <p>Hello <strong>Vatsal Borda</strong>,</p>
+                <p>Hello <strong>Shree Hari</strong>,</p>
                 <p className="mt-3">This is a reminder that your vehicle <strong>GJ05VB0401</strong> is due for service on <strong>25 Jan 2026</strong> at <strong>Ever Garage</strong> 🔔.</p>
-                <p className="mt-3">Garage Contact: <strong>9876543210</strong></p>
-                <p className="mt-3">Address: <strong>A-63 Gopinathji Nagar, Surat</strong></p>
+                <p className="mt-3">Garage Contact: <strong>9999955555</strong></p>
+                <p className="mt-3">Address: <strong>House No. 42, Shanti Nagar, Near City Mall, Indore, Madhya Pradesh – 452001</strong></p>
                 <p className="mt-3">Please contact the garage to schedule your service.</p>
                 <p className="mt-3 text-[10px] text-slate-500 font-medium">Powered by GarageSaarthi</p>
               </div>

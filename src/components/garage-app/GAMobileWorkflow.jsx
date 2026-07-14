@@ -4,7 +4,7 @@ export default function GAMobileWorkflow() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -24,7 +24,7 @@ export default function GAMobileWorkflow() {
 
         {/* Mock App Screenshots Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           {/* Card 1 - Job Card Screen */}
           <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 shadow-sm">
             <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-4 text-center">Job Card View</h3>
@@ -48,7 +48,7 @@ export default function GAMobileWorkflow() {
                 <span className="text-green-600">Verified</span>
               </div>
               <p><strong>Name:</strong> Ramesh Malaviya</p>
-              <p><strong>Contact:</strong> +91 9876543210</p>
+              <p><strong>Contact:</strong> +91 9999955555</p>
               <p><strong>Total Visited Count:</strong> 5 Service visits logged</p>
             </div>
           </div>
