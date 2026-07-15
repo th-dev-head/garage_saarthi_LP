@@ -44,7 +44,7 @@ export default function GJCCustomerProof() {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 flex item-cetner justify-center">
           <Link href="/customers">
             <Button
               variant="hero"

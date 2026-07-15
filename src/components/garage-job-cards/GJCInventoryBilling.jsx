@@ -14,16 +14,16 @@ export default function GJCInventoryBilling() {
 
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left card composition */}
         <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-4 order-2 lg:order-1">
           <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Real-time mapping</span>
           <div className="space-y-3">
-            <div className="bg-white p-3 rounded-xl border border-slate-200/50 flex justify-between items-center text-xs">
+            <div className="bg-white p-3 rounded-xl border border-slate-200/80 flex justify-between items-center text-xs">
               <span className="font-bold text-text-dark">Issue Brake Pad to Creta Job Card</span>
               <span className="text-red-500 font-bold bg-red-50 px-2 py-0.5 rounded">-1 in Parts Stock</span>
             </div>
-            <div className="bg-white p-3 rounded-xl border border-slate-200/50 flex justify-between items-center text-xs">
+            <div className="bg-white p-3 rounded-xl border border-slate-200/80 flex justify-between items-center text-xs">
               <span className="font-bold text-text-dark">Auto-Map to Invoicing Sheet</span>
               <span className="text-green-600 font-bold bg-green-50 px-2 py-0.5 rounded">Ready to Bill (₹1,850)</span>
             </div>

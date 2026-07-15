@@ -43,7 +43,7 @@ export default function GBCustomerProof() {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 flex item-center justify-center">
           <Link href="/customers">
             <Button
               variant="hero"

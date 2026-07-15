@@ -34,20 +34,20 @@ export default function GCHero() {
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-3xl w-full relative z-10 text-center flex flex-col items-center">
         {/* Left Content */}
-        <div>
+        <div className="flex flex-col items-center text-center max-w-3xl">
           <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-6 inline-block">
             Workshop CRM
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
             Garage CRM Software to Manage Leads, Customers and Follow-Ups
           </h1>
-          <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
+          <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Organize workshop customer relationships from lead management to customer records and follow-ups. Built specifically for garages, car workshops, auto repair shops, and motorcycle service centers in India.
           </p>
 
-          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-start items-center">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center w-full sm:w-auto">
             <Button
               variant="trial"
               onClick={handleTrialClick}
@@ -64,40 +64,6 @@ export default function GCHero() {
               Explore CRM Features
             </Link>
             <PlayStoreBadge />
-          </div>
-        </div>
-
-        {/* Right UI Preview Card */}
-        <div className="relative flex justify-center md:justify-end">
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-3xl shadow-2xl max-w-lg w-full relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-[4px] bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            <div className="flex items-center gap-2 pb-4 border-b border-white/10 mb-4">
-              <FaUsers className="text-primary w-4 h-4" />
-              <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">
-                Active CRM Leads
-              </span>
-            </div>
-
-            <div className="space-y-3.5 text-xs">
-              <div className="bg-white/5 p-3 rounded-xl border border-white/5 flex justify-between items-center">
-                <div>
-                  <span className="font-bold text-white block">Mahesh Kumar (Dent &amp; Paint Enq.)</span>
-                  <span className="text-[10px] text-slate-400 mt-0.5">Source: Walk-in</span>
-                </div>
-                <span className="font-bold text-primary bg-[#EFE9E7] text-slate-900 px-2 py-0.5 rounded-full text-[10px]">
-                  Follow Up Set
-                </span>
-              </div>
-              <div className="bg-white/5 p-3 rounded-xl border border-white/5 flex justify-between items-center">
-                <div>
-                  <span className="font-bold text-white block">Sanjay Sharma (AC Cooling issue)</span>
-                  <span className="text-[10px] text-slate-400 mt-0.5">Source: Phone call</span>
-                </div>
-                <span className="font-bold text-green-500 bg-green-500/10 px-2 py-0.5 rounded-full text-[10px]">
-                  Converted
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

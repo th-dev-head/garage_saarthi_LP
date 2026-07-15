@@ -16,8 +16,8 @@ export default function GCCustomerVehicle() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Card visual */}
         <div className="bg-white border border-slate-200/80 p-8 rounded-3xl space-y-4 shadow-sm">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-4">
@@ -48,7 +48,7 @@ export default function GCCustomerVehicle() {
             Access previous repair orders, diagnostic complaints, spare parts used, billing values, and customer preferences. Keeping clear service records helps your team work efficiently on returning jobs.
           </p>
 
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4 items-center">
             <Link
               href="/features/customers"
               onClick={() => handleLinkClick("Customer Records", "/features/customers")}
