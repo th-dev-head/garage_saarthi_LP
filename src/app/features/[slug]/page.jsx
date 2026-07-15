@@ -1,7 +1,7 @@
 import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { featuresData } from "@/src/data/featuresData";
 import Header from "@/src/components/common/Header";
 import Footer from "@/src/components/common/Footer";
@@ -50,6 +50,11 @@ export async function generateMetadata({ params }) {
 
 export default function FeaturePage({ params }) {
   const { slug } = params;
+
+  if (slug === "job-cards") {
+    redirect("/solutions/garage-job-card-software");
+  }
+
   const data = featuresData[slug];
 
   if (!data) {

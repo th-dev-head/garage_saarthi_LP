@@ -27,11 +27,16 @@ const Header = () => {
   ];
 
   const solutionsList = [
-    { name: "Workshop Management", href: "/workshop-management-software" },
-    { name: "Automobile Workshop", href: "/automobile-workshop-software" },
-    { name: "Auto Repair Shop", href: "/auto-repair-shop-software" },
-    { name: "Garage Management App", href: "/garage-management-app" },
-    { name: "Workshop Management App", href: "/workshop-management-app" },
+    { name: "Workshop Management", href: "/solutions/workshop-management-software" },
+    { name: "Automobile Workshop", href: "/solutions/automobile-workshop-software" },
+    { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software" },
+    { name: "Garage Management App", href: "/solutions/garage-management-app" },
+    { name: "Workshop Management App", href: "/solutions/workshop-management-app" },
+    { name: "Car Garage Software", href: "/solutions/car-garage-software" },
+    { name: "Garage ERP Software", href: "/solutions/garage-erp-software" },
+    { name: "Garage Job Card Software", href: "/solutions/garage-job-card-software" },
+    { name: "Garage Billing Software", href: "/solutions/garage-billing-software" },
+    { name: "Garage CRM Software", href: "/solutions/garage-crm-software" },
   ];
 
   useEffect(() => {
@@ -44,14 +49,7 @@ const Header = () => {
       setActive("Download App");
     } else if (cleanPath === "/contact" || cleanPath === "/book-demo") {
       setActive("Contact");
-    } else if (
-      cleanPath.startsWith("/solutions/") ||
-      cleanPath === "/workshop-management-software" ||
-      cleanPath === "/automobile-workshop-software" ||
-      cleanPath === "/auto-repair-shop-software" ||
-      cleanPath === "/garage-management-app" ||
-      cleanPath === "/workshop-management-app"
-    ) {
+    } else if (cleanPath.startsWith("/solutions/")) {
       setActive("Solutions");
     } else if (cleanPath === "/" || cleanPath === "/home") {
       setActive("Home");
