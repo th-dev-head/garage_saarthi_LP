@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import GradientUnderline from "./GradientUnderline";
 
-export default function AccordionFAQ({ title, subtitle, faqs = [] }) {
+export default function AccordionFAQ({ title, titleHighlight, subtitle, faqs = [] }) {
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (idx) => setOpenIndex(openIndex === idx ? -1 : idx);
@@ -14,7 +15,7 @@ export default function AccordionFAQ({ title, subtitle, faqs = [] }) {
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
-            {title}
+            {titleHighlight ? <>{title}{" "}<GradientUnderline>{titleHighlight}</GradientUnderline></> : title}
           </h2>
           {subtitle && (
             <p className="text-sm md:text-base max-w-2xl mx-auto text-slate-600">

@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GEWorkflow() {
   const steps = [
@@ -14,14 +15,15 @@ export default function GEWorkflow() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Ecosystem Flow
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Manage the Complete Workshop Workflow in One System
+            Manage the Complete Workshop{" "}
+            <GradientUnderline>Workflow in One System</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi workshop ERP connects your team's daily steps. Every action feeds records automatically, eliminating dual data entries.

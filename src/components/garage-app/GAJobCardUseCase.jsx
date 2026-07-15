@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const benefits = [
   { title: "Select or Add Customer Details", desc: "Input name, phone number, and branch coordinates." },
@@ -22,10 +23,7 @@ export default function GAJobCardUseCase() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Create and Track Digital Job Cards{" "}
-              <span className="relative inline-block">
-                from the Garage App
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>from the Garage App</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Create digital job sheets in under a minute when a vehicle rolls into the garage. Keep everyone updated on check-in checklists, diagnostics, and repairs.

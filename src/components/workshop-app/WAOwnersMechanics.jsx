@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaUserShield, FaUsers, FaWrench, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function WAOwnersMechanics() {
   return (
@@ -14,10 +15,7 @@ export default function WAOwnersMechanics() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Built for Garage Owners{" "}
-            <span className="relative inline-block">
-              and Workshop Teams
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>and Workshop Teams</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Set custom access controls so your advisors, storekeepers, and mechanics can log update registers without compromising sensitive financial data.

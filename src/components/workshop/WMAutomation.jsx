@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaWhatsapp, FaClock, FaCalendarAlt, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function WMAutomation() {
   return (
@@ -14,10 +15,7 @@ export default function WMAutomation() {
             </p>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-snug">
               Save Hours Every Day with{" "}
-              <span className="relative inline-block">
-                Smart Workshop Automation.
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Smart Workshop Automation.</GradientUnderline>
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6 text-sm md:text-base">
               Eliminate manual follow-ups and data entry. GarageSaarthi automates the repetitive parts of running your workshop, ensuring your team focuses on vehicle repairs while the system handles the paperwork and notifications.

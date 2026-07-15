@@ -37,7 +37,8 @@ export default function DigitalOperations() {
 
   return (
     <ComparisonTable
-      title="Replace Manual Garage Work with a Digital Management System"
+      title="Replace Manual Garage Work with a"
+      titleHighlight="Digital Management System"
       subtitle="See how migrating to a digital garage management system transforms your workshop's daily routines and boosts profitability."
       comparisons={comparisons}
     />

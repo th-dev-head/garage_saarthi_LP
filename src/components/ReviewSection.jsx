@@ -49,15 +49,8 @@ const reviews = [
 export default function ReviewSection() {
   return (
     <TestimonialsGrid
-      title={
-        <>
-          Garages Using GarageSaarthi{" "}
-          <span className="relative inline-block">
-            to Manage Daily Operations.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span>
-          </span>
-        </>
-      }
+      title="Garages Using GarageSaarthi"
+      titleHighlight="to Manage Daily Operations."
       subtitle="Hear from workshop and garage owners across India who are growing their businesses and simplifying operations with GarageSaarthi."
       reviews={reviews}
       linkHref="/customers"

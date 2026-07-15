@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaWhatsapp, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GAServiceAlerts() {
   return (
@@ -16,10 +17,7 @@ export default function GAServiceAlerts() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Check Service Alerts and{" "}
-              <span className="relative inline-block">
-                Follow Up with Garage Customers
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Follow Up with Garage Customers</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Track upcoming service dates based on client visit frequency and broadcast customizable alert layouts directly to customer WhatsApp profiles.

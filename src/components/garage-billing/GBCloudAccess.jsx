@@ -19,7 +19,8 @@ export default function GBCloudAccess() {
   return (
     <CloudAccessCommon
       badge="Online Billing"
-      title="Access Your Garage Billing Online and via Cloud"
+      title="Access Your Garage Billing Online and"
+      titleHighlight="via Cloud"
       subtitle="GarageSaarthi runs on secure cloud servers, giving you instant web access on laptop browsers and live synchronization with our Android application."
       features={cloudFeatures}
       bgClass="bg-white"

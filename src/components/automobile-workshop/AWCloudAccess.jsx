@@ -19,15 +19,8 @@ export default function AWCloudAccess() {
   return (
     <CloudAccessCommon
       badge="Cloud Access"
-      title={
-        <>
-          Access Your Automobile Workshop Software on{" "}
-          <span className="relative inline-block">
-            Web and Mobile
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Access Your Automobile Workshop Software on"
+      titleHighlight="Web and Mobile"
       subtitle="GarageSaarthi is a cloud-based platform, meaning your workshop records are always safely backed up and accessible from anywhere."
       features={features}
       bgClass="bg-white"

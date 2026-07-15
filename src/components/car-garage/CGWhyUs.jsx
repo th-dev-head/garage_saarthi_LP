@@ -4,6 +4,7 @@ import {
   FaUserFriends, FaBell, FaWhatsapp, FaUsers, FaBuilding,
   FaLaptop, FaCheckCircle, FaComments,
 } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const differentiators = [
   {
@@ -79,10 +80,7 @@ export default function CGWhyUs() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
             Why Car Garage Owners{" "}
-            <span className="relative inline-block">
-              Use GarageSaarthi
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Use GarageSaarthi</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             GarageSaarthi is built for the specific operational reality of car garages — from independent workshops to multi-branch service centres managing hundreds of vehicles a month.

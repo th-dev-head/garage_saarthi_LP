@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FaNetworkWired, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function WAMultiBranch() {
   return (
@@ -38,10 +39,7 @@ export default function WAMultiBranch() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Manage Multiple Workshop Branches{" "}
-              <span className="relative inline-block">
-                with GarageSaarthi
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>with GarageSaarthi</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Get complete consolidated oversight. Manage inventory transfer registries, compare revenue graphs, and handle staff assignments across branches from one app.

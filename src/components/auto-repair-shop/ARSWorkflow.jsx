@@ -5,6 +5,7 @@ import {
   FaFileInvoiceDollar, FaCreditCard, FaBell, FaChevronRight, FaArrowRight
 } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
+import GradientUnderline from "../common/GradientUnderline";
 
 const steps = [
   { icon: <FaUserAlt />, label: "Vehicle Arrives" },
@@ -22,7 +23,7 @@ export default function ARSWorkflow() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -30,10 +31,7 @@ export default function ARSWorkflow() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
             Manage the Complete Auto Repair Workflow from{" "}
-            <span className="relative inline-block">
-              Vehicle Entry to Delivery
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Vehicle Entry to Delivery</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Run a smooth, professional auto repair business. Follow every job card step-by-step from vehicle reception, parts ordering, repairs tracking, billing, to future service marketing.

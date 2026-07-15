@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCodeBranch, FaExchangeAlt, FaChartLine, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function WMMultiBranch() {
   return (
@@ -29,10 +30,7 @@ export default function WMMultiBranch() {
             </p>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-snug">
               Control All Branches from{" "}
-              <span className="relative inline-block">
-                One Central Dashboard.
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>One Central Dashboard.</GradientUnderline>
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6 text-sm md:text-base">
               Say goodbye to physical branch visits. Manage multiple garages and workshops from a single account. Easily track individual branch performance, monitor total revenues, and allocate inventory where it is needed most.

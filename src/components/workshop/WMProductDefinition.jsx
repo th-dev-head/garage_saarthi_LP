@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import { FaCheck } from "react-icons/fa";
 
 const capabilities = [
@@ -24,10 +25,7 @@ export default function WMProductDefinition() {
             </p>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-snug">
               GarageSaarthi is Your{" "}
-              <span className="relative inline-block">
-                All-in-One Workshop Operating System.
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>All-in-One Workshop Operating System.</GradientUnderline>
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6 text-sm md:text-base">
               Workshop management software is a digital platform that replaces paper-based processes in automobile workshops. GarageSaarthi brings every operation — from opening a job card to closing the invoice — into one connected, cloud-based system that works on both web and Android.

@@ -1,15 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { FaBox, FaArrowRight } from "react-icons/fa";
-import GLogo from "@/src/assets/icons/Glogo.png";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GAInventoryMobile() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
           {/* Info */}
           <div>
             <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -17,10 +15,7 @@ export default function GAInventoryMobile() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Manage Garage Inventory and{" "}
-              <span className="relative inline-block">
-                Spare Parts from the App
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Spare Parts from the App</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Track spare parts catalog, inventory counts, counter sales relationships, and manage spare components issued to job sheets easily.

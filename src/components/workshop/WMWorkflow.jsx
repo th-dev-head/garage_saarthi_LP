@@ -1,9 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import {
-  FaClipboardList, FaTools, FaBox, FaFileInvoiceDollar,
-  FaBell, FaChartBar, FaArrowRight,
-} from "react-icons/fa";
+import { FaClipboardList, FaTools, FaBox, FaFileInvoiceDollar, FaBell, FaChartBar, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const steps = [
   {
@@ -57,10 +55,7 @@ export default function WMWorkflow() {
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             How GarageSaarthi Works —{" "}
-            <span className="relative inline-block">
-              The Complete Workshop Workflow.
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>The Complete Workshop Workflow.</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
             From the moment a vehicle enters your workshop to the day it returns for next service — GarageSaarthi manages every step.

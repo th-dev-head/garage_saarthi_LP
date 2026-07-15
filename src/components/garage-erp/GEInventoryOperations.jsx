@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaBoxes } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 // SECTION 06 - INVENTORY AND WORKSHOP OPERATIONS
 export default function GEInventoryOperations() {
@@ -18,7 +19,7 @@ export default function GEInventoryOperations() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left text */}
         <div>
@@ -26,7 +27,8 @@ export default function GEInventoryOperations() {
             Inventory Connection
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Connect Workshop Operations with Inventory Management
+            Connect Workshop Operations with{" "}
+            <GradientUnderline>Inventory Management</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             In a traditional workshop, spare parts inventory is completely separated from job records, leading to parts going missing, billing leakages, or wrong stock records. 
@@ -52,7 +54,7 @@ export default function GEInventoryOperations() {
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">E-Inventory Dashboard</h3>
           </div>
           <div className="space-y-4">
-            <div className="bg-white p-4 rounded-xl border border-slate-200/50 flex justify-between items-center">
+            <div className="bg-white p-4 rounded-xl border border-slate-200/80 flex justify-between items-center">
               <div>
                 <span className="text-[10px] uppercase font-bold text-slate-400">Part Description</span>
                 <span className="block text-xs font-bold text-text-dark mt-0.5">Mobil 5W-30 Engine Oil (1L)</span>
@@ -63,7 +65,7 @@ export default function GEInventoryOperations() {
               </div>
             </div>
 
-            <div className="bg-white p-4 rounded-xl border border-slate-200/50 flex justify-between items-center">
+            <div className="bg-white p-4 rounded-xl border border-slate-200/80 flex justify-between items-center">
               <div>
                 <span className="text-[10px] uppercase font-bold text-slate-400">Part Description</span>
                 <span className="block text-xs font-bold text-text-dark mt-0.5">Brembo Brake Pads (Front)</span>

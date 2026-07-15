@@ -3,6 +3,7 @@ import {
   FaFileAlt, FaUsersSlash, FaHistory, FaBoxOpen,
   FaFileInvoiceDollar, FaCalendarTimes, FaUserClock, FaCoins
 } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const problems = [
   {
@@ -56,7 +57,7 @@ export default function AWProblem() {
             Workshop Challenges
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Running an Automobile Workshop Shouldn’t <br className="hidden md:block" /> <span className="relative inline-block">Depend on Paper and Memory<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Running an Automobile Workshop Shouldn’t <br className="hidden md:block" /> <GradientUnderline>Depend on Paper and Memory</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Managing operations with paper and spreadsheet templates wastes hours every day. A digital automobile workshop management software fixes these operational leaks automatically.

@@ -47,15 +47,8 @@ const faqs = [
 export default function FAQSection() {
   return (
     <AccordionFAQ
-      title={
-        <>
-          Frequently Asked Questions About{" "}
-          <span className="relative inline-block">
-            Garage Management Software.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span>
-          </span>
-        </>
-      }
+      title="Frequently Asked Questions About"
+      titleHighlight="Garage Management Software."
       subtitle="Everything you need to know about GarageSaarthi and how it can transform your workshop."
       faqs={faqs}
     />

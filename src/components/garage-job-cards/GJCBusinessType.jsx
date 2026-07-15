@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GJCBusinessType() {
   const handleSolutionClick = (solutionName) => {
@@ -28,7 +29,8 @@ export default function GJCBusinessType() {
             Workshop Profiles
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Job Card Software Built for Automotive Workshops
+            Job Card Software Built for{" "}
+            <GradientUnderline>Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Our digital job card system adapts to different business types. Pick your workshop style to explore details:

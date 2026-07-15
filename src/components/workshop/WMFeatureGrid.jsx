@@ -5,6 +5,7 @@ import {
   FaCar, FaFileInvoiceDollar, FaMoneyBillWave, FaCodeBranch,
   FaBell, FaUserCog, FaHandshake, FaLock, FaMobile, FaArrowRight,
 } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const features = [
   { icon: <FaClipboardList />, title: "Digital Job Cards", link: "/features/job-cards" },
@@ -30,10 +31,7 @@ export default function WMFeatureGrid() {
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Everything Your Workshop Needs —{" "}
-            <span className="relative inline-block">
-              In One Platform.
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>In One Platform.</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
             GarageSaarthi workshop management software includes all the tools your auto workshop needs to run efficiently every single day.

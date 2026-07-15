@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaBoxOpen, FaClipboardList, FaShoppingCart, FaStore, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const featureList = [
   {
@@ -39,7 +40,7 @@ export default function AWInventory() {
             Spare Parts Control
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Keep Workshop Inventory and <span className="relative inline-block">Spare Parts Organized<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Keep Workshop Inventory and <GradientUnderline>Spare Parts Organized</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Running out of basic spares like brake pads or filters delays repairs. Over-stocking expensive items blocks capital. Manage inventory seamlessly.

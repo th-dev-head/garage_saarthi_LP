@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GEFinalCTA() {
   const handleTrialClick = () => {
@@ -17,12 +18,13 @@ export default function GEFinalCTA() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-[#1E293B] text-white text-center flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-900 text-center flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full space-y-6">
-        <h2 className="text-2xl md:text-4xl font-bold leading-tight">
-          Ready to Centralize and Grow Your Garage Business?
+        <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight">
+          Ready to Centralize and{" "}
+          <GradientUnderline>Grow Your Garage Business?</GradientUnderline>
         </h2>
-        <p className="text-slate-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
           Join hundreds of multi-brand workshops and garage chains across India using GarageSaarthi ERP to manage their business efficiently.
         </p>
         <div className="pt-4 flex justify-center">

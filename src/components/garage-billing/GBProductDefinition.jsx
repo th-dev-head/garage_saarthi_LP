@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBProductDefinition() {
   return (
@@ -9,7 +10,8 @@ export default function GBProductDefinition() {
           Billing Definition
         </span>
         <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-          Billing Software Designed for Garage and Workshop Workflows
+          Billing Software Designed for{" "}
+          <GradientUnderline>Garage and Workshop Workflows</GradientUnderline>
         </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
           Unlike generic billing software or general retail POS tools, garage billing requires custom configurations. It must handle labor operations, spare parts stock issues, mechanic margins, and vehicle history connections.

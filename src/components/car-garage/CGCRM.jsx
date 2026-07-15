@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaUserPlus, FaClipboardCheck, FaPhoneAlt, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const features = [
   {
@@ -31,10 +32,7 @@ export default function CGCRM() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Manage Car Service Leads with a{" "}
-            <span className="relative inline-block">
-              Built-In Garage CRM
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Built-In Garage CRM</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             Not every enquiry becomes an immediate job. GarageSaarthi's built-in CRM helps car garage owners manage incoming leads and follow-up opportunities without losing track of potential customers.

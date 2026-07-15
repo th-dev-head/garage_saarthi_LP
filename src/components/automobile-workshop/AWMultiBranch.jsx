@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FaBuilding, FaSearchPlus, FaArrowRight } from "react-icons/fa";
+import {FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function AWMultiBranch() {
   return (
@@ -13,7 +14,7 @@ export default function AWMultiBranch() {
               Multi-Branch Operations
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-              Manage Multiple Automobile Workshop <span className="relative inline-block">Branches Centrally<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+              Manage Multiple Automobile Workshop <GradientUnderline>Branches Centrally</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Growing your business shouldn't mean losing control. With GarageSaarthi, you can add multiple branches under a single main account. Create individual branch logins, track separate inventories, and check branch-wise sales or jobs completed.

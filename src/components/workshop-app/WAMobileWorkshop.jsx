@@ -1,5 +1,6 @@
 import React from "react";
 import PlayStoreBadge from "../common/PlayStoreBadge";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function WAMobileWorkshop() {
   return (
@@ -29,10 +30,7 @@ export default function WAMobileWorkshop() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Manage Your Workshop{" "}
-              <span className="relative inline-block">
-                from Your Mobile
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>from Your Mobile</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Track vehicle status, edit diagnostics, check parts stock, assign tasks to technicians, and verify payments while moving around the workshop floor.

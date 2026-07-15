@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaTools, FaBoxes, FaUsers, FaMoneyBillWave, FaBuilding, FaChartLine, FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GEConnectedOperations() {
   const handleFeatureClick = (featureName) => {
@@ -80,14 +81,15 @@ export default function GEConnectedOperations() {
   ];
 
   return (
-    <section id="garage-erp-modules" className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section id="garage-erp-modules" className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Ecosystem Modules
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Connect Your Garage Operations with One ERP System
+            Connect Your Garage Operations with{" "}
+            <GradientUnderline>One ERP System</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi provides an end-to-end garage ERP software package that connects your front-office bookings with back-office inventory and employee workflows.

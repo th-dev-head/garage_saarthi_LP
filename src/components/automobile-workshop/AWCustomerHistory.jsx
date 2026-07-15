@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaUserPlus, FaCar, FaHistory } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function AWCustomerHistory() {
   return (
@@ -13,7 +14,7 @@ export default function AWCustomerHistory() {
             Customer & Vehicle Profiles
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Keep Customer, Vehicle and <span className="relative inline-block">Service Records Connected<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Keep Customer, Vehicle and <GradientUnderline>Service Records Connected</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             A customer profiles database connects contact info, registered vehicles, and entire service history records under one platform. Auto-pull past job sheets, check parts replaced, and review pending balances instantly when they return to your automobile workshop.

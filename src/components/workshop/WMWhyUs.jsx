@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import {
   FaCheck, FaMobile, FaCodeBranch, FaUserShield,
   FaHeadset, FaRupeeSign, FaRocket, FaCloud,
@@ -27,10 +28,7 @@ export default function WMWhyUs() {
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Why Workshop Owners Choose{" "}
-            <span className="relative inline-block">
-              GarageSaarthi.
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>GarageSaarthi.</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
             Thousands of auto workshops across India trust GarageSaarthi to run their daily operations smoothly. Here is why.

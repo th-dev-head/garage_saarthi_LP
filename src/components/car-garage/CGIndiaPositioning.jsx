@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const points = [
   "GST billing designed for Indian spare parts and service tax structures.",
@@ -23,10 +24,7 @@ export default function CGIndiaPositioning() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
               Car Garage Management Software Built for{" "}
-              <span className="relative inline-block">
-                Workshops in India
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Workshops in India</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
               GarageSaarthi is designed specifically for car garages and automotive workshops operating in India. The platform reflects the actual workflows, billing requirements, and operational realities of Indian garage businesses — from independent workshops to growing multi-branch service centres.

@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import { FaFileAlt, FaBox, FaMoneyBillWave, FaUsers, FaChartBar } from "react-icons/fa";
 
 const problems = [
@@ -36,10 +37,7 @@ export default function WMProblem() {
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Running a Workshop Manually{" "}
-            <span className="relative inline-block">
-              Costs You More Than You Think.
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Costs You More Than You Think.</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
             Every missed service reminder, lost job card, or billing error is revenue walking out of your workshop. Here is what manual operations cost modern workshops every day.

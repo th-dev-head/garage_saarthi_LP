@@ -19,7 +19,8 @@ export default function GCCloudAccess() {
   return (
     <CloudAccessCommon
       badge="Cloud Sync"
-      title="Access Your Garage CRM on Web and Mobile"
+      title="Access Your Garage CRM on"
+      titleHighlight="Web and Mobile"
       subtitle="GarageSaarthi runs on secure cloud servers, giving you instant web access on laptop browsers and live synchronization with our Android application."
       features={cloudFeatures}
       bgClass="bg-slate-50"

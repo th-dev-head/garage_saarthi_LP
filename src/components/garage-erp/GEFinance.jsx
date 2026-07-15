@@ -1,9 +1,10 @@
 import React from "react";
 import { FaUserShield, FaLock } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GEFinance() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left text */}
         <div>
@@ -11,7 +12,8 @@ export default function GEFinance() {
             Finance &amp; CA
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Organize Garage Payments, Finance and CA Access
+            Organize Garage Payments,{" "}
+            <GradientUnderline>Finance and CA Access</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Keep your operational financial records organized inside the same platform. Track customer payments, invoice series, pending dues, and basic workshop collections.

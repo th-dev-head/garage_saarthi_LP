@@ -1,6 +1,7 @@
 import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import { FaTimesCircle, FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const problems = [
   "Paper job cards that get lost or damaged on the garage floor.",
@@ -31,10 +32,7 @@ export default function CGDefinition() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Manage Your Car Garage Without Paper Registers and{" "}
-            <span className="relative inline-block">
-              Scattered Records
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Scattered Records</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             As the number of car repair jobs, customer vehicles, and mechanics in your garage grows, managing everything through paper records and WhatsApp becomes unreliable. GarageSaarthi brings every operation into one centralized car garage management system.

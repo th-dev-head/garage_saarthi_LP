@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFolder, FaTasks, FaHistory, FaCheckCircle } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GJCBenefits() {
   const benefitsList = [
@@ -43,7 +44,7 @@ export default function GJCBenefits() {
             Operational Advantages
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Why Use Digital Job Card Software in Your Garage?
+            Why Use Digital Job Card Software in <GradientUnderline>Your Garage?</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Switching from manual paper processes to digital garage work sheets optimizes your workshop floor in several ways:

@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import Button from "../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
-import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCLeadManagement() {
   const handleTrialClick = () => {
@@ -35,7 +36,7 @@ export default function GCLeadManagement() {
             Lead Management
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Track Every Garage Lead from Enquiry to Customer
+            Track Every Garage Lead from <GradientUnderline>Enquiry to Customer</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Record customer service inquiries, track follow-up tasks, and monitor conversion lists centrally using the CRM leads board:
@@ -64,13 +65,13 @@ export default function GCLeadManagement() {
         </div>
 
         <div className="flex justify-center gap-4 flex-wrap items-center">
-          <button
+          <Button
+            variant="trial"
             onClick={handleTrialClick}
-            className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-lg"
+            icon={<FaArrowRight className="w-3.5 h-3.5" />}
           >
             Manage Garage Leads with GarageSaarthi
-            <FaArrowRight className="w-3.5 h-3.5" />
-          </button>
+          </Button>
           <Link
             href="/features/crm"
             onClick={handleLinkClick}

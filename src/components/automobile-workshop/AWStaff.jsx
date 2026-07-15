@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaUserCheck, FaCalendarMinus, FaMoneyBillWave, FaTasks, FaShieldAlt, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const staffFeatures = [
   {
@@ -45,7 +46,7 @@ export default function AWStaff() {
             Staff Management
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Manage Workshop Staff, <span className="relative inline-block">Attendance and Payroll<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Manage Workshop Staff, <GradientUnderline>Attendance and Payroll</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Organize your mechanics, receptionist, and advisors. Track daily work entries and process commissions automatically.

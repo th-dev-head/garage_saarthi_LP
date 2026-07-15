@@ -59,15 +59,8 @@ const faqData = [
 export default function AWFAQ() {
   return (
     <AccordionFAQ
-      title={
-        <>
-          Frequently Asked Questions About{" "}
-          <span className="relative inline-block">
-            Automobile Workshop Software.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Frequently Asked Questions About"
+      titleHighlight="Automobile Workshop Software."
       faqs={faqData.map(item => ({ question: item.q, answer: item.a }))}
     />
   );

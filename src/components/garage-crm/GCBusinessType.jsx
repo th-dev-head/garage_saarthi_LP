@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCBusinessType() {
   const handleSolutionClick = (solutionName) => {
@@ -30,7 +31,7 @@ export default function GCBusinessType() {
             Workshop Profiles
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Garage CRM Software for Different Automotive Workshops
+            Garage CRM Software for Different <GradientUnderline>Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Select your workshop business type to explore tailored customer and vehicle management features:

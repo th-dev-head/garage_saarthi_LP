@@ -1,8 +1,10 @@
 import React from "react";
 import { FaTimes, FaCheck } from "react-icons/fa";
+import GradientUnderline from "./GradientUnderline";
 
 export default function ComparisonTable({
   title,
+  titleHighlight,
   subtitle,
   manualHeader = "The Manual Way",
   digitalHeader = "The GarageSaarthi Way",
@@ -14,7 +16,7 @@ export default function ComparisonTable({
         {/* Title Block */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
-            {title}
+            {titleHighlight ? <>{title}{" "}<GradientUnderline>{titleHighlight}</GradientUnderline></> : title}
           </h2>
           {subtitle && (
             <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaHistory } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBCustomerVehicle() {
   return (
@@ -12,7 +13,8 @@ export default function GBCustomerVehicle() {
             Linked History
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Connect Invoices and Billing with Vehicle Service History
+            Connect Invoices and Billing with{" "}
+            <GradientUnderline>Vehicle Service History</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Unlike stand-alone billing counters, GarageSaarthi anchors invoices to customer and vehicle registry profiles.

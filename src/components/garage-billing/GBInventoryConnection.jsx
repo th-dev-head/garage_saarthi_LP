@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaBoxes } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBInventoryConnection() {
   const handleLinkClick = () => {
@@ -23,7 +24,8 @@ export default function GBInventoryConnection() {
             Stock Connection
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Connect Billing with Spare Parts Inventory Management
+            Connect Billing with Spare Parts{" "}
+            <GradientUnderline>Inventory Management</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             In manual workshop systems, there is zero sync between inventory purchases and invoice details. Spares are handed out of cabinets without being recorded on invoices, causing stock shrinkage.

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaFileInvoice, FaMoneyBillWave, FaChartLine, FaUserTie, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const cards = [
   {
@@ -49,10 +50,7 @@ export default function CGBillingFinance() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
             Manage Garage Billing, Payments and Finances in{" "}
-            <span className="relative inline-block">
-              One System
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>One System</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             From the first repair job invoice to the last payment entry of the day, GarageSaarthi connects your car garage billing and financial records in one place.

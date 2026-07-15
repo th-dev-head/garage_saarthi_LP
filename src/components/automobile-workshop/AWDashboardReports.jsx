@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaColumns, FaChartBar } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const features = [
   {
@@ -30,7 +31,7 @@ export default function AWDashboardReports() {
             Analytics & Insights
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Understand Your Workshop with <span className="relative inline-block">Dashboard and Reports<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Understand Your Workshop with <GradientUnderline>Dashboard and Reports</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             Stay in control of your workshop metrics. Monitor daily sales, active job cards, parts stock values, expenses, and technician performance. Download custom reports to review weekly or monthly growth trends.

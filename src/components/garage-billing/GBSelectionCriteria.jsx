@@ -1,5 +1,6 @@
 import React from "react";
 import { FaQuestionCircle } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBSelectionCriteria() {
   const points = [
@@ -18,7 +19,8 @@ export default function GBSelectionCriteria() {
             Buying Guide
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            How to Choose the Best Garage Billing Software
+            How to Choose the Best{" "}
+            <GradientUnderline>Garage Billing Software</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Invoicing runs your business. Evaluate and select a billing system based on these five essential automotive billing parameters:

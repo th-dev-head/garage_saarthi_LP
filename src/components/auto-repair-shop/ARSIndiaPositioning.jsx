@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
+import GradientUnderline from "../common/GradientUnderline";
+
 
 const highlights = [
   "GST-ready invoicing (CGST, SGST, IGST calculations).",
@@ -23,10 +25,7 @@ export default function ARSIndiaPositioning() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Auto Repair Shop Software{" "}
-              <span className="relative inline-block">
-                Built for Indian Workshops
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Built for Indian Workshops</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               GarageSaarthi understands the Indian automobile market. Whether you run a local multi-brand car workshop, an authorized electric two-wheeler service center, or a premium detailing shop, we provide features that fit your business needs.

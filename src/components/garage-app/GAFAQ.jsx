@@ -55,15 +55,8 @@ const faqs = [
 export default function GAFAQ() {
   return (
     <AccordionFAQ
-      title={
-        <>
-          Frequently Asked Questions About{" "}
-          <span className="relative inline-block">
-            Garage Management Apps
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Frequently Asked Questions About"
+      titleHighlight="Garage Management Apps"
       subtitle="Everything you need to know about GarageSaarthi mobile garage management features and configurations."
       faqs={faqs.map(item => ({ question: item.q, answer: item.a }))}
     />

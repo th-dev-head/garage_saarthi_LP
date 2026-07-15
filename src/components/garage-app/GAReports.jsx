@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FaChartLine, FaArrowRight } from "react-icons/fa";
+import {FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GAReports() {
   return (
@@ -34,10 +35,7 @@ export default function GAReports() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               View Important Garage Reports{" "}
-              <span className="relative inline-block">
-                from Your Mobile
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>from Your Mobile</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Track business sales performance, check active stock listings value, evaluate labor commission counts, and track daily job cards metrics inside your app dashboard.

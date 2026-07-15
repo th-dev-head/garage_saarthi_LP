@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBEcosystem() {
   const handleFeatureClick = (featureName) => {
@@ -29,7 +30,8 @@ export default function GBEcosystem() {
             Ecosystem Context
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Billing Is Just One Module of GarageSaarthi ERP
+            Billing Is Just One Module of{" "}
+            <GradientUnderline>GarageSaarthi ERP</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi provides a complete garage enterprise resource planning platform. While our billing terminal manages customer collections, other modules handle your entire operations:

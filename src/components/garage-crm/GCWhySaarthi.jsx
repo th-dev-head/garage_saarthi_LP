@@ -1,7 +1,9 @@
 import React from "react";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import Button from "../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCWhySaarthi() {
   const handleTrialClick = () => {
@@ -39,19 +41,19 @@ export default function GCWhySaarthi() {
             Why Saarthi
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Why Use GarageSaarthi for Garage Customer Management?
+            Why Use GarageSaarthi for <GradientUnderline>Garage Customer Management</GradientUnderline>?
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
             Stop using generic sales CRMs that don't understand mechanics or mileage logs. GarageSaarthi connects customer profiles directly to vehicle history, active job cards, and billing.
           </p>
 
-          <button
+          <Button
+            variant="trial"
             onClick={handleTrialClick}
-            className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-lg"
+            icon={<FaArrowRight className="w-3.5 h-3.5" />}
           >
             Start 7-Day Free Trial
-            <FaArrowRight className="w-3.5 h-3.5" />
-          </button>
+          </Button>
         </div>
 
         {/* Right differentiators checklist */}

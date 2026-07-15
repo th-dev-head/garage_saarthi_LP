@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const businessTypes = [
   {
@@ -50,7 +51,7 @@ export default function AWBusinessTypes() {
             Industry Coverage
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Built for Different <span className="relative inline-block">Automobile Workshop Businesses<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Built for Different <GradientUnderline>Automobile Workshop Businesses</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Different vehicles require different repair processes. GarageSaarthi provides customized solutions tailored to your specific vehicle business type.

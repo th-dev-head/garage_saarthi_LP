@@ -1,9 +1,10 @@
 import React from "react";
 import { FaUsers } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GECustomerVehicle() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left card representation */}
         <div className="bg-white border border-slate-200/80 p-8 rounded-3xl space-y-6 order-2 lg:order-1">
@@ -37,7 +38,8 @@ export default function GECustomerVehicle() {
             Linked Profiles
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Keep Customer and Vehicle Records Connected
+            Keep Customer and Vehicle{" "}
+            <GradientUnderline>Records Connected</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Workshop CRM database systems work best when customer data and vehicle attributes are joined. When a customer registers, their profile is tied directly to their cars or bikes.

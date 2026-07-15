@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaFileInvoiceDollar, FaCreditCard, FaLock, FaChartBar, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const financeCards = [
   {
@@ -32,10 +33,7 @@ export default function WMFinance() {
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Simplify Workshop Billing &{" "}
-            <span className="relative inline-block">
-              Accounts Management.
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Accounts Management.</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
             No more manual spreadsheet accounting. Manage customer invoices, vendor purchase bills, other expenses, and get clear tax-ready statements.

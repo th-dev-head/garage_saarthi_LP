@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import Link from "next/link";
 import {
   FaCar, FaMotorcycle, FaBolt, FaTruck, FaBus,
@@ -22,10 +23,7 @@ export default function WMWorkshopTypes() {
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
             Workshop Management Software{" "}
-            <span className="relative inline-block">
-              Built for Every Workshop Type.
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Built for Every Workshop Type.</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
             Whether you service cars, bikes, EVs, or trucks — GarageSaarthi has a dedicated solution tailored to your workshop's workflow and business model.

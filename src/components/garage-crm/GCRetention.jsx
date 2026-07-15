@@ -2,6 +2,7 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCRetention() {
   const handleLinkClick = (label, dest) => {
@@ -23,7 +24,7 @@ export default function GCRetention() {
             Customer Retention
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Turn Service Records into Better Customer Retention
+            Turn Service Records into <GradientUnderline>Better Customer Retention</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Workshop relationships should continue after the vehicle is delivered. GarageSaarthi helps you support customer retention efforts and stay connected with existing customers:

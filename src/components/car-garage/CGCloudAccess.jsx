@@ -24,7 +24,8 @@ export default function CGCloudAccess() {
   return (
     <CloudAccessCommon
       badge="Web & Mobile Access"
-      title="Manage Your Car Garage on Web and Mobile"
+      title="Manage Your Car Garage on"
+      titleHighlight="Web and Mobile"
       subtitle="GarageSaarthi is available on the web and as an Android application — giving your car garage team the flexibility to work from the front desk, the workshop floor, or anywhere in between."
       features={features}
       bgClass="bg-slate-50"

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GECustomerProof() {
   const reviews = [
@@ -18,14 +19,15 @@ export default function GECustomerProof() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Success Stories
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Trusted by Modern Indian Workshops
+            Trusted by Modern{" "}
+            <GradientUnderline>Indian Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             See how multi-branch and single-outlet garage owners use our ERP platform to streamline their business.

@@ -19,7 +19,8 @@ export default function GECloudAccess() {
   return (
     <CloudAccessCommon
       badge="Cloud access"
-      title="Access Your Garage ERP on Web and Mobile"
+      title="Access Your Garage ERP on"
+      titleHighlight="Web and Mobile"
       subtitle="GarageSaarthi runs on secure cloud servers, giving you instant web access on laptop browsers and live synchronization with our Android application."
       features={cloudFeatures}
       bgClass="bg-slate-50"

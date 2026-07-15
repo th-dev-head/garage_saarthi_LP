@@ -28,15 +28,8 @@ const reviews = [
 export default function GAProductProof() {
   return (
     <TestimonialsGrid
-      title={
-        <>
-          See How Garage Owners{" "}
-          <span className="relative inline-block">
-            Use GarageSaarthi
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="See How Garage Owners"
+      titleHighlight="Use GarageSaarthi"
       subtitle="Hear from real independent garage owners, car detailing spas, and auto service center operators across India who trust GarageSaarthi."
       reviews={reviews}
       linkLabel="View Customer Stories"

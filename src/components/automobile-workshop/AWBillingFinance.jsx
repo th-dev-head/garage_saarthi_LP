@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { FaFileInvoice, FaMoneyBillWave, FaChartLine, FaUserTie, FaArrowRight } from "react-icons/fa";
+import { FaFileInvoice, FaMoneyBillWave, FaChartLine, FaUserTie, FaArrowRight } from "react-icons/fa";  
+import GradientUnderline from "../common/GradientUnderline";
+
 
 export default function AWBillingFinance() {
   return (
@@ -12,7 +14,7 @@ export default function AWBillingFinance() {
             Billing & Accounts
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Manage Workshop Billing and Finances from the <span className="relative inline-block">Same Platform<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Manage Workshop Billing and Finances from the <GradientUnderline>Same Platform</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Generate clean customer invoices, log vendor bills, track miscellaneous expenses, and manage workshop balances centrally.

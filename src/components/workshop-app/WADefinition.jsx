@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import Link from "next/link";
 import { FaTimesCircle, FaCheckCircle, FaArrowRight } from "react-icons/fa";
 
@@ -13,12 +14,9 @@ export default function WADefinition() {
             App Definition
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Manage Daily Workshop Operations{" "}
-            <span className="relative inline-block">
-              from One App
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
-          </h2>
+              Manage Daily Workshop Operations{" "}
+              <GradientUnderline>from One App</GradientUnderline>
+            </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Unify your workshop registries into a single cloud-based application. Save time, prevent part leakage, and avoid disputes with clear digital records.
           </p>

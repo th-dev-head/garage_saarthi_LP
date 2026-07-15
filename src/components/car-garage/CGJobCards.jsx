@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const benefits = [
   {
@@ -32,10 +33,7 @@ export default function CGJobCards() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Create and Track Digital Job Cards for{" "}
-            <span className="relative inline-block">
-              Every Car Repair
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Every Car Repair</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             From the moment a customer drives into your car garage to the final delivery, GarageSaarthi keeps every job card, vehicle record, and service note organized digitally — accessible from any device.

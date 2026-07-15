@@ -5,6 +5,7 @@ import {
   FaFileInvoiceDollar, FaUserClock, FaWallet, 
   FaBell, FaChartBar, FaArrowRight 
 } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const workflows = [
   {
@@ -84,10 +85,7 @@ export default function GADailyWork() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Handle Daily Garage Work{" "}
-            <span className="relative inline-block">
-              Directly from Your Mobile
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Directly from Your Mobile</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Every operational module is optimized for mobile views. Hand over control to your technicians on the floor and track everything live.

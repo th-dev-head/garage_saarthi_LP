@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBGSTBilling() {
   return (
@@ -11,7 +12,8 @@ export default function GBGSTBilling() {
             Tax Compliance
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            GST-Compliant Invoicing Built for Indian Regulations
+            GST-Compliant Invoicing{" "}
+            <GradientUnderline>Built for Indian Regulations</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Tax compliance shouldn't add manual complexity to your busy garage. GarageSaarthi automatically tracks and applies GST taxes correctly.

@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
@@ -12,12 +13,9 @@ export default function WAFreeTrial() {
           Free Onboarding
         </span>
         <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mt-4 mb-4 leading-tight">
-          Try the GarageSaarthi Workshop Management{" "}
-          <span className="relative inline-block">
-            App Free for 7 Days
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </h2>
+            Try the GarageSaarthi Workshop Management {" "}
+            <GradientUnderline>App Free for 7 Days</GradientUnderline>
+          </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8">
           Get unrestricted access to job cards, billing registries, inventory tracking, staff logins, and service reminders. No credit card details required.
         </p>

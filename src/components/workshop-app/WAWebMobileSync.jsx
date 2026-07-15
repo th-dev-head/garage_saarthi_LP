@@ -19,15 +19,8 @@ export default function WAWebMobileSync() {
   return (
     <CloudAccessCommon
       badge="Connected Platform"
-      title={
-        <>
-          Use GarageSaarthi on{" "}
-          <span className="relative inline-block">
-            Web and Mobile
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Use GarageSaarthi on"
+      titleHighlight="Web and Mobile"
       subtitle="Ensure complete operational sync between desktop billing computers and on-the-floor mechanic mobile app logs in real time."
       features={features}
       bgClass="bg-slate-50"

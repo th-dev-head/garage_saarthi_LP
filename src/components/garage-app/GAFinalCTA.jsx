@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../common/PlayStoreBadge";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GAFinalCTA() {
   return (
@@ -10,10 +11,7 @@ export default function GAFinalCTA() {
       <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full text-center">
         <h2 className="text-2xl md:text-4xl font-extrabold mt-4 mb-4 leading-tight">
           Ready to Manage Your Garage{" "}
-          <span className="relative inline-block">
-            from Your Mobile?
-            <span className="absolute -bottom-2 left-0 w-full h-[4px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
+          <GradientUnderline>from Your Mobile?</GradientUnderline>
         </h2>
         <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8">
           Download the mobile application and manage your workshop operations with GarageSaarthi on mobile and web today.

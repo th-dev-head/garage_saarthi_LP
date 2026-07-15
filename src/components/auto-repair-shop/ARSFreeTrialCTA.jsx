@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function ARSFreeTrialCTA() {
   return (
@@ -9,10 +10,7 @@ export default function ARSFreeTrialCTA() {
       <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full text-center bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm">
         <h2 className="text-2xl md:text-4xl font-extrabold text-text-dark leading-tight mb-4">
           Try GarageSaarthi for Your{" "}
-          <span className="relative inline-block">
-            Auto Repair Shop
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
+          <GradientUnderline>Auto Repair Shop</GradientUnderline>
         </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8">
           Get complete access to digital job cards, spare parts inventory control, customer WhatsApp reminders, staff payroll, and GST invoicing free for 7 days without paying a single rupee.

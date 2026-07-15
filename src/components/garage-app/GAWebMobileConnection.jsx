@@ -19,15 +19,8 @@ export default function GAWebMobileConnection() {
   return (
     <CloudAccessCommon
       badge="Connected Platform"
-      title={
-        <>
-          Use GarageSaarthi on{" "}
-          <span className="relative inline-block">
-            Mobile and Web
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Use GarageSaarthi on"
+      titleHighlight="Mobile and Web"
       subtitle="Ensure complete operational sync between desktop billing computers and on-the-floor mechanic mobile app logs in real time."
       features={features}
       bgClass="bg-white"

@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBProblemDefinition() {
   return (
@@ -8,7 +9,7 @@ export default function GBProblemDefinition() {
           Billing Problems
         </span>
         <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-          Still Creating Garage Bills Manually?
+          Still Creating <GradientUnderline>Garage Bills Manually?</GradientUnderline>
         </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
           Managing billing on paper or general accounting spreadsheets leads to leaks. Spares are missed, CGST/SGST calculations are miscalculated, and unpaid bills are forgotten on scattered notebook registers.

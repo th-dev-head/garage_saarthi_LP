@@ -1,5 +1,6 @@
 import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import { FaArrowRight } from "react-icons/fa";
 import MockupBg from "../../assets/icons/Mockup dashboard 1.png";
 import AppHand from "../../assets/icons/Appdl.png";
@@ -42,10 +43,7 @@ export default function WMMobile() {
           </p>
           <h2 className="text-xl md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-[44px] font-bold text-[#111827] mb-5">
             Access Your Workshop on{" "}
-            <span className="relative inline-block">
-              Web and Mobile.
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Web and Mobile.</GradientUnderline>
           </h2>
 
           <p className="text-[#4B5563] text-sm md:text-lg mb-7 md:mb-10 max-w-3xl leading-relaxed font-medium">

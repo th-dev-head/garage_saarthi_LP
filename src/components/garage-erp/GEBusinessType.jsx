@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GEBusinessType() {
   const handleTypeClick = (typeName) => {
@@ -50,14 +51,15 @@ export default function GEBusinessType() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Workshop Profiles
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            ERP Software for Automotive Garages and Workshops
+            ERP Software for Automotive{" "}
+            <GradientUnderline>Garages and Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Our platform supports multiple automotive workshop business styles. Select your category below to explore specific workflows:

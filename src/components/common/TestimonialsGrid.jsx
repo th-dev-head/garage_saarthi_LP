@@ -1,9 +1,11 @@
 import React from "react";
 import { FaStar, FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import GradientUnderline from "./GradientUnderline";
 
 export default function TestimonialsGrid({
   title,
+  titleHighlight,
   subtitle,
   reviews = [],
   linkHref = "/customers",
@@ -15,7 +17,7 @@ export default function TestimonialsGrid({
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
-            {title}
+            {titleHighlight ? <>{title}{" "}<GradientUnderline>{titleHighlight}</GradientUnderline></> : title}
           </h2>
           {subtitle && (
             <p className="text-[#575757] text-sm md:text-base mt-6">

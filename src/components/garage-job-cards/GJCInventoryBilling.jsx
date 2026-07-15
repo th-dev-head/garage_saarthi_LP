@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GJCInventoryBilling() {
   const handleLinkClick = (label) => {
@@ -35,7 +36,8 @@ export default function GJCInventoryBilling() {
             Ecosystem Integration
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Connect Job Cards with Garage Inventory and Billing
+            Connect Job Cards with{" "}
+            <GradientUnderline>Garage Inventory and Billing</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Workshop billing and spare parts inventories shouldn't operate in silos. In GarageSaarthi, when your team issues parts or documents services on a digital job card, the system connects it directly to inventory levels and the billing desk.

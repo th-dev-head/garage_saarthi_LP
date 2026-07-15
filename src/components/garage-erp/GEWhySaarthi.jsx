@@ -1,7 +1,9 @@
 import React from "react";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import Button from "../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GEWhySaarthi() {
   const handleTrialClick = () => {
@@ -35,7 +37,7 @@ export default function GEWhySaarthi() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left text */}
         <div>
@@ -43,25 +45,26 @@ export default function GEWhySaarthi() {
             Differentiators
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Why Choose GarageSaarthi as Your Garage ERP System?
+            Why Choose GarageSaarthi as Your{" "}
+            <GradientUnderline>Garage ERP System?</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
             GarageSaarthi balances operational depth with simplicity. We build tools that help workshop owners run their entire business from one place without being bogged down by complex setups.
           </p>
 
-          <button
+          <Button
+            variant="trial"
             onClick={handleTrialClick}
-            className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-lg"
+            icon={<FaArrowRight className="w-3.5 h-3.5" />}
           >
             Start 7-Day Free Trial
-            <FaArrowRight className="w-3.5 h-3.5" />
-          </button>
+          </Button>
         </div>
 
         {/* Right checklist grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {reasons.map((r, idx) => (
-            <div key={idx} className="flex items-start gap-2.5 bg-slate-50 p-4 rounded-xl border border-slate-200/40">
+            <div key={idx} className="flex items-start gap-2.5 bg-slate-50 p-4 rounded-xl border border-slate-200/80">
               <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
               <span className="text-xs font-semibold text-text-dark leading-normal">{r}</span>
             </div>

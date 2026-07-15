@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GJCDefinition() {
   return (
@@ -9,7 +10,8 @@ export default function GJCDefinition() {
           Product Definition
         </span>
         <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-          Create and Manage Garage Job Cards Digitally
+          Create and Manage Garage{" "}
+          <GradientUnderline>Job Cards Digitally</GradientUnderline>
         </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
           In a traditional garage, advisors write repair instructions on paper slips, diaries, or scattered customer folders. This often results in lost vehicle details, forgotten complaints, and manual calculation errors.

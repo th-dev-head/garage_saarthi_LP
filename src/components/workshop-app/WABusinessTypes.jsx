@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -21,11 +22,7 @@ export default function WABusinessTypes() {
             Industry Solutions
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            A Workshop App for Car,{" "}
-            <span className="relative inline-block">
-              Bike, EV and Truck Garages
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            A Workshop App for Car, <GradientUnderline>Bike, EV and Truck Garages</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Our application is configured with flexible parameters to suit different automotive repair business structures.

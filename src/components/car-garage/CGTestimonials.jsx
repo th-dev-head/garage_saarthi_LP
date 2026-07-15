@@ -49,15 +49,8 @@ const reviews = [
 export default function CGTestimonials() {
   return (
     <TestimonialsGrid
-      title={
-        <>
-          See How Car Garages Use GarageSaarthi in{" "}
-          <span className="relative inline-block">
-            Daily Operations.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="See How Car Garages Use GarageSaarthi in"
+      titleHighlight="Daily Operations."
       subtitle="Hear from real car garage owners, independent workshops, and multi-brand service centre operators across India who use GarageSaarthi to manage their daily operations."
       reviews={reviews}
     />

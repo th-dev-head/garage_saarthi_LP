@@ -59,15 +59,8 @@ const faqs = [
 export default function ARSFAQ() {
   return (
     <AccordionFAQ
-      title={
-        <>
-          Frequently Asked Questions About{" "}
-          <span className="relative inline-block">
-            Auto Repair Shop Software.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Frequently Asked Questions About"
+      titleHighlight="Auto Repair Shop Software."
       subtitle="Everything you need to know about GarageSaarthi auto repair management software features and configurations."
       faqs={faqs.map(item => ({ question: item.q, answer: item.a }))}
     />

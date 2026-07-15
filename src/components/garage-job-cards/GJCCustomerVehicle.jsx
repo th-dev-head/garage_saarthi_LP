@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaCheckSquare, FaClipboardList } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GJCCustomerVehicle() {
   const handleLinkClick = (label) => {
@@ -21,7 +22,8 @@ export default function GJCCustomerVehicle() {
             Linked Profiles
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Connect Every Job Card with Customer and Vehicle Records
+            Connect Every Job Card with{" "}
+            <GradientUnderline>Customer and Vehicle Records</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             A standalone job card builder provides only a one-time paper template. GarageSaarthi maintains a linked database:

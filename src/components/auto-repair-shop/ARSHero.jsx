@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { FaPlay, FaArrowRight } from "react-icons/fa";
+import {FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../common/PlayStoreBadge";
-import GLogo from "@/src/assets/icons/Glogo.png";
+
 
 export default function ARSHero() {
   return (

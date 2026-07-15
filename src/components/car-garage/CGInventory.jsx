@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaBoxOpen, FaCashRegister, FaEye, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const items = [
   {
@@ -37,10 +38,7 @@ export default function CGInventory() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Manage Spare Parts Inventory and{" "}
-            <span className="relative inline-block">
-              Counter Sales
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Counter Sales</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             Keep every spare part accounted for. GarageSaarthi connects your car garage inventory directly to job cards and billing, so you always know what is in stock and what has been used.

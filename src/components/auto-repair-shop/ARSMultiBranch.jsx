@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { FaBuilding, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
+
 
 export default function ARSMultiBranch() {
   return (
@@ -15,10 +17,7 @@ export default function ARSMultiBranch() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Manage Multiple Auto Repair Shop{" "}
-              <span className="relative inline-block">
-                Branches from One Platform
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Branches from One Platform</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Grow your auto repair brand without losing administrative control. Create custom logins for separate branch managers, allocate parts inventory across storage sites, and view consolidated reports from a unified owner dashboard.

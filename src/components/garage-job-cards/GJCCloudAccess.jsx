@@ -19,7 +19,8 @@ export default function GJCCloudAccess() {
   return (
     <CloudAccessCommon
       badge="Cloud Access"
-      title="Access Garage Job Cards Online on Web and Mobile"
+      title="Access Garage Job Cards Online on"
+      titleHighlight="Web and Mobile"
       subtitle="GarageSaarthi runs on secure cloud servers, giving you instant web access on laptop browsers and live synchronization with our Android application."
       features={cloudFeatures}
       bgClass="bg-slate-50"

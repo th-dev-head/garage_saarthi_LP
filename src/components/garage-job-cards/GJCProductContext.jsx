@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GJCProductContext() {
   const handleFeatureClick = (featureName) => {
@@ -31,7 +32,8 @@ export default function GJCProductContext() {
             Ecosystem Context
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Job Cards Are Just One Part of GarageSaarthi
+            Job Cards Are Just One Part of{" "}
+            <GradientUnderline>GarageSaarthi</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi is an all-in-one garage management software system. While digital job cards organize your repair operations, other connected modules help manage the rest of your business:

@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
+
 
 const benefits = [
   "Record customer name, contact details, and vehicle details.",
@@ -22,7 +24,7 @@ export default function AWJobCards() {
             Automobile Job Cards
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Replace Paper Job Cards with <span className="relative inline-block">Digital Workshop Job Management<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Replace Paper Job Cards with <GradientUnderline>Digital Workshop Job Management</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             Handwritten job cards are easily lost, stained, or misread by mechanics. GarageSaarthi provides a digital job card system that stores vehicle information, customer details, and repair checklists in the cloud.

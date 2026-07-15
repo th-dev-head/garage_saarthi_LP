@@ -27,12 +27,12 @@ export default function GBHero() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white py-24 md:py-32 px-4 flex justify-center">
+    <section className="relative pt-48 pb-24 md:pt-56 md:pb-32 lg:pt-60 px-4 bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white overflow-hidden flex justify-center">
       {/* Decorative Blobs */}
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/80 text-xs font-semibold px-4 py-1.5 rounded-full border border-white/20 mb-6">
@@ -50,14 +50,15 @@ export default function GBHero() {
             Generate professional GST invoices, manage spare parts billing, track customer payments, and connect workshop job cards with billing — all from one centralized platform.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
-            <button
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-start items-center">
+            <Button
+              variant="trial"
               onClick={handleTrialClick}
-              className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-lg w-full sm:w-auto justify-center"
+              icon={<FaArrowRight className="w-3.5 h-3.5" />}
+              className="w-full sm:w-auto"
             >
               Start 7-Day Free Trial
-              <FaArrowRight className="w-3.5 h-3.5" />
-            </button>
+            </Button>
             <Link
               href="/pricing"
               onClick={handlePricingClick}
@@ -70,7 +71,7 @@ export default function GBHero() {
         </div>
 
         {/* Right Preview Card */}
-        <div className="relative flex justify-center lg:justify-end">
+        <div className="relative flex justify-center md:justify-end">
           <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-3xl shadow-2xl max-w-lg w-full relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-[4px] bg-[linear-gradient(92.52deg,#B22F0E_2.1%,#D73D17_105.99%)]" />
             <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-4">

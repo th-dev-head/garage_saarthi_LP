@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaWhatsapp, FaBell, FaTag, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function CGServiceAlerts() {
   return (
@@ -13,10 +14,7 @@ export default function CGServiceAlerts() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Bring Customers Back with{" "}
-            <span className="relative inline-block">
-              Automated Service Alerts
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Automated Service Alerts</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             Car owners often forget their periodic service schedules. GarageSaarthi tracks upcoming service due dates based on the previous visit and sends timely reminders — so your garage stays top of mind.

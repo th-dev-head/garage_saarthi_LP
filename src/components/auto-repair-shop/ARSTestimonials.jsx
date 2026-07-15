@@ -28,15 +28,8 @@ const reviews = [
 export default function ARSTestimonials() {
   return (
     <TestimonialsGrid
-      title={
-        <>
-          See How Repair Workshops{" "}
-          <span className="relative inline-block">
-            Use GarageSaarthi
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="See How Repair Workshops"
+      titleHighlight="Use GarageSaarthi"
       subtitle="Hear from real independent garage owners, car detailing spas, and auto service center operators across India who trust GarageSaarthi."
       reviews={reviews}
     />

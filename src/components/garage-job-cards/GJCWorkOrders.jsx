@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GJCWorkOrders() {
   return (
@@ -9,7 +10,8 @@ export default function GJCWorkOrders() {
             Repair Logs
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Organize Garage Work Orders and Vehicle Repair Jobs
+            Organize Garage Work Orders and{" "}
+            <GradientUnderline>Vehicle Repair Jobs</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Different workshops use different names — whether you call it a job card, a work order, a repair order, or a workshop job sheet, the goal is the same: keeping repair operations organized.

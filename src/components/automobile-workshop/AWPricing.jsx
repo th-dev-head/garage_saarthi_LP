@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
+
 
 const benefits = [
   "Full access to all features (no limitations)",
@@ -23,7 +25,7 @@ export default function AWPricing() {
                 7-Day Free Trial
               </span>
               <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-                Try GarageSaarthi Automobile Workshop Software <span className="relative inline-block">Free for 7 Days<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+                Try GarageSaarthi Automobile Workshop Software <GradientUnderline>Free for 7 Days</GradientUnderline>
               </h2>
               <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
                 Test all premium modules — digital job cards, spare parts inventory control, customer WhatsApp notifications, staff payroll, and GST invoicing without paying a rupee.

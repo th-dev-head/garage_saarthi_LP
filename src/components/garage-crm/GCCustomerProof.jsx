@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCCustomerProof() {
   const handleCtaClick = () => {
@@ -22,7 +23,8 @@ export default function GCCustomerProof() {
           Customer Success
         </span>
         <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-8 leading-tight">
-          Built for Real Garage and Workshop Customer Workflows
+          Built for Real Garage and Workshop{" "}
+          <GradientUnderline>Customer Workflows</GradientUnderline>
         </h2>
 
         <div className="bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm text-left max-w-2xl mx-auto relative">
@@ -45,7 +47,7 @@ export default function GCCustomerProof() {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 flex justify-center">
           <Link href="/customers">
             <Button
               variant="hero"

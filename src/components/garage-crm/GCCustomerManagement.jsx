@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaAddressBook } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCCustomerManagement() {
   const handleFeatureClick = () => {
@@ -24,7 +25,7 @@ export default function GCCustomerManagement() {
             Customer Records
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Keep Every Garage Customer Record Organized
+            Keep Every Garage Customer <GradientUnderline>Record Organized</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Ditch paper diaries, loose notes, scattered phone book contacts, and manual spreadsheets. Centralize customer registers in a secure cloud database.

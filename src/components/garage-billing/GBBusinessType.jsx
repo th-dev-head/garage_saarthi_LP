@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBBusinessType() {
   const handleSolutionClick = (solutionName) => {
@@ -26,7 +27,8 @@ export default function GBBusinessType() {
             Workshop Profiles
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Invoicing and Billing Built for All Automotive Workshops
+            Invoicing and Billing Built for{" "}
+            <GradientUnderline>All Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Whether you manage passenger cars, commercial vehicles, or multi-brand fleets, select your workshop type below to view details:

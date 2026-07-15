@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../common/PlayStoreBadge";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GAFreeTrialCTA() {
   return (
@@ -13,10 +14,7 @@ export default function GAFreeTrialCTA() {
         </span>
         <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mt-4 mb-4 leading-tight">
           Try the GarageSaarthi Garage Management{" "}
-          <span className="relative inline-block">
-            App Free for 7 Days
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
+          <GradientUnderline>App Free for 7 Days</GradientUnderline>
         </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8">
           Download the mobile application on your Android device, log in to experience digital job cards, billing, and follow-ups, or explore pricing plans.

@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowRight, FaCheck } from "react-icons/fa";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 const trialFeatures = [
   "All features unlocked for 7 days",
@@ -25,10 +26,7 @@ export default function WMPricing() {
             </p>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-snug">
               Start Your{" "}
-              <span className="relative inline-block">
-                7-Day Free Trial.
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>7-Day Free Trial.</GradientUnderline>
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8 text-sm md:text-base">
               Experience the full power of GarageSaarthi workshop management software for 7 days — absolutely free. No credit card, no commitment. See how it transforms your workshop before you subscribe.

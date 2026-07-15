@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaChartLine, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function WATracking() {
   return (
@@ -16,10 +17,7 @@ export default function WATracking() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
               Keep Track of Your{" "}
-              <span className="relative inline-block">
-                Workshop Operations
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Workshop Operations</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Track live job cards statuses, view cash vs digital payment splits, monitor inventory levels, and check employee clock-in hours directly from a unified live feed.

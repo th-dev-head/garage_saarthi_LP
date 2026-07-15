@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GAMobileWorkflow() {
   return (
@@ -12,10 +13,7 @@ export default function GAMobileWorkflow() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Your Garage Operations,{" "}
-            <span className="relative inline-block">
-              Available Wherever You Work
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Available Wherever You Work</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Garage owners don't stay glued to a computer desk. Walk around the garage floor, check vehicles with mechanics, and access all operational information directly in your hand.

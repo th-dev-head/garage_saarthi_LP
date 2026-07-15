@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
+import GradientUnderline from "../common/GradientUnderline";
+
 
 export default function ARSFinalCTA() {
   return (
@@ -9,10 +11,7 @@ export default function ARSFinalCTA() {
       <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full">
         <h2 className="text-2xl md:text-4xl font-extrabold mb-4 leading-tight">
           Ready to Digitize Your{" "}
-          <span className="relative inline-block">
-            Auto Repair Shop?
-            <span className="absolute -bottom-2 left-0 w-full h-[4px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
+          <GradientUnderline>Auto Repair Shop?</GradientUnderline>
         </h2>
         <p className="text-slate-300 text-sm md:text-base max-w-xl mx-auto mb-8 leading-relaxed">
           Move your garage operations away from complex paper registers and scattered template books into GarageSaarthi.

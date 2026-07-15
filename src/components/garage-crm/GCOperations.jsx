@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCOperations() {
   const handleFeatureClick = (name) => {
@@ -32,7 +33,7 @@ export default function GCOperations() {
             Operations Sync
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            More Than a CRM - Connected with Your Garage Operations
+            More Than a CRM - Connected with Your <GradientUnderline>Garage Operations</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi CRM doesn't work in isolation. It connects with your daily workshop, billing, and inventory tasks:

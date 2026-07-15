@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaTimesCircle, FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GADefinition() {
   return (
@@ -14,10 +15,7 @@ export default function GADefinition() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Manage Your Garage from{" "}
-            <span className="relative inline-block">
-              One Mobile App
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>One Mobile App</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Stop juggling between physical diaries, paper job cards, and messy WhatsApp groups. Organize every detail of your automotive business in one centralized place.

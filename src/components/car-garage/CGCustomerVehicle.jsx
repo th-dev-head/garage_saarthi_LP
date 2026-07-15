@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaUser, FaCar, FaHistory, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const features = [
   {
@@ -37,10 +38,7 @@ export default function CGCustomerVehicle() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
             Keep Every Customer and Car Record{" "}
-            <span className="relative inline-block">
-              Organized
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Organized</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Connected customer and vehicle records give your front desk a complete picture of every car that walks into your garage — without searching through paper registers or WhatsApp conversations.

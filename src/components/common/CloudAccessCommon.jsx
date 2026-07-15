@@ -5,10 +5,12 @@ import Button from "./Button";
 import PlayStoreBadge from "./PlayStoreBadge";
 import GLogo from "@/src/assets/icons/Glogo.png";
 import { FRONTEND_URL } from "@/src/config/env";
+import GradientUnderline from "./GradientUnderline";
 
 export default function CloudAccessCommon({
   badge = "Cloud Access",
   title,
+  titleHighlight,
   subtitle,
   features = [],
   bgClass = "bg-white"
@@ -24,7 +26,7 @@ export default function CloudAccessCommon({
               {badge}
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-              {title}
+              {titleHighlight ? <>{title}{" "}<GradientUnderline>{titleHighlight}</GradientUnderline></> : title}
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               {subtitle}

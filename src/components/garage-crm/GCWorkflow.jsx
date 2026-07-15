@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCWorkflow() {
   const steps = [
@@ -19,7 +20,7 @@ export default function GCWorkflow() {
             Customer Journey
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Manage the Garage Customer Journey in One System
+            Manage the Garage Customer Journey in <GradientUnderline>One System</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi connects customer relationship management with actual garage operations. See the workflow from enquiry to service retention alerts:

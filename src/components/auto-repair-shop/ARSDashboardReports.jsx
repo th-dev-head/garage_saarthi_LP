@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { FaChartLine, FaChartPie, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
+
 
 export default function ARSDashboardReports() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="mb-12">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -14,10 +16,7 @@ export default function ARSDashboardReports() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Understand Your Repair Shop with{" "}
-            <span className="relative inline-block">
-              Dashboard and Reports
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline> Dashboard and Reports</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             Gain a complete overview of your workshop operations. Monitor revenue streams, pending invoicing, customer ratings, parts values, and technician performance.
@@ -26,7 +25,7 @@ export default function ARSDashboardReports() {
 
         {/* Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          
+
           {/* Details list */}
           <div className="space-y-6">
             <div className="flex gap-4">
@@ -48,7 +47,7 @@ export default function ARSDashboardReports() {
                 <p className="text-xs text-slate-600">Download profit statements, parts stock reports, and GST logs to manage accounting cleanly.</p>
               </div>
             </div>
-            
+
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Link
                 href="/features/dashboard"

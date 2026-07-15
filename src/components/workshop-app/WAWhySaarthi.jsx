@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLaptop, FaMobileAlt, FaDatabase, FaCreditCard } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const differentiators = [
   {
@@ -36,10 +37,7 @@ export default function WAWhySaarthi() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Why Choose GarageSaarthi as Your{" "}
-            <span className="relative inline-block">
-              Workshop Management App?
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Workshop Management App?</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi is designed specifically for automotive garage workflows. We provide a balance of features, performance, and affordable pricing.

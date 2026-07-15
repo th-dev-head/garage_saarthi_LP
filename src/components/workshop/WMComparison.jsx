@@ -42,15 +42,8 @@ const rows = [
 export default function WMComparison() {
   return (
     <ComparisonTable
-      title={
-        <>
-          Manual Workshop vs.{" "}
-          <span className="relative inline-block">
-            Digital Workshop Management.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Manual Workshop vs."
+      titleHighlight="Digital Workshop Management."
       subtitle="See exactly what changes when your workshop switches from manual operations to GarageSaarthi."
       manualHeader="The Manual Way"
       digitalHeader="With GarageSaarthi"

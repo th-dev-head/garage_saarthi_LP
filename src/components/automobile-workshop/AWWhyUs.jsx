@@ -4,6 +4,7 @@ import {
   FaBoxOpen, FaUserFriends, FaBell, FaWhatsapp,
   FaUsers, FaBuilding, FaLaptop, FaCheckCircle
 } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const differentiators = [
   {
@@ -78,7 +79,7 @@ export default function AWWhyUs() {
             Why GarageSaarthi?
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Why Automobile Workshops <span className="relative inline-block">Use GarageSaarthi<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Why Automobile Workshops <GradientUnderline>Use GarageSaarthi?</GradientUnderline>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             Discover the key reasons why workshop owners trust GarageSaarthi to automate their daily operations, retain customers, and grow revenues.

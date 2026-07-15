@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCoins } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBFinanceVisibility() {
   return (
@@ -33,7 +34,8 @@ export default function GBFinanceVisibility() {
             Collections Tracker
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Track Payments, Dues and Cash Register Summaries
+            Track Payments, Dues and Cash{" "}
+            <GradientUnderline>Register Summaries</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Invoicing is only the first step. Track cash, UPI, card, and digital collections under specific registers to avoid cash mismatch.

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaUserTag, FaPhoneAlt, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function AWCRM() {
   return (
@@ -13,7 +14,7 @@ export default function AWCRM() {
             Workshop CRM
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Manage Workshop Leads and <span className="relative inline-block">Customer Opportunities with CRM<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+            Manage Workshop Leads and <GradientUnderline>Customer Opportunities with CRM</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
             Never let a potential client request slip away. GarageSaarthi CRM allows you to log inquiries, track potential customer follow-up actions, and monitor walk-ins or phone calls centrally, converting leads into active garage jobs.

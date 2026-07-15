@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
@@ -20,10 +21,7 @@ export default function WAHero() {
             </span>
             <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
               Workshop Management App for{" "}
-              <span className="relative inline-block">
-                Automotive Garages
-                <span className="absolute -bottom-2 left-0 w-full h-[4px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Automotive Garages</GradientUnderline>
             </h1>
             <p className="text-slate-300 text-sm md:text-base max-w-xl leading-relaxed">
               Manage digital job cards, customer logs, vehicle histories, parts stock inventory, mechanic commissions, billing registries, and client service alerts from your mobile.

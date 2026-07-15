@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaHistory } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GCCustomerVehicle() {
   const handleLinkClick = (label, dest) => {
@@ -38,7 +39,7 @@ export default function GCCustomerVehicle() {
             Service Logs
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Understand Your Customers and Their Vehicle History
+            Understand Your Customers and <GradientUnderline>Their Vehicle History</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             Workshop CRM databases work best when they track vehicle attributes. When a car or bike owner registers, the profile ties directly to the vehicle's permanent files.

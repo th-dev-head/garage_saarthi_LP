@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 const trialBenefits = [
   "Full access to all features — no limitations",
@@ -24,10 +25,7 @@ export default function CGFreeTrial() {
               </span>
               <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-4 leading-tight">
                 Try GarageSaarthi for Your Car Garage{" "}
-                <span className="relative inline-block">
-                  Free for 7 Days
-                  <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-                </span>
+               <GradientUnderline>Free for 7 Days</GradientUnderline>
               </h2>
               <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
                 Get complete access to all GarageSaarthi features — digital job cards, spare parts inventory, GST billing, service alerts, staff management, and more — for 7 days without any payment.

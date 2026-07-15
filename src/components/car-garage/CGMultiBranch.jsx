@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaBuilding, FaUserShield, FaChartPie, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function CGMultiBranch() {
   return (
@@ -14,10 +15,7 @@ export default function CGMultiBranch() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
               Manage Multiple Car Garage Branches with{" "}
-              <span className="relative inline-block">
-                Centralized Control
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Centralized Control</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
               If you operate more than one car garage location, GarageSaarthi lets you manage all branches from a single account. Monitor each outlet's performance, control user access, and view consolidated reports without visiting each branch physically.

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaBoxOpen, FaClipboardList, FaShoppingCart, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const cards = [
   {
@@ -32,10 +33,7 @@ export default function ARSInventory() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Track Spare Parts and Inventory Used in{" "}
-            <span className="relative inline-block">
-              Repair Jobs
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Repair Jobs</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Running out of basic components delays vehicle deliveries, while over-stocking blocks capital. Keep your inventory organized and handle purchase entries easily.

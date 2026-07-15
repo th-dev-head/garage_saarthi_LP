@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import Button from "../common/Button";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBCustomerProof() {
   const handleCtaClick = () => {
@@ -19,7 +20,7 @@ export default function GBCustomerProof() {
           Customer Success
         </span>
         <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-8 leading-tight">
-          How Indian Workshop Owners Simplify Invoicing
+          How Indian Workshop Owners <GradientUnderline>Simplify Invoicing</GradientUnderline>
         </h2>
 
         <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm text-left max-w-2xl mx-auto relative">

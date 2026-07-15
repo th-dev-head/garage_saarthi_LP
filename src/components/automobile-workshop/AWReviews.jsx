@@ -49,15 +49,8 @@ const reviews = [
 export default function AWReviews() {
   return (
     <TestimonialsGrid
-      title={
-        <>
-          See How Workshops Use GarageSaarthi in{" "}
-          <span className="relative inline-block">
-            Daily Operations.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="See How Workshops Use GarageSaarthi in"
+      titleHighlight="Daily Operations."
       subtitle="Hear from real independent garage owners, car workshops, and service centre operators across India who trust GarageSaarthi for their daily operations."
       reviews={reviews}
     />

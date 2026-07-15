@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../common/GradientUnderline";
 
 export default function GBWorkflow() {
   const steps = [
@@ -16,7 +17,8 @@ export default function GBWorkflow() {
             Invoicing Flow
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            How Job Cards Convert to Invoices Automatically
+            How Job Cards Convert to{" "}
+            <GradientUnderline>Invoices Automatically</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Eliminate double data entry. See how GarageSaarthi automates the billing process from arrival to print-out:

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const benefits = [
   "Centralized Repair Job Cards",
@@ -22,7 +23,7 @@ export default function AWProductDefinition() {
               What is GarageSaarthi?
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-              One Automobile Workshop Management Software for <span className="relative inline-block">Daily Operations<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" /></span>
+              One Automobile Workshop Management Software for <GradientUnderline>Daily Operations</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               GarageSaarthi is a complete and cloud-based automobile workshop management system designed to centralize and automate your entire workshop. Instead of using paper records, calculators, and spread sheets, you can run your daily repairs, inventory, billing, staff, and customer accounts from one secure platform.

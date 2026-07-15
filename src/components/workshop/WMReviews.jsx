@@ -49,15 +49,8 @@ const reviews = [
 export default function WMReviews() {
   return (
     <TestimonialsGrid
-      title={
-        <>
-          Workshop Owners Using GarageSaarthi{" "}
-          <span className="relative inline-block">
-            to Run Their Business.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-          </span>
-        </>
-      }
+      title="Workshop Owners Using GarageSaarthi"
+      titleHighlight="to Run Their Business."
       subtitle="Hear from real workshop owners across India who digitized their operations with GarageSaarthi."
       reviews={reviews}
       linkHref="/customers"

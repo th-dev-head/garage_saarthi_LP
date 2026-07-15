@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const benefits = [
   "Centralized Repair Job Cards",
@@ -25,10 +26,7 @@ export default function ARSProductDefinition() {
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-6 leading-tight">
               All-in-One Auto Repair Software for{" "}
-              <span className="relative inline-block">
-                Modern Repair Shops
-                <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-              </span>
+              <GradientUnderline>Modern Repair Shops</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Managing an auto repair business involves handling customer complaints, vehicle records, diagnostic sheets, parts inventory allocations, mechanics, and cash flow. Sticking to old paper registers, multiple spreadsheets, and disconnected tools leads to billing delays, parts leakage, and lost follow-up business.

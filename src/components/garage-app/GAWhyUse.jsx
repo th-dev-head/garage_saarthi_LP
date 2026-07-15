@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFileSignature, FaUserCircle, FaBook, FaBullhorn } from "react-icons/fa";
+import GradientUnderline from "../common/GradientUnderline";
 
 const cards = [
   { icon: <FaFileSignature />, title: "Digital Job Cards", desc: "Instantly create and allocate job cards to mechanics, eliminating manual registers." },
@@ -20,10 +21,7 @@ export default function GAWhyUse() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Why Garage Owners Use a{" "}
-            <span className="relative inline-block">
-              Mobile Garage Management App
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
-            </span>
+            <GradientUnderline>Mobile Garage Management App</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Transitioning from paper diaries to a mobile-based system gives owners complete control over operations, billing, and customer relationships.
