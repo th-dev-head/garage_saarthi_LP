@@ -26,18 +26,24 @@ const Header = () => {
     { name: "Pricing", href: "/pricing" },
   ];
 
-  const solutionsList = [
-    { name: "Workshop Management", href: "/solutions/workshop-management-software" },
-    { name: "Automobile Workshop", href: "/solutions/automobile-workshop-software" },
-    { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software" },
-    { name: "Garage Management App", href: "/solutions/garage-management-app" },
-    { name: "Workshop Management App", href: "/solutions/workshop-management-app" },
-    { name: "Car Garage Software", href: "/solutions/car-garage-software" },
-    { name: "Garage ERP Software", href: "/solutions/garage-erp-software" },
-    { name: "Garage Job Card Software", href: "/solutions/garage-job-card-software" },
-    { name: "Garage Billing Software", href: "/solutions/garage-billing-software" },
-    { name: "Garage CRM Software", href: "/solutions/garage-crm-software" },
-  ];
+  const solutionsMegaMenu = {
+    "Core Software": [
+      { name: "Garage Job Card Software", href: "/solutions/garage-job-card-software" },
+      { name: "Garage Billing Software", href: "/solutions/garage-billing-software" },
+      { name: "Garage CRM Software", href: "/solutions/garage-crm-software" },
+      { name: "Garage ERP Software", href: "/solutions/garage-erp-software" },
+    ],
+    "Workshop Solutions": [
+      { name: "Workshop Management", href: "/solutions/workshop-management-software" },
+      { name: "Automobile Workshop", href: "/solutions/automobile-workshop-software" },
+      { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software" },
+      { name: "Car Garage Software", href: "/solutions/car-garage-software" },
+    ],
+    "Apps & Mobile": [
+      { name: "Garage Management App", href: "/solutions/garage-management-app" },
+      { name: "Workshop Management App", href: "/solutions/workshop-management-app" },
+    ]
+  };
 
   useEffect(() => {
     const cleanPath = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
@@ -157,16 +163,36 @@ const Header = () => {
                       </Link>
 
                       {/* Dropdown Menu */}
-                      <div className="absolute top-full left-1/2 -translate-x-1/2 pt-5 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div className="bg-white border border-gray-100 rounded-2xl shadow-xl py-2 max-h-[380px] overflow-y-auto">
-                          {solutionsList.map((sol) => (
-                            <button
-                              key={sol.name}
-                              onClick={() => handleSolutionClick(sol.href)}
-                              className="w-full text-left px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-primary transition-colors cursor-pointer"
-                            >
-                              {sol.name}
-                            </button>
+                      <div 
+                        className="absolute top-full left-1/2 -translate-x-1/2 pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                        style={{ width: "800px" }}
+                      >
+                        <div 
+                          className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-6"
+                          style={{
+                            display: "grid",
+                            gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+                            gap: "24px"
+                          }}
+                        >
+                          {Object.entries(solutionsMegaMenu).map(([category, items]) => (
+                            <div key={category} className="space-y-3">
+                              <span className="text-[12px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
+                                {category}
+                              </span>
+                              <div className="flex flex-col gap-1 border-t border-slate-100 pt-3">
+                                {items.map((sol) => (
+                                  <button
+                                    key={sol.name}
+                                    onClick={() => handleSolutionClick(sol.href)}
+                                    className="w-full text-left px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary rounded-xl transition-colors cursor-pointer flex items-center gap-2"
+                                  >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-primary/45 flex-shrink-0" />
+                                    <span className="truncate">{sol.name}</span>
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
                           ))}
                         </div>
                       </div>
@@ -262,15 +288,24 @@ const Header = () => {
                       <FaChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isSolutionsOpenMobile ? "rotate-180" : ""}`} />
                     </button>
                     {isSolutionsOpenMobile && (
-                      <div className="pl-6 flex flex-col gap-1 mt-1 mb-2">
-                        {solutionsList.map((sol) => (
-                          <button
-                            key={sol.name}
-                            onClick={() => handleSolutionClick(sol.href)}
-                            className="text-left px-6 py-2.5 rounded-xl text-sm font-medium text-gray-600 hover:bg-gray-50 active:scale-[0.98]"
-                          >
-                            {sol.name}
-                          </button>
+                      <div className="pl-4 flex flex-col gap-3 mt-2 mb-2">
+                        {Object.entries(solutionsMegaMenu).map(([category, items]) => (
+                          <div key={category} className="space-y-1">
+                            <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-4 block mb-1">
+                              {category}
+                            </span>
+                            <div className="flex flex-col gap-0.5 pl-2 border-l border-slate-100">
+                              {items.map((sol) => (
+                                <button
+                                  key={sol.name}
+                                  onClick={() => handleSolutionClick(sol.href)}
+                                  className="text-left px-4 py-2 rounded-xl text-xs font-semibold text-gray-600 hover:bg-gray-50 active:scale-[0.98]"
+                                >
+                                  {sol.name}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
                         ))}
                       </div>
                     )}

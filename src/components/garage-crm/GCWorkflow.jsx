@@ -28,6 +28,7 @@ export default function GCWorkflow() {
         </div>
 
         {/* Step Timeline Row */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4">
           {steps.map((s, idx) => (
             <div key={idx} className="bg-slate-50 border border-slate-200/80 p-5 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
