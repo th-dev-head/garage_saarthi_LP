@@ -4,13 +4,13 @@ import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import GradientUnderline from "./GradientUnderline";
 
-export default function AccordionFAQ({ title, titleHighlight, subtitle, faqs = [] }) {
+export default function AccordionFAQ({ title, titleHighlight, subtitle, faqs = [], className = "" }) {
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (idx) => setOpenIndex(openIndex === idx ? -1 : idx);
 
   return (
-    <section className="px-4 lg:px-15 2xl:px-50 py-10 lg:py-20 bg-white flex justify-center">
+    <section className={`px-4 lg:px-15 2xl:px-50 py-10 lg:py-20 flex justify-center ${className || "bg-white"}`}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">

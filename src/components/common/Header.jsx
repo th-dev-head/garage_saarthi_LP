@@ -32,6 +32,7 @@ const Header = () => {
       { name: "Garage Billing Software", href: "/solutions/garage-billing-software" },
       { name: "Garage CRM Software", href: "/solutions/garage-crm-software" },
       { name: "Garage ERP Software", href: "/solutions/garage-erp-software" },
+      { name: "Garage Inventory Software", href: "/solutions/garage-inventory-software" },
     ],
     "Workshop Solutions": [
       { name: "Workshop Management", href: "/solutions/workshop-management-software" },
