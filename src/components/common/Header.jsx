@@ -137,7 +137,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* ================= DESKTOP ================= */}
+          {/* DESKTOP  */}
           <div className="hidden lg:flex items-center justify-between w-full px-4">
             {/* Logo */}
             <div
