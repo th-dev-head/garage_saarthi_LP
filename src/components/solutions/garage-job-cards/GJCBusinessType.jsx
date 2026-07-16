@@ -22,7 +22,7 @@ export default function GJCBusinessType() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">

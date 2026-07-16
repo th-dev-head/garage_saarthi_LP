@@ -1,7 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import Button from "../../common/Button";
+import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GRASalesRevenue() {
   const handleFinanceClick = () => {
@@ -13,7 +14,7 @@ export default function GRASalesRevenue() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 order-last lg:order-first bg-white border border-slate-200/60 rounded-3xl p-8 shadow-sm">
           <h3 className="text-base font-bold text-text-dark mb-4">Financial Reports Supported:</h3>
@@ -29,15 +30,15 @@ export default function GRASalesRevenue() {
             Financial Health
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Track Garage Sales, Revenue and Financial Performance
+            Track Garage Sales, Revenue and <GradientUnderline>Financial Performance</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Monitor billing trends over custom date ranges. Understand cash flow dynamics by checking reports categorized by payment modes, service bills, and counters sales. Perfect for tax calculation and CA auditing.
           </p>
           <div className="pt-2">
-            <Link href="/features/finance" onClick={handleFinanceClick} className="rounded-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2">
-              Explore Garage Finance Management <FaChevronRight className="w-3.5 h-3.5" />
-            </Link>
+            <Button href="/features/finance" onClick={handleFinanceClick} icon={<FaChevronRight className="w-3.5 h-3.5" />}>
+              Explore Garage Finance Management
+            </Button>
           </div>
         </div>
       </div>

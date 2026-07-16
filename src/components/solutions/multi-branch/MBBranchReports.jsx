@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../../common/GradientUnderline";
+import Button from "../../common/Button";
 
 export default function MBBranchReports() {
   const handleReportsClick = () => {
@@ -13,7 +15,7 @@ export default function MBBranchReports() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-3xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Available Branch Reports:</h3>
@@ -29,14 +31,16 @@ export default function MBBranchReports() {
             Consolidated Analytics
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Understand Garage Operations with Branch-Wise Reports
+            Understand Garage Operations with <GradientUnderline>Branch-Wise Reports</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Eliminate manual reports, Excel files, and calls. GarageSaarthi compiles branch-wise operational performance logs, letting you compare branches, analyze stock movements, and evaluate user efficiency charts centrally.
           </p>
           <div className="pt-2">
-            <Link href="/features/reports" onClick={handleReportsClick} className="rounded-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2">
-              Explore Garage Reports <FaChevronRight className="w-3.5 h-3.5" />
+            <Link href="/features/reports" onClick={handleReportsClick}>
+              <Button>
+                Explore Garage Reports <FaChevronRight className="w-3.5 h-3.5" />
+              </Button>
             </Link>
           </div>
         </div>

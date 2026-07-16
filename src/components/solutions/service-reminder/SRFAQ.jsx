@@ -58,6 +58,7 @@ export default function SRFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Service Reminder Software"
       faqs={data}
+      className="bg-slate-50"
     />
   );
 }

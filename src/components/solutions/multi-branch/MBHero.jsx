@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
@@ -44,9 +45,9 @@ export default function MBHero() {
           <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />} className="w-full sm:w-auto">
             Start 7-Day Free Trial
           </Button>
-          <a href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer w-full sm:w-auto whitespace-nowrap h-11 text-center">
+          <Link href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer w-full sm:w-auto whitespace-nowrap h-11 text-center">
             View Pricing
-          </a>
+          </Link>
         </div>
       </div>
     </section>

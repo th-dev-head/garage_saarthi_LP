@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../../common/GradientUnderline";
 
 export default function VSHFeatures() {
   const handleFeatureClick = (name) => {
@@ -24,20 +25,20 @@ export default function VSHFeatures() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Connected Platform
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Manage More Than Vehicle Service History
+            Manage More Than <GradientUnderline>Vehicle Service History</GradientUnderline>
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((f, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+            <div key={idx} className="bg-white border border-slate-200/60 rounded-2xl p-6 flex flex-col justify-between shadow-sm">
               <div>
                 <h3 className="text-sm font-bold text-text-dark mb-2">{f.title}</h3>
                 <p className="text-xs text-slate-500 mb-6">{f.desc}</p>

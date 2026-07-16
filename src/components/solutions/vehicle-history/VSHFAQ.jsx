@@ -58,6 +58,7 @@ export default function VSHFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Vehicle Service History Software"
       faqs={data}
+      className="bg-slate-50"
     />
   );
 }

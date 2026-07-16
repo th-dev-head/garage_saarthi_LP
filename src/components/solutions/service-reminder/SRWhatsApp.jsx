@@ -1,8 +1,10 @@
 import React from "react";
+import GradientUnderline from "../../common/GradientUnderline";
 import { FaCheckCircle } from "react-icons/fa";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
+
 
 export default function SRWhatsApp() {
   const handleTrialClick = () => {
@@ -16,7 +18,7 @@ export default function SRWhatsApp() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 order-last lg:order-first">
           <div className="bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-3xl p-6 shadow-xl border border-slate-800 relative">
@@ -44,7 +46,7 @@ export default function SRWhatsApp() {
             WhatsApp Integration
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Send WhatsApp Service Reminders to Your Customers
+            Send <GradientUnderline>WhatsApp Service Reminders</GradientUnderline> to Your Customers
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Reach customers where they are active. GarageSaarthi lets you coordinate and send personalized vehicle service reminder communication through WhatsApp.

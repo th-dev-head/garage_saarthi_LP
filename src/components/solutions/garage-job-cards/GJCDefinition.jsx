@@ -4,7 +4,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GJCDefinition() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-4xl w-full text-center">
         <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
           Product Definition

@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../../common/GradientUnderline";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
@@ -24,14 +25,14 @@ export default function GRAWebMobile() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Cloud Sync
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Access Garage Reports on Web and Mobile
+            Access Garage Reports on <GradientUnderline>Web and Mobile</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             GarageSaarthi is a cloud-based reporting system. View invoice stats on your browser dashboard or check active repair card counts from the Android application on the road.

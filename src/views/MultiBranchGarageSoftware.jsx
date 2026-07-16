@@ -26,7 +26,7 @@ export default function MultiBranchGarageSoftware() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
       <Header />
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         <MBHero />
         <MBDefinition />
         <MBCentralized />

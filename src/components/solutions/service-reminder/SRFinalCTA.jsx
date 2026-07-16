@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import GradientUnderline from "../../common/GradientUnderline";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
@@ -25,11 +27,11 @@ export default function SRFinalCTA() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-900 text-white flex justify-center relative overflow-hidden">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 text-white flex justify-center relative overflow-hidden" style={{backgroundColor: "#0f172a"}}>
       <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="mx-auto max-w-full lg:max-w-4xl w-full text-center space-y-6 relative z-10">
         <h2 className="text-2xl md:text-4xl font-bold leading-tight">
-          Ready to Simplify Your Garage Service Follow-Ups?
+          Ready to Simplify Your Garage <GradientUnderline>Service Follow-Ups</GradientUnderline>?
         </h2>
         <p className="text-slate-300 text-xs md:text-sm max-w-xl mx-auto leading-relaxed">
           Bring structure to your customer alerts, check vehicle service due dates, and build repeat business with GarageSaarthi.
@@ -38,9 +40,9 @@ export default function SRFinalCTA() {
           <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />}>
             Start 7-Day Free Trial
           </Button>
-          <a href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11 text-center">
+          <Link href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11 text-center">
             View Pricing
-          </a>
+          </Link>
         </div>
       </div>
     </section>

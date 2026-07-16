@@ -10,7 +10,7 @@ export default function VSHJobCards() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -26,7 +26,7 @@ export default function VSHJobCards() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {steps.map((s, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-8">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-8">
               <h3 className="text-base font-bold text-text-dark mb-4">{s.title}</h3>
               <p className="text-xs text-slate-500 leading-relaxed mb-6">{s.desc}</p>
               {idx === 0 && (

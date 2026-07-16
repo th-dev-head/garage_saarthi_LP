@@ -1,7 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
+import Button from "../../common/Button";
+import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GRAMultiBranch() {
   const handleBranchClick = () => {
@@ -13,22 +14,22 @@ export default function GRAMultiBranch() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Multi-Location Analytics
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Review Garage Performance Across Multiple Branches
+            Review Garage Performance Across <GradientUnderline>Multiple Branches</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Operating a chain of auto centers or workshop franchise outlets? Switch between branch locations on the dashboard and track branch-level sales lists, stock details, and attendance logs. Consolidated analytics made simple.
           </p>
           <div className="pt-2">
-            <Link href="/solutions/multi-branch-garage-software" onClick={handleBranchClick} className="rounded-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2">
-              Explore Multi-Branch Garage Software <FaChevronRight className="w-3.5 h-3.5" />
-            </Link>
+            <Button href="/solutions/multi-branch-garage-software" onClick={handleBranchClick} icon={<FaChevronRight className="w-3.5 h-3.5" />}>
+              Explore Multi-Branch Garage Software
+            </Button>
           </div>
         </div>
         <div className="lg:col-span-5 bg-slate-100 rounded-3xl overflow-hidden aspect-[4/3] flex items-center justify-center border border-slate-200">

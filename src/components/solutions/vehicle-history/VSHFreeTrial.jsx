@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import GradientUnderline from "../../common/GradientUnderline";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
@@ -25,8 +27,8 @@ export default function VSHFreeTrial() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
-      <div className="mx-auto max-w-full lg:max-w-4xl w-full bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-6 relative overflow-hidden">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-4xl w-full text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-6 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #431407 100%)" }}>
         <span className="text-xs uppercase tracking-wider text-orange-400 font-bold bg-orange-950/60 border border-orange-800/30 px-3 py-1 rounded-full">
           Free Onboarding
         </span>
@@ -40,9 +42,9 @@ export default function VSHFreeTrial() {
           <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />}>
             Start 7-Day Free Trial
           </Button>
-          <a href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11 text-center">
+          <Link href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11 text-center">
             View Pricing
-          </a>
+          </Link>
         </div>
       </div>
     </section>

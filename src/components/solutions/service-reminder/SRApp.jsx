@@ -1,4 +1,5 @@
 import React from "react";
+import GradientUnderline from "../../common/GradientUnderline";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
@@ -12,14 +13,14 @@ export default function SRApp() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Mobile Access
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Manage Service Reminders with the GarageSaarthi App
+            Manage Service Reminders with the <GradientUnderline>GarageSaarthi App</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Access due service alerts directly from your smartphone. Staff can log comments, set call back dates, and review customer files on the go. Available for web and Android devices.

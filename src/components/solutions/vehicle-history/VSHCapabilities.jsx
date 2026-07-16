@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import GradientUnderline from "../../common/GradientUnderline";
 import { FaBookOpen, FaWrench, FaTools, FaFileInvoice, FaUsers } from "react-icons/fa";
 
 export default function VSHCapabilities() {
@@ -40,14 +41,14 @@ export default function VSHCapabilities() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
             Platform Capabilities
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Track Vehicle Service, Repair and Maintenance Records
+            Track Vehicle Service, Repair and <GradientUnderline>Maintenance Records</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm">
             Everything your mechanics and managers need to know about customer vehicle records:

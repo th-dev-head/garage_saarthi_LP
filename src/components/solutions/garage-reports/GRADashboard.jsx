@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
+import Button from "../../common/Button";
 
 export default function GRADashboard() {
   const handleDashboardClick = () => {
@@ -14,7 +15,7 @@ export default function GRADashboard() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -27,9 +28,9 @@ export default function GRADashboard() {
             The central GarageSaarthi dashboard brings critical metrics together. Track closed invoices, active repair tasks, pending invoices, payments collected, stock levels, and total customer visits at a glance.
           </p>
           <div className="pt-2">
-            <Link href="/features/dashboard" onClick={handleDashboardClick} className="rounded-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2">
-              Explore Garage Dashboard <FaChevronRight className="w-3.5 h-3.5" />
-            </Link>
+            <Button href="/features/dashboard" onClick={handleDashboardClick} icon={<FaChevronRight className="w-3.5 h-3.5" />}>
+              Explore Garage Dashboard
+            </Button>
           </div>
         </div>
         <div className="lg:col-span-5 bg-slate-100 border border-slate-200 rounded-3xl p-6 shadow-sm aspect-[4/3] flex items-center justify-center">

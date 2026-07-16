@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
+import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GRAFiltersAccess() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center border-b border-slate-200/60">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 bg-white border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Quick Usability Features:</h3>
@@ -20,7 +21,7 @@ export default function GRAFiltersAccess() {
             Export & Access
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Find the Garage Information You Need Without Checking Multiple Records
+            Find the Garage Information You Need Without <GradientUnderline>Checking Multiple Records</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Filter billing lists or stock summaries with custom parameters. You can export data lists to Excel or PDF files in one tap. Define CA permissions so your chartered accountant can audit files directly.
