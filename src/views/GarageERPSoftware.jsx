@@ -5,25 +5,25 @@ import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
 import ScrollToTop from "../components/common/ScrollToTop";
 
-import GEHero from "../components/garage-erp/GEHero";
-import GEDefinition from "../components/garage-erp/GEDefinition";
-import GEConnectedOperations from "../components/garage-erp/GEConnectedOperations";
-import GECentralized from "../components/garage-erp/GECentralized";
-import GEWorkflow from "../components/garage-erp/GEWorkflow";
-import GEInventoryOperations from "../components/garage-erp/GEInventoryOperations";
-import GECustomerVehicle from "../components/garage-erp/GECustomerVehicle";
-import GEEmployee from "../components/garage-erp/GEEmployee";
-import GEFinance from "../components/garage-erp/GEFinance";
-import GEMultiBranch from "../components/garage-erp/GEMultiBranch";
-import GECloudAccess from "../components/garage-erp/GECloudAccess";
-import GEBusinessType from "../components/garage-erp/GEBusinessType";
-import GEIndiaPositioning from "../components/garage-erp/GEIndiaPositioning";
-import GEWhySaarthi from "../components/garage-erp/GEWhySaarthi";
-import GESelectionGuidance from "../components/garage-erp/GESelectionGuidance";
-import GECustomerProof from "../components/garage-erp/GECustomerProof";
-import GEFreeTrial from "../components/garage-erp/GEFreeTrial";
-import GEFAQ from "../components/garage-erp/GEFAQ";
-import GEFinalCTA from "../components/garage-erp/GEFinalCTA";
+import GEHero from "../components/solutions/garage-erp/GEHero";
+import GEDefinition from "../components/solutions/garage-erp/GEDefinition";
+import GEConnectedOperations from "../components/solutions/garage-erp/GEConnectedOperations";
+import GECentralized from "../components/solutions/garage-erp/GECentralized";
+import GEWorkflow from "../components/solutions/garage-erp/GEWorkflow";
+import GEInventoryOperations from "../components/solutions/garage-erp/GEInventoryOperations";
+import GECustomerVehicle from "../components/solutions/garage-erp/GECustomerVehicle";
+import GEEmployee from "../components/solutions/garage-erp/GEEmployee";
+import GEFinance from "../components/solutions/garage-erp/GEFinance";
+import GEMultiBranch from "../components/solutions/garage-erp/GEMultiBranch";
+import GECloudAccess from "../components/solutions/garage-erp/GECloudAccess";
+import GEBusinessType from "../components/solutions/garage-erp/GEBusinessType";
+import GEIndiaPositioning from "../components/solutions/garage-erp/GEIndiaPositioning";
+import GEWhySaarthi from "../components/solutions/garage-erp/GEWhySaarthi";
+import GESelectionGuidance from "../components/solutions/garage-erp/GESelectionGuidance";
+import GECustomerProof from "../components/solutions/garage-erp/GECustomerProof";
+import GEFreeTrial from "../components/solutions/garage-erp/GEFreeTrial";
+import GEFAQ from "../components/solutions/garage-erp/GEFAQ";
+import GEFinalCTA from "../components/solutions/garage-erp/GEFinalCTA";
 
 export default function GarageERPSoftware() {
   return (

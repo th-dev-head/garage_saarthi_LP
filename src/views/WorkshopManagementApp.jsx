@@ -6,21 +6,21 @@ import Footer from "../components/common/Footer";
 import ScrollToTop from "../components/common/ScrollToTop";
 
 // Section Components
-import WAHero from "../components/workshop-app/WAHero";
-import WADefinition from "../components/workshop-app/WADefinition";
-import WAMobileWorkshop from "../components/workshop-app/WAMobileWorkshop";
-import WACoreCapabilities from "../components/workshop-app/WACoreCapabilities";
-import WABusinessTypes from "../components/workshop-app/WABusinessTypes";
-import WAOwnersMechanics from "../components/workshop-app/WAOwnersMechanics";
-import WAWebMobileSync from "../components/workshop-app/WAWebMobileSync";
-import WATracking from "../components/workshop-app/WATracking";
-import WAMultiBranch from "../components/workshop-app/WAMultiBranch";
-import WAServiceAlerts from "../components/workshop-app/WAServiceAlerts";
-import WAWhySaarthi from "../components/workshop-app/WAWhySaarthi";
-import WAAndroidDownload from "../components/workshop-app/WAAndroidDownload";
-import WAFreeTrial from "../components/workshop-app/WAFreeTrial";
-import WAFAQ from "../components/workshop-app/WAFAQ";
-import WAFinalCTA from "../components/workshop-app/WAFinalCTA";
+import WAHero from "../components/solutions/workshop-app/WAHero";
+import WADefinition from "../components/solutions/workshop-app/WADefinition";
+import WAMobileWorkshop from "../components/solutions/workshop-app/WAMobileWorkshop";
+import WACoreCapabilities from "../components/solutions/workshop-app/WACoreCapabilities";
+import WABusinessTypes from "../components/solutions/workshop-app/WABusinessTypes";
+import WAOwnersMechanics from "../components/solutions/workshop-app/WAOwnersMechanics";
+import WAWebMobileSync from "../components/solutions/workshop-app/WAWebMobileSync";
+import WATracking from "../components/solutions/workshop-app/WATracking";
+import WAMultiBranch from "../components/solutions/workshop-app/WAMultiBranch";
+import WAServiceAlerts from "../components/solutions/workshop-app/WAServiceAlerts";
+import WAWhySaarthi from "../components/solutions/workshop-app/WAWhySaarthi";
+import WAAndroidDownload from "../components/solutions/workshop-app/WAAndroidDownload";
+import WAFreeTrial from "../components/solutions/workshop-app/WAFreeTrial";
+import WAFAQ from "../components/solutions/workshop-app/WAFAQ";
+import WAFinalCTA from "../components/solutions/workshop-app/WAFinalCTA";
 
 export default function WorkshopManagementApp() {
   return (

@@ -182,16 +182,25 @@ const Header = () => {
                                 {category}
                               </span>
                               <div className="flex flex-col gap-1 border-t border-slate-100 pt-3">
-                                {items.map((sol) => (
-                                  <button
-                                    key={sol.name}
-                                    onClick={() => handleSolutionClick(sol.href)}
-                                    className="w-full text-left px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary rounded-xl transition-colors cursor-pointer flex items-center gap-2"
-                                  >
-                                    <span className="w-1.5 h-1.5 rounded-full bg-primary/45 flex-shrink-0" />
-                                    <span className="truncate">{sol.name}</span>
-                                  </button>
-                                ))}
+                                {items.map((sol) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === sol.href.replace(/\/$/, '');
+                                  return (
+                                    <button
+                                      key={sol.name}
+                                      onClick={() => handleSolutionClick(sol.href)}
+                                      className={`w-full text-left px-3 py-2 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-center gap-2 ${
+                                        isCurrent
+                                          ? "bg-slate-50 text-primary"
+                                          : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                                      }`}
+                                    >
+                                      <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
+                                        isCurrent ? "bg-primary" : "bg-primary/45"
+                                      }`} />
+                                      <span className="truncate">{sol.name}</span>
+                                    </button>
+                                  );
+                                })}
                               </div>
                             </div>
                           ))}
@@ -296,15 +305,22 @@ const Header = () => {
                               {category}
                             </span>
                             <div className="flex flex-col gap-0.5 pl-2 border-l border-slate-100">
-                              {items.map((sol) => (
-                                <button
-                                  key={sol.name}
-                                  onClick={() => handleSolutionClick(sol.href)}
-                                  className="text-left px-4 py-2 rounded-xl text-xs font-semibold text-gray-600 hover:bg-gray-50 active:scale-[0.98]"
-                                >
-                                  {sol.name}
-                                </button>
-                              ))}
+                              {items.map((sol) => {
+                                const isCurrent = pathname.replace(/\/$/, '') === sol.href.replace(/\/$/, '');
+                                return (
+                                  <button
+                                    key={sol.name}
+                                    onClick={() => handleSolutionClick(sol.href)}
+                                    className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${
+                                      isCurrent
+                                        ? "bg-slate-50 text-primary"
+                                        : "text-gray-600 hover:bg-gray-50"
+                                    }`}
+                                  >
+                                    {sol.name}
+                                  </button>
+                                );
+                              })}
                             </div>
                           </div>
                         ))}
