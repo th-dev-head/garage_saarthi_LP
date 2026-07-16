@@ -33,12 +33,16 @@ const Header = () => {
       { name: "Garage CRM Software", href: "/solutions/garage-crm-software" },
       { name: "Garage ERP Software", href: "/solutions/garage-erp-software" },
       { name: "Garage Inventory Software", href: "/solutions/garage-inventory-software" },
+      { name: "Service Reminder Software", href: "/solutions/service-reminder-software" },
     ],
     "Workshop Solutions": [
       { name: "Workshop Management", href: "/solutions/workshop-management-software" },
       { name: "Automobile Workshop", href: "/solutions/automobile-workshop-software" },
       { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software" },
       { name: "Car Garage Software", href: "/solutions/car-garage-software" },
+      { name: "Vehicle Service History Software", href: "/solutions/vehicle-service-history-software" },
+      { name: "Garage Reports & Analytics Software", href: "/solutions/garage-reports-analytics-software" },
+      { name: "Multi Branch Garage Software", href: "/solutions/multi-branch-garage-software" },
     ],
     "Apps & Mobile": [
       { name: "Garage Management App", href: "/solutions/garage-management-app" },
