@@ -1,7 +1,5 @@
 "use client";
 import { FRONTEND_URL } from "@/src/config/env";
-
-
 import React, { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
@@ -91,10 +89,6 @@ const Header = () => {
     setIsSolutionsOpenMobile(false);
   };
 
-  const scrollToContact = () => {
-    router.push("/contact", { scroll: false });
-  };
-
   const scrollToHome = () => {
     router.push("/", { scroll: false });
   };
@@ -175,7 +169,7 @@ const Header = () => {
                       {/* Dropdown Menu */}
                       <div 
                         className="absolute top-full left-1/2 -translate-x-1/2 pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
-                        style={{ width: "800px" }}
+                        style={{ width: "750px" }}
                       >
                         <div 
                           className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-6"
@@ -205,8 +199,8 @@ const Header = () => {
                                     >
                                       <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
                                         isCurrent ? "bg-primary" : "bg-primary/45"
-                                      }`} />
-                                      <span className="truncate">{sol.name}</span>
+                                          }`} />
+                                      <span className="whitespace-nowrap">{sol.name}</span>
                                     </button>
                                   );
                                 })}
