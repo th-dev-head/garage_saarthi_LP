@@ -191,16 +191,16 @@ const Header = () => {
                                     <button
                                       key={sol.name}
                                       onClick={() => handleSolutionClick(sol.href)}
-                                      className={`w-full text-left px-3 py-2 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-center gap-2 ${
+                                      className={`w-full text-left px-3 py-2 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${
                                         isCurrent
                                           ? "bg-slate-50 text-primary"
                                           : "text-slate-700 hover:bg-slate-50 hover:text-primary"
                                       }`}
                                     >
-                                      <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
+                                      <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${
                                         isCurrent ? "bg-primary" : "bg-primary/45"
                                           }`} />
-                                      <span className="whitespace-nowrap">{sol.name}</span>
+                                      <span className="whitespace-normal break-words leading-tight">{sol.name}</span>
                                     </button>
                                   );
                                 })}
