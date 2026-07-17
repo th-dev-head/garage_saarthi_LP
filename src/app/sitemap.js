@@ -103,6 +103,42 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/solutions/garage-inventory-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-finance-management-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-payroll-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-attendance-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-accounting-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/car-workshop-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/features`,
       lastModified,
       changeFrequency: "monthly",
