@@ -46,6 +46,11 @@ const Header = () => {
       { name: "Vehicle Service History Software", href: "/solutions/vehicle-service-history-software" },
       { name: "Garage Reports & Analytics Software", href: "/solutions/garage-reports-analytics-software" },
       { name: "Multi Branch Garage Software", href: "/solutions/multi-branch-garage-software" },
+      { name: "Bike Workshop Software", href: "/solutions/bike-workshop-software" },
+      { name: "Truck Workshop Software", href: "/solutions/truck-workshop-software" },
+      { name: "EV Garage Management Software", href: "/solutions/ev-garage-management-software" },
+      { name: "Car Detailing Software", href: "/solutions/car-detailing-software" },
+      { name: "Fleet Workshop Software", href: "/solutions/fleet-workshop-software" },
     ],
     "Apps & Mobile": [
       { name: "Garage Management App", href: "/solutions/garage-management-app" },

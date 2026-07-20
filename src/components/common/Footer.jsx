@@ -1,6 +1,5 @@
-"use client";import { FRONTEND_URL } from "@/src/config/env";
-
-
+"use client";
+import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
@@ -14,7 +13,7 @@ import { trackEvent } from "../../utils/pixel";
 
 const Footer = () => {
   return (
-    <footer className="relative px-4 lg:px-15 2xl:px-50 py-12 bg-white overflow-hidden">
+    <footer className="relative px-4 lg:px-15 2xl:px-50 py-12 bg-white overflow-hidden border-t border-gray-200/60">
       {/* Bottom Left Shadow Vector */}
       <img
         src={BgVector1}
@@ -43,14 +42,14 @@ const Footer = () => {
             </p>
             <p className="text-sm font-medium">
               Product By{" "}
-              <a
+              <Link
                 href="http://www.techifyhouse.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#B02E0C] font-bold hover:underline"
               >
                 TechifyHouse
-              </a>
+              </Link>
             </p>
             <div className="pt-2">
               <Button
@@ -108,22 +107,22 @@ const Footer = () => {
               <h3 className="text-text-dark font-bold text-sm tracking-wide uppercase">Contact</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="tel:+917574045260" className="flex items-start gap-2 text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium group">
+                  <Link href="tel:+917574045260" className="flex items-start gap-2 text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium group">
                     <Phone className="w-4 h-4 mt-0.5 shrink-0 text-[#B02E0C]" />
                     +91 7574045260
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="mailto:contact@garagesaarthi.com" className="flex items-start gap-2 text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
+                  <Link href="mailto:contact@garagesaarthi.com" className="flex items-start gap-2 text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
                     <Mail className="w-4 h-4 mt-0.5 shrink-0 text-[#B02E0C]" />
                     contact@garagesaarthi.com
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://maps.app.goo.gl/4T1CfS1xF22QC2Qk6" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
+                  <Link href="https://maps.app.goo.gl/4T1CfS1xF22QC2Qk6" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
                     <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#B02E0C]" />
                     241-Royal Square, Utran, Surat, Gujarat
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -132,20 +131,20 @@ const Footer = () => {
               <h3 className="text-text-dark font-bold text-sm tracking-wide uppercase">Follow Us</h3>
               <div className="flex gap-3 flex-wrap">
                 {/* Facebook */}
-                <a href="https://www.facebook.com/people/GarageSaarthi/61586923957162/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                <Link href="https://www.facebook.com/people/GarageSaarthi/61586923957162/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                   className="w-8 h-8 rounded-full border border-[#EEE] bg-orange-50 flex items-center justify-center hover:bg-[#B02E0C] hover:border-[#B02E0C] group transition-all">
                   <FaFacebook className="w-4 h-4 text-[#B02E0C] group-hover:text-white" />
-                </a>
+                </Link>
                 {/* Instagram */}
-                <a href="https://www.instagram.com/garagesaarthi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                <Link href="https://www.instagram.com/garagesaarthi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                   className="w-8 h-8 rounded-full border border-[#EEE] bg-orange-50 flex items-center justify-center hover:bg-[#B02E0C] hover:border-[#B02E0C] group transition-all">
                   <FaInstagram className="w-4 h-4 text-[#B02E0C] group-hover:text-white" />
-                </a>
+                </Link>
                 {/* YouTube */}
-                <a href="https://www.youtube.com/@GarageSaarthi" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+                <Link href="https://www.youtube.com/@GarageSaarthi" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
                   className="w-8 h-8 rounded-full border border-[#EEE] bg-orange-50 flex items-center justify-center hover:bg-[#B02E0C] hover:border-[#B02E0C] group transition-all">
                   <FaYoutube className="w-4 h-4 text-[#B02E0C] group-hover:text-white" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -156,14 +155,14 @@ const Footer = () => {
         <div className="pt-6 border-t border-gray-200/60 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm 2xl:text-sm">
             © {new Date().getFullYear()} GarageSaarthi. All rights reserved by{" "}
-            <a
+            <Link
               href="http://www.techifyhouse.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#B02E0C] font-medium hover:underline"
             >
-              Techifyhouse.
-            </a>
+              TechifyHouse
+            </Link>
           </p>
 
           <div className="flex items-center gap-8">

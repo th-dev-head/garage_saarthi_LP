@@ -139,6 +139,36 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/solutions/bike-workshop-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/truck-workshop-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/ev-garage-management-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/car-detailing-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/fleet-workshop-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/features`,
       lastModified,
       changeFrequency: "monthly",
