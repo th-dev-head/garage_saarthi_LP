@@ -23,7 +23,7 @@ export default function GCCloudAccess() {
       titleHighlight="Web and Mobile"
       subtitle="GarageSaarthi runs on secure cloud servers, giving you instant web access on laptop browsers and live synchronization with our Android application."
       features={cloudFeatures}
-      bgClass="bg-slate-50"
+      bgClass="bg-white"
     />
   );
 }

@@ -47,7 +47,7 @@ export default function AWCRM() {
           </div>
 
           {/* CRM Kanban Simulation */}
-          <div className="bg-white border border-slate-300 rounded-2xl p-6 shadow-sm">
+          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
             <h3 className="text-sm font-extrabold text-slate-900 mb-4">
               Leads & Opportunity Tracker
             </h3>

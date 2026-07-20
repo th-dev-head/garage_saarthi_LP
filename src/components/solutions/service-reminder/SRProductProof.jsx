@@ -23,7 +23,7 @@ export default function SRProductProof() {
             { title: "WhatsApp Alert Templates", desc: "Customized customer message verification.", img: "/images/whatsAppTemplates.png" },
             { title: "Bulk Invite Customers", desc: "Synchronized historical maintenance sheets and invitations.", img: "/images/bulkInviteCustomers.png" }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
               <div className="bg-slate-100 rounded-2xl aspect-[4/3] mb-6 flex items-center justify-center border border-slate-200/60 overflow-hidden relative">
                 <img
                   src={item.img}

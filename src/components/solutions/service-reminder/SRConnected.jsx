@@ -28,7 +28,7 @@ export default function SRConnected() {
 
         <div className="flex flex-wrap gap-3 justify-center pt-4">
           {links.map((link, idx) => (
-            <Link key={idx} href={link.url} className="bg-slate-50 border border-slate-200 hover:border-slate-300 text-slate-700 px-5 py-2.5 rounded-full text-xs font-semibold transition-all">
+            <Link key={idx} href={link.url} className="bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-5 py-2.5 rounded-full text-xs font-semibold transition-all">
               {link.name}
             </Link>
           ))}

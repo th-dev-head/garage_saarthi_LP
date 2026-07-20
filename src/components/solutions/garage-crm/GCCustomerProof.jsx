@@ -17,7 +17,7 @@ export default function GCCustomerProof() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-4xl w-full text-center">
         <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
           Customer Success
@@ -27,7 +27,7 @@ export default function GCCustomerProof() {
           <GradientUnderline>Customer Workflows</GradientUnderline>
         </h2>
 
-        <div className="bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm text-left max-w-2xl mx-auto relative">
+        <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm text-left max-w-2xl mx-auto relative">
           <div className="flex gap-1 text-orange-400 mb-6 justify-center md:justify-start">
             {[...Array(5)].map((_, i) => (
               <FaStar key={i} className="w-5 h-5 fill-current" />

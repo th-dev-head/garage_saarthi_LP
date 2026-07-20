@@ -55,6 +55,7 @@ export default function WMReviews() {
       reviews={reviews}
       linkHref="/customers"
       linkLabel="View All Customer Stories"
+      bgClass="bg-white"
     />
   );
 }

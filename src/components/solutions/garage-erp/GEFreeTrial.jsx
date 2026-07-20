@@ -39,9 +39,9 @@ export default function GEFreeTrial() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm max-w-4xl mx-auto">
+        <div className="bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Left Side */}
             <div className="space-y-6">
@@ -78,7 +78,7 @@ export default function GEFreeTrial() {
             </div>
 
             {/* Right Side Card */}
-            <div className="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm">
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 shadow-sm">
               <h3 className="text-sm font-bold text-slate-900 mb-4">What is included in the ERP trial?</h3>
               <ul className="space-y-3">
                 {trialBenefits.map((item, idx) => (

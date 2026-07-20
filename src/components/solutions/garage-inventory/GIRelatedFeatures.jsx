@@ -61,7 +61,7 @@ export default function GIRelatedFeatures() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {relatedFeatures.map((feat, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 shadow-xs hover:shadow-sm transition-shadow duration-200 flex flex-col justify-between">
+            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs hover:shadow-sm transition-shadow duration-200 flex flex-col justify-between">
               <div className="space-y-3">
                 <div className="w-8 h-8 rounded-xl bg-white border border-slate-200/80 flex items-center justify-center">
                   {feat.icon}

@@ -26,7 +26,7 @@ export default function GCOperations() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -42,7 +42,7 @@ export default function GCOperations() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {modules.map((m, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col justify-between">
+            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col justify-between">
               <div>
                 <h3 className="text-sm font-bold text-text-dark mb-2">{m.name}</h3>
                 <p className="text-xs text-slate-500 mb-6 leading-relaxed">{m.desc}</p>

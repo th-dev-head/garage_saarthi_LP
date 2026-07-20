@@ -19,6 +19,7 @@ export default function GCManualVsCrm() {
       manualHeader="Manual Garage Process"
       digitalHeader="With GarageSaarthi CRM"
       comparisons={comparisonData}
+      bgClass=""
     />
   );
 }

@@ -47,7 +47,7 @@ export default function GAEcosystem() {
                 <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{m.desc}</p>
               </div>
               <div className="pt-6">
-                <Link href={m.url} onClick={() => handleFeatureClick(m.title, m.url)} className="text-primary text-xs font-bold hover:underline">
+                <Link href={m.url} onClick={() => handleFeatureClick(m.title, m.url)} className="text-primary text-xs font-bold hover:underline flex gap-2 items-center">
                   Explore {m.title} Feature <FaArrowRight className="w-3 h-3" />
                 </Link>
               </div>

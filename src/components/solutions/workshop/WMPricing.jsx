@@ -40,7 +40,7 @@ export default function WMPricing() {
               </Button>
               <Link
                 href="/pricing"
-                className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-full whitespace-nowrap border border-slate-300 text-sm font-medium text-slate-700 hover:border-primary/40 hover:text-primary transition-colors"
+                className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-full whitespace-nowrap border border-slate-300 bg-white text-sm font-medium text-slate-700 hover:border-primary/40 hover:text-primary transition-colors"
               >
                 View Pricing Plans
               </Link>
