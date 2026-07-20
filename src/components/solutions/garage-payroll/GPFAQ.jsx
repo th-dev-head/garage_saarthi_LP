@@ -54,6 +54,7 @@ export default function GPFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Garage Payroll Software"
       faqs={data}
+      className="bg-slate-50"
     />
   );
 }

@@ -70,8 +70,8 @@ export default function GIRelatedFeatures() {
                 <p className="text-[11px] text-slate-500 leading-relaxed">{feat.desc}</p>
               </div>
               <div className="border-t border-slate-100 pt-3 mt-5">
-                <Link href={feat.link} className="text-[10px] text-primary font-bold hover:underline">
-                  Explore Feature →
+                <Link href={feat.link} className="text-[10px] text-primary font-bold hover:underline flex items-center gap-1">
+                  Explore Feature <FaArrowRight className="w-2.5 h-2.5" />
                 </Link>
               </div>
             </div>

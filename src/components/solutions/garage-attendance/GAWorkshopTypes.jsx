@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function GAWorkshopTypes() {
   const handleSolutionClick = (name, url) => {
@@ -46,7 +47,7 @@ export default function GAWorkshopTypes() {
               </div>
               <div className="pt-6">
                 <Link href={t.url} onClick={() => handleSolutionClick(t.title, t.url)} className="text-primary text-xs font-bold hover:underline inline-flex items-center gap-1">
-                  View {t.title} Solution →
+                  View {t.title} Solution <FaArrowRight className="w-3 h-3" />
                 </Link>
               </div>
             </div>

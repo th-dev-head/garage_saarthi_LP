@@ -26,7 +26,7 @@ export default function SRFreeTrial() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-4xl w-full text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-6 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #431407 100%)" }}>
         <div className="absolute -top-16 -right-16 w-36 h-36 bg-orange-600/10 rounded-full blur-2xl pointer-events-none" />
         <span className="text-xs uppercase tracking-wider text-orange-400 font-bold bg-orange-950/60 border border-orange-800/30 px-3 py-1 rounded-full">

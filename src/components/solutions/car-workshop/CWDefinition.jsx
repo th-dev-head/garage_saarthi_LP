@@ -2,6 +2,7 @@ import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 import Link from "next/link";
 import { trackEvent } from "@/src/utils/pixel";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function CWDefinition() {
   const handleExploreClick = () => {
@@ -31,7 +32,7 @@ export default function CWDefinition() {
           </p>
           <div className="pt-2">
             <Link href="/features" onClick={handleExploreClick} className="text-primary font-bold hover:underline text-xs md:text-sm">
-              Explore GarageSaarthi Features →
+              Explore GarageSaarthi Features <FaArrowRight className="w-3 h-3" />
             </Link>
           </div>
         </div>

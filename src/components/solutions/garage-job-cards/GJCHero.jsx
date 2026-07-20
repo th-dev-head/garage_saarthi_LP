@@ -70,7 +70,6 @@ export default function GJCHero() {
         {/* Right UI composition */}
         <div className="relative flex justify-center md:justify-end">
           <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-3xl shadow-2xl max-w-lg w-full relative overflow-hidden group">
-            <div className="absolute top-0 left-0 w-full h-[4px] bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
             <div className="flex items-center gap-2 pb-4 border-b border-white/10 mb-4">
               <FaTools className="text-primary w-4 h-4" />
               <span className="text-xs font-bold text-slate-300 uppercase tracking-wide">

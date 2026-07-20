@@ -62,6 +62,7 @@ export default function AWFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Automobile Workshop Software."
       faqs={faqData.map(item => ({ question: item.q, answer: item.a }))}
+      className="bg-slate-50"
     />
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function CWRelatedSolutions() {
   const handleSolutionClick = (name, url) => {
@@ -46,7 +47,7 @@ export default function CWRelatedSolutions() {
               </div>
               <div className="pt-6">
                 <Link href={s.url} onClick={() => handleSolutionClick(s.title, s.url)} className="text-primary text-xs font-bold hover:underline inline-flex items-center gap-1">
-                  Explore {s.title} →
+                  Explore {s.title} <FaArrowRight className="w-3 h-3" />
                 </Link>
               </div>
             </div>

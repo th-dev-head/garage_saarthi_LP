@@ -4,6 +4,21 @@ import { FaFileInvoice, FaWrench, FaChartLine } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GIConnectedOperations() {
+  const syncSteps = [
+    {
+      title: "Part Checked Out",
+      desc: "Advisor adds 1x Engine Oil (Castrol) to active **Job Card #JC-1049**."
+    },
+    {
+      title: "Stock Auto-Deducted",
+      desc: "Centralized **Garage Inventory Management System** reduces Castrol stock count by 1 unit immediately."
+    },
+    {
+      title: "Billing Auto-Populated",
+      desc: "Final **Invoice** automatically includes the spare part description, quantity, price, and GST without dual entry."
+    }
+  ];
+
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -79,36 +94,20 @@ export default function GIConnectedOperations() {
           </h4>
 
           <div className="relative border-l-2 border-primary/20 pl-6 space-y-6 ml-3">
-            {/* Step 1 */}
-            <div className="relative">
-              <span className="absolute top-1 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-xs" style={{ left: "-32px" }} />
-              <h5 className="text-xs font-bold text-slate-800 mb-1">Part Checked Out</h5>
-              <p className="text-[10px] text-slate-500 leading-relaxed">
-                Advisor adds 1x Engine Oil (Castrol) to active **Job Card #JC-1049**.
-              </p>
-            </div>
-
-            {/* Step 2 */}
-            <div className="relative">
-              <span className="absolute top-1 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-xs" style={{ left: "-32px" }} />
-              <h5 className="text-xs font-bold text-slate-800 mb-1">Stock Auto-Deducted</h5>
-              <p className="text-[10px] text-slate-500 leading-relaxed">
-                Centralized **Garage Inventory Management System** reduces Castrol stock count by 1 unit immediately.
-              </p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="relative">
-              <span className="absolute top-1 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-xs" style={{ left: "-32px" }} />
-              <h5 className="text-xs font-bold text-slate-800 mb-1">Billing Auto-Populated</h5>
-              <p className="text-[10px] text-slate-500 leading-relaxed">
-                Final **Invoice** automatically includes the spare part description, quantity, price, and GST without dual entry.
-              </p>
-            </div>
+            {syncSteps.map((step, idx) => (
+              <div key={idx} className="relative">
+                <span className="absolute top-1 w-3 h-3 rounded-full bg-primary shadow-xs" style={{ left: "-31px" }} />
+                <h5 className="text-xs font-bold text-slate-800 mb-1">{step.title}</h5>
+                <p className="text-[10px] text-slate-500 leading-relaxed">
+                  {step.desc.split("**").map((part, index) => 
+                    index % 2 === 1 ? <strong key={index} className="font-semibold text-slate-700">{part}</strong> : part
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
-

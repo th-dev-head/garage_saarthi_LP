@@ -53,6 +53,7 @@ export default function CGTestimonials() {
       titleHighlight="Daily Operations."
       subtitle="Hear from real car garage owners, independent workshops, and multi-brand service centre operators across India who use GarageSaarthi to manage their daily operations."
       reviews={reviews}
+      bgClass="bg-white"
     />
   );
 }

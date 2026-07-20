@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
@@ -16,9 +17,7 @@ export default function GRAMisReporting() {
           Instead of cross-checking multiple physical files, Excel sheets, and billing slips, consolidate your garage database. Access clean management reports that support regular business reviews and help you make calculated operational updates.
         </p>
         <div className="pt-2">
-          <Link href="/" className="text-xs text-primary font-bold hover:underline">
-            Explore Garage Management Software →
-          </Link>
+          <Link href="/" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Explore Garage Management Software <FaArrowRight className="w-3 h-3" /></Link>
         </div>
       </div>
     </section>

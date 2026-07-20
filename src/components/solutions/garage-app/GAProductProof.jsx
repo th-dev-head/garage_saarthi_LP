@@ -34,6 +34,7 @@ export default function GAProductProof() {
       reviews={reviews}
       linkLabel="View Customer Stories"
       linkHref="/customers"
+      bgClass="bg-white"
     />
   );
 }

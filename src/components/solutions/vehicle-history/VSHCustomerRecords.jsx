@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
@@ -20,12 +21,8 @@ export default function VSHCustomerRecords() {
             GarageSaarthi unifies customer information, vehicle specifications, invoice logs, active service alerts, and communication histories into a centralized platform.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
-            <Link href="/features/customers" className="text-xs text-primary font-bold hover:underline">
-              Customer Management →
-            </Link>
-            <Link href="/features/vehicles" className="text-xs text-primary font-bold hover:underline">
-              Vehicle Records →
-            </Link>
+            <Link href="/features/customers" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Customer Management <FaArrowRight className="w-3 h-3" /></Link>
+            <Link href="/features/vehicles" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Vehicle Records <FaArrowRight className="w-3 h-3" /></Link>
           </div>
         </div>
         <div className="lg:col-span-5 bg-white border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">

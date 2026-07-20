@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
@@ -25,9 +26,7 @@ export default function GRAEmployeeReporting() {
             Manage your garage crew easily. Keep daily checkin records, calculate monthly salaries, and manage permissions. Verify attendance and role logs centrally.
           </p>
           <div className="pt-2">
-            <Link href="/features/attendance" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
-              Explore Staff Management Features →
-            </Link>
+            <Link href="/features/attendance" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">Explore Staff Management Features <FaArrowRight className="w-3 h-3" /></Link>
           </div>
         </div>
       </div>

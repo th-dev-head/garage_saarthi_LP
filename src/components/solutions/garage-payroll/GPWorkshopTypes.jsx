@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
@@ -45,9 +46,7 @@ export default function GPWorkshopTypes() {
                 <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{t.desc}</p>
               </div>
               <div className="pt-6">
-                <Link href={t.url} onClick={() => handleSolutionClick(t.title, t.url)} className="text-primary text-xs font-bold hover:underline inline-flex items-center gap-1">
-                  View {t.title} Solution →
-                </Link>
+                <Link href={t.url} onClick={() => handleSolutionClick(t.title, t.url)} className="text-primary text-xs font-bold hover:underline inline-flex items-center gap-1">View {t.title} Solution <FaArrowRight className="w-3 h-3" /></Link>
               </div>
             </div>
           ))}

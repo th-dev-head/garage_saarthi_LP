@@ -112,7 +112,7 @@ export default function GIFAQ() {
       titleHighlight="Garage Inventory Software"
       subtitle="Find answers to common questions about managing spare parts, stock levels, and automotive inventory with GarageSaarthi."
       faqs={faqData}
-      className="bg-slate-200"
+      className="bg-slate-50"
     />
   );
 }

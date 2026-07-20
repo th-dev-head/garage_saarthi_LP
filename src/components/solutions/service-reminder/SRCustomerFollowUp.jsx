@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
-import { FaUsers, FaCar, FaRegCalendarAlt } from "react-icons/fa";
+import { FaUsers, FaCar, FaRegCalendarAlt, FaArrowRight } from "react-icons/fa";
 
 export default function SRCustomerFollowUp() {
   const points = [
@@ -51,9 +51,7 @@ export default function SRCustomerFollowUp() {
                 <h3 className="text-base font-bold text-text-dark">{p.title}</h3>
                 <p className="text-xs text-slate-500 leading-relaxed">{p.desc}</p>
               </div>
-              <Link href={p.link} className="text-xs text-primary font-bold hover:underline self-start">
-                Explore {p.label} →
-              </Link>
+              <Link href={p.link} className="text-xs text-primary font-bold hover:underline self-start inline-flex items-center gap-1.5">Explore {p.label} <FaArrowRight className="w-3 h-3" /></Link>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaTimesCircle, FaCheckCircle } from "react-icons/fa";
+import { FaTimesCircle, FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GIAutomation() {
@@ -43,22 +43,22 @@ export default function GIAutomation() {
         </div>
 
         {/* Comparison Table */}
-        <div className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-md max-w-4xl mx-auto">
+        <div className="bg-white border border-slate-200/60 rounded-3xl overflow-hidden shadow-sm max-w-4xl mx-auto">
           {/* Header */}
-          <div className="grid grid-cols-2 bg-slate-900 text-white font-bold text-xs md:text-sm p-4 md:p-5">
-            <div className="uppercase tracking-wider">Manual Inventory Management</div>
-            <div className="uppercase tracking-wider border-l border-white/20 pl-4">GarageSaarthi</div>
+          <div className="grid grid-cols-2 bg-slate-50 px-6 py-4 border-b border-slate-100 text-xs font-bold uppercase tracking-wider">
+            <div className="text-slate-500">Manual Inventory Management</div>
+            <div className="border-l border-slate-200/60 pl-6 text-primary">GarageSaarthi</div>
           </div>
 
           {/* Rows */}
           <div className="divide-y divide-slate-100 text-xs md:text-sm text-slate-700">
             {comparisonRows.map((row, idx) => (
-              <div key={idx} className="grid grid-cols-2 p-4 md:p-5 items-center gap-4">
-                <div className="flex items-start gap-2.5">
+              <div key={idx} className="grid grid-cols-2 p-6 items-center gap-4 hover:bg-slate-50/40 transition-colors duration-200">
+                <div className="flex items-start gap-2.5 pr-4">
                   <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>{row.manual}</span>
+                  <span className="text-slate-600">{row.manual}</span>
                 </div>
-                <div className="flex items-start gap-2.5 border-l border-slate-100 pl-4">
+                <div className="flex items-start gap-2.5 border-l border-slate-100 pl-6">
                   <FaCheckCircle className="text-green-500 w-4 h-4 mt-0.5 flex-shrink-0" />
                   <span className="font-semibold text-slate-900">{row.saarthi}</span>
                 </div>
@@ -67,12 +67,12 @@ export default function GIAutomation() {
           </div>
         </div>
 
-        <div className="text-center mt-12 text-xs md:text-sm text-slate-500">
-          Want to automate all your workshop processes? Check out our{" "}
-          <Link href="/garage-automation-software" className="text-primary font-bold hover:underline">
-            Garage Automation Software
-          </Link>{" "}
-          capabilities.
+        <div className="text-center mt-12 text-xs md:text-sm text-slate-500 flex justify-center items-center gap-1.5 flex-wrap">
+          <span>Want to automate all your workshop processes? Check out our</span>
+          <Link href="/garage-automation-software" className="text-primary font-bold hover:underline inline-flex items-center gap-1">
+            Garage Automation Software <FaArrowRight className="w-3 h-3" />
+          </Link>
+          <span>capabilities.</span>
         </div>
       </div>
     </section>

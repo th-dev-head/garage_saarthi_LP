@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
@@ -45,9 +46,7 @@ export default function GPLeaveStaffManagement() {
               </div>
               <div className="pt-6">
                 {s.url ? (
-                  <Link href={s.url} onClick={() => handleLinkClick(s.linkName, s.url)} className="text-primary text-xs font-bold hover:underline">
-                    {s.linkName} →
-                  </Link>
+                  <Link href={s.url} onClick={() => handleLinkClick(s.linkName, s.url)} className="text-primary text-xs font-bold hover:underline inline-flex items-center gap-1.5">{s.linkName} <FaArrowRight className="w-3 h-3" /></Link>
                 ) : (
                   <span className="text-slate-400 text-xs font-bold italic">
                     {s.linkName} Active

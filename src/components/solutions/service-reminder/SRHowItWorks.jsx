@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
@@ -63,9 +64,7 @@ export default function SRHowItWorks() {
                 <p className="text-xs text-slate-500 leading-relaxed mb-4">{step.desc}</p>
               </div>
               {step.link && (
-                <Link href={step.link} className="text-xs text-primary font-bold hover:underline mt-auto">
-                  Explore {step.label} →
-                </Link>
+                <Link href={step.link} className="text-xs text-primary font-bold hover:underline mt-auto inline-flex items-center gap-1.5">Explore {step.label} <FaArrowRight className="w-3 h-3" /></Link>
               )}
             </div>
           ))}

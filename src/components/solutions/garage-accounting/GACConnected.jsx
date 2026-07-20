@@ -1,5 +1,6 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function GACConnected() {
   const steps = [
@@ -36,7 +37,7 @@ export default function GACConnected() {
               <p className="text-[10px] text-slate-500 leading-normal">{s.desc}</p>
               {idx < 5 && (
                 <div className="hidden lg:block absolute top-[30%] -right-4 translate-x-1/2 text-slate-300 text-lg font-bold pointer-events-none">
-                  →
+                  <FaArrowRight className="w-3 h-3" />
                 </div>
               )}
             </div>

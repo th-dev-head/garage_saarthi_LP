@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
@@ -17,12 +18,8 @@ export default function GRACustomerAnalytics() {
             Monitor customer repeat visit metrics and communication histories. GarageSaarthi unifies customer records, vehicle logs, and past service dates, giving workshop managers clear insight into repeat visit patterns.
           </p>
           <div className="flex gap-4 pt-2">
-            <Link href="/features/customers" className="text-xs text-primary font-bold hover:underline">
-              Explore Customer Management →
-            </Link>
-            <Link href="/features/vehicles" className="text-xs text-primary font-bold hover:underline">
-              Explore Vehicle Records →
-            </Link>
+            <Link href="/features/customers" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Explore Customer Management <FaArrowRight className="w-3 h-3" /></Link>
+            <Link href="/features/vehicles" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Explore Vehicle Records <FaArrowRight className="w-3 h-3" /></Link>
           </div>
         </div>
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">

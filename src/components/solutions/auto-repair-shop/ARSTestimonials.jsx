@@ -32,6 +32,7 @@ export default function ARSTestimonials() {
       titleHighlight="Use GarageSaarthi"
       subtitle="Hear from real independent garage owners, car detailing spas, and auto service center operators across India who trust GarageSaarthi."
       reviews={reviews}
+      bgClass="bg-white"
     />
   );
 }

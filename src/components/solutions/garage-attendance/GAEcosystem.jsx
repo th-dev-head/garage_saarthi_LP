@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
@@ -48,7 +48,7 @@ export default function GAEcosystem() {
               </div>
               <div className="pt-6">
                 <Link href={m.url} onClick={() => handleFeatureClick(m.title, m.url)} className="text-primary text-xs font-bold hover:underline">
-                  Explore {m.title} Feature →
+                  Explore {m.title} Feature <FaArrowRight className="w-3 h-3" />
                 </Link>
               </div>
             </div>

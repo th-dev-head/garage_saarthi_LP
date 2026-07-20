@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
-import { FaBookOpen, FaWrench, FaTools, FaFileInvoice, FaUsers } from "react-icons/fa";
+import { FaBookOpen, FaWrench, FaTools, FaFileInvoice, FaUsers, FaArrowRight } from "react-icons/fa";
 
 export default function VSHCapabilities() {
   const capabilities = [
@@ -64,9 +64,7 @@ export default function VSHCapabilities() {
                 <p className="text-xs text-slate-500 leading-relaxed">{c.desc}</p>
               </div>
               {c.link && (
-                <Link href={c.link} className="text-xs text-primary font-bold hover:underline mt-auto">
-                  Explore {c.label} →
-                </Link>
+                <Link href={c.link} className="text-xs text-primary font-bold hover:underline mt-auto inline-flex items-center gap-1.5">Explore {c.label} <FaArrowRight className="w-3 h-3" /></Link>
               )}
             </div>
           ))}

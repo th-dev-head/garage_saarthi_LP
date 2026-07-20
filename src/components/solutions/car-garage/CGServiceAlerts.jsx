@@ -67,7 +67,7 @@ export default function CGServiceAlerts() {
                 <FaArrowRight className="w-3.5 h-3.5" />
               </Link>
               <Link href="/features/offers-promotions" className="text-xs font-bold text-primary hover:underline self-center">
-                Offers & Promotions →
+                Offers & Promotions <FaArrowRight className="w-3 h-3" />
               </Link>
             </div>
           </div>

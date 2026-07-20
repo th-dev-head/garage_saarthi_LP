@@ -19,6 +19,7 @@ export default function GPManualVsSystem() {
       manualHeader="Manual Payroll Process"
       digitalHeader="With GarageSaarthi"
       comparisons={comparisons}
+      bgClass="bg-slate-50"
     />
   );
 }

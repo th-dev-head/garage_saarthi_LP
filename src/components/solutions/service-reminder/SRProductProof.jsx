@@ -3,7 +3,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function SRProductProof() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full text-center space-y-8">
         <div className="max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">

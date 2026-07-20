@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
@@ -26,12 +27,8 @@ export default function GRAServicePerformance() {
             Keep track of all vehicle service sheets, diagnostics logs, closed cards, and service calendar tasks. Plan labor schedules and ensure every returning vehicle is handled on time.
           </p>
           <div className="flex gap-4 pt-2">
-            <Link href="/features/job-cards" className="text-xs text-primary font-bold hover:underline">
-              Job Card Reporting →
-            </Link>
-            <Link href="/features/service-alerts" className="text-xs text-primary font-bold hover:underline">
-              Service Alerts →
-            </Link>
+            <Link href="/features/job-cards" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Job Card Reporting <FaArrowRight className="w-3 h-3" /></Link>
+            <Link href="/features/service-alerts" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Service Alerts <FaArrowRight className="w-3 h-3" /></Link>
           </div>
         </div>
       </div>

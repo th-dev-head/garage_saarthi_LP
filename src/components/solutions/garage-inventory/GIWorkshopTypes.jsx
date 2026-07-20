@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaCar, FaMotorcycle, FaWrench } from "react-icons/fa";
+import { FaArrowRight, FaCar, FaMotorcycle, FaWrench } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GIWorkshopTypes() {
@@ -10,21 +10,21 @@ export default function GIWorkshopTypes() {
       title: "Car Workshop Inventory Software",
       desc: "Manage massive catalogs for multi-brand passenger cars. Track complex spares like cabin air filters, specific grades of engine oils, brake discs/pads, suspension linkages, and general shop consumables.",
       link: "/solutions/car-garage-software",
-      linkText: "Explore Car Garage Software →"
+      linkText: "Explore Car Garage Software"
     },
     {
       icon: <FaMotorcycle className="w-5 h-5" />,
       title: "Bike Workshop Inventory Software",
       desc: "Tailored for two-wheeler mechanics. Track high-velocity parts such as spark plugs, drive chains, sprockets, accelerator/brake cables, clutch plates, and common scooter air filter elements.",
       link: "/solutions/bike-workshop-software",
-      linkText: "Explore Bike Workshop Software →"
+      linkText: "Explore Bike Workshop Software"
     },
     {
       icon: <FaWrench className="w-5 h-5" />,
       title: "Auto Workshop Inventory Software",
       desc: "Designed for general automobile workshop services, auto detailing centers, and tyre repair businesses. Maintain accurate registers for fast-moving replacement parts and billing transactions.",
       link: "/solutions/workshop-management-software",
-      linkText: "Explore Workshop Management Software →"
+      linkText: "Explore Workshop Management Software"
     }
   ];
 
@@ -54,8 +54,8 @@ export default function GIWorkshopTypes() {
                 <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
               </div>
               <div className="border-t border-slate-300 pt-4 mt-6">
-                <Link href={item.link} className="text-xs font-bold text-primary hover:underline">
-                  {item.linkText}
+                <Link href={item.link} className="text-xs font-bold text-primary hover:underline flex items-center gap-1">
+                  {item.linkText} <FaArrowRight className="w-3 h-3" />
                 </Link>
               </div>
             </div>

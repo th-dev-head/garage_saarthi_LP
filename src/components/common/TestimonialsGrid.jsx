@@ -10,9 +10,10 @@ export default function TestimonialsGrid({
   reviews = [],
   linkHref = "/customers",
   linkLabel = "View All Customer Stories",
+  bgClass = "bg-slate-50",
 }) {
   return (
-    <section className="py-16 px-4 lg:px-15 2xl:px-50 bg-[#FDFDFD]">
+    <section className={`py-16 px-4 lg:px-15 2xl:px-50 ${bgClass}`}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">

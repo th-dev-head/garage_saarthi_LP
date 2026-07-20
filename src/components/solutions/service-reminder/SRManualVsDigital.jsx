@@ -19,6 +19,7 @@ export default function SRManualVsDigital() {
       manualHeader="Manual Garage Process"
       digitalHeader="With GarageSaarthi"
       comparisons={data}
+      bgClass="bg-slate-50"
     />
   );
 }

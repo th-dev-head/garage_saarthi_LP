@@ -50,6 +50,7 @@ export default function GAFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Garage Attendance Software"
       faqs={data}
+      className="bg-slate-50"
     />
   );
 }

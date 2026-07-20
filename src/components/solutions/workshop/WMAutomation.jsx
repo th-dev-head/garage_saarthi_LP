@@ -5,7 +5,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function WMAutomation() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column — Text Info */}
@@ -60,7 +60,7 @@ export default function WMAutomation() {
           </div>
 
           {/* Right Column — Illustrative Visual Card */}
-          <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-8 relative overflow-hidden flex flex-col justify-center min-h-[300px]">
+          <div className="bg-slate-100 border border-slate-200/80 rounded-2xl p-8 relative overflow-hidden flex flex-col justify-center min-h-[300px]">
             <div className="border border-slate-100 bg-white rounded-xl p-5 shadow-sm mb-4">
               <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-3">
                 <span className="text-xs font-bold text-slate-800">Job Card #GS-9900</span>
