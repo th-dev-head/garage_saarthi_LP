@@ -1,0 +1,77 @@
+import React from "react";
+import Link from "next/link";
+import { FaWhatsapp, FaCalendarCheck, FaRedo, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../../common/GradientUnderline";
+
+export default function GSIServiceReminders() {
+  return (
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
+            Customer Retention
+          </span>
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
+            Automate Customer Service Alerts with <GradientUnderline>WhatsApp Reminders</GradientUnderline>
+          </h2>
+          <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+            Bringing customers back for periodic servicing is the most profitable revenue driver for any Indian workshop.
+          </p>
+        </div>
+
+        {/* 3 Columns Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+              <FaCalendarCheck />
+            </div>
+            <h3 className="text-sm font-bold text-slate-900">Automatic Due Date Tracking</h3>
+            <p className="text-xs text-slate-600 leading-relaxed">
+              When a job card is closed, GarageSaarthi automatically schedules periodic service due dates based on vehicle service intervals.
+            </p>
+          </div>
+
+          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+            <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 text-base">
+              <FaWhatsapp />
+            </div>
+            <h3 className="text-sm font-bold text-slate-900">Direct WhatsApp Alerts</h3>
+            <p className="text-xs text-slate-600 leading-relaxed">
+              Trigger automated, personalized service due notifications directly to your customers' WhatsApp numbers with custom greeting templates.
+            </p>
+          </div>
+
+          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+              <FaRedo />
+            </div>
+            <h3 className="text-sm font-bold text-slate-900">Higher Repeat Bay Occupancy</h3>
+            <p className="text-xs text-slate-600 leading-relaxed">
+              Keep service bays full with recurring maintenance bookings without wasting hours on manual reminder phone calls.
+            </p>
+          </div>
+        </div>
+
+        {/* Semantic Bridge Callout to Dedicated Page */}
+        <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-3xl p-6 md:p-8 max-w-3xl mx-auto text-center space-y-3">
+          <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
+            Want to learn how service alerts drive repeat workshop bookings? Explore our dedicated{" "}
+            <Link href="/service-reminder-software" className="font-bold text-primary hover:underline">
+              Vehicle Service Reminder Software
+            </Link>{" "}
+            guide.
+          </p>
+          <div>
+            <Link
+              href="/service-reminder-software"
+              className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-xs md:text-sm transition-colors"
+            >
+              Explore Service Reminder Software <FaArrowRight className="w-3 h-3" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

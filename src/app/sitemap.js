@@ -169,6 +169,36 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/solutions/best-garage-management-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/best-workshop-management-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-management-software-india`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/workshop-software-india`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-marketing-software`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/features`,
       lastModified,
       changeFrequency: "monthly",

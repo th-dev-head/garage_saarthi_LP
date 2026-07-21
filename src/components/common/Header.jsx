@@ -43,14 +43,21 @@ const Header = () => {
       { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software" },
       { name: "Car Garage Software", href: "/solutions/car-garage-software" },
       { name: "Car Workshop Software", href: "/solutions/car-workshop-software" },
-      { name: "Vehicle Service History Software", href: "/solutions/vehicle-service-history-software" },
-      { name: "Garage Reports & Analytics Software", href: "/solutions/garage-reports-analytics-software" },
-      { name: "Multi Branch Garage Software", href: "/solutions/multi-branch-garage-software" },
       { name: "Bike Workshop Software", href: "/solutions/bike-workshop-software" },
       { name: "Truck Workshop Software", href: "/solutions/truck-workshop-software" },
       { name: "EV Garage Management Software", href: "/solutions/ev-garage-management-software" },
       { name: "Car Detailing Software", href: "/solutions/car-detailing-software" },
       { name: "Fleet Workshop Software", href: "/solutions/fleet-workshop-software" },
+    ],
+    "Buying & Business": [
+      { name: "Best Garage Management Software", href: "/solutions/best-garage-management-software" },
+      { name: "Best Workshop Management Software", href: "/solutions/best-workshop-management-software" },
+      { name: "Garage Management Software India", href: "/solutions/garage-management-software-india" },
+      { name: "Workshop Software India", href: "/solutions/workshop-software-india" },
+      { name: "Garage Marketing Software", href: "/solutions/garage-marketing-software" },
+      { name: "Multi Branch Garage Software", href: "/solutions/multi-branch-garage-software" },
+      { name: "Vehicle Service History Software", href: "/solutions/vehicle-service-history-software" },
+      { name: "Garage Reports & Analytics Software", href: "/solutions/garage-reports-analytics-software" },
     ],
     "Apps & Mobile": [
       { name: "Garage Management App", href: "/solutions/garage-management-app" },
@@ -174,14 +181,14 @@ const Header = () => {
                       {/* Dropdown Menu */}
                       <div 
                         className="absolute top-full left-1/2 -translate-x-1/2 pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
-                        style={{ width: "750px" }}
+                        style={{ width: "980px" }}
                       >
                         <div 
                           className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-6"
                           style={{
                             display: "grid",
-                            gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-                            gap: "24px"
+                            gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+                            gap: "20px"
                           }}
                         >
                           {Object.entries(solutionsMegaMenu).map(([category, items]) => (
