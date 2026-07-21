@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaUserCheck, FaCalendarTimes, FaMoneyBillWave, FaShieldAlt } from "react-icons/fa";
+import { FaUserCheck, FaCalendarTimes, FaMoneyBillWave, FaShieldAlt, FaArrowRight } from "react-icons/fa";
 
 export default function StaffManagementPromo() {
   const staffFeatures = [
@@ -39,7 +39,7 @@ export default function StaffManagementPromo() {
                 href={item.link}
                 className="text-xs font-bold text-primary hover:text-primary-hover transition-colors inline-flex items-center gap-1"
               >
-                Learn More &rarr;
+                Learn More <FaArrowRight />
               </Link>
             </div>
           ))}

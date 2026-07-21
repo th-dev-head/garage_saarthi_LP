@@ -33,7 +33,7 @@ export default function GCWorkflow() {
           {steps.map((s, idx) => (
             <div key={idx} className="bg-slate-50 border border-slate-200/80 p-5 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
               <div>
-                <div className="flex items-center justify-between mb-3 border-b border-gray pb-2">
+                <div className="flex items-center justify-between mb-3 border-b border-gray-300 pb-2">
                   <span className="text-[9px] font-extrabold text-primary bg-[#EFE9E7] px-2 py-0.5 rounded-full uppercase tracking-wider">
                     Step {s.num}
                   </span>

@@ -12,25 +12,28 @@ export default function PromoCTA({
   const finalTrialUrl = trialUrl || `${FRONTEND_URL}/register`;
 
   return (
-    <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white py-20 px-4 lg:px-15 2xl:px-50 text-center flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
-        <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-6 text-white">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-5xl w-full bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-3xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+        
+        <h2 className="text-2xl md:text-4xl font-extrabold mb-6 leading-tight">
           {title}
         </h2>
-        <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">
+        <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
           {subtitle}
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 items-center w-fit mx-auto">
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
-            variant="hero"
+            variant="trial"
             onClick={() => window.open(finalTrialUrl, "_blank")}
+            icon={<FaArrowRight className="w-3.5 h-3.5" />}
           >
             Start 7-Day Free Trial
-            <FaArrowRight className="w-4 h-4 ml-2" />
           </Button>
           <Link
             href="/pricing"
-            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-white/10 text-white font-medium border border-white/20 hover:bg-white/20 transition-colors text-sm cursor-pointer"
+            className="rounded-full bg-transparent border border-white/30 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer"
           >
             View Pricing
           </Link>

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaCreditCard, FaCoins, FaHandHoldingUsd, FaUserTie } from "react-icons/fa";
+import { FaCreditCard, FaCoins, FaHandHoldingUsd, FaUserTie, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function FinancePromo() {
   const financeFeatures = [
@@ -39,7 +39,7 @@ export default function FinancePromo() {
                 href={item.link}
                 className="text-xs font-bold text-primary hover:text-primary-hover transition-colors inline-flex items-center gap-1"
               >
-                Explore &rarr;
+                Explore <FaArrowRight />
               </Link>
             </div>
           ))}
