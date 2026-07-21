@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaCar, FaMotorcycle, FaBolt, FaTruckMoving, FaBus, FaBuilding } from "react-icons/fa";
+import { FaCar, FaMotorcycle, FaBolt, FaTruckMoving, FaBus, FaBuilding, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const workshopTypes = [
@@ -81,8 +81,8 @@ export default function BWSBusinessType() {
               </div>
 
               <div className="pt-6 border-t border-slate-200/60 mt-6">
-                <Link href={card.link} className="text-xs font-bold text-primary hover:underline">
-                  {card.anchor} →
+                <Link href={card.link} className="text-xs font-bold text-primary hover:underline flex items-center gap-2">
+                  {card.anchor} <FaArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>

@@ -13,7 +13,7 @@ export default function WAMobileWorkshop() {
           <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm w-full max-w-md mx-auto md:max-w-none md:order-first order-last">
             <span className="text-xs font-bold text-slate-800 mb-4 block text-center">Mobile Active Dashboard</span>
             <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-4 space-y-3 text-[10px] text-slate-600 font-sans shadow-xs">
-              <div className="flex justify-between font-bold text-slate-900 border-b pb-1.5 mb-2">
+              <div className="flex justify-between font-bold text-slate-900 border-b border-slate-400/50 pb-1.5 mb-2">
                 <span>Active Work in Progress</span>
                 <span className="text-primary font-bold">12 Vehicles</span>
               </div>

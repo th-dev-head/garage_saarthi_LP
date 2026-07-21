@@ -31,7 +31,7 @@ export default function CWDefinition() {
             GarageSaarthi consolidates your car workshop operations into a single secure cloud dashboard. Track active jobs, manage warehouse stocks, and send automatic WhatsApp reminder files to boost retention rates.
           </p>
           <div className="pt-2">
-            <Link href="/features" onClick={handleExploreClick} className="text-primary font-bold hover:underline text-xs md:text-sm">
+            <Link href="/features" onClick={handleExploreClick} className="text-primary font-bold hover:underline text-xs md:text-sm flex items-center gap-1">
               Explore GarageSaarthi Features <FaArrowRight className="w-3 h-3" />
             </Link>
           </div>

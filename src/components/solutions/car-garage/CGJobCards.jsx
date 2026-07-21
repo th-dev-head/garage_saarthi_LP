@@ -63,10 +63,10 @@ export default function CGJobCards() {
                 Explore Digital Job Cards
                 <FaArrowRight className="w-3.5 h-3.5" />
               </Link>
-              <Link href="/features/vehicles" className="text-xs font-bold text-primary hover:underline self-center">
+              <Link href="/features/vehicles" className="text-xs font-bold text-primary hover:underline self-center flex items-center gap-1">
                 Vehicle Management <FaArrowRight className="w-3 h-3" />
               </Link>
-              <Link href="/features/customers" className="text-xs font-bold text-primary hover:underline self-center">
+              <Link href="/features/customers" className="text-xs font-bold text-primary hover:underline self-center flex items-center gap-1">
                 Customer Records <FaArrowRight className="w-3 h-3" />
               </Link>
             </div>

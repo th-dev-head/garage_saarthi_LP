@@ -87,8 +87,8 @@ export default function GSIBusinessTypes() {
               </div>
 
               <div className="pt-4 mt-4 border-t border-slate-200/60">
-                <Link href={card.link} className="text-xs font-bold text-primary hover:underline">
-                  Explore Solution →
+                <Link href={card.link} className="text-xs font-bold text-primary hover:underline flex items-center gap-2">
+                  Explore Solution <FaArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>
