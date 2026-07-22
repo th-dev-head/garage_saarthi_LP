@@ -9,9 +9,8 @@ import React from "react";
  */
 export default function GradientUnderline({ children }) {
   return (
-    <span className="relative inline-block">
+    <span className="relative inline bg-no-repeat bg-bottom bg-[length:100%_3px] bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)] pb-1">
       {children}
-      <span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]" />
     </span>
   );
 }

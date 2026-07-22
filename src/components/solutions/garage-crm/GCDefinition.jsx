@@ -22,7 +22,7 @@ export default function GCDefinition() {
           CRM Definition
         </span>
         <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-          CRM Software Built for <GradientUnderline>Garages and Automotive Workshops</GradientUnderline>
+          CRM Software Built for Garages and <GradientUnderline>Automotive Workshops</GradientUnderline>
         </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
           Unlike general business CRMs built for digital sales teams or retail chains, automotive workshop CRM systems require a unique configuration. A garage customer record is not just a phone number; it is closely tied to one or more customer vehicles, historical service logs, spare parts replacement histories, and upcoming service schedules.
