@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@source "../components/solutions/service-reminder";
+@source "../components/solutions/vehicle-history";
+@source "../components/solutions/garage-reports";
+@source "../components/solutions/multi-branch";
+
 
 html {
   scroll-behavior: smooth;

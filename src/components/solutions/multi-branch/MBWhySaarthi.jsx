@@ -1,0 +1,36 @@
+import React from "react";
+import GradientUnderline from "../../common/GradientUnderline";
+
+export default function MBWhySaarthi() {
+  const differentiators = [
+    { title: "Designed for Auto Shops", desc: "Optimized specifically for passenger car and bike workshop groups." },
+    { title: "Branch Switcher Dashboard", desc: "Toggle dashboard view between branches under one login." },
+    { title: "Role Permission Limits", desc: "Keep critical billing and payment logs hidden from staff logins." },
+    { title: "Centralized Database", desc: "Access stock counts, customer logs, and branch records centrally." },
+    { title: "Secure Cloud Sync", desc: "No local data loss. Automatic cloud backups for all locations." }
+  ];
+
+  return (
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl w-full">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
+            Differentiators
+          </span>
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
+            Why Multi-Branch Garage Owners Choose <GradientUnderline>GarageSaarthi</GradientUnderline>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          {differentiators.map((d, idx) => (
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-sm font-bold text-text-dark mb-2">{d.title}</h3>
+              <p className="text-xs text-slate-500 leading-relaxed">{d.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

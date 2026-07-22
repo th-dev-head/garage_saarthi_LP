@@ -5,7 +5,7 @@ export default function PricingWalletTopup({ creditPlans, handleBuyNow }) {
   if (!creditPlans || creditPlans.length === 0) return null;
 
   return (
-    <div className=" py-24 px-4 container mx-auto">
+    <div className="pt-6 pb-16 px-4 container mx-auto">
       <div className="text-center space-y-2 mb-4">
         <h2 className="text-4xl font-black text-slate-900 tracking-tight">
           Add-on{" "}

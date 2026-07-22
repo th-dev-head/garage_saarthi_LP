@@ -1,65 +1,55 @@
-import React from 'react';
-import JobCardImg from '../assets/icons/jobcard.svg';
-import JobIcon from '../assets/icons/Job.svg';
-import GarageIcon from '../assets/icons/Garage.svg';
-import PaymentIcon from '../assets/icons/Payments.svg';
+import React from "react";
+import { useRouter } from "next/navigation";
+import { 
+  FaCar, FaMotorcycle, FaBolt, FaTruck, FaBus, 
+  FaPaintBrush, FaRing, FaBatteryFull, FaCodeBranch, FaUserCheck 
+} from "react-icons/fa";
 
-const benefits = [
-  {
-    icon: JobIcon,
-    stat: '50%',
-    title: 'Faster Job Completion',
-    description: 'Reduce delays with digital job cards and smooth workflows.'
-  },
-  {
-    icon: GarageIcon,
-    stat: '24/7',
-    title: 'Garage Control Anytime',
-    description: 'Access jobs, finances, and updates anytime, anywhere.'
-  },
-  {
-    icon: PaymentIcon,
-    stat: '100%',
-    title: 'Transparent Payments',
-    description: 'Track income, expenses, and dues with complete clarity.'
-  }
+const solutions = [
+  { icon: <FaCar className="w-6 h-6" />, title: "Car Garages", link: "/solutions/car-garage-software" },
+  { icon: <FaMotorcycle className="w-6 h-6" />, title: "Bike Workshops", link: "/solutions/bike-workshop-software" },
+  { icon: <FaBolt className="w-6 h-6" />, title: "EV Garages", link: "/solutions/ev-garage-software" },
+  { icon: <FaTruck className="w-6 h-6" />, title: "Truck Workshops", link: "/solutions/truck-workshop-software" },
+  { icon: <FaBus className="w-6 h-6" />, title: "Fleet Workshops", link: "/solutions/fleet-workshop-software" },
+  { icon: <FaPaintBrush className="w-6 h-6" />, title: "Car Detailing", link: "/solutions/car-detailing-software" },
+  { icon: <FaRing className="w-6 h-6" />, title: "Tyre Shops", link: "/solutions/tyre-shop-software" },
+  { icon: <FaBatteryFull className="w-6 h-6" />, title: "Battery Shops", link: "/solutions/battery-shop-software" },
+  { icon: <FaCodeBranch className="w-6 h-6" />, title: "Multi-Branch Garages", link: "/solutions/multi-branch-garage-software" },
+  { icon: <FaUserCheck className="w-6 h-6" />, title: "Independent Garages", link: "/solutions/independent-garage-software" }
 ];
 
-const IndustrialBenefits = () => {
+export default function IndustrialBenefits() {
+  const router = useRouter();
+
   return (
-    <section className="py-10 lg:py-20 px-4 lg:px-15 2xl:px-50 bg-white">
-      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-70 2xl:gap-40">
-        {/* Benefits List */}
-        <div className="flex-1 space-y-8 2xl:space-y-20">
-          {benefits.map((benefit, idx) => (
-            <div key={idx} className="flex items-start gap-[34px] group">
-              <div className="w-14 h-14 2xl:w-[110px] 2xl:h-[110px] rounded-full bg-[#EFE9E7] flex items-center justify-center shrink-0 ">
-                <img src={benefit.icon} alt={benefit.title} className="w-6 h-6 2xl:w-10 2xl:h-10" />
-              </div>
-              <div className="flex-1 pt-1">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-xl 2xl:text-[34px] font-bold text-text-dark 2xl:mb-4">{benefit.stat}</span>
-                </div>
-                <h3 className="text-lg 2xl:text-[24px] font-medium text-text-dark">{benefit.title}</h3>
-                <p className="text-sm 2xl:text-[18px] leading-relaxed max-w-sm 2xl:max-w-full">
-                  {benefit.description}
-                </p>
-                {idx !== benefits.length - 1 && 
-                <div className="mt-8 border-b border-[#EFE9E7] w-full" />}
-              </div>
-            </div>
-          ))}
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
+            Garage Software Built for Every Type of Automotive Workshop
+          </h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">
+            Choose the solution designed specifically for your garage business model.
+          </p>
         </div>
 
-        {/* Right side Mockup Container */}
-        <div className="flex-1 relative overflow-hidden">
-           <div className="">
-             <img src={JobCardImg} alt="Recent Job Cards Mockup" className="w-full h-auto" />
-           </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {solutions.map((item, idx) => (
+            <div
+              key={idx}
+              onClick={() => router.push(item.link)}
+              className="bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-pointer text-center flex flex-col items-center justify-center min-h-[140px]"
+            >
+              <div className="w-12 h-12 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-4">
+                {item.icon}
+              </div>
+              <h3 className="text-sm font-medium text-slate-950 leading-tight">
+                {item.title}
+              </h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default IndustrialBenefits;
+}

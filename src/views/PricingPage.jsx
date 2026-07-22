@@ -83,6 +83,12 @@ export default function PricingPage() {
             ))}
           </div>
 
+          <div className="text-center mt-8 md:mt-10 mb-2 px-4">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100/90 px-4 py-1.5 rounded-full border border-slate-200/80 shadow-xs">
+              📌 Note: All listed prices are excluding GST. Applicable taxes will be calculated at checkout.
+            </span>
+          </div>
+
           <PricingWalletTopup 
             creditPlans={creditPlans} 
           />

@@ -1,0 +1,51 @@
+import React from "react";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+import Button from "../../common/Button";
+import { FRONTEND_URL } from "@/src/config/env";
+import { trackEvent } from "@/src/utils/pixel";
+
+export default function MBFreeTrial() {
+  const handleTrialClick = () => {
+    trackEvent("multi_branch_trial_cta_click", {
+      page_path: "/solutions/multi-branch-garage-software",
+      cta_location: "free_trial_banner",
+      cta_label: "Start 7-Day Free Trial",
+      destination: `${FRONTEND_URL}/signup`
+    });
+    window.open(`${FRONTEND_URL}/signup`, "_blank");
+  };
+
+  const handlePricingClick = () => {
+    trackEvent("multi_branch_pricing_click", {
+      page_path: "/solutions/multi-branch-garage-software",
+      cta_location: "free_trial_banner",
+      cta_label: "View Pricing",
+      destination: "/pricing"
+    });
+  };
+
+  return (
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-4xl w-full text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-6 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #431407 100%)" }}>
+        <span className="text-xs uppercase tracking-wider text-orange-400 font-bold bg-orange-950/60 border border-orange-800/30 px-3 py-1 rounded-full">
+          Get Started
+        </span>
+        <h2 className="text-2xl md:text-4xl font-bold leading-tight max-w-2xl mx-auto">
+          Start Managing Your Garage Branches with a 7-Day Free Trial
+        </h2>
+        <p className="text-slate-300 text-xs md:text-sm max-w-xl mx-auto leading-relaxed">
+          Access complete dashboard modules, role-based user management, branch-wise billing reports, and stock audits. No credit card required.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+          <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />}>
+            Start 7-Day Free Trial
+          </Button>
+          <Link href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11 text-center">
+            View Pricing
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}

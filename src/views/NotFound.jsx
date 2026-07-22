@@ -27,7 +27,7 @@ const NotFound = () => {
         <Button
           variant="hero"
           className="mx-auto flex items-center gap-2"
-          onClick={() => router.push("/")}
+          onClick={() => router.back()}
         >
           <FaArrowLeft className="w-4 h-4" />
           Back to Home

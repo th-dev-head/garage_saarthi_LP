@@ -12,7 +12,11 @@ if (!fs.existsSync(distPath)) {
 // Copy out folder to dist recursively (more robust against EPERM locks on Windows)
 if (fs.existsSync(outPath)) {
   fs.cpSync(outPath, distPath, { recursive: true, force: true });
-  fs.rmSync(outPath, { recursive: true, force: true });
+  try {
+    fs.rmSync(outPath, { recursive: true, force: true });
+  } catch (err) {
+    console.warn("=== Warning: Could not delete 'out' folder due to Windows file system lock, but files were successfully copied to 'dist'! ===");
+  }
   console.log("=== Successfully copied 'out' directory to 'dist'! ===");
 } else {
   console.error("=== Error: 'out' folder was not found after Next.js build! ===");
