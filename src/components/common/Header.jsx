@@ -1,6 +1,6 @@
 "use client";
 import { FRONTEND_URL } from "@/src/config/env";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaTimes, FaArrowRight, FaChevronDown } from "react-icons/fa";
@@ -12,6 +12,7 @@ const Header = () => {
   const [active, setActive] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpenMobile, setIsSolutionsOpenMobile] = useState(false);
+  const dropdownRef = useRef(null);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -98,10 +99,36 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const [isSolutionsOpenDesktop, setIsSolutionsOpenDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleDocumentClick = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setIsSolutionsOpenDesktop(false);
+      }
+    };
+    document.addEventListener("click", handleDocumentClick);
+    return () => {
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   const handleSolutionClick = (href) => {
     router.push(href);
     setIsMenuOpen(false);
     setIsSolutionsOpenMobile(false);
+    setIsSolutionsOpenDesktop(false);
   };
 
   const scrollToHome = () => {
@@ -166,27 +193,42 @@ const Header = () => {
             </div>
 
             {/* Nav Links */}
-            <ul className="flex items-center gap-10">
+            <ul className="flex items-center gap-4 xl:gap-8 2xl:gap-10">
               {navLinks.map((link) => {
                 const isActive = active === link.name;
                 if (link.isDropdown) {
                   return (
-                    <li key={link.name} className="relative group">
-                      <Link
-                        href="#"
-                        onClick={(e) => e.preventDefault()}
-                        className="text-md font-medium pb-2 hover:text-[#B02E0C] transition-colors cursor-pointer"
-                      >
-                        {link.name}
-                        <FaChevronDown className="w-2.5 h-2.5 ml-2 inline-block align-middle transition-transform duration-200 group-hover:rotate-180" />
-                      </Link>
+                    <li key={link.name} ref={dropdownRef} className="group">
+                      <div className="relative inline-block">
+                        <Link
+                          href="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsSolutionsOpenDesktop((prev) => !prev);
+                          }}
+                          className="text-xs xl:text-sm 2xl:text-base font-semibold pb-2 hover:text-[#B02E0C] transition-colors cursor-pointer animate-none"
+                        >
+                          {link.name}
+                          <FaChevronDown className={`w-2.5 h-2.5 ml-1 xl:ml-2 inline-block align-middle transition-transform duration-200 ${isSolutionsOpenDesktop ? "rotate-180" : "group-hover:rotate-180"}`} />
+                        </Link>
+
+                        {isActive && (
+                          <span
+                            className="absolute left-0 -right-0 -bottom-1 h-[5px] w-7 mx-auto rounded-full"
+                            style={{
+                              background:
+                                "linear-gradient(90deg, #B02E0C 0%, #FF643C 100%)",
+                            }}
+                          />
+                        )}
+                      </div>
 
                       {/* Dropdown Menu */}
-                      <div 
-                        className="absolute top-full left-1/2 -translate-x-1/2 pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                      <div
+                        className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isSolutionsOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
                         style={{ width: "980px" }}
                       >
-                        <div 
+                        <div
                           className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-6"
                           style={{
                             display: "grid",
@@ -206,15 +248,13 @@ const Header = () => {
                                     <button
                                       key={sol.name}
                                       onClick={() => handleSolutionClick(sol.href)}
-                                      className={`w-full text-left px-3 py-2 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${
-                                        isCurrent
-                                          ? "bg-slate-50 text-primary"
-                                          : "text-slate-700 hover:bg-slate-50 hover:text-primary"
-                                      }`}
+                                      className={`w-full text-left px-3 py-2 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
+                                        ? "bg-slate-50 text-primary"
+                                        : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                                        }`}
                                     >
-                                      <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${
-                                        isCurrent ? "bg-primary" : "bg-primary/45"
-                                          }`} />
+                                      <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${isCurrent ? "bg-primary" : "bg-primary/45"
+                                        }`} />
                                       <span className="whitespace-normal break-words leading-tight">{sol.name}</span>
                                     </button>
                                   );
@@ -224,16 +264,6 @@ const Header = () => {
                           ))}
                         </div>
                       </div>
-
-                      {isActive && (
-                        <span
-                          className="absolute left-0 -right-0 -bottom-1 h-[5px] w-7 mx-auto rounded-full"
-                          style={{
-                            background:
-                              "linear-gradient(90deg, #B02E0C 0%, #FF643C 100%)",
-                          }}
-                        />
-                      )}
                     </li>
                   );
                 }
@@ -243,7 +273,7 @@ const Header = () => {
                     <Link
                       href={link.href}
                       onClick={(e) => handleNavClick(e, link)}
-                      className="text-md font-medium pb-2 hover:text-[#B02E0C] transition-colors"
+                      className="text-xs xl:text-sm 2xl:text-base font-semibold pb-2 hover:text-[#B02E0C] transition-colors whitespace-nowrap"
                     >
                       {link.name}
                     </Link>
@@ -263,7 +293,7 @@ const Header = () => {
             </ul>
 
             {/* Buttons */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 xl:gap-3">
               <button
                 onClick={() => {
                   trackEvent("InitiateCheckout");
@@ -272,13 +302,13 @@ const Header = () => {
                     "_blank",
                   );
                 }}
-                className="text-sm font-medium border border-[#1e1e1e] rounded-full px-4 py-2 cursor-pointer "
+                className="text-xs xl:text-sm font-semibold border border-[#1e1e1e] rounded-full px-3 xl:px-4 py-1.5 xl:py-2 cursor-pointer whitespace-nowrap transition-colors hover:bg-black hover:text-white"
               >
                 Login
               </button>
               <Button
                 variant="hero"
-                className="!px-4 !py-2 "
+                className="!px-3 xl:!px-4 !py-1.5 xl:!py-2 text-xs xl:text-sm whitespace-nowrap"
                 onClick={() => {
                   trackEvent("Lead");
                   window.open(
@@ -288,7 +318,7 @@ const Header = () => {
                 }}
               >
                 Get Started
-                <FaArrowRight className="w-4 h-4 ml-2" />
+                <FaArrowRight className="w-3 h-3 xl:w-4 xl:h-4 ml-1 xl:ml-2" />
               </Button>
             </div>
           </div>
@@ -297,11 +327,11 @@ const Header = () => {
         {/* Mobile Menu Overlay - Positioned Below */}
         <div
           className={`absolute left-0 right-0 mt-3 lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen
-              ? "opacity-100 translate-y-0 visible"
-              : "opacity-0 -translate-y-4 invisible"
+            ? "opacity-100 translate-y-0 visible"
+            : "opacity-0 -translate-y-4 invisible"
             }`}
         >
-          <div className="bg-white/95 backdrop-blur-md rounded-[28px] shadow-2xl border border-gray-100 p-3 flex flex-col gap-1">
+          <div className="bg-white/95 backdrop-blur-md rounded-[28px] shadow-2xl border border-gray-100 p-3 flex flex-col gap-1 max-h-[calc(100vh-120px)] overflow-y-auto">
             {navLinks.map((link) => {
               const isActive = active === link.name;
               if (link.isDropdown) {
@@ -329,11 +359,10 @@ const Header = () => {
                                   <button
                                     key={sol.name}
                                     onClick={() => handleSolutionClick(sol.href)}
-                                    className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${
-                                      isCurrent
-                                        ? "bg-slate-50 text-primary"
-                                        : "text-gray-600 hover:bg-gray-50"
-                                    }`}
+                                    className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${isCurrent
+                                      ? "bg-slate-50 text-primary"
+                                      : "text-gray-600 hover:bg-gray-50"
+                                      }`}
                                   >
                                     {sol.name}
                                   </button>
@@ -354,8 +383,8 @@ const Header = () => {
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link)}
                   className={`px-6 py-3 rounded-2xl text-base font-semibold transition-all duration-200 ${isActive
-                      ? "bg-[#F5EAE7] text-[#B02E0C]"
-                      : "text-gray-700 hover:bg-gray-50 active:scale-[0.98]"
+                    ? "bg-[#F5EAE7] text-[#B02E0C]"
+                    : "text-gray-700 hover:bg-gray-50 active:scale-[0.98]"
                     }`}
                 >
                   {link.name}
