@@ -7,7 +7,7 @@ export default function GWNAlerts() {
   const alertLogs = [
     {
       vehicle: "GJ09BK0001",
-      owner: "Ramesh Malaviya",
+      owner: "Ankit Verma",
       alertType: "Baleno Oil Service",
       status: "Alert Due",
       statusColor: "bg-red-100 text-red-700",
@@ -28,12 +28,46 @@ export default function GWNAlerts() {
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Visual Column Left (Mock Service Alerts Screen) */}
-          <div className="order-last lg:order-first bg-white border border-slate-200/80 rounded-3xl p-8 shadow-sm">
-            <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">
-              Service Alerts Dashboard
-            </span>
-            <div className="overflow-x-auto">
-              <table className="w-full text-[10px] text-left text-slate-600 font-sans min-w-[320px]">
+          <div className="order-last lg:order-first bg-white border border-slate-200/80 rounded-3xl p-4 sm:p-6 shadow-sm space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+              <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold">
+                Service Alerts Dashboard
+              </span>
+              <span className="bg-emerald-50 text-emerald-700 text-[9px] font-bold px-2 py-0.5 rounded border border-emerald-200/60">
+                Live Alerts
+              </span>
+            </div>
+
+            {/* Mobile View (Stacked Cards - No Horizontal Scroll) */}
+            <div className="space-y-3 sm:hidden">
+              {alertLogs.map((log, idx) => (
+                <div key={idx} className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
+                  <div className="flex justify-between items-center">
+                    <div>
+                      <p className="font-extrabold text-xs text-slate-900">{log.vehicle}</p>
+                      <p className="text-[10px] text-slate-500">{log.owner}</p>
+                    </div>
+                    <span className={`${log.statusColor} px-2 py-0.5 rounded-full font-bold text-[9px]`}>
+                      {log.status}
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center pt-2 border-t border-slate-200/60 text-[10px]">
+                    <span className="text-slate-600 font-medium">{log.alertType}</span>
+                    {log.isSent ? (
+                      <span className="text-slate-400 font-bold text-[10px]">Sent ✓✓</span>
+                    ) : (
+                      <button className="bg-primary text-white px-3 py-1 rounded-full font-bold text-[10px]">
+                        Send WhatsApp
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Tablet/Desktop View (Clean Table) */}
+            <div className="hidden sm:block overflow-x-auto">
+              <table className="w-full text-[11px] text-left text-slate-600 font-sans">
                 <thead>
                   <tr className="border-b border-slate-200 text-slate-400 font-bold tracking-wider">
                     <th className="pb-2">Vehicle / Owner</th>
