@@ -26,7 +26,7 @@ const Header = () => {
   ];
 
   const solutionsMegaMenu = {
-    "Core Software": [
+    "Core Modules": [
       { name: "Garage Job Card Software", href: "/solutions/garage-job-card-software" },
       { name: "Garage Billing Software", href: "/solutions/garage-billing-software" },
       { name: "Garage CRM Software", href: "/solutions/garage-crm-software" },
