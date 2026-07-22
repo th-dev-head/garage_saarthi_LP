@@ -28,13 +28,35 @@ export default function GPWebMobile() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex items-center justify-center aspect-[4/3]">
-          <div className="text-center space-y-3">
-            <span className="text-5xl">💻</span>
-            <h3 className="text-base font-bold text-text-dark">Cloud Sync Active</h3>
-            <p className="text-xs text-slate-500 max-w-xs">
-              Attendance records logged on the Android mobile app sync automatically with the owner's web dashboard payroll workspace.
-            </p>
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
+          {/* Header Bar */}
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div className="flex items-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
+              <span className="text-xs font-bold text-slate-800">Payroll & Attendance Sync</span>
+            </div>
+            <div className="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-emerald-200/60">
+              ☁️ Auto-Calculated
+            </div>
+          </div>
+
+          {/* Payroll Sync Preview */}
+          <div className="space-y-2.5">
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+              <div>
+                <p className="text-xs font-bold text-slate-800">Mechanic Staff Attendance</p>
+                <p className="text-[10px] text-slate-500">26 Days Present • 2 Overtime Logs</p>
+              </div>
+              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Synced</span>
+            </div>
+
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+              <div>
+                <p className="text-xs font-bold text-slate-800">Monthly Payout Pointers</p>
+                <p className="text-[10px] text-slate-500">Salary slips generated with advance deductions</p>
+              </div>
+              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Ready</span>
+            </div>
           </div>
         </div>
 

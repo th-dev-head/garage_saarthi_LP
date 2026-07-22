@@ -73,6 +73,9 @@ export default function PricingCard({
                   </span>
                 </div>
               )}
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 bg-white/90 px-2 py-0.5 rounded border border-slate-200/80 shadow-2xs whitespace-nowrap">
+                Excl. GST
+              </span>
             </div>
             <p className="text-[13px] text-[#626366] font-normal">
               {isLifetime
@@ -107,8 +110,9 @@ export default function PricingCard({
               </button>
             )}
           </div>
-          <span className="text-[12px] font-normal">*No payment details needed</span>
+          <span className="text-[12px] font-normal block text-center text-slate-500">*No payment details needed</span>
         </div>
+
         <div className="p-4 flex-grow">
           <p className="text-[15px] font-bold text-[#080B23] mb-2">Features</p>
           <div className="space-y-0">
