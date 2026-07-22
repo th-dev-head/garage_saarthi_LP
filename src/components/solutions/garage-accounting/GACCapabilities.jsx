@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight, FaCreditCard, FaCoins, FaFileInvoice, FaUserTie, FaHandHoldingUsd, FaChartPie } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
@@ -16,12 +16,12 @@ export default function GACCapabilities() {
   };
 
   const cards = [
-    { title: "Track Garage Payments", desc: "Manage outstanding client balances, UPI/Card payment modes, and log invoices payouts.", linkName: "Explore Payments", url: "/features/payments" },
-    { title: "Manage Income & Expenses", desc: "Track operational cash inflow, store purchase bills, and check expenses logs dynamically.", linkName: "Explore Finance Management", url: "/features/finance" },
-    { title: "GST Billing & Invoices", desc: "Generate tax-compliant bills with custom invoice series, CGST, and SGST parameters.", linkName: "Explore Billing Features", url: "/features/counter-sales" },
-    { title: "Give Your CA Access", desc: "Invite your Chartered Accountant (CA) under a restricted, read-only profile to audit files.", linkName: "Explore CA Access", url: "/features/ca-access" },
-    { title: "Manage Garage Loans", desc: "Record machinery loan liabilities, repayment EMI dates, and outstanding calculations.", linkName: "Explore Loan Management", url: "/features/loans" },
-    { title: "View Financial Reports", desc: "Get real-time operational collections data, payment mode audits, and monthly metrics.", linkName: "Explore Garage Reports", url: "/features/reports" }
+    { icon: <FaCreditCard className="w-6 h-6 text-primary" />, title: "Track Garage Payments", desc: "Manage outstanding client balances, UPI/Card payment modes, and log invoices payouts.", linkName: "Explore Payments", url: "/features/payments" },
+    { icon: <FaCoins className="w-6 h-6 text-primary" />, title: "Manage Income & Expenses", desc: "Track operational cash inflow, store purchase bills, and check expenses logs dynamically.", linkName: "Explore Finance Management", url: "/features/finance" },
+    { icon: <FaFileInvoice className="w-6 h-6 text-primary" />, title: "GST Billing & Invoices", desc: "Generate tax-compliant bills with custom invoice series, CGST, and SGST parameters.", linkName: "Explore Billing Features", url: "/features/billing" },
+    { icon: <FaUserTie className="w-6 h-6 text-primary" />, title: "Give Your CA Access", desc: "Invite your Chartered Accountant (CA) under a restricted, read-only profile to audit files.", linkName: "Explore CA Access", url: "/features/ca-access" },
+    { icon: <FaHandHoldingUsd className="w-6 h-6 text-primary" />, title: "Manage Garage Loans", desc: "Record machinery loan liabilities, repayment EMI dates, and outstanding calculations.", linkName: "Explore Loan Management", url: "/features/loans" },
+    { icon: <FaChartPie className="w-6 h-6 text-primary" />, title: "View Financial Reports", desc: "Get real-time operational collections data, payment mode audits, and monthly metrics.", linkName: "Explore Garage Reports", url: "/features/reports" }
   ];
 
   return (
@@ -41,9 +41,11 @@ export default function GACCapabilities() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((c, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
+            <div key={idx} className="bg-white border border-slate-200/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
               <div className="space-y-3">
-                <span className="text-2xl">📊</span>
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                  {c.icon}
+                </div>
                 <h3 className="text-base font-bold text-text-dark">{c.title}</h3>
                 <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{c.desc}</p>
               </div>

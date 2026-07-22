@@ -21,11 +21,41 @@ export default function VSHAccessRecords() {
             <li className="flex items-center gap-2">✓ View complete chronologically sorted job checklists</li>
           </ul>
         </div>
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex items-center justify-center aspect-[4/3]">
-          <div className="text-center space-y-2">
-            <span className="text-4xl">🔍</span>
-            <p className="text-xs font-bold text-slate-600">Instant Database Query</p>
-            <p className="text-[10px] text-slate-400">Search by plate number to review past jobs</p>
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
+          {/* Header Bar */}
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div className="flex items-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div>
+              <span className="text-xs font-bold text-slate-800">Vehicle Database Query</span>
+            </div>
+            <div className="bg-primary/10 text-primary text-[10px] font-bold px-2.5 py-1 rounded-lg border border-primary/20">
+              ⚡ Instant Lookup
+            </div>
+          </div>
+
+          {/* Search Bar Input Mockup */}
+          <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-3 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="text-slate-400 text-sm">🔍</span>
+              <span className="text-xs font-bold text-slate-800">GJ05AB1234</span>
+            </div>
+            <span className="text-[10px] bg-primary text-white font-bold px-2.5 py-1 rounded-lg">
+              Found (1 Record)
+            </span>
+          </div>
+
+          {/* Search Results Preview */}
+          <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-2">
+            <div className="flex justify-between items-center">
+              <p className="text-xs font-extrabold text-slate-800">Hyundai i20 Asta (Petrol)</p>
+              <span className="text-[9px] text-slate-500 font-semibold">Owner: Rajesh Patel</span>
+            </div>
+            <p className="text-[10px] text-slate-500">Last Visit: 12 Jan 2026 • 3 Previous Job Cards Logged</p>
+
+            <div className="pt-2 border-t border-slate-200/60 flex items-center justify-between text-[10px]">
+              <span className="text-emerald-600 font-bold">✓ Engine Oil Changed</span>
+              <span className="text-emerald-600 font-bold">✓ Brake Pads Replaced</span>
+            </div>
           </div>
         </div>
       </div>

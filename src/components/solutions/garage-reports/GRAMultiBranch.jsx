@@ -32,11 +32,65 @@ export default function GRAMultiBranch() {
             </Button>
           </div>
         </div>
-        <div className="lg:col-span-5 bg-slate-100 rounded-3xl overflow-hidden aspect-[4/3] flex items-center justify-center border border-slate-200">
-          <div className="text-center space-y-2">
-            <span className="text-4xl">🏢</span>
-            <p className="text-xs font-bold text-slate-600">Branch Switcher UI</p>
-            <p className="text-[10px] text-slate-400">Select branch from top menu to filter metrics</p>
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
+          {/* Header Bar */}
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div className="flex items-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
+              <span className="text-xs font-bold text-slate-800">Branch Location Selector</span>
+            </div>
+            <div className="bg-primary/10 text-primary text-[10px] font-bold px-2.5 py-1 rounded-lg border border-primary/20">
+              ⚡ Multi-Outlet Mode
+            </div>
+          </div>
+
+          {/* Active Location Dropdown Mockup */}
+          <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-3 flex items-center justify-between">
+            <div>
+              <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Active Workspace</p>
+              <p className="text-xs font-extrabold text-slate-800 mt-0.5">📍 Ahmedabad Main Branch (HQ)</p>
+            </div>
+            <span className="text-xs text-primary font-bold bg-white px-2 py-1 rounded-lg border border-slate-200">
+              Switch ▾
+            </span>
+          </div>
+
+          {/* Branch Comparison List */}
+          <div className="space-y-2 pt-1">
+            <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Live Outlet Metrics</p>
+
+            <div className="flex items-center justify-between p-2.5 rounded-xl bg-primary/5 border border-primary/20">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-primary"></span>
+                <div>
+                  <p className="text-xs font-bold text-slate-800">Ahmedabad HQ</p>
+                  <p className="text-[10px] text-slate-500">24 Active Jobs • 8 Staff</p>
+                </div>
+              </div>
+              <span className="text-xs font-bold text-primary">₹2,40,000</span>
+            </div>
+
+            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                <div>
+                  <p className="text-xs font-bold text-slate-800">Surat Outlet</p>
+                  <p className="text-[10px] text-slate-500">12 Active Jobs • 4 Staff</p>
+                </div>
+              </div>
+              <span className="text-xs font-bold text-slate-700">₹1,60,000</span>
+            </div>
+
+            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+                <div>
+                  <p className="text-xs font-bold text-slate-800">Vadodara Hub</p>
+                  <p className="text-[10px] text-slate-500">6 Active Jobs • 3 Staff</p>
+                </div>
+              </div>
+              <span className="text-xs font-bold text-slate-700">₹82,500</span>
+            </div>
           </div>
         </div>
       </div>

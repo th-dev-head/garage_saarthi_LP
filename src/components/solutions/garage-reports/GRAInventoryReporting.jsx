@@ -32,11 +32,59 @@ export default function GRAInventoryReporting() {
             </Link>
           </div>
         </div>
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm aspect-[4/3] flex items-center justify-center">
-          <div className="text-center space-y-2">
-            <span className="text-4xl">📦</span>
-            <p className="text-xs font-bold text-slate-600">Stock Reports Dashboard</p>
-            <p className="text-[10px] text-slate-400">View low-stock parts alerts centrally</p>
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
+          {/* Header Bar */}
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div className="flex items-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></div>
+              <span className="text-xs font-bold text-slate-800">Inventory & Spare Parts Logs</span>
+            </div>
+            <div className="bg-amber-50 text-amber-700 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-amber-200/60">
+              ⚠️ 3 Low-Stock Alerts
+            </div>
+          </div>
+
+          {/* Top Stock Overview */}
+          <div className="grid grid-cols-2 gap-3">
+            <div className="bg-slate-50 border border-slate-200/60 rounded-xl p-3">
+              <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Total Stock Value</p>
+              <p className="text-base font-extrabold text-slate-800 mt-0.5">₹6,85,000</p>
+              <span className="text-[9px] font-medium text-slate-500 mt-1 inline-block">
+                420 SKUs Managed
+              </span>
+            </div>
+            <div className="bg-[#EFE9E7]/40 border border-primary/10 rounded-xl p-3">
+              <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Monthly Part Sales</p>
+              <p className="text-base font-extrabold text-primary mt-0.5">₹2,19,400</p>
+              <span className="text-[9px] font-medium text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded mt-1 inline-block">
+                Fast Moving Items
+              </span>
+            </div>
+          </div>
+
+          {/* Low Stock Items List */}
+          <div className="space-y-2 pt-1">
+            <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Low-Stock Reorder Queue</p>
+
+            <div className="flex items-center justify-between p-2.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+              <div>
+                <p className="text-xs font-bold text-slate-800">Engine Oil (5W-30 Synthetic)</p>
+                <p className="text-[10px] text-slate-500">Cur. Stock: 4 Canisters (Min: 15)</p>
+              </div>
+              <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
+                Reorder
+              </span>
+            </div>
+
+            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+              <div>
+                <p className="text-xs font-bold text-slate-800">Front Brake Pads (Maruti)</p>
+                <p className="text-[10px] text-slate-500">Cur. Stock: 2 Sets (Min: 10)</p>
+              </div>
+              <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
+                Reorder
+              </span>
+            </div>
           </div>
         </div>
       </div>
