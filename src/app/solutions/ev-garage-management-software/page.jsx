@@ -9,7 +9,7 @@ export const metadata = {
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/ev-garage-management-software",
   },
-  robots: "index, follow",
+  robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
     title: "EV Garage Management Software for Modern EV Workshops | GarageSaarthi",

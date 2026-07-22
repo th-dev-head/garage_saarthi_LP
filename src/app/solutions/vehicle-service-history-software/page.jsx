@@ -9,7 +9,7 @@ export const metadata = {
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/vehicle-service-history-software",
   },
-  robots: "index, follow",
+  robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
     title: "Vehicle Service History Software for Garages | GarageSaarthi",

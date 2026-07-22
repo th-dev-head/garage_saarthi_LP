@@ -9,7 +9,7 @@ export const metadata = {
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/garage-billing-software",
   },
-  robots: "index, follow",
+  robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
     title: "Garage Billing Software for Automotive Workshops | GarageSaarthi",

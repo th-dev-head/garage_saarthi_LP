@@ -9,7 +9,7 @@ export const metadata = {
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/fleet-workshop-software",
   },
-  robots: "index, follow",
+  robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
     title: "Fleet Workshop Management Software | GarageSaarthi",

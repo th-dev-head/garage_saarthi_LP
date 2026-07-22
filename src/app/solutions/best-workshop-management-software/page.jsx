@@ -10,7 +10,7 @@ export const metadata = {
     canonical:
       "https://www.garagesaarthi.com/solutions/best-workshop-management-software",
   },
-  robots: "index, follow",
+  robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
     title: "Best Workshop Management Software for Modern Garages | GarageSaarthi",

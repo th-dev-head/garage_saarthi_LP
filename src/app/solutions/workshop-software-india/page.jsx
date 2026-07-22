@@ -10,7 +10,7 @@ export const metadata = {
     canonical:
       "https://www.garagesaarthi.com/solutions/workshop-software-india",
   },
-  robots: "index, follow",
+  robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
     title: "Workshop Software for Automobile Workshops in India | GarageSaarthi",
