@@ -118,12 +118,12 @@ const Footer = () => {
                     contact@garagesaarthi.com
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="https://maps.app.goo.gl/4T1CfS1xF22QC2Qk6" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-sm text-[#575757] hover:text-[#B02E0C] transition-colors font-medium">
                     <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#B02E0C]" />
                     241-Royal Square, Utran, Surat, Gujarat
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 

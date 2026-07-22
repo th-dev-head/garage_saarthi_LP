@@ -24,7 +24,7 @@ const reviews = [
     text: "Counter sales and instant billing have reduced customer wait times by half. The daily cash and online payment reconciliation makes tallying at the end of the day extremely simple.",
   },
   {
-    name: "Smit Koladiya",
+    name: "Rajesh Patel",
     role: "Owner, Auto Touch Cars",
     location: "Vadodara",
     initials: "AT",

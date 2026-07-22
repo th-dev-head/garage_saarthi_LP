@@ -229,33 +229,33 @@ const Header = () => {
                         style={{ width: "980px" }}
                       >
                         <div
-                          className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-6"
+                          className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-5 max-h-[calc(100vh-110px)] overflow-y-auto"
                           style={{
                             display: "grid",
                             gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-                            gap: "20px"
+                            gap: "18px"
                           }}
                         >
                           {Object.entries(solutionsMegaMenu).map(([category, items]) => (
-                            <div key={category} className="space-y-3">
-                              <span className="text-[12px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
+                            <div key={category} className="space-y-2.5">
+                              <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                 {category}
                               </span>
-                              <div className="flex flex-col gap-1 border-t border-slate-100 pt-3">
+                              <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
                                 {items.map((sol) => {
                                   const isCurrent = pathname.replace(/\/$/, '') === sol.href.replace(/\/$/, '');
                                   return (
                                     <button
                                       key={sol.name}
                                       onClick={() => handleSolutionClick(sol.href)}
-                                      className={`w-full text-left px-3 py-2 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
+                                      className={`w-full text-left px-3 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
                                         ? "bg-slate-50 text-primary"
                                         : "text-slate-700 hover:bg-slate-50 hover:text-primary"
                                         }`}
                                     >
                                       <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${isCurrent ? "bg-primary" : "bg-primary/45"
                                         }`} />
-                                      <span className="whitespace-normal break-words leading-tight">{sol.name}</span>
+                                      <span className="whitespace-normal break-words leading-snug">{sol.name}</span>
                                     </button>
                                   );
                                 })}

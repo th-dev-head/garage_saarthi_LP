@@ -9,7 +9,7 @@ export default function GAMobileWorkflow() {
       status: "In Progress",
       statusColor: "text-orange-600",
       fields: [
-        { label: "Customer", value: "Smit Koladiya" },
+        { label: "Customer", value: "Rajesh Patel" },
         { label: "Vehicle", value: "Hyundai i20 (GJ05AB1234)" },
         { label: "Complaints", value: "Periodic oil service, squeal sound, general wash" }
       ]
@@ -20,7 +20,7 @@ export default function GAMobileWorkflow() {
       status: "Verified",
       statusColor: "text-green-600",
       fields: [
-        { label: "Name", value: "Ramesh Malaviya" },
+        { label: "Name", value: "Ankit Verma" },
         { label: "Contact", value: "+91 9999955555" },
         { label: "Total Visited Count", value: "5 Service visits logged" }
       ]

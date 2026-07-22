@@ -20,7 +20,7 @@ export default function GCEReminders() {
               <div className="bg-[#DCF8C6] text-slate-800 rounded-xl p-4 shadow-sm text-xs relative max-w-[85%] ml-auto">
                 <p className="font-bold text-slate-900 mb-1">🚗 GarageSaarthi AutoCare</p>
                 <p className="leading-relaxed">
-                  Dear Smit, your <strong className="text-primary capitalize">Hyundai i20 (GJ05AB1234)</strong> is due for its periodic maintenance check on 25 Jan 2026.
+                  Dear Customer, your <strong className="text-primary capitalize">Hyundai i20 (GJ05AB1234)</strong> is due for its periodic maintenance check on 25 Jan 2026.
                 </p>
                 <p className="mt-2 font-medium text-slate-700">
                   Book your slot to ensure peak engine performance and part safety!

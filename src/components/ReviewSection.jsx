@@ -24,8 +24,8 @@ const reviews = [
     text: "Counter sales and instant billing have reduced customer wait times by half. The daily cash and online payment reconciliation screen makes tallying at the end of the day extremely simple."
   },
   {
-    name: "Smit Koladiya",
-    role: "Owner, Auto Touch Cars",
+    name: "Rajesh Patel",
+    role: "Owner, Royal Auto Care (Surat)",
     location: "Vadodara",
     initials: "AT",
     text: "Managing multiple branches was a nightmare before. With GarageSaarthi, I can see branch-wise analytics and transfer parts inventory in seconds. The central control is amazing!"

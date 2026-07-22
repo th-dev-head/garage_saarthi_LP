@@ -31,8 +31,8 @@ export default function GWNProof() {
               "Sending service reminders has never been this simple. We just look at our pending list, select the WhatsApp template, and send it. Our customers appreciate receiving these notifications, and it helps keep our workshop bookings steady."
             </p>
             <div>
-              <h4 className="font-bold text-slate-900 text-xs">Smit Koladiya</h4>
-              <p className="text-slate-500 text-[10px]">Owner, Koladiya Motors (Surat)</p>
+              <h4 className="font-bold text-slate-900 text-xs">Rajesh Patel</h4>
+              <p className="text-slate-500 text-[10px]">Owner, Royal Auto Care (Surat)</p>
             </div>
           </div>
         </div>

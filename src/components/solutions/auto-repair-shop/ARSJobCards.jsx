@@ -61,7 +61,7 @@ export default function ARSJobCards() {
               <span className="text-[10px] font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded whitespace-nowrap">In Progress</span>
             </div>
             <div className="space-y-3 text-xs text-slate-600 break-words">
-              <p><strong>Customer:</strong> Ramesh Malaviya</p>
+              <p><strong>Customer:</strong> Rajesh Patel</p>
               <p><strong>Vehicle:</strong> Hyundai i20 (GJ05AB1234)</p>
               <p><strong>Mechanic:</strong> Ramesh Kumar</p>
               <p><strong>Complaints:</strong> Periodic oil service, front brake squeal, tyre rotation</p>

@@ -15,7 +15,7 @@ export default function GWNAlerts() {
     },
     {
       vehicle: "GJ05AB1234",
-      owner: "Smit Koladiya",
+      owner: "Rajesh Patel",
       alertType: "i20 Periodic check",
       status: "Reminded",
       statusColor: "bg-green-100 text-green-700",

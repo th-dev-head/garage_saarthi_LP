@@ -57,7 +57,7 @@ export default function GAJobCardUseCase() {
               <span className="text-[10px] font-bold text-primary bg-[#EFE9E7] px-2.5 py-1 rounded-full whitespace-nowrap">In Progress</span>
             </div>
             <div className="space-y-3 text-xs text-slate-600 break-words">
-              <p><strong>Customer:</strong> Smit Koladiya</p>
+              <p><strong>Customer:</strong> Rajesh Patel</p>
               <p><strong>Vehicle:</strong> Maruti Baleno (GJ09BK0001)</p>
               <p><strong>Allocated Mechanic:</strong> Ramesh Kumar</p>
               <p><strong>Complaints:</strong> Engine noise, front brake pad replacement, general service</p>

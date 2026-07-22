@@ -23,13 +23,15 @@ export default function VSHCapabilities() {
       icon: <FaTools className="text-primary w-5 h-5" />,
       title: "Vehicle Maintenance History",
       desc: "Track scheduled maintenance checks like oil changes, alignment runs, and periodic replacements.",
-      link: null
+      link: "/features/service-alerts",
+      label: "service alerts"
     },
     {
       icon: <FaFileInvoice className="text-primary w-5 h-5" />,
       title: "Digital Service Logs",
       desc: "Say goodbye to physical paper registers. Store all job, parts, and invoice entries in a secure cloud database.",
-      link: null
+      link: "/features/billing",
+      label: "digital billing"
     },
     {
       icon: <FaUsers className="text-primary w-5 h-5" />,

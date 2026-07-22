@@ -10,7 +10,7 @@ const reviews = [
     text: "GarageSaarthi has completely transformed how we track job cards for car repairs. We used to lose paper cards, but now everything is digital. Our customers love getting invoice links directly on WhatsApp!",
   },
   {
-    name: "Smit Koladiya",
+    name: "Rajesh Patel",
     role: "Owner, Auto Touch Cars",
     location: "Vadodara",
     initials: "AT",

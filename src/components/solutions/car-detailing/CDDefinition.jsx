@@ -44,7 +44,7 @@ export default function CDDefinition() {
           {/* Problems */}
           <div className="bg-white border border-slate-200/80 p-8 rounded-3xl shadow-sm">
             <h3 className="text-base font-extrabold text-red-700 mb-6 flex items-center gap-2">
-              <FaTimesCircle className="text-red-600 flex-shrink-0" /> The Manual Way
+              The Manual Way
             </h3>
             <ul className="space-y-4 text-xs md:text-sm text-slate-600">
               {problems.map((p, idx) => (
@@ -59,7 +59,7 @@ export default function CDDefinition() {
           {/* Solutions */}
           <div className="bg-[#EFE9E7]/40 border border-primary/20 p-8 rounded-3xl shadow-sm">
             <h3 className="text-base font-extrabold text-primary mb-6 flex items-center gap-2">
-              <FaCheckCircle className="text-primary flex-shrink-0" /> With GarageSaarthi
+               With GarageSaarthi
             </h3>
             <ul className="space-y-4 text-xs md:text-sm text-slate-700">
               {solutions.map((s, idx) => (

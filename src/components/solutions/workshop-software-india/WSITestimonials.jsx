@@ -10,7 +10,7 @@ const reviews = [
     text: "The digital job cards are excellent. We log scratches and complaints right beside the vehicle on an Android phone. Customer trust has grown significantly."
   },
   {
-    name: "Smit Koladiya",
+    name: "Rajesh Patel",
     role: "Owner, Ever Garage",
     location: "Surat, Gujarat",
     initials: "SK",

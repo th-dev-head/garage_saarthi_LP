@@ -3,7 +3,7 @@ import TestimonialsGrid from "../../common/TestimonialsGrid";
 
 const reviews = [
   {
-    name: "Smit Koladiya",
+    name: "Rajesh Patel",
     role: "Owner, Ever Garage",
     location: "Surat, Gujarat",
     initials: "SK",

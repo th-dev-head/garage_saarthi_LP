@@ -44,12 +44,12 @@ export default function CGDefinition() {
           {/* Problems */}
           <div className="bg-white border border-slate-200/80 p-8 rounded-2xl">
             <h3 className="text-lg font-bold text-red-700 mb-6 flex items-center justify-center gap-2">
-              <FaTimesCircle className="text-red-600 flex-shrink-0" /> The Manual Garage Way
+               The Manual Garage Way
             </h3>
             <ul className="space-y-4 text-sm text-slate-600">
               {problems.map((p, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <FaTimesCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
                   <span>{p}</span>
                 </li>
               ))}
@@ -59,7 +59,7 @@ export default function CGDefinition() {
           {/* Solutions */}
           <div className="bg-[#EFE9E7]/40 border border-primary/20 p-8 rounded-2xl">
             <h3 className="text-lg font-bold text-primary mb-6 flex items-center justify-center gap-2">
-              <FaCheckCircle className="text-primary flex-shrink-0" /> The GarageSaarthi Way
+               The GarageSaarthi Way
             </h3>
             <ul className="space-y-4 text-sm text-slate-700 font-medium">
               {solutions.map((s, idx) => (

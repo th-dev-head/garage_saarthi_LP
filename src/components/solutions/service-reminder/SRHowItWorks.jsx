@@ -23,13 +23,15 @@ export default function SRHowItWorks() {
       num: "03",
       title: "Review Follow-Up Lists",
       desc: "View relevant upcoming service information and organize daily garage follow-up tasks.",
-      link: null
+      link: "/features/crm",
+      label: "garage crm"
     },
     {
       num: "04",
       title: "Send WhatsApp Reminders",
       desc: "Send service due alerts directly to customers using supported WhatsApp reminder workflows.",
-      link: null
+      link: "/features/service-alerts",
+      label: "whatsapp alerts"
     },
     {
       num: "05",

@@ -28,7 +28,7 @@ export default function MBProductProof() {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain p-2 hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <h3 className="text-sm font-bold text-text-dark mb-2">{item.title}</h3>
