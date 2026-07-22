@@ -1,0 +1,50 @@
+import React from "react";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+import Button from "../../common/Button";
+import { FRONTEND_URL } from "@/src/config/env";
+import { trackEvent } from "@/src/utils/pixel";
+import GradientUnderline from "../../common/GradientUnderline";
+
+export default function GCEFreeTrial() {
+  const handleTrialClick = () => {
+    trackEvent("trial_cta_click", {
+      page_path: "/solutions/garage-customer-engagement-software",
+      page_name: "garage_customer_engagement_software",
+      cta_location: "free_trial_banner",
+      cta_label: "Start 7-Day Free Trial",
+      destination: `${FRONTEND_URL}/signup`
+    });
+    window.open(`${FRONTEND_URL}/signup`, "_blank");
+  };
+
+  return (
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-4xl w-full text-center space-y-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
+          Start Building Better Garage <GradientUnderline>Customer Relationships</GradientUnderline>
+        </h2>
+        <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+          Start using GarageSaarthi's <strong className="text-primary capitalize">garage customer engagement software</strong> features today. 
+          Manage customer data, track vehicle maintenance, schedule service reminders, and deploy <strong className="text-primary capitalize">customer engagement platform for garage</strong> actions instantly.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+          <Button
+            variant="trial"
+            onClick={handleTrialClick}
+            icon={<FaArrowRight className="w-3.5 h-3.5" />}
+          >
+            Start 7-Day Free Trial
+          </Button>
+          <Link
+            href="/pricing"
+            className="rounded-full bg-slate-50 border border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11"
+          >
+            View Pricing
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
