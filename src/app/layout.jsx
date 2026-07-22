@@ -4,7 +4,7 @@ import ScrollToHash from "../components/common/ScrollToHash";
 import "../index.css";
 
 export const viewport = {
-  themeColor: "#f97316",
+  themeColor: "#B02E0C",
 };
 
 export const metadata = {
