@@ -16,7 +16,7 @@ export default function PlayStoreBadge({ className = "" }) {
       href={PLAY_STORE_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full transition-all hover:-translate-y-1 active:scale-95 h-[46px] whitespace-nowrap flex-shrink-0 ${className}`}
+      className={`flex items-center justify-center gap-2.5 bg-black text-white px-5 py-2.5 rounded-full transition-all hover:-translate-y-1 active:scale-95 h-[46px] whitespace-nowrap flex-shrink-0 ${className}`}
     >
       <div className="p-0.5 flex-shrink-0">
         <img
