@@ -20,10 +20,12 @@ jobs:
           script: |
             export PATH="$HOME/.local/share/pnpm:$PATH"
             cd /var/www/garage/garage-landing
+
             git fetch origin
             git reset --hard origin/main
             git clean -fd
+
             pnpm install
             CI=true pnpm build
-            pm2 restart garage-landing
+            
             sudo systemctl reload nginx
