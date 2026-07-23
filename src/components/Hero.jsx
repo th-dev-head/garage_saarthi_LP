@@ -1,5 +1,6 @@
 import { FRONTEND_URL } from "@/src/config/env";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { FaPlay, FaTimes, FaArrowRight } from "react-icons/fa";
 import Button from "./common/Button";
 import HeroBg from "../assets/optimized/GimageBg.webp";
@@ -23,10 +24,15 @@ const Hero = () => {
   return (
     <section id="home" className="relative w-full overflow-hidden">
       {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${HeroBg})` }}
-      >
+      <div className="absolute inset-0">
+        <Image
+          src={HeroBg}
+          alt="GarageSaarthi Background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
       </div>
 
