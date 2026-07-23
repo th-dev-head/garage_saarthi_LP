@@ -86,28 +86,6 @@ const jsonLd = {
       ],
     },
     {
-      "@type": "SoftwareApplication",
-      "@id": "https://www.garagesaarthi.com/#software",
-      name: "GarageSaarthi",
-      operatingSystem: "Web, Android",
-      applicationCategory: "BusinessApplication",
-      description:
-        "GarageSaarthi is an all-in-one garage management software helping Indian workshop owners manage job cards, GST billing, inventory, CRM, staff, and service reminders.",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "INR",
-        description: "7-Day Free Trial Available",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "1250",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-    },
-    {
       "@type": "FAQPage",
       mainEntity: [
         {

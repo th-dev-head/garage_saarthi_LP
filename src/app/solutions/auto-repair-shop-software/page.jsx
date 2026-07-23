@@ -70,29 +70,6 @@ const jsonLd = {
         },
       ],
     },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://www.garagesaarthi.com/#software",
-      name: "GarageSaarthi",
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Web, Android",
-      url: "https://www.garagesaarthi.com/",
-      description:
-        "Complete Cloud-Based Garage and Workshop Management Software with GST billing, digital job cards, and automated service reminders.",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "INR",
-        description: "7-Day Free Trial Available",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "1250",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-    },
   ],
 };
 
