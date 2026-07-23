@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
+import dynamic from "next/dynamic";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
 const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
-// Custom page sections
 const AWHero = dynamic(() => import('../components/solutions/automobile-workshop/AWHero'), { ssr: false });
 const AWProblem = dynamic(() => import('../components/solutions/automobile-workshop/AWProblem'), { ssr: false });
 const AWProductDefinition = dynamic(() => import('../components/solutions/automobile-workshop/AWProductDefinition'), { ssr: false });
