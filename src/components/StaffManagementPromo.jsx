@@ -39,7 +39,7 @@ export default function StaffManagementPromo() {
                 href={item.link}
                 className="text-xs font-bold text-primary hover:text-primary-hover transition-colors inline-flex items-center gap-1"
               >
-                Learn More <FaArrowRight />
+                Explore {item.label} <FaArrowRight />
               </Link>
             </div>
           ))}

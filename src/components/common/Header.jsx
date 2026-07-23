@@ -192,6 +192,7 @@ const Header = () => {
             <button
               className="p-2 w-10 flex items-center justify-center cursor-pointer"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             >
               {isMenuOpen ? (
                 <FaTimes className="w-6 h-6" />
