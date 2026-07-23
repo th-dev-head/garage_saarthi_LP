@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from 'next/dynamic';
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
