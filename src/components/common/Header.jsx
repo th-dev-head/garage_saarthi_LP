@@ -210,7 +210,7 @@ const Header = () => {
               className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105"
               onClick={scrollToHome}
             >
-              <img src={GLogo} alt="GarageSaarthi" className="h-10 w-auto" width={160} height={40} />
+              <img src={GLogo} alt="GarageSaarthi" className="h-10 w-auto" width={138} height={40} />
             </div>
 
             {/* Login Button */}
@@ -237,7 +237,7 @@ const Header = () => {
               className="flex items-center gap-2 cursor-pointer"
               onClick={scrollToHome}
             >
-              <img src={GLogo} alt="GarageSaarthi" className="h-10 2xl:h-15 w-auto" width={160} height={40} />
+              <img src={GLogo} alt="GarageSaarthi" className="h-10 2xl:h-15 w-auto" width={138} height={40} />
             </div>
 
             {/* Nav Links */}
