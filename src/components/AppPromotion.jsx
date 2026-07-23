@@ -57,7 +57,7 @@ const AppPromotion = () => {
               className="flex items-center gap-2 bg-black text-white px-5 py-2 md:py-3 rounded-full transition-all hover:-translate-y-1 active:scale-95 group"
             >
               <div className="p-1">
-                <img src={AppStoreIcon} alt="" className="w-8 h-8 object-contain" />
+                <img src={AppStoreIcon} alt="Apple App Store" className="w-8 h-8 object-contain" />
               </div>
               <div className="flex flex-col">
                 <span className="text-[11px] font-normal opacity-70 leading-tight">Download on the</span>

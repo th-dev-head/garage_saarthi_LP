@@ -70,7 +70,7 @@ export default function WMMobile() {
               className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full whitespace-nowrap transition-all hover:-translate-y-1 active:scale-95 group h-[46px]"
             >
               <div className="p-0.5">
-                <img src={PlayStoreIcon} alt="" className="w-6 h-6 object-contain" />
+                <img src={PlayStoreIcon} alt="Google Play Store" className="w-6 h-6 object-contain" />
               </div>
               <div className="flex flex-col text-left">
                 <span className="text-[9px] font-normal opacity-70 leading-none">Download on the</span>

@@ -23,6 +23,14 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative w-full overflow-hidden">
+      {/* Explicit LCP Preload */}
+      <link
+        rel="preload"
+        as="image"
+        href={typeof HeroBg === 'object' ? HeroBg.src : HeroBg}
+        fetchPriority="high"
+      />
+
       {/* Background */}
       <div className="absolute inset-0">
         <Image
@@ -30,6 +38,7 @@ const Hero = () => {
           alt="GarageSaarthi Background"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           className="object-cover object-center"
         />
