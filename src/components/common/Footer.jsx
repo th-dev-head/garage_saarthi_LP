@@ -36,7 +36,7 @@ const Footer = () => {
 
           {/* Col 1: Brand */}
           <div className="space-y-3 sm:col-span-2 lg:col-span-1">
-            <img src={GLogo} alt="GarageSaarthi" className="h-14 w-auto" width={180} height={56} />
+            <img src={GLogo} alt="GarageSaarthi" className="h-14 w-auto" width={194} height={56} />
             <p className="text-[#575757] text-sm font-medium leading-relaxed">
               GarageSaarthi is a complete Garage Management Software for car workshops. Manage Job Cards, GST Billing, Inventory, Customer History, Service Reminders &amp; Reports from one platform.
             </p>
