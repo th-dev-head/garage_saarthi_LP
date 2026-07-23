@@ -81,7 +81,16 @@ const jsonLd = {
       url: "https://www.garagesaarthi.com/",
       offers: {
         "@type": "Offer",
+        price: "0",
+        priceCurrency: "INR",
         description: "7-day free trial. Monthly, quarterly and annual plans.",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        ratingCount: "1250",
+        "bestRating": "5",
+        "worstRating": "1",
       },
     },
   ],

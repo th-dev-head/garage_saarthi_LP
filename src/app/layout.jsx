@@ -142,6 +142,13 @@ export default function RootLayout({ children }) {
                     "price": "0",
                     "priceCurrency": "INR",
                     "description": "7-day free trial available"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "ratingCount": "1250",
+                    "bestRating": "5",
+                    "worstRating": "1"
                   }
                 },
                 {
