@@ -70,29 +70,6 @@ const jsonLd = {
         },
       ],
     },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://www.garagesaarthi.com/#software",
-      name: "GarageSaarthi",
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Web, Android",
-      description:
-        "GarageSaarthi is an all-in-one workshop management software for automobile workshops in India.",
-      url: "https://www.garagesaarthi.com/",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "INR",
-        description: "7-day free trial. Monthly, quarterly and annual plans.",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "1250",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-    },
   ],
 };
 

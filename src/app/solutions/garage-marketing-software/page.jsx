@@ -86,37 +86,6 @@ const jsonLd = {
       ],
     },
     {
-      "@type": "SoftwareApplication",
-      "@id": "https://www.garagesaarthi.com/#software",
-      name: "GarageSaarthi",
-      operatingSystem: "Web, Android",
-      applicationCategory: "BusinessApplication",
-      description:
-        "GarageSaarthi helps automotive garages and workshops organize customer marketing, offers, promotions, WhatsApp communication, CRM activities, customer engagement and follow-up using customer and vehicle information connected with daily garage operations.",
-      featureList: [
-        "Offers and Promotions",
-        "Garage CRM",
-        "Customer Management",
-        "Vehicle Management",
-        "Service Alerts",
-        "WhatsApp Customer Communication",
-        "Customer Follow-Up Management",
-      ],
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "INR",
-        description: "7-Day Free Trial Available",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "1250",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-    },
-    {
       "@type": "FAQPage",
       mainEntity: [
         {

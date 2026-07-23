@@ -86,28 +86,6 @@ const jsonLd = {
       ],
     },
     {
-      "@type": "SoftwareApplication",
-      "@id": "https://www.garagesaarthi.com/#software",
-      name: "GarageSaarthi",
-      operatingSystem: "Web, Android",
-      applicationCategory: "BusinessApplication",
-      description:
-        "GarageSaarthi is complete workshop management software helping automotive workshops manage digital job cards, GST billing, spare parts inventory, CRM, mechanic payroll, and service reminders.",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "INR",
-        description: "7-Day Free Trial Available",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "1250",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-    },
-    {
       "@type": "FAQPage",
       mainEntity: [
         {
