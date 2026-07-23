@@ -8,7 +8,7 @@ const cards = [
     icon: <FaTachometerAlt className="w-5 h-5" />,
     title: "Garage Dashboard",
     desc: "See today's job cards, pending vehicles, revenue collected, and outstanding dues at a glance. The GarageSaarthi dashboard gives car garage owners a real-time operational summary.",
-    link: "/features/dashboard",
+    link: "/features/workshop-management-dashboard",
   },
   {
     icon: <FaFileAlt className="w-5 h-5" />,

@@ -7,7 +7,7 @@ export default function GWNPlatform() {
   const steps = [
     { icon: <FaUserAlt />, label: "Customer Records", link: "/features/customers" },
     { icon: <FaCarAlt />, label: "Vehicle Records", link: "/features/vehicles" },
-    { icon: <FaClipboardList />, label: "Digital Job Cards", link: "/features/job-cards" },
+    { icon: <FaClipboardList />, label: "Digital Job Cards", link: "/features/job-card-management" },
     { icon: <FaUsers />, label: "Garage CRM", link: "/features/crm" },
     { icon: <FaPercent />, label: "Offers & Promotions", link: "/features/offers-promotions" },
     { icon: <FaChartBar />, label: "Garage Reports", link: "/features/reports" }
@@ -36,7 +36,7 @@ export default function GWNPlatform() {
         {/* Connection flow block */}
         <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 shadow-xs text-center space-y-6">
           <h3 className="text-sm font-bold text-slate-900">Integrated Workshop Operational Modules</h3>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-xs">
             {steps.map((st, idx) => (
               <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center hover:scale-105 transition-transform duration-200">

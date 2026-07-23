@@ -23,7 +23,7 @@ const checklist12 = [
     icon: <FaClipboardList />,
     title: "Digital Job Card Management",
     desc: "Create and track repair jobs digitally on vehicle arrival, recording customer complaints, labor estimates, and assigned mechanics.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
     anchor: "Explore Job Cards",
   },
   {
@@ -104,7 +104,7 @@ const checklist12 = [
     title: "Web and Mobile Access",
     question: "Can owners access software on multiple devices?",
     desc: "Access cloud dashboards from any laptop browser and manage floor operations via the Android mobile app. (iOS app coming soon).",
-    link: "/features/dashboard",
+    link: "/features/workshop-management-dashboard",
     anchor: "Explore Cloud & Mobile",
   },
   {

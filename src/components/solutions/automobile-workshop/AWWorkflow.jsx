@@ -7,10 +7,10 @@ import {
 import GradientUnderline from "../../common/GradientUnderline";
 
 const steps = [
-  { icon: <FaUserAlt />, label: "Customer & Vehicle", href: "/features/job-cards" },
+  { icon: <FaUserAlt />, label: "Customer & Vehicle", href: "/features/job-card-management" },
   { icon: <FaFileAlt />, label: "Estimate", href: "/features/estimates" },
-  { icon: <FaTools />, label: "Job Card", href: "/features/job-cards" },
-  { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-cards" },
+  { icon: <FaTools />, label: "Job Card", href: "/features/job-card-management" },
+  { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-card-management" },
   { icon: <FaFileInvoiceDollar />, label: "Invoice", href: "/features/billing" },
   { icon: <FaCreditCard />, label: "Payment", href: "/features/payments" },
   { icon: <FaBell />, label: "Service Follow-up", href: "/features/service-reminders" },
@@ -25,7 +25,7 @@ const featureCards = [
   {
     title: "Create Digital Job Cards",
     desc: "Replace paper job cards. Log customer details, complaints, and mechanic allocations in under 60 seconds on any device.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
   },
   {
     title: "Manage Parts Requisitions",

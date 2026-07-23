@@ -5,7 +5,6 @@ import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
 import ScrollToTop from "../components/common/ScrollToTop";
 
-// Icons
 import JobIcon from "../assets/icons/Job.svg";
 import DashboardIcon from "../assets/icons/Gdashboard.svg";
 import FinanceIcon from "../assets/icons/Gfinance.svg";

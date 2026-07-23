@@ -8,7 +8,7 @@ const features = [
     icon: <FaColumns className="w-4 h-4" />,
     title: "Real-Time Dashboard",
     desc: "Review today's total collection, new walk-ins, pending deliveries, and inventory alerts from a centralized console.",
-    linkHref: "/features/dashboard",
+    linkHref: "/features/workshop-management-dashboard",
     linkText: "Explore Dashboard",
   },
   {

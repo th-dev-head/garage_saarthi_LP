@@ -18,7 +18,7 @@ const modules = [
     icon: <FaClipboardList />,
     title: "Digital Job Cards",
     desc: "Generate digital job sheets recording vehicle entry, pre-repair walkaround notes, customer complaints, and labor rates.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
     anchor: "Explore Digital Job Cards",
   },
   {

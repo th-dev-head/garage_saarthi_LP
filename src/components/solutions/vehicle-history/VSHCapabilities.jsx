@@ -16,7 +16,7 @@ export default function VSHCapabilities() {
       icon: <FaWrench className="text-primary w-5 h-5" />,
       title: "Vehicle Repair History",
       desc: "Record past repair jobs, mechanic logs, and diagnostic checklists to refer back when a customer returns.",
-      link: "/features/job-cards",
+      link: "/features/job-card-management",
       label: "job card manager"
     },
     {

@@ -32,7 +32,7 @@ export default function GIConnectedOperations() {
           </h2>
           <div className="space-y-4 text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             <p>
-              Unlike generic, standalone stock-keeping apps, GarageSaarthi's inventory tools are directly synced with active repair orders on your workshop floor. 
+              Unlike generic, standalone stock-keeping apps, GarageSaarthi's inventory tools are directly synced with active repair orders on your workshop floor.
             </p>
             <p>
               When a mechanic uses a replacement spark plug or filter and adds it to a customer's digital job card, the stock count reduces in real-time. This dynamic link prevents duplicate records and saves hours on audits.
@@ -45,7 +45,7 @@ export default function GIConnectedOperations() {
               <FaWrench className="text-primary w-4 h-4 mt-1 flex-shrink-0" />
               <div>
                 <h3 className="text-xs font-bold text-slate-900 mb-0.5">
-                  <Link href="/features/job-cards" className="hover:underline text-primary">
+                  <Link href="/features/job-card-management" className="hover:underline text-primary">
                     Inventory and Job Cards
                   </Link>
                 </h3>
@@ -99,7 +99,7 @@ export default function GIConnectedOperations() {
                 <span className="absolute top-1 w-3 h-3 rounded-full bg-primary shadow-xs" style={{ left: "-31px" }} />
                 <h5 className="text-xs font-bold text-slate-800 mb-1">{step.title}</h5>
                 <p className="text-[10px] text-slate-500 leading-relaxed">
-                  {step.desc.split("**").map((part, index) => 
+                  {step.desc.split("**").map((part, index) =>
                     index % 2 === 1 ? <strong key={index} className="font-semibold text-slate-700">{part}</strong> : part
                   )}
                 </p>

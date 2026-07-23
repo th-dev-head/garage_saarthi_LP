@@ -19,7 +19,7 @@ export default function GAEcosystem() {
     { title: "Payroll", desc: "Manage salaries and commissions for mechanics.", url: "/features/payroll" },
     { title: "Leave Management", desc: "Log shift breaks and paid leave parameters.", url: "/features/leave-management" },
     { title: "User Management", desc: "Configure role permissions for mechanics and managers.", url: "/features/user-management" },
-    { title: "Job Cards", desc: "Create and manage customer repair orders.", url: "/features/job-cards" },
+    { title: "Job Cards", desc: "Create and manage customer repair orders.", url: "/features/job-card-management" },
     { title: "Inventory", desc: "Track spare parts and audit stock levels.", url: "/features/inventory" },
     { title: "Reports", desc: "Analyze daily collections and operational metrics.", url: "/features/reports" }
   ];

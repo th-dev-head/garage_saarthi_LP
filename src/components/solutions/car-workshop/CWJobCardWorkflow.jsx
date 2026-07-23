@@ -54,7 +54,7 @@ export default function CWJobCardWorkflow() {
               <h3 className="text-sm font-bold text-slate-800">Digital Job Cards</h3>
               <p className="text-slate-500 text-xs leading-relaxed">
                 Log services and repair activities on our web or mobile app dashboard. Explore{" "}
-                <Link href="/features/job-cards" onClick={() => handleLinkClick("Job Cards Feature Link", "/features/job-cards")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/job-card-management" onClick={() => handleLinkClick("Job Cards Feature Link", "/features/job-card-management")} className="text-primary font-semibold hover:underline">
                   Digital Job Cards
                 </Link>.
               </p>

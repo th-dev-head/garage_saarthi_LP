@@ -17,7 +17,7 @@ export default function GCOperations() {
   };
 
   const modules = [
-    { name: "Job Cards", link: "/features/job-cards", desc: "Create digital job cards and link them to customer files." },
+    { name: "Job Cards", link: "/features/job-card-management", desc: "Create digital job cards and link them to customer files." },
     { name: "Vehicles", link: "/features/vehicles", desc: "Maintain structured vehicle attributes and service records." },
     { name: "Customers", link: "/features/customers", desc: "Manage a centralized database of customer profiles and dues." },
     { name: "Service Alerts", link: "/features/service-alerts", desc: "Set reminders and service follow-up schedules." },

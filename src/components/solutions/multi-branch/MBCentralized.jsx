@@ -17,7 +17,7 @@ export default function MBCentralized() {
   const capabilities = [
     { title: "Create and Manage Multiple Branches", desc: "Easily register new branch locations, configure addresses, and set unique branch invoices.", link: "/features/branches", label: "Garage Branch Management" },
     { title: "Organize Branch Users & Roles", desc: "Manage permissions so staff can only access data from their assigned workshop location.", link: "/features/user-management", label: "Garage User Management" },
-    { title: "Access Operations Centrally", desc: "Review active job cards, billing registries, and stock levels centrally without leaving the desk.", link: "/features/dashboard", label: "Central Operations Dashboard" },
+    { title: "Access Operations Centrally", desc: "Review active job cards, billing registries, and stock levels centrally without leaving the desk.", link: "/features/workshop-management-dashboard", label: "Central Operations Dashboard" },
     { title: "Switch Between Branches", desc: "Quickly toggle your workspace between locations using a simple selector on the dashboard.", link: "/features/branches", label: "Multi-Branch Workspace" }
   ];
 

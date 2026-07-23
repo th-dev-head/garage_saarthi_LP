@@ -15,7 +15,7 @@ export default function VSHFeatures() {
   };
 
   const features = [
-    { title: "Digital Job Cards", desc: "Open job sheets with checklists.", link: "/features/job-cards" },
+    { title: "Digital Job Cards", desc: "Open job sheets with checklists.", link: "/features/job-card-management" },
     { title: "Customer Management", desc: "Keep owner details organized.", link: "/features/customers" },
     { title: "Vehicle Management", desc: "Link multiple logs to one owner.", link: "/features/vehicles" },
     { title: "Service Alerts", desc: "Track upcoming due timelines.", link: "/features/service-alerts" },

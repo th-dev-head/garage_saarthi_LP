@@ -28,7 +28,7 @@ export default function GRADashboard() {
             The central GarageSaarthi dashboard brings critical metrics together. Track closed invoices, active repair tasks, pending invoices, payments collected, stock levels, and total customer visits at a glance.
           </p>
           <div className="pt-2">
-            <Button href="/features/dashboard" onClick={handleDashboardClick} icon={<FaChevronRight className="w-3.5 h-3.5" />}>
+            <Button href="/features/workshop-management-dashboard" onClick={handleDashboardClick} icon={<FaChevronRight className="w-3.5 h-3.5" />}>
               Explore Garage Dashboard
             </Button>
           </div>

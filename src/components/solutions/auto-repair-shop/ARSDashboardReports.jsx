@@ -50,7 +50,7 @@ export default function ARSDashboardReports() {
 
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Link
-                href="/features/dashboard"
+                href="/features/workshop-management-dashboard"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Explore Garage Reports

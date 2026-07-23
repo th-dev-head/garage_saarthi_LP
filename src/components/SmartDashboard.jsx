@@ -1,7 +1,7 @@
 import { useRouter } from 'next/navigation';
 import { FaArrowRight } from "react-icons/fa";
 import DemoImg from '../assets/icons/Demo.webp';
-import MockupBg from '../assets/icons/MockupDashboard.webp'; 
+import MockupBg from '../assets/icons/MockupDashboard.webp';
 import Button from './common/Button';
 
 const SmartDashboard = () => {
@@ -19,7 +19,7 @@ const SmartDashboard = () => {
       }}
     >
       <div className="max-w-7xl mx-auto text-center">
-        
+
         <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
           See What’s Happening in Your Garage from <span className="relative inline-block">One Smart Dashboard.<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
         </h2>
@@ -29,11 +29,11 @@ const SmartDashboard = () => {
         </p>
 
         <div className="flex justify-center mb-6">
-          <Button 
-            variant="hero" 
+          <Button
+            variant="hero"
             className="!px-8"
             onClick={() => {
-              router.push("/features/dashboard");
+              router.push("/features/workshop-management-dashboard");
             }}
           >
             Explore Dashboard

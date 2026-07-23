@@ -16,7 +16,7 @@ export default function GJCProductContext() {
   };
 
   const modules = [
-    { name: "Garage Dashboard", href: "/features/dashboard", desc: "Monitor active job cards, revenue metrics, and branch analytics." },
+    { name: "Garage Dashboard", href: "/features/workshop-management-dashboard", desc: "Monitor active job cards, revenue metrics, and branch analytics." },
     { name: "Counter Sales", href: "/features/counter-sales", desc: "Sell spare parts and inventory items directly without full job cards." },
     { name: "Garage Inventory", href: "/garage-inventory-software", desc: "Manage spare parts stock, purchases, and low-stock indicators." },
     { name: "Customer CRM", href: "/solutions/garage-crm-software", desc: "Log enquiries, follow-up alerts, and discount promo offers." },

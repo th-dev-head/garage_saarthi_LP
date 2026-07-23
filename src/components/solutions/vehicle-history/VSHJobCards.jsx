@@ -31,7 +31,7 @@ export default function VSHJobCards() {
               <h3 className="text-base font-bold text-text-dark mb-4">{s.title}</h3>
               <p className="text-xs text-slate-500 leading-relaxed mb-6">{s.desc}</p>
               {idx === 0 && (
-                <Link href="/features/job-cards" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Explore digital job card software <FaArrowRight className="w-3 h-3" /></Link>
+                <Link href="/features/job-card-management" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Explore digital job card software <FaArrowRight className="w-3 h-3" /></Link>
               )}
             </div>
           ))}

@@ -1,10 +1,10 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 import Link from "next/link";
-import { 
-  FaClipboardList, FaUsers, FaCar, FaBoxOpen, 
-  FaFileInvoiceDollar, FaUserClock, FaPhoneVolume, 
-  FaBell, FaChartBar, FaArrowRight 
+import {
+  FaClipboardList, FaUsers, FaCar, FaBoxOpen,
+  FaFileInvoiceDollar, FaUserClock, FaPhoneVolume,
+  FaBell, FaChartBar, FaArrowRight
 } from "react-icons/fa";
 
 const cards = [
@@ -12,7 +12,7 @@ const cards = [
     icon: <FaClipboardList />,
     title: "Manage Digital Job Cards",
     desc: "Record vehicle fuel levels, complaints, diagnostics, and assign technicians.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
     btnText: "Explore Job Cards"
   },
   {
@@ -77,7 +77,7 @@ export default function WACoreCapabilities() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">

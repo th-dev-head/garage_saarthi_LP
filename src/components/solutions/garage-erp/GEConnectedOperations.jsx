@@ -74,7 +74,7 @@ export default function GEConnectedOperations() {
       desc: "Access aggregated garage reports, daily metrics logs, mechanic performance sheets, and branch operations.",
       links: [
         { label: "Garage Reports", href: "/features/reports" },
-        { label: "Garage Dashboard", href: "/features/dashboard" },
+        { label: "Garage Dashboard", href: "/features/workshop-management-dashboard" },
         { label: "Branch Management", href: "/features/branches" }
       ]
     }

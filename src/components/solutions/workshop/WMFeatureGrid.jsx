@@ -8,8 +8,8 @@ import {
 import GradientUnderline from "../../common/GradientUnderline";
 
 const features = [
-  { icon: <FaClipboardList />, title: "Digital Job Cards", link: "/features/job-cards" },
-  { icon: <FaChartPie />, title: "Real-Time Dashboard", link: "/features/dashboard" },
+  { icon: <FaClipboardList />, title: "Digital Job Cards", link: "/features/job-card-management" },
+  { icon: <FaChartPie />, title: "Real-Time Dashboard", link: "/features/workshop-management-dashboard" },
   { icon: <FaBox />, title: "Inventory Management", link: "/features/inventory" },
   { icon: <FaUsers />, title: "Garage CRM", link: "/features/crm" },
   { icon: <FaWhatsapp />, title: "WhatsApp Billing", link: "/features/billing" },

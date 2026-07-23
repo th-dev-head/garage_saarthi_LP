@@ -7,7 +7,7 @@ export default function GCEPlatform() {
   const steps = [
     { icon: <FaUser />, label: "Customer", link: "/features/customers", anchor: "Customer Management" },
     { icon: <FaCar />, label: "Vehicle", link: "/features/vehicles", anchor: "Vehicle Management" },
-    { icon: <FaFileAlt />, label: "Job Card", link: "/features/job-cards", anchor: "Job Card Features" },
+    { icon: <FaFileAlt />, label: "Job Card", link: "/features/job-card-management", anchor: "Job Card Features" },
     { icon: <FaHandHoldingUsd />, label: "Payment", link: "/features/payments", anchor: "Payments Log" },
     { icon: <FaBell />, label: "Service Alert", link: "/features/service-alerts", anchor: "Service Alerts" }
   ];
@@ -31,7 +31,7 @@ export default function GCEPlatform() {
         {/* Process Map */}
         <div className="bg-white border border-slate-200/80 rounded-3xl p-8 shadow-xs text-center space-y-8">
           <h3 className="text-sm font-bold text-slate-900">The Connected Workspace Flow</h3>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-xs">
             {steps.map((st, idx) => (
               <div key={idx} className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60 space-y-3 flex flex-col items-center">
