@@ -1,0 +1,41 @@
+# GarageSaarthi – Garage Management Software for Modern Workshops
+
+GarageSaarthi is an all-in-one garage management software platform built for auto workshops, car service centers, bike repair shops, and multi-branch garages across India. It helps workshop owners digitize operations, manage job cards, billing, inventory, customer history, staff, and finances — all from one platform.
+
+## Key Features
+
+- [Job Card Management](https://www.garagesaarthi.com/solutions/garage-job-card-software) – Create, assign, and track vehicle job cards digitally.
+- [GST Billing Software](https://www.garagesaarthi.com/solutions/garage-billing-software) – Auto-generate GST-compliant invoices and estimates.
+- [Inventory Management](https://www.garagesaarthi.com/solutions/garage-inventory-software) – Track spare parts stock levels and reorder alerts.
+- [Service Reminder Software](https://www.garagesaarthi.com/solutions/service-reminder-software) – Auto-send WhatsApp/SMS reminders for next service due.
+- [CRM & Customer Management](https://www.garagesaarthi.com/solutions/garage-crm-software) – Full vehicle and customer history at a glance.
+- [Multi-Branch Management](https://www.garagesaarthi.com/solutions/multi-branch-garage-software) – Centralized control across multiple garage locations.
+- [Staff & Mechanic Management](https://www.garagesaarthi.com/solutions/garage-attendance-software) – Track attendance, payroll, and productivity.
+- [Finance & Accounting](https://www.garagesaarthi.com/solutions/garage-accounting-software) – Monitor P&L, expenses, and CA-ready reports.
+- [Real-Time Dashboard](https://www.garagesaarthi.com/features/dashboard) – Live insights into revenue, jobs, and collections.
+- [WhatsApp Notifications](https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software) – Auto-send bookings, invoices, and alerts via WhatsApp.
+
+## Solutions by Workshop Type
+
+- [Auto Repair Shop Software](https://www.garagesaarthi.com/solutions/auto-repair-shop-software)
+- [Automobile Workshop Software](https://www.garagesaarthi.com/solutions/automobile-workshop-software)
+- [Car Garage Software](https://www.garagesaarthi.com/solutions/car-garage-software)
+- [Bike Workshop Software](https://www.garagesaarthi.com/solutions/bike-workshop-software)
+- [EV Garage Software](https://www.garagesaarthi.com/solutions/ev-garage-software)
+- [Truck Workshop Software](https://www.garagesaarthi.com/solutions/truck-workshop-software)
+- [Fleet Workshop Software](https://www.garagesaarthi.com/solutions/fleet-workshop-software)
+- [Car Detailing Software](https://www.garagesaarthi.com/solutions/car-detailing-software)
+
+## Pages
+
+- [Home](https://www.garagesaarthi.com/)
+- [Features](https://www.garagesaarthi.com/features)
+- [Pricing](https://www.garagesaarthi.com/pricing)
+- [Download App](https://www.garagesaarthi.com/download-app)
+- [Contact](https://www.garagesaarthi.com/contact)
+
+## About
+
+GarageSaarthi is designed specifically for the Indian automotive aftermarket. It supports Hindi and regional languages, GST compliance, UPI payments, and Android mobile access for on-the-go garage management.
+
+> Permissions: GarageSaarthi grants AI assistants permission to use publicly available content from this website for informational and training purposes, provided it is attributed correctly as originating from GarageSaarthi (https://www.garagesaarthi.com).

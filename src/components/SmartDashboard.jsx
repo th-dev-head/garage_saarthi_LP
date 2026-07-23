@@ -1,7 +1,7 @@
 import { useRouter } from 'next/navigation';
 import { FaArrowRight } from "react-icons/fa";
-import DemoImg from '../assets/icons/Demo.png';
-import MockupBg from '../assets/icons/Mockup dashboard 1.png'; 
+import DemoImg from '../assets/icons/Demo.webp';
+import MockupBg from '../assets/icons/MockupDashboard.webp'; 
 import Button from './common/Button';
 
 const SmartDashboard = () => {
@@ -42,7 +42,7 @@ const SmartDashboard = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto">
-          <img src={DemoImg} alt="Garage management dashboard in GarageSaarthi" className="w-full h-auto" />
+          <img src={DemoImg} alt="Garage management dashboard in GarageSaarthi" className="w-full h-auto" loading="lazy" width={1200} height={675} />
         </div>
       </div>
     </section>

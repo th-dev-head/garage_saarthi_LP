@@ -2,24 +2,24 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
-import VSHHero from "../components/solutions/vehicle-history/VSHHero";
-import VSHDefinition from "../components/solutions/vehicle-history/VSHDefinition";
-import VSHCapabilities from "../components/solutions/vehicle-history/VSHCapabilities";
-import VSHWorkflow from "../components/solutions/vehicle-history/VSHWorkflow";
-import VSHJobCards from "../components/solutions/vehicle-history/VSHJobCards";
-import VSHCustomerRecords from "../components/solutions/vehicle-history/VSHCustomerRecords";
-import VSHServiceAlerts from "../components/solutions/vehicle-history/VSHServiceAlerts";
-import VSHManualVsDigital from "../components/solutions/vehicle-history/VSHManualVsDigital";
-import VSHWorkshopTypes from "../components/solutions/vehicle-history/VSHWorkshopTypes";
-import VSHAccessRecords from "../components/solutions/vehicle-history/VSHAccessRecords";
-import VSHWebMobile from "../components/solutions/vehicle-history/VSHWebMobile";
-import VSHWhySaarthi from "../components/solutions/vehicle-history/VSHWhySaarthi";
-import VSHFeatures from "../components/solutions/vehicle-history/VSHFeatures";
-import VSHFreeTrial from "../components/solutions/vehicle-history/VSHFreeTrial";
-import VSHFAQ from "../components/solutions/vehicle-history/VSHFAQ";
-import VSHFinalCTA from "../components/solutions/vehicle-history/VSHFinalCTA";
+const VSHHero = dynamic(() => import('../components/solutions/vehicle-history/VSHHero'), { ssr: false });
+const VSHDefinition = dynamic(() => import('../components/solutions/vehicle-history/VSHDefinition'), { ssr: false });
+const VSHCapabilities = dynamic(() => import('../components/solutions/vehicle-history/VSHCapabilities'), { ssr: false });
+const VSHWorkflow = dynamic(() => import('../components/solutions/vehicle-history/VSHWorkflow'), { ssr: false });
+const VSHJobCards = dynamic(() => import('../components/solutions/vehicle-history/VSHJobCards'), { ssr: false });
+const VSHCustomerRecords = dynamic(() => import('../components/solutions/vehicle-history/VSHCustomerRecords'), { ssr: false });
+const VSHServiceAlerts = dynamic(() => import('../components/solutions/vehicle-history/VSHServiceAlerts'), { ssr: false });
+const VSHManualVsDigital = dynamic(() => import('../components/solutions/vehicle-history/VSHManualVsDigital'), { ssr: false });
+const VSHWorkshopTypes = dynamic(() => import('../components/solutions/vehicle-history/VSHWorkshopTypes'), { ssr: false });
+const VSHAccessRecords = dynamic(() => import('../components/solutions/vehicle-history/VSHAccessRecords'), { ssr: false });
+const VSHWebMobile = dynamic(() => import('../components/solutions/vehicle-history/VSHWebMobile'), { ssr: false });
+const VSHWhySaarthi = dynamic(() => import('../components/solutions/vehicle-history/VSHWhySaarthi'), { ssr: false });
+const VSHFeatures = dynamic(() => import('../components/solutions/vehicle-history/VSHFeatures'), { ssr: false });
+const VSHFreeTrial = dynamic(() => import('../components/solutions/vehicle-history/VSHFreeTrial'), { ssr: false });
+const VSHFAQ = dynamic(() => import('../components/solutions/vehicle-history/VSHFAQ'), { ssr: false });
+const VSHFinalCTA = dynamic(() => import('../components/solutions/vehicle-history/VSHFinalCTA'), { ssr: false });
 
 export default function VehicleServiceHistorySoftware() {
   return (

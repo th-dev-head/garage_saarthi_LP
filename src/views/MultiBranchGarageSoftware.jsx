@@ -2,25 +2,25 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
-import MBHero from "../components/solutions/multi-branch/MBHero";
-import MBDefinition from "../components/solutions/multi-branch/MBDefinition";
-import MBCentralized from "../components/solutions/multi-branch/MBCentralized";
-import MBOperations from "../components/solutions/multi-branch/MBOperations";
-import MBCentralVisibility from "../components/solutions/multi-branch/MBCentralVisibility";
-import MBBranchReports from "../components/solutions/multi-branch/MBBranchReports";
-import MBUserRoleManagement from "../components/solutions/multi-branch/MBUserRoleManagement";
-import MBChainsFranchises from "../components/solutions/multi-branch/MBChainsFranchises";
-import MBWebMobile from "../components/solutions/multi-branch/MBWebMobile";
-import MBWorkflowComparison from "../components/solutions/multi-branch/MBWorkflowComparison";
-import MBScaling from "../components/solutions/multi-branch/MBScaling";
-import MBWhySaarthi from "../components/solutions/multi-branch/MBWhySaarthi";
-import MBProductProof from "../components/solutions/multi-branch/MBProductProof";
-import MBCustomerProof from "../components/solutions/multi-branch/MBCustomerProof";
-import MBFreeTrial from "../components/solutions/multi-branch/MBFreeTrial";
-import MBFAQ from "../components/solutions/multi-branch/MBFAQ";
-import MBFinalCTA from "../components/solutions/multi-branch/MBFinalCTA";
+const MBHero = dynamic(() => import('../components/solutions/multi-branch/MBHero'), { ssr: false });
+const MBDefinition = dynamic(() => import('../components/solutions/multi-branch/MBDefinition'), { ssr: false });
+const MBCentralized = dynamic(() => import('../components/solutions/multi-branch/MBCentralized'), { ssr: false });
+const MBOperations = dynamic(() => import('../components/solutions/multi-branch/MBOperations'), { ssr: false });
+const MBCentralVisibility = dynamic(() => import('../components/solutions/multi-branch/MBCentralVisibility'), { ssr: false });
+const MBBranchReports = dynamic(() => import('../components/solutions/multi-branch/MBBranchReports'), { ssr: false });
+const MBUserRoleManagement = dynamic(() => import('../components/solutions/multi-branch/MBUserRoleManagement'), { ssr: false });
+const MBChainsFranchises = dynamic(() => import('../components/solutions/multi-branch/MBChainsFranchises'), { ssr: false });
+const MBWebMobile = dynamic(() => import('../components/solutions/multi-branch/MBWebMobile'), { ssr: false });
+const MBWorkflowComparison = dynamic(() => import('../components/solutions/multi-branch/MBWorkflowComparison'), { ssr: false });
+const MBScaling = dynamic(() => import('../components/solutions/multi-branch/MBScaling'), { ssr: false });
+const MBWhySaarthi = dynamic(() => import('../components/solutions/multi-branch/MBWhySaarthi'), { ssr: false });
+const MBProductProof = dynamic(() => import('../components/solutions/multi-branch/MBProductProof'), { ssr: false });
+const MBCustomerProof = dynamic(() => import('../components/solutions/multi-branch/MBCustomerProof'), { ssr: false });
+const MBFreeTrial = dynamic(() => import('../components/solutions/multi-branch/MBFreeTrial'), { ssr: false });
+const MBFAQ = dynamic(() => import('../components/solutions/multi-branch/MBFAQ'), { ssr: false });
+const MBFinalCTA = dynamic(() => import('../components/solutions/multi-branch/MBFinalCTA'), { ssr: false });
 
 export default function MultiBranchGarageSoftware() {
   return (

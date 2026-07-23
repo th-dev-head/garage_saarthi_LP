@@ -2,22 +2,22 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
-import GPHero from "../components/solutions/garage-payroll/GPHero";
-import GPDefinition from "../components/solutions/garage-payroll/GPDefinition";
-import GPPayrollCapabilities from "../components/solutions/garage-payroll/GPPayrollCapabilities";
-import GPAttendanceConnection from "../components/solutions/garage-payroll/GPAttendanceConnection";
-import GPLeaveStaffManagement from "../components/solutions/garage-payroll/GPLeaveStaffManagement";
-import GPWorkshopTypes from "../components/solutions/garage-payroll/GPWorkshopTypes";
-import GPManualVsSystem from "../components/solutions/garage-payroll/GPManualVsSystem";
-import GPEcosystem from "../components/solutions/garage-payroll/GPEcosystem";
-import GPMultiBranch from "../components/solutions/garage-payroll/GPMultiBranch";
-import GPWebMobile from "../components/solutions/garage-payroll/GPWebMobile";
-import GPWhySaarthi from "../components/solutions/garage-payroll/GPWhySaarthi";
-import GPPricing from "../components/solutions/garage-payroll/GPPricing";
-import GPFAQ from "../components/solutions/garage-payroll/GPFAQ";
-import GPFinalCTA from "../components/solutions/garage-payroll/GPFinalCTA";
+const GPHero = dynamic(() => import('../components/solutions/garage-payroll/GPHero'), { ssr: false });
+const GPDefinition = dynamic(() => import('../components/solutions/garage-payroll/GPDefinition'), { ssr: false });
+const GPPayrollCapabilities = dynamic(() => import('../components/solutions/garage-payroll/GPPayrollCapabilities'), { ssr: false });
+const GPAttendanceConnection = dynamic(() => import('../components/solutions/garage-payroll/GPAttendanceConnection'), { ssr: false });
+const GPLeaveStaffManagement = dynamic(() => import('../components/solutions/garage-payroll/GPLeaveStaffManagement'), { ssr: false });
+const GPWorkshopTypes = dynamic(() => import('../components/solutions/garage-payroll/GPWorkshopTypes'), { ssr: false });
+const GPManualVsSystem = dynamic(() => import('../components/solutions/garage-payroll/GPManualVsSystem'), { ssr: false });
+const GPEcosystem = dynamic(() => import('../components/solutions/garage-payroll/GPEcosystem'), { ssr: false });
+const GPMultiBranch = dynamic(() => import('../components/solutions/garage-payroll/GPMultiBranch'), { ssr: false });
+const GPWebMobile = dynamic(() => import('../components/solutions/garage-payroll/GPWebMobile'), { ssr: false });
+const GPWhySaarthi = dynamic(() => import('../components/solutions/garage-payroll/GPWhySaarthi'), { ssr: false });
+const GPPricing = dynamic(() => import('../components/solutions/garage-payroll/GPPricing'), { ssr: false });
+const GPFAQ = dynamic(() => import('../components/solutions/garage-payroll/GPFAQ'), { ssr: false });
+const GPFinalCTA = dynamic(() => import('../components/solutions/garage-payroll/GPFinalCTA'), { ssr: false });
 
 export default function GaragePayrollSoftware() {
   return (

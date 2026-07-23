@@ -56,9 +56,9 @@ export default function TestimonialsGrid({
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-text-dark text-sm leading-tight">
+                  <p className="font-semibold text-text-dark text-sm leading-tight">
                     {review.name}
-                  </h4>
+                  </p>
                   <p className="text-xs text-[#575757] mt-0.5">
                     {review.role} • {review.location}
                   </p>

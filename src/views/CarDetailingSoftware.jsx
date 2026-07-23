@@ -3,27 +3,27 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
-import CDHero from "../components/solutions/car-detailing/CDHero";
-import CDDefinition from "../components/solutions/car-detailing/CDDefinition";
-import CDOperations from "../components/solutions/car-detailing/CDOperations";
-import CDJobCards from "../components/solutions/car-detailing/CDJobCards";
-import CDCustomerVehicle from "../components/solutions/car-detailing/CDCustomerVehicle";
-import CDCRM from "../components/solutions/car-detailing/CDCRM";
-import CDBillingFinance from "../components/solutions/car-detailing/CDBillingFinance";
-import CDInventory from "../components/solutions/car-detailing/CDInventory";
-import CDServiceAlerts from "../components/solutions/car-detailing/CDServiceAlerts";
-import CDStaff from "../components/solutions/car-detailing/CDStaff";
-import CDDashboardReports from "../components/solutions/car-detailing/CDDashboardReports";
-import CDMultiBranch from "../components/solutions/car-detailing/CDMultiBranch";
-import CDCloudAccess from "../components/solutions/car-detailing/CDCloudAccess";
-import CDWhyUs from "../components/solutions/car-detailing/CDWhyUs";
-import CDTestimonials from "../components/solutions/car-detailing/CDTestimonials";
-import CDPricing from "../components/solutions/car-detailing/CDPricing";
-import CDFAQ from "../components/solutions/car-detailing/CDFAQ";
-import CDFinalCTA from "../components/solutions/car-detailing/CDFinalCTA";
+const CDHero = dynamic(() => import('../components/solutions/car-detailing/CDHero'), { ssr: false });
+const CDDefinition = dynamic(() => import('../components/solutions/car-detailing/CDDefinition'), { ssr: false });
+const CDOperations = dynamic(() => import('../components/solutions/car-detailing/CDOperations'), { ssr: false });
+const CDJobCards = dynamic(() => import('../components/solutions/car-detailing/CDJobCards'), { ssr: false });
+const CDCustomerVehicle = dynamic(() => import('../components/solutions/car-detailing/CDCustomerVehicle'), { ssr: false });
+const CDCRM = dynamic(() => import('../components/solutions/car-detailing/CDCRM'), { ssr: false });
+const CDBillingFinance = dynamic(() => import('../components/solutions/car-detailing/CDBillingFinance'), { ssr: false });
+const CDInventory = dynamic(() => import('../components/solutions/car-detailing/CDInventory'), { ssr: false });
+const CDServiceAlerts = dynamic(() => import('../components/solutions/car-detailing/CDServiceAlerts'), { ssr: false });
+const CDStaff = dynamic(() => import('../components/solutions/car-detailing/CDStaff'), { ssr: false });
+const CDDashboardReports = dynamic(() => import('../components/solutions/car-detailing/CDDashboardReports'), { ssr: false });
+const CDMultiBranch = dynamic(() => import('../components/solutions/car-detailing/CDMultiBranch'), { ssr: false });
+const CDCloudAccess = dynamic(() => import('../components/solutions/car-detailing/CDCloudAccess'), { ssr: false });
+const CDWhyUs = dynamic(() => import('../components/solutions/car-detailing/CDWhyUs'), { ssr: false });
+const CDTestimonials = dynamic(() => import('../components/solutions/car-detailing/CDTestimonials'), { ssr: false });
+const CDPricing = dynamic(() => import('../components/solutions/car-detailing/CDPricing'), { ssr: false });
+const CDFAQ = dynamic(() => import('../components/solutions/car-detailing/CDFAQ'), { ssr: false });
+const CDFinalCTA = dynamic(() => import('../components/solutions/car-detailing/CDFinalCTA'), { ssr: false });
 
 export default function CarDetailingSoftware() {
   return (

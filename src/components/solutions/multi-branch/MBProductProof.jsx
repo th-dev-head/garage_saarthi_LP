@@ -19,15 +19,18 @@ export default function MBProductProof() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { title: "Branch Switcher selector", desc: "Toggle view between locations centrally.", img: "/images/branch.png" },
-            { title: "User Permissions configuration", desc: "Define role accesses by location.", img: "/images/permissions.png" },
-            { title: "Consolidated Branch reports", desc: "Compare sales stats across outlets.", img: "/images/report.png" }
+            { title: "Branch Switcher selector", desc: "Toggle view between locations centrally.", img: "/images/branch.webp" },
+            { title: "User Permissions configuration", desc: "Define role accesses by location.", img: "/images/permissions.webp" },
+            { title: "Consolidated Branch reports", desc: "Compare sales stats across outlets.", img: "/images/report.webp" }
           ].map((item, idx) => (
             <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
               <div className="bg-slate-100 rounded-2xl aspect-[4/3] mb-6 flex items-center justify-center border border-slate-200 overflow-hidden relative">
                 <img
                   src={item.img}
                   alt={item.title}
+                  loading="lazy"
+                  width={400}
+                  height={300}
                   className="w-full h-full object-contain p-2 hover:scale-105 transition-transform duration-300"
                 />
               </div>

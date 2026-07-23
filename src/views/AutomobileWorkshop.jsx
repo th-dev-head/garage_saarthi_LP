@@ -3,29 +3,29 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
 // Custom page sections
-import AWHero from "../components/solutions/automobile-workshop/AWHero";
-import AWProblem from "../components/solutions/automobile-workshop/AWProblem";
-import AWProductDefinition from "../components/solutions/automobile-workshop/AWProductDefinition";
-import AWWorkflow from "../components/solutions/automobile-workshop/AWWorkflow";
-import AWJobCards from "../components/solutions/automobile-workshop/AWJobCards";
-import AWInventory from "../components/solutions/automobile-workshop/AWInventory";
-import AWCustomerHistory from "../components/solutions/automobile-workshop/AWCustomerHistory";
-import AWServiceReminders from "../components/solutions/automobile-workshop/AWServiceReminders";
-import AWCRM from "../components/solutions/automobile-workshop/AWCRM";
-import AWStaff from "../components/solutions/automobile-workshop/AWStaff";
-import AWBillingFinance from "../components/solutions/automobile-workshop/AWBillingFinance";
-import AWDashboardReports from "../components/solutions/automobile-workshop/AWDashboardReports";
-import AWMultiBranch from "../components/solutions/automobile-workshop/AWMultiBranch";
-import AWCloudAccess from "../components/solutions/automobile-workshop/AWCloudAccess";
-import AWBusinessTypes from "../components/solutions/automobile-workshop/AWBusinessTypes";
-import AWWhyUs from "../components/solutions/automobile-workshop/AWWhyUs";
-import AWReviews from "../components/solutions/automobile-workshop/AWReviews";
-import AWPricing from "../components/solutions/automobile-workshop/AWPricing";
-import AWFAQ from "../components/solutions/automobile-workshop/AWFAQ";
-import AWFinalCTA from "../components/solutions/automobile-workshop/AWFinalCTA";
+const AWHero = dynamic(() => import('../components/solutions/automobile-workshop/AWHero'), { ssr: false });
+const AWProblem = dynamic(() => import('../components/solutions/automobile-workshop/AWProblem'), { ssr: false });
+const AWProductDefinition = dynamic(() => import('../components/solutions/automobile-workshop/AWProductDefinition'), { ssr: false });
+const AWWorkflow = dynamic(() => import('../components/solutions/automobile-workshop/AWWorkflow'), { ssr: false });
+const AWJobCards = dynamic(() => import('../components/solutions/automobile-workshop/AWJobCards'), { ssr: false });
+const AWInventory = dynamic(() => import('../components/solutions/automobile-workshop/AWInventory'), { ssr: false });
+const AWCustomerHistory = dynamic(() => import('../components/solutions/automobile-workshop/AWCustomerHistory'), { ssr: false });
+const AWServiceReminders = dynamic(() => import('../components/solutions/automobile-workshop/AWServiceReminders'), { ssr: false });
+const AWCRM = dynamic(() => import('../components/solutions/automobile-workshop/AWCRM'), { ssr: false });
+const AWStaff = dynamic(() => import('../components/solutions/automobile-workshop/AWStaff'), { ssr: false });
+const AWBillingFinance = dynamic(() => import('../components/solutions/automobile-workshop/AWBillingFinance'), { ssr: false });
+const AWDashboardReports = dynamic(() => import('../components/solutions/automobile-workshop/AWDashboardReports'), { ssr: false });
+const AWMultiBranch = dynamic(() => import('../components/solutions/automobile-workshop/AWMultiBranch'), { ssr: false });
+const AWCloudAccess = dynamic(() => import('../components/solutions/automobile-workshop/AWCloudAccess'), { ssr: false });
+const AWBusinessTypes = dynamic(() => import('../components/solutions/automobile-workshop/AWBusinessTypes'), { ssr: false });
+const AWWhyUs = dynamic(() => import('../components/solutions/automobile-workshop/AWWhyUs'), { ssr: false });
+const AWReviews = dynamic(() => import('../components/solutions/automobile-workshop/AWReviews'), { ssr: false });
+const AWPricing = dynamic(() => import('../components/solutions/automobile-workshop/AWPricing'), { ssr: false });
+const AWFAQ = dynamic(() => import('../components/solutions/automobile-workshop/AWFAQ'), { ssr: false });
+const AWFinalCTA = dynamic(() => import('../components/solutions/automobile-workshop/AWFinalCTA'), { ssr: false });
 
 export default function AutomobileWorkshop() {
   return (

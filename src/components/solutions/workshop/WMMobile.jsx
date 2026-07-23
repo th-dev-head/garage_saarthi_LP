@@ -2,9 +2,9 @@ import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 import { FaArrowRight } from "react-icons/fa";
-import MockupBg from "../../../assets/icons/Mockup dashboard 1.png";
-import AppHand from "../../../assets/icons/Appdl.png";
-import PlayStoreIcon from "../../../assets/icons/Playstore.png";
+import MockupBg from "../../../assets/icons/MockupDashboard.webp";
+import AppHand from "../../../assets/icons/Appdl.webp";
+import PlayStoreIcon from "../../../assets/icons/Playstore.webp";
 import Button from "../../common/Button";
 
 export default function WMMobile() {
