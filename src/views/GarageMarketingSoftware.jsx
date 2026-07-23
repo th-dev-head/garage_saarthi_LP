@@ -2,25 +2,25 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
-import GMHero from "../components/solutions/garage-marketing/GMHero";
-import GMDefinition from "../components/solutions/garage-marketing/GMDefinition";
-import GMChallenges from "../components/solutions/garage-marketing/GMChallenges";
-import GMOverview from "../components/solutions/garage-marketing/GMOverview";
-import GMOffers from "../components/solutions/garage-marketing/GMOffers";
-import GMWhatsApp from "../components/solutions/garage-marketing/GMWhatsApp";
-import GMFollowUp from "../components/solutions/garage-marketing/GMFollowUp";
-import GMRetention from "../components/solutions/garage-marketing/GMRetention";
-import GMServiceReminder from "../components/solutions/garage-marketing/GMServiceReminder";
-import GMCRMConnection from "../components/solutions/garage-marketing/GMCRMConnection";
-import GMBusinessType from "../components/solutions/garage-marketing/GMBusinessType";
-import GMComparison from "../components/solutions/garage-marketing/GMComparison";
-import GMCloudAccess from "../components/solutions/garage-marketing/GMCloudAccess";
-import GMWhyUs from "../components/solutions/garage-marketing/GMWhyUs";
-import GMPricing from "../components/solutions/garage-marketing/GMPricing";
-import GMFAQ from "../components/solutions/garage-marketing/GMFAQ";
-import GMFinalCTA from "../components/solutions/garage-marketing/GMFinalCTA";
+const GMHero = dynamic(() => import('../components/solutions/garage-marketing/GMHero'), { ssr: false });
+const GMDefinition = dynamic(() => import('../components/solutions/garage-marketing/GMDefinition'), { ssr: false });
+const GMChallenges = dynamic(() => import('../components/solutions/garage-marketing/GMChallenges'), { ssr: false });
+const GMOverview = dynamic(() => import('../components/solutions/garage-marketing/GMOverview'), { ssr: false });
+const GMOffers = dynamic(() => import('../components/solutions/garage-marketing/GMOffers'), { ssr: false });
+const GMWhatsApp = dynamic(() => import('../components/solutions/garage-marketing/GMWhatsApp'), { ssr: false });
+const GMFollowUp = dynamic(() => import('../components/solutions/garage-marketing/GMFollowUp'), { ssr: false });
+const GMRetention = dynamic(() => import('../components/solutions/garage-marketing/GMRetention'), { ssr: false });
+const GMServiceReminder = dynamic(() => import('../components/solutions/garage-marketing/GMServiceReminder'), { ssr: false });
+const GMCRMConnection = dynamic(() => import('../components/solutions/garage-marketing/GMCRMConnection'), { ssr: false });
+const GMBusinessType = dynamic(() => import('../components/solutions/garage-marketing/GMBusinessType'), { ssr: false });
+const GMComparison = dynamic(() => import('../components/solutions/garage-marketing/GMComparison'), { ssr: false });
+const GMCloudAccess = dynamic(() => import('../components/solutions/garage-marketing/GMCloudAccess'), { ssr: false });
+const GMWhyUs = dynamic(() => import('../components/solutions/garage-marketing/GMWhyUs'), { ssr: false });
+const GMPricing = dynamic(() => import('../components/solutions/garage-marketing/GMPricing'), { ssr: false });
+const GMFAQ = dynamic(() => import('../components/solutions/garage-marketing/GMFAQ'), { ssr: false });
+const GMFinalCTA = dynamic(() => import('../components/solutions/garage-marketing/GMFinalCTA'), { ssr: false });
 
 export default function GarageMarketingSoftware() {
   return (

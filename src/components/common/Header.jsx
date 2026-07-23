@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaTimes, FaArrowRight, FaChevronDown } from "react-icons/fa";
 import Button from "./Button";
-import GLogo from "../../assets/icons/Glogo.png";
+import GLogo from "../../assets/icons/Glogo.webp";
 import { trackEvent } from "../../utils/pixel";
 
 const Header = () => {
@@ -18,8 +18,8 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Solutions", href: "#", isDropdown: true },
-    { name: "Features", href: "/feature" },
+    { name: "Solutions", href: "#", isDropdown: true, dropdownType: "solutions" },
+    { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
     { name: "Download App", href: "/download-app" },
     { name: "Contact", href: "/contact" },
     { name: "Pricing", href: "/pricing" },
@@ -69,11 +69,48 @@ const Header = () => {
     ]
   };
 
+  const featuresMegaMenu = {
+    "Workshop Operations": [
+      { name: "Workshop Management Dashboard", href: "/features/workshop-management-dashboard" },
+      { name: "Job Card Management", href: "/features/job-cards" },
+      { name: "Counter Sales", href: "/features/counter-sales" },
+      { name: "Billing & Invoicing", href: "/features/billing" },
+      { name: "Inventory Management", href: "/features/inventory" },
+    ],
+    "Customer & Vehicle": [
+      { name: "CRM & Lead Management", href: "/features/crm" },
+      { name: "Customer Management", href: "/features/customers" },
+      { name: "Vehicle Management", href: "/features/vehicles" },
+      { name: "Vehicle Service History", href: "/features/service-history" },
+      { name: "Service Reminders", href: "/features/service-alerts" },
+      { name: "WhatsApp Automation", href: "/features/automation" },
+      { name: "Customer Review Collection", href: "/features/customer-reviews" },
+    ],
+    "Business & Finance": [
+      { name: "Finance Management", href: "/features/finance" },
+      { name: "Loan Management", href: "/features/loans" },
+      { name: "Reports & Analytics", href: "/features/reports" },
+      { name: "CA Access", href: "/features/ca-access" },
+    ],
+    "Team Management": [
+      { name: "Attendance Management", href: "/features/attendance" },
+      { name: "Payroll Management", href: "/features/payroll" },
+      { name: "Leave Management", href: "/features/leave-management" },
+      { name: "User Management", href: "/features/user-management" },
+      { name: "Role-Based Access", href: "/features/role-based-access" },
+      { name: "Multi-Branch Management", href: "/features/branches" },
+    ],
+    "Marketing & Media": [
+      { name: "Offers & Promotions", href: "/features/offers-promotions" },
+      { name: "Media Gallery (Before & After Photos)", href: "/features/media-gallery" },
+    ],
+  };
+
   useEffect(() => {
     const cleanPath = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
     if (cleanPath === "/pricing") {
       setActive("Pricing");
-    } else if (cleanPath === "/feature" || cleanPath === "/features") {
+    } else if (cleanPath === "/feature" || cleanPath === "/features" || cleanPath.startsWith("/features/")) {
       setActive("Features");
     } else if (cleanPath === "/download-app") {
       setActive("Download App");
@@ -100,11 +137,19 @@ const Header = () => {
   };
 
   const [isSolutionsOpenDesktop, setIsSolutionsOpenDesktop] = useState(false);
+  const [isFeaturesOpenDesktop, setIsFeaturesOpenDesktop] = useState(false);
+  const [isFeaturesOpenMobile, setIsFeaturesOpenMobile] = useState(false);
+
+  const solutionsRef = useRef(null);
+  const featuresRef = useRef(null);
 
   useEffect(() => {
     const handleDocumentClick = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+      if (solutionsRef.current && !solutionsRef.current.contains(e.target)) {
         setIsSolutionsOpenDesktop(false);
+      }
+      if (featuresRef.current && !featuresRef.current.contains(e.target)) {
+        setIsFeaturesOpenDesktop(false);
       }
     };
     document.addEventListener("click", handleDocumentClick);
@@ -124,11 +169,13 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
-  const handleSolutionClick = (href) => {
+  const handleDropdownItemClick = (href) => {
     router.push(href);
     setIsMenuOpen(false);
     setIsSolutionsOpenMobile(false);
+    setIsFeaturesOpenMobile(false);
     setIsSolutionsOpenDesktop(false);
+    setIsFeaturesOpenDesktop(false);
   };
 
   const scrollToHome = () => {
@@ -162,7 +209,7 @@ const Header = () => {
               className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105"
               onClick={scrollToHome}
             >
-              <img src={GLogo} alt="GarageSaarthi" className="h-10" />
+              <img src={GLogo} alt="GarageSaarthi" className="h-10 w-auto" width={160} height={40} />
             </div>
 
             {/* Login Button */}
@@ -189,7 +236,7 @@ const Header = () => {
               className="flex items-center gap-2 cursor-pointer"
               onClick={scrollToHome}
             >
-              <img src={GLogo} alt="GarageSaarthi" className="h-10 2xl:h-15" />
+              <img src={GLogo} alt="GarageSaarthi" className="h-10 2xl:h-15 w-auto" width={160} height={40} />
             </div>
 
             {/* Nav Links */}
@@ -197,19 +244,35 @@ const Header = () => {
               {navLinks.map((link) => {
                 const isActive = active === link.name;
                 if (link.isDropdown) {
+                  const isSolutions = link.dropdownType === "solutions";
+                  const isOpenDesktop = isSolutions ? isSolutionsOpenDesktop : isFeaturesOpenDesktop;
+                  const menuData = isSolutions ? solutionsMegaMenu : featuresMegaMenu;
+                  const targetRef = isSolutions ? solutionsRef : featuresRef;
+                  const toggleDesktop = () => {
+                    if (isSolutions) {
+                      setIsSolutionsOpenDesktop((prev) => !prev);
+                      setIsFeaturesOpenDesktop(false);
+                    } else {
+                      setIsFeaturesOpenDesktop((prev) => !prev);
+                      setIsSolutionsOpenDesktop(false);
+                    }
+                  };
+                  const colCount = isSolutions ? 4 : 5;
+                  const menuWidth = isSolutions ? "980px" : "1100px";
+
                   return (
-                    <li key={link.name} ref={dropdownRef} className="group">
+                    <li key={link.name} ref={targetRef} className="group">
                       <div className="relative inline-block">
                         <Link
                           href="#"
                           onClick={(e) => {
                             e.preventDefault();
-                            setIsSolutionsOpenDesktop((prev) => !prev);
+                            toggleDesktop();
                           }}
                           className="text-xs xl:text-sm 2xl:text-base font-semibold pb-2 hover:text-[#B02E0C] transition-colors cursor-pointer animate-none"
                         >
                           {link.name}
-                          <FaChevronDown className={`w-2.5 h-2.5 ml-1 xl:ml-2 inline-block align-middle transition-transform duration-200 ${isSolutionsOpenDesktop ? "rotate-180" : "group-hover:rotate-180"}`} />
+                          <FaChevronDown className={`w-2.5 h-2.5 ml-1 xl:ml-2 inline-block align-middle transition-transform duration-200 ${isOpenDesktop ? "rotate-180" : "group-hover:rotate-180"}`} />
                         </Link>
 
                         {isActive && (
@@ -225,37 +288,37 @@ const Header = () => {
 
                       {/* Dropdown Menu */}
                       <div
-                        className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isSolutionsOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
-                        style={{ width: "980px" }}
+                        className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
+                        style={{ width: menuWidth, maxWidth: "calc(100vw - 32px)" }}
                       >
                         <div
                           className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-5 max-h-[calc(100vh-110px)] overflow-y-auto"
                           style={{
                             display: "grid",
-                            gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-                            gap: "18px"
+                            gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))`,
+                            gap: isSolutions ? "18px" : "14px"
                           }}
                         >
-                          {Object.entries(solutionsMegaMenu).map(([category, items]) => (
+                          {Object.entries(menuData).map(([category, items]) => (
                             <div key={category} className="space-y-2.5">
                               <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                 {category}
                               </span>
                               <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
-                                {items.map((sol) => {
-                                  const isCurrent = pathname.replace(/\/$/, '') === sol.href.replace(/\/$/, '');
+                                {items.map((item) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
                                   return (
                                     <button
-                                      key={sol.name}
-                                      onClick={() => handleSolutionClick(sol.href)}
-                                      className={`w-full text-left px-3 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
+                                      key={item.name}
+                                      onClick={() => handleDropdownItemClick(item.href)}
+                                      className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
                                         ? "bg-slate-50 text-primary"
                                         : "text-slate-700 hover:bg-slate-50 hover:text-primary"
                                         }`}
                                     >
                                       <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${isCurrent ? "bg-primary" : "bg-primary/45"
                                         }`} />
-                                      <span className="whitespace-normal break-words leading-snug">{sol.name}</span>
+                                      <span className="whitespace-normal break-words leading-snug">{item.name}</span>
                                     </button>
                                   );
                                 })}
@@ -335,36 +398,47 @@ const Header = () => {
             {navLinks.map((link) => {
               const isActive = active === link.name;
               if (link.isDropdown) {
+                const isSolutions = link.dropdownType === "solutions";
+                const isOpenMobile = isSolutions ? isSolutionsOpenMobile : isFeaturesOpenMobile;
+                const toggleMobile = () => {
+                  if (isSolutions) {
+                    setIsSolutionsOpenMobile(!isSolutionsOpenMobile);
+                  } else {
+                    setIsFeaturesOpenMobile(!isFeaturesOpenMobile);
+                  }
+                };
+                const menuData = isSolutions ? solutionsMegaMenu : featuresMegaMenu;
+
                 return (
                   <div key={link.name} className="flex flex-col">
                     <button
-                      onClick={() => setIsSolutionsOpenMobile(!isSolutionsOpenMobile)}
+                      onClick={toggleMobile}
                       className={`px-6 py-3 rounded-2xl text-base font-semibold text-left transition-all duration-200 flex items-center justify-between ${isActive ? "bg-[#F5EAE7] text-[#B02E0C]" : "text-gray-700"
                         }`}
                     >
                       <span>{link.name}</span>
-                      <FaChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isSolutionsOpenMobile ? "rotate-180" : ""}`} />
+                      <FaChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isOpenMobile ? "rotate-180" : ""}`} />
                     </button>
-                    {isSolutionsOpenMobile && (
+                    {isOpenMobile && (
                       <div className="pl-4 flex flex-col gap-3 mt-2 mb-2">
-                        {Object.entries(solutionsMegaMenu).map(([category, items]) => (
+                        {Object.entries(menuData).map(([category, items]) => (
                           <div key={category} className="space-y-1">
                             <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-4 block mb-1">
                               {category}
                             </span>
                             <div className="flex flex-col gap-0.5 pl-2 border-l border-slate-100">
-                              {items.map((sol) => {
-                                const isCurrent = pathname.replace(/\/$/, '') === sol.href.replace(/\/$/, '');
+                              {items.map((item) => {
+                                const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
                                 return (
                                   <button
-                                    key={sol.name}
-                                    onClick={() => handleSolutionClick(sol.href)}
+                                    key={item.name}
+                                    onClick={() => handleDropdownItemClick(item.href)}
                                     className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${isCurrent
                                       ? "bg-slate-50 text-primary"
                                       : "text-gray-600 hover:bg-gray-50"
                                       }`}
                                   >
-                                    {sol.name}
+                                    {item.name}
                                   </button>
                                 );
                               })}

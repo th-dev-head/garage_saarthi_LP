@@ -3,26 +3,26 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
-import BWHero from "../components/solutions/bike-workshop/BWHero";
-import BWDefinition from "../components/solutions/bike-workshop/BWDefinition";
-import BWJobCards from "../components/solutions/bike-workshop/BWJobCards";
-import BWCustomerVehicle from "../components/solutions/bike-workshop/BWCustomerVehicle";
-import BWInventory from "../components/solutions/bike-workshop/BWInventory";
-import BWBillingFinance from "../components/solutions/bike-workshop/BWBillingFinance";
-import BWServiceAlerts from "../components/solutions/bike-workshop/BWServiceAlerts";
-import BWStaff from "../components/solutions/bike-workshop/BWStaff";
-import BWDashboardReports from "../components/solutions/bike-workshop/BWDashboardReports";
-import BWCloudAccess from "../components/solutions/bike-workshop/BWCloudAccess";
-import BWBusinessType from "../components/solutions/bike-workshop/BWBusinessType";
-import BWComparison from "../components/solutions/bike-workshop/BWComparison";
-import BWWhyUs from "../components/solutions/bike-workshop/BWWhyUs";
-import BWTestimonials from "../components/solutions/bike-workshop/BWTestimonials";
-import BWPricing from "../components/solutions/bike-workshop/BWPricing";
-import BWFAQ from "../components/solutions/bike-workshop/BWFAQ";
-import BWFinalCTA from "../components/solutions/bike-workshop/BWFinalCTA";
+const BWHero = dynamic(() => import('../components/solutions/bike-workshop/BWHero'), { ssr: false });
+const BWDefinition = dynamic(() => import('../components/solutions/bike-workshop/BWDefinition'), { ssr: false });
+const BWJobCards = dynamic(() => import('../components/solutions/bike-workshop/BWJobCards'), { ssr: false });
+const BWCustomerVehicle = dynamic(() => import('../components/solutions/bike-workshop/BWCustomerVehicle'), { ssr: false });
+const BWInventory = dynamic(() => import('../components/solutions/bike-workshop/BWInventory'), { ssr: false });
+const BWBillingFinance = dynamic(() => import('../components/solutions/bike-workshop/BWBillingFinance'), { ssr: false });
+const BWServiceAlerts = dynamic(() => import('../components/solutions/bike-workshop/BWServiceAlerts'), { ssr: false });
+const BWStaff = dynamic(() => import('../components/solutions/bike-workshop/BWStaff'), { ssr: false });
+const BWDashboardReports = dynamic(() => import('../components/solutions/bike-workshop/BWDashboardReports'), { ssr: false });
+const BWCloudAccess = dynamic(() => import('../components/solutions/bike-workshop/BWCloudAccess'), { ssr: false });
+const BWBusinessType = dynamic(() => import('../components/solutions/bike-workshop/BWBusinessType'), { ssr: false });
+const BWComparison = dynamic(() => import('../components/solutions/bike-workshop/BWComparison'), { ssr: false });
+const BWWhyUs = dynamic(() => import('../components/solutions/bike-workshop/BWWhyUs'), { ssr: false });
+const BWTestimonials = dynamic(() => import('../components/solutions/bike-workshop/BWTestimonials'), { ssr: false });
+const BWPricing = dynamic(() => import('../components/solutions/bike-workshop/BWPricing'), { ssr: false });
+const BWFAQ = dynamic(() => import('../components/solutions/bike-workshop/BWFAQ'), { ssr: false });
+const BWFinalCTA = dynamic(() => import('../components/solutions/bike-workshop/BWFinalCTA'), { ssr: false });
 
 export default function BikeWorkshopSoftware() {
   return (

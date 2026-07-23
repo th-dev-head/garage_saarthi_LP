@@ -3,27 +3,27 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
-import GAHero from "../components/solutions/garage-app/GAHero";
-import GADefinition from "../components/solutions/garage-app/GADefinition";
-import GADailyWork from "../components/solutions/garage-app/GADailyWork";
-import GAMobileWorkflow from "../components/solutions/garage-app/GAMobileWorkflow";
-import GABusinessTypes from "../components/solutions/garage-app/GABusinessTypes";
-import GAJobCardUseCase from "../components/solutions/garage-app/GAJobCardUseCase";
-import GACustomerVehicle from "../components/solutions/garage-app/GACustomerVehicle";
-import GAInventoryMobile from "../components/solutions/garage-app/GAInventoryMobile";
-import GAStaffManagement from "../components/solutions/garage-app/GAStaffManagement";
-import GAServiceAlerts from "../components/solutions/garage-app/GAServiceAlerts";
-import GAReports from "../components/solutions/garage-app/GAReports";
-import GAWebMobileConnection from "../components/solutions/garage-app/GAWebMobileConnection";
-import GAAndroidApp from "../components/solutions/garage-app/GAAndroidApp";
-import GAWhyUse from "../components/solutions/garage-app/GAWhyUse";
-import GAProductProof from "../components/solutions/garage-app/GAProductProof";
-import GAFreeTrialCTA from "../components/solutions/garage-app/GAFreeTrialCTA";
-import GAFAQ from "../components/solutions/garage-app/GAFAQ";
-import GAFinalCTA from "../components/solutions/garage-app/GAFinalCTA";
+const GAHero = dynamic(() => import('../components/solutions/garage-app/GAHero'), { ssr: false });
+const GADefinition = dynamic(() => import('../components/solutions/garage-app/GADefinition'), { ssr: false });
+const GADailyWork = dynamic(() => import('../components/solutions/garage-app/GADailyWork'), { ssr: false });
+const GAMobileWorkflow = dynamic(() => import('../components/solutions/garage-app/GAMobileWorkflow'), { ssr: false });
+const GABusinessTypes = dynamic(() => import('../components/solutions/garage-app/GABusinessTypes'), { ssr: false });
+const GAJobCardUseCase = dynamic(() => import('../components/solutions/garage-app/GAJobCardUseCase'), { ssr: false });
+const GACustomerVehicle = dynamic(() => import('../components/solutions/garage-app/GACustomerVehicle'), { ssr: false });
+const GAInventoryMobile = dynamic(() => import('../components/solutions/garage-app/GAInventoryMobile'), { ssr: false });
+const GAStaffManagement = dynamic(() => import('../components/solutions/garage-app/GAStaffManagement'), { ssr: false });
+const GAServiceAlerts = dynamic(() => import('../components/solutions/garage-app/GAServiceAlerts'), { ssr: false });
+const GAReports = dynamic(() => import('../components/solutions/garage-app/GAReports'), { ssr: false });
+const GAWebMobileConnection = dynamic(() => import('../components/solutions/garage-app/GAWebMobileConnection'), { ssr: false });
+const GAAndroidApp = dynamic(() => import('../components/solutions/garage-app/GAAndroidApp'), { ssr: false });
+const GAWhyUse = dynamic(() => import('../components/solutions/garage-app/GAWhyUse'), { ssr: false });
+const GAProductProof = dynamic(() => import('../components/solutions/garage-app/GAProductProof'), { ssr: false });
+const GAFreeTrialCTA = dynamic(() => import('../components/solutions/garage-app/GAFreeTrialCTA'), { ssr: false });
+const GAFAQ = dynamic(() => import('../components/solutions/garage-app/GAFAQ'), { ssr: false });
+const GAFinalCTA = dynamic(() => import('../components/solutions/garage-app/GAFinalCTA'), { ssr: false });
 
 export default function GarageManagementApp() {
   return (

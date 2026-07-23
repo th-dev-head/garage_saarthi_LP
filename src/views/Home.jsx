@@ -1,26 +1,30 @@
 'use client';
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import Header from '../components/common/Header';
 import Hero from '../components/Hero';
 import ProductDefinition from '../components/ProductDefinition';
 import DashboardFeatures from '../components/DashboardFeatures';
-import IndustrialBenefits from '../components/IndustrialBenefits';
-import DigitalOperations from '../components/DigitalOperations';
-import SmartDashboard from '../components/SmartDashboard';
-import MultiBranchPromo from '../components/MultiBranchPromo';
-import CustomerRetentionPromo from '../components/CustomerRetentionPromo';
-import StaffManagementPromo from '../components/StaffManagementPromo';
-import FinancePromo from '../components/FinancePromo';
-import AppPromotion from '../components/AppPromotion';
-import WhyGarageSaarthi from '../components/WhyGarageSaarthi';
-import ReviewSection from '../components/ReviewSection';
-import PricingCTA from '../components/PricingCTA';
-import FAQSection from '../components/FAQSection';
-import FinalCTA from '../components/FinalCTA';
-import ContactSection from '../components/ContactSection';
-import Footer from '../components/common/Footer';
-import ScrollToTop from '../components/common/ScrollToTop';
+
+const SectionPlaceholder = () => <div style={{ minHeight: '400px' }} />;
+
+const IndustrialBenefits = dynamic(() => import('../components/IndustrialBenefits'), { loading: () => <SectionPlaceholder /> });
+const DigitalOperations = dynamic(() => import('../components/DigitalOperations'), { loading: () => <SectionPlaceholder /> });
+const SmartDashboard = dynamic(() => import('../components/SmartDashboard'), { loading: () => <SectionPlaceholder /> });
+const MultiBranchPromo = dynamic(() => import('../components/MultiBranchPromo'), { loading: () => <SectionPlaceholder /> });
+const CustomerRetentionPromo = dynamic(() => import('../components/CustomerRetentionPromo'), { loading: () => <SectionPlaceholder /> });
+const StaffManagementPromo = dynamic(() => import('../components/StaffManagementPromo'), { loading: () => <SectionPlaceholder /> });
+const FinancePromo = dynamic(() => import('../components/FinancePromo'), { loading: () => <SectionPlaceholder /> });
+const AppPromotion = dynamic(() => import('../components/AppPromotion'), { loading: () => <SectionPlaceholder /> });
+const WhyGarageSaarthi = dynamic(() => import('../components/WhyGarageSaarthi'), { loading: () => <SectionPlaceholder /> });
+const ReviewSection = dynamic(() => import('../components/ReviewSection'), { loading: () => <SectionPlaceholder /> });
+const PricingCTA = dynamic(() => import('../components/PricingCTA'), { loading: () => <SectionPlaceholder /> });
+const FAQSection = dynamic(() => import('../components/FAQSection'), { loading: () => <SectionPlaceholder /> });
+const FinalCTA = dynamic(() => import('../components/FinalCTA'), { loading: () => <SectionPlaceholder /> });
+const ContactSection = dynamic(() => import('../components/ContactSection'), { loading: () => <SectionPlaceholder /> });
+const Footer = dynamic(() => import('../components/common/Footer'), { loading: () => <div style={{ minHeight: '300px' }} /> });
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), {});
 
 const Home = () => {
   return (

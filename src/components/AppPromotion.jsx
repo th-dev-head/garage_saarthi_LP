@@ -1,8 +1,8 @@
 import { FRONTEND_URL } from "@/src/config/env";
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import MockupBg from '../assets/icons/Mockup dashboard 1.png';
-import AppHand from '../assets/icons/Appdl.png';
+import MockupBg from '../assets/icons/MockupDashboard.webp';
+import AppHand from '../assets/icons/Appdl.webp';
 import Button from './common/Button';
 import PlayStoreBadge from './common/PlayStoreBadge';
 
@@ -31,6 +31,9 @@ const AppPromotion = () => {
               src={AppHand} 
               alt="GarageSaarthi garage management software on web and mobile" 
               className="w-full h-full object-contain lg:-mb-20"
+              loading="lazy"
+              width={800}
+              height={600}
             />
           </div>
         </div>

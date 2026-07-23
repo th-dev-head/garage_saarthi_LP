@@ -2,23 +2,23 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
-import GACHero from "../components/solutions/garage-accounting/GACHero";
-import GACDefinition from "../components/solutions/garage-accounting/GACDefinition";
-import GACCapabilities from "../components/solutions/garage-accounting/GACCapabilities";
-import GACProblem from "../components/solutions/garage-accounting/GACProblem";
-import GACExpenseManagement from "../components/solutions/garage-accounting/GACExpenseManagement";
-import GACBilling from "../components/solutions/garage-accounting/GACBilling";
-import GACCaAccess from "../components/solutions/garage-accounting/GACCaAccess";
-import GACConnected from "../components/solutions/garage-accounting/GACConnected";
-import GACWebMobile from "../components/solutions/garage-accounting/GACWebMobile";
-import GACMultiBranch from "../components/solutions/garage-accounting/GACMultiBranch";
-import GACWorkshopTypes from "../components/solutions/garage-accounting/GACWorkshopTypes";
-import GACWhySaarthi from "../components/solutions/garage-accounting/GACWhySaarthi";
-import GACPricing from "../components/solutions/garage-accounting/GACPricing";
-import GACFAQ from "../components/solutions/garage-accounting/GACFAQ";
-import GACFinalCTA from "../components/solutions/garage-accounting/GACFinalCTA";
+const GACHero = dynamic(() => import('../components/solutions/garage-accounting/GACHero'), { ssr: false });
+const GACDefinition = dynamic(() => import('../components/solutions/garage-accounting/GACDefinition'), { ssr: false });
+const GACCapabilities = dynamic(() => import('../components/solutions/garage-accounting/GACCapabilities'), { ssr: false });
+const GACProblem = dynamic(() => import('../components/solutions/garage-accounting/GACProblem'), { ssr: false });
+const GACExpenseManagement = dynamic(() => import('../components/solutions/garage-accounting/GACExpenseManagement'), { ssr: false });
+const GACBilling = dynamic(() => import('../components/solutions/garage-accounting/GACBilling'), { ssr: false });
+const GACCaAccess = dynamic(() => import('../components/solutions/garage-accounting/GACCaAccess'), { ssr: false });
+const GACConnected = dynamic(() => import('../components/solutions/garage-accounting/GACConnected'), { ssr: false });
+const GACWebMobile = dynamic(() => import('../components/solutions/garage-accounting/GACWebMobile'), { ssr: false });
+const GACMultiBranch = dynamic(() => import('../components/solutions/garage-accounting/GACMultiBranch'), { ssr: false });
+const GACWorkshopTypes = dynamic(() => import('../components/solutions/garage-accounting/GACWorkshopTypes'), { ssr: false });
+const GACWhySaarthi = dynamic(() => import('../components/solutions/garage-accounting/GACWhySaarthi'), { ssr: false });
+const GACPricing = dynamic(() => import('../components/solutions/garage-accounting/GACPricing'), { ssr: false });
+const GACFAQ = dynamic(() => import('../components/solutions/garage-accounting/GACFAQ'), { ssr: false });
+const GACFinalCTA = dynamic(() => import('../components/solutions/garage-accounting/GACFinalCTA'), { ssr: false });
 
 export default function GarageAccountingSoftware() {
   return (

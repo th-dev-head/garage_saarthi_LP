@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaLaptop, FaAndroid, FaArrowRight } from "react-icons/fa";
 import Button from "./Button";
 import PlayStoreBadge from "./PlayStoreBadge";
-import GLogo from "@/src/assets/icons/Glogo.png";
+import GLogo from "@/src/assets/icons/Glogo.webp";
 import { FRONTEND_URL } from "@/src/config/env";
 import GradientUnderline from "./GradientUnderline";
 
@@ -62,7 +62,7 @@ export default function CloudAccessCommon({
           <div className="bg-slate-50 max-w-xl mx-auto border border-slate-200/80 rounded-2xl p-8 flex flex-col justify-center items-center text-center h-full min-h-[320px]">
             <span className="text-xs font-bold text-slate-800 mb-4 block">Android Play Store App Available</span>
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 w-full mx-auto" style={{ maxWidth: "280px" }}>
-              <img src={GLogo} alt="GarageSaarthi Logo" className="w-22 h-16 object-contain mx-auto mb-4" />
+              <img src={GLogo} alt="GarageSaarthi Logo" className="w-22 h-16 object-contain mx-auto mb-4" width={88} height={64} />
               <h4 className="font-bold text-slate-900 mb-1">GarageSaarthi App</h4>
               <p className="text-[10px] text-slate-500 mb-4">Complete garage management software for mobile.</p>
               <PlayStoreBadge className="w-full justify-center" />

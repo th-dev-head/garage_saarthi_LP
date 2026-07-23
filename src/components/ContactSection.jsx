@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaTimes, FaArrowRight } from "react-icons/fa";
-import GformBg from "../assets/optimized/Gform_extracted_0.png";
-import BookDemoIcon from "../assets/icons/Bookd.png";
+import GformBg from "../assets/optimized/GformBg.webp";
+import BookDemoIcon from "../assets/icons/Bookd.webp";
 import Button from "./common/Button";
 
 const FORMSPREE_URL = process.env.NEXT_PUBLIC_FORMSPREE_URL;

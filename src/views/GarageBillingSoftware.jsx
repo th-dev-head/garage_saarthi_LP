@@ -3,25 +3,25 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
-import GBHero from "../components/solutions/garage-billing/GBHero";
-import GBProblemDefinition from "../components/solutions/garage-billing/GBProblemDefinition";
-import GBProductDefinition from "../components/solutions/garage-billing/GBProductDefinition";
-import GBFeatures from "../components/solutions/garage-billing/GBFeatures";
-import GBWorkflow from "../components/solutions/garage-billing/GBWorkflow";
-import GBGSTBilling from "../components/solutions/garage-billing/GBGSTBilling";
-import GBBusinessType from "../components/solutions/garage-billing/GBBusinessType";
-import GBCloudAccess from "../components/solutions/garage-billing/GBCloudAccess";
-import GBInventoryConnection from "../components/solutions/garage-billing/GBInventoryConnection";
-import GBFinanceVisibility from "../components/solutions/garage-billing/GBFinanceVisibility";
-import GBCustomerVehicle from "../components/solutions/garage-billing/GBCustomerVehicle";
-import GBSelectionCriteria from "../components/solutions/garage-billing/GBSelectionCriteria";
-import GBEcosystem from "../components/solutions/garage-billing/GBEcosystem";
-import GBCustomerProof from "../components/solutions/garage-billing/GBCustomerProof";
-import GBFreeTrial from "../components/solutions/garage-billing/GBFreeTrial";
-import GBFAQ from "../components/solutions/garage-billing/GBFAQ";
-import GBFinalCTA from "../components/solutions/garage-billing/GBFinalCTA";
+const GBHero = dynamic(() => import('../components/solutions/garage-billing/GBHero'), { ssr: false });
+const GBProblemDefinition = dynamic(() => import('../components/solutions/garage-billing/GBProblemDefinition'), { ssr: false });
+const GBProductDefinition = dynamic(() => import('../components/solutions/garage-billing/GBProductDefinition'), { ssr: false });
+const GBFeatures = dynamic(() => import('../components/solutions/garage-billing/GBFeatures'), { ssr: false });
+const GBWorkflow = dynamic(() => import('../components/solutions/garage-billing/GBWorkflow'), { ssr: false });
+const GBGSTBilling = dynamic(() => import('../components/solutions/garage-billing/GBGSTBilling'), { ssr: false });
+const GBBusinessType = dynamic(() => import('../components/solutions/garage-billing/GBBusinessType'), { ssr: false });
+const GBCloudAccess = dynamic(() => import('../components/solutions/garage-billing/GBCloudAccess'), { ssr: false });
+const GBInventoryConnection = dynamic(() => import('../components/solutions/garage-billing/GBInventoryConnection'), { ssr: false });
+const GBFinanceVisibility = dynamic(() => import('../components/solutions/garage-billing/GBFinanceVisibility'), { ssr: false });
+const GBCustomerVehicle = dynamic(() => import('../components/solutions/garage-billing/GBCustomerVehicle'), { ssr: false });
+const GBSelectionCriteria = dynamic(() => import('../components/solutions/garage-billing/GBSelectionCriteria'), { ssr: false });
+const GBEcosystem = dynamic(() => import('../components/solutions/garage-billing/GBEcosystem'), { ssr: false });
+const GBCustomerProof = dynamic(() => import('../components/solutions/garage-billing/GBCustomerProof'), { ssr: false });
+const GBFreeTrial = dynamic(() => import('../components/solutions/garage-billing/GBFreeTrial'), { ssr: false });
+const GBFAQ = dynamic(() => import('../components/solutions/garage-billing/GBFAQ'), { ssr: false });
+const GBFinalCTA = dynamic(() => import('../components/solutions/garage-billing/GBFinalCTA'), { ssr: false });
 
 export default function GarageBillingSoftware() {
   return (

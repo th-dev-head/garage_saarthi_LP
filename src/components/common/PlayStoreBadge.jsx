@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import PlayStoreIcon from "@/src/assets/icons/Playstore.png";
+import PlayStoreIcon from "@/src/assets/icons/Playstore.webp";
 
 const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.th.garagesaarthi&hl=en_IN";
@@ -23,6 +23,9 @@ export default function PlayStoreBadge({ className = "" }) {
           src={PlayStoreIcon}
           alt="Download GarageSaarthi on Google Play Store"
           className="w-6 h-6 object-contain"
+          loading="lazy"
+          width={24}
+          height={24}
         />
       </div>
       <div className="flex flex-col text-left leading-none">

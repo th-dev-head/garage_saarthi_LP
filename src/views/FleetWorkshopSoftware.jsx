@@ -3,28 +3,28 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
+const ScrollToTop = dynamic(() => import('../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
-import FLHero from "../components/solutions/fleet-workshop/FLHero";
-import FLDefinition from "../components/solutions/fleet-workshop/FLDefinition";
-import FLProduct from "../components/solutions/fleet-workshop/FLProduct";
-import FLJobCards from "../components/solutions/fleet-workshop/FLJobCards";
-import FLCustomerVehicle from "../components/solutions/fleet-workshop/FLCustomerVehicle";
-import FLServiceAlerts from "../components/solutions/fleet-workshop/FLServiceAlerts";
-import FLInventory from "../components/solutions/fleet-workshop/FLInventory";
-import FLStaff from "../components/solutions/fleet-workshop/FLStaff";
-import FLBillingFinance from "../components/solutions/fleet-workshop/FLBillingFinance";
-import FLDashboardReports from "../components/solutions/fleet-workshop/FLDashboardReports";
-import FLMultiBranch from "../components/solutions/fleet-workshop/FLMultiBranch";
-import FLFleetTypes from "../components/solutions/fleet-workshop/FLFleetTypes";
-import FLComparison from "../components/solutions/fleet-workshop/FLComparison";
-import FLCloudAccess from "../components/solutions/fleet-workshop/FLCloudAccess";
-import FLWhyUs from "../components/solutions/fleet-workshop/FLWhyUs";
-import FLTestimonials from "../components/solutions/fleet-workshop/FLTestimonials";
-import FLPricing from "../components/solutions/fleet-workshop/FLPricing";
-import FLFAQ from "../components/solutions/fleet-workshop/FLFAQ";
-import FLFinalCTA from "../components/solutions/fleet-workshop/FLFinalCTA";
+const FLHero = dynamic(() => import('../components/solutions/fleet-workshop/FLHero'), { ssr: false });
+const FLDefinition = dynamic(() => import('../components/solutions/fleet-workshop/FLDefinition'), { ssr: false });
+const FLProduct = dynamic(() => import('../components/solutions/fleet-workshop/FLProduct'), { ssr: false });
+const FLJobCards = dynamic(() => import('../components/solutions/fleet-workshop/FLJobCards'), { ssr: false });
+const FLCustomerVehicle = dynamic(() => import('../components/solutions/fleet-workshop/FLCustomerVehicle'), { ssr: false });
+const FLServiceAlerts = dynamic(() => import('../components/solutions/fleet-workshop/FLServiceAlerts'), { ssr: false });
+const FLInventory = dynamic(() => import('../components/solutions/fleet-workshop/FLInventory'), { ssr: false });
+const FLStaff = dynamic(() => import('../components/solutions/fleet-workshop/FLStaff'), { ssr: false });
+const FLBillingFinance = dynamic(() => import('../components/solutions/fleet-workshop/FLBillingFinance'), { ssr: false });
+const FLDashboardReports = dynamic(() => import('../components/solutions/fleet-workshop/FLDashboardReports'), { ssr: false });
+const FLMultiBranch = dynamic(() => import('../components/solutions/fleet-workshop/FLMultiBranch'), { ssr: false });
+const FLFleetTypes = dynamic(() => import('../components/solutions/fleet-workshop/FLFleetTypes'), { ssr: false });
+const FLComparison = dynamic(() => import('../components/solutions/fleet-workshop/FLComparison'), { ssr: false });
+const FLCloudAccess = dynamic(() => import('../components/solutions/fleet-workshop/FLCloudAccess'), { ssr: false });
+const FLWhyUs = dynamic(() => import('../components/solutions/fleet-workshop/FLWhyUs'), { ssr: false });
+const FLTestimonials = dynamic(() => import('../components/solutions/fleet-workshop/FLTestimonials'), { ssr: false });
+const FLPricing = dynamic(() => import('../components/solutions/fleet-workshop/FLPricing'), { ssr: false });
+const FLFAQ = dynamic(() => import('../components/solutions/fleet-workshop/FLFAQ'), { ssr: false });
+const FLFinalCTA = dynamic(() => import('../components/solutions/fleet-workshop/FLFinalCTA'), { ssr: false });
 
 export default function FleetWorkshopSoftware() {
   return (

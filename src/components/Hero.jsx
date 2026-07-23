@@ -2,9 +2,7 @@ import { FRONTEND_URL } from "@/src/config/env";
 import React, { useState, useEffect } from "react";
 import { FaPlay, FaTimes, FaArrowRight } from "react-icons/fa";
 import Button from "./common/Button";
-import HeroBg from "../assets/optimized/Gimage_extracted_0.png";
-import DashboardImg from "../assets/icons/Gvector.svg";
-
+import HeroBg from "../assets/optimized/GimageBg.webp";
 import { trackEvent } from "../utils/pixel";
 
 const Hero = () => {
@@ -33,7 +31,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 min-h-[300px] md:min-h-[400px] lg:min-h-[500px] xl:min-h-[600px] flex flex-col items-center justify-center px-4 pt-35 md:pt-40 lg:pt-40 xl:pt-48 pb-32 md:pb-40 lg:pb-48 xl:pb-56 text-center">
+      <div className="relative z-10 min-h-[300px] md:min-h-[400px] lg:min-h-[480px] xl:min-h-[540px] flex flex-col items-center justify-center px-4 pt-32 md:pt-40 lg:pt-44 pb-20 md:pb-24 lg:pb-28 text-center">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-white font-extrabold leading-normal mb-6">
             <span className="block text-3xl md:text-5xl mb-2">Garage Management Software</span>
@@ -44,11 +42,10 @@ const Hero = () => {
             All-in-one garage management platform to simplify digital job cards, billing, counter sales, inventory, CRM, staff, and service alerts.
           </p>
 
-          <div className="flex flex-col min-[430px]:flex-row  justify-center gap-4 w-fit mx-auto">
-
+          <div className="flex flex-col min-[430px]:flex-row justify-center gap-4 w-fit mx-auto">
             <Button
               variant="hero"
-              className=" !px-8 !py-3 text-lg min-[350px]:text-lg pulse-border-effect"
+              className="!px-8 !py-3 text-lg min-[350px]:text-lg pulse-border-effect"
               onClick={() => {
                 trackEvent('Lead');
                 window.open(`${FRONTEND_URL}/signup`, '_blank');
@@ -92,17 +89,6 @@ const Hero = () => {
           </div>
         </div>
       )}
-
-      {/* Dashboard Card */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 -mt-16 md:-mt-24 lg:-mt-32 xl:-mt-40">
-        <div className="">
-          <img
-            src={DashboardImg}
-            alt="GarageSaarthi garage management software dashboard"
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      </div>
     </section>
   );
 };

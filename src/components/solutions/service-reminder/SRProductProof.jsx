@@ -19,15 +19,18 @@ export default function SRProductProof() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { title: "Service Alerts Dashboard", desc: "Organized next due calendar lists.", img: "/images/serviceAlert.png" },
-            { title: "WhatsApp Alert Templates", desc: "Customized customer message verification.", img: "/images/whatsAppTemplates.png" },
-            { title: "Bulk Invite Customers", desc: "Synchronized historical maintenance sheets and invitations.", img: "/images/bulkInviteCustomers.png" }
+            { title: "Service Alerts Dashboard", desc: "Organized next due calendar lists.", img: "/images/serviceAlert.webp" },
+            { title: "WhatsApp Alert Templates", desc: "Customized customer message verification.", img: "/images/whatsAppTemplates.webp" },
+            { title: "Bulk Invite Customers", desc: "Synchronized historical maintenance sheets and invitations.", img: "/images/bulkInviteCustomers.webp" }
           ].map((item, idx) => (
             <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
               <div className="bg-slate-100 rounded-2xl aspect-[4/3] mb-6 flex items-center justify-center border border-slate-200/60 overflow-hidden relative">
                 <img
                   src={item.img}
                   alt={item.title}
+                  loading="lazy"
+                  width={400}
+                  height={300}
                   className="w-full h-full object-contain p-2 hover:scale-105 transition-transform duration-300"
                 />
               </div>
