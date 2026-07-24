@@ -35,6 +35,7 @@ export default function IFAQ() {
       titleHighlight="FAQs"
       subtitle="Got questions about tracking spare parts stock and preventing inventory leaks? We've got answers."
       faqs={faqs}
+      className="bg-slate-50"
     />
   );
 }

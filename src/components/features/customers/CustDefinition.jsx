@@ -1,12 +1,12 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function IDefinition() {
+export default function CustDefinition() {
   const highlights = [
-    { title: "📦 Auto Stock Sync", desc: "Deducts on job card creation", color: "text-primary" },
-    { title: "⚠️ Low-Stock Alerts", desc: "Prevents out-of-stock delays", color: "text-orange-600" },
-    { title: "🔍 Barcode Scan", desc: "Fast SKU & part lookup", color: "text-emerald-600" },
-    { title: "💰 Stock Valuation", desc: "Know exact inventory asset value", color: "text-amber-600" }
+    { title: "📁 Digital Registry", desc: "Centralized client contact cards", color: "text-primary" },
+    { title: "🚗 Multi-Vehicle Map", desc: "Link multiple cars/bikes to one profile", color: "text-orange-600" },
+    { title: "📜 Lifetime Log", desc: "Access complete service history cards", color: "text-emerald-600" },
+    { title: "📲 1-Click Call/Chat", desc: "Contact via WhatsApp in 1s", color: "text-amber-600" }
   ];
 
   return (
@@ -15,22 +15,22 @@ export default function IDefinition() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
-              Spare Parts Inventory Management
+              What is Workshop Customer Management?
             </span>
             <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Real-Time Stock Tracking & <GradientUnderline>Spare Parts Control</GradientUnderline>
+              A Unified Database for <GradientUnderline>Auto Workshop Contacts</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
-              <strong>Garage Inventory Software</strong> gives workshop owners complete visibility over spare parts, lubricants, filters, and accessories stored across your shop drawers and warehouses.
+              <strong>Garage Customer Management Software</strong> replaces manual paper diaries, messy spreadsheets, and scattered phonebooks with a single cloud-based digital contact directory.
             </p>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              Every time a mechanic issues a spare part to a job card or counter sale, stock levels deduct automatically. Get instant alerts before high-demand items run out, avoiding service delays.
+              Every time a vehicle enters your garage, the system links the owner's profile directly to their active job cards, invoices, replaced spare parts, outstanding balances, and feedback history.
             </p>
           </div>
 
           <div className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
             <h3 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Why Track Garage Inventory Digitally:
+              Core Benefits of a Customer Database:
             </h3>
             <div className="grid grid-cols-2 gap-4 text-xs md:text-sm">
               {highlights.map((item, idx) => (

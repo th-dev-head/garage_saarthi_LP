@@ -28,8 +28,8 @@ export default function CounterSalesFeature() {
         <CSCoreCapabilities />
         <CSWorkflow />
         <CSWorkshopTypes />
-        <CloudAccessCommon bgClass="bg-white" />
-        <TestimonialsGrid bgClass="bg-slate-50" />
+        <CloudAccessCommon bgClass="bg-slate-50" />
+        <TestimonialsGrid bgClass="bg-white" />
         <CSFAQ />
         <CSFinalCTA />
       </main>

@@ -1,44 +1,44 @@
 import React from "react";
-import { FaUserPlus, FaWhatsapp, FaHistory, FaBullhorn, FaStar, FaChartLine } from "react-icons/fa";
+import { FaCar, FaHistory, FaImage, FaWrench, FaCalendarAlt, FaCloud } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function CRMCoreCapabilities() {
+export default function VehCoreCapabilities() {
   const capabilities = [
     {
-      icon: <FaUserPlus className="w-6 h-6 text-primary" />,
-      title: "Lead & Inquiry Pipeline Tracking",
-      description: "Log incoming phone calls, walk-in inquiries, and website leads. Assign follow-up dates to convert inquiries into booked repairs.",
-      badge: "Lead Pipeline"
-    },
-    {
-      icon: <FaWhatsapp className="w-6 h-6 text-emerald-600" />,
-      title: "Automated WhatsApp Service Alerts",
-      description: "Send automated WhatsApp reminders when vehicle service, oil change, wheel alignment, or insurance renewal is due.",
-      badge: "WhatsApp CRM"
+      icon: <FaCar className="w-6 h-6 text-primary" />,
+      title: "Digital Vehicle Registry",
+      description: "Log vehicle make, model, year, fuel levels, chassis number, registration plates, and engine configurations.",
+      badge: "Registry"
     },
     {
       icon: <FaHistory className="w-6 h-6 text-orange-600" />,
-      title: "Full Customer & Vehicle History",
-      description: "Access complete past service records, replaced spare parts, total money spent, and mechanic notes per customer.",
-      badge: "Customer Profile"
+      title: "Interactive Service Logs",
+      description: "Search complete past repair logs, mechanic notes, bill breakdowns, and replaced spare parts history instantly.",
+      badge: "Service History"
     },
     {
-      icon: <FaBullhorn className="w-6 h-6 text-amber-600" />,
-      title: "Promotional Offers & Marketing",
-      description: "Send targeted WhatsApp promotional offers and seasonal discounts to specific customer segments to boost revenue.",
-      badge: "Promotions"
+      icon: <FaImage className="w-6 h-6 text-emerald-600" />,
+      title: "Damage & Photo Records",
+      description: "Upload vehicle inventory check pictures and mark pre-existing body dents or scratches during check-in.",
+      badge: "Photo Proof"
     },
     {
-      icon: <FaStar className="w-6 h-6 text-purple-600" />,
-      title: "Customer Review Collection",
-      description: "Collect post-repair feedback and send automated Google Review links to happy customers to build your shop rating.",
-      badge: "Review Collector"
+      icon: <FaWrench className="w-6 h-6 text-amber-600" />,
+      title: "Odometer & KM Tracking",
+      description: "Record Odometer/Mileage logs during intake. Track distance covered between subsequent services.",
+      badge: "KM Logs"
     },
     {
-      icon: <FaChartLine className="w-6 h-6 text-teal-600" />,
-      title: "Customer Retention & Lapsed Analytics",
-      description: "Identify inactive customers who haven't visited in 90+ days and re-engage them with automated WhatsApp win-back campaigns.",
-      badge: "Retention Engine"
+      icon: <FaCalendarAlt className="w-6 h-6 text-purple-600" />,
+      title: "Automated Maintenance Targets",
+      description: "Calculate upcoming service due targets based on past service intervals, Odometer velocity, or dates.",
+      badge: "Maintenance"
+    },
+    {
+      icon: <FaCloud className="w-6 h-6 text-teal-600" />,
+      title: "Secure Cloud Records",
+      description: "Access diagnostic logs, warranty cards, and repair sheets from any mobile, tablet, or PC browser.",
+      badge: "Cloud Sync"
     }
   ];
 
@@ -47,13 +47,13 @@ export default function CRMCoreCapabilities() {
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
-            Powerful CRM Features
+            Core Features
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-            Key Capabilities of Garage <GradientUnderline>CRM & Lead Management</GradientUnderline>
+            Key Capabilities of Garage <GradientUnderline>Vehicle Management Software</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Everything your workshop needs to build customer trust, capture repair leads, and maximize repeat visits.
+            Record vehicle profiles, track service records, upload vehicle photos, and plan maintenance schedules.
           </p>
         </div>
 

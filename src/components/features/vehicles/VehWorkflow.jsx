@@ -1,38 +1,38 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
-import { FaPhoneAlt, FaCalendarCheck, FaWrench, FaStar, FaSyncAlt } from "react-icons/fa";
+import { FaCar, FaClipboardCheck, FaTools, FaFileInvoiceDollar, FaArchive } from "react-icons/fa";
 
-export default function CRMWorkflow() {
+export default function VehWorkflow() {
   const steps = [
     {
       num: "01",
-      icon: <FaPhoneAlt className="w-5 h-5 text-primary" />,
-      title: "Capture Lead & Inquiry",
-      desc: "Record customer phone call, walk-in query, or online lead with vehicle details."
+      icon: <FaCar className="w-5 h-5 text-primary" />,
+      title: "Vehicle Intake & KM Logs",
+      desc: "Record registration number, model, Odometer reading, and check fuel metrics."
     },
     {
       num: "02",
-      icon: <FaCalendarCheck className="w-5 h-5 text-orange-600" />,
-      title: "Schedule Appointment",
-      desc: "Set service date, assign service advisor, and send WhatsApp confirmation."
+      icon: <FaClipboardCheck className="w-5 h-5 text-orange-600" />,
+      title: "Diagnostic Inspections",
+      desc: "Inspect vehicle, photograph pre-existing scratches, and log diagnosed faults."
     },
     {
       num: "03",
-      icon: <FaWrench className="w-5 h-5 text-emerald-600" />,
-      title: "Service Updates on WhatsApp",
-      desc: "Send live repair status updates, photo proof, and PDF estimate for approval."
+      icon: <FaTools className="w-5 h-5 text-emerald-600" />,
+      title: "Job Card Execution",
+      desc: "Mechanics execute tasks, mapping issued spare parts and labor work to the vehicle file."
     },
     {
       num: "04",
-      icon: <FaStar className="w-5 h-5 text-amber-600" />,
-      title: "Collect Feedback & Review",
-      desc: "Send post-service rating link to collect Google 5-star reviews from satisfied owners."
+      icon: <FaFileInvoiceDollar className="w-5 h-5 text-amber-600" />,
+      title: "Invoicing & Collection",
+      desc: "Generate GST-compliant tax invoice. Record payments or outstanding dues."
     },
     {
       num: "05",
-      icon: <FaSyncAlt className="w-5 h-5 text-purple-600" />,
-      title: "Automated Repeat Reminders",
-      desc: "System sends next service reminder on WhatsApp after 90/180 days automatically."
+      icon: <FaArchive className="w-5 h-5 text-purple-600" />,
+      title: "Archive Service Records",
+      desc: "Instantly archive files on the cloud for lifetime lookup and service targets mapping."
     }
   ];
 
@@ -41,13 +41,13 @@ export default function CRMWorkflow() {
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
-            5-Step CRM Workflow
+            Service Flow
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-            How GarageSaarthi Turns Leads into <GradientUnderline>Repeat Customers</GradientUnderline>
+            How GarageSaarthi Manages <GradientUnderline>Your Vehicle Records</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Automated, personal, and efficient. Build customer loyalty effortlessly.
+            Automated steps to record vehicle details, diagnose issues, track servicing, and log historical profiles.
           </p>
         </div>
 

@@ -28,8 +28,8 @@ export default function InventoryManagementFeature() {
         <ICoreCapabilities />
         <IWorkflow />
         <IWorkshopTypes />
-        <CloudAccessCommon bgClass="bg-white" />
-        <TestimonialsGrid bgClass="bg-slate-50" />
+        <CloudAccessCommon bgClass="bg-slate-50" />
+        <TestimonialsGrid bgClass="bg-white" />
         <IFAQ />
         <IFinalCTA />
       </main>

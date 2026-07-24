@@ -35,6 +35,7 @@ export default function JCMFAQ() {
       titleHighlight="FAQs"
       subtitle="Got questions about switching from paper registers to digital repair orders? We've got answers."
       faqs={faqs}
+      className="bg-slate-50"
     />
   );
 }

@@ -28,8 +28,8 @@ export default function JobCardManagementFeature() {
         <JCMCoreCapabilities />
         <JCMWorkflow />
         <JCMWorkshopTypes />
-        <CloudAccessCommon bgClass="bg-white" />
-        <TestimonialsGrid bgClass="bg-slate-50" />
+        <CloudAccessCommon bgClass="bg-slate-50" />
+        <TestimonialsGrid bgClass="bg-white" />
         <JCMFAQ />
         <JCMFinalCTA />
       </main>

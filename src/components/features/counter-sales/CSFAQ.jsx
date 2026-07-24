@@ -35,6 +35,7 @@ export default function CSFAQ() {
       titleHighlight="FAQs"
       subtitle="Got questions about over-the-counter spare parts billing and inventory sync? We've got answers."
       faqs={faqs}
+      className="bg-slate-50"
     />
   );
 }

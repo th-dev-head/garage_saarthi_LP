@@ -43,6 +43,7 @@ export default function JCMPaperVsDigital() {
       manualHeader="Paper Job Cards & Diaries"
       digitalHeader="GarageSaarthi Digital Job Cards"
       comparisons={comparisonData}
+      bgClass="bg-slate-50"
     />
   );
 }

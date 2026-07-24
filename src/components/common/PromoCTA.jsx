@@ -7,15 +7,16 @@ import Button from "./Button";
 export default function PromoCTA({
   title,
   subtitle,
-  trialUrl
+  trialUrl,
+  bgClass
 }) {
   const finalTrialUrl = trialUrl || `${FRONTEND_URL}/register`;
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 flex justify-center ${bgClass || ""}`}>
       <div className="mx-auto max-w-full lg:max-w-5xl w-full bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-3xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-        
+
         <h2 className="text-2xl md:text-4xl font-extrabold mb-6 leading-tight">
           {title}
         </h2>
