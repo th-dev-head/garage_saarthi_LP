@@ -1,4 +1,4 @@
-import BillingInvoicingFeature from "@/src/views/BillingInvoicingFeature";
+import BillingInvoicingFeature from "@/src/views/features/BillingInvoicingFeature";
 
 export const metadata = {
   title: "Garage Billing & GST Invoicing Software | GarageSaarthi",

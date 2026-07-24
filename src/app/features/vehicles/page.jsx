@@ -1,4 +1,4 @@
-import VehicleManagementFeature from "@/src/views/VehicleManagementFeature";
+import VehicleManagementFeature from "@/src/views/features/VehicleManagementFeature";
 
 export const metadata = {
   title: "Garage Vehicle Management Software & Record Database | GarageSaarthi",

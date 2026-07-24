@@ -1,4 +1,4 @@
-import JobCardManagementFeature from "@/src/views/JobCardManagementFeature";
+import JobCardManagementFeature from "@/src/views/features/JobCardManagementFeature";
 
 export const metadata = {
   title: "Digital Job Card Software & Repair Order Management | GarageSaarthi",

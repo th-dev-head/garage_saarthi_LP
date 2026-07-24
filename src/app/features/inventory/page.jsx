@@ -1,4 +1,4 @@
-import InventoryManagementFeature from "@/src/views/InventoryManagementFeature";
+import InventoryManagementFeature from "@/src/views/features/InventoryManagementFeature";
 
 export const metadata = {
   title: "Garage Spare Parts & Inventory Management Software | GarageSaarthi",

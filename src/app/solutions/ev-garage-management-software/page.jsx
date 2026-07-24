@@ -1,4 +1,4 @@
-import EVGarageSoftware from "@/src/views/EVGarageSoftware";
+import EVGarageSoftware from "@/src/views/solutions/EVGarageSoftware";
 
 export const metadata = {
   title: "EV Garage Management Software in India | GarageSaarthi",

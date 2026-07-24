@@ -1,4 +1,4 @@
-import GarageInventorySoftware from "@/src/views/GarageInventorySoftware";
+import GarageInventorySoftware from "@/src/views/solutions/GarageInventorySoftware";
 
 export const metadata = {
   title: "Garage Inventory Software for Workshops | GarageSaarthi",

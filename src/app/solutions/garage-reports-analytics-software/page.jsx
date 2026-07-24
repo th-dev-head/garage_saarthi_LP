@@ -1,4 +1,4 @@
-import GarageReportsAnalyticsSoftware from "@/src/views/GarageReportsAnalyticsSoftware";
+import GarageReportsAnalyticsSoftware from "@/src/views/solutions/GarageReportsAnalyticsSoftware";
 
 export const metadata = {
   title: "Garage Reports & Analytics Software | GarageSaarthi",

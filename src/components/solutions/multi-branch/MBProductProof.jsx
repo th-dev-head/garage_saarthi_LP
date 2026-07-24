@@ -23,8 +23,8 @@ export default function MBProductProof() {
             { title: "User Permissions configuration", desc: "Define role accesses by location.", img: "/images/permissions.webp" },
             { title: "Consolidated Branch reports", desc: "Compare sales stats across outlets.", img: "/images/report.webp" }
           ].map((item, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
-              <div className="bg-slate-100 rounded-2xl aspect-[4/3] mb-6 flex items-center justify-center border border-slate-200 overflow-hidden relative">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+              <div className="mb-6 flex items-center justify-center overflow-hidden relative">
                 <img
                   src={item.img}
                   alt={item.title}

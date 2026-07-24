@@ -1,4 +1,4 @@
-import GarageWhatsAppNotificationSoftware from "@/src/views/GarageWhatsAppNotificationSoftware";
+import GarageWhatsAppNotificationSoftware from "@/src/views/solutions/GarageWhatsAppNotificationSoftware";
 
 export const metadata = {
   title: "Garage WhatsApp Notification Software | GarageSaarthi",

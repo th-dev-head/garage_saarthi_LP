@@ -1,4 +1,4 @@
-import GarageManagementApp from "@/src/views/GarageManagementApp";
+import GarageManagementApp from "@/src/views/solutions/GarageManagementApp";
 
 export const metadata = {
   title: "Garage Management App for Workshops in India | GarageSaarthi",

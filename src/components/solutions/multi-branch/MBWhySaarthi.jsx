@@ -24,7 +24,7 @@ export default function MBWhySaarthi() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {differentiators.map((d, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-2xl p-6 shadow-sm">
+            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-2xl p-6 shadow-sm">
               <h3 className="text-sm font-bold text-text-dark mb-2">{d.title}</h3>
               <p className="text-xs text-slate-500 leading-relaxed">{d.desc}</p>
             </div>

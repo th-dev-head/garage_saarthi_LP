@@ -1,4 +1,4 @@
-import VehicleServiceHistorySoftware from "@/src/views/VehicleServiceHistorySoftware";
+import VehicleServiceHistorySoftware from "@/src/views/solutions/VehicleServiceHistorySoftware";
 
 export const metadata = {
   title: "Vehicle Service History Software for Garages | GarageSaarthi",

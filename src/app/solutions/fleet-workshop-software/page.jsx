@@ -1,4 +1,4 @@
-import FleetWorkshopSoftware from "@/src/views/FleetWorkshopSoftware";
+import FleetWorkshopSoftware from "@/src/views/solutions/FleetWorkshopSoftware";
 
 export const metadata = {
   title: "Fleet Workshop Management Software | GarageSaarthi",

@@ -1,4 +1,4 @@
-import WorkshopSoftwareIndia from "@/src/views/WorkshopSoftwareIndia";
+import WorkshopSoftwareIndia from "@/src/views/solutions/WorkshopSoftwareIndia";
 
 export const metadata = {
   title: "Workshop Software India | GarageSaarthi",

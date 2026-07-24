@@ -1,4 +1,4 @@
-import MultiBranchGarageSoftware from "@/src/views/MultiBranchGarageSoftware";
+import MultiBranchGarageSoftware from "@/src/views/solutions/MultiBranchGarageSoftware";
 
 export const metadata = {
   title: "Multi Branch Garage Software in India | GarageSaarthi",

@@ -1,4 +1,4 @@
-import GarageCustomerEngagementSoftware from "@/src/views/GarageCustomerEngagementSoftware";
+import GarageCustomerEngagementSoftware from "@/src/views/solutions/GarageCustomerEngagementSoftware";
 
 export const metadata = {
   title: "Garage Customer Engagement Software | GarageSaarthi",

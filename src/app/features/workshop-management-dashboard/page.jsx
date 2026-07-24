@@ -1,4 +1,4 @@
-import WorkshopManagementDashboardFeature from "@/src/views/WorkshopManagementDashboardFeature";
+import WorkshopManagementDashboardFeature from "@/src/views/features/WorkshopManagementDashboardFeature";
 
 export const metadata = {
   title: "Workshop Management Dashboard & Analytics Software | GarageSaarthi",

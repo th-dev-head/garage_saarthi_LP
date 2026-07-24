@@ -1,4 +1,4 @@
-import CounterSalesFeature from "@/src/views/CounterSalesFeature";
+import CounterSalesFeature from "@/src/views/features/CounterSalesFeature";
 
 export const metadata = {
   title: "Garage Counter Sales & Spare Parts POS Billing Software | GarageSaarthi",

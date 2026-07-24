@@ -1,4 +1,4 @@
-import CustomerManagementFeature from "@/src/views/CustomerManagementFeature";
+import CustomerManagementFeature from "@/src/views/features/CustomerManagementFeature";
 
 export const metadata = {
   title: "Garage Customer Management Software & CRM System | GarageSaarthi",

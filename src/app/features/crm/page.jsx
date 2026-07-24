@@ -1,4 +1,4 @@
-import CRMLeadManagementFeature from "@/src/views/CRMLeadManagementFeature";
+import CRMLeadManagementFeature from "@/src/views/features/CRMLeadManagementFeature";
 
 export const metadata = {
   title: "Garage CRM & Lead Management Software | GarageSaarthi",
