@@ -11,6 +11,8 @@ const BDefinition = dynamic(() => import("../components/features/billing/BDefini
 const BPaperVsDigital = dynamic(() => import("../components/features/billing/BPaperVsDigital"), { ssr: false });
 const BCoreCapabilities = dynamic(() => import("../components/features/billing/BCoreCapabilities"), { ssr: false });
 const BWorkflow = dynamic(() => import("../components/features/billing/BWorkflow"), { ssr: false });
+const BGSTBilling = dynamic(() => import("../components/features/billing/BGSTBilling"), { ssr: false });
+const BWorkshopTypes = dynamic(() => import("../components/features/billing/BWorkshopTypes"), { ssr: false });
 const CloudAccessCommon = dynamic(() => import("../components/common/CloudAccessCommon"), { ssr: false });
 const TestimonialsGrid = dynamic(() => import("../components/common/TestimonialsGrid"), { ssr: false });
 const BFAQ = dynamic(() => import("../components/features/billing/BFAQ"), { ssr: false });
@@ -26,6 +28,8 @@ export default function BillingInvoicingFeature() {
         <BPaperVsDigital />
         <BCoreCapabilities />
         <BWorkflow />
+        <BGSTBilling />
+        <BWorkshopTypes />
         <CloudAccessCommon bgClass="bg-white" />
         <TestimonialsGrid bgClass="bg-slate-50" />
         <BFAQ />

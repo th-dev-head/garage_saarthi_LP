@@ -11,6 +11,7 @@ const CSDefinition = dynamic(() => import("../components/features/counter-sales/
 const CSPaperVsDigital = dynamic(() => import("../components/features/counter-sales/CSPaperVsDigital"), { ssr: false });
 const CSCoreCapabilities = dynamic(() => import("../components/features/counter-sales/CSCoreCapabilities"), { ssr: false });
 const CSWorkflow = dynamic(() => import("../components/features/counter-sales/CSWorkflow"), { ssr: false });
+const CSWorkshopTypes = dynamic(() => import("../components/features/counter-sales/CSWorkshopTypes"), { ssr: false });
 const CloudAccessCommon = dynamic(() => import("../components/common/CloudAccessCommon"), { ssr: false });
 const TestimonialsGrid = dynamic(() => import("../components/common/TestimonialsGrid"), { ssr: false });
 const CSFAQ = dynamic(() => import("../components/features/counter-sales/CSFAQ"), { ssr: false });
@@ -26,6 +27,7 @@ export default function CounterSalesFeature() {
         <CSPaperVsDigital />
         <CSCoreCapabilities />
         <CSWorkflow />
+        <CSWorkshopTypes />
         <CloudAccessCommon bgClass="bg-white" />
         <TestimonialsGrid bgClass="bg-slate-50" />
         <CSFAQ />

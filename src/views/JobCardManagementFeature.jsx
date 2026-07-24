@@ -11,6 +11,7 @@ const JCMDefinition = dynamic(() => import("../components/features/job-card-mana
 const JCMPaperVsDigital = dynamic(() => import("../components/features/job-card-management/JCMPaperVsDigital"), { ssr: false });
 const JCMCoreCapabilities = dynamic(() => import("../components/features/job-card-management/JCMCoreCapabilities"), { ssr: false });
 const JCMWorkflow = dynamic(() => import("../components/features/job-card-management/JCMWorkflow"), { ssr: false });
+const JCMWorkshopTypes = dynamic(() => import("../components/features/job-card-management/JCMWorkshopTypes"), { ssr: false });
 const CloudAccessCommon = dynamic(() => import("../components/common/CloudAccessCommon"), { ssr: false });
 const TestimonialsGrid = dynamic(() => import("../components/common/TestimonialsGrid"), { ssr: false });
 const JCMFAQ = dynamic(() => import("../components/features/job-card-management/JCMFAQ"), { ssr: false });
@@ -26,6 +27,7 @@ export default function JobCardManagementFeature() {
         <JCMPaperVsDigital />
         <JCMCoreCapabilities />
         <JCMWorkflow />
+        <JCMWorkshopTypes />
         <CloudAccessCommon bgClass="bg-white" />
         <TestimonialsGrid bgClass="bg-slate-50" />
         <JCMFAQ />

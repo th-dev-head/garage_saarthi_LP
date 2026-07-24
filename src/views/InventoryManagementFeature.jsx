@@ -11,6 +11,7 @@ const IDefinition = dynamic(() => import("../components/features/inventory/IDefi
 const IPaperVsDigital = dynamic(() => import("../components/features/inventory/IPaperVsDigital"), { ssr: false });
 const ICoreCapabilities = dynamic(() => import("../components/features/inventory/ICoreCapabilities"), { ssr: false });
 const IWorkflow = dynamic(() => import("../components/features/inventory/IWorkflow"), { ssr: false });
+const IWorkshopTypes = dynamic(() => import("../components/features/inventory/IWorkshopTypes"), { ssr: false });
 const CloudAccessCommon = dynamic(() => import("../components/common/CloudAccessCommon"), { ssr: false });
 const TestimonialsGrid = dynamic(() => import("../components/common/TestimonialsGrid"), { ssr: false });
 const IFAQ = dynamic(() => import("../components/features/inventory/IFAQ"), { ssr: false });
@@ -26,6 +27,7 @@ export default function InventoryManagementFeature() {
         <IPaperVsDigital />
         <ICoreCapabilities />
         <IWorkflow />
+        <IWorkshopTypes />
         <CloudAccessCommon bgClass="bg-white" />
         <TestimonialsGrid bgClass="bg-slate-50" />
         <IFAQ />
