@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const WAHero = dynamic(() => import('../../components/solutions/workshop-app/WAHero'), { ssr: false });
@@ -25,27 +23,23 @@ const WAFinalCTA = dynamic(() => import('../../components/solutions/workshop-app
 
 export default function WorkshopManagementApp() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <WAHero />
-        <WADefinition />
-        <WAMobileWorkshop />
-        <WACoreCapabilities />
-        <WABusinessTypes />
-        <WAOwnersMechanics />
-        <WAWebMobileSync />
-        <WATracking />
-        <WAMultiBranch />
-        <WAServiceAlerts />
-        <WAWhySaarthi />
-        <WAAndroidDownload />
-        <WAFreeTrial />
-        <WAFAQ />
-        <WAFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <WAHero />
+      <WADefinition />
+      <WAMobileWorkshop />
+      <WACoreCapabilities />
+      <WABusinessTypes />
+      <WAOwnersMechanics />
+      <WAWebMobileSync />
+      <WATracking />
+      <WAMultiBranch />
+      <WAServiceAlerts />
+      <WAWhySaarthi />
+      <WAAndroidDownload />
+      <WAFreeTrial />
+      <WAFAQ />
+      <WAFinalCTA />
+    </PageLayout>
   );
 }

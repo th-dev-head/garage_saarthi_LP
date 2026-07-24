@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
-import GradientUnderline from "../../common/GradientUnderline";
-
-
-const benefits = [
+import GradientUnderline from "../../common/GradientUnderline"; const benefits = [
   "Record customer name, contact details, and vehicle details.",
   "Document vehicle complaints, scratches, and fuel levels.",
   "Assign jobs to specific mechanics/technicians instantly.",

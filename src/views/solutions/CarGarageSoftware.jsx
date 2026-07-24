@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const CGHero = dynamic(() => import('../../components/solutions/car-garage/CGHero'), { ssr: false });
@@ -28,30 +26,26 @@ const CGFinalCTA = dynamic(() => import('../../components/solutions/car-garage/C
 
 export default function CarGarageSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <CGHero />
-        <CGDefinition />
-        <CGJobCards />
-        <CGCustomerVehicle />
-        <CGInventory />
-        <CGBillingFinance />
-        <CGServiceAlerts />
-        <CGCRM />
-        <CGStaff />
-        <CGDashboardReports />
-        <CGMultiBranch />
-        <CGCloudAccess />
-        <CGIndiaPositioning />
-        <CGWhyUs />
-        <CGTestimonials />
-        <CGFreeTrial />
-        <CGFAQ />
-        <CGFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <CGHero />
+      <CGDefinition />
+      <CGJobCards />
+      <CGCustomerVehicle />
+      <CGInventory />
+      <CGBillingFinance />
+      <CGServiceAlerts />
+      <CGCRM />
+      <CGStaff />
+      <CGDashboardReports />
+      <CGMultiBranch />
+      <CGCloudAccess />
+      <CGIndiaPositioning />
+      <CGWhyUs />
+      <CGTestimonials />
+      <CGFreeTrial />
+      <CGFAQ />
+      <CGFinalCTA />
+    </PageLayout>
   );
 }

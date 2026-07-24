@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const EVHero = dynamic(() => import('../../components/solutions/ev-garage/EVHero'), { ssr: false });
@@ -27,29 +25,25 @@ const EVFinalCTA = dynamic(() => import('../../components/solutions/ev-garage/EV
 
 export default function EVGarageSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <EVHero />
-        <EVDefinition />
-        <EVJobCards />
-        <EVCustomerVehicle />
-        <EVInventory />
-        <EVBillingFinance />
-        <EVServiceAlerts />
-        <EVCRM />
-        <EVStaff />
-        <EVDashboardReports />
-        <EVCloudAccess />
-        <EVComparison />
-        <EVWhyUs />
-        <EVTestimonials />
-        <EVPricing />
-        <EVFAQ />
-        <EVFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <EVHero />
+      <EVDefinition />
+      <EVJobCards />
+      <EVCustomerVehicle />
+      <EVInventory />
+      <EVBillingFinance />
+      <EVServiceAlerts />
+      <EVCRM />
+      <EVStaff />
+      <EVDashboardReports />
+      <EVCloudAccess />
+      <EVComparison />
+      <EVWhyUs />
+      <EVTestimonials />
+      <EVPricing />
+      <EVFAQ />
+      <EVFinalCTA />
+    </PageLayout>
   );
 }

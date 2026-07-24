@@ -36,7 +36,7 @@ const ContactSection = () => {
         const data = await response.json();
         setSubmitError(
           data?.errors?.map((err) => err.message).join(", ") ||
-            "Something went wrong. Please try again."
+          "Something went wrong. Please try again."
         );
       }
     } catch {
@@ -104,7 +104,7 @@ const ContactSection = () => {
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
                 onKeyDown={(e) => {
-                  if (!/[0-9]/.test(e.key) && !["Backspace","Delete","Tab","ArrowLeft","ArrowRight"].includes(e.key)) {
+                  if (!/[0-9]/.test(e.key) && !["Backspace", "Delete", "Tab", "ArrowLeft", "ArrowRight"].includes(e.key)) {
                     e.preventDefault();
                   }
                 }}
@@ -162,22 +162,19 @@ const ContactSection = () => {
           </form>
         </div>
       </div>
-
-
-
       {/* Success Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 ">
           {/* Overlay */}
-          <div 
+          <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setIsModalOpen(false)}
           />
-          
+
           {/* Modal Content */}
           <div className="relative bg-white rounded-3xl w-full max-w-full md:max-w-3xl 2xl:max-w-5xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-300">
             {/* Close Button */}
-            <button 
+            <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 p-2 rounded-full bg-[#EFE9E7] hover:bg-[#f3e6e1] transition-colors z-20 cursor-pointer flex items-center justify-center"
             >
@@ -187,10 +184,10 @@ const ContactSection = () => {
             <div className="py-12 md:py-10 2xl:py-15 px-8 flex flex-col items-center text-center">
               {/* Image */}
               <div className="w-full flex justify-center pb-5 2xl:pb-8">
-                <img 
-                  src={BookDemoIcon} 
-                  alt="Booking Success" 
-                  className="block w-full max-w-md" 
+                <img
+                  src={BookDemoIcon}
+                  alt="Booking Success"
+                  className="block w-full max-w-md"
                 />
               </div>
 

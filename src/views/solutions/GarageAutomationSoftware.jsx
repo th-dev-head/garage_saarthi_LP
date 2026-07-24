@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GAHero = dynamic(() => import('../../components/solutions/garage-automation/GAHero'), { ssr: false });
 const GAProblem = dynamic(() => import('../../components/solutions/garage-automation/GAProblem'), { ssr: false });
@@ -26,31 +24,24 @@ const GAFinalCTA = dynamic(() => import('../../components/solutions/garage-autom
 
 export default function GarageAutomationSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GAHero />
+      <GAProblem />
+      <GAWorkflow />
+      <GAManualVsAuto />
+      <GAConnected />
+      <GAServiceReminders />
+      <GABilling />
+      <GAInventory />
+      <GACustomerCRM />
+      <GAMultiBranch />
+      <GABusinessTypes />
+      <GAMobileAccess />
+      <GAWhySaarthi />
+      <GAProof />
+      <GAFreeTrial />
+      <GAFAQ />
+      <GAFinalCTA />
 
-      <main className="flex-grow">
-        <GAHero />
-        <GAProblem />
-        <GAWorkflow />
-        <GAManualVsAuto />
-        <GAConnected />
-        <GAServiceReminders />
-        <GABilling />
-        <GAInventory />
-        <GACustomerCRM />
-        <GAMultiBranch />
-        <GABusinessTypes />
-        <GAMobileAccess />
-        <GAWhySaarthi />
-        <GAProof />
-        <GAFreeTrial />
-        <GAFAQ />
-        <GAFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }

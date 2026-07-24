@@ -3,10 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
-import GradientUnderline from "../../common/GradientUnderline";
-
-
-const benefits = [
+import GradientUnderline from "../../common/GradientUnderline"; const benefits = [
   "Full access to all features (no limitations)",
   "No credit card required for registration",
   "Set up and add your mechanics in under 60 seconds",

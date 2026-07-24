@@ -1,11 +1,9 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
 import dynamic from "next/dynamic";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
 
-const ScrollToTop = dynamic(() => import("../../components/common/ScrollToTop"), { ssr: false });
 const BHero = dynamic(() => import("../../components/features/billing/BHero"), { ssr: false });
 const BDefinition = dynamic(() => import("../../components/features/billing/BDefinition"), { ssr: false });
 const BPaperVsDigital = dynamic(() => import("../../components/features/billing/BPaperVsDigital"), { ssr: false });
@@ -20,23 +18,18 @@ const BFinalCTA = dynamic(() => import("../../components/features/billing/BFinal
 
 export default function BillingInvoicingFeature() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <BHero />
-        <BDefinition />
-        <BPaperVsDigital />
-        <BCoreCapabilities />
-        <BWorkflow />
-        <BGSTBilling />
-        <BWorkshopTypes />
-        <CloudAccessCommon bgClass="bg-white" />
-        <TestimonialsGrid bgClass="bg-slate-50" />
-        <BFAQ />
-        <BFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <BHero />
+      <BDefinition />
+      <BPaperVsDigital />
+      <BCoreCapabilities />
+      <BWorkflow />
+      <BGSTBilling />
+      <BWorkshopTypes />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
+      <BFAQ />
+      <BFinalCTA />
+    </PageLayout>
   );
 }

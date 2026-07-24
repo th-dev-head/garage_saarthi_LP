@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GMHero = dynamic(() => import('../../components/solutions/garage-marketing/GMHero'), { ssr: false });
 const GMDefinition = dynamic(() => import('../../components/solutions/garage-marketing/GMDefinition'), { ssr: false });
@@ -25,9 +23,8 @@ const GMFinalCTA = dynamic(() => import('../../components/solutions/garage-marke
 
 export default function GarageMarketingSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
+    <PageLayout className="bg-slate-50 text-slate-900">
+      
         <GMHero />
         <GMDefinition />
         <GMChallenges />
@@ -45,9 +42,9 @@ export default function GarageMarketingSoftware() {
         <GMPricing />
         <GMFAQ />
         <GMFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+      
+      
+      
+    </PageLayout>
   );
 }

@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const BGSHero = dynamic(() => import('../../components/solutions/best-garage-software/BGSHero'), { ssr: false });
 const BGSAnswer = dynamic(() => import('../../components/solutions/best-garage-software/BGSAnswer'), { ssr: false });
@@ -23,27 +21,22 @@ const BGSFinalCTA = dynamic(() => import('../../components/solutions/best-garage
 
 export default function BestGarageManagementSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <BGSHero />
-        <BGSAnswer />
-        <BGSChecklist />
-        <BGSFeatureCoverage />
-        <BGSSmallGarages />
-        <BGSBusinessType />
-        <BGSAllInOne />
-        <BGSCloudAccess />
-        <BGSFramework />
-        <BGSWhyUs />
-        <BGSProductVisual />
-        <BGSPricing />
-        <BGSTestimonials />
-        <BGSFAQ />
-        <BGSFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <BGSHero />
+      <BGSAnswer />
+      <BGSChecklist />
+      <BGSFeatureCoverage />
+      <BGSSmallGarages />
+      <BGSBusinessType />
+      <BGSAllInOne />
+      <BGSCloudAccess />
+      <BGSFramework />
+      <BGSWhyUs />
+      <BGSProductVisual />
+      <BGSPricing />
+      <BGSTestimonials />
+      <BGSFAQ />
+      <BGSFinalCTA />
+    </PageLayout>
   );
 }

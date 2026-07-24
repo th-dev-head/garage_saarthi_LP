@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const BWSHero = dynamic(() => import('../../components/solutions/best-workshop-software/BWSHero'), { ssr: false });
 const BWSAnswer = dynamic(() => import('../../components/solutions/best-workshop-software/BWSAnswer'), { ssr: false });
@@ -23,27 +21,22 @@ const BWSFinalCTA = dynamic(() => import('../../components/solutions/best-worksh
 
 export default function BestWorkshopManagementSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <BWSHero />
-        <BWSAnswer />
-        <BWSChecklist />
-        <BWSFeatureCoverage />
-        <BWSProductFit />
-        <BWSWorkflow />
-        <BWSSmallWorkshops />
-        <BWSBusinessType />
-        <BWSCloudAccess />
-        <BWSAffordability />
-        <BWSFreeTrial />
-        <BWSTestimonials />
-        <BWSDecisionSummary />
-        <BWSFAQ />
-        <BWSFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <BWSHero />
+      <BWSAnswer />
+      <BWSChecklist />
+      <BWSFeatureCoverage />
+      <BWSProductFit />
+      <BWSWorkflow />
+      <BWSSmallWorkshops />
+      <BWSBusinessType />
+      <BWSCloudAccess />
+      <BWSAffordability />
+      <BWSFreeTrial />
+      <BWSTestimonials />
+      <BWSDecisionSummary />
+      <BWSFAQ />
+      <BWSFinalCTA />
+    </PageLayout>
   );
 }

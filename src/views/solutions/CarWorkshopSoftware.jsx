@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const CWHero = dynamic(() => import('../../components/solutions/car-workshop/CWHero'), { ssr: false });
 const CWDefinition = dynamic(() => import('../../components/solutions/car-workshop/CWDefinition'), { ssr: false });
@@ -25,29 +23,25 @@ const CWFinalCTA = dynamic(() => import('../../components/solutions/car-workshop
 
 export default function CarWorkshopSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <CWHero />
-        <CWDefinition />
-        <CWJobCardWorkflow />
-        <CWInventory />
-        <CWBilling />
-        <CWServiceReminders />
-        <CWStaffManagement />
-        <CWDashboardReports />
-        <CWMultiBranch />
-        <CWWebMobile />
-        <CWTransformation />
-        <CWWhySaarthi />
-        <CWCustomerProof />
-        <CWPricing />
-        <CWRelatedSolutions />
-        <CWFAQ />
-        <CWFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <CWHero />
+      <CWDefinition />
+      <CWJobCardWorkflow />
+      <CWInventory />
+      <CWBilling />
+      <CWServiceReminders />
+      <CWStaffManagement />
+      <CWDashboardReports />
+      <CWMultiBranch />
+      <CWWebMobile />
+      <CWTransformation />
+      <CWWhySaarthi />
+      <CWCustomerProof />
+      <CWPricing />
+      <CWRelatedSolutions />
+      <CWFAQ />
+      <CWFinalCTA />
+    </PageLayout>
   );
 }

@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GCEHero = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEHero'), { ssr: false });
 const GCEProblem = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEProblem'), { ssr: false });
@@ -26,31 +24,24 @@ const GCEFinalCTA = dynamic(() => import('../../components/solutions/garage-cust
 
 export default function GarageCustomerEngagementSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GCEHero />
+      <GCEProblem />
+      <GCERecords />
+      <GCEReminders />
+      <GCECommunication />
+      <GCECRM />
+      <GCEOffers />
+      <GCERetention />
+      <GCEExperience />
+      <GCEFeedback />
+      <GCEBusinessTypes />
+      <GCEPlatform />
+      <GCEWhySaarthi />
+      <GCEProof />
+      <GCEFreeTrial />
+      <GCEFAQ />
+      <GCEFinalCTA />
 
-      <main className="flex-grow">
-        <GCEHero />
-        <GCEProblem />
-        <GCERecords />
-        <GCEReminders />
-        <GCECommunication />
-        <GCECRM />
-        <GCEOffers />
-        <GCERetention />
-        <GCEExperience />
-        <GCEFeedback />
-        <GCEBusinessTypes />
-        <GCEPlatform />
-        <GCEWhySaarthi />
-        <GCEProof />
-        <GCEFreeTrial />
-        <GCEFAQ />
-        <GCEFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }

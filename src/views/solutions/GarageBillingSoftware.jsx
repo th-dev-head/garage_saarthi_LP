@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GBHero = dynamic(() => import('../../components/solutions/garage-billing/GBHero'), { ssr: false });
 const GBProblemDefinition = dynamic(() => import('../../components/solutions/garage-billing/GBProblemDefinition'), { ssr: false });
@@ -26,31 +24,24 @@ const GBFinalCTA = dynamic(() => import('../../components/solutions/garage-billi
 
 export default function GarageBillingSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GBHero />
+      <GBProblemDefinition />
+      <GBProductDefinition />
+      <GBFeatures />
+      <GBWorkflow />
+      <GBGSTBilling />
+      <GBBusinessType />
+      <GBCloudAccess />
+      <GBInventoryConnection />
+      <GBFinanceVisibility />
+      <GBCustomerVehicle />
+      <GBSelectionCriteria />
+      <GBEcosystem />
+      <GBCustomerProof />
+      <GBFreeTrial />
+      <GBFAQ />
+      <GBFinalCTA />
 
-      <main className="flex-grow">
-        <GBHero />
-        <GBProblemDefinition />
-        <GBProductDefinition />
-        <GBFeatures />
-        <GBWorkflow />
-        <GBGSTBilling />
-        <GBBusinessType />
-        <GBCloudAccess />
-        <GBInventoryConnection />
-        <GBFinanceVisibility />
-        <GBCustomerVehicle />
-        <GBSelectionCriteria />
-        <GBEcosystem />
-        <GBCustomerProof />
-        <GBFreeTrial />
-        <GBFAQ />
-        <GBFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }

@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const FLHero = dynamic(() => import('../../components/solutions/fleet-workshop/FLHero'), { ssr: false });
@@ -29,31 +27,27 @@ const FLFinalCTA = dynamic(() => import('../../components/solutions/fleet-worksh
 
 export default function FleetWorkshopSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <FLHero />
-        <FLDefinition />
-        <FLProduct />
-        <FLJobCards />
-        <FLCustomerVehicle />
-        <FLServiceAlerts />
-        <FLInventory />
-        <FLStaff />
-        <FLBillingFinance />
-        <FLDashboardReports />
-        <FLMultiBranch />
-        <FLFleetTypes />
-        <FLComparison />
-        <FLCloudAccess />
-        <FLWhyUs />
-        <FLTestimonials />
-        <FLPricing />
-        <FLFAQ />
-        <FLFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <FLHero />
+      <FLDefinition />
+      <FLProduct />
+      <FLJobCards />
+      <FLCustomerVehicle />
+      <FLServiceAlerts />
+      <FLInventory />
+      <FLStaff />
+      <FLBillingFinance />
+      <FLDashboardReports />
+      <FLMultiBranch />
+      <FLFleetTypes />
+      <FLComparison />
+      <FLCloudAccess />
+      <FLWhyUs />
+      <FLTestimonials />
+      <FLPricing />
+      <FLFAQ />
+      <FLFinalCTA />
+    </PageLayout>
   );
 }

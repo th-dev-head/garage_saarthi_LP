@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const BWHero = dynamic(() => import('../../components/solutions/bike-workshop/BWHero'), { ssr: false });
@@ -27,29 +25,24 @@ const BWFinalCTA = dynamic(() => import('../../components/solutions/bike-worksho
 
 export default function BikeWorkshopSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <BWHero />
-        <BWDefinition />
-        <BWJobCards />
-        <BWCustomerVehicle />
-        <BWInventory />
-        <BWBillingFinance />
-        <BWServiceAlerts />
-        <BWStaff />
-        <BWDashboardReports />
-        <BWCloudAccess />
-        <BWBusinessType />
-        <BWComparison />
-        <BWWhyUs />
-        <BWTestimonials />
-        <BWPricing />
-        <BWFAQ />
-        <BWFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <BWHero />
+      <BWDefinition />
+      <BWJobCards />
+      <BWCustomerVehicle />
+      <BWInventory />
+      <BWBillingFinance />
+      <BWServiceAlerts />
+      <BWStaff />
+      <BWDashboardReports />
+      <BWCloudAccess />
+      <BWBusinessType />
+      <BWComparison />
+      <BWWhyUs />
+      <BWTestimonials />
+      <BWPricing />
+      <BWFAQ />
+      <BWFinalCTA />
+    </PageLayout>
   );
 }

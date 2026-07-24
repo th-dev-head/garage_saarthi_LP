@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GCHero = dynamic(() => import('../../components/solutions/garage-crm/GCHero'), { ssr: false });
 const GCDefinition = dynamic(() => import('../../components/solutions/garage-crm/GCDefinition'), { ssr: false });
@@ -26,31 +24,24 @@ const GCFinalCTA = dynamic(() => import('../../components/solutions/garage-crm/G
 
 export default function GarageCRMSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GCHero />
+      <GCDefinition />
+      <GCLeadManagement />
+      <GCCustomerManagement />
+      <GCCustomerVehicle />
+      <GCCustomerFollowUps />
+      <GCRetention />
+      <GCWorkflow />
+      <GCBusinessType />
+      <GCOperations />
+      <GCManualVsCrm />
+      <GCCloudAccess />
+      <GCWhySaarthi />
+      <GCCustomerProof />
+      <GCFreeTrial />
+      <GCFAQ />
+      <GCFinalCTA />
 
-      <main className="flex-grow">
-        <GCHero />
-        <GCDefinition />
-        <GCLeadManagement />
-        <GCCustomerManagement />
-        <GCCustomerVehicle />
-        <GCCustomerFollowUps />
-        <GCRetention />
-        <GCWorkflow />
-        <GCBusinessType />
-        <GCOperations />
-        <GCManualVsCrm />
-        <GCCloudAccess />
-        <GCWhySaarthi />
-        <GCCustomerProof />
-        <GCFreeTrial />
-        <GCFAQ />
-        <GCFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }

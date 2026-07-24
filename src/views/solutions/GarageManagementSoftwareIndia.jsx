@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GSIHero = dynamic(() => import('../../components/solutions/garage-software-india/GSIHero'), { ssr: false });
 const GSIPositioning = dynamic(() => import('../../components/solutions/garage-software-india/GSIPositioning'), { ssr: false });
@@ -23,9 +21,8 @@ const GSIFinalCTA = dynamic(() => import('../../components/solutions/garage-soft
 
 export default function GarageManagementSoftwareIndia() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
+    <PageLayout className="bg-slate-50 text-slate-900">
+      
         <GSIHero />
         <GSIPositioning />
         <GSIServices />
@@ -41,9 +38,9 @@ export default function GarageManagementSoftwareIndia() {
         <GSICriteria />
         <GSIFAQ />
         <GSIFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+      
+      
+      
+    </PageLayout>
   );
 }

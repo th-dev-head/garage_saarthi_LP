@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GWNHero = dynamic(() => import('../../components/solutions/garage-whatsapp-notification/GWNHero'), { ssr: false });
 const GWNProblem = dynamic(() => import('../../components/solutions/garage-whatsapp-notification/GWNProblem'), { ssr: false });
@@ -25,30 +23,23 @@ const GWNFinalCTA = dynamic(() => import('../../components/solutions/garage-what
 
 export default function GarageWhatsAppNotificationSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GWNHero />
+      <GWNProblem />
+      <GWNProductDefinition />
+      <GWNWorkflow />
+      <GWNServiceDue />
+      <GWNAutomation />
+      <GWNCommunication />
+      <GWNRetention />
+      <GWNBusinessTypes />
+      <GWNAlerts />
+      <GWNPlatform />
+      <GWNWhySaarthi />
+      <GWNProof />
+      <GWNFreeTrial />
+      <GWNFAQ />
+      <GWNFinalCTA />
 
-      <main className="flex-grow">
-        <GWNHero />
-        <GWNProblem />
-        <GWNProductDefinition />
-        <GWNWorkflow />
-        <GWNServiceDue />
-        <GWNAutomation />
-        <GWNCommunication />
-        <GWNRetention />
-        <GWNBusinessTypes />
-        <GWNAlerts />
-        <GWNPlatform />
-        <GWNWhySaarthi />
-        <GWNProof />
-        <GWNFreeTrial />
-        <GWNFAQ />
-        <GWNFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }

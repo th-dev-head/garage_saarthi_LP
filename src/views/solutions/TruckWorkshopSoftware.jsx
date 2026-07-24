@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const TWHero = dynamic(() => import('../../components/solutions/truck-workshop/TWHero'), { ssr: false });
@@ -27,29 +25,25 @@ const TWFinalCTA = dynamic(() => import('../../components/solutions/truck-worksh
 
 export default function TruckWorkshopSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <TWHero />
-        <TWDefinition />
-        <TWJobCards />
-        <TWCustomerVehicle />
-        <TWInventory />
-        <TWBillingFinance />
-        <TWServiceAlerts />
-        <TWStaff />
-        <TWDashboardReports />
-        <TWCloudAccess />
-        <TWBusinessType />
-        <TWComparison />
-        <TWWhyUs />
-        <TWTestimonials />
-        <TWPricing />
-        <TWFAQ />
-        <TWFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <TWHero />
+      <TWDefinition />
+      <TWJobCards />
+      <TWCustomerVehicle />
+      <TWInventory />
+      <TWBillingFinance />
+      <TWServiceAlerts />
+      <TWStaff />
+      <TWDashboardReports />
+      <TWCloudAccess />
+      <TWBusinessType />
+      <TWComparison />
+      <TWWhyUs />
+      <TWTestimonials />
+      <TWPricing />
+      <TWFAQ />
+      <TWFinalCTA />
+    </PageLayout>
   );
 }

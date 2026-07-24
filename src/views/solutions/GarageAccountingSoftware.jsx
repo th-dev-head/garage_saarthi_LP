@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GACHero = dynamic(() => import('../../components/solutions/garage-accounting/GACHero'), { ssr: false });
 const GACDefinition = dynamic(() => import('../../components/solutions/garage-accounting/GACDefinition'), { ssr: false });
@@ -23,27 +21,23 @@ const GACFinalCTA = dynamic(() => import('../../components/solutions/garage-acco
 
 export default function GarageAccountingSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <GACHero />
-        <GACDefinition />
-        <GACCapabilities />
-        <GACProblem />
-        <GACExpenseManagement />
-        <GACBilling />
-        <GACCaAccess />
-        <GACConnected />
-        <GACWebMobile />
-        <GACMultiBranch />
-        <GACWorkshopTypes />
-        <GACWhySaarthi />
-        <GACPricing />
-        <GACFAQ />
-        <GACFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <GACHero />
+      <GACDefinition />
+      <GACCapabilities />
+      <GACProblem />
+      <GACExpenseManagement />
+      <GACBilling />
+      <GACCaAccess />
+      <GACConnected />
+      <GACWebMobile />
+      <GACMultiBranch />
+      <GACWorkshopTypes />
+      <GACWhySaarthi />
+      <GACPricing />
+      <GACFAQ />
+      <GACFinalCTA />
+    </PageLayout>
   );
 }

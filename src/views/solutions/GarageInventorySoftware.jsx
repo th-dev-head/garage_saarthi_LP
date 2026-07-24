@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GIHero = dynamic(() => import('../../components/solutions/garage-inventory/GIHero'), { ssr: false });
 const GIDefinition = dynamic(() => import('../../components/solutions/garage-inventory/GIDefinition'), { ssr: false });
@@ -25,30 +23,23 @@ const GIFinalCTA = dynamic(() => import('../../components/solutions/garage-inven
 
 export default function GarageInventorySoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GIHero />
+      <GIDefinition />
+      <GISpareParts />
+      <GIStockManagement />
+      <GIAutomotiveParts />
+      <GIWorkshopTypes />
+      <GIConnectedOperations />
+      <GIAutomation />
+      <GIMultiBranch />
+      <GIReporting />
+      <GIAccess />
+      <GIWhySaarthi />
+      <GIRelatedFeatures />
+      <GIFreeTrial />
+      <GIFAQ />
+      <GIFinalCTA />
 
-      <main className="flex-grow">
-        <GIHero />
-        <GIDefinition />
-        <GISpareParts />
-        <GIStockManagement />
-        <GIAutomotiveParts />
-        <GIWorkshopTypes />
-        <GIConnectedOperations />
-        <GIAutomation />
-        <GIMultiBranch />
-        <GIReporting />
-        <GIAccess />
-        <GIWhySaarthi />
-        <GIRelatedFeatures />
-        <GIFreeTrial />
-        <GIFAQ />
-        <GIFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }

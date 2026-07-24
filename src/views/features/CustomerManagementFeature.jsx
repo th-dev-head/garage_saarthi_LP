@@ -1,11 +1,9 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
 import dynamic from "next/dynamic";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
 
-const ScrollToTop = dynamic(() => import("../../components/common/ScrollToTop"), { ssr: false });
 const CustHero = dynamic(() => import("../../components/features/customers/CustHero"), { ssr: false });
 const CustDefinition = dynamic(() => import("../../components/features/customers/CustDefinition"), { ssr: false });
 const CustPaperVsDigital = dynamic(() => import("../../components/features/customers/CustPaperVsDigital"), { ssr: false });
@@ -19,22 +17,17 @@ const CustFinalCTA = dynamic(() => import("../../components/features/customers/C
 
 export default function CustomerManagementFeature() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <CustHero />
-        <CustDefinition />
-        <CustPaperVsDigital />
-        <CustCoreCapabilities />
-        <CustWorkflow />
-        <CustWorkshopTypes />
-        <CloudAccessCommon bgClass="bg-white" />
-        <TestimonialsGrid bgClass="bg-slate-50" />
-        <CustFAQ />
-        <CustFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <CustHero />
+      <CustDefinition />
+      <CustPaperVsDigital />
+      <CustCoreCapabilities />
+      <CustWorkflow />
+      <CustWorkshopTypes />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
+      <CustFAQ />
+      <CustFinalCTA />
+    </PageLayout>
   );
 }

@@ -1,11 +1,9 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
 import dynamic from "next/dynamic";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
 
-const ScrollToTop = dynamic(() => import("../../components/common/ScrollToTop"), { ssr: false });
 const VehHero = dynamic(() => import("../../components/features/vehicles/VehHero"), { ssr: false });
 const VehDefinition = dynamic(() => import("../../components/features/vehicles/VehDefinition"), { ssr: false });
 const VehPaperVsDigital = dynamic(() => import("../../components/features/vehicles/VehPaperVsDigital"), { ssr: false });
@@ -19,22 +17,17 @@ const VehFinalCTA = dynamic(() => import("../../components/features/vehicles/Veh
 
 export default function VehicleManagementFeature() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <VehHero />
-        <VehDefinition />
-        <VehPaperVsDigital />
-        <VehCoreCapabilities />
-        <VehWorkflow />
-        <VehWorkshopTypes />
-        <CloudAccessCommon bgClass="bg-slate-50" />
-        <TestimonialsGrid bgClass="bg-white" />
-        <VehFAQ className="bg-slate-50" />
-        <VehFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <VehHero />
+      <VehDefinition />
+      <VehPaperVsDigital />
+      <VehCoreCapabilities />
+      <VehWorkflow />
+      <VehWorkshopTypes />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
+      <VehFAQ className="bg-slate-50" />
+      <VehFinalCTA />
+    </PageLayout>
   );
 }

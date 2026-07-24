@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 const WMHero = dynamic(() => import('../../components/solutions/workshop/WMHero'), { ssr: false });
 const WMProblem = dynamic(() => import('../../components/solutions/workshop/WMProblem'), { ssr: false });
 const WMProductDefinition = dynamic(() => import('../../components/solutions/workshop/WMProductDefinition'), { ssr: false });
@@ -25,9 +23,8 @@ const WMFinalCTA = dynamic(() => import('../../components/solutions/workshop/WMF
 
 const WorkshopManagement = () => {
   return (
-    <div className="min-h-screen bg-white font-sans">
-      <Header />
-      <main>
+    <PageLayout className="bg-white">
+      
         {/* Section 01 - Hero */}
         <WMHero />
 
@@ -78,10 +75,10 @@ const WorkshopManagement = () => {
 
         {/* Section 17 - Final CTA */}
         <WMFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+      
+      
+      
+    </PageLayout>
   );
 };
 

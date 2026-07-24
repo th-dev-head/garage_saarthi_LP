@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const SRHero = dynamic(() => import('../../components/solutions/service-reminder/SRHero'), { ssr: false });
 const SRDefinition = dynamic(() => import('../../components/solutions/service-reminder/SRDefinition'), { ssr: false });
@@ -25,29 +23,25 @@ const SRFinalCTA = dynamic(() => import('../../components/solutions/service-remi
 
 export default function ServiceReminderSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <SRHero />
-        <SRDefinition />
-        <SRHowItWorks />
-        <SRWhatsApp />
-        <SRDueTracking />
-        <SRCustomerFollowUp />
-        <SRVehicleMaintenance />
-        <SRWorkshopTypes />
-        <SRManualVsDigital />
-        <SRApp />
-        <SRConnected />
-        <SRRetentionValue />
-        <SRWhySaarthi />
-        <SRProductProof />
-        <SRFreeTrial />
-        <SRFAQ />
-        <SRFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <SRHero />
+      <SRDefinition />
+      <SRHowItWorks />
+      <SRWhatsApp />
+      <SRDueTracking />
+      <SRCustomerFollowUp />
+      <SRVehicleMaintenance />
+      <SRWorkshopTypes />
+      <SRManualVsDigital />
+      <SRApp />
+      <SRConnected />
+      <SRRetentionValue />
+      <SRWhySaarthi />
+      <SRProductProof />
+      <SRFreeTrial />
+      <SRFAQ />
+      <SRFinalCTA />
+    </PageLayout>
   );
 }

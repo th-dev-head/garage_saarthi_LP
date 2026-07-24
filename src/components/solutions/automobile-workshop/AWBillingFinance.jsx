@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FaFileInvoice, FaMoneyBillWave, FaChartLine, FaUserTie, FaArrowRight } from "react-icons/fa";  
-import GradientUnderline from "../../common/GradientUnderline";
-
-
-export default function AWBillingFinance() {
+import { FaFileInvoice, FaMoneyBillWave, FaChartLine, FaUserTie, FaArrowRight } from "react-icons/fa";
+import GradientUnderline from "../../common/GradientUnderline"; export default function AWBillingFinance() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">

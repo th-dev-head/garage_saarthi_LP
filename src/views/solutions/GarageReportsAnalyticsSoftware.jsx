@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GRAHero = dynamic(() => import('../../components/solutions/garage-reports/GRAHero'), { ssr: false });
 const GRADefinition = dynamic(() => import('../../components/solutions/garage-reports/GRADefinition'), { ssr: false });
@@ -27,31 +25,27 @@ const GRAFinalCTA = dynamic(() => import('../../components/solutions/garage-repo
 
 export default function GarageReportsAnalyticsSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <GRAHero />
-        <GRADefinition />
-        <GRAReportsOverview />
-        <GRADashboard />
-        <GRASalesRevenue />
-        <GRAInventoryReporting />
-        <GRAServicePerformance />
-        <GRACustomerAnalytics />
-        <GRAEmployeeReporting />
-        <GRAMisReporting />
-        <GRAAnalyticsDecision />
-        <GRAMultiBranch />
-        <GRAFiltersAccess />
-        <GRAWebMobile />
-        <GRAWhySaarthi />
-        <GRAProductProof />
-        <GRAFreeTrial />
-        <GRAFAQ />
-        <GRAFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <GRAHero />
+      <GRADefinition />
+      <GRAReportsOverview />
+      <GRADashboard />
+      <GRASalesRevenue />
+      <GRAInventoryReporting />
+      <GRAServicePerformance />
+      <GRACustomerAnalytics />
+      <GRAEmployeeReporting />
+      <GRAMisReporting />
+      <GRAAnalyticsDecision />
+      <GRAMultiBranch />
+      <GRAFiltersAccess />
+      <GRAWebMobile />
+      <GRAWhySaarthi />
+      <GRAProductProof />
+      <GRAFreeTrial />
+      <GRAFAQ />
+      <GRAFinalCTA />
+    </PageLayout>
   );
 }

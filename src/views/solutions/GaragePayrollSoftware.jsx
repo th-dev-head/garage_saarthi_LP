@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GPHero = dynamic(() => import('../../components/solutions/garage-payroll/GPHero'), { ssr: false });
 const GPDefinition = dynamic(() => import('../../components/solutions/garage-payroll/GPDefinition'), { ssr: false });
@@ -22,26 +20,22 @@ const GPFinalCTA = dynamic(() => import('../../components/solutions/garage-payro
 
 export default function GaragePayrollSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <GPHero />
-        <GPDefinition />
-        <GPPayrollCapabilities />
-        <GPAttendanceConnection />
-        <GPLeaveStaffManagement />
-        <GPWorkshopTypes />
-        <GPManualVsSystem />
-        <GPEcosystem />
-        <GPMultiBranch />
-        <GPWebMobile />
-        <GPWhySaarthi />
-        <GPPricing />
-        <GPFAQ />
-        <GPFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <GPHero />
+      <GPDefinition />
+      <GPPayrollCapabilities />
+      <GPAttendanceConnection />
+      <GPLeaveStaffManagement />
+      <GPWorkshopTypes />
+      <GPManualVsSystem />
+      <GPEcosystem />
+      <GPMultiBranch />
+      <GPWebMobile />
+      <GPWhySaarthi />
+      <GPPricing />
+      <GPFAQ />
+      <GPFinalCTA />
+    </PageLayout>
   );
 }

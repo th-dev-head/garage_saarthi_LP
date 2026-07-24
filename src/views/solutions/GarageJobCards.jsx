@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GJCHero = dynamic(() => import('../../components/solutions/garage-job-cards/GJCHero'), { ssr: false });
 const GJCDefinition = dynamic(() => import('../../components/solutions/garage-job-cards/GJCDefinition'), { ssr: false });
@@ -24,29 +22,22 @@ const GCFinalCTA = dynamic(() => import('../../components/solutions/garage-job-c
 
 export default function GarageJobCards() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GJCHero />
+      <GJCDefinition />
+      <GJCWorkflow />
+      <GJCPaperVsDigital />
+      <GJCWorkOrders />
+      <GJCBusinessType />
+      <GJCCustomerVehicle />
+      <GJCInventoryBilling />
+      <GJCCloudAccess />
+      <GJCBenefits />
+      <GJCProductContext />
+      <GJCCustomerProof />
+      <GJCFreeTrial />
+      <GJCFAQ />
+      <GCFinalCTA />
 
-      <main className="flex-grow">
-        <GJCHero />
-        <GJCDefinition />
-        <GJCWorkflow />
-        <GJCPaperVsDigital />
-        <GJCWorkOrders />
-        <GJCBusinessType />
-        <GJCCustomerVehicle />
-        <GJCInventoryBilling />
-        <GJCCloudAccess />
-        <GJCBenefits />
-        <GJCProductContext />
-        <GJCCustomerProof />
-        <GJCFreeTrial />
-        <GJCFAQ />
-        <GCFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }

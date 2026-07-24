@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const CDHero = dynamic(() => import('../../components/solutions/car-detailing/CDHero'), { ssr: false });
@@ -28,30 +26,25 @@ const CDFinalCTA = dynamic(() => import('../../components/solutions/car-detailin
 
 export default function CarDetailingSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <CDHero />
-        <CDDefinition />
-        <CDOperations />
-        <CDJobCards />
-        <CDCustomerVehicle />
-        <CDCRM />
-        <CDBillingFinance />
-        <CDInventory />
-        <CDServiceAlerts />
-        <CDStaff />
-        <CDDashboardReports />
-        <CDMultiBranch />
-        <CDCloudAccess />
-        <CDWhyUs />
-        <CDTestimonials />
-        <CDPricing />
-        <CDFAQ />
-        <CDFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <CDHero />
+      <CDDefinition />
+      <CDOperations />
+      <CDJobCards />
+      <CDCustomerVehicle />
+      <CDCRM />
+      <CDBillingFinance />
+      <CDInventory />
+      <CDServiceAlerts />
+      <CDStaff />
+      <CDDashboardReports />
+      <CDMultiBranch />
+      <CDCloudAccess />
+      <CDWhyUs />
+      <CDTestimonials />
+      <CDPricing />
+      <CDFAQ />
+      <CDFinalCTA />
+    </PageLayout>
   );
 }

@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const WSIHero = dynamic(() => import('../../components/solutions/workshop-software-india/WSIHero'), { ssr: false });
 const WSIDefinition = dynamic(() => import('../../components/solutions/workshop-software-india/WSIDefinition'), { ssr: false });
@@ -26,9 +24,8 @@ const WSIFinalCTA = dynamic(() => import('../../components/solutions/workshop-so
 
 export default function WorkshopSoftwareIndia() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
+    <PageLayout className="bg-slate-50 text-slate-900">
+      
         <WSIHero />
         <WSIDefinition />
         <WSIOperations />
@@ -47,9 +44,9 @@ export default function WorkshopSoftwareIndia() {
         <WSIPricing />
         <WSIFAQ />
         <WSIFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+      
+      
+      
+    </PageLayout>
   );
 }

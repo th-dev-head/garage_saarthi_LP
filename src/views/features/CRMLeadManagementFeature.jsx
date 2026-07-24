@@ -1,11 +1,9 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
 import dynamic from "next/dynamic";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
 
-const ScrollToTop = dynamic(() => import("../../components/common/ScrollToTop"), { ssr: false });
 const CRMHero = dynamic(() => import("../../components/features/crm/CRMHero"), { ssr: false });
 const CRMDefinition = dynamic(() => import("../../components/features/crm/CRMDefinition"), { ssr: false });
 const CRMPaperVsDigital = dynamic(() => import("../../components/features/crm/CRMPaperVsDigital"), { ssr: false });
@@ -20,23 +18,18 @@ const CRMFinalCTA = dynamic(() => import("../../components/features/crm/CRMFinal
 
 export default function CRMLeadManagementFeature() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <CRMHero />
-        <CRMDefinition />
-        <CRMPaperVsDigital />
-        <CRMCoreCapabilities />
-        <CRMWorkflow />
-        <CRMRetention />
-        <CRMWorkshopTypes />
-        <CloudAccessCommon bgClass="bg-white" />
-        <TestimonialsGrid bgClass="bg-slate-50" />
-        <CRMFAQ />
-        <CRMFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+      <CRMHero />
+      <CRMDefinition />
+      <CRMPaperVsDigital />
+      <CRMCoreCapabilities />
+      <CRMWorkflow />
+      <CRMRetention />
+      <CRMWorkshopTypes />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
+      <CRMFAQ />
+      <CRMFinalCTA />
+    </PageLayout>
   );
 }

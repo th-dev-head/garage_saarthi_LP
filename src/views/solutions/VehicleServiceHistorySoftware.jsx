@@ -1,9 +1,7 @@
 "use client";
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const VSHHero = dynamic(() => import('../../components/solutions/vehicle-history/VSHHero'), { ssr: false });
 const VSHDefinition = dynamic(() => import('../../components/solutions/vehicle-history/VSHDefinition'), { ssr: false });
@@ -24,28 +22,24 @@ const VSHFinalCTA = dynamic(() => import('../../components/solutions/vehicle-his
 
 export default function VehicleServiceHistorySoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <VSHHero />
-        <VSHDefinition />
-        <VSHCapabilities />
-        <VSHWorkflow />
-        <VSHJobCards />
-        <VSHCustomerRecords />
-        <VSHServiceAlerts />
-        <VSHManualVsDigital />
-        <VSHWorkshopTypes />
-        <VSHAccessRecords />
-        <VSHWebMobile />
-        <VSHWhySaarthi />
-        <VSHFeatures />
-        <VSHFreeTrial />
-        <VSHFAQ />
-        <VSHFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <VSHHero />
+      <VSHDefinition />
+      <VSHCapabilities />
+      <VSHWorkflow />
+      <VSHJobCards />
+      <VSHCustomerRecords />
+      <VSHServiceAlerts />
+      <VSHManualVsDigital />
+      <VSHWorkshopTypes />
+      <VSHAccessRecords />
+      <VSHWebMobile />
+      <VSHWhySaarthi />
+      <VSHFeatures />
+      <VSHFreeTrial />
+      <VSHFAQ />
+      <VSHFinalCTA />
+    </PageLayout>
   );
 }

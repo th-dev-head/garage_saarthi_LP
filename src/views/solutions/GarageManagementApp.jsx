@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 // Section Components
 const GAHero = dynamic(() => import('../../components/solutions/garage-app/GAHero'), { ssr: false });
@@ -28,30 +26,26 @@ const GAFinalCTA = dynamic(() => import('../../components/solutions/garage-app/G
 
 export default function GarageManagementApp() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
-      <main className="flex-grow">
-        <GAHero />
-        <GADefinition />
-        <GADailyWork />
-        <GAMobileWorkflow />
-        <GABusinessTypes />
-        <GAJobCardUseCase />
-        <GACustomerVehicle />
-        <GAInventoryMobile />
-        <GAStaffManagement />
-        <GAServiceAlerts />
-        <GAReports />
-        {/* <GAWebMobileConnection /> */}
-        <GAAndroidApp />
-        <GAWhyUse />
-        <GAProductProof />
-        <GAFreeTrialCTA />
-        <GAFAQ />
-        <GAFinalCTA />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <PageLayout>
+
+      <GAHero />
+      <GADefinition />
+      <GADailyWork />
+      <GAMobileWorkflow />
+      <GABusinessTypes />
+      <GAJobCardUseCase />
+      <GACustomerVehicle />
+      <GAInventoryMobile />
+      <GAStaffManagement />
+      <GAServiceAlerts />
+      <GAReports />
+      {/* <GAWebMobileConnection /> */}
+      <GAAndroidApp />
+      <GAWhyUse />
+      <GAProductProof />
+      <GAFreeTrialCTA />
+      <GAFAQ />
+      <GAFinalCTA />
+    </PageLayout>
   );
 }

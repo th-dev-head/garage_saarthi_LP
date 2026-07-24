@@ -1,10 +1,8 @@
 "use client";
 
+import PageLayout from "@/src/components/common/PageLayout";
 import dynamic from 'next/dynamic';
 import React from "react";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
-const ScrollToTop = dynamic(() => import('../../components/common/ScrollToTop'), { ssr: false });
 
 const GEHero = dynamic(() => import('../../components/solutions/garage-erp/GEHero'), { ssr: false });
 const GEDefinition = dynamic(() => import('../../components/solutions/garage-erp/GEDefinition'), { ssr: false });
@@ -28,33 +26,26 @@ const GEFinalCTA = dynamic(() => import('../../components/solutions/garage-erp/G
 
 export default function GarageERPSoftware() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+    <PageLayout>      <GEHero />
+      <GEDefinition />
+      <GEConnectedOperations />
+      <GECentralized />
+      <GEWorkflow />
+      <GEInventoryOperations />
+      <GECustomerVehicle />
+      <GEEmployee />
+      <GEFinance />
+      <GEMultiBranch />
+      <GECloudAccess />
+      <GEBusinessType />
+      <GEIndiaPositioning />
+      <GEWhySaarthi />
+      <GESelectionGuidance />
+      <GECustomerProof />
+      <GEFreeTrial />
+      <GEFAQ />
+      <GEFinalCTA />
 
-      <main className="flex-grow">
-        <GEHero />
-        <GEDefinition />
-        <GEConnectedOperations />
-        <GECentralized />
-        <GEWorkflow />
-        <GEInventoryOperations />
-        <GECustomerVehicle />
-        <GEEmployee />
-        <GEFinance />
-        <GEMultiBranch />
-        <GECloudAccess />
-        <GEBusinessType />
-        <GEIndiaPositioning />
-        <GEWhySaarthi />
-        <GESelectionGuidance />
-        <GECustomerProof />
-        <GEFreeTrial />
-        <GEFAQ />
-        <GEFinalCTA />
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 }
