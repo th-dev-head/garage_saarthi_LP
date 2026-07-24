@@ -23,28 +23,24 @@ const GMFinalCTA = dynamic(() => import('../../components/solutions/garage-marke
 
 export default function GarageMarketingSoftware() {
   return (
-    <PageLayout className="bg-slate-50 text-slate-900">
-      
-        <GMHero />
-        <GMDefinition />
-        <GMChallenges />
-        <GMOverview />
-        <GMOffers />
-        <GMWhatsApp />
-        <GMFollowUp />
-        <GMRetention />
-        <GMServiceReminder />
-        <GMCRMConnection />
-        <GMBusinessType />
-        <GMComparison />
-        <GMCloudAccess />
-        <GMWhyUs />
-        <GMPricing />
-        <GMFAQ />
-        <GMFinalCTA />
-      
-      
-      
-    </PageLayout>
+    < PageLayout >
+      <GMHero />
+      <GMDefinition />
+      <GMChallenges />
+      <GMOverview />
+      <GMOffers />
+      <GMWhatsApp />
+      <GMFollowUp />
+      <GMRetention />
+      <GMServiceReminder />
+      <GMCRMConnection />
+      <GMBusinessType />
+      <GMComparison />
+      <GMCloudAccess />
+      <GMWhyUs />
+      <GMPricing />
+      <GMFAQ />
+      <GMFinalCTA />
+    </PageLayout >
   );
 }

@@ -24,7 +24,6 @@ const WAFinalCTA = dynamic(() => import('../../components/solutions/workshop-app
 export default function WorkshopManagementApp() {
   return (
     <PageLayout>
-
       <WAHero />
       <WADefinition />
       <WAMobileWorkshop />

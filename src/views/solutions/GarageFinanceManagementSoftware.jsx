@@ -24,7 +24,6 @@ const GFMFinalCTA = dynamic(() => import('../../components/solutions/garage-fina
 export default function GarageFinanceManagementSoftware() {
   return (
     <PageLayout>
-
       <GFMHero />
       <GFMDefinition />
       <GFMIncomeExpense />

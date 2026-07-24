@@ -24,7 +24,8 @@ const GAFinalCTA = dynamic(() => import('../../components/solutions/garage-autom
 
 export default function GarageAutomationSoftware() {
   return (
-    <PageLayout>      <GAHero />
+    <PageLayout>      
+      <GAHero />
       <GAProblem />
       <GAWorkflow />
       <GAManualVsAuto />
@@ -41,7 +42,6 @@ export default function GarageAutomationSoftware() {
       <GAFreeTrial />
       <GAFAQ />
       <GAFinalCTA />
-
     </PageLayout>
   );
 }

@@ -26,7 +26,8 @@ const GEFinalCTA = dynamic(() => import('../../components/solutions/garage-erp/G
 
 export default function GarageERPSoftware() {
   return (
-    <PageLayout>      <GEHero />
+    <PageLayout>      
+      <GEHero />
       <GEDefinition />
       <GEConnectedOperations />
       <GECentralized />
@@ -45,7 +46,6 @@ export default function GarageERPSoftware() {
       <GEFreeTrial />
       <GEFAQ />
       <GEFinalCTA />
-
     </PageLayout>
   );
 }

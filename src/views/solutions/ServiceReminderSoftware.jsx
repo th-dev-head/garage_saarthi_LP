@@ -24,7 +24,6 @@ const SRFinalCTA = dynamic(() => import('../../components/solutions/service-remi
 export default function ServiceReminderSoftware() {
   return (
     <PageLayout>
-
       <SRHero />
       <SRDefinition />
       <SRHowItWorks />

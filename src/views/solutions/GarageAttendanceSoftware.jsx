@@ -21,7 +21,6 @@ const GAFinalCTA = dynamic(() => import('../../components/solutions/garage-atten
 export default function GarageAttendanceSoftware() {
   return (
     <PageLayout>
-
       <GAHero />
       <GADefinition />
       <GAFeatures />

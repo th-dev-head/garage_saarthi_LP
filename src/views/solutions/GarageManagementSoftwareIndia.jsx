@@ -21,8 +21,7 @@ const GSIFinalCTA = dynamic(() => import('../../components/solutions/garage-soft
 
 export default function GarageManagementSoftwareIndia() {
   return (
-    <PageLayout className="bg-slate-50 text-slate-900">
-      
+    < PageLayout >
         <GSIHero />
         <GSIPositioning />
         <GSIServices />
@@ -38,9 +37,6 @@ export default function GarageManagementSoftwareIndia() {
         <GSICriteria />
         <GSIFAQ />
         <GSIFinalCTA />
-      
-      
-      
-    </PageLayout>
+    </PageLayout >
   );
 }

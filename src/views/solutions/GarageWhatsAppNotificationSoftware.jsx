@@ -23,7 +23,8 @@ const GWNFinalCTA = dynamic(() => import('../../components/solutions/garage-what
 
 export default function GarageWhatsAppNotificationSoftware() {
   return (
-    <PageLayout>      <GWNHero />
+    <PageLayout>      
+      <GWNHero />
       <GWNProblem />
       <GWNProductDefinition />
       <GWNWorkflow />
@@ -39,7 +40,6 @@ export default function GarageWhatsAppNotificationSoftware() {
       <GWNFreeTrial />
       <GWNFAQ />
       <GWNFinalCTA />
-
     </PageLayout>
   );
 }

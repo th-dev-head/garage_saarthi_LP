@@ -22,7 +22,6 @@ const GACFinalCTA = dynamic(() => import('../../components/solutions/garage-acco
 export default function GarageAccountingSoftware() {
   return (
     <PageLayout>
-
       <GACHero />
       <GACDefinition />
       <GACCapabilities />

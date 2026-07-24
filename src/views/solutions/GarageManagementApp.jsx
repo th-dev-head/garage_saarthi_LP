@@ -27,7 +27,6 @@ const GAFinalCTA = dynamic(() => import('../../components/solutions/garage-app/G
 export default function GarageManagementApp() {
   return (
     <PageLayout>
-
       <GAHero />
       <GADefinition />
       <GADailyWork />

@@ -39,7 +39,6 @@ export default function GarageInventorySoftware() {
       <GIFreeTrial />
       <GIFAQ />
       <GIFinalCTA />
-
     </PageLayout>
   );
 }

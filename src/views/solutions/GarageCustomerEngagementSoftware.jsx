@@ -24,7 +24,8 @@ const GCEFinalCTA = dynamic(() => import('../../components/solutions/garage-cust
 
 export default function GarageCustomerEngagementSoftware() {
   return (
-    <PageLayout>      <GCEHero />
+    <PageLayout>      
+      <GCEHero />
       <GCEProblem />
       <GCERecords />
       <GCEReminders />
@@ -41,7 +42,6 @@ export default function GarageCustomerEngagementSoftware() {
       <GCEFreeTrial />
       <GCEFAQ />
       <GCEFinalCTA />
-
     </PageLayout>
   );
 }

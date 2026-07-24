@@ -28,7 +28,6 @@ const FLFinalCTA = dynamic(() => import('../../components/solutions/fleet-worksh
 export default function FleetWorkshopSoftware() {
   return (
     <PageLayout>
-
       <FLHero />
       <FLDefinition />
       <FLProduct />

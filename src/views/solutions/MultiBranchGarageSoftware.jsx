@@ -24,7 +24,6 @@ const MBFinalCTA = dynamic(() => import('../../components/solutions/multi-branch
 export default function MultiBranchGarageSoftware() {
   return (
     <PageLayout>
-
       <MBHero />
       <MBDefinition />
       <MBCentralized />

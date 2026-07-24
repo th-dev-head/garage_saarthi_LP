@@ -22,7 +22,8 @@ const GCFinalCTA = dynamic(() => import('../../components/solutions/garage-job-c
 
 export default function GarageJobCards() {
   return (
-    <PageLayout>      <GJCHero />
+    <PageLayout>     
+      <GJCHero />
       <GJCDefinition />
       <GJCWorkflow />
       <GJCPaperVsDigital />
@@ -37,7 +38,6 @@ export default function GarageJobCards() {
       <GJCFreeTrial />
       <GJCFAQ />
       <GCFinalCTA />
-
     </PageLayout>
   );
 }

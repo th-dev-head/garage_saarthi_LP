@@ -26,7 +26,6 @@ const EVFinalCTA = dynamic(() => import('../../components/solutions/ev-garage/EV
 export default function EVGarageSoftware() {
   return (
     <PageLayout>
-
       <EVHero />
       <EVDefinition />
       <EVJobCards />

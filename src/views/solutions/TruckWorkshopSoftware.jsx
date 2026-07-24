@@ -26,7 +26,6 @@ const TWFinalCTA = dynamic(() => import('../../components/solutions/truck-worksh
 export default function TruckWorkshopSoftware() {
   return (
     <PageLayout>
-
       <TWHero />
       <TWDefinition />
       <TWJobCards />

@@ -23,7 +23,6 @@ const VSHFinalCTA = dynamic(() => import('../../components/solutions/vehicle-his
 export default function VehicleServiceHistorySoftware() {
   return (
     <PageLayout>
-
       <VSHHero />
       <VSHDefinition />
       <VSHCapabilities />

@@ -24,7 +24,8 @@ const GCFinalCTA = dynamic(() => import('../../components/solutions/garage-crm/G
 
 export default function GarageCRMSoftware() {
   return (
-    <PageLayout>      <GCHero />
+    <PageLayout>      
+      <GCHero />
       <GCDefinition />
       <GCLeadManagement />
       <GCCustomerManagement />
@@ -41,7 +42,6 @@ export default function GarageCRMSoftware() {
       <GCFreeTrial />
       <GCFAQ />
       <GCFinalCTA />
-
     </PageLayout>
   );
 }

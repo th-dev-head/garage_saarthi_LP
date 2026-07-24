@@ -24,29 +24,25 @@ const WSIFinalCTA = dynamic(() => import('../../components/solutions/workshop-so
 
 export default function WorkshopSoftwareIndia() {
   return (
-    <PageLayout className="bg-slate-50 text-slate-900">
-      
-        <WSIHero />
-        <WSIDefinition />
-        <WSIOperations />
-        <WSIBusinessTypes />
-        <WSIIndianContext />
-        <WSIDigitalTransformation />
-        <WSIJobCards />
-        <WSIBillingInventory />
-        <WSICustomerService />
-        <WSIMultiBranch />
-        <WSICloudAccess />
-        <WSIStaff />
-        <WSIFinance />
-        <WSIWhyUs />
-        <WSITestimonials />
-        <WSIPricing />
-        <WSIFAQ />
-        <WSIFinalCTA />
-      
-      
-      
-    </PageLayout>
+    <PageLayout>
+      <WSIHero />
+      <WSIDefinition />
+      <WSIOperations />
+      <WSIBusinessTypes />
+      <WSIIndianContext />
+      <WSIDigitalTransformation />
+      <WSIJobCards />
+      <WSIBillingInventory />
+      <WSICustomerService />
+      <WSIMultiBranch />
+      <WSICloudAccess />
+      <WSIStaff />
+      <WSIFinance />
+      <WSIWhyUs />
+      <WSITestimonials />
+      <WSIPricing />
+      <WSIFAQ />
+      <WSIFinalCTA />
+    </PageLayout >
   );
 }

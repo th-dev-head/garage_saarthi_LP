@@ -24,7 +24,8 @@ const GBFinalCTA = dynamic(() => import('../../components/solutions/garage-billi
 
 export default function GarageBillingSoftware() {
   return (
-    <PageLayout>      <GBHero />
+    <PageLayout>      
+      <GBHero />
       <GBProblemDefinition />
       <GBProductDefinition />
       <GBFeatures />
@@ -41,7 +42,6 @@ export default function GarageBillingSoftware() {
       <GBFreeTrial />
       <GBFAQ />
       <GBFinalCTA />
-
     </PageLayout>
   );
 }

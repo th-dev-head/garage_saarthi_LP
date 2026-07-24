@@ -27,7 +27,6 @@ const CGFinalCTA = dynamic(() => import('../../components/solutions/car-garage/C
 export default function CarGarageSoftware() {
   return (
     <PageLayout>
-
       <CGHero />
       <CGDefinition />
       <CGJobCards />

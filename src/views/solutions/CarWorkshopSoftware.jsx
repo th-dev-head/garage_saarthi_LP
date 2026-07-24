@@ -24,7 +24,6 @@ const CWFinalCTA = dynamic(() => import('../../components/solutions/car-workshop
 export default function CarWorkshopSoftware() {
   return (
     <PageLayout>
-
       <CWHero />
       <CWDefinition />
       <CWJobCardWorkflow />

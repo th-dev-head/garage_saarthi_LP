@@ -26,7 +26,6 @@ const GRAFinalCTA = dynamic(() => import('../../components/solutions/garage-repo
 export default function GarageReportsAnalyticsSoftware() {
   return (
     <PageLayout>
-
       <GRAHero />
       <GRADefinition />
       <GRAReportsOverview />

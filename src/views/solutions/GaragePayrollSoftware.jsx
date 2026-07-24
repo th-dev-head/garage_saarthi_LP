@@ -21,7 +21,6 @@ const GPFinalCTA = dynamic(() => import('../../components/solutions/garage-payro
 export default function GaragePayrollSoftware() {
   return (
     <PageLayout>
-
       <GPHero />
       <GPDefinition />
       <GPPayrollCapabilities />
