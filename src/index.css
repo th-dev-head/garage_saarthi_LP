@@ -6,6 +6,7 @@
 @source "../components/features/service-reminders";
 @source "../components/features/whatsapp-automation";
 @source "../components/features/customer-reviews";
+@source "../components/features/finance";
 
 html {
   scroll-behavior: smooth;
