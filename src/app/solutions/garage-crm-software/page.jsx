@@ -1,4 +1,4 @@
-import GarageCRMSoftware from "@/src/views/GarageCRMSoftware";
+import GarageCRMSoftware from "@/src/views/solutions/GarageCRMSoftware";
 
 export const metadata = {
   title: "Garage CRM Software for Workshops in India | GarageSaarthi",

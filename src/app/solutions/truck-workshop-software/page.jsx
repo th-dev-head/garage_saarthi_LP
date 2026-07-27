@@ -1,4 +1,4 @@
-import TruckWorkshopSoftware from "@/src/views/TruckWorkshopSoftware";
+import TruckWorkshopSoftware from "@/src/views/solutions/TruckWorkshopSoftware";
 
 export const metadata = {
   title: "Truck Workshop Software in India | GarageSaarthi",

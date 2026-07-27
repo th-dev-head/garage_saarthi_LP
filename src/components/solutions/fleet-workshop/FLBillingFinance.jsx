@@ -3,6 +3,30 @@ import Link from "next/link";
 import { FaFileInvoiceDollar, FaRegCreditCard, FaUserTie } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const billingCards = [
+  {
+    icon: FaFileInvoiceDollar,
+    title: "Create Workshop Invoices",
+    desc: "Generate GST-compliant invoices containing labor items, bulk parts, and fleet customer tax profiles in under a minute.",
+    link: "/pricing",
+    linkText: "View Invoicing Setup"
+  },
+  {
+    icon: FaRegCreditCard,
+    title: "Track Payments and Finance",
+    desc: "Audit cash, UPI, or credit terms extended to logistics companies. Send outstanding invoice reminders directly.",
+    link: "/features/payments",
+    linkText: "Explore Payments"
+  },
+  {
+    icon: FaUserTie,
+    title: "Give Your CA Access",
+    desc: "Invite your Chartered Accountant (CA) to log in and download GST spreadsheets directly, saving hours of manual billing coordination.",
+    link: "/features/ca-access",
+    linkText: "Explore CA Access"
+  }
+];
+
 export default function FLBillingFinance() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,61 +46,30 @@ export default function FLBillingFinance() {
 
         {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1 - Invoices */}
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-                <FaFileInvoiceDollar />
+          {billingCards.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                <div className="space-y-4">
+                  <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                    <Icon />
+                  </div>
+                  <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
+                  <p className="text-xs text-slate-500 leading-normal">
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="pt-6 border-t border-slate-100 mt-6">
+                  <Link href={item.link} className="text-xs font-bold text-primary hover:underline">
+                    {item.linkText}
+                  </Link>
+                </div>
               </div>
-              <h3 className="text-sm font-bold text-slate-900">Create Workshop Invoices</h3>
-              <p className="text-xs text-slate-500 leading-normal">
-                Generate GST-compliant invoices containing labor items, bulk parts, and fleet customer tax profiles in under a minute.
-              </p>
-            </div>
-            <div className="pt-6 border-t border-slate-100 mt-6">
-              <Link href="/pricing" className="text-xs font-bold text-primary hover:underline">
-                View Invoicing Setup
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 2 - Payments & Finance */}
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-                <FaRegCreditCard />
-              </div>
-              <h3 className="text-sm font-bold text-slate-900">Track Payments and Finance</h3>
-              <p className="text-xs text-slate-500 leading-normal">
-                Audit cash, UPI, or credit terms extended to logistics companies. Send outstanding invoice reminders directly.
-              </p>
-            </div>
-            <div className="pt-6 border-t border-slate-100 mt-6">
-              <Link href="/features/payments" className="text-xs font-bold text-primary hover:underline">
-                Explore Payments
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 3 - CA Access */}
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-                <FaUserTie />
-              </div>
-              <h3 className="text-sm font-bold text-slate-900">Give Your CA Access</h3>
-              <p className="text-xs text-slate-500 leading-normal">
-                Invite your Chartered Accountant (CA) to log in and download GST spreadsheets directly, saving hours of manual billing coordination.
-              </p>
-            </div>
-            <div className="pt-6 border-t border-slate-100 mt-6">
-              <Link href="/features/ca-access" className="text-xs font-bold text-primary hover:underline">
-                Explore CA Access
-              </Link>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
+

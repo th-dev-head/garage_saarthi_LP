@@ -2,30 +2,35 @@ import React from "react";
 import { FaExclamationTriangle, FaSearch, FaHistory, FaAddressBook, FaArrowUp, FaArrowDown } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function GIStockManagement() {
-  const stockCapabilities = [
-    {
-      icon: <FaSearch className="text-primary w-4 h-4" />,
-      title: "Current Stock Quantity",
-      desc: "Instantly check exact quantities in stock from any system dashboard without visiting the physical storage rack."
-    },
-    {
-      icon: <FaExclamationTriangle className="w-4 h-4" style={{ color: "#f97316" }} />,
-      title: "Low-Stock Alerts",
-      desc: "Receive proactive notifications when critical replacement parts fall below safety re-order levels."
-    },
-    {
-      icon: <FaHistory className="text-green-500 w-4 h-4" />,
-      title: "Stock Adjustments & Movements",
-      desc: "Log manual quantity corrections for scrap parts, return-to-vendor parts, or internal usage audits."
-    },
-    {
-      icon: <FaAddressBook className="w-4 h-4" style={{ color: "#3b82f6" }} />,
-      title: "Supplier & Purchase Info",
-      desc: "Link parts directly with vendor profiles, making it simple to repeat orders at verified wholesale purchase rates."
-    }
-  ];
+const stockCapabilities = [
+  {
+    icon: <FaSearch className="text-primary w-4 h-4" />,
+    title: "Current Stock Quantity",
+    desc: "Instantly check exact quantities in stock from any system dashboard without visiting the physical storage rack."
+  },
+  {
+    icon: <FaExclamationTriangle className="w-4 h-4" style={{ color: "#f97316" }} />,
+    title: "Low-Stock Alerts",
+    desc: "Receive proactive notifications when critical replacement parts fall below safety re-order levels."
+  },
+  {
+    icon: <FaHistory className="text-green-500 w-4 h-4" />,
+    title: "Stock Adjustments & Movements",
+    desc: "Log manual quantity corrections for scrap parts, return-to-vendor parts, or internal usage audits."
+  },
+  {
+    icon: <FaAddressBook className="w-4 h-4" style={{ color: "#3b82f6" }} />,
+    title: "Supplier & Purchase Info",
+    desc: "Link parts directly with vendor profiles, making it simple to repeat orders at verified wholesale purchase rates."
+  }
+];
 
+const adjustmentLogs = [
+  { icon: FaArrowUp, iconColor: "text-green-500", label: "Purchase Inflow", val: "+50 Engine Oils" },
+  { icon: FaArrowDown, iconColor: "text-red-500", label: "Job Card Use", val: "-1 Tyre (JC-2342)" }
+];
+
+export default function GIStockManagement() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -75,14 +80,15 @@ export default function GIStockManagement() {
           <div className="">
             <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-2">Recent Adjustment Logs</span>
             <div className="space-y-2 text-[10px]">
-              <div className="flex justify-between items-center text-slate-600">
-                <span className="flex items-center gap-1"><FaArrowUp className="text-green-500 w-2 h-2" /> Purchase Inflow</span>
-                <span className="font-semibold text-slate-900">+50 Engine Oils</span>
-              </div>
-              <div className="flex justify-between items-center text-slate-600">
-                <span className="flex items-center gap-1"><FaArrowDown className="text-red-500 w-2 h-2" /> Job Card Use</span>
-                <span className="font-semibold text-slate-900">-1 Tyre (JC-2342)</span>
-              </div>
+              {adjustmentLogs.map((log, idx) => {
+                const Icon = log.icon;
+                return (
+                  <div key={idx} className="flex justify-between items-center text-slate-600">
+                    <span className="flex items-center gap-1"><Icon className={`${log.iconColor} w-2 h-2`} /> {log.label}</span>
+                    <span className="font-semibold text-slate-900">{log.val}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -115,4 +121,5 @@ export default function GIStockManagement() {
     </section>
   );
 }
+
 

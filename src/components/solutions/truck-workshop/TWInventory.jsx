@@ -18,6 +18,14 @@ const inventoryPoints = [
   },
 ];
 
+const truckSparesRegistry = [
+  { name: "Heavy Duty Engine Oil 15W-40 (5L)", qty: "14 Units", qtyClass: "text-primary font-bold" },
+  { name: "Air Brake Valve Assy", qty: "4 Units", qtyClass: "text-primary font-bold" },
+  { name: "Front Hub Bearing", qty: "8 Units", qtyClass: "text-primary font-bold" },
+  { name: "Commercial Air Filter", qty: "Low (2 Units)", qtyClass: "text-emerald-600 font-bold" },
+  { name: "Trailer Connector Cable", qty: "6 Units", qtyClass: "text-primary font-bold" }
+];
+
 export default function TWInventory() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -64,26 +72,12 @@ export default function TWInventory() {
               Truck Spares Registry
             </h4>
             <div className="space-y-3">
-              <div className="flex justify-between text-xs border-b border-slate-200/40 pb-2">
-                <span className="font-medium text-slate-700">Heavy Duty Engine Oil 15W-40 (5L)</span>
-                <span className="text-primary font-bold">14 Units</span>
-              </div>
-              <div className="flex justify-between text-xs border-b border-slate-200/40 pb-2">
-                <span className="font-medium text-slate-700">Air Brake Valve Assy</span>
-                <span className="text-primary font-bold">4 Units</span>
-              </div>
-              <div className="flex justify-between text-xs border-b border-slate-200/40 pb-2">
-                <span className="font-medium text-slate-700">Front Hub Bearing</span>
-                <span className="text-primary font-bold">8 Units</span>
-              </div>
-              <div className="flex justify-between text-xs border-b border-slate-200/40 pb-2">
-                <span className="font-medium text-slate-700">Commercial Air Filter</span>
-                <span className="text-emerald-600 font-bold">Low (2 Units)</span>
-              </div>
-              <div className="flex justify-between text-xs">
-                <span className="font-medium text-slate-700">Trailer Connector Cable</span>
-                <span className="text-primary font-bold">6 Units</span>
-              </div>
+              {truckSparesRegistry.map((item, idx) => (
+                <div key={idx} className={`flex justify-between text-xs ${idx < truckSparesRegistry.length - 1 ? "border-b border-slate-200/40 pb-2" : ""}`}>
+                  <span className="font-medium text-slate-700">{item.name}</span>
+                  <span className={item.qtyClass}>{item.qty}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -91,3 +85,4 @@ export default function TWInventory() {
     </section>
   );
 }
+

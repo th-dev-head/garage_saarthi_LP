@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaBuilding, FaExchangeAlt, FaUserLock, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const multiBranchPillars = [
+  {
+    icon: FaBuilding,
+    title: "Centralized Owner Controls",
+    desc: "Switch between branch dashboards with a single click to monitor branch-wise collections, daily job sheet counts, and team workloads."
+  },
+  {
+    icon: FaExchangeAlt,
+    title: "Inter-Branch Stock Transfers",
+    desc: "Transfer spare parts inventory between workshop branches seamlessly, auditing transit status and stock valuation levels in real time."
+  },
+  {
+    icon: FaUserLock,
+    title: "Role-Based User Permissions",
+    desc: "Assign strict branch visibility so floor managers only access their assigned location while owners view consolidated financial analytics."
+  }
+];
+
 export default function GSIMultiBranch() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -22,35 +40,20 @@ export default function GSIMultiBranch() {
 
         {/* 3 Grid Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaBuilding />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Centralized Owner Controls</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Switch between branch dashboards with a single click to monitor branch-wise collections, daily job sheet counts, and team workloads.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaExchangeAlt />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Inter-Branch Stock Transfers</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Transfer spare parts inventory between workshop branches seamlessly, auditing transit status and stock valuation levels in real time.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaUserLock />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Role-Based User Permissions</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Assign strict branch visibility so floor managers only access their assigned location while owners view consolidated financial analytics.
-            </p>
-          </div>
+          {multiBranchPillars.map((card, idx) => {
+            const Icon = card.icon;
+            return (
+              <div key={idx} className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{card.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">
@@ -65,3 +68,4 @@ export default function GSIMultiBranch() {
     </section>
   );
 }
+

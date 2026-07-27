@@ -18,6 +18,13 @@ const reportItems = [
   },
 ];
 
+const realTimeTruckMetrics = [
+  { label: "Active Trucks", val: "8", valClass: "text-slate-800" },
+  { label: "Pending Dues", val: "₹45,200", valClass: "text-primary" },
+  { label: "Spares Billed", val: "14", valClass: "text-slate-800" },
+  { label: "Stock Alerts", val: "3", valClass: "text-red-600" }
+];
+
 export default function TWDashboardReports() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -64,22 +71,12 @@ export default function TWDashboardReports() {
               Real-Time Metrics
             </h4>
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white border border-slate-200/40 p-4 rounded-2xl shadow-xs">
-                <span className="text-[10px] text-slate-400 font-bold uppercase">Active Trucks</span>
-                <p className="text-lg font-bold text-slate-800 mt-1">8</p>
-              </div>
-              <div className="bg-white border border-slate-200/40 p-4 rounded-2xl shadow-xs">
-                <span className="text-[10px] text-slate-400 font-bold uppercase">Pending Dues</span>
-                <p className="text-lg font-bold text-primary mt-1">₹45,200</p>
-              </div>
-              <div className="bg-white border border-slate-200/40 p-4 rounded-2xl shadow-xs">
-                <span className="text-[10px] text-slate-400 font-bold uppercase">Spares Billed</span>
-                <p className="text-lg font-bold text-slate-800 mt-1">14</p>
-              </div>
-              <div className="bg-white border border-slate-200/40 p-4 rounded-2xl shadow-xs">
-                <span className="text-[10px] text-slate-400 font-bold uppercase">Stock Alerts</span>
-                <p className="text-lg font-bold text-red-600 mt-1">3</p>
-              </div>
+              {realTimeTruckMetrics.map((item, idx) => (
+                <div key={idx} className="bg-white border border-slate-200/40 p-4 rounded-2xl shadow-xs">
+                  <span className="text-[10px] text-slate-400 font-bold uppercase">{item.label}</span>
+                  <p className={`text-lg font-bold mt-1 ${item.valClass}`}>{item.val}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -87,3 +84,4 @@ export default function TWDashboardReports() {
     </section>
   );
 }
+

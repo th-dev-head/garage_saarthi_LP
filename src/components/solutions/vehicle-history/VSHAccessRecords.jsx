@@ -1,6 +1,12 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const accessRecordFeatures = [
+  "Query by registration plate",
+  "Query by owner name or mobile number",
+  "View complete chronologically sorted job checklists"
+];
+
 export default function VSHAccessRecords() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -16,9 +22,9 @@ export default function VSHAccessRecords() {
             In a busy garage, speed is essential. GarageSaarthi is optimized to search and fetch customer vehicle records in seconds. Simply input the vehicle registration number or customer phone number on the dashboard or app.
           </p>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
-            <li className="flex items-center gap-2">✓ Query by registration plate</li>
-            <li className="flex items-center gap-2">✓ Query by owner name or mobile number</li>
-            <li className="flex items-center gap-2">✓ View complete chronologically sorted job checklists</li>
+            {accessRecordFeatures.map((text, idx) => (
+              <li key={idx} className="flex items-center gap-2">✓ {text}</li>
+            ))}
           </ul>
         </div>
         <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">

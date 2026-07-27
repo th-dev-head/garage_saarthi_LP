@@ -15,7 +15,7 @@ export default function MBOperations() {
   };
 
   const modules = [
-    { title: "Job Cards", desc: "Manage job sheets by location.", link: "/features/job-cards", label: "Job Cards" },
+    { title: "Job Cards", desc: "Manage job sheets by location.", link: "/features/job-card-management", label: "Job Cards" },
     { title: "Counter Sales", desc: "Track sales logs at counters.", link: "/features/counter-sales", label: "Counter Sales" },
     { title: "Inventory", desc: "Audit stocks across branches.", link: "/features/inventory", label: "Inventory" },
     { title: "Customers", desc: "Keep central customer profiles.", link: "/features/customers", label: "Customers" },

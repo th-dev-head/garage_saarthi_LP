@@ -5,6 +5,11 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const branchesList = [
+  { name: "Mumbai - West Branch", status: "Active" },
+  { name: "Pune - East Branch", status: "Active" }
+];
+
 export default function CWMultiBranch() {
   const handleSolutionClick = () => {
     trackEvent("solution_click", {
@@ -33,14 +38,12 @@ export default function CWMultiBranch() {
             <span className="text-xs text-primary font-bold">Central Control</span>
           </div>
           <div className="space-y-2 text-xs text-slate-600">
-            <div className="flex justify-between p-2 bg-slate-50 rounded-lg border border-slate-100">
-              <span>Mumbai - West Branch</span>
-              <span className="font-semibold text-slate-800">Active</span>
-            </div>
-            <div className="flex justify-between p-2 bg-slate-50 rounded-lg border border-slate-100">
-              <span>Pune - East Branch</span>
-              <span className="font-semibold text-slate-800">Active</span>
-            </div>
+            {branchesList.map((branch, idx) => (
+              <div key={idx} className="flex justify-between p-2 bg-slate-50 rounded-lg border border-slate-100">
+                <span>{branch.name}</span>
+                <span className="font-semibold text-slate-800">{branch.status}</span>
+              </div>
+            ))}
           </div>
         </div>
 

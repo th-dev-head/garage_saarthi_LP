@@ -1,4 +1,4 @@
-import GarageBillingSoftware from "@/src/views/GarageBillingSoftware";
+import GarageBillingSoftware from "@/src/views/solutions/GarageBillingSoftware";
 
 export const metadata = {
   title: "Garage Billing Software & Workshop Billing App | GarageSaarthi",

@@ -9,10 +9,21 @@ import GradientUnderline from "./GradientUnderline";
 
 export default function CloudAccessCommon({
   badge = "Cloud Access",
-  title,
-  titleHighlight,
-  subtitle,
-  features = [],
+  title = "Manage Your Workshop from Anywhere on",
+  titleHighlight = "Web & Mobile App",
+  subtitle = "Access live job cards, inventory, billing, and mechanic reports seamlessly across desktop browsers and Android smartphones.",
+  features = [
+    {
+      icon: <FaLaptop className="w-4 h-4 text-primary" />,
+      title: "Cloud Desktop Web Portal",
+      desc: "Full-featured browser dashboard for service advisors, accountants, and workshop owners."
+    },
+    {
+      icon: <FaAndroid className="w-4 h-4 text-emerald-600" />,
+      title: "Android Mobile App",
+      desc: "Instant job card creation, photo uploads, and mechanic status tracking on the go."
+    }
+  ],
   bgClass = "bg-white"
 }) {
   return (

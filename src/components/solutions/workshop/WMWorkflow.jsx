@@ -9,14 +9,14 @@ const steps = [
     icon: <FaClipboardList className="w-5 h-5" />,
     title: "Customer Walks In",
     desc: "Log customer details and vehicle registration. GarageSaarthi auto-pulls the vehicle's full service history from previous visits.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
   },
   {
     step: "02",
     icon: <FaTools className="w-5 h-5" />,
     title: "Open a Digital Job Card",
     desc: "Create a job card in under 60 seconds. Add complaints, assign mechanic, set estimated delivery time and parts required.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
   },
   {
     step: "03",
@@ -44,7 +44,7 @@ const steps = [
     icon: <FaChartBar className="w-5 h-5" />,
     title: "Review Day-End Reports",
     desc: "See today's revenue, active job cards, pending payments, and mechanic productivity from your dashboard.",
-    link: "/features/dashboard",
+    link: "/features/workshop-management-dashboard",
   },
 ];
 

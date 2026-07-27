@@ -3,6 +3,18 @@ import Link from "next/link";
 import { FaBuilding, FaExchangeAlt, FaChartBar, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const truckBranchRows = [
+  { branch: "Surat Branch", activeCards: "14 Active Cards" },
+  { branch: "Ahmedabad Branch", activeCards: "8 Active Cards" },
+  { branch: "Vadodara Branch", activeCards: "5 Active Cards" }
+];
+
+const truckBranchFeatures = [
+  { icon: FaBuilding, text: "Centralized Branch Controls" },
+  { icon: FaExchangeAlt, text: "Inter-Branch Stock Transfers" },
+  { icon: FaChartBar, text: "Consolidated Analytics Reports" }
+];
+
 export default function TWMultiBranch() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -15,18 +27,12 @@ export default function TWMultiBranch() {
               <span className="bg-primary/10 text-primary text-[10px] font-bold px-2 py-0.5 rounded-full">3 Active</span>
             </div>
             <div className="space-y-3">
-              <div className="flex justify-between items-center text-xs">
-                <span className="text-slate-600 font-medium">Surat Branch</span>
-                <span className="text-slate-800 font-bold">14 Active Cards</span>
-              </div>
-              <div className="flex justify-between items-center text-xs">
-                <span className="text-slate-600 font-medium">Ahmedabad Branch</span>
-                <span className="text-slate-800 font-bold">8 Active Cards</span>
-              </div>
-              <div className="flex justify-between items-center text-xs">
-                <span className="text-slate-600 font-medium">Vadodara Branch</span>
-                <span className="text-slate-800 font-bold">5 Active Cards</span>
-              </div>
+              {truckBranchRows.map((row, idx) => (
+                <div key={idx} className="flex justify-between items-center text-xs">
+                  <span className="text-slate-600 font-medium">{row.branch}</span>
+                  <span className="text-slate-800 font-bold">{row.activeCards}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -43,18 +49,15 @@ export default function TWMultiBranch() {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-600 pt-2">
-              <div className="flex items-center gap-2">
-                <FaBuilding className="text-primary w-4 h-4" />
-                <span>Centralized Branch Controls</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <FaExchangeAlt className="text-primary w-4 h-4" />
-                <span>Inter-Branch Stock Transfers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <FaChartBar className="text-primary w-4 h-4" />
-                <span>Consolidated Analytics Reports</span>
-              </div>
+              {truckBranchFeatures.map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div key={idx} className="flex items-center gap-2">
+                    <Icon className="text-primary w-4 h-4" />
+                    <span>{item.text}</span>
+                  </div>
+                );
+              })}
             </div>
 
             <div className="pt-4">
@@ -71,3 +74,4 @@ export default function TWMultiBranch() {
     </section>
   );
 }
+

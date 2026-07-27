@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
-import GradientUnderline from "../../common/GradientUnderline";
-
-
-const benefits = [
+import GradientUnderline from "../../common/GradientUnderline"; const benefits = [
   { title: "Record Customer Complaints and Repair Details", desc: "Log engine warnings, brake issues, scratching, and basic check-in details easily." },
   { title: "Track Parts and Labour for Each Job", desc: "Allocate repair items, lubricants, spark plugs, and technician labor hours directly." },
   { title: "Keep Repair Records Organized Digitally", desc: "No more searching paper job cards. Save full customer details, vehicle registration numbers, and estimated delivery dates." }
@@ -46,7 +43,7 @@ export default function ARSJobCards() {
               </div>
             ))}
             <Link
-              href="/features/job-cards"
+              href="/features/job-card-management"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap mt-4 inline-block"
             >
               Explore Digital Job Cards

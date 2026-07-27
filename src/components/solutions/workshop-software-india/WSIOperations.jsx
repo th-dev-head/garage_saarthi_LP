@@ -18,7 +18,7 @@ const operationsList = [
     icon: <FaClipboardList />,
     title: "Digital Job Cards",
     desc: "Create work orders on vehicle arrival, recording scratch notes, labor estimates, and assigned mechanics.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
     anchor: "Explore Job Cards",
   },
   {

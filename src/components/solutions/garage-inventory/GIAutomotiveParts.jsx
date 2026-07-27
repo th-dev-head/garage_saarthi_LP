@@ -1,6 +1,24 @@
 import React from "react";
-import { FaShieldAlt, FaCar, FaInfoCircle } from "react-icons/fa";
+import { FaShieldAlt, FaCar, FaInfoCircle, FaBoxes } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
+
+const autoPartsCards = [
+  {
+    icon: FaCar,
+    title: "Auto Parts Inventory",
+    desc: "Create specific listings for lubricants, brake consumables, and electrical elements using our **Auto Parts Inventory Software** to track real-time workshop usage logs."
+  },
+  {
+    icon: FaShieldAlt,
+    title: "Vehicle Spare Parts Management",
+    desc: "Group replacement spares by vehicle make, model variants, and compatibility categories in your **Vehicle Spare Parts Inventory Software** database records."
+  },
+  {
+    icon: FaBoxes,
+    title: "Auto Spare Parts Management",
+    desc: "Set customized retail markups and tax profiles for all consumable records using **Auto Spare Parts Management Software** capabilities."
+  }
+];
 
 export default function GIAutomotiveParts() {
   return (
@@ -30,39 +48,24 @@ export default function GIAutomotiveParts() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl space-y-3 shadow-xs">
-            <div className="w-8 h-8 rounded-xl bg-orange-100/50 flex items-center justify-center text-primary">
-              <FaCar className="w-4 h-4" />
-            </div>
-            <h3 className="text-xs font-bold text-slate-900">Auto Parts Inventory</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed">
-              Create specific listings for lubricants, brake consumables, and electrical elements using our **Auto Parts Inventory Software** to track real-time workshop usage logs.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl space-y-3 shadow-xs">
-            <div className="w-8 h-8 rounded-xl bg-orange-100/50 flex items-center justify-center text-primary">
-              <FaShieldAlt className="w-4 h-4" />
-            </div>
-            <h3 className="text-xs font-bold text-slate-900">Vehicle Spare Parts Management</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed">
-              Group replacement spares by vehicle make, model variants, and compatibility categories in your **Vehicle Spare Parts Inventory Software** database records.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl space-y-3 shadow-xs">
-            <div className="w-8 h-8 rounded-xl bg-orange-100/50 flex items-center justify-center text-primary">
-              <FaBoxes className="w-4 h-4" />
-            </div>
-            <h3 className="text-xs font-bold text-slate-900">Auto Spare Parts Management</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed">
-              Set customized retail markups and tax profiles for all consumable records using **Auto Spare Parts Management Software** capabilities.
-            </p>
-          </div>
+          {autoPartsCards.map((card, idx) => {
+            const Icon = card.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl space-y-3 shadow-xs">
+                <div className="w-8 h-8 rounded-xl bg-orange-100/50 flex items-center justify-center text-primary">
+                  <Icon className="w-4 h-4" />
+                </div>
+                <h3 className="text-xs font-bold text-slate-900">{card.title}</h3>
+                <p className="text-[11px] text-slate-500 leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
-import { FaBoxes } from "react-icons/fa";
+
 

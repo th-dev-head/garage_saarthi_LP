@@ -4,6 +4,11 @@ import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const lowStockQueue = [
+  { item: "Engine Oil (5W-30 Synthetic)", stock: "Cur. Stock: 4 Canisters (Min: 15)", isWarning: true },
+  { item: "Front Brake Pads (Maruti)", stock: "Cur. Stock: 2 Sets (Min: 10)", isWarning: false }
+];
+
 export default function GRAInventoryReporting() {
   const handleInventoryClick = () => {
     trackEvent("reports_inventory_click", {
@@ -65,26 +70,17 @@ export default function GRAInventoryReporting() {
           {/* Low Stock Items List */}
           <div className="space-y-2 pt-1">
             <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Low-Stock Reorder Queue</p>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Engine Oil (5W-30 Synthetic)</p>
-                <p className="text-[10px] text-slate-500">Cur. Stock: 4 Canisters (Min: 15)</p>
+            {lowStockQueue.map((row, idx) => (
+              <div key={idx} className={`flex items-center justify-between p-2.5 rounded-xl ${row.isWarning ? "bg-amber-50/50 border border-amber-200/60" : "bg-slate-50 border border-slate-100"}`}>
+                <div>
+                  <p className="text-xs font-bold text-slate-800">{row.item}</p>
+                  <p className="text-[10px] text-slate-500">{row.stock}</p>
+                </div>
+                <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
+                  Reorder
+                </span>
               </div>
-              <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
-                Reorder
-              </span>
-            </div>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Front Brake Pads (Maruti)</p>
-                <p className="text-[10px] text-slate-500">Cur. Stock: 2 Sets (Min: 10)</p>
-              </div>
-              <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
-                Reorder
-              </span>
-            </div>
+            ))}
           </div>
         </div>
       </div>

@@ -2,6 +2,41 @@ import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const recordTypes = [
+  {
+    borderClass: "border-l-4 border-primary pl-4",
+    title: "Customer Records",
+    descPrefix: "Store contact details, communication history, preferences, and logs. Access the comprehensive ",
+    linkHref: "/features/customers",
+    linkText: "Customer Management",
+    descSuffix: " hub anytime to view customer details."
+  },
+  {
+    borderClass: "border-l-4 border-slate-300 pl-4",
+    title: "Vehicle Records",
+    descPrefix: "Link multiple vehicles under one customer. Log chassis numbers, fuel types, insurance info, and odometer records inside our ",
+    linkHref: "/features/vehicles",
+    linkText: "Vehicle Management",
+    descSuffix: " database."
+  },
+  {
+    borderClass: "border-l-4 border-slate-300 pl-4",
+    title: "Service History",
+    desc: "Review past invoices, components changed, mechanics assigned, and payments. A full service log helps team members engage customers with high-quality context."
+  }
+];
+
+const linkedVehicles = [
+  {
+    model: "Hyundai Creta (DL3C-AB-1234)",
+    details: "Last Service: 15 Dec 2025 • Odometer: 42,300 km"
+  },
+  {
+    model: "Honda Activa (DL3S-XY-7890)",
+    details: "Last Service: 20 Jan 2026 • Odometer: 12,800 km"
+  }
+];
+
 export default function GCERecords() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -21,43 +56,24 @@ export default function GCERecords() {
             </p>
 
             <div className="space-y-6 pt-4">
-              {/* Customer Records */}
-              <div className="border-l-4 border-primary pl-4">
-                <h3 className="text-base font-bold text-slate-900">
-                  Customer Records
-                </h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Store contact details, communication history, preferences, and logs. Access the comprehensive{" "}
-                  <Link href="/features/customers" className="text-primary font-bold hover:underline">
-                    Customer Management
-                  </Link>{" "}
-                  hub anytime to view customer details.
-                </p>
-              </div>
-
-              {/* Vehicle Records */}
-              <div className="border-l-4 border-slate-300 pl-4">
-                <h3 className="text-base font-bold text-slate-900">
-                  Vehicle Records
-                </h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Link multiple vehicles under one customer. Log chassis numbers, fuel types, insurance info, and odometer records inside our{" "}
-                  <Link href="/features/vehicles" className="text-primary font-bold hover:underline">
-                    Vehicle Management
-                  </Link>{" "}
-                  database.
-                </p>
-              </div>
-
-              {/* Service History */}
-              <div className="border-l-4 border-slate-300 pl-4">
-                <h3 className="text-base font-bold text-slate-900">
-                  Service History
-                </h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Review past invoices, components changed, mechanics assigned, and payments. A full service log helps team members engage customers with high-quality context.
-                </p>
-              </div>
+              {recordTypes.map((item, idx) => (
+                <div key={idx} className={item.borderClass}>
+                  <h3 className="text-base font-bold text-slate-900">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-600 text-xs mt-1 leading-relaxed">
+                    {item.desc ? item.desc : (
+                      <>
+                        {item.descPrefix}
+                        <Link href={item.linkHref} className="text-primary font-bold hover:underline">
+                          {item.linkText}
+                        </Link>
+                        {item.descSuffix}
+                      </>
+                    )}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -85,14 +101,12 @@ export default function GCERecords() {
                 <p className="text-slate-600">
                   <strong className="text-primary capitalize">Linked Vehicles:</strong>
                 </p>
-                <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1">
-                  <p className="text-slate-700 font-medium">Hyundai Creta (DL3C-AB-1234)</p>
-                  <p className="text-[10px] text-slate-500">Last Service: 15 Dec 2025 • Odometer: 42,300 km</p>
-                </div>
-                <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1">
-                  <p className="text-slate-700 font-medium">Honda Activa (DL3S-XY-7890)</p>
-                  <p className="text-[10px] text-slate-500">Last Service: 20 Jan 2026 • Odometer: 12,800 km</p>
-                </div>
+                {linkedVehicles.map((veh, idx) => (
+                  <div key={idx} className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1">
+                    <p className="text-slate-700 font-medium">{veh.model}</p>
+                    <p className="text-[10px] text-slate-500">{veh.details}</p>
+                  </div>
+                ))}
               </div>
 
               <div className="pt-2 border-t border-slate-200 text-center">
@@ -107,3 +121,4 @@ export default function GCERecords() {
     </section>
   );
 }
+

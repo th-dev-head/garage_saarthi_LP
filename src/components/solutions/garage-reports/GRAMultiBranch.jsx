@@ -4,6 +4,12 @@ import { trackEvent } from "@/src/utils/pixel";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const outletMetrics = [
+  { name: "Ahmedabad HQ", details: "24 Active Jobs • 8 Staff", revenue: "₹2,40,000", dotColor: "bg-primary", valClass: "text-primary", bgClass: "bg-primary/5 border border-primary/20" },
+  { name: "Surat Outlet", details: "12 Active Jobs • 4 Staff", revenue: "₹1,60,000", dotColor: "bg-blue-500", valClass: "text-slate-700", bgClass: "bg-slate-50 border border-slate-100" },
+  { name: "Vadodara Hub", details: "6 Active Jobs • 3 Staff", revenue: "₹82,500", dotColor: "bg-amber-500", valClass: "text-slate-700", bgClass: "bg-slate-50 border border-slate-100" }
+];
+
 export default function GRAMultiBranch() {
   const handleBranchClick = () => {
     trackEvent("reports_multibranch_click", {
@@ -58,39 +64,18 @@ export default function GRAMultiBranch() {
           {/* Branch Comparison List */}
           <div className="space-y-2 pt-1">
             <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Live Outlet Metrics</p>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-primary/5 border border-primary/20">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-primary"></span>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Ahmedabad HQ</p>
-                  <p className="text-[10px] text-slate-500">24 Active Jobs • 8 Staff</p>
+            {outletMetrics.map((row, idx) => (
+              <div key={idx} className={`flex items-center justify-between p-2.5 rounded-xl ${row.bgClass}`}>
+                <div className="flex items-center gap-2">
+                  <span className={`w-2 h-2 rounded-full ${row.dotColor}`}></span>
+                  <div>
+                    <p className="text-xs font-bold text-slate-800">{row.name}</p>
+                    <p className="text-[10px] text-slate-500">{row.details}</p>
+                  </div>
                 </div>
+                <span className={`text-xs font-bold ${row.valClass}`}>{row.revenue}</span>
               </div>
-              <span className="text-xs font-bold text-primary">₹2,40,000</span>
-            </div>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Surat Outlet</p>
-                  <p className="text-[10px] text-slate-500">12 Active Jobs • 4 Staff</p>
-                </div>
-              </div>
-              <span className="text-xs font-bold text-slate-700">₹1,60,000</span>
-            </div>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Vadodara Hub</p>
-                  <p className="text-[10px] text-slate-500">6 Active Jobs • 3 Staff</p>
-                </div>
-              </div>
-              <span className="text-xs font-bold text-slate-700">₹82,500</span>
-            </div>
+            ))}
           </div>
         </div>
       </div>

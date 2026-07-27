@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
-import GradientUnderline from "../../common/GradientUnderline";
-
-
-const benefits = [
+import GradientUnderline from "../../common/GradientUnderline"; const benefits = [
   "Record customer name, contact details, and vehicle details.",
   "Document vehicle complaints, scratches, and fuel levels.",
   "Assign jobs to specific mechanics/technicians instantly.",
@@ -45,7 +42,7 @@ export default function AWJobCards() {
               ))}
             </ul>
             <Link
-              href="/features/job-cards"
+              href="/features/job-card-management"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
             >
               Explore Digital Job Cards

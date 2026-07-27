@@ -1,4 +1,4 @@
-import AutoRepairShop from "@/src/views/AutoRepairShop";
+import AutoRepairShop from "@/src/views/solutions/AutoRepairShop";
 
 export const metadata = {
   title: "Auto Repair Shop Software in India | GarageSaarthi",

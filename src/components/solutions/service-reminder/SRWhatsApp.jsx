@@ -3,10 +3,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 import { FaCheckCircle } from "react-icons/fa";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
-import { trackEvent } from "@/src/utils/pixel";
-
-
-export default function SRWhatsApp() {
+import { trackEvent } from "@/src/utils/pixel"; export default function SRWhatsApp() {
   const handleTrialClick = () => {
     trackEvent("whatsapp_reminder_cta_click", {
       page_path: "/solutions/service-reminder-software",

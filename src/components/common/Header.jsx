@@ -72,7 +72,7 @@ const Header = () => {
   const featuresMegaMenu = {
     "Workshop Operations": [
       { name: "Workshop Management Dashboard", href: "/features/workshop-management-dashboard" },
-      { name: "Job Card Management", href: "/features/job-cards" },
+      { name: "Job Card Management", href: "/features/job-card-management" },
       { name: "Counter Sales", href: "/features/counter-sales" },
       { name: "Billing & Invoicing", href: "/features/billing" },
       { name: "Inventory Management", href: "/features/inventory" },

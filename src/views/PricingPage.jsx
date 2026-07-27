@@ -1,8 +1,7 @@
 'use client';
 
+import PageLayout from "@/src/components/common/PageLayout";
 import React, { useState, useEffect, useMemo } from 'react';
-import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import PricingHeader from '../components/pricing/PricingHeader';
 import PricingTabs from '../components/pricing/PricingTabs';
 import PricingCard from '../components/pricing/PricingCard';
@@ -60,9 +59,7 @@ export default function PricingPage() {
   }, [plans, selectedPlanId]);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main className="pb-20">
+    <PageLayout className="bg-white">
         <div className=" mx-auto">
           <PricingHeader />
 
@@ -102,12 +99,10 @@ export default function PricingPage() {
           <PricingAccordionFeatures
            />
         </div>
-      </main>
-      <Footer />
       <LifetimeInterestModal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 
       />
-    </div>
+    </PageLayout>
   );
 }

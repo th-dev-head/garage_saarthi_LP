@@ -1,4 +1,4 @@
-import WorkshopManagement from "@/src/views/WorkshopManagement";
+import WorkshopManagement from "@/src/views/solutions/WorkshopManagement";
 
 export const metadata = {
   title: "Workshop Management Software in India | GarageSaarthi",

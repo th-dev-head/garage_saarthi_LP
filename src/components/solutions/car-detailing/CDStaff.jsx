@@ -3,6 +3,37 @@ import Link from "next/link";
 import { FaUserClock, FaCalendarMinus, FaPercent, FaUserShield } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const staffCards = [
+  {
+    icon: FaUserClock,
+    title: "Track Staff Attendance",
+    desc: "Log daily check-in/out times of detailers and office staff on a simple web dashboard.",
+    link: "/features/attendance",
+    linkText: "Explore Attendance"
+  },
+  {
+    icon: FaCalendarMinus,
+    title: "Manage Leave Records",
+    desc: "Monitor leave history, sick days, and vacation parameters to schedule shift coverage.",
+    link: "/features/leave-management",
+    linkText: "Explore Leaves"
+  },
+  {
+    icon: FaPercent,
+    title: "Handle Studio Payroll",
+    desc: "Compute net salaries, deduct leaves, and add job commissions automatically based on service job cards.",
+    link: "/features/payroll",
+    linkText: "Explore Payroll"
+  },
+  {
+    icon: FaUserShield,
+    title: "Control User Access",
+    desc: "Create user logins. Restrict billing data or stock details based on employee roles.",
+    link: "/features/user-management",
+    linkText: "Explore Access Controls"
+  }
+];
+
 export default function CDStaff() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -22,77 +53,27 @@ export default function CDStaff() {
 
         {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          {/* Card 1 - Attendance */}
-          <div className="bg-white border border-slate-200/60 rounded-3xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="w-9 h-9 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-sm">
-                <FaUserClock />
+          {staffCards.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="bg-white border border-slate-200/60 rounded-3xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                <div className="space-y-3">
+                  <div className="w-9 h-9 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-sm">
+                    <Icon />
+                  </div>
+                  <h3 className="text-xs font-bold text-slate-900">{item.title}</h3>
+                  <p className="text-[11px] text-slate-500 leading-normal">
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="pt-4 border-t border-slate-100 mt-4">
+                  <Link href={item.link} className="text-xs font-bold text-primary hover:underline">
+                    {item.linkText}
+                  </Link>
+                </div>
               </div>
-              <h3 className="text-xs font-bold text-slate-900">Track Staff Attendance</h3>
-              <p className="text-[11px] text-slate-500 leading-normal">
-                Log daily check-in/out times of detailers and office staff on a simple web dashboard.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-slate-100 mt-4">
-              <Link href="/features/attendance" className="text-xs font-bold text-primary hover:underline">
-                Explore Attendance
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 2 - Leave */}
-          <div className="bg-white border border-slate-200/60 rounded-3xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="w-9 h-9 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-sm">
-                <FaCalendarMinus />
-              </div>
-              <h3 className="text-xs font-bold text-slate-900">Manage Leave Records</h3>
-              <p className="text-[11px] text-slate-500 leading-normal">
-                Monitor leave history, sick days, and vacation parameters to schedule shift coverage.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-slate-100 mt-4">
-              <Link href="/features/leave-management" className="text-xs font-bold text-primary hover:underline">
-                Explore Leaves
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 3 - Payroll */}
-          <div className="bg-white border border-slate-200/60 rounded-3xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="w-9 h-9 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-sm">
-                <FaPercent />
-              </div>
-              <h3 className="text-xs font-bold text-slate-900">Handle Studio Payroll</h3>
-              <p className="text-[11px] text-slate-500 leading-normal">
-                Compute net salaries, deduct leaves, and add job commissions automatically based on service job cards.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-slate-100 mt-4">
-              <Link href="/features/payroll" className="text-xs font-bold text-primary hover:underline">
-                Explore Payroll
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 4 - User Access */}
-          <div className="bg-white border border-slate-200/60 rounded-3xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="w-9 h-9 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-sm">
-                <FaUserShield />
-              </div>
-              <h3 className="text-xs font-bold text-slate-900">Control User Access</h3>
-              <p className="text-[11px] text-slate-500 leading-normal">
-                Create user logins. Restrict billing data or stock details based on employee roles.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-slate-100 mt-4">
-              <Link href="/features/user-management" className="text-xs font-bold text-primary hover:underline">
-                Explore Access Controls
-              </Link>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

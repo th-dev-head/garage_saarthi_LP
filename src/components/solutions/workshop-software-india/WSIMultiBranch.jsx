@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaBuilding, FaExchangeAlt, FaUserLock, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const wsiMultiBranchPillars = [
+  {
+    icon: FaBuilding,
+    title: "Branch Switcher Dashboard",
+    desc: "Toggle between different workshop branches to check real-time job cards, daily revenue collections, and stock balances."
+  },
+  {
+    icon: FaExchangeAlt,
+    title: "Inter-Branch Stock Movement",
+    desc: "Transfer spare parts between workshop branches seamlessly, auditing transit logs and inventory valuation dynamically."
+  },
+  {
+    icon: FaUserLock,
+    title: "Role-Based Access Control",
+    desc: "Configure user permissions so branch managers only access local workshop data while owners retain full network visibility."
+  }
+];
+
 export default function WSIMultiBranch() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,35 +40,20 @@ export default function WSIMultiBranch() {
 
         {/* 3 Grid Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaBuilding />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Branch Switcher Dashboard</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Toggle between different workshop branches to check real-time job cards, daily revenue collections, and stock balances.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaExchangeAlt />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Inter-Branch Stock Movement</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Transfer spare parts between workshop branches seamlessly, auditing transit logs and inventory valuation dynamically.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaUserLock />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Role-Based Access Control</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Configure user permissions so branch managers only access local workshop data while owners retain full network visibility.
-            </p>
-          </div>
+          {wsiMultiBranchPillars.map((pillar, idx) => {
+            const Icon = pillar.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{pillar.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {pillar.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">
@@ -65,3 +68,4 @@ export default function WSIMultiBranch() {
     </section>
   );
 }
+

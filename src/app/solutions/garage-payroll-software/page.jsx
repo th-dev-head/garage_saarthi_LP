@@ -1,4 +1,4 @@
-import GaragePayrollSoftware from "@/src/views/GaragePayrollSoftware";
+import GaragePayrollSoftware from "@/src/views/solutions/GaragePayrollSoftware";
 
 export const metadata = {
   title: "Garage Payroll Software for Workshops | GarageSaarthi",

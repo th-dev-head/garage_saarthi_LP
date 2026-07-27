@@ -1,4 +1,4 @@
-import BikeWorkshopSoftware from "@/src/views/BikeWorkshopSoftware";
+import BikeWorkshopSoftware from "@/src/views/solutions/BikeWorkshopSoftware";
 
 export const metadata = {
   title: "Bike Workshop Software in India | GarageSaarthi",

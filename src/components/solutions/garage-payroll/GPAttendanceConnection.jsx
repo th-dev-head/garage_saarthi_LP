@@ -5,6 +5,11 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const attendanceStats = [
+  { label: "Days Present", value: "26 Days" },
+  { label: "Paid Leave", value: "2 Days" }
+];
+
 export default function GPAttendanceConnection() {
   const handleAttendanceClick = () => {
     trackEvent("payroll_attendance_link_click", {
@@ -30,14 +35,12 @@ export default function GPAttendanceConnection() {
               <p className="text-sm font-bold text-slate-800">Suresh Kumar (Senior Mechanic)</p>
             </div>
             <div className="grid grid-cols-2 gap-4 border-b border-slate-200/60 pb-2">
-              <div>
-                <p className="text-xs text-slate-500">Days Present</p>
-                <p className="text-sm font-bold text-slate-800">26 Days</p>
-              </div>
-              <div>
-                <p className="text-xs text-slate-500">Paid Leave</p>
-                <p className="text-sm font-bold text-slate-800">2 Days</p>
-              </div>
+              {attendanceStats.map((stat, idx) => (
+                <div key={idx}>
+                  <p className="text-xs text-slate-500">{stat.label}</p>
+                  <p className="text-sm font-bold text-slate-800">{stat.value}</p>
+                </div>
+              ))}
             </div>
             <div>
               <p className="text-xs text-slate-500">Attendance Period</p>
@@ -74,3 +77,4 @@ export default function GPAttendanceConnection() {
     </section>
   );
 }
+

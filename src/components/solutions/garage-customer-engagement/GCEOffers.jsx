@@ -3,6 +3,27 @@ import Link from "next/link";
 import { FaTags, FaPercent } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const offerCards = [
+  {
+    badgeText: "Festive Special",
+    badgeClass: "bg-primary/10 text-primary font-bold px-2 py-0.5 rounded text-[8px] uppercase tracking-wider",
+    iconBg: "bg-orange-100 text-primary",
+    icon: FaTags,
+    title: "Monsoon Check-up",
+    desc: "Free wiper blades change + washing with every general maintenance.",
+    code: "CODE: RAIN100"
+  },
+  {
+    badgeText: "Loyalty Perk",
+    badgeClass: "bg-green-100 text-green-700 font-bold px-2 py-0.5 rounded text-[8px] uppercase tracking-wider",
+    iconBg: "bg-green-100 text-green-700",
+    icon: FaPercent,
+    title: "Wheel Alignment Free",
+    desc: "Complimentary wheel alignment and balancing for 3rd service visits.",
+    code: "CODE: LOYALTYALIGN"
+  }
+];
+
 export default function GCEOffers() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -41,37 +62,24 @@ export default function GCEOffers() {
               Active Campaigns
             </span>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans text-xs">
-              
-              {/* Offer Card 1 */}
-              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-3 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-12 h-12 bg-orange-100 rounded-bl-full flex items-center justify-center text-primary font-bold text-[10px]">
-                  <FaTags className="w-3.5 h-3.5" />
-                </div>
-                <span className="bg-primary/10 text-primary font-bold px-2 py-0.5 rounded text-[8px] uppercase tracking-wider">
-                  Festive Special
-                </span>
-                <h4 className="font-bold text-slate-900 text-sm">Monsoon Check-up</h4>
-                <p className="text-[10px] text-slate-500">Free wiper blades change + washing with every general maintenance.</p>
-                <div className="bg-slate-50 p-2 rounded-xl text-[9px] font-bold text-slate-700 text-center border border-dashed border-slate-300">
-                  CODE: RAIN100
-                </div>
-              </div>
-
-              {/* Offer Card 2 */}
-              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-3 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-12 h-12 bg-green-100 rounded-bl-full flex items-center justify-center text-green-700 font-bold text-[10px]">
-                  <FaPercent className="w-3.5 h-3.5" />
-                </div>
-                <span className="bg-green-100 text-green-700 font-bold px-2 py-0.5 rounded text-[8px] uppercase tracking-wider">
-                  Loyalty Perk
-                </span>
-                <h4 className="font-bold text-slate-900 text-sm">Wheel Alignment Free</h4>
-                <p className="text-[10px] text-slate-500">Complimentary wheel alignment and balancing for 3rd service visits.</p>
-                <div className="bg-slate-50 p-2 rounded-xl text-[9px] font-bold text-slate-700 text-center border border-dashed border-slate-300">
-                  CODE: LOYALTYALIGN
-                </div>
-              </div>
-
+              {offerCards.map((offer, idx) => {
+                const Icon = offer.icon;
+                return (
+                  <div key={idx} className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-3 relative overflow-hidden">
+                    <div className={`absolute top-0 right-0 w-12 h-12 ${offer.iconBg} rounded-bl-full flex items-center justify-center font-bold text-[10px]`}>
+                      <Icon className="w-3.5 h-3.5" />
+                    </div>
+                    <span className={offer.badgeClass}>
+                      {offer.badgeText}
+                    </span>
+                    <h4 className="font-bold text-slate-900 text-sm">{offer.title}</h4>
+                    <p className="text-[10px] text-slate-500">{offer.desc}</p>
+                    <div className="bg-slate-50 p-2 rounded-xl text-[9px] font-bold text-slate-700 text-center border border-dashed border-slate-300">
+                      {offer.code}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -80,3 +88,4 @@ export default function GCEOffers() {
     </section>
   );
 }
+

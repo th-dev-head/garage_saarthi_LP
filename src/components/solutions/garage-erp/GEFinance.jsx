@@ -2,6 +2,12 @@ import React from "react";
 import { FaUserShield, FaLock } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const caSummaryRows = [
+  { label: "GST Taxable Invoices", value: "142 generated" },
+  { label: "SGST collected", value: "₹14,240" },
+  { label: "CGST collected", value: "₹14,240" }
+];
+
 export default function GEFinance() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -38,18 +44,12 @@ export default function GEFinance() {
               <span>Dedicated Secure CA Login Session Active</span>
             </div>
             <div className="border border-slate-100 p-4 rounded-xl space-y-2">
-              <div className="flex justify-between text-xs text-slate-500">
-                <span>GST Taxable Invoices</span>
-                <span className="font-bold text-slate-700">142 generated</span>
-              </div>
-              <div className="flex justify-between text-xs text-slate-500">
-                <span>SGST collected</span>
-                <span className="font-bold text-slate-700">₹14,240</span>
-              </div>
-              <div className="flex justify-between text-xs text-slate-500">
-                <span>CGST collected</span>
-                <span className="font-bold text-slate-700">₹14,240</span>
-              </div>
+              {caSummaryRows.map((row, idx) => (
+                <div key={idx} className="flex justify-between text-xs text-slate-500">
+                  <span>{row.label}</span>
+                  <span className="font-bold text-slate-700">{row.value}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -57,4 +57,5 @@ export default function GEFinance() {
     </section>
   );
 }
+
 

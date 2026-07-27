@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaWhatsapp, FaBell, FaTag, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const alertFeatures = [
+  {
+    icon: FaBell,
+    title: "Automated Service Alerts",
+    desc: "Set custom service intervals based on mileage or time. GarageSaarthi automatically tracks when each customer vehicle is due and sends reminders without manual follow-up."
+  },
+  {
+    icon: FaWhatsapp,
+    title: "WhatsApp Customer Follow-Up",
+    desc: "Send personalized service reminder messages directly to customers via WhatsApp. Include your garage name, contact number, and address for easy reconnection."
+  },
+  {
+    icon: FaTag,
+    title: "Offers and Promotions",
+    desc: "Send seasonal offers and promotional messages to your customer base. Keep your car garage visible and encourage repeat visits with targeted communication."
+  }
+];
+
 export default function CGServiceAlerts() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -24,39 +42,22 @@ export default function CGServiceAlerts() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Feature Blocks */}
           <div className="space-y-8">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary">
-                <FaBell className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Automated Service Alerts</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Set custom service intervals based on mileage or time. GarageSaarthi automatically tracks when each customer vehicle is due and sends reminders without manual follow-up.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary">
-                <FaWhatsapp className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">WhatsApp Customer Follow-Up</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Send personalized service reminder messages directly to customers via WhatsApp. Include your garage name, contact number, and address for easy reconnection.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary">
-                <FaTag className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Offers and Promotions</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Send seasonal offers and promotional messages to your customer base. Keep your car garage visible and encourage repeat visits with targeted communication.
-                </p>
-              </div>
-            </div>
+            {alertFeatures.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1">{item.title}</h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
 
             <div className="flex flex-wrap gap-4">
               <Link

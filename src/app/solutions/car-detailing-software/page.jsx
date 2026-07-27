@@ -1,4 +1,4 @@
-import CarDetailingSoftware from "@/src/views/CarDetailingSoftware";
+import CarDetailingSoftware from "@/src/views/solutions/CarDetailingSoftware";
 
 export const metadata = {
   title: "Car Detailing Software for Detailing Shops | GarageSaarthi",

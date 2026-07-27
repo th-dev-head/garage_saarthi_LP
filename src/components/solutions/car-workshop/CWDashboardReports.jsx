@@ -32,7 +32,7 @@ export default function CWDashboardReports() {
               <h3 className="text-base font-bold text-slate-800">Car Workshop Dashboard</h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
                 Check active job status counts, today's collections, and pending delivery schedules. Explore{" "}
-                <Link href="/features/dashboard" onClick={() => handleLinkClick("Dashboard Feature Link", "/features/dashboard")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/workshop-management-dashboard" onClick={() => handleLinkClick("Dashboard Feature Link", "/features/workshop-management-dashboard")} className="text-primary font-semibold hover:underline">
                   Dashboard
                 </Link>.
               </p>

@@ -1,7 +1,20 @@
 import React from "react";
 import Link from "next/link";
-import { FaNetworkWired, FaBoxes, FaEye, FaArrowRight } from "react-icons/fa";
+import { FaNetworkWired, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
+
+const branchDirectory = [
+  {
+    name: "Branch A (Mumbai Central)",
+    spares: "120 Spares",
+    details: "Spark Plugs: 12 Units | Engine Oils: 45 Ltr"
+  },
+  {
+    name: "Branch B (Thane West)",
+    spares: "85 Spares",
+    details: "Spark Plugs: 4 Units (Low) | Engine Oils: 12 Ltr"
+  }
+];
 
 export default function GIMultiBranch() {
   return (
@@ -15,21 +28,15 @@ export default function GIMultiBranch() {
           </h4>
 
           <div className="space-y-4">
-            <div className="bg-white p-3 rounded-xl border border-slate-200/80 text-xs">
-              <div className="flex justify-between items-center mb-1">
-                <span className="font-bold text-slate-800">Branch A (Mumbai Central)</span>
-                <span className="text-[10px] text-green-600 bg-green-50 px-2 py-0.5 rounded-full font-bold">120 Spares</span>
+            {branchDirectory.map((branch, idx) => (
+              <div key={idx} className="bg-white p-3 rounded-xl border border-slate-200/80 text-xs">
+                <div className="flex justify-between items-center mb-1">
+                  <span className="font-bold text-slate-800">{branch.name}</span>
+                  <span className="text-[10px] text-green-600 bg-green-50 px-2 py-0.5 rounded-full font-bold">{branch.spares}</span>
+                </div>
+                <p className="text-[10px] text-slate-500">{branch.details}</p>
               </div>
-              <p className="text-[10px] text-slate-500">Spark Plugs: 12 Units | Engine Oils: 45 Ltr</p>
-            </div>
-
-            <div className="bg-white p-3 rounded-xl border border-slate-200/80 text-xs">
-              <div className="flex justify-between items-center mb-1">
-                <span className="font-bold text-slate-800">Branch B (Thane West)</span>
-                <span className="text-[10px] text-green-600 bg-green-50 px-2 py-0.5 rounded-full font-bold">85 Spares</span>
-              </div>
-              <p className="text-[10px] text-slate-500">Spark Plugs: 4 Units (Low) | Engine Oils: 12 Ltr</p>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -63,4 +70,5 @@ export default function GIMultiBranch() {
     </section>
   );
 }
+
 

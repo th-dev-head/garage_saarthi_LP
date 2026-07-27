@@ -3,6 +3,30 @@ import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const workflowSteps = [
+  {
+    title: "Digital Job Cards",
+    desc: "Log services and repair activities on our web or mobile app dashboard. Explore ",
+    href: "/features/job-card-management",
+    linkText: "Digital Job Cards",
+    label: "Job Cards Feature Link"
+  },
+  {
+    title: "Customer Records",
+    desc: "Track phone numbers, billing profiles, and active cars centrally. Explore ",
+    href: "/features/customers",
+    linkText: "Customer Records",
+    label: "Customers Feature Link"
+  },
+  {
+    title: "Vehicle History",
+    desc: "Review past invoice records, spare part bills, and checklists. Explore ",
+    href: "/features/vehicles",
+    linkText: "Vehicle History",
+    label: "Vehicles Feature Link"
+  }
+];
+
 export default function CWJobCardWorkflow() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
@@ -50,35 +74,21 @@ export default function CWJobCardWorkflow() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-            <div className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800">Digital Job Cards</h3>
-              <p className="text-slate-500 text-xs leading-relaxed">
-                Log services and repair activities on our web or mobile app dashboard. Explore{" "}
-                <Link href="/features/job-cards" onClick={() => handleLinkClick("Job Cards Feature Link", "/features/job-cards")} className="text-primary font-semibold hover:underline">
-                  Digital Job Cards
-                </Link>.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800">Customer Records</h3>
-              <p className="text-slate-500 text-xs leading-relaxed">
-                Track phone numbers, billing profiles, and active cars centrally. Explore{" "}
-                <Link href="/features/customers" onClick={() => handleLinkClick("Customers Feature Link", "/features/customers")} className="text-primary font-semibold hover:underline">
-                  Customer Records
-                </Link>.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800">Vehicle History</h3>
-              <p className="text-slate-500 text-xs leading-relaxed">
-                Review past invoice records, spare part bills, and checklists. Explore{" "}
-                <Link href="/features/vehicles" onClick={() => handleLinkClick("Vehicles Feature Link", "/features/vehicles")} className="text-primary font-semibold hover:underline">
-                  Vehicle History
-                </Link>.
-              </p>
-            </div>
+            {workflowSteps.map((step, idx) => (
+              <div key={idx} className="space-y-2">
+                <h3 className="text-sm font-bold text-slate-800">{step.title}</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">
+                  {step.desc}
+                  <Link
+                    href={step.href}
+                    onClick={() => handleLinkClick(step.label, step.href)}
+                    className="text-primary font-semibold hover:underline"
+                  >
+                    {step.linkText}
+                  </Link>.
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

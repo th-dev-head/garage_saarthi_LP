@@ -11,7 +11,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Create and assign repair jobs digitally. Refer to features on{" "}
-          <Link href="/features/job-cards" className="text-primary font-bold hover:underline">
+          <Link href="/features/job-card-management" className="text-primary font-bold hover:underline">
             Digital Job Card Management
           </Link>.
         </>

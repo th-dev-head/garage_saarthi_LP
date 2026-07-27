@@ -5,6 +5,11 @@ import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const syncPlatforms = [
+  { icon: "💻", title: "Web Portal Dashboard", desc: "Chrome, Safari & Desktop Access", badgeText: "Connected" },
+  { icon: "📱", title: "Android Garage Saarthi App", desc: "Mechanic & Mobile Advisor View", badgeText: "Connected" }
+];
+
 export default function MBWebMobile() {
   const handleTrialClick = () => {
     trackEvent("multi_branch_trial_cta_click", {
@@ -41,27 +46,18 @@ export default function MBWebMobile() {
 
           {/* Sync Platform Cards Mockup */}
           <div className="space-y-2.5">
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-lg">💻</span>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Web Portal Dashboard</p>
-                  <p className="text-[10px] text-slate-500">Chrome, Safari & Desktop Access</p>
+            {syncPlatforms.map((plat, idx) => (
+              <div key={idx} className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg">{plat.icon}</span>
+                  <div>
+                    <p className="text-xs font-bold text-slate-800">{plat.title}</p>
+                    <p className="text-[10px] text-slate-500">{plat.desc}</p>
+                  </div>
                 </div>
+                <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">{plat.badgeText}</span>
               </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Connected</span>
-            </div>
-
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-lg">📱</span>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Android Garage Saarthi App</p>
-                  <p className="text-[10px] text-slate-500">Mechanic & Mobile Advisor View</p>
-                </div>
-              </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Connected</span>
-            </div>
+            ))}
           </div>
         </div>
         <div className="lg:col-span-7 space-y-6">

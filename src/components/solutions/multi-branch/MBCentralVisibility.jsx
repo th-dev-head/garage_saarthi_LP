@@ -1,6 +1,12 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const branchPerformanceList = [
+  { code: "B1", badgeStyle: "bg-primary/10 text-primary", name: "Ahmedabad Main", details: "24 Active Jobs • 8 Mechanics", revenue: "₹2.40 Lakh" },
+  { code: "B2", badgeStyle: "bg-blue-50 text-blue-600", name: "Surat Workshop", details: "12 Active Jobs • 4 Mechanics", revenue: "₹1.60 Lakh" },
+  { code: "B3", badgeStyle: "bg-amber-50 text-amber-600", name: "Vadodara Hub", details: "6 Active Jobs • 3 Mechanics", revenue: "₹82,500" }
+];
+
 export default function MBCentralVisibility() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -49,57 +55,23 @@ export default function MBCentralVisibility() {
           {/* Branch Performance Summary */}
           <div className="space-y-2 pt-1">
             <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Branch Performance</p>
-            
-            {/* Branch 1 */}
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50/80 border border-slate-100 hover:border-slate-200 transition-all">
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-primary/10 text-primary font-bold text-xs flex items-center justify-center">
-                  B1
+            {branchPerformanceList.map((branch, idx) => (
+              <div key={idx} className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50/80 border border-slate-100 hover:border-slate-200 transition-all">
+                <div className="flex items-center gap-2.5">
+                  <div className={`w-7 h-7 rounded-lg font-bold text-xs flex items-center justify-center ${branch.badgeStyle}`}>
+                    {branch.code}
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-slate-800">{branch.name}</p>
+                    <p className="text-[10px] text-slate-500">{branch.details}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Ahmedabad Main</p>
-                  <p className="text-[10px] text-slate-500">24 Active Jobs • 8 Mechanics</p>
-                </div>
-              </div>
-              <div className="text-right">
-                <p className="text-xs font-bold text-slate-800">₹2.40 Lakh</p>
-                <span className="text-[9px] text-emerald-600 font-semibold">Live</span>
-              </div>
-            </div>
-
-            {/* Branch 2 */}
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50/80 border border-slate-100 hover:border-slate-200 transition-all">
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-blue-50 text-blue-600 font-bold text-xs flex items-center justify-center">
-                  B2
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Surat Workshop</p>
-                  <p className="text-[10px] text-slate-500">12 Active Jobs • 4 Mechanics</p>
+                <div className="text-right">
+                  <p className="text-xs font-bold text-slate-800">{branch.revenue}</p>
+                  <span className="text-[9px] text-emerald-600 font-semibold">Live</span>
                 </div>
               </div>
-              <div className="text-right">
-                <p className="text-xs font-bold text-slate-800">₹1.60 Lakh</p>
-                <span className="text-[9px] text-emerald-600 font-semibold">Live</span>
-              </div>
-            </div>
-
-            {/* Branch 3 */}
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50/80 border border-slate-100 hover:border-slate-200 transition-all">
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-amber-50 text-amber-600 font-bold text-xs flex items-center justify-center">
-                  B3
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Vadodara Hub</p>
-                  <p className="text-[10px] text-slate-500">6 Active Jobs • 3 Mechanics</p>
-                </div>
-              </div>
-              <div className="text-right">
-                <p className="text-xs font-bold text-slate-800">₹82,500</p>
-                <span className="text-[9px] text-emerald-600 font-semibold">Live</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

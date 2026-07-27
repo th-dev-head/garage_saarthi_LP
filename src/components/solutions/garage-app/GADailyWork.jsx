@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { 
-  FaClipboardList, FaUsers, FaCar, FaBoxOpen, 
-  FaFileInvoiceDollar, FaUserClock, FaWallet, 
-  FaBell, FaChartBar, FaArrowRight 
+import {
+  FaClipboardList, FaUsers, FaCar, FaBoxOpen,
+  FaFileInvoiceDollar, FaUserClock, FaWallet,
+  FaBell, FaChartBar, FaArrowRight
 } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -12,7 +12,7 @@ const workflows = [
     icon: <FaClipboardList />,
     title: "Create and Manage Job Cards",
     desc: "Record customer complaints, scratches, and fuel levels on digital sheets.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
     btnText: "Explore Digital Job Cards"
   },
   {
@@ -77,7 +77,7 @@ export default function GADailyWork() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">

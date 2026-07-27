@@ -3,6 +3,34 @@ import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const staffFeatures = [
+  {
+    title: "Attendance & Leaves",
+    descBefore: "Log daily check-ins online. Explore ",
+    links: [
+      { href: "/features/attendance", label: "Attendance Feature Link", text: "Attendance" },
+      { href: "/features/leave-management", label: "Leaves Feature Link", text: "Leaves", prefix: " and " }
+    ],
+    descAfter: "."
+  },
+  {
+    title: "Workshop Payroll",
+    descBefore: "Manage commissions & salaries. Explore ",
+    links: [
+      { href: "/features/payroll", label: "Payroll Feature Link", text: "Payroll" }
+    ],
+    descAfter: "."
+  },
+  {
+    title: "User Access",
+    descBefore: "Configure staff login profiles. Explore ",
+    links: [
+      { href: "/features/user-management", label: "User Management Link", text: "User Permissions" }
+    ],
+    descAfter: "."
+  }
+];
+
 export default function CWStaffManagement() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
@@ -47,39 +75,27 @@ export default function CWStaffManagement() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-            <div className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800">Attendance & Leaves</h3>
-              <p className="text-slate-500 text-xs leading-relaxed font-normal">
-                Log daily check-ins online. Explore{" "}
-                <Link href="/features/attendance" onClick={() => handleLinkClick("Attendance Feature Link", "/features/attendance")} className="text-primary font-semibold hover:underline">
-                  Attendance
-                </Link>{" "}
-                and{" "}
-                <Link href="/features/leave-management" onClick={() => handleLinkClick("Leaves Feature Link", "/features/leave-management")} className="text-primary font-semibold hover:underline">
-                  Leaves
-                </Link>.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800">Workshop Payroll</h3>
-              <p className="text-slate-500 text-xs leading-relaxed font-normal">
-                Manage commissions & salaries. Explore{" "}
-                <Link href="/features/payroll" onClick={() => handleLinkClick("Payroll Feature Link", "/features/payroll")} className="text-primary font-semibold hover:underline">
-                  Payroll
-                </Link>.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-sm font-bold text-slate-800">User Access</h3>
-              <p className="text-slate-500 text-xs leading-relaxed font-normal">
-                Configure staff login profiles. Explore{" "}
-                <Link href="/features/user-management" onClick={() => handleLinkClick("User Management Link", "/features/user-management")} className="text-primary font-semibold hover:underline">
-                  User Permissions
-                </Link>.
-              </p>
-            </div>
+            {staffFeatures.map((feature, idx) => (
+              <div key={idx} className="space-y-2">
+                <h3 className="text-sm font-bold text-slate-800">{feature.title}</h3>
+                <p className="text-slate-500 text-xs leading-relaxed font-normal">
+                  {feature.descBefore}
+                  {feature.links.map((link, lIdx) => (
+                    <React.Fragment key={lIdx}>
+                      {link.prefix}
+                      <Link
+                        href={link.href}
+                        onClick={() => handleLinkClick(link.label, link.href)}
+                        className="text-primary font-semibold hover:underline"
+                      >
+                        {link.text}
+                      </Link>
+                    </React.Fragment>
+                  ))}
+                  {feature.descAfter}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

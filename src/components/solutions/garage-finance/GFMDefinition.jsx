@@ -4,6 +4,12 @@ import Link from "next/link";
 import Button from "../../common/Button";
 import { trackEvent } from "@/src/utils/pixel";
 
+const challenges = [
+  { isPositive: false, title: "Manual calculations:", desc: "High risk of errors in writing down income and daily expenses." },
+  { isPositive: false, title: "Scattered payments:", desc: "No centralized record of pending client and supplier dues." },
+  { isPositive: true, title: "Connected operations:", desc: "Auto-link job card payments directly into financial dashboards." }
+];
+
 export default function GFMDefinition() {
   const handleFeatureClick = () => {
     trackEvent("finance_feature_click", {
@@ -41,21 +47,18 @@ export default function GFMDefinition() {
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Financial Challenges Solved</h3>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Manual calculations:</strong> High risk of errors in writing down income and daily expenses.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Scattered payments:</strong> No centralized record of pending client and supplier dues.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-green-500 font-bold">✓</span>
-              <span><strong>Connected operations:</strong> Auto-link job card payments directly into financial dashboards.</span>
-            </li>
+            {challenges.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-2.5">
+                <span className={item.isPositive ? "text-green-500 font-bold" : "text-red-500 font-bold"}>
+                  {item.isPositive ? "✓" : "✕"}
+                </span>
+                <span><strong>{item.title}</strong> {item.desc}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     </section>
   );
 }
+

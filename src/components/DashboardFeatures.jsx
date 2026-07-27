@@ -5,7 +5,6 @@ import JobIcon from "../assets/icons/Job.svg";
 import DashboardIcon from "../assets/icons/Gdashboard.svg";
 import FinanceIcon from "../assets/icons/Gfinance.svg";
 import PortalIcon from "../assets/icons/Portal.svg";
-import GarageIcon from "../assets/icons/Garage.svg";
 import PaymentsIcon from "../assets/icons/Payments.svg";
 import InventoryIcon from "../assets/icons/Inventory.svg";
 import WhatsAppIcon from "../assets/icons/WhatsApp.svg";
@@ -18,7 +17,7 @@ const features = [
     icon: JobIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/job-cards"
+    link: "/features/job-card-management"
   },
   {
     title: "Real-time Dashboard",
@@ -26,7 +25,7 @@ const features = [
     icon: DashboardIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/dashboard"
+    link: "/features/workshop-management-dashboard"
   },
   {
     title: "Counter Sales",
@@ -139,7 +138,7 @@ const DashboardFeatures = () => {
                     {feature.description}
                   </p>
                 </div>
-                
+
                 <span className="text-primary text-xs font-bold mt-4 inline-flex items-center gap-1">
                   Explore Feature <HiArrowRight className="w-3.5 h-3.5" />
                 </span>

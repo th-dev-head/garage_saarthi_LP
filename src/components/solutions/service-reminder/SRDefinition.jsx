@@ -1,6 +1,12 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const alertsComparison = [
+  { isPositive: false, title: "Paper registers & diaries:", desc: "Easily misplaced and hard to search." },
+  { isPositive: false, title: "Excel spreadsheets:", desc: "Requires manual updates and has no proactive alert triggers." },
+  { isPositive: true, title: "GarageSaarthi System:", desc: "Automated alerts connected directly to customer files and vehicle records." }
+];
+
 export default function SRDefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,18 +28,14 @@ export default function SRDefinition() {
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm">
           <h3 className="text-lg font-bold text-text-dark mb-4">Manual vs. Digital Alerts</h3>
           <ul className="space-y-4 text-xs md:text-sm text-slate-600">
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Paper registers & diaries:</strong> Easily misplaced and hard to search.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Excel spreadsheets:</strong> Requires manual updates and has no proactive alert triggers.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-green-500 font-bold">✓</span>
-              <span><strong>GarageSaarthi System:</strong> Automated alerts connected directly to customer files and vehicle records.</span>
-            </li>
+            {alertsComparison.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-2.5">
+                <span className={item.isPositive ? "text-green-500 font-bold" : "text-red-500 font-bold"}>
+                  {item.isPositive ? "✓" : "✕"}
+                </span>
+                <span><strong>{item.title}</strong> {item.desc}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

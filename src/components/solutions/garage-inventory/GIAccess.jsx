@@ -6,6 +6,21 @@ import { trackEvent } from "@/src/utils/pixel";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const accessPlatforms = [
+  {
+    icon: FaLaptop,
+    iconClass: "text-primary w-5 h-5 flex-shrink-0",
+    title: "Desktop Web Dashboard",
+    desc: "Perfect for desk-based billing, supplier check-in logs, and audits."
+  },
+  {
+    icon: FaAndroid,
+    iconClass: "text-green-500 w-5 h-5 flex-shrink-0",
+    title: "Android Mobile Application",
+    desc: "Advisors check items at the vehicle racks and scan stock on-the-go."
+  }
+];
+
 export default function GIAccess() {
   const handleTrialClick = () => {
     trackEvent("inventory_trial_cta_click", {
@@ -39,21 +54,18 @@ export default function GIAccess() {
           </h4>
 
           <div className="space-y-4">
-            <div className="flex gap-3 items-center bg-white p-3 rounded-xl border border-slate-200/60 text-xs">
-              <FaLaptop className="text-primary w-5 h-5 flex-shrink-0" />
-              <div>
-                <span className="font-bold text-slate-800 block">Desktop Web Dashboard</span>
-                <span className="text-[10px] text-slate-500">Perfect for desk-based billing, supplier check-in logs, and audits.</span>
-              </div>
-            </div>
-
-            <div className="flex gap-3 items-center bg-white p-3 rounded-xl border border-slate-200/60 text-xs">
-              <FaAndroid className="text-green-500 w-5 h-5 flex-shrink-0" />
-              <div>
-                <span className="font-bold text-slate-800 block">Android Mobile Application</span>
-                <span className="text-[10px] text-slate-500">Advisors check items at the vehicle racks and scan stock on-the-go.</span>
-              </div>
-            </div>
+            {accessPlatforms.map((platform, idx) => {
+              const Icon = platform.icon;
+              return (
+                <div key={idx} className="flex gap-3 items-center bg-white p-3 rounded-xl border border-slate-200/60 text-xs">
+                  <Icon className={platform.iconClass} />
+                  <div>
+                    <span className="font-bold text-slate-800 block">{platform.title}</span>
+                    <span className="text-[10px] text-slate-500">{platform.desc}</span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -93,4 +105,5 @@ export default function GIAccess() {
     </section>
   );
 }
+
 

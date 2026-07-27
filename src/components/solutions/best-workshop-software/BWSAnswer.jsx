@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaCogs, FaProjectDiagram, FaBalanceScale } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const evaluationPillars = [
+  {
+    icon: FaCogs,
+    title: "Eliminate Disconnected Manual Work",
+    desc: "Replace fragmented notebooks, WhatsApp chats, and paper job cards with one central system that tracks vehicle entry, labor estimates, and parts allocation automatically."
+  },
+  {
+    icon: FaProjectDiagram,
+    title: "Connect Bay Floor & Front Office",
+    desc: "Synchronize mechanics on the workshop floor with front-office billing clerks, inventory managers, and customer service follow-up staff in real time."
+  },
+  {
+    icon: FaBalanceScale,
+    title: "Support Local Indian Operations",
+    desc: "Ensure software supports custom GST billing, invoice series, CA export access, WhatsApp alert automations, mechanic labor commissions, and local pricing."
+  }
+];
+
 export default function BWSAnswer() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,35 +40,20 @@ export default function BWSAnswer() {
 
         {/* Evaluation Pillars Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
-              <FaCogs />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">Eliminate Disconnected Manual Work</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Replace fragmented notebooks, WhatsApp chats, and paper job cards with one central system that tracks vehicle entry, labor estimates, and parts allocation automatically.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
-              <FaProjectDiagram />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">Connect Bay Floor & Front Office</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Synchronize mechanics on the workshop floor with front-office billing clerks, inventory managers, and customer service follow-up staff in real time.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
-              <FaBalanceScale />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">Support Local Indian Operations</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Ensure software supports custom GST billing, invoice series, CA export access, WhatsApp alert automations, mechanic labor commissions, and local pricing.
-            </p>
-          </div>
+          {evaluationPillars.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900 mb-2">{item.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         {/* Link callout */}

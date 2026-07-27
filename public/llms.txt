@@ -12,7 +12,7 @@ GarageSaarthi is an all-in-one garage management software platform built for aut
 - [Multi-Branch Management](https://www.garagesaarthi.com/solutions/multi-branch-garage-software) – Centralized control across multiple garage locations.
 - [Staff & Mechanic Management](https://www.garagesaarthi.com/solutions/garage-attendance-software) – Track attendance, payroll, and productivity.
 - [Finance & Accounting](https://www.garagesaarthi.com/solutions/garage-accounting-software) – Monitor P&L, expenses, and CA-ready reports.
-- [Real-Time Dashboard](https://www.garagesaarthi.com/features/dashboard) – Live insights into revenue, jobs, and collections.
+- [Real-Time Dashboard](https://www.garagesaarthi.com/features/workshop-management-dashboard) – Live insights into revenue, jobs, and collections.
 - [WhatsApp Notifications](https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software) – Auto-send bookings, invoices, and alerts via WhatsApp.
 
 ## Solutions by Workshop Type

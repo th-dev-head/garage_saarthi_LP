@@ -1,4 +1,4 @@
-import BestWorkshopManagementSoftware from "@/src/views/BestWorkshopManagementSoftware";
+import BestWorkshopManagementSoftware from "@/src/views/solutions/BestWorkshopManagementSoftware";
 
 export const metadata = {
   title: "Best Workshop Management Software in India | GarageSaarthi",

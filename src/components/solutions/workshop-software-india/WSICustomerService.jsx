@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaAddressCard, FaCar, FaBell, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const wsiCustomerCards = [
+  {
+    icon: FaAddressCard,
+    title: "Customer Profiles",
+    desc: "Store customer phone numbers, names, address details, and contact preferences linked directly to their vehicles."
+  },
+  {
+    icon: FaCar,
+    title: "Permanent Service History",
+    desc: "Review past vehicle repair logs, odometer readings, and replaced spare parts during subsequent workshop visits."
+  },
+  {
+    icon: FaBell,
+    title: "Automated Service Alerts",
+    desc: "Schedule upcoming periodic maintenance dates and trigger WhatsApp service due notifications automatically."
+  }
+];
+
 export default function WSICustomerService() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -22,35 +40,20 @@ export default function WSICustomerService() {
 
         {/* 3 Grid Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaAddressCard />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Customer Profiles</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Store customer phone numbers, names, address details, and contact preferences linked directly to their vehicles.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaCar />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Permanent Service History</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Review past vehicle repair logs, odometer readings, and replaced spare parts during subsequent workshop visits.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaBell />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Automated Service Alerts</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Schedule upcoming periodic maintenance dates and trigger WhatsApp service due notifications automatically.
-            </p>
-          </div>
+          {wsiCustomerCards.map((card, idx) => {
+            const Icon = card.icon;
+            return (
+              <div key={idx} className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{card.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">
@@ -65,3 +68,4 @@ export default function WSICustomerService() {
     </section>
   );
 }
+

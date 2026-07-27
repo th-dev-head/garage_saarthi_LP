@@ -1,4 +1,4 @@
-import GarageAccountingSoftware from "@/src/views/GarageAccountingSoftware";
+import GarageAccountingSoftware from "@/src/views/solutions/GarageAccountingSoftware";
 
 export const metadata = {
   title: "Garage Accounting Software for Workshops | GarageSaarthi",

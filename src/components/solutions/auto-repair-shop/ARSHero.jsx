@@ -1,11 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import {FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
-import PlayStoreBadge from "../../common/PlayStoreBadge";
-
-
-export default function ARSHero() {
+import PlayStoreBadge from "../../common/PlayStoreBadge"; export default function ARSHero() {
   return (
     <section className="relative pt-48 pb-24 md:pt-56 md:pb-32 lg:pt-60 px-4 lg:px-15 2xl:px-50 bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white overflow-hidden flex justify-center">
       {/* Decorative blobs */}
@@ -14,7 +11,7 @@ export default function ARSHero() {
 
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
+
           {/* Hero Left Info */}
           <div className="space-y-6">
             <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-2 inline-block">
@@ -30,7 +27,7 @@ export default function ARSHero() {
             <p className="text-slate-300 text-sm md:text-base max-w-xl leading-relaxed">
               GarageSaarthi is an all-in-one auto repair software for Indian repair shops. Handle digital job cards, live repair tracking, spare parts inventory control, GST billing, customer records, and automatic WhatsApp service reminders seamlessly.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Link
                 href={FRONTEND_URL + "/register"}

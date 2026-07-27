@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
+
+const queueRows = [
+  { label: "Remind Method:", value: "Single-Click WhatsApp Integration" },
+  { label: "Tracking:", value: "Logged under Service Alert queue" }
+];
 
 export default function GCEReminders() {
   return (
@@ -34,8 +38,9 @@ export default function GCEReminders() {
                   <span>Due Status</span>
                   <span className="text-red-500 font-medium">Pending WhatsApp Send</span>
                 </div>
-                <p><strong className="text-primary capitalize">Remind Method:</strong> Single-Click WhatsApp Integration</p>
-                <p><strong className="text-primary capitalize">Tracking:</strong> Logged under Service Alert queue</p>
+                {queueRows.map((row, idx) => (
+                  <p key={idx}><strong className="text-primary capitalize">{row.label}</strong> {row.value}</p>
+                ))}
               </div>
 
             </div>
@@ -73,3 +78,4 @@ export default function GCEReminders() {
     </section>
   );
 }
+

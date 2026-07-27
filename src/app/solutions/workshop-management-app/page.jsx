@@ -1,4 +1,4 @@
-import WorkshopManagementApp from "@/src/views/WorkshopManagementApp";
+import WorkshopManagementApp from "@/src/views/solutions/WorkshopManagementApp";
 
 export const metadata = {
   title: "Workshop Management App for Garages | GarageSaarthi",

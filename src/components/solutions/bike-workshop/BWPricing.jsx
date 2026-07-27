@@ -3,7 +3,12 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowRight, FaCheck } from "react-icons/fa";
 import Button from "../../common/Button";
-import GradientUnderline from "../../common/GradientUnderline";
+
+const benefits = [
+  "Full Access to All Features",
+  "Support Web & Android App",
+  "Cancel Anytime, No Questions"
+];
 
 export default function BWPricing() {
   return (
@@ -26,18 +31,12 @@ export default function BWPricing() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto text-left text-xs md:text-sm text-slate-300 pt-4 pb-6">
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-orange-400 flex-shrink-0" />
-              <span>Full Access to All Features</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-orange-400 flex-shrink-0" />
-              <span>Support Web & Android App</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-orange-400 flex-shrink-0" />
-              <span>Cancel Anytime, No Questions</span>
-            </div>
+            {benefits.map((benefit, idx) => (
+              <div key={idx} className="flex items-center gap-2">
+                <FaCheck className="text-orange-400 flex-shrink-0" />
+                <span>{benefit}</span>
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

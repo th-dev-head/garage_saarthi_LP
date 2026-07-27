@@ -1,6 +1,21 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const workOrderCards = [
+  {
+    title: "Garage Work Orders",
+    desc: "Create clear work orders for your mechanics. Specify standard services, instructions, assigned mechanics, and repair priorities."
+  },
+  {
+    title: "Repair Order Management",
+    desc: "Keep customer complaints, diagnostic notes, spare parts issued, and cost estimates structured in a single digital folder."
+  },
+  {
+    title: "Workshop Job Sheets",
+    desc: "Ditch physical paper sheets. Switch to a digital system where your service advisors can modify, review, and update job progress."
+  }
+];
+
 export default function GJCWorkOrders() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -19,27 +34,18 @@ export default function GJCWorkOrders() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-base font-bold text-text-dark mb-3">Garage Work Orders</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Create clear work orders for your mechanics. Specify standard services, instructions, assigned mechanics, and repair priorities.
-            </p>
-          </div>
-          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-base font-bold text-text-dark mb-3">Repair Order Management</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Keep customer complaints, diagnostic notes, spare parts issued, and cost estimates structured in a single digital folder.
-            </p>
-          </div>
-          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-base font-bold text-text-dark mb-3">Workshop Job Sheets</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Ditch physical paper sheets. Switch to a digital system where your service advisors can modify, review, and update job progress.
-            </p>
-          </div>
+          {workOrderCards.map((card, idx) => (
+            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-base font-bold text-text-dark mb-3">{card.title}</h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                {card.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
 

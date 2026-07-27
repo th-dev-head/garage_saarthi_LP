@@ -1,7 +1,46 @@
 import React from "react";
 import Link from "next/link";
-import { FaPhoneAlt, FaSearch } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
+
+const crmPipelineLeads = [
+  {
+    badgeText: "New Lead",
+    badgeClass: "bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full text-[9px] font-bold",
+    name: "Vikram Sharma",
+    query: "Query: Denting & Painting quote",
+    showCallBtn: true
+  },
+  {
+    badgeText: "Follow Up Scheduled",
+    badgeClass: "bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full text-[9px] font-bold",
+    name: "Karan Patel",
+    query: "Follow up date: 24 Jan 2026",
+    showCallBtn: true
+  },
+  {
+    badgeText: "Converted",
+    badgeClass: "bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[9px] font-bold",
+    name: "Siddharth Mehta",
+    query: "Job Card #ARS-2099 Created",
+    amount: "₹8,500"
+  }
+];
+
+const crmFeatures = [
+  {
+    title: "Organize Garage Leads",
+    desc: "Capture incoming vehicle repair inquiries, walk-ins, and online leads in one central dashboard."
+  },
+  {
+    title: "Track Customer Follow-Ups",
+    desc: "Schedule reminders for calls, custom estimates, and feedback. Keep service agents organized."
+  },
+  {
+    title: "Build Better Customer Relationships",
+    desc: "Utilize consolidated customer details to personalize interactions. Link communications directly with workshop history."
+  }
+];
 
 export default function GCECRM() {
   return (
@@ -15,41 +54,22 @@ export default function GCECRM() {
               CRM Follow-Up Pipeline
             </span>
             <div className="space-y-3 font-sans text-xs">
-              
-              {/* Lead Card 1 */}
-              <div className="bg-slate-50 rounded-xl p-3 border border-slate-200 flex justify-between items-start">
-                <div className="space-y-1">
-                  <span className="bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full text-[9px] font-bold">New Lead</span>
-                  <h4 className="font-bold text-slate-900 mt-1">Vikram Sharma</h4>
-                  <p className="text-[10px] text-slate-500">Query: Denting & Painting quote</p>
+              {crmPipelineLeads.map((lead, idx) => (
+                <div key={idx} className="bg-slate-50 rounded-xl p-3 border border-slate-200 flex justify-between items-start">
+                  <div className="space-y-1">
+                    <span className={lead.badgeClass}>{lead.badgeText}</span>
+                    <h4 className="font-bold text-slate-900 mt-1">{lead.name}</h4>
+                    <p className="text-[10px] text-slate-500">{lead.query}</p>
+                  </div>
+                  {lead.showCallBtn ? (
+                    <button className="bg-primary text-white p-2 rounded-full shadow-sm hover:scale-105 transition-transform">
+                      <FaPhoneAlt className="w-2.5 h-2.5" />
+                    </button>
+                  ) : (
+                    <span className="text-[10px] text-green-600 font-bold self-center">{lead.amount}</span>
+                  )}
                 </div>
-                <button className="bg-primary text-white p-2 rounded-full shadow-sm hover:scale-105 transition-transform">
-                  <FaPhoneAlt className="w-2.5 h-2.5" />
-                </button>
-              </div>
-
-              {/* Lead Card 2 */}
-              <div className="bg-slate-50 rounded-xl p-3 border border-slate-200 flex justify-between items-start">
-                <div className="space-y-1">
-                  <span className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full text-[9px] font-bold">Follow Up Scheduled</span>
-                  <h4 className="font-bold text-slate-900 mt-1">Karan Patel</h4>
-                  <p className="text-[10px] text-slate-500">Follow up date: 24 Jan 2026</p>
-                </div>
-                <button className="bg-primary text-white p-2 rounded-full shadow-sm hover:scale-105 transition-transform">
-                  <FaPhoneAlt className="w-2.5 h-2.5" />
-                </button>
-              </div>
-
-              {/* Lead Card 3 */}
-              <div className="bg-slate-50 rounded-xl p-3 border border-slate-200 flex justify-between items-start">
-                <div className="space-y-1">
-                  <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-[9px] font-bold">Converted</span>
-                  <h4 className="font-bold text-slate-900 mt-1">Siddharth Mehta</h4>
-                  <p className="text-[10px] text-slate-500">Job Card #ARS-2099 Created</p>
-                </div>
-                <span className="text-[10px] text-green-600 font-bold self-center">₹8,500</span>
-              </div>
-
+              ))}
             </div>
           </div>
 
@@ -66,26 +86,14 @@ export default function GCECRM() {
             </p>
 
             <div className="space-y-4 pt-2">
-              <div>
-                <h3 className="text-sm font-bold text-slate-900">Organize Garage Leads</h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Capture incoming vehicle repair inquiries, walk-ins, and online leads in one central dashboard.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-bold text-slate-900">Track Customer Follow-Ups</h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Schedule reminders for calls, custom estimates, and feedback. Keep service agents organized.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-bold text-slate-900">Build Better Customer Relationships</h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Utilize consolidated customer details to personalize interactions. Link communications directly with workshop history.
-                </p>
-              </div>
+              {crmFeatures.map((item, idx) => (
+                <div key={idx}>
+                  <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
+                  <p className="text-slate-600 text-xs mt-1 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
             </div>
 
             <div className="pt-4">
@@ -103,3 +111,4 @@ export default function GCECRM() {
     </section>
   );
 }
+

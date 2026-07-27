@@ -1,11 +1,8 @@
 'use client';
 
+import PageLayout from "@/src/components/common/PageLayout";
 import React, { useEffect } from "react";
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
-import ScrollToTop from "../components/common/ScrollToTop";
 
-// Icons
 import JobIcon from "../assets/icons/Job.svg";
 import DashboardIcon from "../assets/icons/Gdashboard.svg";
 import FinanceIcon from "../assets/icons/Gfinance.svg";
@@ -82,9 +79,7 @@ const FeaturesPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FDFDFD]">
-      <Header />
-      
+    <PageLayout className="bg-[#FDFDFD]">
       {/* Page Header */}
       <section className="relative pt-48 pb-20 px-4 flex justify-center bg-slate-50 border-b border-[#EEE]">
         <div className="max-w-7xl w-full text-center">
@@ -100,7 +95,6 @@ const FeaturesPage = () => {
           </p>
         </div>
       </section>
-
       {/* Categories & Features Grid */}
       <section className="py-16 px-4 lg:px-15 2xl:px-50">
         <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full space-y-16">
@@ -144,10 +138,7 @@ const FeaturesPage = () => {
           ))}
         </div>
       </section>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    </PageLayout>
   );
 };
 

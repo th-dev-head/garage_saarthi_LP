@@ -3,6 +3,20 @@ import Link from "next/link";
 import { FaBookOpen, FaLayerGroup, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const paperSetupPoints = [
+  "Paper job sheets that get dirty, misplaced, or torn in repair bays",
+  "Manual stockbooks leading to inventory leakage and unbilled spare parts",
+  "Separate billing software or paper books that delay GST filing",
+  "Loose slips for mechanic attendance and manual salary calculations"
+];
+
+const saarthiPoints = [
+  "Digital job cards created in under a minute on mobile or laptop",
+  "Real-time spare parts stock tracking deducted dynamically on work orders",
+  "GST-compliant invoices with custom billing series & direct WhatsApp sharing",
+  "Mechanic staff attendance, leave management, and job-based commission tracking"
+];
+
 export default function GSIPositioning() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -29,22 +43,12 @@ export default function GSIPositioning() {
               <h3 className="text-base font-bold">The Disconnected Paper & Register Setup</h3>
             </div>
             <ul className="space-y-2 text-xs text-slate-600 leading-relaxed">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-                Paper job sheets that get dirty, misplaced, or torn in repair bays
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-                Manual stockbooks leading to inventory leakage and unbilled spare parts
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-                Separate billing software or paper books that delay GST filing
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-                Loose slips for mechanic attendance and manual salary calculations
-              </li>
+              {paperSetupPoints.map((text, idx) => (
+                <li key={idx} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+                  {text}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -55,22 +59,12 @@ export default function GSIPositioning() {
               <h3 className="text-base font-bold">The Unified GarageSaarthi Solution</h3>
             </div>
             <ul className="space-y-2 text-xs text-slate-700 leading-relaxed font-medium">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Digital job cards created in under a minute on mobile or laptop
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Real-time spare parts stock tracking deducted dynamically on work orders
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                GST-compliant invoices with custom billing series & direct WhatsApp sharing
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Mechanic staff attendance, leave management, and job-based commission tracking
-              </li>
+              {saarthiPoints.map((text, idx) => (
+                <li key={idx} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  {text}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -88,3 +82,4 @@ export default function GSIPositioning() {
     </section>
   );
 }
+

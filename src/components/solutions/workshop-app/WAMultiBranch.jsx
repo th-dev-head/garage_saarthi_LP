@@ -3,6 +3,12 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const multiBranchRegistryRows = [
+  { label: "Branch 1: Katargam (Surat)", val: "₹85,000 Sales Today" },
+  { label: "Branch 2: Adajan (Surat)", val: "₹62,000 Sales Today" },
+  { label: "Total Active Staff", val: "24 employees clocked in" }
+];
+
 export default function WAMultiBranch() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -17,18 +23,12 @@ export default function WAMultiBranch() {
               <span className="text-[10px] text-green-600 bg-green-50 px-2 py-0.5 rounded font-semibold">Online</span>
             </div>
             <div className="space-y-3 text-xs text-slate-600 font-sans">
-              <div className="flex justify-between">
-                <span>Branch 1: Katargam (Surat)</span>
-                <span className="font-semibold text-slate-900">₹85,000 Sales Today</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Branch 2: Adajan (Surat)</span>
-                <span className="font-semibold text-slate-900">₹62,000 Sales Today</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Total Active Staff</span>
-                <span className="font-semibold text-slate-900">24 employees clocked in</span>
-              </div>
+              {multiBranchRegistryRows.map((row, idx) => (
+                <div key={idx} className="flex justify-between">
+                  <span>{row.label}</span>
+                  <span className="font-semibold text-slate-900">{row.val}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -62,4 +62,5 @@ export default function WAMultiBranch() {
     </section>
   );
 }
+
 

@@ -18,6 +18,11 @@ const alertPoints = [
   },
 ];
 
+const truckRemindersPanelList = [
+  { vehicle: "MH-12-XX-9876 (Tipper)", dueText: "Due: Wheel Hub Greasing", status: "3 Days Overdue", statusStyle: "bg-orange-100 text-orange-800" },
+  { vehicle: "HR-55-XX-1122 (Trailer)", dueText: "Due: Brake Line Inspection", status: "Due Tomorrow", statusStyle: "bg-emerald-100 text-emerald-800" }
+];
+
 export default function TWServiceAlerts() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -29,20 +34,15 @@ export default function TWServiceAlerts() {
               Service Reminders Panel
             </h4>
             <div className="space-y-3 text-xs">
-              <div className="bg-white border border-slate-200/30 p-3 rounded-2xl flex justify-between items-center shadow-xs">
-                <div>
-                  <span className="font-bold text-slate-800 block">MH-12-XX-9876 (Tipper)</span>
-                  <span className="text-[10px] text-slate-400">Due: Wheel Hub Greasing</span>
+              {truckRemindersPanelList.map((item, idx) => (
+                <div key={idx} className="bg-white border border-slate-200/30 p-3 rounded-2xl flex justify-between items-center shadow-xs">
+                  <div>
+                    <span className="font-bold text-slate-800 block">{item.vehicle}</span>
+                    <span className="text-[10px] text-slate-400">{item.dueText}</span>
+                  </div>
+                  <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${item.statusStyle}`}>{item.status}</span>
                 </div>
-                <span className="bg-orange-100 text-orange-800 text-[9px] font-bold px-2 py-0.5 rounded-full">3 Days Overdue</span>
-              </div>
-              <div className="bg-white border border-slate-200/30 p-3 rounded-2xl flex justify-between items-center shadow-xs">
-                <div>
-                  <span className="font-bold text-slate-800 block">HR-55-XX-1122 (Trailer)</span>
-                  <span className="text-[10px] text-slate-400">Due: Brake Line Inspection</span>
-                </div>
-                <span className="bg-emerald-100 text-emerald-800 text-[9px] font-bold px-2 py-0.5 rounded-full">Due Tomorrow</span>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -84,3 +84,4 @@ export default function TWServiceAlerts() {
     </section>
   );
 }
+

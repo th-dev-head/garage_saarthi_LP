@@ -1,4 +1,4 @@
-import ServiceReminderSoftware from "@/src/views/ServiceReminderSoftware";
+import ServiceReminderSoftware from "@/src/views/solutions/ServiceReminderSoftware";
 
 export const metadata = {
   title: "Service Reminder Software for Garages | GarageSaarthi",

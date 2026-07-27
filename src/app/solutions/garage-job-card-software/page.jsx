@@ -1,4 +1,4 @@
-import GarageJobCards from "@/src/views/GarageJobCards";
+import GarageJobCards from "@/src/views/solutions/GarageJobCards";
 
 export const metadata = {
   title: "Garage Job Card Software for Workshops | GarageSaarthi",

@@ -1,4 +1,4 @@
-import GarageERPSoftware from "@/src/views/GarageERPSoftware";
+import GarageERPSoftware from "@/src/views/solutions/GarageERPSoftware";
 
 export const metadata = {
   title: "Garage ERP Software for Workshops in India | GarageSaarthi",

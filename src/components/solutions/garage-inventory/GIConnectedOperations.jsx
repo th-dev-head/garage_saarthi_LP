@@ -3,22 +3,43 @@ import Link from "next/link";
 import { FaFileInvoice, FaWrench, FaChartLine } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function GIConnectedOperations() {
-  const syncSteps = [
-    {
-      title: "Part Checked Out",
-      desc: "Advisor adds 1x Engine Oil (Castrol) to active **Job Card #JC-1049**."
-    },
-    {
-      title: "Stock Auto-Deducted",
-      desc: "Centralized **Garage Inventory Management System** reduces Castrol stock count by 1 unit immediately."
-    },
-    {
-      title: "Billing Auto-Populated",
-      desc: "Final **Invoice** automatically includes the spare part description, quantity, price, and GST without dual entry."
-    }
-  ];
+const syncSteps = [
+  {
+    title: "Part Checked Out",
+    desc: "Advisor adds 1x Engine Oil (Castrol) to active **Job Card #JC-1049**."
+  },
+  {
+    title: "Stock Auto-Deducted",
+    desc: "Centralized **Garage Inventory Management System** reduces Castrol stock count by 1 unit immediately."
+  },
+  {
+    title: "Billing Auto-Populated",
+    desc: "Final **Invoice** automatically includes the spare part description, quantity, price, and GST without dual entry."
+  }
+];
 
+const operationsConnections = [
+  {
+    icon: FaWrench,
+    href: "/features/job-card-management",
+    title: "Inventory and Job Cards",
+    desc: "Mechanics assign parts directly from stock to repair cards, auto-calculating retail margins on checkout."
+  },
+  {
+    icon: FaFileInvoice,
+    href: "/features/counter-sales",
+    title: "Inventory and Counter Sales",
+    desc: "Sell spare parts directly to walk-in clients without creating a formal job card repair order."
+  },
+  {
+    icon: FaChartLine,
+    href: "/features/reports",
+    title: "Inventory Reports",
+    desc: "Monitor stock valuation, monthly parts turnover, and high-margin consumables automatically."
+  }
+];
+
+export default function GIConnectedOperations() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -32,7 +53,7 @@ export default function GIConnectedOperations() {
           </h2>
           <div className="space-y-4 text-slate-600 text-sm md:text-base leading-relaxed mb-6">
             <p>
-              Unlike generic, standalone stock-keeping apps, GarageSaarthi's inventory tools are directly synced with active repair orders on your workshop floor. 
+              Unlike generic, standalone stock-keeping apps, GarageSaarthi's inventory tools are directly synced with active repair orders on your workshop floor.
             </p>
             <p>
               When a mechanic uses a replacement spark plug or filter and adds it to a customer's digital job card, the stock count reduces in real-time. This dynamic link prevents duplicate records and saves hours on audits.
@@ -40,50 +61,24 @@ export default function GIConnectedOperations() {
           </div>
 
           <div className="space-y-4">
-            {/* Job Cards connection */}
-            <div className="flex gap-3">
-              <FaWrench className="text-primary w-4 h-4 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-xs font-bold text-slate-900 mb-0.5">
-                  <Link href="/features/job-cards" className="hover:underline text-primary">
-                    Inventory and Job Cards
-                  </Link>
-                </h3>
-                <p className="text-[11px] text-slate-500 leading-normal">
-                  Mechanics assign parts directly from stock to repair cards, auto-calculating retail margins on checkout.
-                </p>
-              </div>
-            </div>
-
-            {/* Counter Sales connection */}
-            <div className="flex gap-3">
-              <FaFileInvoice className="text-primary w-4 h-4 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-xs font-bold text-slate-900 mb-0.5">
-                  <Link href="/features/counter-sales" className="hover:underline text-primary">
-                    Inventory and Counter Sales
-                  </Link>
-                </h3>
-                <p className="text-[11px] text-slate-500 leading-normal">
-                  Sell spare parts directly to walk-in clients without creating a formal job card repair order.
-                </p>
-              </div>
-            </div>
-
-            {/* Reports connection */}
-            <div className="flex gap-3">
-              <FaChartLine className="text-primary w-4 h-4 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-xs font-bold text-slate-900 mb-0.5">
-                  <Link href="/features/reports" className="hover:underline text-primary">
-                    Inventory Reports
-                  </Link>
-                </h3>
-                <p className="text-[11px] text-slate-500 leading-normal">
-                  Monitor stock valuation, monthly parts turnover, and high-margin consumables automatically.
-                </p>
-              </div>
-            </div>
+            {operationsConnections.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div key={idx} className="flex gap-3">
+                  <Icon className="text-primary w-4 h-4 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xs font-bold text-slate-900 mb-0.5">
+                      <Link href={item.href} className="hover:underline text-primary">
+                        {item.title}
+                      </Link>
+                    </h3>
+                    <p className="text-[11px] text-slate-500 leading-normal">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -99,7 +94,7 @@ export default function GIConnectedOperations() {
                 <span className="absolute top-1 w-3 h-3 rounded-full bg-primary shadow-xs" style={{ left: "-31px" }} />
                 <h5 className="text-xs font-bold text-slate-800 mb-1">{step.title}</h5>
                 <p className="text-[10px] text-slate-500 leading-relaxed">
-                  {step.desc.split("**").map((part, index) => 
+                  {step.desc.split("**").map((part, index) =>
                     index % 2 === 1 ? <strong key={index} className="font-semibold text-slate-700">{part}</strong> : part
                   )}
                 </p>

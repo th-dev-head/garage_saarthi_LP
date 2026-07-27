@@ -14,7 +14,7 @@ export default function GPEcosystem() {
   };
 
   const modules = [
-    { name: "Job Cards", url: "/features/job-cards" },
+    { name: "Job Cards", url: "/features/job-card-management" },
     { name: "Inventory", url: "/features/inventory" },
     { name: "Customers", url: "/features/customers" },
     { name: "Vehicles", url: "/features/vehicles" },

@@ -3,6 +3,22 @@ import Link from "next/link";
 import { FaTimesCircle, FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const traditionalWayItems = [
+  "Paper registers that get damaged or misplaced easily.",
+  "Handwritten job cards that mechanics find hard to read.",
+  "WhatsApp chats causing client complaints to get forgotten.",
+  "Loose receipts making billing and payments hard to track.",
+  "Manual phone logs that make customer follow-ups a headache."
+];
+
+const saarthiWayItems = [
+  "Everything saved securely in the cloud instantly.",
+  "Digital job cards accessible on any mechanic's phone.",
+  "Clear customer check-in records with vehicle photos.",
+  "Dynamic billing, parts tracking, and payment history.",
+  "Automated WhatsApp reminders sent with one simple click."
+];
+
 export default function GADefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -30,26 +46,12 @@ export default function GADefinition() {
               <FaTimesCircle className="text-red-600 flex-shrink-0" /> The Traditional Messy Way
             </h3>
             <ul className="space-y-4 text-sm text-slate-600">
-              <li className="flex items-start gap-2.5">
-                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Paper registers that get damaged or misplaced easily.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Handwritten job cards that mechanics find hard to read.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>WhatsApp chats causing client complaints to get forgotten.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Loose receipts making billing and payments hard to track.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Manual phone logs that make customer follow-ups a headache.</span>
-              </li>
+              {traditionalWayItems.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2.5">
+                  <FaTimesCircle className="text-red-500 w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -59,26 +61,12 @@ export default function GADefinition() {
               <FaCheckCircle className="text-primary flex-shrink-0" /> The GarageSaarthi App Way
             </h3>
             <ul className="space-y-4 text-sm text-slate-700 font-medium">
-              <li className="flex items-start gap-2.5">
-                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Everything saved securely in the cloud instantly.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Digital job cards accessible on any mechanic's phone.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Clear customer check-in records with vehicle photos.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Dynamic billing, parts tracking, and payment history.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Automated WhatsApp reminders sent with one simple click.</span>
-              </li>
+              {saarthiWayItems.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2.5">
+                  <FaCheckCircle className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -98,4 +86,5 @@ export default function GADefinition() {
     </section>
   );
 }
+
 

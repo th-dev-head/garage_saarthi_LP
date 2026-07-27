@@ -7,9 +7,9 @@ export default function WATracking() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
+
           {/* Info */}
           <div>
             <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -22,10 +22,10 @@ export default function WATracking() {
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Track live job cards statuses, view cash vs digital payment splits, monitor inventory levels, and check employee clock-in hours directly from a unified live feed.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 items-center mb-6">
               <Link
-                href="/features/dashboard"
+                href="/features/workshop-management-dashboard"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Dashboard Features

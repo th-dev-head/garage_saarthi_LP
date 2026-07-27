@@ -1,6 +1,11 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const trackingStats = [
+  { label: "Active Mechanics Checked-In", count: "8 Present", countClass: "font-bold text-emerald-600" },
+  { label: "Helpers present", count: "3 Present", countClass: "font-bold text-slate-800" }
+];
+
 export default function GAMechanicTracking() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -12,14 +17,12 @@ export default function GAMechanicTracking() {
               <p className="text-sm font-bold text-slate-800">Mechanic Staff Tracking</p>
             </div>
             <div className="space-y-2">
-              <div className="flex justify-between text-xs text-slate-600">
-                <span>Active Mechanics Checked-In</span>
-                <span className="font-bold text-emerald-600">8 Present</span>
-              </div>
-              <div className="flex justify-between text-xs text-slate-600">
-                <span>Helpers present</span>
-                <span className="font-bold text-slate-800">3 Present</span>
-              </div>
+              {trackingStats.map((item, idx) => (
+                <div key={idx} className="flex justify-between text-xs text-slate-600">
+                  <span>{item.label}</span>
+                  <span className={item.countClass}>{item.count}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -42,3 +45,4 @@ export default function GAMechanicTracking() {
     </section>
   );
 }
+

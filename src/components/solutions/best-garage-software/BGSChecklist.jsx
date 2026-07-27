@@ -22,7 +22,7 @@ const checklistItems = [
     title: "Digital Job Card Management",
     question: "Can the software create and manage digital job cards?",
     desc: "Digital job cards record vehicle entry details, initial customer complaints, repair estimates, and parts assignment dynamically, replacing oily paper sheets.",
-    link: "/features/job-cards",
+    link: "/features/job-card-management",
     anchor: "Explore Digital Job Cards",
   },
   {
@@ -103,7 +103,7 @@ const checklistItems = [
     title: "Web and Mobile Access",
     question: "Can the garage owner access software without depending on one PC?",
     desc: "Manage operations from laptop web browsers and on-the-go via the Android mobile app. (iOS app coming soon to the Apple App Store).",
-    link: "/features/dashboard",
+    link: "/features/workshop-management-dashboard",
     anchor: "Explore Cloud & Mobile",
   },
 ];

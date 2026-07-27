@@ -3,12 +3,36 @@ import { FaStar, FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import GradientUnderline from "./GradientUnderline";
 
+const defaultReviews = [
+  {
+    text: "GarageSaarthi eliminated all paper job card errors in our workshop. Customer estimates are shared in 30 seconds on WhatsApp!",
+    initials: "RK",
+    name: "Rajesh Kumar",
+    role: "Owner, Supreme Auto Care",
+    location: "Ahmedabad"
+  },
+  {
+    text: "The real-time dashboard and inventory low-stock alerts helped us prevent spare parts leaks and boost monthly revenue by 25%.",
+    initials: "AS",
+    name: "Amit Sharma",
+    role: "Workshop Manager, Star Motors",
+    location: "Mumbai"
+  },
+  {
+    text: "One-click job card to GST invoice conversion saved hours of manual office work every single evening. Highly recommended!",
+    initials: "VP",
+    name: "Vikram Patel",
+    role: "Founder, Apex Two Wheeler Hub",
+    location: "Surat"
+  }
+];
+
 export default function TestimonialsGrid({
-  title,
-  titleHighlight,
-  subtitle,
-  reviews = [],
-  linkHref = "/customers",
+  title = "Trusted by 1,200+ Garage Owners Across",
+  titleHighlight = "India",
+  subtitle = "Read real experiences from automobile workshop owners, service advisors, and mechanics using GarageSaarthi daily.",
+  reviews = defaultReviews,
+  linkHref = "/solutions/best-garage-management-software",
   linkLabel = "View All Customer Stories",
   bgClass = "bg-slate-50",
 }) {

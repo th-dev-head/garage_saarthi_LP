@@ -1,4 +1,4 @@
-import BestGarageManagementSoftware from "@/src/views/BestGarageManagementSoftware";
+import BestGarageManagementSoftware from "@/src/views/solutions/BestGarageManagementSoftware";
 
 export const metadata = {
   title: "Best Garage Management Software in India | GarageSaarthi",

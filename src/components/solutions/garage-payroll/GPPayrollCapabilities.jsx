@@ -6,6 +6,36 @@ import GradientUnderline from "../../common/GradientUnderline";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 
+const payrollCapabilities = [
+  {
+    icon: "📄",
+    iconBg: "bg-orange-100 text-orange-600",
+    title: "Manage Salary Records",
+    desc: "Maintain clean profiles containing employee salary structures, overtime parameters, and standard commission settings."
+  },
+  {
+    icon: "⚙️",
+    iconBg: "bg-rose-100 text-rose-600",
+    title: "Create & Manage Payroll",
+    desc: "Create monthly or weekly payroll logs, add salary modifications, and monitor payment statuses easily on our payroll system for garage database."
+  },
+  {
+    icon: "📅",
+    iconBg: "bg-emerald-100 text-emerald-600",
+    title: "Maintain Payroll History",
+    desc: "Access previous payouts sheets and commission logs anytime. Filter payroll registers by employee or specific months."
+  },
+  {
+    icon: "👥",
+    iconBg: "bg-blue-100 text-blue-600",
+    title: "Manage Workshop Staff",
+    descPrefix: "Manage permissions so admins, managers, and mechanics see only relevant info. Explore ",
+    linkHref: "/features/user-management",
+    linkText: "User Management",
+    descSuffix: "."
+  }
+];
+
 export default function GPPayrollCapabilities() {
   const handleTrialClick = () => {
     trackEvent("payroll_trial_cta_click", {
@@ -42,48 +72,25 @@ export default function GPPayrollCapabilities() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 text-lg">
-              📄
+          {payrollCapabilities.map((card, idx) => (
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
+              <div className={`w-10 h-10 rounded-2xl flex items-center justify-center text-lg ${card.iconBg}`}>
+                {card.icon}
+              </div>
+              <h3 className="text-base font-bold text-text-dark">{card.title}</h3>
+              <p className="text-slate-500 text-xs leading-relaxed font-normal">
+                {card.desc ? card.desc : (
+                  <>
+                    {card.descPrefix}
+                    <Link href={card.linkHref} onClick={handleLinkClick} className="text-primary hover:underline font-semibold">
+                      {card.linkText}
+                    </Link>
+                    {card.descSuffix}
+                  </>
+                )}
+              </p>
             </div>
-            <h3 className="text-base font-bold text-text-dark">Manage Salary Records</h3>
-            <p className="text-slate-500 text-xs leading-relaxed">
-              Maintain clean profiles containing employee salary structures, overtime parameters, and standard commission settings.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-600 text-lg">
-              ⚙️
-            </div>
-            <h3 className="text-base font-bold text-text-dark">Create & Manage Payroll</h3>
-            <p className="text-slate-500 text-xs leading-relaxed">
-              Create monthly or weekly payroll logs, add salary modifications, and monitor payment statuses easily on our payroll system for garage database.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-lg">
-              📅
-            </div>
-            <h3 className="text-base font-bold text-text-dark">Maintain Payroll History</h3>
-            <p className="text-slate-500 text-xs leading-relaxed">
-              Access previous payouts sheets and commission logs anytime. Filter payroll registers by employee or specific months.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-lg">
-              👥
-            </div>
-            <h3 className="text-base font-bold text-text-dark">Manage Workshop Staff</h3>
-            <p className="text-slate-500 text-xs leading-relaxed font-normal">
-              Manage permissions so admins, managers, and mechanics see only relevant info. Explore{" "}
-              <Link href="/features/user-management" onClick={handleLinkClick} className="text-primary hover:underline font-semibold">
-                User Management
-              </Link>.
-            </p>
-          </div>
+          ))}
         </div>
 
         <div className="flex justify-center pt-4">
@@ -95,3 +102,4 @@ export default function GPPayrollCapabilities() {
     </section>
   );
 }
+

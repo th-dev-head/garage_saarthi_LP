@@ -9,7 +9,7 @@ export default function GIRelatedFeatures() {
     {
       icon: <FaWrench className="w-5 h-5 text-primary" />,
       title: "Digital Job Cards",
-      link: "/features/job-cards",
+      link: "/features/job-card-management",
       desc: "Assign tasks to technicians, inspect vehicles visually, and record customer complaints."
     },
     {

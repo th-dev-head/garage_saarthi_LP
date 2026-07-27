@@ -5,6 +5,12 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const visibilityMetrics = [
+  "Daily Inflow Breakdown",
+  "Categorized Business Expenses",
+  "Outstanding Balances Ledger"
+];
+
 export default function GFMVisibility() {
   const handleFeatureClick = () => {
     trackEvent("finance_report_click", {
@@ -43,18 +49,12 @@ export default function GFMVisibility() {
         <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Available Financial Metrics</h3>
           <div className="space-y-3">
-            <div className="flex justify-between items-center text-xs md:text-sm p-3 bg-slate-50 rounded-xl border border-slate-100">
-              <span className="text-slate-600 font-medium">Daily Inflow Breakdown</span>
-              <span className="text-emerald-600 font-bold">Active</span>
-            </div>
-            <div className="flex justify-between items-center text-xs md:text-sm p-3 bg-slate-50 rounded-xl border border-slate-100">
-              <span className="text-slate-600 font-medium">Categorized Business Expenses</span>
-              <span className="text-emerald-600 font-bold">Active</span>
-            </div>
-            <div className="flex justify-between items-center text-xs md:text-sm p-3 bg-slate-50 rounded-xl border border-slate-100">
-              <span className="text-slate-600 font-medium">Outstanding Balances Ledger</span>
-              <span className="text-emerald-600 font-bold">Active</span>
-            </div>
+            {visibilityMetrics.map((metric, idx) => (
+              <div key={idx} className="flex justify-between items-center text-xs md:text-sm p-3 bg-slate-50 rounded-xl border border-slate-100">
+                <span className="text-slate-600 font-medium">{metric}</span>
+                <span className="text-emerald-600 font-bold">Active</span>
+              </div>
+            ))}
           </div>
           <p className="text-[10px] text-slate-400 text-center leading-normal">
             *Note: Reports provide operational visibility and are not audited statements.
@@ -64,3 +64,4 @@ export default function GFMVisibility() {
     </section>
   );
 }
+

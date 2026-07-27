@@ -14,7 +14,7 @@ export default function GAJobCardUseCase() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Info */}
           <div>
@@ -28,7 +28,7 @@ export default function GAJobCardUseCase() {
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Create digital job sheets in under a minute when a vehicle rolls into the garage. Keep everyone updated on check-in checklists, diagnostics, and repairs.
             </p>
-            
+
             <div className="space-y-4 mb-6">
               {benefits.map((item, idx) => (
                 <div key={idx} className="flex gap-3">
@@ -42,7 +42,7 @@ export default function GAJobCardUseCase() {
             </div>
 
             <Link
-              href="/features/job-cards"
+              href="/features/job-card-management"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
             >
               Explore Job Card Management

@@ -1,6 +1,12 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const payrollStruggles = [
+  { isPositive: false, title: "Register tracking:", desc: "Staff presence and leaves written down manually." },
+  { isPositive: false, title: "Commission disputes:", desc: "Miscalculated mechanic margins on labor work." },
+  { isPositive: true, title: "Central profile:", desc: "View basic salary, commission, and leaf records in one file." }
+];
+
 export default function GPDefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,21 +28,18 @@ export default function GPDefinition() {
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Common Workshop Payroll Struggles</h3>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Register tracking:</strong> Staff presence and leaves written down manually.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Commission disputes:</strong> Miscalculated mechanic margins on labor work.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-green-500 font-bold">✓</span>
-              <span><strong>Central profile:</strong> View basic salary, commission, and leaf records in one file.</span>
-            </li>
+            {payrollStruggles.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-2.5">
+                <span className={item.isPositive ? "text-green-500 font-bold" : "text-red-500 font-bold"}>
+                  {item.isPositive ? "✓" : "✕"}
+                </span>
+                <span><strong>{item.title}</strong> {item.desc}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     </section>
   );
 }
+

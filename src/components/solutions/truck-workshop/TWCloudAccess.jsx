@@ -1,10 +1,14 @@
 import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
-import Link from "next/link";
 import { FaLaptop, FaMobileAlt, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
+
+const truckPlatforms = [
+  { icon: FaLaptop, title: "Cloud Web Portal", desc: "For Billing, Invoicing & Reports" },
+  { icon: FaMobileAlt, title: "Android Application", desc: "For Quick Job Cards & Inventory Checks" }
+];
 
 export default function TWCloudAccess() {
   return (
@@ -39,21 +43,21 @@ export default function TWCloudAccess() {
           {/* Visual block - Right Column */}
           <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-8 shadow-sm flex flex-col justify-center min-h-[300px]">
             <div className="max-w-xs w-full mx-auto space-y-6">
-              <div className="flex items-center gap-4 text-slate-800">
-                <FaLaptop className="text-4xl text-primary flex-shrink-0" />
-                <div className="text-left">
-                  <h4 className="text-xs font-bold">Cloud Web Portal</h4>
-                  <p className="text-[10px] text-slate-400">For Billing, Invoicing & Reports</p>
-                </div>
-              </div>
-              <div className="border-t border-slate-100" />
-              <div className="flex items-center gap-4 text-slate-800">
-                <FaMobileAlt className="text-4xl text-primary flex-shrink-0" />
-                <div className="text-left">
-                  <h4 className="text-xs font-bold">Android Application</h4>
-                  <p className="text-[10px] text-slate-400">For Quick Job Cards & Inventory Checks</p>
-                </div>
-              </div>
+              {truckPlatforms.map((plat, idx) => {
+                const Icon = plat.icon;
+                return (
+                  <React.Fragment key={idx}>
+                    {idx > 0 && <div className="border-t border-slate-100" />}
+                    <div className="flex items-center gap-4 text-slate-800">
+                      <Icon className="text-4xl text-primary flex-shrink-0" />
+                      <div className="text-left">
+                        <h4 className="text-xs font-bold">{plat.title}</h4>
+                        <p className="text-[10px] text-slate-400">{plat.desc}</p>
+                      </div>
+                    </div>
+                  </React.Fragment>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -61,3 +65,4 @@ export default function TWCloudAccess() {
     </section>
   );
 }
+

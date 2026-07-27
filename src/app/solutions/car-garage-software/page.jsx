@@ -1,4 +1,4 @@
-import CarGarageSoftware from "@/src/views/CarGarageSoftware";
+import CarGarageSoftware from "@/src/views/solutions/CarGarageSoftware";
 
 export const metadata = {
   title: "Car Garage Management Software in India | GarageSaarthi",

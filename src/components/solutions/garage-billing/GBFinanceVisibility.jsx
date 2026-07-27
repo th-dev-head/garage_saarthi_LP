@@ -2,6 +2,12 @@ import React from "react";
 import { FaCoins } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const collections = [
+  { label: "Cash Register", amount: "₹14,500.00", amountClass: "font-bold text-slate-700" },
+  { label: "UPI Payments", amount: "₹32,200.00", amountClass: "font-bold text-slate-700" },
+  { label: "Unpaid Balance (Dues)", amount: "₹8,400.00", amountClass: "font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded" }
+];
+
 export default function GBFinanceVisibility() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -13,18 +19,12 @@ export default function GBFinanceVisibility() {
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">Collections tracker</h3>
           </div>
           <div className="space-y-3.5 text-xs">
-            <div className="flex justify-between items-center text-slate-500 font-medium">
-              <span>Cash Register</span>
-              <span className="font-bold text-slate-700">₹14,500.00</span>
-            </div>
-            <div className="flex justify-between items-center text-slate-500 font-medium">
-              <span>UPI Payments</span>
-              <span className="font-bold text-slate-700">₹32,200.00</span>
-            </div>
-            <div className="flex justify-between items-center text-slate-500 font-medium">
-              <span>Unpaid Balance (Dues)</span>
-              <span className="font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded">₹8,400.00</span>
-            </div>
+            {collections.map((item, idx) => (
+              <div key={idx} className="flex justify-between items-center text-slate-500 font-medium">
+                <span>{item.label}</span>
+                <span className={item.amountClass}>{item.amount}</span>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -48,4 +48,5 @@ export default function GBFinanceVisibility() {
     </section>
   );
 }
+
 

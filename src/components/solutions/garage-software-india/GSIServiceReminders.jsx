@@ -3,6 +3,27 @@ import Link from "next/link";
 import { FaWhatsapp, FaCalendarCheck, FaRedo, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const serviceReminderColumns = [
+  {
+    icon: FaCalendarCheck,
+    iconBg: "bg-[#EFE9E7] text-primary",
+    title: "Automatic Due Date Tracking",
+    desc: "When a job card is closed, GarageSaarthi automatically schedules periodic service due dates based on vehicle service intervals."
+  },
+  {
+    icon: FaWhatsapp,
+    iconBg: "bg-emerald-100 text-emerald-600",
+    title: "Direct WhatsApp Alerts",
+    desc: "Trigger automated, personalized service due notifications directly to your customers' WhatsApp numbers with custom greeting templates."
+  },
+  {
+    icon: FaRedo,
+    iconBg: "bg-[#EFE9E7] text-primary",
+    title: "Higher Repeat Bay Occupancy",
+    desc: "Keep service bays full with recurring maintenance bookings without wasting hours on manual reminder phone calls."
+  }
+];
+
 export default function GSIServiceReminders() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,35 +43,20 @@ export default function GSIServiceReminders() {
 
         {/* 3 Columns Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaCalendarCheck />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Automatic Due Date Tracking</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              When a job card is closed, GarageSaarthi automatically schedules periodic service due dates based on vehicle service intervals.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 text-base">
-              <FaWhatsapp />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Direct WhatsApp Alerts</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Trigger automated, personalized service due notifications directly to your customers' WhatsApp numbers with custom greeting templates.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaRedo />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Higher Repeat Bay Occupancy</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Keep service bays full with recurring maintenance bookings without wasting hours on manual reminder phone calls.
-            </p>
-          </div>
+          {serviceReminderColumns.map((col, idx) => {
+            const Icon = col.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-base ${col.iconBg}`}>
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{col.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {col.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         {/* Semantic Bridge Callout to Dedicated Page */}
@@ -75,3 +81,4 @@ export default function GSIServiceReminders() {
     </section>
   );
 }
+
