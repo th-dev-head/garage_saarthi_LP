@@ -3,6 +3,45 @@ import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const attendanceFeatures = [
+  {
+    icon: "📅",
+    title: "Daily Staff Attendance",
+    desc: "Log daily staff check-ins, record shift logins, and keep track of employee attendance software for garage records online."
+  },
+  {
+    icon: "🔧",
+    title: "Mechanic Attendance",
+    desc: "Manage shift presence specifically for multi-brand car and bike mechanics, helpers, and technician profiles."
+  },
+  {
+    icon: "📂",
+    title: "Employee Attendance Records",
+    desc: "Filter presence logs, check monthly stats, and maintain clear records of past shifts on our workshop employee attendance software database."
+  },
+  {
+    icon: "📍",
+    title: "Workshop Staff Tracking",
+    desc: "Enable your desk manager to log check-ins, check active counts, and run workshop staff attendance tracking reports easily."
+  },
+  {
+    icon: "📝",
+    title: "Attendance & Leaves",
+    descPrefix: "Connect daily shifts with employee leave records, paid leave balances, and absent ratios. Explore ",
+    linkHref: "/features/leave-management",
+    linkText: "Garage Leave Management",
+    linkName: "Leave Management Link"
+  },
+  {
+    icon: "💳",
+    title: "Attendance & Payroll",
+    descPrefix: "Verify salary payouts and mechanic commissions by linking daily shifts directly. Explore ",
+    linkHref: "/features/payroll",
+    linkText: "Garage Payroll Management",
+    linkName: "Payroll Management Link"
+  }
+];
+
 export default function GAFeatures() {
   const handleLinkClick = (name, url) => {
     trackEvent("attendance_feature_click", {
@@ -29,65 +68,37 @@ export default function GAFeatures() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <span className="text-2xl">📅</span>
-            <h3 className="text-base font-bold text-text-dark">Daily Staff Attendance</h3>
-            <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-              Log daily staff check-ins, record shift logins, and keep track of employee attendance software for garage records online.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <span className="text-2xl">🔧</span>
-            <h3 className="text-base font-bold text-text-dark">Mechanic Attendance</h3>
-            <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-              Manage shift presence specifically for multi-brand car and bike mechanics, helpers, and technician profiles.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <span className="text-2xl">📂</span>
-            <h3 className="text-base font-bold text-text-dark">Employee Attendance Records</h3>
-            <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-              Filter presence logs, check monthly stats, and maintain clear records of past shifts on our workshop employee attendance software database.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
-            <span className="text-2xl">📍</span>
-            <h3 className="text-base font-bold text-text-dark">Workshop Staff Tracking</h3>
-            <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-              Enable your desk manager to log check-ins, check active counts, and run workshop staff attendance tracking reports easily.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
-            <div className="space-y-3">
-              <span className="text-2xl">📝</span>
-              <h3 className="text-base font-bold text-text-dark">Attendance & Leaves</h3>
-              <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                Connect daily shifts with employee leave records, paid leave balances, and absent ratios. Explore{" "}
-                <Link href="/features/leave-management" onClick={() => handleLinkClick("Leave Management Link", "/features/leave-management")} className="text-primary font-semibold hover:underline">
-                  Garage Leave Management
-                </Link>.
-              </p>
+          {attendanceFeatures.map((item, idx) => (
+            <div
+              key={idx}
+              className={`bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm ${
+                item.linkHref ? "flex flex-col justify-between hover:shadow-md transition-shadow duration-200" : "space-y-3"
+              }`}
+            >
+              <div className="space-y-3">
+                <span className="text-2xl">{item.icon}</span>
+                <h3 className="text-base font-bold text-text-dark">{item.title}</h3>
+                <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
+                  {item.desc ? item.desc : (
+                    <>
+                      {item.descPrefix}
+                      <Link
+                        href={item.linkHref}
+                        onClick={() => handleLinkClick(item.linkName, item.linkHref)}
+                        className="text-primary font-semibold hover:underline"
+                      >
+                        {item.linkText}
+                      </Link>
+                      .
+                    </>
+                  )}
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
-            <div className="space-y-3">
-              <span className="text-2xl">💳</span>
-              <h3 className="text-base font-bold text-text-dark">Attendance & Payroll</h3>
-              <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                Verify salary payouts and mechanic commissions by linking daily shifts directly. Explore{" "}
-                <Link href="/features/payroll" onClick={() => handleLinkClick("Payroll Management Link", "/features/payroll")} className="text-primary font-semibold hover:underline">
-                  Garage Payroll Management
-                </Link>.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+

@@ -1,6 +1,13 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const wmdCoreAnalytics = [
+  { title: "📊 Revenue & Cash", titleClass: "text-primary font-bold block mb-1", desc: "Daily UPI, cash & credit dues" },
+  { title: "🛠️ Active Repairs", titleClass: "text-orange-600 font-bold block mb-1", desc: "Live job card stages & delivery" },
+  { title: "👷 Staff KPIs", titleClass: "text-emerald-600 font-bold block mb-1", desc: "Mechanic utilization & hours" },
+  { title: "📦 Stock Alerts", titleClass: "text-amber-600 font-bold block mb-1", desc: "Low stock reorder warnings" }
+];
+
 export default function WMDDefinition() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-cente">
@@ -26,22 +33,12 @@ export default function WMDDefinition() {
               Core Analytics Displayed Live:
             </h3>
             <div className="grid grid-cols-2 gap-4 text-xs md:text-sm">
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-primary font-bold block mb-1">📊 Revenue & Cash</span>
-                <span className="text-slate-600">Daily UPI, cash & credit dues</span>
-              </div>
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-orange-600 font-bold block mb-1">🛠️ Active Repairs</span>
-                <span className="text-slate-600">Live job card stages & delivery</span>
-              </div>
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-emerald-600 font-bold block mb-1">👷 Staff KPIs</span>
-                <span className="text-slate-600">Mechanic utilization & hours</span>
-              </div>
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-amber-600 font-bold block mb-1">📦 Stock Alerts</span>
-                <span className="text-slate-600">Low stock reorder warnings</span>
-              </div>
+              {wmdCoreAnalytics.map((item, idx) => (
+                <div key={idx} className="p-3 bg-white rounded-xl border border-slate-200">
+                  <span className={item.titleClass}>{item.title}</span>
+                  <span className="text-slate-600">{item.desc}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -49,3 +46,4 @@ export default function WMDDefinition() {
     </section>
   );
 }
+

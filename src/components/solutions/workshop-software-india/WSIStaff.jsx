@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaUserClock, FaCalendarCheck, FaPercentage, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const staffFeatures = [
+  {
+    icon: FaUserClock,
+    title: "Mechanic Attendance Tracking",
+    desc: "Log daily mechanic check-in and check-out times on mobile devices to maintain accurate attendance registers."
+  },
+  {
+    icon: FaCalendarCheck,
+    title: "Leave Approval System",
+    desc: "Review and approve mechanic leave applications to plan repair bay shift coverage in advance."
+  },
+  {
+    icon: FaPercentage,
+    title: "Automated Job Commissions",
+    desc: "Calculate mechanic labor commission percentages automatically based on completed digital job card tasks."
+  }
+];
+
 export default function WSIStaff() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,35 +40,20 @@ export default function WSIStaff() {
 
         {/* 3 Grid Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaUserClock />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Mechanic Attendance Tracking</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Log daily mechanic check-in and check-out times on mobile devices to maintain accurate attendance registers.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaCalendarCheck />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Leave Approval System</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Review and approve mechanic leave applications to plan repair bay shift coverage in advance.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaPercentage />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Automated Job Commissions</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Calculate mechanic labor commission percentages automatically based on completed digital job card tasks.
-            </p>
-          </div>
+          {staffFeatures.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">

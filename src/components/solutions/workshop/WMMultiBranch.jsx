@@ -3,6 +3,12 @@ import Link from "next/link";
 import { FaCodeBranch, FaExchangeAlt, FaChartLine, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const multiBranchFeatures = [
+  { icon: FaCodeBranch, title: "Unified Admin Access", desc: "Switch between different branch views instantly without logging out." },
+  { icon: FaExchangeAlt, title: "Inter-Branch Inventory Transfer", desc: "Transfer spare parts between branches to meet local demand easily." },
+  { icon: FaChartLine, title: "Consolidated Reports", desc: "Get combined GST billing reports, sales analytics, and expense sheets." }
+];
+
 export default function WMMultiBranch() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -37,33 +43,20 @@ export default function WMMultiBranch() {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
-                  <FaCodeBranch className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Unified Admin Access</h4>
-                  <p className="text-xs text-slate-600">Switch between different branch views instantly without logging out.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
-                  <FaExchangeAlt className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Inter-Branch Inventory Transfer</h4>
-                  <p className="text-xs text-slate-600">Transfer spare parts between branches to meet local demand easily.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
-                  <FaChartLine className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Consolidated Reports</h4>
-                  <p className="text-xs text-slate-600">Get combined GST billing reports, sales analytics, and expense sheets.</p>
-                </div>
-              </div>
+              {multiBranchFeatures.map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div key={idx} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-slate-900">{item.title}</h4>
+                      <p className="text-xs text-slate-600">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             <Link
@@ -78,4 +71,5 @@ export default function WMMultiBranch() {
     </section>
   );
 }
+
 

@@ -5,6 +5,19 @@ import { trackEvent } from "@/src/utils/pixel";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const inventoryItems = [
+  {
+    name: "Mobil 5W-30 Engine Oil (1L)",
+    count: "24 Bottles Available",
+    countClass: "block text-xs font-bold text-green-600 mt-0.5"
+  },
+  {
+    name: "Brembo Brake Pads (Front)",
+    count: "2 Packs (Low Stock)",
+    countClass: "block text-xs font-bold text-orange-500 mt-0.5"
+  }
+];
+
 // SECTION 06 - INVENTORY AND WORKSHOP OPERATIONS
 export default function GEInventoryOperations() {
   const handleCtaClick = () => {
@@ -54,27 +67,18 @@ export default function GEInventoryOperations() {
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">E-Inventory Dashboard</h3>
           </div>
           <div className="space-y-4">
-            <div className="bg-white p-4 rounded-xl border border-slate-200/80 flex justify-between items-center">
-              <div>
-                <span className="text-[10px] uppercase font-bold text-slate-400">Part Description</span>
-                <span className="block text-xs font-bold text-text-dark mt-0.5">Mobil 5W-30 Engine Oil (1L)</span>
+            {inventoryItems.map((item, idx) => (
+              <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200/80 flex justify-between items-center">
+                <div>
+                  <span className="text-[10px] uppercase font-bold text-slate-400">Part Description</span>
+                  <span className="block text-xs font-bold text-text-dark mt-0.5">{item.name}</span>
+                </div>
+                <div className="text-right">
+                  <span className="text-[10px] uppercase font-bold text-slate-400">Stock Count</span>
+                  <span className={item.countClass}>{item.count}</span>
+                </div>
               </div>
-              <div className="text-right">
-                <span className="text-[10px] uppercase font-bold text-slate-400">Stock Count</span>
-                <span className="block text-xs font-bold text-green-600 mt-0.5">24 Bottles Available</span>
-              </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-xl border border-slate-200/80 flex justify-between items-center">
-              <div>
-                <span className="text-[10px] uppercase font-bold text-slate-400">Part Description</span>
-                <span className="block text-xs font-bold text-text-dark mt-0.5">Brembo Brake Pads (Front)</span>
-              </div>
-              <div className="text-right">
-                <span className="text-[10px] uppercase font-bold text-slate-400">Stock Count</span>
-                <span className="block text-xs font-bold text-orange-500 mt-0.5">2 Packs (Low Stock)</span>
-              </div>
-            </div>
+            ))}
             
             <p className="text-[10px] text-slate-400 italic">
               *Parts issued to digital job cards or counter sales are adjusted to reflect active inventory stock.
@@ -85,4 +89,5 @@ export default function GEInventoryOperations() {
     </section>
   );
 }
+
 

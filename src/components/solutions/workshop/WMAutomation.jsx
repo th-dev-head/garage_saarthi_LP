@@ -3,6 +3,12 @@ import Link from "next/link";
 import { FaWhatsapp, FaClock, FaCalendarAlt, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const automationFeatures = [
+  { icon: FaWhatsapp, title: "Auto WhatsApp Alerts", desc: "Send PDF estimates, job card entries, and bills automatically." },
+  { icon: FaClock, title: "Real-time Status Updates", desc: "Automatically update customers as their vehicles move from inspection to ready." },
+  { icon: FaCalendarAlt, title: "Recurring Service Reminders", desc: "Schedule automatic alerts based on vehicle service intervals." }
+];
+
 export default function WMAutomation() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -22,33 +28,20 @@ export default function WMAutomation() {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
-                  <FaWhatsapp className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Auto WhatsApp Alerts</h4>
-                  <p className="text-xs text-slate-600">Send PDF estimates, job card entries, and bills automatically.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
-                  <FaClock className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Real-time Status Updates</h4>
-                  <p className="text-xs text-slate-600">Automatically update customers as their vehicles move from inspection to ready.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
-                  <FaCalendarAlt className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Recurring Service Reminders</h4>
-                  <p className="text-xs text-slate-600">Schedule automatic alerts based on vehicle service intervals.</p>
-                </div>
-              </div>
+              {automationFeatures.map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div key={idx} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mt-0.5">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-slate-900">{item.title}</h4>
+                      <p className="text-xs text-slate-600">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             <Link
@@ -91,4 +84,5 @@ export default function WMAutomation() {
     </section>
   );
 }
+
 

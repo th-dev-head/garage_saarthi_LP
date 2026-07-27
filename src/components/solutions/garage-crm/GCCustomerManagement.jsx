@@ -5,6 +5,17 @@ import { trackEvent } from "@/src/utils/pixel";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const customerFeatures = [
+  "Maintain customer name, contact details, and locations in one place.",
+  "Link vehicle registration parameters and specifications directly to the profile.",
+  "Search customer logs instantly by phone number or vehicle registration when they call or visit."
+];
+
+const customerDetails = [
+  { label: "Customer Name", value: "Ramesh Patel (Surat)" },
+  { label: "Linked Vehicle", value: "Hyundai Creta (GJ-05-CD-5678)" }
+];
+
 export default function GCCustomerManagement() {
   const handleFeatureClick = () => {
     trackEvent("customer_feature_click", {
@@ -31,18 +42,12 @@ export default function GCCustomerManagement() {
             Ditch paper diaries, loose notes, scattered phone book contacts, and manual spreadsheets. Centralize customer registers in a secure cloud database.
           </p>
           <div className="space-y-4 mb-8">
-            <div className="flex items-start gap-2.5 text-xs text-slate-600">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/70 mt-1.5 flex-shrink-0" />
-              <span>Maintain customer name, contact details, and locations in one place.</span>
-            </div>
-            <div className="flex items-start gap-2.5 text-xs text-slate-600">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/70 mt-1.5 flex-shrink-0" />
-              <span>Link vehicle registration parameters and specifications directly to the profile.</span>
-            </div>
-            <div className="flex items-start gap-2.5 text-xs text-slate-600">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/70 mt-1.5 flex-shrink-0" />
-              <span>Search customer logs instantly by phone number or vehicle registration when they call or visit.</span>
-            </div>
+            {customerFeatures.map((text, idx) => (
+              <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-600">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary/70 mt-1.5 flex-shrink-0" />
+                <span>{text}</span>
+              </div>
+            ))}
           </div>
 
           <Link href="/features/customers">
@@ -62,18 +67,17 @@ export default function GCCustomerManagement() {
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">Customer database card</h3>
           </div>
           <div className="space-y-3 text-xs">
-            <div className="bg-white p-3 rounded-xl border border-slate-100 flex justify-between">
-              <span>Customer Name</span>
-              <span className="font-bold text-slate-800">Ramesh Patel (Surat)</span>
-            </div>
-            <div className="bg-white p-3 rounded-xl border border-slate-100 flex justify-between">
-              <span>Linked Vehicle</span>
-              <span className="font-bold text-slate-800">Hyundai Creta (GJ-05-CD-5678)</span>
-            </div>
+            {customerDetails.map((detail, idx) => (
+              <div key={idx} className="bg-white p-3 rounded-xl border border-slate-100 flex justify-between">
+                <span>{detail.label}</span>
+                <span className="font-bold text-slate-800">{detail.value}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 

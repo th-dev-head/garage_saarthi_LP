@@ -1,6 +1,13 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const jcmWhyPillars = [
+  { title: "⚡ Fast Creation", titleClass: "text-primary font-bold block mb-1", desc: "Create repair order in 60s" },
+  { title: "📲 WhatsApp Estimate", titleClass: "text-orange-600 font-bold block mb-1", desc: "Send instant PDF quotes" },
+  { title: "📷 Photo Attachment", titleClass: "text-emerald-600 font-bold block mb-1", desc: "Log before & after photos" },
+  { title: "🧾 1-Click Billing", titleClass: "text-amber-600 font-bold block mb-1", desc: "Convert job card to GST invoice" }
+];
+
 export default function JCMDefinition() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-cente">
@@ -26,22 +33,12 @@ export default function JCMDefinition() {
               Why Digital Job Cards Matter:
             </h3>
             <div className="grid grid-cols-2 gap-4 text-xs md:text-sm">
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-primary font-bold block mb-1">⚡ Fast Creation</span>
-                <span className="text-slate-600">Create repair order in 60s</span>
-              </div>
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-orange-600 font-bold block mb-1">📲 WhatsApp Estimate</span>
-                <span className="text-slate-600">Send instant PDF quotes</span>
-              </div>
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-emerald-600 font-bold block mb-1">📷 Photo Attachment</span>
-                <span className="text-slate-600">Log before & after photos</span>
-              </div>
-              <div className="p-3 bg-white rounded-xl border border-slate-200">
-                <span className="text-amber-600 font-bold block mb-1">🧾 1-Click Billing</span>
-                <span className="text-slate-600">Convert job card to GST invoice</span>
-              </div>
+              {jcmWhyPillars.map((item, idx) => (
+                <div key={idx} className="p-3 bg-white rounded-xl border border-slate-200">
+                  <span className={item.titleClass}>{item.title}</span>
+                  <span className="text-slate-600">{item.desc}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -49,3 +46,4 @@ export default function JCMDefinition() {
     </section>
   );
 }
+

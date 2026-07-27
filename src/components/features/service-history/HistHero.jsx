@@ -5,6 +5,12 @@ import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
+const serviceLogBlocks = [
+  { label: "LAST VISIT (10/05/2026)", line1: "General Service • 45,210 KM", line2: "Engine Oil replaced, brakes cleaned" },
+  { label: "PREVIOUS VISIT (12/11/2025)", line1: "Suspension Overhaul • 38,400 KM", line2: "Front struts and bushes replaced" },
+  { label: "TOTAL SERVICE BILLS", line1: "₹14,850 Total Dues Paid", line1Class: "text-xs font-bold text-amber-400", isFlex: true }
+];
+
 export default function HistHero() {
   const handleTrialClick = () => {
     trackEvent("service_history_feature_trial_cta_click", {
@@ -60,20 +66,13 @@ export default function HistHero() {
                 <span className="text-[10px] text-green-400 bg-green-500/10 px-2 py-0.5 rounded font-semibold">MH-12-CD-5678</span>
               </div>
               <div className="space-y-4">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5 space-y-1">
-                  <span className="text-[10px] text-slate-400 block">LAST VISIT (10/05/2026)</span>
-                  <span className="text-xs font-bold text-slate-200 block">General Service • 45,210 KM</span>
-                  <span className="text-xs text-slate-300 block">Engine Oil replaced, brakes cleaned</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5 space-y-1">
-                  <span className="text-[10px] text-slate-400 block">PREVIOUS VISIT (12/11/2025)</span>
-                  <span className="text-xs font-bold text-slate-200 block">Suspension Overhaul • 38,400 KM</span>
-                  <span className="text-xs text-slate-300 block">Front struts and bushes replaced</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5 flex justify-between items-center">
-                  <span className="text-[10px] text-slate-400">TOTAL SERVICE BILLS</span>
-                  <span className="text-xs font-bold text-amber-400">₹14,850 Total Dues Paid</span>
-                </div>
+                {serviceLogBlocks.map((block, idx) => (
+                  <div key={idx} className={`bg-white/5 p-4 rounded-xl border border-white/5 ${block.isFlex ? "flex justify-between items-center" : "space-y-1"}`}>
+                    <span className="text-[10px] text-slate-400 block">{block.label}</span>
+                    <span className={block.line1Class || "text-xs font-bold text-slate-200 block"}>{block.line1}</span>
+                    {block.line2 && <span className="text-xs text-slate-300 block">{block.line2}</span>}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -82,3 +81,4 @@ export default function HistHero() {
     </section>
   );
 }
+

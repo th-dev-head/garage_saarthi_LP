@@ -5,6 +5,12 @@ import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
+const custProfileBlocks = [
+  { label: "OWNER DETAILS", line1: "Rajesh Sharma", line1Class: "text-sm font-bold text-white block", line2: "+91 98765 43210", line2Class: "text-xs text-slate-300 block" },
+  { label: "LINKED VEHICLES", line1: "MH 12 AB 1234 (Hyundai i20)", line1Class: "text-xs font-bold text-slate-200 block", line2: "MH 12 CD 5678 (Honda Activa)", line2Class: "text-xs text-slate-300 block" },
+  { label: "TOTAL VISITS", line1: "8 Service Visits", line1Class: "text-xs font-bold text-amber-400", isFlex: true }
+];
+
 export default function CustHero() {
   const handleTrialClick = () => {
     trackEvent("customer_feature_trial_cta_click", {
@@ -60,20 +66,13 @@ export default function CustHero() {
                 <span className="text-[10px] text-green-400 bg-green-500/10 px-2 py-0.5 rounded font-semibold">Active Customer</span>
               </div>
               <div className="space-y-4">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5 space-y-1">
-                  <span className="text-[10px] text-slate-400 block">OWNER DETAILS</span>
-                  <span className="text-sm font-bold text-white block">Rajesh Sharma</span>
-                  <span className="text-xs text-slate-300 block">+91 98765 43210</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5 space-y-1">
-                  <span className="text-[10px] text-slate-400 block">LINKED VEHICLES</span>
-                  <span className="text-xs font-bold text-slate-200 block">MH 12 AB 1234 (Hyundai i20)</span>
-                  <span className="text-xs text-slate-300 block">MH 12 CD 5678 (Honda Activa)</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5 flex justify-between items-center">
-                  <span className="text-[10px] text-slate-400">TOTAL VISITS</span>
-                  <span className="text-xs font-bold text-amber-400">8 Service Visits</span>
-                </div>
+                {custProfileBlocks.map((block, idx) => (
+                  <div key={idx} className={`bg-white/5 p-4 rounded-xl border border-white/5 ${block.isFlex ? "flex justify-between items-center" : "space-y-1"}`}>
+                    <span className="text-[10px] text-slate-400 block">{block.label}</span>
+                    <span className={block.line1Class}>{block.line1}</span>
+                    {block.line2 && <span className={block.line2Class}>{block.line2}</span>}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -82,3 +81,4 @@ export default function CustHero() {
     </section>
   );
 }
+

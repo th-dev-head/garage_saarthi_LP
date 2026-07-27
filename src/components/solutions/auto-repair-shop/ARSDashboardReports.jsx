@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { FaChartLine, FaChartPie, FaArrowRight } from "react-icons/fa";
-import GradientUnderline from "../../common/GradientUnderline"; export default function ARSDashboardReports() {
+import GradientUnderline from "../../common/GradientUnderline"; 
+
+export default function ARSDashboardReports() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">

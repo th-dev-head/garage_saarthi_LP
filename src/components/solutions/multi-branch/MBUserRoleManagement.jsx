@@ -4,6 +4,12 @@ import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const staffRolesConfig = [
+  { role: "Branch Manager (Ahmedabad)", permissions: "Billing, Stock, Attendance & Financials", badgeText: "Full Access", badgeStyle: "bg-emerald-100 text-emerald-800" },
+  { role: "Service Advisor (Surat)", permissions: "Create Job Cards, Customer Followups", badgeText: "Custom Access", badgeStyle: "bg-blue-100 text-blue-800" },
+  { role: "Mechanic Staff (Vadodara)", permissions: "View Assigned Repair Tasks Only", badgeText: "Restricted (No Billing)", badgeStyle: "bg-slate-200 text-slate-700" }
+];
+
 export default function MBUserRoleManagement() {
   const handleUserClick = () => {
     trackEvent("user_management_click", {
@@ -47,36 +53,17 @@ export default function MBUserRoleManagement() {
           {/* Role Access Matrix Mockup */}
           <div className="space-y-2 pt-1">
             <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Configured Staff Roles</p>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Branch Manager (Ahmedabad)</p>
-                <p className="text-[10px] text-slate-500">Billing, Stock, Attendance & Financials</p>
+            {staffRolesConfig.map((item, idx) => (
+              <div key={idx} className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                <div>
+                  <p className="text-xs font-bold text-slate-800">{item.role}</p>
+                  <p className="text-[10px] text-slate-500">{item.permissions}</p>
+                </div>
+                <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${item.badgeStyle}`}>
+                  {item.badgeText}
+                </span>
               </div>
-              <span className="text-[9px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">
-                Full Access
-              </span>
-            </div>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Service Advisor (Surat)</p>
-                <p className="text-[10px] text-slate-500">Create Job Cards, Customer Followups</p>
-              </div>
-              <span className="text-[9px] font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">
-                Custom Access
-              </span>
-            </div>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Mechanic Staff (Vadodara)</p>
-                <p className="text-[10px] text-slate-500">View Assigned Repair Tasks Only</p>
-              </div>
-              <span className="text-[9px] font-bold bg-slate-200 text-slate-700 px-2 py-0.5 rounded-full">
-                Restricted (No Billing)
-              </span>
-            </div>
+            ))}
           </div>
         </div>
       </div>

@@ -5,6 +5,12 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const branchStaffRows = [
+  { branch: "Mumbai - West Branch", staff: "12 Staff Members" },
+  { branch: "Pune - East Branch", staff: "8 Staff Members" },
+  { branch: "Goa - South Branch", staff: "6 Staff Members" }
+];
+
 export default function GPMultiBranch() {
   const handleSolutionClick = () => {
     trackEvent("payroll_solution_click", {
@@ -24,18 +30,12 @@ export default function GPMultiBranch() {
             <span className="text-xs text-primary font-bold">Central Dashboard</span>
           </div>
           <div className="space-y-2 text-xs text-slate-600">
-            <div className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
-              <span>Mumbai - West Branch</span>
-              <span className="font-semibold text-slate-800">12 Staff Members</span>
-            </div>
-            <div className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
-              <span>Pune - East Branch</span>
-              <span className="font-semibold text-slate-800">8 Staff Members</span>
-            </div>
-            <div className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
-              <span>Goa - South Branch</span>
-              <span className="font-semibold text-slate-800">6 Staff Members</span>
-            </div>
+            {branchStaffRows.map((row, idx) => (
+              <div key={idx} className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
+                <span>{row.branch}</span>
+                <span className="font-semibold text-slate-800">{row.staff}</span>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -64,3 +64,4 @@ export default function GPMultiBranch() {
     </section>
   );
 }
+

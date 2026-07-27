@@ -3,6 +3,23 @@ import Link from "next/link";
 import { FaUserPlus, FaCar, FaHistory } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const historyFeatures = [
+  {
+    icon: FaUserPlus,
+    title: "Customer Management",
+    desc: "Save client details, mobile numbers, and check client balances on any device.",
+    link: "/features/customers",
+    linkText: "Explore Customers"
+  },
+  {
+    icon: FaCar,
+    title: "Vehicle Management",
+    desc: "Link multiple cars or bikes to a single customer, log registration numbers, and chassis numbers.",
+    link: "/features/vehicles",
+    linkText: "Explore Vehicles"
+  }
+];
+
 export default function AWCustomerHistory() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -26,31 +43,23 @@ export default function AWCustomerHistory() {
 
           {/* Feature List */}
           <div className="space-y-6">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary shadow-sm">
-                <FaUserPlus className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Customer Management</h3>
-                <p className="text-xs text-slate-600">Save client details, mobile numbers, and check client balances on any device.</p>
-                <Link href="/features/customers" className="text-xs font-bold text-primary hover:underline mt-1 inline-block">
-                  Explore Customers
-                </Link>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary shadow-sm">
-                <FaCar className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Vehicle Management</h3>
-                <p className="text-xs text-slate-600">Link multiple cars or bikes to a single customer, log registration numbers, and chassis numbers.</p>
-                <Link href="/features/vehicles" className="text-xs font-bold text-primary hover:underline mt-1 inline-block">
-                  Explore Vehicles
-                </Link>
-              </div>
-            </div>
+            {historyFeatures.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary shadow-sm">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1">{item.title}</h3>
+                    <p className="text-xs text-slate-600">{item.desc}</p>
+                    <Link href={item.link} className="text-xs font-bold text-primary hover:underline mt-1 inline-block">
+                      {item.linkText}
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           {/* Visual Simulation Column */}

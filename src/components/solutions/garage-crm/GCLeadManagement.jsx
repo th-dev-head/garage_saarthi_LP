@@ -6,6 +6,21 @@ import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const leadCards = [
+  {
+    title: "Add and Organize Garage Leads",
+    desc: "Log incoming phone enquiries, walk-in repair requests, customer complaints, and vehicle specifications into CRM folders."
+  },
+  {
+    title: "Track Lead Progress",
+    desc: "Use actual CRM statuses (Follow-up, Converted, Cancelled) to monitor lead stages, ensuring no inquiry goes forgotten."
+  },
+  {
+    title: "Keep Follow-Ups Organized",
+    desc: "Add follow-up date stamps and reminders to log customer interactions and schedule call backs on time."
+  }
+];
+
 export default function GCLeadManagement() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
@@ -44,24 +59,14 @@ export default function GCLeadManagement() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-base font-bold text-text-dark mb-3">Add and Organize Garage Leads</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Log incoming phone enquiries, walk-in repair requests, customer complaints, and vehicle specifications into CRM folders.
-            </p>
-          </div>
-          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-base font-bold text-text-dark mb-3">Track Lead Progress</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Use actual CRM statuses (Follow-up, Converted, Cancelled) to monitor lead stages, ensuring no inquiry goes forgotten.
-            </p>
-          </div>
-          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-base font-bold text-text-dark mb-3">Keep Follow-Ups Organized</h3>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              Add follow-up date stamps and reminders to log customer interactions and schedule call backs on time.
-            </p>
-          </div>
+          {leadCards.map((card, idx) => (
+            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-base font-bold text-text-dark mb-3">{card.title}</h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                {card.desc}
+              </p>
+            </div>
+          ))}
         </div>
 
         <div className="flex justify-center gap-4 flex-wrap items-center">
@@ -84,4 +89,5 @@ export default function GCLeadManagement() {
     </section>
   );
 }
+
 

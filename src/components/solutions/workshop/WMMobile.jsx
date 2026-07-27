@@ -6,6 +6,7 @@ import MockupBg from "../../../assets/icons/MockupDashboard.webp";
 import AppHand from "../../../assets/icons/Appdl.webp";
 import PlayStoreIcon from "../../../assets/icons/Playstore.webp";
 import Button from "../../common/Button";
+import Link from "next/link";
 
 export default function WMMobile() {
   return (
@@ -63,7 +64,7 @@ export default function WMMobile() {
             </Button>
 
             {/* Play Store Button */}
-            <a
+            <Link
               href="https://play.google.com/store/apps/details?id=com.th.garagesaarthi&hl=en_IN"
               target="_blank"
               rel="noopener noreferrer"
@@ -76,7 +77,7 @@ export default function WMMobile() {
                 <span className="text-[9px] font-normal opacity-70 leading-none">Download on the</span>
                 <span className="text-xs font-semibold leading-tight mt-0.5">Play Store</span>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

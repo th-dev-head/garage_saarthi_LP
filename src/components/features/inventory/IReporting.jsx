@@ -3,6 +3,11 @@ import Link from "next/link";
 import { FaChartBar, FaFileAlt, FaFileContract } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const turnoverSpares = [
+  { name: "Engine Oils", pct: "80%" },
+  { name: "Brake Consumables", pct: "65%" }
+];
+
 export default function IReporting() {
   const reports = [
     {
@@ -74,25 +79,17 @@ export default function IReporting() {
             <span className="uppercase font-bold text-slate-400 tracking-wider block mb-3">High Turnover Spares</span>
             
             <div className="space-y-3">
-              <div>
-                <div className="flex justify-between mb-1">
-                  <span className="text-slate-600">Engine Oils</span>
-                  <span className="font-bold text-slate-900">80%</span>
+              {turnoverSpares.map((item, idx) => (
+                <div key={idx}>
+                  <div className="flex justify-between mb-1">
+                    <span className="text-slate-600">{item.name}</span>
+                    <span className="font-bold text-slate-900">{item.pct}</span>
+                  </div>
+                  <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                    <div className="bg-primary h-full rounded-full" style={{ width: item.pct }} />
+                  </div>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-primary h-full rounded-full" style={{ width: "80%" }} />
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between mb-1">
-                  <span className="text-slate-600">Brake Consumables</span>
-                  <span className="font-bold text-slate-900">65%</span>
-                </div>
-                <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-primary h-full rounded-full" style={{ width: "65%" }} />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -100,3 +97,4 @@ export default function IReporting() {
     </section>
   );
 }
+

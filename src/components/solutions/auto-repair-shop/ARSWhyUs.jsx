@@ -3,6 +3,25 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const whyUsFeatures = [
+  {
+    title: "Complete Flow",
+    desc: "Connects vehicle check-in, repair allocations, inventory rooms, and billing desks."
+  },
+  {
+    title: "Easy Billing",
+    desc: "Invoice spare components and labor charges with proper tax values instantly."
+  },
+  {
+    title: "Inventory Sync",
+    desc: "Keep records of parts counts and alert thresholds to avoid service delays."
+  },
+  {
+    title: "WhatsApp Updates",
+    desc: "Share invoice files, job sheets, and send service due reminders automatically."
+  }
+];
+
 export default function ARSWhyUs() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -24,22 +43,12 @@ export default function ARSWhyUs() {
 
         {/* Highlight points list */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs">
-            <h3 className="font-extrabold text-sm text-slate-900 mb-2">Complete Flow</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">Connects vehicle check-in, repair allocations, inventory rooms, and billing desks.</p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs">
-            <h3 className="font-extrabold text-sm text-slate-900 mb-2">Easy Billing</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">Invoice spare components and labor charges with proper tax values instantly.</p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs">
-            <h3 className="font-extrabold text-sm text-slate-900 mb-2">Inventory Sync</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">Keep records of parts counts and alert thresholds to avoid service delays.</p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs">
-            <h3 className="font-extrabold text-sm text-slate-900 mb-2">WhatsApp Updates</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">Share invoice files, job sheets, and send service due reminders automatically.</p>
-          </div>
+          {whyUsFeatures.map((item, idx) => (
+            <div key={idx} className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs">
+              <h3 className="font-extrabold text-sm text-slate-900 mb-2">{item.title}</h3>
+              <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
         </div>
 
         {/* CTA */}

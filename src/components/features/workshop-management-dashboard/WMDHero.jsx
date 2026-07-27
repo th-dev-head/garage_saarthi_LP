@@ -5,6 +5,12 @@ import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
+const wmdHeroAnalytics = [
+  { label: "TODAY'S REVENUE", val: "₹42,850", valClass: "text-xl font-bold text-white", sub: "↑ 18% higher than yesterday", subClass: "text-[10px] text-emerald-400 block mt-1" },
+  { label: "ACTIVE REPAIR CARDS", val: "14 Vehicles In Shop", valClass: "text-xl font-bold text-white" },
+  { label: "MECHANIC EFFICIENCY", val: "92% Utilization", valClass: "text-xl font-bold text-amber-400" }
+];
+
 export default function WMDHero() {
   const handleTrialClick = () => {
     trackEvent("dashboard_feature_trial_cta_click", {
@@ -60,19 +66,13 @@ export default function WMDHero() {
                 <span className="text-[10px] text-green-400 bg-green-500/10 px-2 py-0.5 rounded font-semibold">Real-Time</span>
               </div>
               <div className="space-y-4">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">TODAY'S REVENUE</span>
-                  <span className="text-xl font-bold text-white">₹42,850</span>
-                  <span className="text-[10px] text-emerald-400 block mt-1">↑ 18% higher than yesterday</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">ACTIVE REPAIR CARDS</span>
-                  <span className="text-xl font-bold text-white">14 Vehicles In Shop</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">MECHANIC EFFICIENCY</span>
-                  <span className="text-xl font-bold text-amber-400">92% Utilization</span>
-                </div>
+                {wmdHeroAnalytics.map((block, idx) => (
+                  <div key={idx} className="bg-white/5 p-4 rounded-xl border border-white/5">
+                    <span className="text-[10px] text-slate-400 block mb-0.5">{block.label}</span>
+                    <span className={block.valClass}>{block.val}</span>
+                    {block.sub && <span className={block.subClass}>{block.sub}</span>}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -81,3 +81,4 @@ export default function WMDHero() {
     </section>
   );
 }
+

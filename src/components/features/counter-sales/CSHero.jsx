@@ -5,6 +5,11 @@ import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
+const billedItems = [
+  { name: "1x Motul 4T Engine Oil 1L", price: "₹450" },
+  { name: "2x Bosch Oil Filter", price: "₹360" }
+];
+
 export default function CSHero() {
   const handleTrialClick = () => {
     trackEvent("counter_sales_trial_cta_click", {
@@ -67,8 +72,9 @@ export default function CSHero() {
                 <div className="bg-white/5 p-4 rounded-xl border border-white/5">
                   <span className="text-[10px] text-slate-400 block mb-0.5">ITEMS BILLED</span>
                   <div className="text-xs text-slate-200 space-y-1">
-                    <div className="flex justify-between"><span>1x Motul 4T Engine Oil 1L</span><span>₹450</span></div>
-                    <div className="flex justify-between"><span>2x Bosch Oil Filter</span><span>₹360</span></div>
+                    {billedItems.map((item, idx) => (
+                      <div key={idx} className="flex justify-between"><span>{item.name}</span><span>{item.price}</span></div>
+                    ))}
                   </div>
                 </div>
                 <div className="bg-white/5 p-4 rounded-xl border border-white/5 flex justify-between items-center">
@@ -83,3 +89,4 @@ export default function CSHero() {
     </section>
   );
 }
+

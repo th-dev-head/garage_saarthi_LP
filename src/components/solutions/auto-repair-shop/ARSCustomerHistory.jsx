@@ -3,6 +3,19 @@ import Link from "next/link";
 import { FaUserAlt, FaHistory, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const historyFeatures = [
+  {
+    icon: FaUserAlt,
+    title: "Maintain Customer & Vehicle Records",
+    desc: "Save client contact details, multiple vehicle registration plates, makes, models, and diagnostic records."
+  },
+  {
+    icon: FaHistory,
+    title: "Track Vehicle Repair History",
+    desc: "Review past service logs, parts replaced, diagnostic checklists, and billing statements instantly when a car returns."
+  }
+];
+
 export default function ARSCustomerHistory() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -27,25 +40,20 @@ export default function ARSCustomerHistory() {
           
           {/* Info list */}
           <div className="space-y-6">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-50 border border-slate-200/80 flex items-center justify-center text-primary shadow-sm">
-                <FaUserAlt className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Maintain Customer & Vehicle Records</h3>
-                <p className="text-xs text-slate-600">Save client contact details, multiple vehicle registration plates, makes, models, and diagnostic records.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-50 border border-slate-200/80 flex items-center justify-center text-primary shadow-sm">
-                <FaHistory className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Track Vehicle Repair History</h3>
-                <p className="text-xs text-slate-600">Review past service logs, parts replaced, diagnostic checklists, and billing statements instantly when a car returns.</p>
-              </div>
-            </div>
+            {historyFeatures.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-50 border border-slate-200/80 flex items-center justify-center text-primary shadow-sm">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1">{item.title}</h3>
+                    <p className="text-xs text-slate-600">{item.desc}</p>
+                  </div>
+                </div>
+              );
+            })}
             
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Link

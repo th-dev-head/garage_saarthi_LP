@@ -5,6 +5,14 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 
+const heroPayoutRows = [
+  { label: "Employee Name:", value: "Rahul Patel", valueClass: "font-semibold text-slate-200", borderTop: false },
+  { label: "Payroll Period:", value: "July 2026", valueClass: "font-semibold text-slate-200", borderTop: false },
+  { label: "Basic Salary:", value: "₹25,000", valueClass: "font-semibold text-slate-200", borderTop: false },
+  { label: "Mechanic Commission:", value: "₹8,450", valueClass: "font-semibold text-slate-200", borderTop: false },
+  { label: "Total Payout:", value: "₹33,450", valueClass: "font-bold text-emerald-400", borderTop: true }
+];
+
 export default function GPHero() {
   const handleTrialClick = () => {
     trackEvent("payroll_trial_cta_click", {
@@ -59,26 +67,12 @@ export default function GPHero() {
               <span className="bg-orange-500/30 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded-full border border-orange-500/20">Active</span>
             </div>
             <div className="space-y-4">
-              <div className="flex justify-between items-center text-xs md:text-sm">
-                <span className="text-slate-400">Employee Name:</span>
-                <span className="font-semibold text-slate-200">Rahul Patel</span>
-              </div>
-              <div className="flex justify-between items-center text-xs md:text-sm">
-                <span className="text-slate-400">Payroll Period:</span>
-                <span className="font-semibold text-slate-200">July 2026</span>
-              </div>
-              <div className="flex justify-between items-center text-xs md:text-sm">
-                <span className="text-slate-400">Basic Salary:</span>
-                <span className="font-semibold text-slate-200">₹25,000</span>
-              </div>
-              <div className="flex justify-between items-center text-xs md:text-sm">
-                <span className="text-slate-400">Mechanic Commission:</span>
-                <span className="font-semibold text-slate-200">₹8,450</span>
-              </div>
-              <div className="flex justify-between items-center text-xs md:text-sm border-t border-slate-700/50 pt-3">
-                <span className="text-slate-400 font-bold">Total Payout:</span>
-                <span className="font-bold text-emerald-400">₹33,450</span>
-              </div>
+              {heroPayoutRows.map((row, idx) => (
+                <div key={idx} className={`flex justify-between items-center text-xs md:text-sm ${row.borderTop ? "border-t border-slate-700/50 pt-3" : ""}`}>
+                  <span className={`text-slate-400 ${row.borderTop ? "font-bold" : ""}`}>{row.label}</span>
+                  <span className={row.valueClass}>{row.value}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -86,3 +80,4 @@ export default function GPHero() {
     </section>
   );
 }
+

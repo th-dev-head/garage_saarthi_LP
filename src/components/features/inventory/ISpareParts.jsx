@@ -2,6 +2,41 @@ import React from "react";
 import { FaBoxes, FaClipboardCheck, FaTags } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const sparePartsFeatures = [
+  {
+    icon: FaBoxes,
+    title: "Organize Spare Parts Inventory",
+    desc: "Avoid clutter. Maintain a structured catalog of auto parts with unique identifiers, models, manufacturer details, and pricing guidelines using our **Spare Parts Inventory Software**."
+  },
+  {
+    icon: FaTags,
+    title: "Manage Spare Parts from One System",
+    desc: "Manage stock levels from check-in to sales invoices. Shift to a centralized **Garage Spare Parts Management System** to prevent revenue leaks on the service floor."
+  },
+  {
+    icon: FaClipboardCheck,
+    title: "Maintain Better Parts Records",
+    desc: "Log purchase prices and retail margins. With our **Garage Spare Parts Software**, you'll have complete history records of which vendor supplied which part."
+  }
+];
+
+const mockSparePartsItems = [
+  {
+    name: "Spark Plug (NGK CPR7EA-9)",
+    price: "₹135.00",
+    suitable: "Hero Glamour, Honda Activa | Category: Ignition",
+    rack: "C-12",
+    qty: "24 Units"
+  },
+  {
+    name: "Oil Filter (Hyundai OEM)",
+    price: "₹280.00",
+    suitable: "Creta, i20 Petrol | Category: Filters",
+    rack: "B-04",
+    qty: "18 Units"
+  }
+];
+
 export default function ISpareParts() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -16,41 +51,20 @@ export default function ISpareParts() {
           </h2>
 
           <div className="space-y-6">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-primary shadow-xs">
-                <FaBoxes className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Organize Spare Parts Inventory</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Avoid clutter. Maintain a structured catalog of auto parts with unique identifiers, models, manufacturer details, and pricing guidelines using our **Spare Parts Inventory Software**.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-primary shadow-xs">
-                <FaTags className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Manage Spare Parts from One System</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Manage stock levels from check-in to sales invoices. Shift to a centralized **Garage Spare Parts Management System** to prevent revenue leaks on the service floor.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-primary shadow-xs">
-                <FaClipboardCheck className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Maintain Better Parts Records</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Log purchase prices and retail margins. With our **Garage Spare Parts Software**, you'll have complete history records of which vendor supplied which part.
-                </p>
-              </div>
-            </div>
+            {sparePartsFeatures.map((feat, idx) => {
+              const Icon = feat.icon;
+              return (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-primary shadow-xs">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1">{feat.title}</h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">{feat.desc}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -62,32 +76,23 @@ export default function ISpareParts() {
           </div>
 
           <div className="space-y-2 text-xs text-slate-600">
-            <div className="bg-white p-4 rounded-xl border border-slate-200/80">
-              <div className="flex justify-between font-bold text-slate-900 mb-1">
-                <span>Spark Plug (NGK CPR7EA-9)</span>
-                <span className="text-primary font-bold">₹135.00</span>
+            {mockSparePartsItems.map((item, idx) => (
+              <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200/80">
+                <div className="flex justify-between font-bold text-slate-900 mb-1">
+                  <span>{item.name}</span>
+                  <span className="text-primary font-bold">{item.price}</span>
+                </div>
+                <p className="text-[10px] text-slate-400">Suitable for: {item.suitable}</p>
+                <div className="mt-2 flex justify-between items-center text-[10px] border-t border-slate-100 pt-2">
+                  <span>Rack: {item.rack}</span>
+                  <span className="text-slate-700 font-semibold bg-slate-100 px-2.5 py-0.5 rounded">Qty: {item.qty}</span>
+                </div>
               </div>
-              <p className="text-[10px] text-slate-400">Suitable for: Hero Glamour, Honda Activa | Category: Ignition</p>
-              <div className="mt-2 flex justify-between items-center text-[10px] border-t border-slate-100 pt-2">
-                <span>Rack: C-12</span>
-                <span className="text-slate-700 font-semibold bg-slate-100 px-2.5 py-0.5 rounded">Qty: 24 Units</span>
-              </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-xl border border-slate-200/80">
-              <div className="flex justify-between font-bold text-slate-900 mb-1">
-                <span>Oil Filter (Hyundai OEM)</span>
-                <span className="text-primary font-bold">₹280.00</span>
-              </div>
-              <p className="text-[10px] text-slate-400">Suitable for: Creta, i20 Petrol | Category: Filters</p>
-              <div className="mt-2 flex justify-between items-center text-[10px] border-t border-slate-100 pt-2">
-                <span>Rack: B-04</span>
-                <span className="text-slate-700 font-semibold bg-slate-100 px-2.5 py-0.5 rounded">Qty: 18 Units</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+

@@ -5,6 +5,12 @@ import { FaArrowRight, FaCheck } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const trialBenefits = [
+  "Full 7-Day Free Trial",
+  "Web & Android App Access",
+  "Zero Credit Card Required"
+];
+
 export default function GSIPricing() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -22,18 +28,12 @@ export default function GSIPricing() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto text-left text-xs md:text-sm text-slate-300 pt-4 pb-6">
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-orange-400 flex-shrink-0" />
-              <span>Full 7-Day Free Trial</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-orange-400 flex-shrink-0" />
-              <span>Web & Android App Access</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-orange-400 flex-shrink-0" />
-              <span>Zero Credit Card Required</span>
-            </div>
+            {trialBenefits.map((text, idx) => (
+              <div key={idx} className="flex items-center gap-2">
+                <FaCheck className="text-orange-400 flex-shrink-0" />
+                <span>{text}</span>
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -56,3 +56,4 @@ export default function GSIPricing() {
     </section>
   );
 }
+

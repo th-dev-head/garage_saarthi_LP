@@ -2,6 +2,12 @@ import React from "react";
 import { FaUserCog, FaClipboardCheck, FaCarCrash } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const checkInChecklist = [
+  { icon: FaCarCrash, iconColor: "text-red-500", text: "Left Bumper Scratch", status: "Marked & Photographed" },
+  { icon: FaClipboardCheck, iconColor: "text-primary", text: "Fuel Level: 50% (Half Tank)", status: "Logged on check-in" },
+  { icon: FaUserCog, iconColor: "text-emerald-500", text: "Assigned Tech: Ramesh K.", status: "Labor Tracked" }
+];
+
 export default function JCMDetails() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -14,24 +20,17 @@ export default function JCMDetails() {
           </div>
 
           <div className="space-y-3.5 text-xs">
-            <div className="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center">
-              <span className="font-semibold text-slate-900 flex items-center gap-2">
-                <FaCarCrash className="text-red-500 w-4 h-4" /> Left Bumper Scratch
-              </span>
-              <span className="text-slate-400">Marked & Photographed</span>
-            </div>
-            <div className="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center">
-              <span className="font-semibold text-slate-900 flex items-center gap-2">
-                <FaClipboardCheck className="text-primary w-4 h-4" /> Fuel Level: 50% (Half Tank)
-              </span>
-              <span className="text-slate-400">Logged on check-in</span>
-            </div>
-            <div className="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center">
-              <span className="font-semibold text-slate-900 flex items-center gap-2">
-                <FaUserCog className="text-emerald-500 w-4 h-4" /> Assigned Tech: Ramesh K.
-              </span>
-              <span className="text-slate-400">Labor Tracked</span>
-            </div>
+            {checkInChecklist.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div key={idx} className="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center">
+                  <span className="font-semibold text-slate-900 flex items-center gap-2">
+                    <Icon className={`${item.iconColor} w-4 h-4`} /> {item.text}
+                  </span>
+                  <span className="text-slate-400">{item.status}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -54,3 +53,4 @@ export default function JCMDetails() {
     </section>
   );
 }
+

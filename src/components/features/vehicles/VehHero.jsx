@@ -5,6 +5,11 @@ import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
+const latestServiceLogItems = [
+  { item: "Engine Oil & Filter", status: "Replaced ✅" },
+  { item: "Wheel Alignment", status: "Done ✅" }
+];
+
 export default function VehHero() {
   const handleTrialClick = () => {
     trackEvent("vehicle_feature_trial_cta_click", {
@@ -67,14 +72,12 @@ export default function VehHero() {
                 </div>
                 <div className="bg-white/5 p-4 rounded-xl border border-white/5 space-y-1.5">
                   <span className="text-[10px] text-slate-400 block">LATEST SERVICE LOG</span>
-                  <div className="flex justify-between text-xs text-slate-200">
-                    <span>Engine Oil & Filter</span>
-                    <span className="text-green-400">Replaced ✅</span>
-                  </div>
-                  <div className="flex justify-between text-xs text-slate-200">
-                    <span>Wheel Alignment</span>
-                    <span className="text-green-400">Done ✅</span>
-                  </div>
+                  {latestServiceLogItems.map((log, idx) => (
+                    <div key={idx} className="flex justify-between text-xs text-slate-200">
+                      <span>{log.item}</span>
+                      <span className="text-green-400">{log.status}</span>
+                    </div>
+                  ))}
                 </div>
                 <div className="bg-white/5 p-4 rounded-xl border border-white/5 flex justify-between items-center">
                   <span className="text-[10px] text-slate-400">LAST VISIT</span>
@@ -88,3 +91,4 @@ export default function VehHero() {
     </section>
   );
 }
+

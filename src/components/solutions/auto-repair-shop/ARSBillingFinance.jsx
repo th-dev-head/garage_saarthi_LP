@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaFileInvoice, FaCoins, FaMoneyCheckAlt, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const financeFeatures = [
+  {
+    icon: FaFileInvoice,
+    title: "Create Professional GST Invoices",
+    desc: "Generate clean invoice receipts with proper tax columns. Track items, SGST/CGST rules, and details automatically."
+  },
+  {
+    icon: FaCoins,
+    title: "Record Parts and Labour Charges",
+    desc: "Ensure every spare component used and repair mechanic charge is billed accurately, reducing invoicing leaks."
+  },
+  {
+    icon: FaMoneyCheckAlt,
+    title: "Track Payments and Garage Finances",
+    desc: "Log client payments via cash, card, and UPI. Keep tabs on outstanding client credit balances and pending dues."
+  }
+];
+
 export default function ARSBillingFinance() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -27,35 +45,20 @@ export default function ARSBillingFinance() {
           
           {/* Features Column */}
           <div className="space-y-6">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center text-primary shadow-sm">
-                <FaFileInvoice className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Create Professional GST Invoices</h3>
-                <p className="text-xs text-slate-600">Generate clean invoice receipts with proper tax columns. Track items, SGST/CGST rules, and details automatically.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center text-primary shadow-sm">
-                <FaCoins className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Record Parts and Labour Charges</h3>
-                <p className="text-xs text-slate-600">Ensure every spare component used and repair mechanic charge is billed accurately, reducing invoicing leaks.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center text-primary shadow-sm">
-                <FaMoneyCheckAlt className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 mb-1">Track Payments and Garage Finances</h3>
-                <p className="text-xs text-slate-600">Log client payments via cash, card, and UPI. Keep tabs on outstanding client credit balances and pending dues.</p>
-              </div>
-            </div>
+            {financeFeatures.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center text-primary shadow-sm">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1">{item.title}</h3>
+                    <p className="text-xs text-slate-600">{item.desc}</p>
+                  </div>
+                </div>
+              );
+            })}
             
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Link

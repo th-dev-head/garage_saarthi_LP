@@ -5,6 +5,11 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const branchList = [
+  { name: "Mumbai - West Branch", ratio: "95% Present Ratio" },
+  { name: "Pune - East Branch", ratio: "88% Present Ratio" }
+];
+
 export default function GAMultiBranch() {
   const handleSolutionClick = () => {
     trackEvent("multi_branch_solution_click", {
@@ -24,14 +29,12 @@ export default function GAMultiBranch() {
             <span className="text-xs text-primary font-bold">Attendance Dashboard</span>
           </div>
           <div className="space-y-2 text-xs text-slate-600">
-            <div className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
-              <span>Mumbai - West Branch</span>
-              <span className="font-semibold text-slate-800">95% Present Ratio</span>
-            </div>
-            <div className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
-              <span>Pune - East Branch</span>
-              <span className="font-semibold text-slate-800">88% Present Ratio</span>
-            </div>
+            {branchList.map((branch, idx) => (
+              <div key={idx} className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
+                <span>{branch.name}</span>
+                <span className="font-semibold text-slate-800">{branch.ratio}</span>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -60,3 +63,4 @@ export default function GAMultiBranch() {
     </section>
   );
 }
+

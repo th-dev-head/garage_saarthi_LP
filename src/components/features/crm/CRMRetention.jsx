@@ -3,6 +3,13 @@ import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const retentionFields = [
+  { label: "Customer", val: "Ramesh Patel", valClass: "text-slate-900 font-bold" },
+  { label: "Vehicle", val: "Honda City • GJ 05 CD 5678", valClass: "text-slate-900 font-bold" },
+  { label: "Alert Type", val: "Next Service Due (6 Months)", valClass: "text-primary font-bold" },
+  { label: "Action", val: "WhatsApp Reminder Sent ✅", valClass: "text-emerald-600 font-bold" }
+];
+
 export default function CRMRetention() {
   const checkPoints = [
     "Maintain organized service records connected to customer & vehicle profiles.",
@@ -53,22 +60,12 @@ export default function CRMRetention() {
         <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
           <span className="text-[10px] uppercase font-bold text-slate-400 block">Retention Alert — Live</span>
           <div className="border border-slate-100 p-6 rounded-2xl bg-white space-y-3">
-            <div className="flex justify-between text-xs text-slate-600 font-medium">
-              <span>Customer</span>
-              <span className="text-slate-900 font-bold">Ramesh Patel</span>
-            </div>
-            <div className="flex justify-between text-xs text-slate-600 font-medium">
-              <span>Vehicle</span>
-              <span className="text-slate-900 font-bold">Honda City • GJ 05 CD 5678</span>
-            </div>
-            <div className="flex justify-between text-xs text-slate-600 font-medium">
-              <span>Alert Type</span>
-              <span className="text-primary font-bold">Next Service Due (6 Months)</span>
-            </div>
-            <div className="flex justify-between text-xs text-slate-600 font-medium">
-              <span>Action</span>
-              <span className="text-emerald-600 font-bold">WhatsApp Reminder Sent ✅</span>
-            </div>
+            {retentionFields.map((field, idx) => (
+              <div key={idx} className="flex justify-between text-xs text-slate-600 font-medium">
+                <span>{field.label}</span>
+                <span className={field.valClass}>{field.val}</span>
+              </div>
+            ))}
           </div>
           <div className="text-center text-[11px] text-slate-400 mt-2">
             GarageSaarthi automatically sends retention alerts — no manual effort needed.
@@ -78,3 +75,4 @@ export default function CRMRetention() {
     </section>
   );
 }
+

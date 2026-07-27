@@ -3,6 +3,29 @@ import Link from "next/link";
 import { FaCogs, FaBoxes, FaFileInvoiceDollar, FaUserFriends } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const wsiPillars = [
+  {
+    icon: FaCogs,
+    title: "1. Repair Bay Operations",
+    desc: "Digital job cards, complaint logging, mechanic allocation, and work order progress tracking."
+  },
+  {
+    icon: FaBoxes,
+    title: "2. Parts & Inventory",
+    desc: "Spare parts stock auditing, checkout deductions, low-stock warnings, and retail counter sales."
+  },
+  {
+    icon: FaFileInvoiceDollar,
+    title: "3. GST Invoicing & CA Access",
+    desc: "GST tax compliance, custom billing series, cash/online collection logs, and view-only CA access."
+  },
+  {
+    icon: FaUserFriends,
+    title: "4. Customer Retention",
+    desc: "Customer & vehicle service histories, CRM lead tracking, and automated WhatsApp service alerts."
+  }
+];
+
 export default function WSIDefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,45 +45,20 @@ export default function WSIDefinition() {
 
         {/* 4 Pillars Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaCogs />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">1. Repair Bay Operations</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Digital job cards, complaint logging, mechanic allocation, and work order progress tracking.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaBoxes />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">2. Parts & Inventory</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Spare parts stock auditing, checkout deductions, low-stock warnings, and retail counter sales.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaFileInvoiceDollar />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">3. GST Invoicing & CA Access</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              GST tax compliance, custom billing series, cash/online collection logs, and view-only CA access.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaUserFriends />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">4. Customer Retention</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Customer & vehicle service histories, CRM lead tracking, and automated WhatsApp service alerts.
-            </p>
-          </div>
+          {wsiPillars.map((pillar, idx) => {
+            const Icon = pillar.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{pillar.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {pillar.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="text-center">
@@ -76,3 +74,4 @@ export default function WSIDefinition() {
     </section>
   );
 }
+

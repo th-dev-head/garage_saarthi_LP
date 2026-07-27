@@ -5,6 +5,11 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 
+const mobileReportPreviewItems = [
+  { label: "Today's Total Cash Collections", value: "₹28,500 (12 Job Cards)", valClass: "text-slate-800", badgeText: "Live" },
+  { label: "Monthly Profit Overview", value: "₹1,42,800 Net Profit", valClass: "text-primary", badgeText: "Updated" }
+];
+
 export default function GRAWebMobile() {
   const handleTrialClick = () => {
     trackEvent("reports_trial_cta_click", {
@@ -60,24 +65,18 @@ export default function GRAWebMobile() {
 
           {/* Mobile Metrics Preview */}
           <div className="space-y-2.5">
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div>
-                <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Today's Total Cash Collections</p>
-                <p className="text-sm font-extrabold text-slate-800 mt-0.5">₹28,500 (12 Job Cards)</p>
+            {mobileReportPreviewItems.map((item, idx) => (
+              <div key={idx} className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                <div>
+                  <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">{item.label}</p>
+                  <p className={`text-sm font-extrabold mt-0.5 ${item.valClass}`}>{item.value}</p>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">{item.badgeText}</span>
               </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Live</span>
-            </div>
-
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div>
-                <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Monthly Profit Overview</p>
-                <p className="text-sm font-extrabold text-primary mt-0.5">₹1,42,800 Net Profit</p>
-              </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Updated</span>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
-}
+}

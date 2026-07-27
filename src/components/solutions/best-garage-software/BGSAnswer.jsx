@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaSlidersH, FaStore, FaBuilding, FaWrench } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const evaluationFactors = [
+  {
+    icon: FaWrench,
+    title: "Small Independent Garages",
+    desc: "Require simple digital job sheet creation, quick customer & vehicle records lookup, easy GST billing, and an affordable mobile app to run operations without complicated setups."
+  },
+  {
+    icon: FaStore,
+    title: "Growing Multi-Brand Workshops",
+    desc: "Need spare parts inventory tracking, CRM lead management, mechanic attendance and payroll calculation, automated WhatsApp service reminders, and revenue reports."
+  },
+  {
+    icon: FaBuilding,
+    title: "Multi-Branch Garage Chains",
+    desc: "Demand centralized branch management, inter-branch stock visibility, role-based staff access permissions, and consolidated financial reporting across locations."
+  }
+];
+
 export default function BGSAnswer() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,38 +40,20 @@ export default function BGSAnswer() {
 
         {/* Evaluation Factors Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {/* Card 1 - Small Independent Garages */}
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
-              <FaWrench />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">Small Independent Garages</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Require simple digital job sheet creation, quick customer & vehicle records lookup, easy GST billing, and an affordable mobile app to run operations without complicated setups.
-            </p>
-          </div>
-
-          {/* Card 2 - Multi-Brand & Medium Workshops */}
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
-              <FaStore />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">Growing Multi-Brand Workshops</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Need spare parts inventory tracking, CRM lead management, mechanic attendance and payroll calculation, automated WhatsApp service reminders, and revenue reports.
-            </p>
-          </div>
-
-          {/* Card 3 - Multi-Branch Garage Networks */}
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
-              <FaBuilding />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">Multi-Branch Garage Chains</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Demand centralized branch management, inter-branch stock visibility, role-based staff access permissions, and consolidated financial reporting across locations.
-            </p>
-          </div>
+          {evaluationFactors.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900 mb-2">{item.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         {/* Positioning Text */}

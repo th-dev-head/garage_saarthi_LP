@@ -1,6 +1,12 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const pitfalls = [
+  { isPositive: false, title: "Register damage:", desc: "High risk of losing paper logs or notebooks." },
+  { isPositive: false, title: "Isolated data:", desc: "Attendance files aren't linked to salary or leaves registers." },
+  { isPositive: true, title: "Digital presence:", desc: "Log shifts via browser dashboard or Android application." }
+];
+
 export default function GADefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,21 +28,18 @@ export default function GADefinition() {
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Manual Register Pitfalls</h3>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Register damage:</strong> High risk of losing paper logs or notebooks.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Isolated data:</strong> Attendance files aren't linked to salary or leaves registers.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-green-500 font-bold">✓</span>
-              <span><strong>Digital presence:</strong> Log shifts via browser dashboard or Android application.</span>
-            </li>
+            {pitfalls.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-2.5">
+                <span className={item.isPositive ? "text-green-500 font-bold" : "text-red-500 font-bold"}>
+                  {item.isPositive ? "✓" : "✕"}
+                </span>
+                <span><strong>{item.title}</strong> {item.desc}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     </section>
   );
 }
+

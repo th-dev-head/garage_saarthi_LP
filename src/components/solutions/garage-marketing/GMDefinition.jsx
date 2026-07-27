@@ -4,6 +4,29 @@ import { FaArrowRight, FaTags, FaComments, FaUsers, FaCalendarCheck } from "reac
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const marketingCards = [
+  {
+    icon: FaTags,
+    title: "Offers & Discounts",
+    desc: "Create and manage seasonal checkup offers, service discounts, and promotional campaigns."
+  },
+  {
+    icon: FaComments,
+    title: "WhatsApp Messaging",
+    desc: "Connect with customers via supported WhatsApp communication workflows for offers and updates."
+  },
+  {
+    icon: FaUsers,
+    title: "Garage CRM",
+    desc: "Organize new service lead enquiries, track quotations, and structure client follow-up calls."
+  },
+  {
+    icon: FaCalendarCheck,
+    title: "Service Due Alerts",
+    desc: "Schedule automated service reminders to encourage timely repeat visits for routine maintenance."
+  }
+];
+
 export default function GMDefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -23,45 +46,20 @@ export default function GMDefinition() {
 
         {/* 4 Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaTags />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Offers & Discounts</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Create and manage seasonal checkup offers, service discounts, and promotional campaigns.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaComments />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">WhatsApp Messaging</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Connect with customers via supported WhatsApp communication workflows for offers and updates.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaUsers />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Garage CRM</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Organize new service lead enquiries, track quotations, and structure client follow-up calls.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaCalendarCheck />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Service Due Alerts</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Schedule automated service reminders to encourage timely repeat visits for routine maintenance.
-            </p>
-          </div>
+          {marketingCards.map((card, idx) => {
+            const Icon = card.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{card.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">
@@ -77,3 +75,4 @@ export default function GMDefinition() {
     </section>
   );
 }
+

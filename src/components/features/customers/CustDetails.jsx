@@ -2,6 +2,29 @@ import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const custRecordSections = [
+  {
+    title: "Customer Records",
+    borderStyle: "border-l-4 border-primary",
+    desc: "Store contact details, communication history, preferences, and logs. Access the comprehensive customer management hub anytime to view customer details."
+  },
+  {
+    title: "Vehicle Records",
+    borderStyle: "border-l-4 border-slate-300",
+    desc: "Link multiple vehicles under one customer. Log chassis numbers, fuel types, insurance info, and odometer records inside our vehicle database."
+  },
+  {
+    title: "Service History",
+    borderStyle: "border-l-4 border-slate-300",
+    desc: "Review past invoices, components changed, mechanics assigned, and payments. A full service log helps team members engage customers with high-quality context."
+  }
+];
+
+const linkedVehiclesList = [
+  { model: "Hyundai Creta (DL3C-AB-1234)", info: "Last Service: 15 Dec 2025 • Odometer: 42,300 km" },
+  { model: "Honda Activa (DL3S-XY-7890)", info: "Last Service: 20 Jan 2026 • Odometer: 12,800 km" }
+];
+
 export default function CustDetails() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -21,35 +44,16 @@ export default function CustDetails() {
             </p>
 
             <div className="space-y-6 pt-4">
-              {/* Customer Records */}
-              <div className="border-l-4 border-primary pl-4">
-                <h3 className="text-base font-bold text-slate-900">
-                  Customer Records
-                </h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Store contact details, communication history, preferences, and logs. Access the comprehensive customer management hub anytime to view customer details.
-                </p>
-              </div>
-
-              {/* Vehicle Records */}
-              <div className="border-l-4 border-slate-300 pl-4">
-                <h3 className="text-base font-bold text-slate-900">
-                  Vehicle Records
-                </h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Link multiple vehicles under one customer. Log chassis numbers, fuel types, insurance info, and odometer records inside our vehicle database.
-                </p>
-              </div>
-
-              {/* Service History */}
-              <div className="border-l-4 border-slate-300 pl-4">
-                <h3 className="text-base font-bold text-slate-900">
-                  Service History
-                </h3>
-                <p className="text-slate-600 text-xs mt-1 leading-relaxed">
-                  Review past invoices, components changed, mechanics assigned, and payments. A full service log helps team members engage customers with high-quality context.
-                </p>
-              </div>
+              {custRecordSections.map((section, idx) => (
+                <div key={idx} className={`${section.borderStyle} pl-4`}>
+                  <h3 className="text-base font-bold text-slate-900">
+                    {section.title}
+                  </h3>
+                  <p className="text-slate-600 text-xs mt-1 leading-relaxed">
+                    {section.desc}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -77,14 +81,12 @@ export default function CustDetails() {
                 <p className="text-slate-600">
                   <strong>Linked Vehicles:</strong>
                 </p>
-                <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1">
-                  <p className="text-slate-700 font-medium font-bold">Hyundai Creta (DL3C-AB-1234)</p>
-                  <p className="text-[10px] text-slate-500">Last Service: 15 Dec 2025 • Odometer: 42,300 km</p>
-                </div>
-                <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1">
-                  <p className="text-slate-700 font-medium font-bold">Honda Activa (DL3S-XY-7890)</p>
-                  <p className="text-[10px] text-slate-500">Last Service: 20 Jan 2026 • Odometer: 12,800 km</p>
-                </div>
+                {linkedVehiclesList.map((veh, idx) => (
+                  <div key={idx} className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1">
+                    <p className="text-slate-700 font-medium font-bold">{veh.model}</p>
+                    <p className="text-[10px] text-slate-500">{veh.info}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -93,3 +95,4 @@ export default function CustDetails() {
     </section>
   );
 }
+

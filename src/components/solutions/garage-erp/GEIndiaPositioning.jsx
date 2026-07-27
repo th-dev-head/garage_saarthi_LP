@@ -5,6 +5,18 @@ import { trackEvent } from "@/src/utils/pixel";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const checkItems = [
+  "GST-compliant invoicing (SGST, CGST, and IGST calculations).",
+  "Pricing plans set in affordable INR ranges with quarterly/annual durations.",
+  "Indian workshop workflow structures (mechanic logs, parts margins)."
+];
+
+const billingCardRows = [
+  { label: "GST Invoicing", value: "100% Tax Compliant", valueClass: "text-green-600 font-bold" },
+  { label: "WhatsApp Alerts", value: "Local Numbers Supported", valueClass: "text-green-600 font-bold" },
+  { label: "Pricing Plans", value: "INR Billing Setup", valueClass: "text-slate-900 font-bold" }
+];
+
 export default function GEIndiaPositioning() {
   const handleCtaClick = () => {
     trackEvent("pricing_click", {
@@ -36,46 +48,38 @@ export default function GEIndiaPositioning() {
         <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
           {/* Checklist */}
           <div className="space-y-3 text-xs text-slate-600 flex-1">
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-green-500 w-3.5 h-3.5" />
-              <span>GST-compliant invoicing (SGST, CGST, and IGST calculations).</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-green-500 w-3.5 h-3.5" />
-              <span>Pricing plans set in affordable INR ranges with quarterly/annual durations.</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheck className="text-green-500 w-3.5 h-3.5" />
-              <span>Indian workshop workflow structures (mechanic logs, parts margins).</span>
-            </div>
+            {checkItems.map((text, idx) => (
+              <div key={idx} className="flex items-center gap-2">
+                <FaCheck className="text-green-500 w-3.5 h-3.5" />
+                <span>{text}</span>
+              </div>
+            ))}
             {/* Button */}
-            <Link href="/pricing">
-              <Button variant="hero" onClick={handleCtaClick}>
-                View GarageSaarthi Pricing
-              </Button>
-            </Link>
+            <div className="pt-2">
+              <Link href="/pricing">
+                <Button variant="hero" onClick={handleCtaClick}>
+                  View GarageSaarthi Pricing
+                </Button>
+              </Link>
+            </div>
           </div>
 
           {/* Billing Card */}
           <div className="bg-white border border-slate-200/80 p-6 rounded-3xl text-center space-y-4 flex-1">
             <span className="text-[10px] uppercase font-bold text-slate-400">Indian Workshop Billing</span>
             <div className="border border-slate-100 p-4 rounded-2xl bg-slate-50/50 space-y-3">
-              <div className="flex justify-between text-xs text-slate-600 font-medium">
-                <span>GST Invoicing</span>
-                <span className="text-green-600 font-bold">100% Tax Compliant</span>
-              </div>
-              <div className="flex justify-between text-xs text-slate-600 font-medium">
-                <span>WhatsApp Alerts</span>
-                <span className="text-green-600 font-bold">Local Numbers Supported</span>
-              </div>
-              <div className="flex justify-between text-xs text-slate-600 font-medium">
-                <span>Pricing Plans</span>
-                <span className="text-slate-900 font-bold">INR Billing Setup</span>
-              </div>
+              {billingCardRows.map((row, idx) => (
+                <div key={idx} className="flex justify-between text-xs text-slate-600 font-medium">
+                  <span>{row.label}</span>
+                  <span className={row.valueClass}>{row.value}</span>
+                </div>
+              ))}
             </div>
           </div>
-        </div>      </div>
+        </div>
+      </div>
     </section>
   );
 }
+
 

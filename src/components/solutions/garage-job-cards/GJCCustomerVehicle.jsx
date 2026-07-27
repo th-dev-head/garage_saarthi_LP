@@ -4,6 +4,12 @@ import { FaCheckSquare, FaClipboardList } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const jobCardBenefits = [
+  "Retrieve customer history and vehicle parameters instantly by typing the registration number.",
+  "Link past job sheets, parts replaced, and recommendations to the vehicle profile automatically.",
+  "Automatically trigger WhatsApp service alerts to the customer when their vehicle is next due."
+];
+
 export default function GJCCustomerVehicle() {
   const handleLinkClick = (label) => {
     trackEvent("job_card_feature_link_click", {
@@ -29,18 +35,12 @@ export default function GJCCustomerVehicle() {
             A standalone job card builder provides only a one-time paper template. GarageSaarthi maintains a linked database:
           </p>
           <div className="space-y-4 mb-8">
-            <div className="flex items-start gap-2 text-xs text-slate-600">
-              <FaCheckSquare className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-              <span>Retrieve customer history and vehicle parameters instantly by typing the registration number.</span>
-            </div>
-            <div className="flex items-start gap-2 text-xs text-slate-600">
-              <FaCheckSquare className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-              <span>Link past job sheets, parts replaced, and recommendations to the vehicle profile automatically.</span>
-            </div>
-            <div className="flex items-start gap-2 text-xs text-slate-600">
-              <FaCheckSquare className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
-              <span>Automatically trigger WhatsApp service alerts to the customer when their vehicle is next due.</span>
-            </div>
+            {jobCardBenefits.map((text, idx) => (
+              <div key={idx} className="flex items-start gap-2 text-xs text-slate-600">
+                <FaCheckSquare className="text-primary w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>{text}</span>
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-wrap gap-4 items-center">
@@ -82,4 +82,5 @@ export default function GJCCustomerVehicle() {
     </section>
   );
 }
+
 

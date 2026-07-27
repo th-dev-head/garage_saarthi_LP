@@ -5,6 +5,12 @@ import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
+const crmLeadBlocks = [
+  { label: "CUSTOMER & VEHICLE", title: "Suresh Mehta • Honda City", sub: "Last Service: 90 days ago" },
+  { label: "AUTOMATED ACTION", title: "WhatsApp Reminder Sent ✅", titleClass: "text-xs text-emerald-400 font-semibold" },
+  { label: "CUSTOMER STATUS", title: "Booked Appointment Today", titleClass: "text-xs font-bold text-amber-400", isFlex: true }
+];
+
 export default function CRMHero() {
   const handleTrialClick = () => {
     trackEvent("crm_feature_trial_cta_click", {
@@ -60,19 +66,13 @@ export default function CRMHero() {
                 <span className="text-[10px] text-green-400 bg-green-500/10 px-2 py-0.5 rounded font-semibold">Service Due</span>
               </div>
               <div className="space-y-4">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">CUSTOMER & VEHICLE</span>
-                  <span className="text-sm font-bold text-white">Suresh Mehta • Honda City</span>
-                  <span className="text-[10px] text-slate-300 block mt-0.5">Last Service: 90 days ago</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">AUTOMATED ACTION</span>
-                  <span className="text-xs text-emerald-400 font-semibold block">WhatsApp Reminder Sent ✅</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5 flex justify-between items-center">
-                  <span className="text-[10px] text-slate-400">CUSTOMER STATUS</span>
-                  <span className="text-xs font-bold text-amber-400">Booked Appointment Today</span>
-                </div>
+                {crmLeadBlocks.map((block, idx) => (
+                  <div key={idx} className={`bg-white/5 p-4 rounded-xl border border-white/5 ${block.isFlex ? "flex justify-between items-center" : ""}`}>
+                    <span className="text-[10px] text-slate-400 block mb-0.5">{block.label}</span>
+                    <span className={block.titleClass || "text-sm font-bold text-white"}>{block.title}</span>
+                    {block.sub && <span className="text-[10px] text-slate-300 block mt-0.5">{block.sub}</span>}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -81,3 +81,4 @@ export default function CRMHero() {
     </section>
   );
 }
+

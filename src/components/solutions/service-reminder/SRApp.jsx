@@ -2,7 +2,14 @@ import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
+import { FRONTEND_URL } from "@/src/config/env";
 import Link from "next/link";
+
+const todayRemindersList = [
+  { name: "Rajesh Patel (GJ05AB1234)", details: "Hyundai i20 • Periodic Oil Service Due" },
+  { name: "Ankit Verma (GJ09BK0001)", details: "Maruti Baleno • Wheel Alignment Due" },
+  { name: "Vikram Shah (GJ01CD5678)", details: "Honda City • Brake Inspection Due" }
+];
 
 export default function SRApp() {
   const handleAndroidClick = () => {
@@ -30,11 +37,12 @@ export default function SRApp() {
             <div onClick={handleAndroidClick}>
               <PlayStoreBadge />
             </div>
-            <Link href="https://app.garagesaarthi.com/register" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11">
+            <Link href={`${FRONTEND_URL}/register`} target="_blank" rel="noopener noreferrer" className="rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11">
               Use GarageSaarthi on Web
             </Link>
           </div>
         </div>
+
         <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
           {/* Header Bar */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
@@ -50,36 +58,17 @@ export default function SRApp() {
           {/* Mobile App Reminder List Mockup */}
           <div className="space-y-2 pt-1">
             <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Today's Service Reminders</p>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Rajesh Patel (GJ05AB1234)</p>
-                <p className="text-[10px] text-slate-500">Hyundai i20 • Periodic Oil Service Due</p>
+            {todayRemindersList.map((item, idx) => (
+              <div key={idx} className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                <div>
+                  <p className="text-xs font-bold text-slate-800">{item.name}</p>
+                  <p className="text-[10px] text-slate-500">{item.details}</p>
+                </div>
+                <span className="text-[10px] font-bold bg-green-500 text-white px-2.5 py-1 rounded-lg flex items-center gap-1 cursor-pointer">
+                  WhatsApp
+                </span>
               </div>
-              <span className="text-[10px] font-bold bg-green-500 text-white px-2.5 py-1 rounded-lg flex items-center gap-1 cursor-pointer">
-                WhatsApp
-              </span>
-            </div>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Ankit Verma (GJ09BK0001)</p>
-                <p className="text-[10px] text-slate-500">Maruti Baleno • Wheel Alignment Due</p>
-              </div>
-              <span className="text-[10px] font-bold bg-green-500 text-white px-2.5 py-1 rounded-lg flex items-center gap-1 cursor-pointer">
-                WhatsApp
-              </span>
-            </div>
-
-            <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Vikram Shah (GJ01CD5678)</p>
-                <p className="text-[10px] text-slate-500">Honda City • Brake Inspection Due</p>
-              </div>
-              <span className="text-[10px] font-bold bg-green-500 text-white px-2.5 py-1 rounded-lg flex items-center gap-1 cursor-pointer">
-                WhatsApp
-              </span>
-            </div>
+            ))}
           </div>
         </div>
       </div>

@@ -194,50 +194,152 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        {/* UTM Param Injector and Window Open Interceptor */}
-        <Script id="utm-param-injector" strategy="lazyOnload">
-          {`window.addEventListener('load', function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            let utmQueryString = "";
+        {/* UTM & Lead Source Injector and Interceptor */}
+        <Script id="utm-param-injector" strategy="afterInteractive">
+          {`(function () {
+            try {
+              var STORAGE_KEY = 'gs_lp_source_params';
 
-            urlParams.forEach((value, key) => {
-              if (key.toLowerCase().startsWith('utm_') || key.toLowerCase().includes('clid')) {
-                utmQueryString += (utmQueryString ? "&" : "") + key + "=" + encodeURIComponent(value);
-              }
-            });
+              function getTrackingParams() {
+                var params = {};
 
-            if (utmQueryString) {
-              const targetHost = "${new URL(FRONTEND_URL).hostname}";
-              const appLinks = document.querySelectorAll('a[href*="' + targetHost + '"]');
-              appLinks.forEach(link => {
+                // 1. Load any previously saved params from sessionStorage
                 try {
-                  const url = new URL(link.href);
-                  const newParams = new URLSearchParams(utmQueryString);
-                  newParams.forEach((value, key) => {
-                    url.searchParams.set(key, value);
-                  });
-                  link.href = url.toString();
-                } catch (e) {
-                  console.error("Link update error:", e);
-                }
-              });
+                  var saved = sessionStorage.getItem(STORAGE_KEY);
+                  if (saved) {
+                    params = JSON.parse(saved) || {};
+                  }
+                } catch (e) {}
 
-              const originalWindowOpen = window.open;
-              window.open = function (url, target, features) {
-                if (url && url.includes(targetHost)) {
-                  try {
-                    const newUrl = new URL(url.startsWith('http') ? url : window.location.origin + url);
-                    const newParams = new URLSearchParams(utmQueryString);
-                    newParams.forEach((value, key) => {
-                      newUrl.searchParams.set(key, value);
-                    });
-                    url = newUrl.toString();
-                  } catch (e) { }
+                // 2. Parse current URL search params
+                var search = window.location.search;
+                if (search) {
+                  var urlParams = new URLSearchParams(search);
+                  var hasNewParams = false;
+                  urlParams.forEach(function (value, key) {
+                    if (value && value.trim() !== '') {
+                      params[key] = value.trim();
+                      hasNewParams = true;
+                    }
+                  });
+                  if (hasNewParams) {
+                    try {
+                      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                    } catch (e) {}
+                  }
                 }
-                return originalWindowOpen.call(this, url, target, features);
+
+                // 3. Ensure source & utm_source are always populated
+                var currentPath = window.location.pathname || '/';
+                
+                if (!params['source'] && params['utm_source']) {
+                  params['source'] = params['utm_source'];
+                } else if (params['source'] && !params['utm_source']) {
+                  params['utm_source'] = params['source'];
+                } else if (!params['source'] && !params['utm_source']) {
+                  params['source'] = 'landing_page';
+                  params['utm_source'] = 'landing_page';
+                }
+
+                if (!params['utm_medium']) {
+                  params['utm_medium'] = 'website';
+                }
+
+                if (!params['lp_path']) {
+                  params['lp_path'] = currentPath;
+                }
+
+                if (!params['referrer'] && document.referrer) {
+                  try {
+                    var refHost = new URL(document.referrer).hostname;
+                    if (refHost && refHost !== window.location.hostname) {
+                      params['referrer'] = refHost;
+                    }
+                  } catch (e) {}
+                }
+
+                return params;
+              }
+
+              function isTargetUrl(urlStr) {
+                if (!urlStr || typeof urlStr !== 'string') return false;
+                var lower = urlStr.toLowerCase();
+                return (
+                  lower.indexOf('signup') !== -1 ||
+                  lower.indexOf('login') !== -1 ||
+                  lower.indexOf('register') !== -1 ||
+                  lower.indexOf('garagesaarthi.com') !== -1 ||
+                  lower.indexOf('localhost') !== -1
+                );
+              }
+
+              function appendParams(urlStr) {
+                if (!urlStr || typeof urlStr !== 'string') return urlStr;
+                try {
+                  var params = getTrackingParams();
+                  var paramKeys = Object.keys(params);
+                  if (paramKeys.length === 0) return urlStr;
+
+                  var isAbsolute = urlStr.indexOf('http://') === 0 || urlStr.indexOf('https://') === 0 || urlStr.indexOf('//') === 0;
+                  var base = window.location.origin;
+                  var targetUrl = new URL(isAbsolute ? urlStr : (base + (urlStr.indexOf('/') === 0 ? '' : '/') + urlStr));
+
+                  paramKeys.forEach(function (key) {
+                    if (!targetUrl.searchParams.has(key)) {
+                      targetUrl.searchParams.set(key, params[key]);
+                    }
+                  });
+
+                  return isAbsolute ? targetUrl.toString() : (targetUrl.pathname + targetUrl.search + targetUrl.hash);
+                } catch (e) {
+                  return urlStr;
+                }
+              }
+
+              // Intercept window.open calls immediately
+              var originalOpen = window.open;
+              window.open = function (url, target, features) {
+                if (url && isTargetUrl(url)) {
+                  url = appendParams(url);
+                }
+                return originalOpen.call(this, url, target, features);
               };
+
+              // Intercept link clicks dynamically
+              document.addEventListener('click', function (e) {
+                var target = e.target;
+                while (target && target !== document) {
+                  if (target.tagName === 'A' && target.href) {
+                    if (isTargetUrl(target.href)) {
+                      target.href = appendParams(target.href);
+                    }
+                    break;
+                  }
+                  target = target.parentNode;
+                }
+              }, true);
+
+              // Process existing anchor tags on DOM Ready
+              function updateExistingLinks() {
+                var links = document.querySelectorAll('a[href]');
+                for (var i = 0; i < links.length; i++) {
+                  var link = links[i];
+                  if (isTargetUrl(link.href)) {
+                    link.href = appendParams(link.href);
+                  }
+                }
+              }
+
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', updateExistingLinks);
+              } else {
+                updateExistingLinks();
+              }
+
+            } catch (e) {
+              console.error('UTM tracking script error:', e);
             }
-          });`}
+          })();`}
         </Script>
       </body>
     </html>

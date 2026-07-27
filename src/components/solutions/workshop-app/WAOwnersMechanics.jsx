@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaUserShield, FaUsers, FaWrench, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const workshopRolesList = [
+  {
+    icon: FaUserShield,
+    title: "For Garage Owners",
+    desc: "Track consolidated monthly reports, sales revenue figures, available inventory value, staff attendance logins, and branch statistics."
+  },
+  {
+    icon: FaUsers,
+    title: "For Workshop Staff",
+    desc: "Create customer records, log vehicle fuel levels, make digital estimates, issue billing receipts, and schedule reminders."
+  },
+  {
+    icon: FaWrench,
+    title: "For Mechanics",
+    desc: "View active task logs assigned to them on the shop floor and update individual job card statuses."
+  }
+];
+
 export default function WAOwnersMechanics() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -24,38 +42,20 @@ export default function WAOwnersMechanics() {
 
         {/* Roles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Owners */}
-          <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl shadow-xs">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] text-primary flex items-center justify-center mb-4 text-lg">
-              <FaUserShield />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">For Garage Owners</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Track consolidated monthly reports, sales revenue figures, available inventory value, staff attendance logins, and branch statistics.
-            </p>
-          </div>
-
-          {/* Workshop Staff */}
-          <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl shadow-xs">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] text-primary flex items-center justify-center mb-4 text-lg">
-              <FaUsers />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">For Workshop Staff</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Create customer records, log vehicle fuel levels, make digital estimates, issue billing receipts, and schedule reminders.
-            </p>
-          </div>
-
-          {/* Mechanics */}
-          <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl shadow-xs">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] text-primary flex items-center justify-center mb-4 text-lg">
-              <FaWrench />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900 mb-2">For Mechanics</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              View active task logs assigned to them on the shop floor and update individual job card statuses.
-            </p>
-          </div>
+          {workshopRolesList.map((role, idx) => {
+            const Icon = role.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl shadow-xs">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] text-primary flex items-center justify-center mb-4 text-lg">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900 mb-2">{role.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {role.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         {/* Global CTA */}
@@ -73,4 +73,5 @@ export default function WAOwnersMechanics() {
     </section>
   );
 }
+
 

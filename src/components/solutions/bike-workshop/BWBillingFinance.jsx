@@ -3,6 +3,30 @@ import Link from "next/link";
 import { FaFileInvoiceDollar, FaStore, FaMoneyCheckAlt } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const billingCards = [
+  {
+    icon: FaFileInvoiceDollar,
+    title: "Create Organized Workshop Bills",
+    desc: "Generate professional, tax-compliant GST invoices containing separate parts, labor items, discounts, and customer billing prefixes in seconds.",
+    link: "/pricing",
+    linkText: "View Billing Setup"
+  },
+  {
+    icon: FaStore,
+    title: "Manage Counter Sales",
+    desc: "Record quick sales of lubricants, spare items, helmets, or service consumables directly without having to populate a service job card.",
+    link: "/features/counter-sales",
+    linkText: "Explore Counter Sales"
+  },
+  {
+    icon: FaMoneyCheckAlt,
+    title: "Track Payments",
+    desc: "Organize payments collected via cash, UPI, cards, or credit. Send payment links and digital invoice links straight to the customer's WhatsApp.",
+    link: "/features/payments",
+    linkText: "Explore Payment Management"
+  }
+];
+
 export default function BWBillingFinance() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -22,61 +46,29 @@ export default function BWBillingFinance() {
 
         {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1 - Bills */}
-          <div className="bg-white border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-                <FaFileInvoiceDollar />
+          {billingCards.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="bg-white border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                <div className="space-y-4">
+                  <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                    <Icon />
+                  </div>
+                  <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
+                  <p className="text-xs text-slate-500 leading-normal">
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="pt-6 border-t border-slate-100 mt-6">
+                  <Link href={item.link} className="text-xs font-bold text-primary hover:underline">
+                    {item.linkText}
+                  </Link>
+                </div>
               </div>
-              <h3 className="text-sm font-bold text-slate-900">Create Organized Workshop Bills</h3>
-              <p className="text-xs text-slate-500 leading-normal">
-                Generate professional, tax-compliant GST invoices containing separate parts, labor items, discounts, and customer billing prefixes in seconds.
-              </p>
-            </div>
-            <div className="pt-6 border-t border-slate-100 mt-6">
-              <Link href="/pricing" className="text-xs font-bold text-primary hover:underline">
-                View Billing Setup
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 2 - Counter Sales */}
-          <div className="bg-white border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-                <FaStore />
-              </div>
-              <h3 className="text-sm font-bold text-slate-900">Manage Counter Sales</h3>
-              <p className="text-xs text-slate-500 leading-normal">
-                Record quick sales of lubricants, spare items, helmets, or service consumables directly without having to populate a service job card.
-              </p>
-            </div>
-            <div className="pt-6 border-t border-slate-100 mt-6">
-              <Link href="/features/counter-sales" className="text-xs font-bold text-primary hover:underline">
-                Explore Counter Sales
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 3 - Payments */}
-          <div className="bg-white border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-                <FaMoneyCheckAlt />
-              </div>
-              <h3 className="text-sm font-bold text-slate-900">Track Payments</h3>
-              <p className="text-xs text-slate-500 leading-normal">
-                Organize payments collected via cash, UPI, cards, or credit. Send payment links and digital invoice links straight to the customer's WhatsApp.
-              </p>
-            </div>
-            <div className="pt-6 border-t border-slate-100 mt-6">
-              <Link href="/features/payments" className="text-xs font-bold text-primary hover:underline">
-                Explore Payment Management
-              </Link>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
-}
+} 

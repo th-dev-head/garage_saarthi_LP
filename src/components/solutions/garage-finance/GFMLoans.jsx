@@ -5,6 +5,12 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const loanLedgerRows = [
+  { label: "Compressor Machine Loan", value: "₹1,20,000", valueClass: "text-rose-500 font-bold" },
+  { label: "Monthly EMI Paid", value: "₹15,000 / Month", valueClass: "text-slate-800 font-semibold" },
+  { label: "Remaining Installments", value: "8 Months", valueClass: "text-slate-800 font-semibold" }
+];
+
 export default function GFMLoans() {
   const handleFeatureClick = () => {
     trackEvent("loan_feature_click", {
@@ -43,21 +49,16 @@ export default function GFMLoans() {
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Loan Outstanding Ledger</h3>
           <div className="space-y-3">
-            <div className="p-3 bg-white rounded-xl border border-slate-100 flex justify-between text-xs md:text-sm">
-              <span className="text-slate-600 font-medium">Compressor Machine Loan</span>
-              <span className="text-rose-500 font-bold">₹1,20,000</span>
-            </div>
-            <div className="p-3 bg-white rounded-xl border border-slate-100 flex justify-between text-xs md:text-sm">
-              <span className="text-slate-600 font-medium">Monthly EMI Paid</span>
-              <span className="text-slate-800 font-semibold">₹15,000 / Month</span>
-            </div>
-            <div className="p-3 bg-white rounded-xl border border-slate-100 flex justify-between text-xs md:text-sm">
-              <span className="text-slate-600 font-medium">Remaining Installments</span>
-              <span className="text-slate-800 font-semibold">8 Months</span>
-            </div>
+            {loanLedgerRows.map((row, idx) => (
+              <div key={idx} className="p-3 bg-white rounded-xl border border-slate-100 flex justify-between text-xs md:text-sm">
+                <span className="text-slate-600 font-medium">{row.label}</span>
+                <span className={row.valueClass}>{row.value}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+

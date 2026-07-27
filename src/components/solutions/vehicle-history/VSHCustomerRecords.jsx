@@ -3,6 +3,12 @@ import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const quickViewChecklist = [
+  { title: "Owner Profiles:", desc: "Contact numbers, addresses, and pending dues." },
+  { title: "Vehicle Lists:", desc: "Multiple cars/bikes linked to a single owner." },
+  { title: "Due Service Targets:", desc: "Automatic next due targets set after billing." }
+];
+
 export default function VSHCustomerRecords() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -28,18 +34,12 @@ export default function VSHCustomerRecords() {
         <div className="lg:col-span-5 bg-white border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
           <h3 className="text-sm font-bold text-text-dark">Quick View Checklist:</h3>
           <ul className="space-y-3 text-xs text-slate-500 leading-relaxed">
-            <li className="flex items-start gap-2">
-              <span className="text-primary">•</span>
-              <span><strong>Owner Profiles:</strong> Contact numbers, addresses, and pending dues.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary">•</span>
-              <span><strong>Vehicle Lists:</strong> Multiple cars/bikes linked to a single owner.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary">•</span>
-              <span><strong>Due Service Targets:</strong> Automatic next due targets set after billing.</span>
-            </li>
+            {quickViewChecklist.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-2">
+                <span className="text-primary">•</span>
+                <span><strong>{item.title}</strong> {item.desc}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

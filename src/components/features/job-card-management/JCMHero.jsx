@@ -5,6 +5,12 @@ import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
+const jcmRepairOrderBlocks = [
+  { label: "VEHICLE & CUSTOMER", title: "MH 12 AB 1234 • Hyundai Creta", sub: "Rahul Sharma (+91 98220 *****)" },
+  { label: "COMPLAINTS & SERVICE", title: "Full Engine Service + Front Brake Pad Replace", titleClass: "text-xs text-slate-200 block" },
+  { label: "ASSIGNED TECHNICIAN", title: "Amit Verma (Bay 3)", titleClass: "text-xs font-bold text-amber-400" }
+];
+
 export default function JCMHero() {
   const handleTrialClick = () => {
     trackEvent("job_card_feature_trial_cta_click", {
@@ -60,19 +66,13 @@ export default function JCMHero() {
                 <span className="text-[10px] text-green-400 bg-green-500/10 px-2 py-0.5 rounded font-semibold">In Progress</span>
               </div>
               <div className="space-y-4">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">VEHICLE & CUSTOMER</span>
-                  <span className="text-sm font-bold text-white">MH 12 AB 1234 • Hyundai Creta</span>
-                  <span className="text-[10px] text-slate-300 block mt-0.5">Rahul Sharma (+91 98220 *****)</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">COMPLAINTS & SERVICE</span>
-                  <span className="text-xs text-slate-200 block">Full Engine Service + Front Brake Pad Replace</span>
-                </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-400 block mb-0.5">ASSIGNED TECHNICIAN</span>
-                  <span className="text-xs font-bold text-amber-400">Amit Verma (Bay 3)</span>
-                </div>
+                {jcmRepairOrderBlocks.map((block, idx) => (
+                  <div key={idx} className="bg-white/5 p-4 rounded-xl border border-white/5">
+                    <span className="text-[10px] text-slate-400 block mb-0.5">{block.label}</span>
+                    <span className={block.titleClass || "text-sm font-bold text-white"}>{block.title}</span>
+                    {block.sub && <span className="text-[10px] text-slate-300 block mt-0.5">{block.sub}</span>}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -81,3 +81,4 @@ export default function JCMHero() {
     </section>
   );
 }
+

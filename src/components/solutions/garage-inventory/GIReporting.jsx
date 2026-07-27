@@ -3,25 +3,30 @@ import Link from "next/link";
 import { FaChartBar, FaFileAlt, FaFileContract, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function GIReporting() {
-  const reports = [
-    {
-      icon: <FaFileAlt className="text-primary w-4 h-4" />,
-      title: "Stock Valuation Reports",
-      desc: "Instantly view the total monetary value of your current warehouse stock based on active purchase records."
-    },
-    {
-      icon: <FaChartBar className="text-primary w-4 h-4" />,
-      title: "Item Consumption Statistics",
-      desc: "Identify fast-moving spare items versus dead stock that is taking up shelf space without generating revenue."
-    },
-    {
-      icon: <FaFileContract className="text-primary w-4 h-4" />,
-      title: "Purchase Log Summaries",
-      desc: "Analyze supplier purchase trends, price fluctuations, and active transaction records over custom dates."
-    }
-  ];
+const reports = [
+  {
+    icon: <FaFileAlt className="text-primary w-4 h-4" />,
+    title: "Stock Valuation Reports",
+    desc: "Instantly view the total monetary value of your current warehouse stock based on active purchase records."
+  },
+  {
+    icon: <FaChartBar className="text-primary w-4 h-4" />,
+    title: "Item Consumption Statistics",
+    desc: "Identify fast-moving spare items versus dead stock that is taking up shelf space without generating revenue."
+  },
+  {
+    icon: <FaFileContract className="text-primary w-4 h-4" />,
+    title: "Purchase Log Summaries",
+    desc: "Analyze supplier purchase trends, price fluctuations, and active transaction records over custom dates."
+  }
+];
 
+const highTurnoverSpares = [
+  { name: "Engine Oils", percentage: "80%" },
+  { name: "Brake Consumables", percentage: "65%" }
+];
+
+export default function GIReporting() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -78,25 +83,17 @@ export default function GIReporting() {
             <span className="uppercase font-bold text-slate-400 tracking-wider block mb-3">High Turnover Spares</span>
             
             <div className="space-y-3">
-              <div>
-                <div className="flex justify-between mb-1">
-                  <span>Engine Oils</span>
-                  <span className="font-bold text-slate-700">80%</span>
+              {highTurnoverSpares.map((item, idx) => (
+                <div key={idx}>
+                  <div className="flex justify-between mb-1">
+                    <span>{item.name}</span>
+                    <span className="font-bold text-slate-700">{item.percentage}</span>
+                  </div>
+                  <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                    <div className="bg-primary h-full rounded-full" style={{ width: item.percentage }} />
+                  </div>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-primary h-full rounded-full" style={{ width: "80%" }} />
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between mb-1">
-                  <span>Brake Consumables</span>
-                  <span className="font-bold text-slate-700">65%</span>
-                </div>
-                <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-primary h-full rounded-full" style={{ width: "65%" }} />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -104,4 +101,5 @@ export default function GIReporting() {
     </section>
   );
 }
+
 

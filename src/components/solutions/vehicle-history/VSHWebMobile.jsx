@@ -5,6 +5,11 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 
+const historySyncPlatforms = [
+  { icon: "💻", title: "Web Portal (Front Office)", desc: "Invoicing & Detailed History Check", badgeText: "Synced" },
+  { icon: "📱", title: "Android App (Bay Mechanic)", desc: "Quick Vehicle History & Check-In", badgeText: "Synced" }
+];
+
 export default function VSHWebMobile() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
@@ -41,27 +46,18 @@ export default function VSHWebMobile() {
 
           {/* Sync Platform Cards Mockup */}
           <div className="space-y-2.5">
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-lg">💻</span>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Web Portal (Front Office)</p>
-                  <p className="text-[10px] text-slate-500">Invoicing & Detailed History Check</p>
+            {historySyncPlatforms.map((plat, idx) => (
+              <div key={idx} className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg">{plat.icon}</span>
+                  <div>
+                    <p className="text-xs font-bold text-slate-800">{plat.title}</p>
+                    <p className="text-[10px] text-slate-500">{plat.desc}</p>
+                  </div>
                 </div>
+                <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">{plat.badgeText}</span>
               </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Synced</span>
-            </div>
-
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-lg">📱</span>
-                <div>
-                  <p className="text-xs font-bold text-slate-800">Android App (Bay Mechanic)</p>
-                  <p className="text-[10px] text-slate-500">Quick Vehicle History & Check-In</p>
-                </div>
-              </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Synced</span>
-            </div>
+            ))}
           </div>
 
           {/* Live Sync Footer */}

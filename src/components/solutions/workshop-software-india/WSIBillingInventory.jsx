@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaFileInvoiceDollar, FaBoxes, FaTag, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const billingInventoryCols = [
+  {
+    icon: FaBoxes,
+    title: "Dynamic Stock Deductions",
+    desc: "When spare parts are checked out for a vehicle job card, inventory levels deduct automatically in real time."
+  },
+  {
+    icon: FaFileInvoiceDollar,
+    title: "Custom GST Invoice Series",
+    desc: "Generate GST-compliant bills with HSN/SAC tax breakdowns, labor rates, and custom numbering rules for your workshop."
+  },
+  {
+    icon: FaTag,
+    title: "Counter Retail Sales",
+    desc: "Conduct quick retail counter sales for spare parts, oil bottles, and accessories without needing to open a full job card."
+  }
+];
+
 export default function WSIBillingInventory() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,35 +40,20 @@ export default function WSIBillingInventory() {
 
         {/* 3 Grid Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaBoxes />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Dynamic Stock Deductions</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              When spare parts are checked out for a vehicle job card, inventory levels deduct automatically in real time.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaFileInvoiceDollar />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Custom GST Invoice Series</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Generate GST-compliant bills with HSN/SAC tax breakdowns, labor rates, and custom numbering rules for your workshop.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaTag />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Counter Retail Sales</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Conduct quick retail counter sales for spare parts, oil bottles, and accessories without needing to open a full job card.
-            </p>
-          </div>
+          {billingInventoryCols.map((col, idx) => {
+            const Icon = col.icon;
+            return (
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{col.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {col.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">
@@ -65,3 +68,4 @@ export default function WSIBillingInventory() {
     </section>
   );
 }
+

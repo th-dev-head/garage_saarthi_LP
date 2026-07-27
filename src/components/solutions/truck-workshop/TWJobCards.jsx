@@ -18,6 +18,12 @@ const benefits = [
   },
 ];
 
+const typicalServiceLogRows = [
+  { left: "Vehicle: Ashok Leyland 1618", right: "Mechanic: Rajesh K." },
+  { left: "Task: Air Brake Line Bleeding", right: "Labor: ₹1,200" },
+  { left: "Parts: Brake Pads Set (Front)", right: "Inventory Deducted" }
+];
+
 export default function TWJobCards() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -72,18 +78,12 @@ export default function TWJobCards() {
                 <span className="font-bold text-slate-800">Job Card #TW-449</span>
                 <span className="bg-orange-100 text-orange-800 px-2 py-0.5 rounded-full text-[9px] font-bold">Active</span>
               </li>
-              <li className="flex justify-between border-b border-slate-200/40 pb-2">
-                <span>Vehicle: Ashok Leyland 1618</span>
-                <span>Mechanic: Rajesh K.</span>
-              </li>
-              <li className="flex justify-between border-b border-slate-200/40 pb-2">
-                <span>Task: Air Brake Line Bleeding</span>
-                <span>Labor: ₹1,200</span>
-              </li>
-              <li className="flex justify-between border-b border-slate-200/40 pb-2">
-                <span>Parts: Brake Pads Set (Front)</span>
-                <span>Inventory Deducted</span>
-              </li>
+              {typicalServiceLogRows.map((row, idx) => (
+                <li key={idx} className="flex justify-between border-b border-slate-200/40 pb-2">
+                  <span>{row.left}</span>
+                  <span>{row.right}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -91,3 +91,4 @@ export default function TWJobCards() {
     </section>
   );
 }
+

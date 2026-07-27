@@ -2,6 +2,11 @@ import React from "react";
 import { FaUsers } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const serviceLogs = [
+  "May 24, 2026: General Service & Oil Filter change",
+  "Dec 12, 2025: Front Brake Pads replacement"
+];
+
 export default function GECustomerVehicle() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -25,8 +30,9 @@ export default function GECustomerVehicle() {
             <div>
               <span className="text-[10px] uppercase font-bold text-slate-400">Service Logs</span>
               <ul className="text-xs text-slate-500 mt-2 space-y-1.5 list-disc pl-4 leading-relaxed">
-                <li>May 24, 2026: General Service &amp; Oil Filter change</li>
-                <li>Dec 12, 2025: Front Brake Pads replacement</li>
+                {serviceLogs.map((log, idx) => (
+                  <li key={idx}>{log}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -52,4 +58,5 @@ export default function GECustomerVehicle() {
     </section>
   );
 }
+
 

@@ -3,6 +3,23 @@ import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const reminderFeatures = [
+  {
+    title: "Vehicle Service Alerts",
+    desc: "Log upcoming service alerts based on past check-in sheets. Explore ",
+    href: "/features/service-alerts",
+    label: "Service Alerts Feature Link",
+    linkText: "Service Alerts"
+  },
+  {
+    title: "WhatsApp Reminders",
+    desc: "Send pre-populated WhatsApp reminder templates to clients with a single click. Explore ",
+    href: "/features/service-alerts",
+    label: "WhatsApp Alerts Feature Link",
+    linkText: "WhatsApp Alerts"
+  }
+];
+
 export default function CWServiceReminders() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
@@ -28,25 +45,21 @@ export default function CWServiceReminders() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-            <div className="space-y-2">
-              <h3 className="text-base font-bold text-slate-800">Vehicle Service Alerts</h3>
-              <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                Log upcoming service alerts based on past check-in sheets. Explore{" "}
-                <Link href="/features/service-alerts" onClick={() => handleLinkClick("Service Alerts Feature Link", "/features/service-alerts")} className="text-primary font-semibold hover:underline">
-                  Service Alerts
-                </Link>.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-base font-bold text-slate-800">WhatsApp Reminders</h3>
-              <p className="text-slate-500 text-xs md:text-sm leading-relaxed font-normal">
-                Send pre-populated WhatsApp reminder templates to clients with a single click. Explore{" "}
-                <Link href="/features/service-alerts" onClick={() => handleLinkClick("WhatsApp Alerts Feature Link", "/features/service-alerts")} className="text-primary font-semibold hover:underline">
-                  WhatsApp Alerts
-                </Link>.
-              </p>
-            </div>
+            {reminderFeatures.map((feature, idx) => (
+              <div key={idx} className="space-y-2">
+                <h3 className="text-base font-bold text-slate-800">{feature.title}</h3>
+                <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
+                  {feature.desc}
+                  <Link
+                    href={feature.href}
+                    onClick={() => handleLinkClick(feature.label, feature.href)}
+                    className="text-primary font-semibold hover:underline"
+                  >
+                    {feature.linkText}
+                  </Link>.
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 

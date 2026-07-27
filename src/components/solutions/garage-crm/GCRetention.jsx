@@ -4,6 +4,17 @@ import Link from "next/link";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const retentionFeatures = [
+  "Maintain organized service records connected to vehicle profiles.",
+  "Track upcoming service requirements based on calendar alerts.",
+  "Help improve customer follow-ups and marketing coupons distribution."
+];
+
+const retentionAlertRows = [
+  { label: "Customer", value: "Ramesh Patel", valueClass: "text-slate-900 font-bold" },
+  { label: "Alert Type", value: "Next Service Due (6 Months)", valueClass: "text-primary font-bold" }
+];
+
 export default function GCRetention() {
   const handleLinkClick = (label, dest) => {
     trackEvent("service_alert_click", {
@@ -30,18 +41,12 @@ export default function GCRetention() {
             Workshop relationships should continue after the vehicle is delivered. GarageSaarthi helps you support customer retention efforts and stay connected with existing customers:
           </p>
           <div className="space-y-4 mb-8 text-xs text-slate-600">
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-500 w-4 h-4 flex-shrink-0" />
-              <span>Maintain organized service records connected to vehicle profiles.</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-500 w-4 h-4 flex-shrink-0" />
-              <span>Track upcoming service requirements based on calendar alerts.</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-500 w-4 h-4 flex-shrink-0" />
-              <span>Help improve customer follow-ups and marketing coupons distribution.</span>
-            </div>
+            {retentionFeatures.map((text, idx) => (
+              <div key={idx} className="flex items-center gap-2">
+                <FaCheckCircle className="text-green-500 w-4 h-4 flex-shrink-0" />
+                <span>{text}</span>
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-wrap gap-4 items-center">
@@ -66,18 +71,17 @@ export default function GCRetention() {
         <div className="bg-white border border-slate-200/80 p-8 rounded-3xl text-center space-y-4 shadow-sm">
           <span className="text-[10px] uppercase font-bold text-slate-400">Retention Alert</span>
           <div className="border border-slate-100 p-6 rounded-2xl bg-slate-50/50 space-y-3">
-            <div className="flex justify-between text-xs text-slate-600 font-medium">
-              <span>Customer</span>
-              <span className="text-slate-900 font-bold">Ramesh Patel</span>
-            </div>
-            <div className="flex justify-between text-xs text-slate-600 font-medium">
-              <span>Alert Type</span>
-              <span className="text-primary font-bold">Next Service Due (6 Months)</span>
-            </div>
+            {retentionAlertRows.map((row, idx) => (
+              <div key={idx} className="flex justify-between text-xs text-slate-600 font-medium">
+                <span>{row.label}</span>
+                <span className={row.valueClass}>{row.value}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 

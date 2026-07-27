@@ -1,7 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import {FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
+
+const staffList = [
+  { name: "Ramesh Kumar (Mechanic)", status: "₹850 Commission", statusClass: "font-semibold text-slate-900" },
+  { name: "Suresh Kumar (Mechanic)", status: "₹620 Commission", statusClass: "font-semibold text-slate-900" },
+  { name: "Helper Attendance Login", status: "Logged In Today", statusClass: "text-green-600 font-semibold" }
+];
 
 export default function GAStaffManagement() {
   return (
@@ -17,18 +23,12 @@ export default function GAStaffManagement() {
               <span className="text-[10px] text-green-600 bg-green-50 px-2 py-0.5 rounded font-semibold">Active</span>
             </div>
             <div className="space-y-3 text-xs text-slate-600">
-              <div className="flex justify-between">
-                <span>Ramesh Kumar (Mechanic)</span>
-                <span className="font-semibold text-slate-900">₹850 Commission</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Suresh Kumar (Mechanic)</span>
-                <span className="font-semibold text-slate-900">₹620 Commission</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Helper Attendance Login</span>
-                <span className="text-green-600 font-semibold">Logged In Today</span>
-              </div>
+              {staffList.map((item, idx) => (
+                <div key={idx} className="flex justify-between">
+                  <span>{item.name}</span>
+                  <span className={item.statusClass}>{item.status}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -68,4 +68,5 @@ export default function GAStaffManagement() {
     </section>
   );
 }
+
 

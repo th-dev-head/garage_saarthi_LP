@@ -6,6 +6,11 @@ import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const syncPreviewItems = [
+  { title: "Mechanic Staff Attendance", desc: "26 Days Present • 2 Overtime Logs", badgeText: "Synced" },
+  { title: "Monthly Payout Pointers", desc: "Salary slips generated with advance deductions", badgeText: "Ready" }
+];
+
 export default function GPWebMobile() {
   const handleTrialClick = () => {
     trackEvent("payroll_trial_cta_click", {
@@ -42,21 +47,15 @@ export default function GPWebMobile() {
 
           {/* Payroll Sync Preview */}
           <div className="space-y-2.5">
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Mechanic Staff Attendance</p>
-                <p className="text-[10px] text-slate-500">26 Days Present • 2 Overtime Logs</p>
+            {syncPreviewItems.map((item, idx) => (
+              <div key={idx} className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                <div>
+                  <p className="text-xs font-bold text-slate-800">{item.title}</p>
+                  <p className="text-[10px] text-slate-500">{item.desc}</p>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">{item.badgeText}</span>
               </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Synced</span>
-            </div>
-
-            <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
-              <div>
-                <p className="text-xs font-bold text-slate-800">Monthly Payout Pointers</p>
-                <p className="text-[10px] text-slate-500">Salary slips generated with advance deductions</p>
-              </div>
-              <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Ready</span>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -87,3 +86,4 @@ export default function GPWebMobile() {
     </section>
   );
 }
+

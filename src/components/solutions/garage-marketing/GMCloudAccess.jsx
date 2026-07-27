@@ -5,6 +5,25 @@ import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const accessPlatforms = [
+  {
+    icon: FaLaptop,
+    title: "Cloud Web Portal",
+    desc: "For Offers, CRM Leads & Analytics"
+  },
+  {
+    icon: FaMobileAlt,
+    title: "Android Application",
+    desc: "For Fast Customer Lookup & WhatsApp Alerts"
+  }
+];
+
+const cloudBenefits = [
+  "Real-time cloud synchronization between office laptops and smartphones",
+  "Integrated customer profiles and vehicle service history lookup",
+  "Native Android app on Google Play (iOS app under Apple App Store review)"
+];
+
 export default function GMCloudAccess() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -13,21 +32,21 @@ export default function GMCloudAccess() {
           {/* Visual Block - Left Column */}
           <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-3xl p-8 shadow-sm flex flex-col justify-center min-h-[300px]">
             <div className="max-w-xs w-full mx-auto space-y-6">
-              <div className="flex items-center gap-4 text-slate-800">
-                <FaLaptop className="text-4xl text-primary flex-shrink-0" />
-                <div className="text-left">
-                  <h4 className="text-xs font-bold">Cloud Web Portal</h4>
-                  <p className="text-[10px] text-slate-400">For Offers, CRM Leads & Analytics</p>
-                </div>
-              </div>
-              <div className="border-t border-slate-200/60" />
-              <div className="flex items-center gap-4 text-slate-800">
-                <FaMobileAlt className="text-4xl text-primary flex-shrink-0" />
-                <div className="text-left">
-                  <h4 className="text-xs font-bold">Android Application</h4>
-                  <p className="text-[10px] text-slate-400">For Fast Customer Lookup & WhatsApp Alerts</p>
-                </div>
-              </div>
+              {accessPlatforms.map((platform, idx) => {
+                const Icon = platform.icon;
+                return (
+                  <React.Fragment key={idx}>
+                    {idx > 0 && <div className="border-t border-slate-200/60" />}
+                    <div className="flex items-center gap-4 text-slate-800">
+                      <Icon className="text-4xl text-primary flex-shrink-0" />
+                      <div className="text-left">
+                        <h4 className="text-xs font-bold">{platform.title}</h4>
+                        <p className="text-[10px] text-slate-400">{platform.desc}</p>
+                      </div>
+                    </div>
+                  </React.Fragment>
+                );
+              })}
             </div>
           </div>
 
@@ -44,18 +63,12 @@ export default function GMCloudAccess() {
             </p>
 
             <ul className="space-y-2 text-xs md:text-sm text-slate-700 font-medium">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Real-time cloud synchronization between office laptops and smartphones
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Integrated customer profiles and vehicle service history lookup
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Native Android app on Google Play (iOS app under Apple App Store review)
-              </li>
+              {cloudBenefits.map((text, idx) => (
+                <li key={idx} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  {text}
+                </li>
+              ))}
             </ul>
 
             {/* CTAs */}
@@ -75,3 +88,4 @@ export default function GMCloudAccess() {
     </section>
   );
 }
+

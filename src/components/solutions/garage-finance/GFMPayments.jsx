@@ -5,6 +5,12 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
+const paymentCardFields = [
+  { label: "Customer Name", value: "Amit Sharma", valueClass: "text-sm font-bold text-slate-800", border: true },
+  { label: "Vehicle Number", value: "GJ-01-AB-1234", valueClass: "text-sm font-semibold text-slate-700", border: true },
+  { label: "Outstanding Balance", value: "₹8,450", valueClass: "text-lg font-extrabold text-rose-500", border: false }
+];
+
 export default function GFMPayments() {
   const handleFeatureClick = () => {
     trackEvent("payment_feature_click", {
@@ -25,18 +31,12 @@ export default function GFMPayments() {
             </span>
           </div>
           <div className="space-y-4 my-auto">
-            <div className="border-b border-slate-200/60 pb-3">
-              <p className="text-xs text-slate-500">Customer Name</p>
-              <p className="text-sm font-bold text-slate-800">Amit Sharma</p>
-            </div>
-            <div className="border-b border-slate-200/60 pb-3">
-              <p className="text-xs text-slate-500">Vehicle Number</p>
-              <p className="text-sm font-semibold text-slate-700">GJ-01-AB-1234</p>
-            </div>
-            <div>
-              <p className="text-xs text-slate-500">Outstanding Balance</p>
-              <p className="text-lg font-extrabold text-rose-500">₹8,450</p>
-            </div>
+            {paymentCardFields.map((field, idx) => (
+              <div key={idx} className={field.border ? "border-b border-slate-200/60 pb-3" : ""}>
+                <p className="text-xs text-slate-500">{field.label}</p>
+                <p className={field.valueClass}>{field.value}</p>
+              </div>
+            ))}
           </div>
           <div className="bg-slate-200/50 rounded-2xl p-3 text-[11px] text-slate-600 text-center">
             🔒 Garage payment tracking active
@@ -68,3 +68,4 @@ export default function GFMPayments() {
     </section>
   );
 }
+

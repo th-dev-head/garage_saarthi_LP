@@ -3,6 +3,24 @@ import Link from "next/link";
 import { FaFileInvoiceDollar, FaUserShield, FaQrcode, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const gstBillingCards = [
+  {
+    icon: FaFileInvoiceDollar,
+    title: "Custom GST Invoice Series",
+    desc: "Configure custom invoice numbering rules, separate tax rates for labor vs spare parts, and generate clean GST-compliant bills instantly."
+  },
+  {
+    icon: FaQrcode,
+    title: "UPI & Cash Payments",
+    desc: "Record cash, Google Pay, PhonePe, Paytm, card swipes, and credit ledger balances dynamically to keep cash drawers balanced."
+  },
+  {
+    icon: FaUserShield,
+    title: "View-Only CA Access Portal",
+    desc: "Grant direct view-only access to your accountant or CA so they can download monthly GST sales and purchase reports without bothering you."
+  }
+];
+
 export default function GSIGSTBilling() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
@@ -22,35 +40,20 @@ export default function GSIGSTBilling() {
 
         {/* 3 Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaFileInvoiceDollar />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">Custom GST Invoice Series</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Configure custom invoice numbering rules, separate tax rates for labor vs spare parts, and generate clean GST-compliant bills instantly.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaQrcode />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">UPI & Cash Payments</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Record cash, Google Pay, PhonePe, Paytm, card swipes, and credit ledger balances dynamically to keep cash drawers balanced.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
-            <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
-              <FaUserShield />
-            </div>
-            <h3 className="text-sm font-bold text-slate-900">View-Only CA Access Portal</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Grant direct view-only access to your accountant or CA so they can download monthly GST sales and purchase reports without bothering you.
-            </p>
-          </div>
+          {gstBillingCards.map((card, idx) => {
+            const Icon = card.icon;
+            return (
+              <div key={idx} className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm space-y-3">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                  <Icon />
+                </div>
+                <h3 className="text-sm font-bold text-slate-900">{card.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">
@@ -65,3 +68,4 @@ export default function GSIGSTBilling() {
     </section>
   );
 }
+

@@ -1,6 +1,12 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
+const multiBranchPitfalls = [
+  { isPositive: false, title: "Isolated records:", desc: "Stock and customers aren't shared between locations." },
+  { isPositive: false, title: "Delayed reports:", desc: "Waiting for end-of-day sheets or WhatsApp updates from branch managers." },
+  { isPositive: true, title: "GarageSaarthi System:", desc: "Centralized dashboard showing real-time activities across all locations." }
+];
+
 export default function MBDefinition() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
@@ -22,18 +28,14 @@ export default function MBDefinition() {
         <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Common Multi-Branch Pitfalls</h3>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Isolated records:</strong> Stock and customers aren't shared between locations.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-red-500 font-bold">✕</span>
-              <span><strong>Delayed reports:</strong> Waiting for end-of-day sheets or WhatsApp updates from branch managers.</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-green-500 font-bold">✓</span>
-              <span><strong>GarageSaarthi System:</strong> Centralized dashboard showing real-time activities across all locations.</span>
-            </li>
+            {multiBranchPitfalls.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-2.5">
+                <span className={item.isPositive ? "text-green-500 font-bold" : "text-red-500 font-bold"}>
+                  {item.isPositive ? "✓" : "✕"}
+                </span>
+                <span><strong>{item.title}</strong> {item.desc}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
