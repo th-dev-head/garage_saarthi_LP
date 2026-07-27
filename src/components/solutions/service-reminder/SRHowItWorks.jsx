@@ -16,7 +16,7 @@ export default function SRHowItWorks() {
       num: "02",
       title: "Track Upcoming Due Dates",
       desc: "Use GarageSaarthi service alerts to identify vehicles with upcoming service requirements.",
-      link: "/features/service-alerts",
+      link: "/features/service-reminders",
       label: "service alerts"
     },
     {
@@ -30,7 +30,7 @@ export default function SRHowItWorks() {
       num: "04",
       title: "Send WhatsApp Reminders",
       desc: "Send service due alerts directly to customers using supported WhatsApp reminder workflows.",
-      link: "/features/service-alerts",
+      link: "/features/service-reminders",
       label: "whatsapp alerts"
     },
     {

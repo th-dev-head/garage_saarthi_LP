@@ -12,14 +12,14 @@ export default function GCEReminders() {
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Visual Column Left (WhatsApp Alert Representation) */}
           <div className="order-last lg:order-first bg-white border border-slate-200/80 rounded-3xl p-8 shadow-sm">
             <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">
               WhatsApp Alert Layout
             </span>
             <div className="bg-[#E5DDD5] rounded-2xl p-4 md:p-6 space-y-4 max-w-sm mx-auto font-sans shadow-inner">
-              
+
               {/* WhatsApp Message Bubble */}
               <div className="bg-[#DCF8C6] text-slate-800 rounded-xl p-4 shadow-sm text-xs relative max-w-[85%] ml-auto">
                 <p className="font-bold text-slate-900 mb-1">🚗 GarageSaarthi AutoCare</p>
@@ -55,17 +55,17 @@ export default function GCEReminders() {
               Bring Customers Back with Timely <GradientUnderline>Service Reminders</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Auto workshops can utilize structured alerts to keep customers aware of upcoming service dates. 
+              Auto workshops can utilize structured alerts to keep customers aware of upcoming service dates.
               Deploying <strong className="text-primary capitalize">garage customer reminder software</strong> logic removes the hassle of maintaining manual checklist registers or Excel sheets.
             </p>
-            
+
             <p className="text-slate-600 text-sm leading-relaxed">
               Using vehicle-linked records, our <strong className="text-primary capitalize">workshop customer notification software</strong> tracks when services are approaching due, allowing owners to trigger reminders easily. Keep a steady queue of bookings, boost repeat visits, and streamline follow-ups without guessing dates.
             </p>
 
             <div className="pt-4">
               <Link
-                href="/features/service-alerts"
+                href="/features/service-reminders"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
               >
                 Explore Service Alerts

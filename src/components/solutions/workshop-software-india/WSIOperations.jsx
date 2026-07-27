@@ -53,7 +53,7 @@ const operationsList = [
     icon: <FaBell />,
     title: "Service Alerts & WhatsApp",
     desc: "Automate periodic service due notifications and promotional reminders sent directly to your customers' WhatsApp.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore Service Alerts",
   },
   {

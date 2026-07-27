@@ -112,14 +112,14 @@ export default function GWNAlerts() {
             <p className="text-slate-600 text-sm leading-relaxed">
               The Service Alerts module acts as a hub to track all upcoming vehicle check-ups. Instead of checking customer history pages individually, compile all milestones centrally.
             </p>
-            
+
             <p className="text-slate-600 text-sm leading-relaxed">
               Check who is due for oil services, battery check-ups, insurance renewals, or periodic alignments. Dispatch WhatsApp templates directly from the list view and verify which alerts were completed successfully.
             </p>
 
             <div className="pt-4">
               <Link
-                href="/features/service-alerts"
+                href="/features/service-reminders"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
               >
                 Explore Service Alerts

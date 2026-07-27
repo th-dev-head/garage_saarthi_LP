@@ -65,7 +65,7 @@ export default function CustomerRetentionPromo() {
             </div>
 
             <Link
-              href="/features/service-alerts"
+              href="/features/service-reminders"
               className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors"
             >
               Explore Service Alerts

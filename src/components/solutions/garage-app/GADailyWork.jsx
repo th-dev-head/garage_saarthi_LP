@@ -61,7 +61,7 @@ const workflows = [
     icon: <FaBell />,
     title: "Check Service Alerts",
     desc: "View upcoming vehicle service schedules and follow up with reminders.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     btnText: "Explore Service Alerts"
   },
   {

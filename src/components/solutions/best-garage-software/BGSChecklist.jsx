@@ -67,7 +67,7 @@ const checklistItems = [
     title: "Service and WhatsApp Reminders",
     question: "Can the software help the garage follow up when service is due?",
     desc: "Automate service due notifications and promotional reminders sent directly via WhatsApp, keeping your service bays active.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore Service Alerts",
   },
   {

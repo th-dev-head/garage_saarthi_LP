@@ -24,7 +24,7 @@ export default function GPEcosystem() {
     { name: "Attendance", url: "/features/attendance" },
     { name: "Leave Logs", url: "/features/leave-management" },
     { name: "Reports", url: "/features/reports" },
-    { name: "Service Alerts", url: "/features/service-alerts" },
+    { name: "Service Alerts", url: "/features/service-reminders" },
     { name: "Branches", url: "/features/branches" }
   ];
 

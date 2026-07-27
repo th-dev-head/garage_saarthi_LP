@@ -63,7 +63,7 @@ const checklist12 = [
     icon: <FaBell />,
     title: "Service Alerts & Customer Follow-Ups",
     desc: "Schedule upcoming vehicle maintenance due dates and automate WhatsApp service alerts to encourage repeat workshop visits.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore Service Alerts",
   },
   {

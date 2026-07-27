@@ -61,7 +61,7 @@ const cards = [
     icon: <FaBell />,
     title: "Stay Updated with Service Alerts",
     desc: "Schedule vehicle service visits and broadcast alerts over WhatsApp.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     btnText: "Explore Alerts Features"
   },
   {

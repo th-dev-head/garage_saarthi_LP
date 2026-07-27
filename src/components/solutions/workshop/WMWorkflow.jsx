@@ -37,7 +37,7 @@ const steps = [
     icon: <FaBell className="w-5 h-5" />,
     title: "Schedule Next Service Alert",
     desc: "Before the customer leaves, set their next service reminder date. GarageSaarthi sends automatic follow-ups.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
   },
   {
     step: "06",

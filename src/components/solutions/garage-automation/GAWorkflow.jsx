@@ -64,7 +64,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Set up alerts and send periodic reminders via WhatsApp using our{" "}
-          <Link href="/features/service-alerts" className="text-primary font-bold hover:underline">
+          <Link href="/features/service-reminders" className="text-primary font-bold hover:underline">
             Service Alerts
           </Link>{" "}
           system.

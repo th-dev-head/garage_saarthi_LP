@@ -9,7 +9,7 @@ const steps = [
   { icon: <FaUserCheck />, title: "3. Lead Becomes Customer", desc: "Customer books repair job; profile moves into active customer database.", link: "/features/customers", anchor: "Customer Records" },
   { icon: <FaCar />, title: "4. Vehicle Logged", desc: "Vehicle model, chassis details, and repair history are permanently saved.", link: "/features/vehicles", anchor: "Vehicle Records" },
   { icon: <FaTags />, title: "5. Offers Applied", desc: "Promotions and seasonal discounts encourage repeat servicing.", link: "/features/offers-promotions", anchor: "Offers & Promotions" },
-  { icon: <FaBell />, title: "6. Service Alerts Sent", desc: "Automated WhatsApp alerts remind client when next service is due.", link: "/features/service-alerts", anchor: "Service Alerts" },
+  { icon: <FaBell />, title: "6. Service Alerts Sent", desc: "Automated WhatsApp alerts remind client when next service is due.", link: "/features/service-reminders", anchor: "Service Alerts" },
 ];
 
 export default function GMCRMConnection() {

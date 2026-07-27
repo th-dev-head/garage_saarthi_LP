@@ -3,6 +3,8 @@
 @source "../components/solutions/vehicle-history";
 @source "../components/solutions/garage-reports";
 @source "../components/solutions/multi-branch";
+@source "../components/features/service-reminders";
+@source "../components/features/whatsapp-automation";
 
 html {
   scroll-behavior: smooth;

@@ -24,7 +24,7 @@ export default function GCCustomerFollowUps() {
       page_name: "garage_crm_software",
       cta_location: "follow_ups",
       cta_label: "Explore Service Alerts",
-      destination: "/features/service-alerts"
+      destination: "/features/service-reminders"
     });
   };
 
@@ -51,7 +51,7 @@ export default function GCCustomerFollowUps() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/features/service-alerts"
+            href="/features/service-reminders"
             onClick={handleAlertsClick}
             className="rounded-full bg-slate-50 border border-slate-300 hover:bg-slate-100 text-slate-700 px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer"
           >

@@ -23,7 +23,7 @@ export default function VSHCapabilities() {
       icon: <FaTools className="text-primary w-5 h-5" />,
       title: "Vehicle Maintenance History",
       desc: "Track scheduled maintenance checks like oil changes, alignment runs, and periodic replacements.",
-      link: "/features/service-alerts",
+      link: "/features/service-reminders",
       label: "service alerts"
     },
     {

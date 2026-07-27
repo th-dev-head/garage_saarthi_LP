@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -42,16 +42,16 @@ export default function CRMRetention() {
 
           <div className="flex flex-wrap gap-4 items-center">
             <Link
-              href="/features/service-alerts"
+              href="/features/service-reminders"
               className="text-xs text-primary font-bold hover:underline"
             >
-              Explore Service Alerts →
+              Explore Service Alerts <FaArrowRight />
             </Link>
             <Link
               href="/features/customer-reviews"
               className="text-xs text-primary font-bold hover:underline"
             >
-              Customer Review Collection →
+              Customer Review Collection <FaArrowRight />
             </Link>
           </div>
         </div>

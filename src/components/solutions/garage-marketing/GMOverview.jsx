@@ -27,7 +27,7 @@ const featureCards = [
     icon: <FaWhatsapp />,
     title: "WhatsApp Customer Communication",
     desc: "Share promotional offers, job estimates, and service reminders directly to customers' WhatsApp numbers.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore WhatsApp Alerts",
   },
   {
@@ -69,7 +69,7 @@ const featureCards = [
     icon: <FaEnvelopeOpenText />,
     title: "Customer Notifications",
     desc: "Keep garage clients updated on repair progress, billing totals, and upcoming maintenance schedules.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore Notifications",
   },
 ];
