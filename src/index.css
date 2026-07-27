@@ -5,6 +5,7 @@
 @source "../components/solutions/multi-branch";
 @source "../components/features/service-reminders";
 @source "../components/features/whatsapp-automation";
+@source "../components/features/customer-reviews";
 
 html {
   scroll-behavior: smooth;
