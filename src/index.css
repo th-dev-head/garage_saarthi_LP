@@ -7,6 +7,7 @@
 @source "../components/features/whatsapp-automation";
 @source "../components/features/customer-reviews";
 @source "../components/features/finance";
+@source "../components/features/loans";
 
 html {
   scroll-behavior: smooth;
