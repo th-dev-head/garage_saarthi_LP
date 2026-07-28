@@ -1,37 +1,52 @@
 import React from "react";
-import { FaCalculator, FaBell, FaLandmark, FaShieldAlt, FaChartPie, FaFileContract } from "react-icons/fa";
+import { FaCalculator, FaBell, FaLandmark, FaShieldAlt, FaChartPie, FaFileContract, FaMobileAlt, FaBook, FaCalendarCheck } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const lCoreCapabilities = [
   {
     icon: FaCalculator,
-    title: "Multi-Loan EMI Schedule Tracker",
-    desc: "Track monthly EMI repayment dates for business loans, equipment finance, and personal borrowings."
+    title: "Loan EMI Tracker & Management",
+    desc: "Complete loan management software and loan EMI tracker for garage equipment financing and business borrowings."
   },
   {
     icon: FaBell,
-    title: "Automated Advance Repayment Alerts",
-    desc: "Receive WhatsApp and push notifications 3 days before loan auto-debit dates to maintain account balance."
+    title: "EMI Reminder & Payment Alerts",
+    desc: "Automated EMI reminder software and payment reminder software sending advance WhatsApp alerts to prevent bank bounce fees."
   },
   {
     icon: FaLandmark,
-    title: "Bank & Lender Account Management",
-    desc: "Maintain separate ledgers for nationalized banks, NBFCs, private lenders, and machinery financiers."
+    title: "Garage & Workshop Loan Tracker",
+    desc: "Dedicated garage loan management software and workshop loan management software for bank & NBFC borrowings."
   },
   {
     icon: FaChartPie,
-    title: "Interest vs Principal Breakdown",
-    desc: "Automatically split monthly EMI payments into principal reduction and tax-deductible interest expenses."
+    title: "Debt Tracking & Repayment System",
+    desc: "Comprehensive debt tracking software and loan repayment tracker splitting principal and interest expenses."
   },
   {
     icon: FaShieldAlt,
-    title: "Bank Mandate (NACH / ECS) Status",
-    desc: "Monitor active auto-debit mandates and avoid bank bounce penal charges."
+    title: "Installment Tracker & Management",
+    desc: "All-in-one installment management software and installment tracker for monthly business EMI management."
   },
   {
     icon: FaFileContract,
-    title: "Debt & Liability Audit Reports",
-    desc: "Export clean loan amortization schedules and total debt liability reports for your accountant."
+    title: "Loan Record & Register Software",
+    desc: "Detailed loan record management software and loan register software keeping your loan ledger software up-to-date."
+  },
+  {
+    icon: FaMobileAlt,
+    title: "Loan Management App & Mobile Access",
+    desc: "Monitor business loan tracker metrics on our loan management app and EMI management app anytime."
+  },
+  {
+    icon: FaBook,
+    title: "Workshop & Garage Finance Tracker",
+    desc: "Integrate garage finance management software and workshop finance management for complete business finance tracking."
+  },
+  {
+    icon: FaCalendarCheck,
+    title: "Manage Business Loans & Liabilities",
+    desc: "Track loan payment management, loan tracking system status, and manage business loans seamlessly."
   }
 ];
 
@@ -47,7 +62,7 @@ export default function LCoreCapabilities() {
             Complete Toolkit for <GradientUnderline>Garage Loan Management</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Everything your workshop needs to track EMI schedules, manage lender accounts, and prevent bounce penalties.
+            Everything your workshop needs for EMI tracking, debt management, and automated loan payment reminders.
           </p>
         </div>
 

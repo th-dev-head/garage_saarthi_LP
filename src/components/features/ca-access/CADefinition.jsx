@@ -2,10 +2,10 @@ import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const caWhyPillars = [
-  { title: "🔐 100% Read-Only Security", titleClass: "text-primary font-bold block mb-1", desc: "Accountants can view and download financial reports without editing garage settings" },
-  { title: "📄 Zero Paper Bill Handover", titleClass: "text-orange-600 font-bold block mb-1", desc: "Eliminate monthly physical bill delivery or endless WhatsApp bill photo sharing" },
-  { title: "📊 Instant GSTR Tax Filing", titleClass: "text-emerald-600 font-bold block mb-1", desc: "CA logs in anytime to download GSTR-1, GSTR-3B, and sales summary spreadsheets" },
-  { title: "🧾 Complete Expense Auditing", titleClass: "text-amber-600 font-bold block mb-1", desc: "Provide your tax advisor full access to vendor invoices, purchase entries, and profit ledgers" }
+  { title: "🔐 100% Read-Only Security", titleClass: "text-primary font-bold block mb-1", desc: "Accountants view read only accountant access data without editing master garage settings" },
+  { title: "📄 Zero Paper Bill Handover", titleClass: "text-orange-600 font-bold block mb-1", desc: "Export garage reports for CA auditing instead of emailing photo scans of paper bills" },
+  { title: "📊 Instant GST Return Reports", titleClass: "text-emerald-600 font-bold block mb-1", desc: "Download GSTR-1, GSTR-3B, and garage GST return reports ready for government portal upload" },
+  { title: "🧾 Workshop Bookkeeping & Ledger", titleClass: "text-amber-600 font-bold block mb-1", desc: "Complete workshop bookkeeping software ledgers for vendor invoices and expense reports" }
 ];
 
 export default function CADefinition() {
@@ -15,16 +15,16 @@ export default function CADefinition() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
-              Accountant Access Feature
+              Accountant Access & Tax Management
             </span>
             <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Seamless Collaboration with Your <GradientUnderline>Chartered Accountant</GradientUnderline>
+              Smarter <GradientUnderline>Garage Accounting Management</GradientUnderline> & CA Collaboration
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
-              <strong>Garage CA Access Software</strong> provides a dedicated, secure login portal for your accountant, tax consultant, or auditor to access workshop financial data independently.
+              <strong>Garage CA Access Software</strong> provides a dedicated <strong>accountant portal for garage</strong> businesses, giving your tax consultant read-only login access to workshop financial management software.
             </p>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              No more searching through physical bill binders or emailing Excel files at the end of every month. Your CA gets instant, read-only visibility into sales, purchases, and GST returns.
+              Simplify monthly GST tax management, garage profit and loss reports, and garage balance sheet software metrics without manual paper bill sorting.
             </p>
           </div>
 

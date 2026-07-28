@@ -1,49 +1,67 @@
 import React from "react";
-import { FaChartLine, FaWrench, FaUsers, FaBoxes, FaBuilding, FaMobileAlt } from "react-icons/fa";
+import { FaChartLine, FaWrench, FaUsers, FaBoxes, FaBuilding, FaMobileAlt, FaTachometerAlt, FaChartPie, FaUserCog } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function WMDCoreCapabilities() {
   const capabilities = [
     {
-      icon: <FaChartLine className="w-6 h-6 text-primary" />,
-      title: "Real-Time Revenue & Financial Dashboard",
-      description: "Monitor daily collections, GST billing summaries, online UPI payments, and customer credit balances on an interactive garage business dashboard.",
-      badge: "Financial Control"
+      icon: <FaTachometerAlt className="w-6 h-6 text-primary" />,
+      title: "Garage & Workshop Management Dashboard",
+      description: "Complete garage management dashboard, workshop management dashboard, garage dashboard software, and workshop dashboard software.",
+      badge: "Real-Time Dashboard"
     },
     {
-      icon: <FaWrench className="w-6 h-6 text-orange-600" />,
-      title: "Live Job Card & Repair Status Monitoring",
-      description: "Track vehicle repair stages in real time—from initial inspection and estimate approval to repair execution and final billing status.",
-      badge: "Operational Visibility"
+      icon: <FaChartLine className="w-6 h-6 text-orange-600" />,
+      title: "Garage & Workshop Business Dashboard",
+      description: "Garage business dashboard, workshop business dashboard, automotive business dashboard, and automotive workshop dashboard for owners.",
+      badge: "Business Analytics"
     },
     {
-      icon: <FaUsers className="w-6 h-6 text-emerald-600" />,
-      title: "Mechanic & Staff Efficiency KPIs",
-      description: "Track active mechanics, assigned job cards, labor hours logged, and individual technician productivity on a dedicated mechanic dashboard.",
-      badge: "Staff Productivity"
+      icon: <FaWrench className="w-6 h-6 text-emerald-600" />,
+      title: "Auto Repair & Shop Dashboard Software",
+      description: "Auto repair dashboard, auto repair shop dashboard, and repair shop dashboard software tracking active repair orders.",
+      badge: "Repair Tracking"
     },
     {
-      icon: <FaBoxes className="w-6 h-6 text-amber-600" />,
-      title: "Automated Spare Parts Stock Alerts",
-      description: "Keep track of high-volume lubricants, spare parts, and fast-moving items. Receive low-stock warning alerts before inventory runs out.",
-      badge: "Inventory Intelligence"
+      icon: <FaUsers className="w-6 h-6 text-amber-600" />,
+      title: "Mechanic & Service Center Dashboard",
+      description: "Mechanic dashboard software, service center dashboard software, and vehicle service dashboard for staff efficiency.",
+      badge: "Staff KPIs"
     },
     {
-      icon: <FaBuilding className="w-6 h-6 text-purple-600" />,
-      title: "Multi-Branch Workshop Comparison",
-      description: "For multi-outlet garage owners: compare total job cards, gross margins, and customer retention across all branch locations from one screen.",
-      badge: "Multi-Location Support"
+      icon: <FaChartPie className="w-6 h-6 text-purple-600" />,
+      title: "Garage KPI & Performance Dashboard",
+      description: "Garage KPI dashboard, workshop KPI dashboard, garage performance dashboard, and workshop analytics dashboard.",
+      badge: "KPI Intelligence"
     },
     {
-      icon: <FaMobileAlt className="w-6 h-6 text-teal-600" />,
-      title: "Web & Mobile App Synchronization",
-      description: "Check your automotive workshop dashboard anywhere on Web, Tablet, or Android App. Stay connected with your business 24/7.",
-      badge: "Cloud Mobility"
+      icon: <FaUserCog className="w-6 h-6 text-teal-600" />,
+      title: "Garage Operations & Workshop Dashboard",
+      description: "Garage operations dashboard, workshop operations dashboard, dashboard for garage management software, and dashboard for workshop management software.",
+      badge: "Operations"
+    },
+    {
+      icon: <FaBuilding className="w-6 h-6 text-indigo-600" />,
+      title: "Garage Owner & Workshop Owner Dashboard",
+      description: "Dedicated garage owner dashboard and workshop owner dashboard giving full 360-degree control over workshop revenue & stock.",
+      badge: "Owner Control"
+    },
+    {
+      icon: <FaBoxes className="w-6 h-6 text-rose-600" />,
+      title: "Garage & Workshop Software Dashboard",
+      description: "Garage software dashboard and workshop software dashboard with automated low-stock warnings and inventory tracking.",
+      badge: "Stock Alerts"
+    },
+    {
+      icon: <FaMobileAlt className="w-6 h-6 text-cyan-600" />,
+      title: "Cloud & Mobile Dashboard Mobility",
+      description: "Access your garage management dashboard anytime on Web, Tablet, or Android App with instant cloud synchronization.",
+      badge: "Cloud Sync"
     }
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-cente">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">

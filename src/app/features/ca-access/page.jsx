@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Grant read-only accountant access to your garage financial reports, GSTR filing data, expense ledgers, and profit statements with GarageSaarthi CA portal.",
   keywords:
-    "accountant access for garage software, garage accounting software, garage GST software, garage financial reports software, workshop accounting software, workshop GST software, accountant login for garage software, accountant portal for garage, garage tax management software, garage bookkeeping software, export garage reports for CA, read only accountant access, multi user accounting access",
+    "accountant access for garage software, garage accounting software, garage GST software, garage financial reports software, workshop accounting software, workshop GST software, accountant login for garage software, accountant portal for garage, garage tax management software, garage bookkeeping software, garage accounting management, workshop bookkeeping software, GST report software for garage, accountant dashboard for garage, financial statement software for garage, garage profit and loss reports, garage balance sheet software, garage GST return reports, export garage reports for CA, accountant access to garage reports, read only accountant access, multi user accounting access, garage expense reports software, workshop financial management software, accountant friendly garage software",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/ca-access",
   },

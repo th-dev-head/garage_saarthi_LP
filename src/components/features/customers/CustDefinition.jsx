@@ -3,10 +3,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function CustDefinition() {
   const highlights = [
-    { title: "📁 Digital Registry", desc: "Centralized client contact cards", color: "text-primary" },
-    { title: "🚗 Multi-Vehicle Map", desc: "Link multiple cars/bikes to one profile", color: "text-orange-600" },
-    { title: "📜 Lifetime Log", desc: "Access complete service history cards", color: "text-emerald-600" },
-    { title: "📲 1-Click Call/Chat", desc: "Contact via WhatsApp in 1s", color: "text-amber-600" }
+    { title: "📁 Garage Customer Database", desc: "Centralized client contact cards", color: "text-primary" },
+    { title: "🚗 Workshop CRM Software", desc: "Link multiple cars/bikes to one profile", color: "text-orange-600" },
+    { title: "📜 Customer History Management", desc: "Access complete service history cards", color: "text-emerald-600" },
+    { title: "📲 Customer Follow Up Software", desc: "Contact via WhatsApp in 1s", color: "text-amber-600" }
   ];
 
   return (
@@ -18,13 +18,13 @@ export default function CustDefinition() {
               What is Workshop Customer Management?
             </span>
             <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
-              A Unified Database for <GradientUnderline>Auto Workshop Contacts</GradientUnderline>
+              Smarter <GradientUnderline>Garage Customer Management Software</GradientUnderline> & System
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
-              <strong>Garage Customer Management Software</strong> replaces manual paper diaries, messy spreadsheets, and scattered phonebooks with a single cloud-based digital contact directory.
+              <strong>GarageSaarthi Customer Management Software</strong> is a powerful <strong>garage customer database software</strong>, <strong>workshop customer management software</strong>, and <strong>automotive CRM software</strong> built for auto repair centers.
             </p>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              Every time a vehicle enters your garage, the system links the owner's profile directly to their active job cards, invoices, replaced spare parts, outstanding balances, and feedback history.
+              Maintain complete <strong>customer record management software</strong> files and run automated <strong>garage customer follow up software</strong> on mobile and desktop.
             </p>
           </div>
 

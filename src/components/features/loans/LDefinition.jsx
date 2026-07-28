@@ -2,10 +2,10 @@ import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const lWhyPillars = [
-  { title: "📅 Zero Missed EMI Bounces", titleClass: "text-primary font-bold block mb-1", desc: "Get automated WhatsApp & SMS alerts 3 days before bank EMI debit dates" },
-  { title: "🏦 Multi-Bank Loan Ledger", titleClass: "text-orange-600 font-bold block mb-1", desc: "Track equipment loans, working capital debts, and partner borrowings in one view" },
-  { title: "💡 Interest & Principal Split", titleClass: "text-emerald-600 font-bold block mb-1", desc: "Auto-calculate interest payout vs principal balance reduction for tax audits" },
-  { title: "📉 Cash Flow Protection", titleClass: "text-amber-600 font-bold block mb-1", desc: "Plan monthly workshop reserves to ensure bank account has sufficient balance" }
+  { title: "📅 Zero Missed EMI Bounces", titleClass: "text-primary font-bold block mb-1", desc: "Automated EMI reminder software sending alerts 3 days before bank auto-debit dates" },
+  { title: "🏦 Multi-Bank Loan Ledger", titleClass: "text-orange-600 font-bold block mb-1", desc: "Maintain loan register software for equipment financing, bank loans, and partner borrowings" },
+  { title: "💡 Interest & Principal Split", titleClass: "text-emerald-600 font-bold block mb-1", desc: "Auto-calculate interest vs principal balance reduction for business loan tracker audits" },
+  { title: "📉 Cash Flow & Debt Protection", titleClass: "text-amber-600 font-bold block mb-1", desc: "Complete debt management software ensuring sufficient bank reserves for installment management" }
 ];
 
 export default function LDefinition() {
@@ -15,16 +15,16 @@ export default function LDefinition() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
-              Debt & EMI Management
+              Debt & Business EMI Management
             </span>
             <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Manage Workshop Business Loans with <GradientUnderline>Zero EMI Bounce Penalty</GradientUnderline>
+              Smarter <GradientUnderline>Garage Loan Management Software</GradientUnderline> & EMI Tracker
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
-              <strong>Garage Loan Management Software</strong> helps auto repair shop owners track bank loans, machinery financing, partner loans, and monthly EMI schedules easily.
+              <strong>GarageSaarthi Business Loan Management Software</strong> is a powerful <strong>garage loan EMI tracker</strong> and <strong>workshop loan tracker</strong> built specifically for auto repair workshops, detailing studios, and bike garages.
             </p>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              Avoid bank bounce charges and CIBIL score damage by keeping a real-time calendar of upcoming installment due dates linked directly to your daily workshop cash reserves.
+              Track business finance tracker metrics, manage business loans, and monitor installment tracker schedules easily with our loan management app.
             </p>
           </div>
 
