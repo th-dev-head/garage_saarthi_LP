@@ -8,6 +8,7 @@
 @source "../components/features/customer-reviews";
 @source "../components/features/finance";
 @source "../components/features/loans";
+@source "../components/features/reports";
 
 html {
   scroll-behavior: smooth;

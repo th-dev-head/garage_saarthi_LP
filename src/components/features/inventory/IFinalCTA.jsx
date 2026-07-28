@@ -6,7 +6,7 @@ export default function IFinalCTA() {
     <PromoCTA
       title="Ready to Stop Inventory Leaks and Track Garage Spare Parts?"
       subtitle="Join 1,200+ auto workshops, car service centers, and bike garages across India. Start your 7-day free trial today."
-      bgClass="bg-white"
+      bgClass="bg-slate-50"
     />
   );
 }
