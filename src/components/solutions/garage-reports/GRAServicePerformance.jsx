@@ -28,7 +28,7 @@ export default function GRAServicePerformance() {
           </p>
           <div className="flex gap-4 pt-2">
             <Link href="/features/job-card-management" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Job Card Reporting <FaArrowRight className="w-3 h-3" /></Link>
-            <Link href="/features/service-alerts" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Service Alerts <FaArrowRight className="w-3 h-3" /></Link>
+            <Link href="/features/service-reminders" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Service Alerts <FaArrowRight className="w-3 h-3" /></Link>
           </div>
         </div>
       </div>

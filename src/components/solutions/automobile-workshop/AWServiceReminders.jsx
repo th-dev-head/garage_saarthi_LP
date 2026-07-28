@@ -32,7 +32,7 @@ export default function AWServiceReminders() {
 
             <div className="flex flex-wrap gap-4 items-center">
               <Link
-                href="/features/service-alerts"
+                href="/features/service-reminders"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
               >
                 Explore Service Alerts

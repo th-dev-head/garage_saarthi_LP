@@ -1,56 +1,74 @@
 import React from "react";
-import { FaCashRegister, FaBoxes, FaFileInvoiceDollar, FaBarcode, FaWhatsapp, FaUserTag } from "react-icons/fa";
+import { FaCashRegister, FaBoxes, FaFileInvoiceDollar, FaBarcode, FaWhatsapp, FaUserTag, FaStore, FaReceipt, FaCalculator } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function CSCoreCapabilities() {
   const capabilities = [
     {
       icon: <FaCashRegister className="w-6 h-6 text-primary" />,
-      title: "Fast Counter Sales Checkout",
-      description: "Generate retail invoices for walk-in buyers in under 30 seconds. Select parts by name, SKU, or category without creating a job card.",
+      title: "Garage POS & Workshop POS Software",
+      description: "Fast counter sales software, garage POS software, workshop POS software, and auto repair POS software for express retail checkout.",
       badge: "Express Checkout"
     },
     {
       icon: <FaBoxes className="w-6 h-6 text-orange-600" />,
-      title: "Real-Time Stock Deduction",
-      description: "Sold spare parts, lubricants, and accessories are deducted immediately from your central garage inventory valuation.",
+      title: "Spare Parts & Auto Parts POS Software",
+      description: "Dedicated spare parts counter sales software, spare parts POS software, and auto parts POS software with real-time stock deduction.",
       badge: "Inventory Sync"
     },
     {
       icon: <FaFileInvoiceDollar className="w-6 h-6 text-emerald-600" />,
-      title: "GST Invoicing & Tax Calculations",
-      description: "Pre-loaded HSN codes, SAC categories, CGST/SGST/IGST tax rates, and customizable retail invoice templates.",
+      title: "Garage Billing POS & Retail Invoicing",
+      description: "Garage billing POS software, retail billing software for garage, and spare parts billing software with pre-loaded HSN & tax rules.",
       badge: "GST Compliant"
     },
     {
       icon: <FaBarcode className="w-6 h-6 text-amber-600" />,
-      title: "Barcode & Part Search",
-      description: "Scan product barcodes or search parts by manufacturer number to pull up pricing and stock levels instantly.",
+      title: "Garage & Workshop Invoice Software",
+      description: "Garage invoice software, workshop invoice software, and auto parts billing software supporting barcode scanner lookup.",
       badge: "Barcode Ready"
     },
     {
       icon: <FaWhatsapp className="w-6 h-6 text-purple-600" />,
-      title: "Digital WhatsApp Invoices",
-      description: "Send PDF invoices and payment receipts directly to your customer's WhatsApp, saving paper and printing costs.",
+      title: "GST Billing Software for Garage",
+      description: "GST billing software for garage and counter billing software for garage with instant WhatsApp invoice sharing.",
       badge: "Eco-Friendly Receipts"
     },
     {
       icon: <FaUserTag className="w-6 h-6 text-teal-600" />,
-      title: "Walk-in & Retail Customer Database",
-      description: "Capture walk-in customer mobile numbers and purchase histories to offer customized loyalty discounts and offers.",
-      badge: "Customer Profiles"
+      title: "Garage Sales Management Software",
+      description: "Garage sales management software and workshop sales management software tracking walk-in buyer purchase trends.",
+      badge: "Sales Analytics"
+    },
+    {
+      icon: <FaStore className="w-6 h-6 text-indigo-600" />,
+      title: "Garage Retail & Workshop Retail Software",
+      description: "Garage retail software and workshop retail software tailored for auto workshops, spare parts retailers, and lubricant counters.",
+      badge: "Retail POS"
+    },
+    {
+      icon: <FaReceipt className="w-6 h-6 text-rose-600" />,
+      title: "Garage Cash Counter Software",
+      description: "Garage cash counter software and workshop cash billing software for daily cash & UPI collection reconciliation.",
+      badge: "Cash Counter"
+    },
+    {
+      icon: <FaCalculator className="w-6 h-6 text-cyan-600" />,
+      title: "Automobile & Workshop Sales Management",
+      description: "Auto workshop counter sales software and automobile counter sales software for multi-brand garages and spare parts outlets.",
+      badge: "Auto Counter"
     }
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-cente">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Powerful Counter Billing Features
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-            Key Capabilities of Garage <GradientUnderline>Counter Sales Software</GradientUnderline>
+            Key Capabilities of Garage <GradientUnderline>Counter Sales & POS Software</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Everything your garage cash counter needs to speed up sales, eliminate manual tax math, and track stock accurately.

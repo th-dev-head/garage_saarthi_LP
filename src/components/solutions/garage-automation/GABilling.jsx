@@ -28,7 +28,7 @@ export default function GABilling() {
       desc: (
         <>
           Log transaction records, check outstanding dues, and check lists in our dedicated{" "}
-          <Link href="/features/payments" className="text-primary font-bold hover:underline">
+          <Link href="/features/billing" className="text-primary font-bold hover:underline">
             Payments
           </Link>{" "}
           and{" "}
@@ -45,7 +45,7 @@ export default function GABilling() {
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Mock Invoicing Representation (Visual Column Left) */}
           <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 shadow-sm">
             <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">

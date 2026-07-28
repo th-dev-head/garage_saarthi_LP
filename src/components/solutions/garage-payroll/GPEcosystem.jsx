@@ -19,12 +19,12 @@ export default function GPEcosystem() {
     { name: "Customers", url: "/features/customers" },
     { name: "Vehicles", url: "/features/vehicles" },
     { name: "CRM & Alerts", url: "/features/crm" },
-    { name: "Payments", url: "/features/payments" },
+    { name: "Payments", url: "/features/billing" },
     { name: "Finance", url: "/features/finance" },
     { name: "Attendance", url: "/features/attendance" },
     { name: "Leave Logs", url: "/features/leave-management" },
     { name: "Reports", url: "/features/reports" },
-    { name: "Service Alerts", url: "/features/service-alerts" },
+    { name: "Service Alerts", url: "/features/service-reminders" },
     { name: "Branches", url: "/features/branches" }
   ];
 

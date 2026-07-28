@@ -70,7 +70,7 @@ export default function CDServiceAlerts() {
 
             <div className="pt-4">
               <Link
-                href="/features/service-alerts"
+                href="/features/service-reminders"
                 className="inline-flex items-center gap-1.5 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
               >
                 Explore Service Alerts <FaArrowRight className="w-3.5 h-3.5" />

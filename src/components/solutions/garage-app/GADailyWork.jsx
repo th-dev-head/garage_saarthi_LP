@@ -40,7 +40,7 @@ const workflows = [
     icon: <FaFileInvoiceDollar />,
     title: "Manage Payments and Finance",
     desc: "Create simple labor bills, input parts prices, and collect payments.",
-    link: "/features/payments",
+    link: "/features/billing",
     btnText: "Explore Billing & Payments"
   },
   {
@@ -61,7 +61,7 @@ const workflows = [
     icon: <FaBell />,
     title: "Check Service Alerts",
     desc: "View upcoming vehicle service schedules and follow up with reminders.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     btnText: "Explore Service Alerts"
   },
   {

@@ -35,7 +35,7 @@ export default function GIStockManagement() {
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side Visual Mockup */}
-        <div className="bg-white border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-md order-2 md:order-1">
+        <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-md order-2 md:order-1">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
@@ -51,8 +51,8 @@ export default function GIStockManagement() {
 
           <div className="space-y-3">
             <div 
-              className="border p-3 rounded-xl flex justify-between items-center text-xs"
-              style={{ backgroundColor: "rgba(254, 242, 242, 0.4)", borderColor: "#fecaca" }}
+              className="border p-3 rounded-xl flex justify-between items-center text-xs bg-white"
+              style={{ borderColor: "#fecaca" }}
             >
               <div>
                 <h5 className="font-bold text-slate-900">4T Engine Oil 1L (Motul)</h5>
@@ -64,7 +64,7 @@ export default function GIStockManagement() {
               </div>
             </div>
 
-            <div className="border border-slate-200/80 p-3 rounded-xl flex justify-between items-center text-xs">
+            <div className="border border-slate-200/80 p-3 rounded-xl flex justify-between items-center text-xs bg-white">
               <div>
                 <h5 className="font-bold text-slate-900">Tubeless Tyre 90/90-12 (MRF)</h5>
                 <p className="text-[10px] text-slate-400">Supplier: Apex Tyres & Spares</p>

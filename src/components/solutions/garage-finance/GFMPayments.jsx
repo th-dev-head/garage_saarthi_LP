@@ -17,7 +17,7 @@ export default function GFMPayments() {
       page_path: "/solutions/garage-finance-management-software",
       cta_location: "payments_section",
       cta_label: "Explore Payment Management",
-      destination: "/features/payments"
+      destination: "/features/billing"
     });
   };
 
@@ -57,7 +57,7 @@ export default function GFMPayments() {
             Record payments across cash, card, UPI, or online bank transfers. By maintaining clean client accounts, our workshop payment management software makes garage accounts management software audits fast and stress-free.
           </p>
           <div className="pt-2">
-            <Link href="/features/payments" onClick={handleFeatureClick}>
+            <Link href="/features/billing" onClick={handleFeatureClick}>
               <Button>
                 Explore Payment Management <FaChevronRight className="w-3.5 h-3.5" />
               </Button>

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import GradientUnderline from "../../common/GradientUnderline";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function HistServiceAlerts() {
   return (
@@ -18,10 +19,10 @@ export default function HistServiceAlerts() {
 
         <div className="pt-4 flex justify-center">
           <Link
-            href="/features/service-alerts"
-            className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 cursor-pointer inline-block"
+            href="/features/service-reminders"
+            className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 cursor-pointer inline-flex items-center gap-2"
           >
-            Explore Service Alerts →
+            Explore Service Alerts <FaArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

@@ -51,8 +51,8 @@ export default function GCRetention() {
 
           <div className="flex flex-wrap gap-4 items-center">
             <Link
-              href="/features/service-alerts"
-              onClick={() => handleLinkClick("Explore Service Alerts", "/features/service-alerts")}
+              href="/features/service-reminders"
+              onClick={() => handleLinkClick("Explore Service Alerts", "/features/service-reminders")}
               className="text-xs text-primary font-bold hover:underline"
             >
               Explore Service Alerts

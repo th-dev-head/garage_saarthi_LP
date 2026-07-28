@@ -28,7 +28,7 @@ export default function GWNWorkflow() {
       desc: (
         <>
           Log periodic servicing milestones and keep maintenance dates linked with vehicle profiles. Refer to details in{" "}
-          <Link href="/features/service-alerts" className="text-primary font-bold hover:underline">
+          <Link href="/features/service-reminders" className="text-primary font-bold hover:underline">
             Service Alerts
           </Link>.
         </>

@@ -17,7 +17,7 @@ const businessTypes = [
   {
     title: "EV Garages",
     desc: "Track battery health status records, battery temperature parameters, specialized motor controller spares, and electrical technician safety guides.",
-    link: "/solutions/ev-garage-software",
+    link: "/solutions/ev-garage-management-software",
   },
   {
     title: "Truck Workshops",

@@ -17,7 +17,7 @@ const features = [
   { icon: <FaFileInvoiceDollar />, title: "GST Billing", link: "/features/billing" },
   { icon: <FaMoneyBillWave />, title: "Counter Sales", link: "/features/counter-sales" },
   { icon: <FaCodeBranch />, title: "Multi-Branch Control", link: "/solutions/multi-branch-garage-software" },
-  { icon: <FaBell />, title: "Service Reminders", link: "/features/service-alerts" },
+  { icon: <FaBell />, title: "Service Reminders", link: "/features/service-reminders" },
   { icon: <FaUserCog />, title: "Staff Management", link: "/features/staff-management" },
   { icon: <FaHandshake />, title: "Customer Portal", link: "/features/crm" },
   { icon: <FaLock />, title: "CA & Finance Access", link: "/features/finance" },

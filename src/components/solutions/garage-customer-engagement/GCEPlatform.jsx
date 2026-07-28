@@ -8,8 +8,8 @@ export default function GCEPlatform() {
     { icon: <FaUser />, label: "Customer", link: "/features/customers", anchor: "Customer Management" },
     { icon: <FaCar />, label: "Vehicle", link: "/features/vehicles", anchor: "Vehicle Management" },
     { icon: <FaFileAlt />, label: "Job Card", link: "/features/job-card-management", anchor: "Job Card Features" },
-    { icon: <FaHandHoldingUsd />, label: "Payment", link: "/features/payments", anchor: "Payments Log" },
-    { icon: <FaBell />, label: "Service Alert", link: "/features/service-alerts", anchor: "Service Alerts" }
+    { icon: <FaHandHoldingUsd />, label: "Payment", link: "/features/billing", anchor: "Payments Log" },
+    { icon: <FaBell />, label: "Service Alert", link: "/features/service-reminders", anchor: "Service Alerts" }
   ];
 
   return (

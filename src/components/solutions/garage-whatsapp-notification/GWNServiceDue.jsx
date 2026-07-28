@@ -27,7 +27,7 @@ export default function GWNServiceDue() {
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Text Column Left */}
           <div className="space-y-6">
             <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -39,14 +39,14 @@ export default function GWNServiceDue() {
             <p className="text-slate-600 text-sm leading-relaxed">
               Log periodic vehicle service intervals and upcoming due dates in a unified database. Utilizing a digital <strong className="text-primary capitalize">garage service due reminder software</strong> removes the need to remember dates manually.
             </p>
-            
+
             <p className="text-slate-600 text-sm leading-relaxed">
               Whenever a maintenance date is approaching, the system logs a pending status card. Advisors can review these cards and trigger <strong className="text-primary capitalize">vehicle service reminder whatsapp</strong> notifications, helping you reconnect with clients and increase repeat service bookings.
             </p>
 
             <div className="pt-4">
               <Link
-                href="/features/service-alerts"
+                href="/features/service-reminders"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
               >
                 Explore Service Alerts
@@ -60,7 +60,7 @@ export default function GWNServiceDue() {
               Service Alerts Queue
             </span>
             <div className="space-y-3 font-sans text-xs">
-              
+
               {alerts.map((alert, idx) => (
                 <div key={idx} className="bg-white rounded-xl p-4 border border-slate-200 shadow-xs space-y-2">
                   <div className="flex justify-between items-center text-[10px] text-slate-500 border-b border-slate-200 pb-1.5">

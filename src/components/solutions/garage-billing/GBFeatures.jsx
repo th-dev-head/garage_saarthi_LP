@@ -18,7 +18,7 @@ export default function GBFeatures() {
       icon: <FaFileInvoice className="text-primary w-6 h-6" />,
       title: "GST and Custom Invoices",
       desc: "Generate professional GST bills with custom invoice numbers, HSN rates, and tax parameters.",
-      link: "/features/payments"
+      link: "/features/billing"
     },
     {
       icon: <FaPercent className="text-primary w-6 h-6" />,
@@ -30,7 +30,7 @@ export default function GBFeatures() {
       icon: <FaCoins className="text-primary w-6 h-6" />,
       title: "Split Payment Management",
       desc: "Record split payments (Cash, UPI, Card, Net Banking) and track collections under specific registers.",
-      link: "/features/payments"
+      link: "/features/billing"
     },
     {
       icon: <FaUserLock className="text-primary w-6 h-6" />,

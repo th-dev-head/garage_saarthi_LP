@@ -27,8 +27,8 @@ export default function VSHServiceAlerts() {
         <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
           Keeping digital service records makes it easy to schedule next check-ins. GarageSaarthi lets you set automated service alerts and coordinate reminders via WhatsApp template tools. Reduce missed bookings and keep bays busy.
         </p>
-        <Link href="/features/service-alerts" onClick={handleFeatureClick} className="pt-4 flex justify-center">
-          <Button href="/features/service-alerts" onClick={handleFeatureClick}>
+        <Link href="/features/service-reminders" onClick={handleFeatureClick} className="pt-4 flex justify-center">
+          <Button href="/features/service-reminders" onClick={handleFeatureClick}>
             Explore Service Alerts <FaChevronRight className="w-3.5 h-3.5" />
           </Button>
         </Link>

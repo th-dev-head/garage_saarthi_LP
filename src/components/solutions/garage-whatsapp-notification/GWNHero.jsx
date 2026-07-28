@@ -57,7 +57,7 @@ export default function GWNHero() {
               Start 7-Day Free Trial
             </Button>
             <Link
-              href="/features/service-alerts"
+              href="/features/service-reminders"
               onClick={handleAlertsClick}
               className="rounded-full border border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer w-full sm:w-auto whitespace-nowrap h-11 text-center"
             >

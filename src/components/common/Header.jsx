@@ -82,7 +82,7 @@ const Header = () => {
       { name: "Customer Management", href: "/features/customers" },
       { name: "Vehicle Management", href: "/features/vehicles" },
       { name: "Vehicle Service History", href: "/features/service-history" },
-      { name: "Service Reminders", href: "/features/service-alerts" },
+      { name: "Service Reminders", href: "/features/service-reminders" },
       { name: "WhatsApp Automation", href: "/features/automation" },
       { name: "Customer Review Collection", href: "/features/customer-reviews" },
     ],

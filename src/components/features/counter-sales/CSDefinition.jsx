@@ -3,10 +3,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function CSDefinition() {
   const highlights = [
-    { title: "🚀 Fast Billing", desc: "30-second retail checkout", color: "text-primary" },
-    { title: "📦 Auto Stock Sync", desc: "Instant inventory deduction", color: "text-orange-600" },
-    { title: "🧾 GST Compliant", desc: "HSN & tax rates pre-loaded", color: "text-emerald-600" },
-    { title: "📲 WhatsApp Receipts", desc: "Send digital bill on phone", color: "text-amber-600" }
+    { title: "🚀 Garage POS Software", desc: "30-second retail checkout", color: "text-primary" },
+    { title: "📦 Spare Parts POS Software", desc: "Instant inventory deduction", color: "text-orange-600" },
+    { title: "🧾 GST Billing Software for Garage", desc: "HSN & tax rates pre-loaded", color: "text-emerald-600" },
+    { title: "📲 Garage Cash Counter Software", desc: "Send digital bill on phone", color: "text-amber-600" }
   ];
 
   return (
@@ -18,13 +18,13 @@ export default function CSDefinition() {
               What is Workshop Counter Sales POS?
             </span>
             <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Fast Over-The-Counter Billing for <GradientUnderline>Spare Parts & Oils</GradientUnderline>
+              Fast <GradientUnderline>Garage Counter Sales Software</GradientUnderline> & Spare Parts POS
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
-              <strong>Garage Counter Sales Software</strong> (or Spare Parts POS) is a specialized billing system designed for auto repair shops and spare parts retailers to sell items directly to walk-in buyers without opening a vehicle job card.
+              <strong>GarageSaarthi Counter Sales Software</strong> is an all-in-one <strong>garage billing POS software</strong> and <strong>workshop sales management software</strong> built for auto workshops, spare parts counters, and retail lubricant stores.
             </p>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              When a customer comes only to buy engine oil, brake fluid, or spare components, generate a GST-compliant retail bill in seconds. Inventory levels deduct automatically so your stock counts remain 100% accurate.
+              Generate <strong>retail billing software for garage</strong> invoices in under 30 seconds with <strong>counter billing software for garage</strong> and automatic inventory deduction.
             </p>
           </div>
 

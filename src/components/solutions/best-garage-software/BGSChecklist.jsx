@@ -31,7 +31,7 @@ const checklistItems = [
     title: "Billing and GST Support",
     question: "Can the garage create organized invoices and manage GST requirements?",
     desc: "Ensure software supports custom invoice series, GST breakdown calculations, multiple payment methods, and instant WhatsApp bill sharing.",
-    link: "/features/payments",
+    link: "/features/billing",
     anchor: "Explore Invoicing & Payments",
   },
   {
@@ -67,7 +67,7 @@ const checklistItems = [
     title: "Service and WhatsApp Reminders",
     question: "Can the software help the garage follow up when service is due?",
     desc: "Automate service due notifications and promotional reminders sent directly via WhatsApp, keeping your service bays active.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore Service Alerts",
   },
   {

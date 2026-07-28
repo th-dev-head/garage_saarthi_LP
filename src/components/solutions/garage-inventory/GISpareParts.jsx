@@ -93,7 +93,7 @@ export default function GISpareParts() {
         </div>
 
         {/* Right Visual Mockup Card */}
-        <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-sm">
+        <div className="bg-white border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-sm">
           <div className="flex items-center justify-between border-b border-slate-200/60 pb-3">
             <h4 className="text-xs font-bold text-text-dark uppercase tracking-wide">Spare Parts Registry</h4>
             <span className="text-[10px] text-slate-500 font-medium">102 Total Items</span>
@@ -101,7 +101,7 @@ export default function GISpareParts() {
 
           <div className="space-y-2 text-xs text-slate-600">
             {registryItems.map((item, idx) => (
-              <div key={idx} className="bg-white p-3 rounded-xl border border-slate-200/80">
+              <div key={idx} className="bg-slate-50 p-3 rounded-xl border border-slate-200/80">
                 <div className="flex justify-between font-bold text-text-dark mb-1">
                   <span>{item.name}</span>
                   <span className="text-primary font-bold">{item.price}</span>

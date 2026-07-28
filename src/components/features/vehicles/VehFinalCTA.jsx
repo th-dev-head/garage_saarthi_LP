@@ -6,7 +6,7 @@ export default function VehFinalCTA() {
     <PromoCTA
       title="Ready to Organize Your Garage Vehicle Database?"
       subtitle="Join 1,200+ auto workshops, bike service centers, and detailing studios across India. Start your 7-day free trial today."
-      bgClass="bg-white"
+      bgClass="bg-slate-50"
     />
   );
 }

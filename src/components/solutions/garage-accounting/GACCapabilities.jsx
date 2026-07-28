@@ -16,7 +16,7 @@ export default function GACCapabilities() {
   };
 
   const cards = [
-    { icon: <FaCreditCard className="w-6 h-6 text-primary" />, title: "Track Garage Payments", desc: "Manage outstanding client balances, UPI/Card payment modes, and log invoices payouts.", linkName: "Explore Payments", url: "/features/payments" },
+    { icon: <FaCreditCard className="w-6 h-6 text-primary" />, title: "Track Garage Payments", desc: "Manage outstanding client balances, UPI/Card payment modes, and log invoices payouts.", linkName: "Explore Payments", url: "/features/billing" },
     { icon: <FaCoins className="w-6 h-6 text-primary" />, title: "Manage Income & Expenses", desc: "Track operational cash inflow, store purchase bills, and check expenses logs dynamically.", linkName: "Explore Finance Management", url: "/features/finance" },
     { icon: <FaFileInvoice className="w-6 h-6 text-primary" />, title: "GST Billing & Invoices", desc: "Generate tax-compliant bills with custom invoice series, CGST, and SGST parameters.", linkName: "Explore Billing Features", url: "/features/billing" },
     { icon: <FaUserTie className="w-6 h-6 text-primary" />, title: "Give Your CA Access", desc: "Invite your Chartered Accountant (CA) under a restricted, read-only profile to audit files.", linkName: "Explore CA Access", url: "/features/ca-access" },

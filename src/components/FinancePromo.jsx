@@ -4,7 +4,7 @@ import { FaCreditCard, FaCoins, FaHandHoldingUsd, FaUserTie, FaArrowLeft, FaArro
 
 export default function FinancePromo() {
   const financeFeatures = [
-    { icon: <FaCreditCard className="w-5 h-5" />, label: "Payments Tracking", desc: "Track cash, card, and UPI collections.", link: "/features/payments" },
+    { icon: <FaCreditCard className="w-5 h-5" />, label: "Payments Tracking", desc: "Track cash, card, and UPI collections.", link: "/features/billing" },
     { icon: <FaCoins className="w-5 h-5" />, label: "Finance & Expenses", desc: "Log daily shop expenses and vendor bills.", link: "/features/finance" },
     { icon: <FaHandHoldingUsd className="w-5 h-5" />, label: "Credit & Loans", desc: "Record advances and customer balances.", link: "/features/loans" },
     { icon: <FaUserTie className="w-5 h-5" />, label: "CA Access Reports", desc: "Download consolidated data for tax audit.", link: "/features/ca-access" }

@@ -25,7 +25,7 @@ const operationsList = [
     icon: <FaFileInvoiceDollar />,
     title: "GST Billing & Tax Compliance",
     desc: "Generate GST-compliant invoices with custom numbering rules, HSN/SAC codes, and direct WhatsApp sharing.",
-    link: "/features/payments",
+    link: "/features/billing",
     anchor: "Explore GST Billing",
   },
   {
@@ -53,7 +53,7 @@ const operationsList = [
     icon: <FaBell />,
     title: "Service Alerts & WhatsApp",
     desc: "Automate periodic service due notifications and promotional reminders sent directly to your customers' WhatsApp.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore Service Alerts",
   },
   {

@@ -3,10 +3,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function VehDefinition() {
   const highlights = [
-    { title: "🚗 Vehicle Database", desc: "Detailed vehicle profiles & stats", color: "text-primary" },
-    { title: "🔧 Diagnostic Logging", desc: "Log engine codes & fault details", color: "text-orange-600" },
-    { title: "📅 Service Reminders", desc: "Automate calendar alerts", color: "text-emerald-600" },
-    { title: "📜 Digital History Records", desc: "1-click access to past repairs", color: "text-amber-600" }
+    { title: "🚗 Vehicle Database Management", desc: "Digital vehicle records & profiles", color: "text-primary" },
+    { title: "🔧 Vehicle Repair History Software", desc: "Log engine codes & fault details", color: "text-orange-600" },
+    { title: "📅 Vehicle Maintenance Record Software", desc: "Automate calendar & KM targets", color: "text-emerald-600" },
+    { title: "📜 Digital Vehicle Service Records", desc: "1-click access to past repairs", color: "text-amber-600" }
   ];
 
   return (
@@ -18,13 +18,13 @@ export default function VehDefinition() {
               What is Workshop Vehicle Management?
             </span>
             <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
-              An Organized Cloud Database for <GradientUnderline>Workshop Vehicles</GradientUnderline>
+              Cloud <GradientUnderline>Garage Vehicle Management Software</GradientUnderline> & System
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
-              <strong>Garage Vehicle Management Software</strong> links every customer vehicle entering your shop directly to its digital history file. Say goodbye to searching through greasy binders or old paper files.
+              <strong>GarageSaarthi Vehicle Management System</strong> is a powerful <strong>software to manage customer vehicles</strong> and <strong>software to track vehicle service history</strong> for garages and auto workshops.
             </p>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              Whenever a vehicle returns, search its license registration plate to pull up past job cards, replaced parts, engine repairs, diagnostic notes, fuel metrics, and outstanding payments.
+              Maintain complete <strong>workshop vehicle records management</strong> and access <strong>digital vehicle service records software</strong> from any device.
             </p>
           </div>
 

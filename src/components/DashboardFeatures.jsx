@@ -57,7 +57,7 @@ const features = [
     icon: PortalIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/attendance"
+    link: "/features/payroll"
   },
   {
     title: "Service Alerts",
@@ -65,7 +65,7 @@ const features = [
     icon: WhatsAppIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/service-alerts"
+    link: "/features/service-reminders"
   },
   {
     title: "Reports & Analytics",

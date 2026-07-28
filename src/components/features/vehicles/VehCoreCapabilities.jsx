@@ -1,44 +1,62 @@
 import React from "react";
-import { FaCar, FaHistory, FaImage, FaWrench, FaCalendarAlt, FaCloud } from "react-icons/fa";
+import { FaCar, FaHistory, FaImage, FaWrench, FaCalendarAlt, FaCloud, FaDatabase, FaShieldAlt, FaSearch } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function VehCoreCapabilities() {
   const capabilities = [
     {
       icon: <FaCar className="w-6 h-6 text-primary" />,
-      title: "Digital Vehicle Registry",
-      description: "Log vehicle make, model, year, fuel levels, chassis number, registration plates, and engine configurations.",
+      title: "Workshop Vehicle Management Software",
+      description: "Complete vehicle record management software and workshop vehicle management software to log registration plates, chassis numbers, and engine details.",
       badge: "Registry"
     },
     {
       icon: <FaHistory className="w-6 h-6 text-orange-600" />,
-      title: "Interactive Service Logs",
-      description: "Search complete past repair logs, mechanic notes, bill breakdowns, and replaced spare parts history instantly.",
+      title: "Vehicle Service History Software",
+      description: "Search vehicle maintenance history software, vehicle repair history software, and vehicle service records management logs in 2 seconds.",
       badge: "Service History"
     },
     {
       icon: <FaImage className="w-6 h-6 text-emerald-600" />,
-      title: "Damage & Photo Records",
-      description: "Upload vehicle inventory check pictures and mark pre-existing body dents or scratches during check-in.",
+      title: "Digital Vehicle Records & Photos",
+      description: "Maintain digital vehicle records, digital vehicle service records software, and upload pre-existing damage inspection photos.",
       badge: "Photo Proof"
     },
     {
       icon: <FaWrench className="w-6 h-6 text-amber-600" />,
-      title: "Odometer & KM Tracking",
-      description: "Record Odometer/Mileage logs during intake. Track distance covered between subsequent services.",
+      title: "Vehicle Tracking & Odometer Logs",
+      description: "Vehicle tracking software for workshops and customer vehicle tracking software with Odometer/KM history tracking.",
       badge: "KM Logs"
     },
     {
       icon: <FaCalendarAlt className="w-6 h-6 text-purple-600" />,
-      title: "Automated Maintenance Targets",
-      description: "Calculate upcoming service due targets based on past service intervals, Odometer velocity, or dates.",
+      title: "Vehicle Service Management Software",
+      description: "Automated software for vehicle maintenance records and software to track vehicle service history target intervals.",
       badge: "Maintenance"
     },
     {
       icon: <FaCloud className="w-6 h-6 text-teal-600" />,
-      title: "Secure Cloud Records",
-      description: "Access diagnostic logs, warranty cards, and repair sheets from any mobile, tablet, or PC browser.",
+      title: "Cloud Vehicle Management Software",
+      description: "Automotive vehicle management software and cloud vehicle management software syncing records across mobile, tablet, and PC.",
       badge: "Cloud Sync"
+    },
+    {
+      icon: <FaDatabase className="w-6 h-6 text-indigo-600" />,
+      title: "Vehicle Database Management Software",
+      description: "Robust vehicle database management software and vehicle information management software for fast customer vehicle lookups.",
+      badge: "Database"
+    },
+    {
+      icon: <FaShieldAlt className="w-6 h-6 text-rose-600" />,
+      title: "Vehicle Profile & Details Management",
+      description: "Vehicle profile management and vehicle details management software to manage customer vehicles and history records securely.",
+      badge: "Profile"
+    },
+    {
+      icon: <FaSearch className="w-6 h-6 text-cyan-600" />,
+      title: "Garage & Workshop Vehicle Records",
+      description: "Garage software for vehicle records and workshop software for vehicle history for multi-brand garages and detailing studios.",
+      badge: "Records"
     }
   ];
 
@@ -53,7 +71,7 @@ export default function VehCoreCapabilities() {
             Key Capabilities of Garage <GradientUnderline>Vehicle Management Software</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Record vehicle profiles, track service records, upload vehicle photos, and plan maintenance schedules.
+            Record vehicle profiles, track service records, manage customer vehicle history, and plan maintenance schedules.
           </p>
         </div>
 

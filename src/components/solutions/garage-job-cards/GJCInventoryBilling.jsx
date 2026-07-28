@@ -48,7 +48,7 @@ export default function GJCInventoryBilling() {
 
           <div className="flex gap-4">
             <Link
-              href="/garage-inventory-software"
+              href="/features/inventory"
               onClick={() => handleLinkClick("Garage Inventory Management")}
               className="text-xs text-primary font-bold hover:underline"
             >

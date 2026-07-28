@@ -7,14 +7,14 @@ const reminderFeatures = [
   {
     title: "Vehicle Service Alerts",
     desc: "Log upcoming service alerts based on past check-in sheets. Explore ",
-    href: "/features/service-alerts",
+    href: "/features/service-reminders",
     label: "Service Alerts Feature Link",
     linkText: "Service Alerts"
   },
   {
     title: "WhatsApp Reminders",
     desc: "Send pre-populated WhatsApp reminder templates to clients with a single click. Explore ",
-    href: "/features/service-alerts",
+    href: "/features/automation",
     label: "WhatsApp Alerts Feature Link",
     linkText: "WhatsApp Alerts"
   }

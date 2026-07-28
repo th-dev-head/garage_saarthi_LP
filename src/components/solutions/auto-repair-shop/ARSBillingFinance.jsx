@@ -25,7 +25,7 @@ export default function ARSBillingFinance() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="mb-12">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -42,7 +42,7 @@ export default function ARSBillingFinance() {
 
         {/* Grid Info */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          
+
           {/* Features Column */}
           <div className="space-y-6">
             {financeFeatures.map((item, idx) => {
@@ -59,10 +59,10 @@ export default function ARSBillingFinance() {
                 </div>
               );
             })}
-            
+
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Link
-                href="/features/payments"
+                href="/features/billing"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Explore Payments & Finance

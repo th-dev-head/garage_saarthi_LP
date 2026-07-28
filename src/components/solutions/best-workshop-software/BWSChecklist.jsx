@@ -31,7 +31,7 @@ const checklist12 = [
     icon: <FaFileInvoiceDollar />,
     title: "GST Billing & Invoice Management",
     desc: "Generate GST-compliant invoices with custom numbering series, labor rates, spare parts breakdowns, and instant WhatsApp bill sharing.",
-    link: "/features/payments",
+    link: "/features/billing",
     anchor: "Explore Billing & GST",
   },
   {
@@ -63,7 +63,7 @@ const checklist12 = [
     icon: <FaBell />,
     title: "Service Alerts & Customer Follow-Ups",
     desc: "Schedule upcoming vehicle maintenance due dates and automate WhatsApp service alerts to encourage repeat workshop visits.",
-    link: "/features/service-alerts",
+    link: "/features/service-reminders",
     anchor: "Explore Service Alerts",
   },
   {

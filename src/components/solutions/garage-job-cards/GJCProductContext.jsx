@@ -18,9 +18,9 @@ export default function GJCProductContext() {
   const modules = [
     { name: "Garage Dashboard", href: "/features/workshop-management-dashboard", desc: "Monitor active job cards, revenue metrics, and branch analytics." },
     { name: "Counter Sales", href: "/features/counter-sales", desc: "Sell spare parts and inventory items directly without full job cards." },
-    { name: "Garage Inventory", href: "/garage-inventory-software", desc: "Manage spare parts stock, purchases, and low-stock indicators." },
+    { name: "Garage Inventory", href: "/features/inventory", desc: "Manage spare parts stock, purchases, and low-stock indicators." },
     { name: "Customer CRM", href: "/solutions/garage-crm-software", desc: "Log enquiries, follow-up alerts, and discount promo offers." },
-    { name: "Payments & Finance", href: "/features/payments", desc: "Create GST-compliant bills and log collection records." },
+    { name: "Payments & Finance", href: "/features/billing", desc: "Create GST-compliant bills and log collection records." },
     { name: "Employee Payroll", href: "/features/payroll", desc: "Track mechanic attendance sheets, leaves, and commissions." }
   ];
 

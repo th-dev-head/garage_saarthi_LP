@@ -1,14 +1,14 @@
 import React from "react";
 import { useRouter } from "next/navigation";
-import { 
-  FaCar, FaMotorcycle, FaBolt, FaTruck, FaBus, 
-  FaPaintBrush, FaRing, FaBatteryFull, FaCodeBranch, FaUserCheck 
+import {
+  FaCar, FaMotorcycle, FaBolt, FaTruck, FaBus,
+  FaPaintBrush, FaRing, FaBatteryFull, FaCodeBranch, FaUserCheck
 } from "react-icons/fa";
 
 const solutions = [
   { icon: <FaCar className="w-6 h-6" />, title: "Car Garages", link: "/solutions/car-garage-software" },
   { icon: <FaMotorcycle className="w-6 h-6" />, title: "Bike Workshops", link: "/solutions/bike-workshop-software" },
-  { icon: <FaBolt className="w-6 h-6" />, title: "EV Garages", link: "/solutions/ev-garage-software" },
+  { icon: <FaBolt className="w-6 h-6" />, title: "EV Garages", link: "/solutions/ev-garage-management-software" },
   { icon: <FaTruck className="w-6 h-6" />, title: "Truck Workshops", link: "/solutions/truck-workshop-software" },
   { icon: <FaBus className="w-6 h-6" />, title: "Fleet Workshops", link: "/solutions/fleet-workshop-software" },
   { icon: <FaPaintBrush className="w-6 h-6" />, title: "Car Detailing", link: "/solutions/car-detailing-software" },

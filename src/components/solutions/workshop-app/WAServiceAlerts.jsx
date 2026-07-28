@@ -16,16 +16,16 @@ export default function WAServiceAlerts() {
               Client Engagement
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-                Manage Service Alerts and{ " "}
-                <GradientUnderline>Customer Follow-Ups from the App</GradientUnderline>
-              </h2>
+              Manage Service Alerts and{" "}
+              <GradientUnderline>Customer Follow-Ups from the App</GradientUnderline>
+            </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
               Track upcoming service logs, create customized discount offers, and broadcast automated WhatsApp reminder templates to clients with one click.
             </p>
 
             <div className="flex flex-wrap gap-4 items-center mb-6">
               <Link
-                href="/features/service-alerts"
+                href="/features/service-reminders"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Explore Service Alerts

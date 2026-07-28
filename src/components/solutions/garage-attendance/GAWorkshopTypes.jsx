@@ -17,7 +17,7 @@ export default function GAWorkshopTypes() {
   const types = [
     { title: "Car Garages", desc: "Manage check-ins, leaves, and commissions for multibrand car mechanics and denting technicians.", url: "/solutions/car-garage-software" },
     { title: "Bike Workshops", desc: "Track daily presence, shift check-ins, and weekly helper allowance rosters.", url: "/solutions/bike-workshop-software" },
-    { title: "EV Garages", desc: "Manage tech logs, EV training shifts, and specialized supervisor present ratios.", url: "/solutions/ev-garage-software" },
+    { title: "EV Garages", desc: "Manage tech logs, EV training shifts, and specialized supervisor present ratios.", url: "/solutions/ev-garage-management-software" },
     { title: "Truck Workshops", desc: "Organize check-ins, commercial vehicle mechanics rosters, and night shift details.", url: "/solutions/truck-workshop-software" },
     { title: "Fleet Workshops", desc: "Manage scheduled maintenance shift registers, driver logs, and team check-ins.", url: "/solutions/fleet-workshop-software" },
     { title: "Multi-Branch Garages", desc: "Compare staff presence ratios across locations, audit rosters, and restrict staff logins by branch.", url: "/solutions/multi-branch-garage-software" }
