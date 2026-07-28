@@ -17,7 +17,7 @@ export default function CWRelatedSolutions() {
   const solutions = [
     { title: "Garage Management Software", desc: "Our core landing page with broader features details.", url: "/" },
     { title: "Bike Workshop Software", desc: "Specialized tools for two-wheeler service centers.", url: "/solutions/bike-workshop-software" },
-    { title: "EV Garage Software", desc: "Tech logs and battery parameters for EV repair shops.", url: "/solutions/ev-garage-software" },
+    { title: "EV Garage Software", desc: "Tech logs and battery parameters for EV repair shops.", url: "/solutions/ev-garage-management-software" },
     { title: "Fleet Workshop Software", desc: "Maintenance logs for commercial logistics operations.", url: "/solutions/fleet-workshop-software" },
     { title: "Multi-Branch Garage Software", desc: "Consolidated collections logs across outlets.", url: "/solutions/multi-branch-garage-software" },
     { title: "Garage Automation Software", desc: "Automated alert schedules and digital checklists.", url: "/solutions/garage-automation-software" }

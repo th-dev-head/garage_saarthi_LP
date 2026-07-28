@@ -37,7 +37,7 @@ export default function GJCWorkflow() {
       icon: <FaBoxes className="text-primary w-5 h-5" />,
       title: "Add Parts or Inventory Items",
       desc: "Connect spare parts directly from your inventory. Keep track of materials used.",
-      link: { label: "Garage Inventory Management", href: "/garage-inventory-software" }
+      link: { label: "Garage Inventory Management", href: "/features/inventory/" }
     },
     {
       icon: <FaFileInvoiceDollar className="text-primary w-5 h-5" />,

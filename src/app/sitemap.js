@@ -270,7 +270,7 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    { 
+    {
       url: `${baseUrl}/features/customer-reviews`,
       lastModified,
       changeFrequency: "monthly",
@@ -296,6 +296,18 @@ export default function sitemap() {
     },
     {
       url: `${baseUrl}/features/ca-access`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/features/attendance`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/features/payroll`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,

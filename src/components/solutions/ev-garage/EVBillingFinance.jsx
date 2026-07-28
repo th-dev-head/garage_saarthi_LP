@@ -15,7 +15,7 @@ const billingCards = [
     icon: FaMoneyBillWave,
     title: "Track Payments and Finance",
     desc: "Organize payments collected via cash, UPI, cards, or credit. Send payment links and digital invoice links straight to the customer's WhatsApp.",
-    link: "/features/payments",
+    link: "/features/billing",
     linkText: "Explore Payments"
   },
   {

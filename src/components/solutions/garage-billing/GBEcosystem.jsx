@@ -15,7 +15,7 @@ export default function GBEcosystem() {
 
   const modules = [
     { name: "Digital Job Cards", href: "/solutions/garage-job-card-software", desc: "Create repair orders, log diagnostics complaints, and assign mechanics." },
-    { name: "Garage Inventory", href: "/garage-inventory-software", desc: "Save spare parts stock list, purchase logs, and low-stock alerts." },
+    { name: "Garage Inventory", href: "/features/inventory", desc: "Save spare parts stock list, purchase logs, and low-stock alerts." },
     { name: "Customer CRM", href: "/solutions/garage-crm-software", desc: "Track customer leads, service follow-ups, and run coupons." },
     { name: "Staff Management", href: "/features/attendance", desc: "Track mechanic attendance, leave requests, and salary payroll logs." },
     { name: "Branch Operations", href: "/solutions/multi-branch-garage-software", desc: "Manage multi-center networks under a centralized login configuration." },

@@ -17,7 +17,7 @@ const cards = [
     title: "Track Customer Payments",
     desc: "Log cash, UPI, card, and digital wallet payments against each job. Track outstanding balances, customer credit history, and pending dues — all in real time.",
     links: [
-      { label: "Payments", href: "/features/payments" },
+      { label: "Payments", href: "/features/billing" },
     ],
   },
   {

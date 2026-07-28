@@ -9,7 +9,7 @@ import {
 const types = [
   { icon: <FaCar className="w-6 h-6" />, title: "Car Workshops", link: "/solutions/car-garage-software" },
   { icon: <FaMotorcycle className="w-6 h-6" />, title: "Bike Workshops", link: "/solutions/bike-workshop-software" },
-  { icon: <FaBolt className="w-6 h-6" />, title: "EV Service Centers", link: "/solutions/ev-garage-software" },
+  { icon: <FaBolt className="w-6 h-6" />, title: "EV Service Centers", link: "/solutions/ev-garage-management-software" },
   { icon: <FaTruck className="w-6 h-6" />, title: "Truck Workshops", link: "/solutions/truck-workshop-software" },
   { icon: <FaBus className="w-6 h-6" />, title: "Fleet Workshops", link: "/solutions/fleet-workshop-software" },
   { icon: <FaPaintBrush className="w-6 h-6" />, title: "Car Detailing", link: "/solutions/car-detailing-software" },

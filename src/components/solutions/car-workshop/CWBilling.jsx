@@ -61,7 +61,7 @@ export default function CWBilling() {
               <h3 className="text-base font-bold text-slate-800">Payment & Finance</h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed font-normal">
                 Check pending dues, log expenses, and maintain digital accounts sheets. Explore{" "}
-                <Link href="/features/payments" onClick={() => handleLinkClick("Payments Feature Link", "/features/payments")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/billing" onClick={() => handleLinkClick("Payments Feature Link", "/features/billing")} className="text-primary font-semibold hover:underline">
                   Payments
                 </Link>{" "}
                 and{" "}

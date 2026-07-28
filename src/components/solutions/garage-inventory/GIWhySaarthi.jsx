@@ -43,7 +43,7 @@ export default function GIWhySaarthi() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {differentiators.map((diff, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/80 p-6 rounded-3xl flex gap-4 shadow-sm">
+            <div key={idx} className="bg-slate-50 border border-slate-200/80 p-6 rounded-3xl flex gap-4 shadow-sm">
               <div className="flex-shrink-0 w-10 h-10 bg-orange-50 rounded-2xl flex items-center justify-center">
                 {diff.icon}
               </div>

@@ -21,7 +21,7 @@ export default function GIMultiBranch() {
     <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side Visual representation */}
-        <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-6 shadow-sm order-2 md:order-1">
+        <div className="bg-white border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-6 shadow-sm order-2 md:order-1">
           <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wide border-b border-slate-200/60 pb-3 flex items-center gap-2">
             <FaNetworkWired className="text-primary w-4 h-4" />
             Consolidated Branch Directory
@@ -29,7 +29,7 @@ export default function GIMultiBranch() {
 
           <div className="space-y-4">
             {branchDirectory.map((branch, idx) => (
-              <div key={idx} className="bg-white p-3 rounded-xl border border-slate-200/80 text-xs">
+              <div key={idx} className="bg-slate-50 p-3 rounded-xl border border-slate-200/80 text-xs">
                 <div className="flex justify-between items-center mb-1">
                   <span className="font-bold text-slate-800">{branch.name}</span>
                   <span className="text-[10px] text-green-600 bg-green-50 px-2 py-0.5 rounded-full font-bold">{branch.spares}</span>

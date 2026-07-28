@@ -11,7 +11,7 @@ export default function GBInventoryConnection() {
       page_path: "/solutions/garage-billing-software",
       cta_location: "inventory_connection",
       cta_label: "Garage Inventory Management",
-      destination: "/garage-inventory-software"
+      destination: "/features/inventory"
     });
   };
 
@@ -34,7 +34,7 @@ export default function GBInventoryConnection() {
             GarageSaarthi connects your billing terminal with spare parts stock lists. Adding parts to a job card or direct counter sale invoice auto-updates current stock counts, registers tax calculations, and applies pre-saved retail prices.
           </p>
 
-          <Link href="/garage-inventory-software">
+          <Link href="/features/inventory">
             <Button
               variant="hero"
               onClick={handleLinkClick}

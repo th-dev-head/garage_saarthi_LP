@@ -51,7 +51,7 @@ export default function GIAutomotiveParts() {
           {autoPartsCards.map((card, idx) => {
             const Icon = card.icon;
             return (
-              <div key={idx} className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl space-y-3 shadow-xs">
+              <div key={idx} className="bg-white border border-slate-200/80 p-6 rounded-2xl space-y-3 shadow-xs">
                 <div className="w-8 h-8 rounded-xl bg-orange-100/50 flex items-center justify-center text-primary">
                   <Icon className="w-4 h-4" />
                 </div>

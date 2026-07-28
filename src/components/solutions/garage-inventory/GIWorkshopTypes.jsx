@@ -45,7 +45,7 @@ export default function GIWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {workshopTypes.map((item, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between">
+            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="w-10 h-10 bg-orange-50 rounded-xl flex items-center justify-center text-primary">
                   {item.icon}

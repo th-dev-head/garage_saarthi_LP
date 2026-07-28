@@ -31,7 +31,7 @@ const checklist12 = [
     icon: <FaFileInvoiceDollar />,
     title: "GST Billing & Invoice Management",
     desc: "Generate GST-compliant invoices with custom numbering series, labor rates, spare parts breakdowns, and instant WhatsApp bill sharing.",
-    link: "/features/payments",
+    link: "/features/billing",
     anchor: "Explore Billing & GST",
   },
   {

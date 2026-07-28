@@ -12,7 +12,7 @@ const steps = [
   { icon: <FaTools />, label: "Job Card", href: "/features/job-card-management" },
   { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-card-management" },
   { icon: <FaFileInvoiceDollar />, label: "Invoice", href: "/features/billing" },
-  { icon: <FaCreditCard />, label: "Payment", href: "/features/payments" },
+  { icon: <FaCreditCard />, label: "Payment", href: "/features/billing" },
   { icon: <FaBell />, label: "Service Follow-up", href: "/features/service-reminders" },
 ];
 
@@ -40,7 +40,7 @@ const featureCards = [
   {
     title: "Track Payments & Dues",
     desc: "Log cash, card, UPI, and digital wallet payments. Track pending balances and client credit history in real time.",
-    link: "/features/payments",
+    link: "/features/billing",
   },
 ];
 

@@ -40,7 +40,7 @@ const cards = [
     icon: <FaFileInvoiceDollar />,
     title: "Manage Payments and Finance",
     desc: "Generate professional invoices, input parts usage, and track payments.",
-    link: "/features/payments",
+    link: "/features/billing",
     btnText: "Explore Billing Features"
   },
   {

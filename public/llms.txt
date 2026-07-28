@@ -21,7 +21,7 @@ GarageSaarthi is an all-in-one garage management software platform built for aut
 - [Automobile Workshop Software](https://www.garagesaarthi.com/solutions/automobile-workshop-software)
 - [Car Garage Software](https://www.garagesaarthi.com/solutions/car-garage-software)
 - [Bike Workshop Software](https://www.garagesaarthi.com/solutions/bike-workshop-software)
-- [EV Garage Software](https://www.garagesaarthi.com/solutions/ev-garage-software)
+- [EV Garage Software](https://www.garagesaarthi.com/solutions/ev-garage-management-software)
 - [Truck Workshop Software](https://www.garagesaarthi.com/solutions/truck-workshop-software)
 - [Fleet Workshop Software](https://www.garagesaarthi.com/solutions/fleet-workshop-software)
 - [Car Detailing Software](https://www.garagesaarthi.com/solutions/car-detailing-software)

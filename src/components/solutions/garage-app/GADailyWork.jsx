@@ -40,7 +40,7 @@ const workflows = [
     icon: <FaFileInvoiceDollar />,
     title: "Manage Payments and Finance",
     desc: "Create simple labor bills, input parts prices, and collect payments.",
-    link: "/features/payments",
+    link: "/features/billing",
     btnText: "Explore Billing & Payments"
   },
   {

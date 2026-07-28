@@ -51,7 +51,7 @@ export default function GEConnectedOperations() {
       title: "Payments & Finance",
       desc: "Generate professional GST bills, track customer payments, set customized invoice series, and grant CA access.",
       links: [
-        { label: "Payment Management", href: "/features/payments" },
+        { label: "Payment Management", href: "/features/billing" },
         { label: "Garage Finance Management", href: "/features/finance" },
         { label: "Loan Management", href: "/features/loans" },
         { label: "CA Access", href: "/features/ca-access" }

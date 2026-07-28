@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaFileInvoice, FaMoneyBillWave, FaChartLine, FaUserTie, FaArrowRight } from "react-icons/fa";
-import GradientUnderline from "../../common/GradientUnderline"; 
+import GradientUnderline from "../../common/GradientUnderline";
 
 const financeCards = [
   {
@@ -17,7 +17,7 @@ const financeCards = [
     title: "Payments & Finance",
     desc: "Log incoming cash, UPI, cards, and bank transfer payments. Keep transparent records of pending credits and outstanding customer dues.",
     links: [
-      { href: "/features/payments", text: "Payments" },
+      { href: "/features/billing", text: "Payments" },
       { href: "/features/finance", text: "Finance" }
     ]
   },
@@ -70,15 +70,14 @@ export default function AWBillingFinance() {
                   <h3 className="text-base font-bold text-slate-900 mb-2">{card.title}</h3>
                   <p className="text-xs text-slate-600 leading-relaxed mb-6">{card.desc}</p>
                 </div>
-                
+
                 <div className="flex gap-4 items-center">
                   {card.links.map((link, lIdx) => (
                     <Link
                       key={lIdx}
                       href={link.href}
-                      className={`text-xs font-bold text-primary hover:underline ${
-                        link.hasArrow ? "inline-flex items-center gap-1" : ""
-                      }`}
+                      className={`text-xs font-bold text-primary hover:underline ${link.hasArrow ? "inline-flex items-center gap-1" : ""
+                        }`}
                     >
                       {link.text}
                       {link.hasArrow && <FaArrowRight className="w-2.5 h-2.5" />}

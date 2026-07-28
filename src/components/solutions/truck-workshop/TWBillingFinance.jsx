@@ -15,7 +15,7 @@ const truckBillingCards = [
     icon: FaRegCreditCard,
     title: "Track Payments and Finance",
     desc: "Audit cash, UPI, or credit terms extended to logistics companies. Send outstanding invoice reminders directly.",
-    linkHref: "/features/payments",
+    linkHref: "/features/billing",
     linkText: "Explore Payment logs"
   },
   {

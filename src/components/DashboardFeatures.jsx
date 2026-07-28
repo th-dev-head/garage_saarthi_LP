@@ -57,7 +57,7 @@ const features = [
     icon: PortalIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/attendance"
+    link: "/features/payroll"
   },
   {
     title: "Service Alerts",

@@ -268,8 +268,8 @@ export default function RootLayout({ children }) {
                   lower.indexOf('signup') !== -1 ||
                   lower.indexOf('login') !== -1 ||
                   lower.indexOf('register') !== -1 ||
-                  lower.indexOf('garagesaarthi.com') !== -1 ||
-                  lower.indexOf('localhost') !== -1
+                  lower.indexOf('platform.garagesaarthi.com') !== -1 ||
+                  lower.indexOf(':5173') !== -1
                 );
               }
 
@@ -305,7 +305,7 @@ export default function RootLayout({ children }) {
                 return originalOpen.call(this, url, target, features);
               };
 
-              // Intercept link clicks dynamically
+              // Intercept link clicks dynamically without pre-hydration DOM mutation
               document.addEventListener('click', function (e) {
                 var target = e.target;
                 while (target && target !== document) {
@@ -318,24 +318,6 @@ export default function RootLayout({ children }) {
                   target = target.parentNode;
                 }
               }, true);
-
-              // Process existing anchor tags on DOM Ready
-              function updateExistingLinks() {
-                var links = document.querySelectorAll('a[href]');
-                for (var i = 0; i < links.length; i++) {
-                  var link = links[i];
-                  if (isTargetUrl(link.href)) {
-                    link.href = appendParams(link.href);
-                  }
-                }
-              }
-
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', updateExistingLinks);
-              } else {
-                updateExistingLinks();
-              }
-
             } catch (e) {
               console.error('UTM tracking script error:', e);
             }

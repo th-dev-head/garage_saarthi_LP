@@ -15,7 +15,7 @@ export default function GJCBusinessType() {
   const workshopTypes = [
     { title: "Car Garage Job Cards", link: "/solutions/car-garage-software", desc: "Log multi-brand car specifications, vehicle damage checklists, fuel scales, and engine diagnostics notes." },
     { title: "Bike Workshop Job Cards", link: "/solutions/bike-workshop-software", desc: "Quick mobile check-ins for two-wheelers, tracking bike components, engine numbers, and rapid mechanics updates." },
-    { title: "Automobile Repair Workshops", link: "/industries/automobile-repair", desc: "Track extensive repair order details, mechanic assignments, and counter parts margins in local INR." },
+    { title: "Automobile Repair Workshops", link: "/solutions/garage-automation-software", desc: "Track extensive repair order details, mechanic assignments, and counter parts margins in local INR." },
     { title: "Mechanics & Repair Teams", link: "/features/user-management", desc: "Set custom roles and logins for staff and mechanics. Allow mechanics to view assigned work sheets without access to billing details." },
     { title: "Truck Workshops", link: "/solutions/truck-workshop-software", desc: "Manage heavy vehicle repair orders, wheel alignment logs, and high-value spares." },
     { title: "EV Workshops", link: "/solutions/ev-garage-management-software/", desc: "Track battery serial numbers, warranty details, and electrical diagnostic logs." }

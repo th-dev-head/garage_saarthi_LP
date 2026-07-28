@@ -6,7 +6,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 const types = [
   { title: "Car Garages", desc: "Manage multi-brand repairs, custom paint jobs, and spare parts easily.", link: "/solutions/car-garage-software" },
   { title: "Bike Workshops", desc: "Speedy mechanics checklists, job card workflows, and parts listings.", link: "/solutions/bike-workshop-software" },
-  { title: "EV Garages", desc: "EV battery health records, electrical tests, and service tracking.", link: "/solutions/ev-garage-software" },
+  { title: "EV Garages", desc: "EV battery health records, electrical tests, and service tracking.", link: "/solutions/ev-garage-management-software" },
   { title: "Truck Workshops", desc: "Handle heavy duty commercial vehicle parameters and parts allocations.", link: "/solutions/truck-workshop-software" },
   { title: "Fleet Workshops", desc: "Centralized maintenance schedules, logs, and billing for fleet operators.", link: "/solutions/fleet-workshop-software" },
   { title: "Car Detailing Businesses", desc: "Keep track of detailing spa services, detailing products, and updates.", link: "/solutions/car-detailing-software" },
@@ -18,7 +18,7 @@ export default function GABusinessTypes() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">

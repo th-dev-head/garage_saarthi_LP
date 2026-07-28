@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const types = [
   { title: "Car Workshop App", desc: "Manage multi-brand repairs, visual damage records, and catalog parts.", link: "/solutions/car-garage-software" },
   { title: "Bike Workshop App", desc: "Speedy mechanics checklists, parts inventory, and base monthly billing.", link: "/solutions/bike-workshop-software" },
-  { title: "EV Workshop App", desc: "Record battery cell logs, electric testing, and service schedules.", link: "/solutions/ev-garage-software" },
+  { title: "EV Workshop App", desc: "Record battery cell logs, electric testing, and service schedules.", link: "/solutions/ev-garage-management-software" },
   { title: "Truck Workshop App", desc: "Heavy mechanical tasks allocations and parts requisitions.", link: "/solutions/truck-workshop-software" },
   { title: "Auto Repair Shop App", desc: "Digital job cards, customer records, and general billing registries.", link: "/solutions/car-garage-software" }
 ];
@@ -15,7 +15,7 @@ export default function WABusinessTypes() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">

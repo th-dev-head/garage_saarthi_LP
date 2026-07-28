@@ -22,7 +22,7 @@ const billingCards = [
     icon: FaMoneyCheckAlt,
     title: "Track Payments",
     desc: "Organize payments collected via cash, UPI, cards, or credit. Send payment links and digital invoice links straight to the customer's WhatsApp.",
-    link: "/features/payments",
+    link: "/features/billing",
     linkText: "Explore Payment Management"
   }
 ];

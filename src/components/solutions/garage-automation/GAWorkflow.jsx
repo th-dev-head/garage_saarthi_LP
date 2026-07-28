@@ -52,7 +52,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Create GST-supported billing details and compile estimates instantly under{" "}
-          <Link href="/features/payments" className="text-primary font-bold hover:underline">
+          <Link href="/features/billing" className="text-primary font-bold hover:underline">
             Payments Log
           </Link>.
         </>

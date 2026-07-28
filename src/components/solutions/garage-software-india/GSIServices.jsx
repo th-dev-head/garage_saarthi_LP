@@ -25,7 +25,7 @@ const modules = [
     icon: <FaFileInvoiceDollar />,
     title: "GST Billing & Invoices",
     desc: "Create GST-compliant bills with custom invoice series, multiple payment terms, and direct WhatsApp invoice sharing.",
-    link: "/features/payments",
+    link: "/features/billing",
     anchor: "Explore GST Billing",
   },
   {

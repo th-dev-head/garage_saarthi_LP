@@ -83,7 +83,7 @@ export default function GIConnectedOperations() {
         </div>
 
         {/* Right Side Visual Grid Mapping */}
-        <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-6 shadow-sm">
+        <div className="bg-white border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-6 shadow-sm">
           <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wide border-b border-slate-200/60 pb-3">
             Real-Time Synchronization Flow
           </h4>

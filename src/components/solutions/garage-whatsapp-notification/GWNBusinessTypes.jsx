@@ -21,7 +21,7 @@ export default function GWNBusinessTypes() {
       icon: <FaPlug className="text-green-500 w-5 h-5" />,
       title: "EV Garages",
       desc: "Monitor battery parameters, electric vehicle profile histories, and custom alert deadlines.",
-      link: "/solutions/ev-garage-software"
+      link: "/solutions/ev-garage-management-software"
     },
     {
       icon: <FaTruck className="text-slate-500 w-5 h-5" />,
