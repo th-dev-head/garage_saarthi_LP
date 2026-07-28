@@ -55,12 +55,12 @@ export default function JCMWorkflow() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between relative hover:border-primary/40 transition-colors"
+              className="p-6 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between relative transition-colors"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-2xl font-black text-slate-300">{step.num}</span>
-                  <div className="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center shadow-xs">
+                  <div className="w-9 h-9 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center shadow-xs">
                     {step.icon}
                   </div>
                 </div>

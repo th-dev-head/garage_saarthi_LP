@@ -9,6 +9,7 @@
 @source "../components/features/finance";
 @source "../components/features/loans";
 @source "../components/features/reports";
+@source "../components/features/ca-access";
 
 html {
   scroll-behavior: smooth;
