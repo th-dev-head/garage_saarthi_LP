@@ -1,19 +1,16 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const IHero = dynamic(() => import("../../components/features/inventory/IHero"), { ssr: false });
-const IDefinition = dynamic(() => import("../../components/features/inventory/IDefinition"), { ssr: false });
-const IPaperVsDigital = dynamic(() => import("../../components/features/inventory/IPaperVsDigital"), { ssr: false });
-const ICoreCapabilities = dynamic(() => import("../../components/features/inventory/ICoreCapabilities"), { ssr: false });
-const IWorkflow = dynamic(() => import("../../components/features/inventory/IWorkflow"), { ssr: false });
-const IWorkshopTypes = dynamic(() => import("../../components/features/inventory/IWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const IFAQ = dynamic(() => import("../../components/features/inventory/IFAQ"), { ssr: false });
-const IFinalCTA = dynamic(() => import("../../components/features/inventory/IFinalCTA"), { ssr: false });
+import IHero from "../../components/features/inventory/IHero";
+import IDefinition from "../../components/features/inventory/IDefinition";
+import IPaperVsDigital from "../../components/features/inventory/IPaperVsDigital";
+import ICoreCapabilities from "../../components/features/inventory/ICoreCapabilities";
+import IWorkflow from "../../components/features/inventory/IWorkflow";
+import IWorkshopTypes from "../../components/features/inventory/IWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import IFAQ from "../../components/features/inventory/IFAQ";
+import IFinalCTA from "../../components/features/inventory/IFinalCTA";
 
 export default function InventoryManagementFeature() {
   return (

@@ -1,26 +1,23 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
 
-const GCEHero = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEHero'), { ssr: false });
-const GCEProblem = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEProblem'), { ssr: false });
-const GCERecords = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCERecords'), { ssr: false });
-const GCEReminders = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEReminders'), { ssr: false });
-const GCECommunication = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCECommunication'), { ssr: false });
-const GCECRM = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCECRM'), { ssr: false });
-const GCEOffers = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEOffers'), { ssr: false });
-const GCERetention = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCERetention'), { ssr: false });
-const GCEExperience = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEExperience'), { ssr: false });
-const GCEFeedback = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEFeedback'), { ssr: false });
-const GCEBusinessTypes = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEBusinessTypes'), { ssr: false });
-const GCEPlatform = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEPlatform'), { ssr: false });
-const GCEWhySaarthi = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEWhySaarthi'), { ssr: false });
-const GCEProof = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEProof'), { ssr: false });
-const GCEFreeTrial = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEFreeTrial'), { ssr: false });
-const GCEFAQ = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEFAQ'), { ssr: false });
-const GCEFinalCTA = dynamic(() => import('../../components/solutions/garage-customer-engagement/GCEFinalCTA'), { ssr: false });
+import GCEHero from "../../components/solutions/garage-customer-engagement/GCEHero";
+import GCEProblem from "../../components/solutions/garage-customer-engagement/GCEProblem";
+import GCERecords from "../../components/solutions/garage-customer-engagement/GCERecords";
+import GCEReminders from "../../components/solutions/garage-customer-engagement/GCEReminders";
+import GCECommunication from "../../components/solutions/garage-customer-engagement/GCECommunication";
+import GCECRM from "../../components/solutions/garage-customer-engagement/GCECRM";
+import GCEOffers from "../../components/solutions/garage-customer-engagement/GCEOffers";
+import GCERetention from "../../components/solutions/garage-customer-engagement/GCERetention";
+import GCEExperience from "../../components/solutions/garage-customer-engagement/GCEExperience";
+import GCEFeedback from "../../components/solutions/garage-customer-engagement/GCEFeedback";
+import GCEBusinessTypes from "../../components/solutions/garage-customer-engagement/GCEBusinessTypes";
+import GCEPlatform from "../../components/solutions/garage-customer-engagement/GCEPlatform";
+import GCEWhySaarthi from "../../components/solutions/garage-customer-engagement/GCEWhySaarthi";
+import GCEProof from "../../components/solutions/garage-customer-engagement/GCEProof";
+import GCEFreeTrial from "../../components/solutions/garage-customer-engagement/GCEFreeTrial";
+import GCEFAQ from "../../components/solutions/garage-customer-engagement/GCEFAQ";
+import GCEFinalCTA from "../../components/solutions/garage-customer-engagement/GCEFinalCTA";
 
 export default function GarageCustomerEngagementSoftware() {
   return (

@@ -1,20 +1,17 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const BHero = dynamic(() => import("../../components/features/billing/BHero"), { ssr: false });
-const BDefinition = dynamic(() => import("../../components/features/billing/BDefinition"), { ssr: false });
-const BPaperVsDigital = dynamic(() => import("../../components/features/billing/BPaperVsDigital"), { ssr: false });
-const BCoreCapabilities = dynamic(() => import("../../components/features/billing/BCoreCapabilities"), { ssr: false });
-const BWorkflow = dynamic(() => import("../../components/features/billing/BWorkflow"), { ssr: false });
-const BGSTBilling = dynamic(() => import("../../components/features/billing/BGSTBilling"), { ssr: false });
-const BWorkshopTypes = dynamic(() => import("../../components/features/billing/BWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const BFAQ = dynamic(() => import("../../components/features/billing/BFAQ"), { ssr: false });
-const BFinalCTA = dynamic(() => import("../../components/features/billing/BFinalCTA"), { ssr: false });
+import BHero from "../../components/features/billing/BHero";
+import BDefinition from "../../components/features/billing/BDefinition";
+import BPaperVsDigital from "../../components/features/billing/BPaperVsDigital";
+import BCoreCapabilities from "../../components/features/billing/BCoreCapabilities";
+import BWorkflow from "../../components/features/billing/BWorkflow";
+import BGSTBilling from "../../components/features/billing/BGSTBilling";
+import BWorkshopTypes from "../../components/features/billing/BWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import BFAQ from "../../components/features/billing/BFAQ";
+import BFinalCTA from "../../components/features/billing/BFinalCTA";
 
 export default function BillingInvoicingFeature() {
   return (

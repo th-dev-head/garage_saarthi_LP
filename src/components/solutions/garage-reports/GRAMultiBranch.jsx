@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";

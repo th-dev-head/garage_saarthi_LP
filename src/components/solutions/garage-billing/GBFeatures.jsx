@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { FaFileInvoice, FaPercent, FaCoins, FaUserLock, FaChevronRight } from "react-icons/fa";

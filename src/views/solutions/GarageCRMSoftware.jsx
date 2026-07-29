@@ -1,26 +1,23 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
 
-const GCHero = dynamic(() => import('../../components/solutions/garage-crm/GCHero'), { ssr: false });
-const GCDefinition = dynamic(() => import('../../components/solutions/garage-crm/GCDefinition'), { ssr: false });
-const GCLeadManagement = dynamic(() => import('../../components/solutions/garage-crm/GCLeadManagement'), { ssr: false });
-const GCCustomerManagement = dynamic(() => import('../../components/solutions/garage-crm/GCCustomerManagement'), { ssr: false });
-const GCCustomerVehicle = dynamic(() => import('../../components/solutions/garage-crm/GCCustomerVehicle'), { ssr: false });
-const GCCustomerFollowUps = dynamic(() => import('../../components/solutions/garage-crm/GCCustomerFollowUps'), { ssr: false });
-const GCRetention = dynamic(() => import('../../components/solutions/garage-crm/GCRetention'), { ssr: false });
-const GCWorkflow = dynamic(() => import('../../components/solutions/garage-crm/GCWorkflow'), { ssr: false });
-const GCBusinessType = dynamic(() => import('../../components/solutions/garage-crm/GCBusinessType'), { ssr: false });
-const GCOperations = dynamic(() => import('../../components/solutions/garage-crm/GCOperations'), { ssr: false });
-const GCManualVsCrm = dynamic(() => import('../../components/solutions/garage-crm/GCManualVsCrm'), { ssr: false });
-const GCCloudAccess = dynamic(() => import('../../components/solutions/garage-crm/GCCloudAccess'), { ssr: false });
-const GCWhySaarthi = dynamic(() => import('../../components/solutions/garage-crm/GCWhySaarthi'), { ssr: false });
-const GCCustomerProof = dynamic(() => import('../../components/solutions/garage-crm/GCCustomerProof'), { ssr: false });
-const GCFreeTrial = dynamic(() => import('../../components/solutions/garage-crm/GCFreeTrial'), { ssr: false });
-const GCFAQ = dynamic(() => import('../../components/solutions/garage-crm/GCFAQ'), { ssr: false });
-const GCFinalCTA = dynamic(() => import('../../components/solutions/garage-crm/GCFinalCTA'), { ssr: false });
+import GCHero from "../../components/solutions/garage-crm/GCHero";
+import GCDefinition from "../../components/solutions/garage-crm/GCDefinition";
+import GCLeadManagement from "../../components/solutions/garage-crm/GCLeadManagement";
+import GCCustomerManagement from "../../components/solutions/garage-crm/GCCustomerManagement";
+import GCCustomerVehicle from "../../components/solutions/garage-crm/GCCustomerVehicle";
+import GCCustomerFollowUps from "../../components/solutions/garage-crm/GCCustomerFollowUps";
+import GCRetention from "../../components/solutions/garage-crm/GCRetention";
+import GCWorkflow from "../../components/solutions/garage-crm/GCWorkflow";
+import GCBusinessType from "../../components/solutions/garage-crm/GCBusinessType";
+import GCOperations from "../../components/solutions/garage-crm/GCOperations";
+import GCManualVsCrm from "../../components/solutions/garage-crm/GCManualVsCrm";
+import GCCloudAccess from "../../components/solutions/garage-crm/GCCloudAccess";
+import GCWhySaarthi from "../../components/solutions/garage-crm/GCWhySaarthi";
+import GCCustomerProof from "../../components/solutions/garage-crm/GCCustomerProof";
+import GCFreeTrial from "../../components/solutions/garage-crm/GCFreeTrial";
+import GCFAQ from "../../components/solutions/garage-crm/GCFAQ";
+import GCFinalCTA from "../../components/solutions/garage-crm/GCFinalCTA";
 
 export default function GarageCRMSoftware() {
   return (

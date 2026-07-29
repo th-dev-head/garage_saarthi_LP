@@ -1,3 +1,5 @@
+"use client";
+
 import { useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "./common/Button";

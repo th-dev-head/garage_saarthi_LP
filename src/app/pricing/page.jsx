@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Explore GarageSaarthi pricing plans designed for Indian auto workshops. Start with a 7-day free trial. No credit card needed. GST billing, job cards, inventory & more.",
   keywords:
-    "garage software pricing India, affordable garage management software, workshop management software plans, GST billing software price, cheap garage software India",
+    "garage management software free, free garage management software, garage software free trial, garage software pricing India, affordable garage management software, workshop management software plans, GST billing software price, cheap garage software India",
   alternates: {
     canonical: "https://garagesaarthi.com/pricing",
   },

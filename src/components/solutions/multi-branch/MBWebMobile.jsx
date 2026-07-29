@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
 import Button from "../../common/Button";

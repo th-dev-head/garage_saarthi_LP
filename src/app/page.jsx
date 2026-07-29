@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Manage job cards, billing, inventory, customers, vehicles, staff and finances with GarageSaarthi garage management software. Start your 7-day free trial.",
   keywords:
-    "garage management software, garage management system, garage management app, best garage management software, garage software, garage software india, garage management software india",
+    "garage management software, garage management software free, free garage management software, garage software free, garage management system, garage management app, best garage management software, garage software, garage software india, garage management software india, free garage management software india",
   alternates: {
     canonical: "https://www.garagesaarthi.com/",
   },

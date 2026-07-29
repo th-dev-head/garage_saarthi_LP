@@ -1,3 +1,5 @@
+"use client";
+
 import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import { FaArrowRight, FaTags, FaComments, FaUsers, FaCalendarCheck } from "react-icons/fa";

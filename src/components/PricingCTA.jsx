@@ -1,3 +1,5 @@
+"use client";
+
 import { FRONTEND_URL } from "@/src/config/env";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";

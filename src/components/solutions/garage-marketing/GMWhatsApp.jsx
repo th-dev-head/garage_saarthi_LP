@@ -1,3 +1,5 @@
+"use client";
+
 import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import { FaWhatsapp, FaCheckCircle, FaArrowRight } from "react-icons/fa";

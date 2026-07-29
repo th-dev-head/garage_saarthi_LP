@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { IndianRupee, Plus } from "lucide-react";
 

@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Looking for the best garage management software in India? Compare essential features like job cards, billing, inventory, CRM, service reminders and reports.",
   keywords:
-    "best garage management software, best garage management software in india, best garage software, top garage management software, best garage management system, best garage management app, compare garage management software",
+    "best garage management software, garage management software free, free garage management software, best free garage management software, best garage management software in india, best garage software, top garage management software, best garage management system, best garage management app, compare garage management software",
   alternates: {
     canonical:
       "https://www.garagesaarthi.com/solutions/best-garage-management-software",

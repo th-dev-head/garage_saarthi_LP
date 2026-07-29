@@ -1,18 +1,16 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic"; const WMDHero = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDHero"), { ssr: false });
-const WMDDefinition = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDDefinition"), { ssr: false });
-const WMDProblem = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDProblem"), { ssr: false });
-const WMDCoreCapabilities = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDCoreCapabilities"), { ssr: false });
-const WMDKPIAnalytics = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDKPIAnalytics"), { ssr: false });
-const WMDWorkflow = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDWorkflow"), { ssr: false });
-const WMDBusinessTypes = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDBusinessTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const WMDFAQ = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDFAQ"), { ssr: false });
-const WMDFinalCTA = dynamic(() => import("../../components/features/workshop-management-dashboard/WMDFinalCTA"), { ssr: false });
+import WMDHero from "../../components/features/workshop-management-dashboard/WMDHero";
+import WMDDefinition from "../../components/features/workshop-management-dashboard/WMDDefinition";
+import WMDProblem from "../../components/features/workshop-management-dashboard/WMDProblem";
+import WMDCoreCapabilities from "../../components/features/workshop-management-dashboard/WMDCoreCapabilities";
+import WMDKPIAnalytics from "../../components/features/workshop-management-dashboard/WMDKPIAnalytics";
+import WMDWorkflow from "../../components/features/workshop-management-dashboard/WMDWorkflow";
+import WMDBusinessTypes from "../../components/features/workshop-management-dashboard/WMDBusinessTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import WMDFAQ from "../../components/features/workshop-management-dashboard/WMDFAQ";
+import WMDFinalCTA from "../../components/features/workshop-management-dashboard/WMDFinalCTA";
 
 export default function WorkshopManagementDashboardFeature() {
   return (
