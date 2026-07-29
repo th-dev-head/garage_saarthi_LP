@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/reports",
+      "name": "Garage Reports & Analytics Software | GarageSaarthi",
+      "description": "Track daily workshop revenue trends, spare parts inventory turnover, technician labor productivity, and GST profit statements with GarageSaarthi analytics.",
+      "url": "https://www.garagesaarthi.com/features/reports",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/reports#software",
+      "name": "Garage Reports & Analytics Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track daily workshop revenue trends, spare parts inventory turnover, technician labor productivity, and GST profit statements with GarageSaarthi analytics.",
+      "url": "https://www.garagesaarthi.com/features/reports"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/reports#breadcrumb",
       itemListElement: [

@@ -122,6 +122,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/best-garage-management-software#software",
+      "name": "Best Garage Management Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Looking for the best garage management software in India? Compare essential features like job cards, billing, inventory, CRM, service reminders and reports.",
+      "url": "https://www.garagesaarthi.com/solutions/best-garage-management-software"
+    },
   ],
 };
 

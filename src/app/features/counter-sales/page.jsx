@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/counter-sales",
+      "name": "Garage Counter Sales & Spare Parts POS Billing Software | GarageSaarthi",
+      "description": "All-in-one counter sales and POS billing software for auto repair shops & spare parts retailers in India. Fast GST invoicing, instant inventory deduction, barcode scanning, and WhatsApp bills.",
+      "url": "https://www.garagesaarthi.com/features/counter-sales",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/counter-sales#software",
+      "name": "Garage Counter Sales & Spare Parts POS Billing Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "All-in-one counter sales and POS billing software for auto repair shops & spare parts retailers in India. Fast GST invoicing, instant inventory deduction, barcode scanning, and WhatsApp bills.",
+      "url": "https://www.garagesaarthi.com/features/counter-sales"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/counter-sales#breadcrumb",
       itemListElement: [

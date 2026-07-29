@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/workshop-management-app#software",
+      "name": "Workshop Management App for Garages | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage job cards, inventory, customers, vehicles, staff and service alerts with the GarageSaarthi workshop management app. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/workshop-management-app"
+    },
   ],
 };
 

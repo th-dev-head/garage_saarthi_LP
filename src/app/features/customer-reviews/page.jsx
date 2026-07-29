@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/customer-reviews",
+      "name": "Automated Garage Google Review Collection Software | GarageSaarthi",
+      "description": "Turn happy customers into Google 5-star reviews automatically. Send WhatsApp feedback links post-invoice, shield negative ratings, and rank #1 in local workshop searches.",
+      "url": "https://www.garagesaarthi.com/features/customer-reviews",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/customer-reviews#software",
+      "name": "Automated Garage Google Review Collection Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Turn happy customers into Google 5-star reviews automatically. Send WhatsApp feedback links post-invoice, shield negative ratings, and rank #1 in local workshop searches.",
+      "url": "https://www.garagesaarthi.com/features/customer-reviews"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/customer-reviews#breadcrumb",
       itemListElement: [

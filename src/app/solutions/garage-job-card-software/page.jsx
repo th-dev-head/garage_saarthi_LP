@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-job-card-software#software",
+      "name": "Garage Job Card Software for Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Create digital job cards, manage repair work orders and track garage jobs with GarageSaarthi. Built for car, bike and automotive workshops in India.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-job-card-software"
+    },
   ],
 };
 

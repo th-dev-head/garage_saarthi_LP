@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/vehicle-service-history-software#software",
+      "name": "Vehicle Service History Software for Garages | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track vehicle service, repair and maintenance records digitally with GarageSaarthi vehicle service history software for garages and workshops in India.",
+      "url": "https://www.garagesaarthi.com/solutions/vehicle-service-history-software"
+    },
   ],
 };
 

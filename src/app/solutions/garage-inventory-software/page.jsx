@@ -75,6 +75,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-inventory-software#software",
+      "name": "Garage Inventory Software for Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage spare parts, workshop stock and automotive inventory with GarageSaarthi garage inventory software. Track your garage inventory from one platform.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-inventory-software"
+    },
   ],
 };
 

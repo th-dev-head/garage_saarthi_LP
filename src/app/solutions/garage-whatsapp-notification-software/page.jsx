@@ -68,6 +68,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software#software",
+      "name": "Garage WhatsApp Notification Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Send WhatsApp service reminders, service due alerts and customer notifications with GarageSaarthi. Automate garage follow-ups and stay connected with customers.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software"
+    },
   ],
 };
 

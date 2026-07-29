@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/automation",
+      "name": "Garage WhatsApp Automation & Digital Billing Software | GarageSaarthi",
+      "description": "Send automated WhatsApp job card estimates, digital PDF invoices, UPI payment links, and service due alerts directly to customers with GarageSaarthi software.",
+      "url": "https://www.garagesaarthi.com/features/automation",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/automation#software",
+      "name": "Garage WhatsApp Automation & Digital Billing Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Send automated WhatsApp job card estimates, digital PDF invoices, UPI payment links, and service due alerts directly to customers with GarageSaarthi software.",
+      "url": "https://www.garagesaarthi.com/features/automation"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/automation#breadcrumb",
       itemListElement: [

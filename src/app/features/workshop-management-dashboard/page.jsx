@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/workshop-management-dashboard",
+      "name": "Workshop Management Dashboard & Analytics Software | GarageSaarthi",
+      "description": "All-in-one workshop management dashboard software for garage owners. Track garage KPIs, live job cards, mechanic efficiency, daily revenue, and inventory stock in real time.",
+      "url": "https://www.garagesaarthi.com/features/workshop-management-dashboard",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/workshop-management-dashboard#software",
+      "name": "Workshop Management Dashboard & Analytics Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "All-in-one workshop management dashboard software for garage owners. Track garage KPIs, live job cards, mechanic efficiency, daily revenue, and inventory stock in real time.",
+      "url": "https://www.garagesaarthi.com/features/workshop-management-dashboard"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/workshop-management-dashboard#breadcrumb",
       itemListElement: [

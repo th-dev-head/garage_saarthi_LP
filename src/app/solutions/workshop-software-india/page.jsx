@@ -114,6 +114,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/workshop-software-india#software",
+      "name": "Workshop Software India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage job cards, GST billing, inventory, customers, vehicles, staff and service reminders with GarageSaarthi workshop software in India. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/workshop-software-india"
+    },
   ],
 };
 

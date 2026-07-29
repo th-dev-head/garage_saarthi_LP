@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/car-workshop-software#software",
+      "name": "Car Workshop Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage job cards, car service history, inventory, billing, customers, mechanics and service reminders with GarageSaarthi car workshop software.",
+      "url": "https://www.garagesaarthi.com/solutions/car-workshop-software"
+    },
   ],
 };
 

@@ -114,6 +114,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-marketing-software#software",
+      "name": "Garage Marketing Software for Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Engage garage customers, share offers, manage follow-ups and send WhatsApp promotions with GarageSaarthi garage marketing software. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-marketing-software"
+    },
   ],
 };
 

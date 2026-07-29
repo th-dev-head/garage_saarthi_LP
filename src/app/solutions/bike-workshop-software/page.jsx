@@ -189,6 +189,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/bike-workshop-software#software",
+      "name": "Bike Workshop Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage bike job cards, spare parts, customers, service records, billing, staff and service alerts with GarageSaarthi bike workshop software. Try it free for 7 days.",
+      "url": "https://www.garagesaarthi.com/solutions/bike-workshop-software"
+    },
   ],
 };
 

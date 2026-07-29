@@ -189,6 +189,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/car-detailing-software#software",
+      "name": "Car Detailing Software for Detailing Shops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage detailing jobs, customers, vehicles, billing, inventory, staff and service follow-ups with GarageSaarthi car detailing software. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/car-detailing-software"
+    },
   ],
 };
 

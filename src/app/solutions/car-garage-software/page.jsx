@@ -117,6 +117,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/car-garage-software#software",
+      "name": "Car Garage Management Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage job cards, car service history, inventory, billing, customers, staff and service alerts with GarageSaarthi car garage management software.",
+      "url": "https://www.garagesaarthi.com/solutions/car-garage-software"
+    },
   ],
 };
 

@@ -68,6 +68,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software#software",
+      "name": "Garage Customer Engagement Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage customer follow-ups, service reminders, notifications, offers and garage relationships with GarageSaarthi customer engagement software.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software"
+    },
   ],
 };
 

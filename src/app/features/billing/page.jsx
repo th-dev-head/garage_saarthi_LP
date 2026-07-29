@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/billing",
+      "name": "Garage Billing & GST Invoicing Software | GarageSaarthi",
+      "description": "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
+      "url": "https://www.garagesaarthi.com/features/billing",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/billing#software",
+      "name": "Garage Billing & GST Invoicing Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
+      "url": "https://www.garagesaarthi.com/features/billing"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/billing#breadcrumb",
       itemListElement: [

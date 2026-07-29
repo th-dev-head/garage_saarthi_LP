@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software#software",
+      "name": "Garage Reports & Analytics Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track garage sales, finance, inventory, services, customers and staff with GarageSaarthi reports and analytics software. Start your 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software"
+    },
   ],
 };
 

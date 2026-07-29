@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/service-reminder-software#software",
+      "name": "Service Reminder Software for Garages | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Automate vehicle service reminders and customer follow-ups with GarageSaarthi service reminder software. Send WhatsApp reminders and track due services.",
+      "url": "https://www.garagesaarthi.com/solutions/service-reminder-software"
+    },
   ],
 };
 

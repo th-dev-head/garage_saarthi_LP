@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/attendance",
+      "name": "Garage Attendance Management Software for Workshops | GarageSaarthi",
+      "description": "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Log check-in, check-out, leaves, and mechanic work hours from one platform.",
+      "url": "https://www.garagesaarthi.com/features/attendance",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/attendance#software",
+      "name": "Garage Attendance Management Software for Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Log check-in, check-out, leaves, and mechanic work hours from one platform.",
+      "url": "https://www.garagesaarthi.com/features/attendance"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/attendance#breadcrumb",
       itemListElement: [

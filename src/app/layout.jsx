@@ -1,4 +1,3 @@
-import { FRONTEND_URL } from "@/src/config/env";
 import Script from "next/script";
 import ScrollToHash from "../components/common/ScrollToHash";
 import "../index.css";

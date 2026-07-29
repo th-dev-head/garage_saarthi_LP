@@ -181,6 +181,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/fleet-workshop-software#software",
+      "name": "Fleet Workshop Management Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage fleet workshop repairs, job cards, vehicle service records, inventory, staff and maintenance operations with GarageSaarthi fleet workshop software. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/fleet-workshop-software"
+    },
   ],
 };
 

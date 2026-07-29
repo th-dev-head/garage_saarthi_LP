@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-payroll-software#software",
+      "name": "Garage Payroll Software for Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage mechanic salaries and workshop staff payroll with GarageSaarthi garage payroll software. Connect payroll, attendance and leave records in one platform.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-payroll-software"
+    },
   ],
 };
 
