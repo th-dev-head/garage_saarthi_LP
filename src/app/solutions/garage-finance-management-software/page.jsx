@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-finance-management-software#software",
+      "name": "Garage Finance Management Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track garage income, expenses, payments, loans and financial reports with GarageSaarthi garage finance management software. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-finance-management-software"
+    },
   ],
 };
 

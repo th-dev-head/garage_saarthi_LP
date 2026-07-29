@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/customers",
+      "name": "Garage Customer Management Software & CRM System | GarageSaarthi",
+      "description": "Secure automotive customer database software for workshops in India. Manage profiles, service history records, WhatsApp contact logs, and follow-ups. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/features/customers",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/customers#software",
+      "name": "Garage Customer Management Software & CRM System | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Secure automotive customer database software for workshops in India. Manage profiles, service history records, WhatsApp contact logs, and follow-ups. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/features/customers"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/customers#breadcrumb",
       itemListElement: [

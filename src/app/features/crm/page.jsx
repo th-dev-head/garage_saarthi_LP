@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/crm",
+      "name": "Garage CRM & Lead Management Software | GarageSaarthi",
+      "description": "All-in-one garage CRM & lead management software for automotive workshops in India. Manage leads, automated WhatsApp follow-ups, service due reminders, and customer records.",
+      "url": "https://www.garagesaarthi.com/features/crm",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/crm#software",
+      "name": "Garage CRM & Lead Management Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "All-in-one garage CRM & lead management software for automotive workshops in India. Manage leads, automated WhatsApp follow-ups, service due reminders, and customer records.",
+      "url": "https://www.garagesaarthi.com/features/crm"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/crm#breadcrumb",
       itemListElement: [

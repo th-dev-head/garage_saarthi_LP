@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/inventory",
+      "name": "Garage Spare Parts & Inventory Management Software | GarageSaarthi",
+      "description": "All-in-one spare parts and inventory management software for auto repair workshops & garages in India. Real-time stock deduction, low-stock alerts, barcode lookup, and vendor purchase logs.",
+      "url": "https://www.garagesaarthi.com/features/inventory",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/inventory#software",
+      "name": "Garage Spare Parts & Inventory Management Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "All-in-one spare parts and inventory management software for auto repair workshops & garages in India. Real-time stock deduction, low-stock alerts, barcode lookup, and vendor purchase logs.",
+      "url": "https://www.garagesaarthi.com/features/inventory"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/inventory#breadcrumb",
       itemListElement: [

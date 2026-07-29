@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-billing-software#software",
+      "name": "Garage Billing Software & Workshop Billing App | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Create GST invoices, manage garage billing, track payments and connect job cards with billing using GarageSaarthi. Start your 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-billing-software"
+    },
   ],
 };
 

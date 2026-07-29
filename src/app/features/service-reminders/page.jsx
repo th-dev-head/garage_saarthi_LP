@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/service-reminders",
+      "name": "Automated Garage Service Reminders & WhatsApp Alerts | GarageSaarthi",
+      "description": "Never miss a vehicle maintenance due date. Automatically send WhatsApp service reminders, oil change due alerts, and booking links with GarageSaarthi software.",
+      "url": "https://www.garagesaarthi.com/features/service-reminders",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/service-reminders#software",
+      "name": "Automated Garage Service Reminders & WhatsApp Alerts | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Never miss a vehicle maintenance due date. Automatically send WhatsApp service reminders, oil change due alerts, and booking links with GarageSaarthi software.",
+      "url": "https://www.garagesaarthi.com/features/service-reminders"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/service-reminders#breadcrumb",
       itemListElement: [

@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/payroll",
+      "name": "Garage Payroll & Mechanic Salary Management Software | GarageSaarthi",
+      "description": "Automate mechanic salaries, labor commission payouts, salary advances, and monthly wage slips with GarageSaarthi payroll management software.",
+      "url": "https://www.garagesaarthi.com/features/payroll",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/payroll#software",
+      "name": "Garage Payroll & Mechanic Salary Management Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Automate mechanic salaries, labor commission payouts, salary advances, and monthly wage slips with GarageSaarthi payroll management software.",
+      "url": "https://www.garagesaarthi.com/features/payroll"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/payroll#breadcrumb",
       itemListElement: [

@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/loans",
+      "name": "Garage Loan & EMI Management Software | GarageSaarthi",
+      "description": "Track garage business loans, equipment financing, monthly EMI schedules, bank mandate auto-debits, and interest calculations with GarageSaarthi loan tracker.",
+      "url": "https://www.garagesaarthi.com/features/loans",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/loans#software",
+      "name": "Garage Loan & EMI Management Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track garage business loans, equipment financing, monthly EMI schedules, bank mandate auto-debits, and interest calculations with GarageSaarthi loan tracker.",
+      "url": "https://www.garagesaarthi.com/features/loans"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/loans#breadcrumb",
       itemListElement: [

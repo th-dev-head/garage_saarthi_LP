@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-attendance-software#software",
+      "name": "Garage Attendance Software for Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track mechanic and staff attendance with GarageSaarthi garage attendance software. Manage daily attendance, leave and payroll records from one platform.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-attendance-software"
+    },
   ],
 };
 

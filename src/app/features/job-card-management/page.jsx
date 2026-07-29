@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/job-card-management",
+      "name": "Digital Job Card Software & Repair Order Management | GarageSaarthi",
+      "description": "All-in-one digital job card software for auto workshops, car garages & bike repair centers in India. Create repair orders, log complaints, attach photos, and send WhatsApp estimates.",
+      "url": "https://www.garagesaarthi.com/features/job-card-management",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/job-card-management#software",
+      "name": "Digital Job Card Software & Repair Order Management | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "All-in-one digital job card software for auto workshops, car garages & bike repair centers in India. Create repair orders, log complaints, attach photos, and send WhatsApp estimates.",
+      "url": "https://www.garagesaarthi.com/features/job-card-management"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/job-card-management#breadcrumb",
       itemListElement: [

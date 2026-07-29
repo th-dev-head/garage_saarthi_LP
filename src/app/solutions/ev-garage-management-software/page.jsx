@@ -189,6 +189,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/ev-garage-management-software#software",
+      "name": "EV Garage Management Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage EV job cards, inventory, customers, vehicles, billing, staff and service alerts with GarageSaarthi EV garage management software. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/ev-garage-management-software"
+    },
   ],
 };
 

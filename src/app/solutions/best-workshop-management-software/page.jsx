@@ -114,6 +114,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/best-workshop-management-software#software",
+      "name": "Best Workshop Management Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Looking for the best workshop management software in India? Compare essential features and see how GarageSaarthi manages job cards, billing, inventory, CRM and more.",
+      "url": "https://www.garagesaarthi.com/solutions/best-workshop-management-software"
+    },
   ],
 };
 

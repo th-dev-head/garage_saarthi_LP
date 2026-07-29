@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/auto-repair-shop-software#software",
+      "name": "Auto Repair Shop Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage job cards, repairs, inventory, GST billing, customers, vehicles and service reminders with GarageSaarthi auto repair shop software. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/auto-repair-shop-software"
+    },
   ],
 };
 

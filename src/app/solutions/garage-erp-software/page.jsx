@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-erp-software#software",
+      "name": "Garage ERP Software for Workshops in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage workshop operations, inventory, customers, staff, finance and branches with GarageSaarthi garage ERP software. Start your 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-erp-software"
+    },
   ],
 };
 

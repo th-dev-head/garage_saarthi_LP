@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-crm-software#software",
+      "name": "Garage CRM Software for Workshops in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage garage leads, customers, follow-ups and customer records with GarageSaarthi CRM software for automotive workshops. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-crm-software"
+    },
   ],
 };
 

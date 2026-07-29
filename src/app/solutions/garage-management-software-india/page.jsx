@@ -114,6 +114,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-management-software-india#software",
+      "name": "Garage Management Software India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "GarageSaarthi is garage management software built for Indian workshops. Manage job cards, GST billing, inventory, customers, staff and finances. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-management-software-india"
+    },
   ],
 };
 

@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-accounting-software#software",
+      "name": "Garage Accounting Software for Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage garage payments, expenses, finances, GST billing and records with GarageSaarthi garage accounting software. Give your CA access and start a free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-accounting-software"
+    },
   ],
 };
 

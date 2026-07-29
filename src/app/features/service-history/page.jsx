@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/service-history",
+      "name": "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
+      "description": "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi. Manage customer vehicle service history database files, Odometer logs, and details on cloud.",
+      "url": "https://www.garagesaarthi.com/features/service-history",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/service-history#software",
+      "name": "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi. Manage customer vehicle service history database files, Odometer logs, and details on cloud.",
+      "url": "https://www.garagesaarthi.com/features/service-history"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/service-history#breadcrumb",
       itemListElement: [

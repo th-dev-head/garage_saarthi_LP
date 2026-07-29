@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/vehicles",
+      "name": "Garage Vehicle Management Software & Record Database | GarageSaarthi",
+      "description": "Secure workshop vehicle record management software for garages in India. Track Odometer KM logs, diagnostics checkups, service history logs, damage records, and parts history. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/features/vehicles",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/vehicles#software",
+      "name": "Garage Vehicle Management Software & Record Database | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Secure workshop vehicle record management software for garages in India. Track Odometer KM logs, diagnostics checkups, service history logs, damage records, and parts history. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/features/vehicles"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/vehicles#breadcrumb",
       itemListElement: [

@@ -68,6 +68,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/garage-automation-software#software",
+      "name": "Garage Automation Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Automate job cards, GST billing, inventory, customer management, service reminders and garage operations with GarageSaarthi. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/garage-automation-software"
+    },
   ],
 };
 

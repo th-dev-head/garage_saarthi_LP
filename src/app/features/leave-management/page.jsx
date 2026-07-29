@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/leave-management",
+      "name": "Garage Staff Leave Management Software | GarageSaarthi",
+      "description": "All-in-one employee leave management software for automotive workshops & garages in India. Track mechanic leave requests, approval workflows, annual leave records, and digital leave tracking.",
+      "url": "https://www.garagesaarthi.com/features/leave-management",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/leave-management#software",
+      "name": "Garage Staff Leave Management Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "All-in-one employee leave management software for automotive workshops & garages in India. Track mechanic leave requests, approval workflows, annual leave records, and digital leave tracking.",
+      "url": "https://www.garagesaarthi.com/features/leave-management"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/leave-management#breadcrumb",
       itemListElement: [

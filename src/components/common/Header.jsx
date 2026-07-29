@@ -309,8 +309,9 @@ const Header = () => {
                                 {items.map((item) => {
                                   const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
                                   return (
-                                    <button
+                                    <Link
                                       key={item.name}
+                                      href={item.href}
                                       onClick={() => handleDropdownItemClick(item.href)}
                                       className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
                                         ? "bg-slate-50 text-primary"
@@ -320,7 +321,7 @@ const Header = () => {
                                       <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${isCurrent ? "bg-primary" : "bg-primary/45"
                                         }`} />
                                       <span className="whitespace-normal break-words leading-snug">{item.name}</span>
-                                    </button>
+                                    </Link>
                                   );
                                 })}
                               </div>
@@ -431,8 +432,9 @@ const Header = () => {
                               {items.map((item) => {
                                 const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
                                 return (
-                                  <button
+                                  <Link
                                     key={item.name}
+                                    href={item.href}
                                     onClick={() => handleDropdownItemClick(item.href)}
                                     className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${isCurrent
                                       ? "bg-slate-50 text-primary"
@@ -440,7 +442,7 @@ const Header = () => {
                                       }`}
                                   >
                                     {item.name}
-                                  </button>
+                                  </Link>
                                 );
                               })}
                             </div>

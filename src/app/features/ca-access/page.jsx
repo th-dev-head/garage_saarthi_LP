@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/ca-access",
+      "name": "Garage CA Access & Accountant Portal Software | GarageSaarthi",
+      "description": "Grant read-only accountant access to your garage financial reports, GSTR filing data, expense ledgers, and profit statements with GarageSaarthi CA portal.",
+      "url": "https://www.garagesaarthi.com/features/ca-access",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/ca-access#software",
+      "name": "Garage CA Access & Accountant Portal Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Grant read-only accountant access to your garage financial reports, GSTR filing data, expense ledgers, and profit statements with GarageSaarthi CA portal.",
+      "url": "https://www.garagesaarthi.com/features/ca-access"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/ca-access#breadcrumb",
       itemListElement: [

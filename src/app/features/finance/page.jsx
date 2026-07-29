@@ -40,6 +40,23 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://www.garagesaarthi.com/features/finance",
+      "name": "Garage Finance Management & Cash Flow Accounting Software | GarageSaarthi",
+      "description": "Track daily workshop revenue, counter cash, UPI settlements, vendor credit dues, mechanic commissions, and real-time net profit margins with GarageSaarthi.",
+      "url": "https://www.garagesaarthi.com/features/finance",
+      "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/features/finance#software",
+      "name": "Garage Finance Management & Cash Flow Accounting Software | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Track daily workshop revenue, counter cash, UPI settlements, vendor credit dues, mechanic commissions, and real-time net profit margins with GarageSaarthi.",
+      "url": "https://www.garagesaarthi.com/features/finance"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://www.garagesaarthi.com/features/finance#breadcrumb",
       itemListElement: [

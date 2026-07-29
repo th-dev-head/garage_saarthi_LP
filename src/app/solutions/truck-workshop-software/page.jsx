@@ -181,6 +181,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/truck-workshop-software#software",
+      "name": "Truck Workshop Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage truck job cards, vehicle records, inventory, billing, staff and workshop operations with GarageSaarthi truck workshop software. Start a 7-day free trial.",
+      "url": "https://www.garagesaarthi.com/solutions/truck-workshop-software"
+    },
   ],
 };
 

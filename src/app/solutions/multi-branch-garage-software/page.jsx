@@ -70,6 +70,15 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.garagesaarthi.com/solutions/multi-branch-garage-software#software",
+      "name": "Multi Branch Garage Software in India | GarageSaarthi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android",
+      "description": "Manage multiple garage and workshop branches from one platform. Track branch operations, users, reports, inventory and finances with GarageSaarthi.",
+      "url": "https://www.garagesaarthi.com/solutions/multi-branch-garage-software"
+    },
   ],
 };
 
