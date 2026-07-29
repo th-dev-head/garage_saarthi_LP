@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
@@ -53,7 +53,7 @@ export default function GAWorkflow() {
           <div className="pt-2">
             <Link href="/features/payroll" onClick={handlePayrollClick}>
               <Button>
-                Explore Garage Payroll Management <FaChevronRight className="w-3.5 h-3.5" />
+                Explore Garage Payroll Management <FaArrowRight className="w-3.5 h-3.5" />
               </Button>
             </Link>
           </div>

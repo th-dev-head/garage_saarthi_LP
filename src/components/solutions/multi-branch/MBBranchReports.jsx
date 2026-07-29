@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 import Button from "../../common/Button";
@@ -41,7 +41,7 @@ export default function MBBranchReports() {
           <div className="pt-2">
             <Link href="/features/reports" onClick={handleReportsClick}>
               <Button>
-                Explore Garage Reports <FaChevronRight className="w-3.5 h-3.5" />
+                Explore Garage Reports <FaArrowRight className="w-3.5 h-3.5" />
               </Button>
             </Link>
           </div>

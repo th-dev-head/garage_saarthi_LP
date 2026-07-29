@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -54,7 +54,7 @@ export default function GJCBusinessType() {
                 className="flex items-center gap-1 text-xs text-primary font-bold hover:underline self-start mt-auto"
               >
                 Explore Solution
-                <FaChevronRight className="w-2.5 h-2.5" />
+                <FaArrowRight className="w-2.5 h-2.5" />
               </Link>
             </div>
           ))}

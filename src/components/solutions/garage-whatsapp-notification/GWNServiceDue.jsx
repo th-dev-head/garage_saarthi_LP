@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaRegCalendarCheck } from "react-icons/fa";
+import { FaArrowRight, FaRegCalendarCheck } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GWNServiceDue() {
@@ -49,7 +49,7 @@ export default function GWNServiceDue() {
                 href="/features/service-reminders"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
               >
-                Explore Service Alerts
+                Explore Service Alerts <FaArrowRight />
               </Link>
             </div>
           </div>

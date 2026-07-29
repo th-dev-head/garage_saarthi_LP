@@ -148,16 +148,6 @@ const DashboardFeatures = () => {
             ))}
           </div>
 
-          {/* View All Features Button */}
-          <div className="flex justify-center mt-12">
-            <Button
-              onClick={() => router.push("/features")}
-              className="cursor-pointer"
-            >
-              View All Features
-              <HiArrowRight className="w-5 h-5" />
-            </Button>
-          </div>
         </div>
       </section>
     </div>

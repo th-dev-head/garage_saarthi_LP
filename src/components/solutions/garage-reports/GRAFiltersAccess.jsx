@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GRAFiltersAccess() {
@@ -28,7 +28,7 @@ export default function GRAFiltersAccess() {
           </p>
           <div className="pt-2">
             <Link href="/features/ca-access" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
-              Explore CA Access <FaChevronRight className="w-2.5 h-2.5" />
+              Explore CA Access <FaArrowRight className="w-2.5 h-2.5" />
             </Link>
           </div>
         </div>

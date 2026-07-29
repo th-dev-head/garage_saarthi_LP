@@ -38,9 +38,6 @@ export default function GEWorkflow() {
                 <span className="text-xs font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full">
                   Step {s.num}
                 </span>
-                <span className="text-2xl font-black text-slate-100">
-                  {s.num}
-                </span>
               </div>
               <h3 className="text-sm font-bold text-text-dark mb-2">{s.title}</h3>
               <p className="text-xs text-slate-500 leading-relaxed">{s.desc}</p>

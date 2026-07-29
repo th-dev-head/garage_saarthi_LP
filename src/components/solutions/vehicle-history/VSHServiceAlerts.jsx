@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 import Button from "../../common/Button";
@@ -31,7 +31,7 @@ export default function VSHServiceAlerts() {
         </p>
         <Link href="/features/service-reminders" onClick={handleFeatureClick} className="pt-4 flex justify-center">
           <Button href="/features/service-reminders" onClick={handleFeatureClick}>
-            Explore Service Alerts <FaChevronRight className="w-3.5 h-3.5" />
+            Explore Service Alerts <FaArrowRight className="w-3.5 h-3.5" />
           </Button>
         </Link>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import {
   FaUserAlt, FaFileAlt, FaTools, FaWrench,
-  FaFileInvoiceDollar, FaCreditCard, FaBell, FaChevronRight
+  FaFileInvoiceDollar, FaCreditCard, FaBell, FaArrowRight
 } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -73,7 +73,7 @@ export default function AWWorkflow() {
                 <span className="text-[11px] font-bold text-slate-800">{item.label}</span>
               </Link>
               {idx < steps.length - 1 && (
-                <FaChevronRight className="text-slate-400 w-3.5 h-3.5 hidden md:block" />
+                <FaArrowRight className="text-slate-400 w-3.5 h-3.5 hidden md:block" />
               )}
             </React.Fragment>
           ))}
@@ -94,7 +94,7 @@ export default function AWWorkflow() {
                 href={card.link}
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover transition-colors"
               >
-                Learn details <FaChevronRight className="w-2.5 h-2.5" />
+                Learn details <FaArrowRight className="w-2.5 h-2.5" />
               </Link>
             </div>
           ))}

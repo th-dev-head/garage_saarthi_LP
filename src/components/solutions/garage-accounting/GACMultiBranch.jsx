@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
@@ -70,7 +70,7 @@ export default function GACMultiBranch() {
           <div className="pt-2">
             <Link href="/solutions/multi-branch-garage-software" onClick={handleSolutionClick}>
               <Button>
-                Explore Multi-Branch Garage Software <FaChevronRight className="w-3.5 h-3.5" />
+                Explore Multi-Branch Garage Software <FaArrowRight className="w-3.5 h-3.5" />
               </Button>
             </Link>
           </div>

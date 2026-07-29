@@ -6,6 +6,7 @@ import PlayStoreBadge from "../../common/PlayStoreBadge";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function GAMobileAccess() {
   const handleTrialClick = () => {
@@ -34,7 +35,7 @@ export default function GAMobileAccess() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Button variant="trial" onClick={handleTrialClick}>
-            Start 7-Day Free Trial
+            Start 7-Day Free Trial <FaArrowRight />
           </Button>
           <PlayStoreBadge />
         </div>

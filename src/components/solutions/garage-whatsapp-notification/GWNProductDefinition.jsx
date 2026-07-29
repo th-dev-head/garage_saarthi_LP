@@ -5,6 +5,7 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function GWNProductDefinition() {
   const handleTrialClick = () => {
@@ -37,7 +38,7 @@ export default function GWNProductDefinition() {
 
         <div className="pt-4 flex justify-center">
           <Button variant="trial" onClick={handleTrialClick}>
-            Start Free Trial
+            Start Free Trial <FaArrowRight />
           </Button>
         </div>
       </div>

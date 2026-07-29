@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -35,7 +35,7 @@ export default function GRAInventoryReporting() {
           </p>
           <div className="pt-2">
             <Link href="/features/inventory" onClick={handleInventoryClick} className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
-              Explore Inventory Management <FaChevronRight className="w-2.5 h-2.5" />
+              Explore Inventory Management <FaArrowRight className="w-2.5 h-2.5" />
             </Link>
           </div>
         </div>
