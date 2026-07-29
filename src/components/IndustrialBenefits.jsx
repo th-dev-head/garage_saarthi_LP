@@ -14,10 +14,10 @@ const solutions = [
   { icon: <FaTruck className="w-6 h-6" />, title: "Truck Workshops", link: "/solutions/truck-workshop-software" },
   { icon: <FaBus className="w-6 h-6" />, title: "Fleet Workshops", link: "/solutions/fleet-workshop-software" },
   { icon: <FaPaintBrush className="w-6 h-6" />, title: "Car Detailing", link: "/solutions/car-detailing-software" },
-  { icon: <FaRing className="w-6 h-6" />, title: "Tyre Shops", link: "/solutions/tyre-shop-software" },
-  { icon: <FaBatteryFull className="w-6 h-6" />, title: "Battery Shops", link: "/solutions/battery-shop-software" },
+  { icon: <FaRing className="w-6 h-6" />, title: "Tyre Shops", link: "/solutions/car-detailing-software" },
+  { icon: <FaBatteryFull className="w-6 h-6" />, title: "Battery Shops", link: "/solutions/ev-garage-management-software" },
   { icon: <FaCodeBranch className="w-6 h-6" />, title: "Multi-Branch Garages", link: "/solutions/multi-branch-garage-software" },
-  { icon: <FaUserCheck className="w-6 h-6" />, title: "Independent Garages", link: "/solutions/independent-garage-software" }
+  { icon: <FaUserCheck className="w-6 h-6" />, title: "Independent Garages", link: "/solutions/best-garage-management-software" }
 ];
 
 export default function IndustrialBenefits() {
