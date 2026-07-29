@@ -12,7 +12,7 @@ export default function WhyGarageSaarthi() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
@@ -25,7 +25,7 @@ export default function WhyGarageSaarthi() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {points.map((point, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm">
+            <div key={idx} className="bg-slate-50 p-6 rounded-xl border border-slate-200/60 shadow-sm">
               <div className="w-12 h-12 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-6">
                 {point.icon}
               </div>
