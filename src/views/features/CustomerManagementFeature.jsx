@@ -1,19 +1,16 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const CustHero = dynamic(() => import("../../components/features/customers/CustHero"), { ssr: false });
-const CustDefinition = dynamic(() => import("../../components/features/customers/CustDefinition"), { ssr: false });
-const CustPaperVsDigital = dynamic(() => import("../../components/features/customers/CustPaperVsDigital"), { ssr: false });
-const CustCoreCapabilities = dynamic(() => import("../../components/features/customers/CustCoreCapabilities"), { ssr: false });
-const CustWorkflow = dynamic(() => import("../../components/features/customers/CustWorkflow"), { ssr: false });
-const CustWorkshopTypes = dynamic(() => import("../../components/features/customers/CustWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const CustFAQ = dynamic(() => import("../../components/features/customers/CustFAQ"), { ssr: false });
-const CustFinalCTA = dynamic(() => import("../../components/features/customers/CustFinalCTA"), { ssr: false });
+import CustHero from "../../components/features/customers/CustHero";
+import CustDefinition from "../../components/features/customers/CustDefinition";
+import CustPaperVsDigital from "../../components/features/customers/CustPaperVsDigital";
+import CustCoreCapabilities from "../../components/features/customers/CustCoreCapabilities";
+import CustWorkflow from "../../components/features/customers/CustWorkflow";
+import CustWorkshopTypes from "../../components/features/customers/CustWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import CustFAQ from "../../components/features/customers/CustFAQ";
+import CustFinalCTA from "../../components/features/customers/CustFinalCTA";
 
 export default function CustomerManagementFeature() {
   return (

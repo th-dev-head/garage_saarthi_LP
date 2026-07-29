@@ -1,17 +1,15 @@
-"use client";
 import React from "react";
-import dynamic from "next/dynamic";
 import PageLayout from "@/src/components/common/PageLayout";
 
-const LMHero = dynamic(() => import("../../components/features/leave-management/LMHero"), { ssr: false });
-const LMDefinition = dynamic(() => import("../../components/features/leave-management/LMDefinition"), { ssr: false });
-const LMCoreCapabilities = dynamic(() => import("../../components/features/leave-management/LMCoreCapabilities"), { ssr: false });
-const LMWorkflow = dynamic(() => import("../../components/features/leave-management/LMWorkflow"), { ssr: false });
-const LMWorkshopTypes = dynamic(() => import("../../components/features/leave-management/LMWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const LMFAQ = dynamic(() => import("../../components/features/leave-management/LMFAQ"), { ssr: false });
-const LMFinalCTA = dynamic(() => import("../../components/features/leave-management/LMFinalCTA"), { ssr: false });
+import LMHero from "../../components/features/leave-management/LMHero";
+import LMDefinition from "../../components/features/leave-management/LMDefinition";
+import LMCoreCapabilities from "../../components/features/leave-management/LMCoreCapabilities";
+import LMWorkflow from "../../components/features/leave-management/LMWorkflow";
+import LMWorkshopTypes from "../../components/features/leave-management/LMWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import LMFAQ from "../../components/features/leave-management/LMFAQ";
+import LMFinalCTA from "../../components/features/leave-management/LMFinalCTA";
 
 export default function LeaveManagementFeature() {
   return (

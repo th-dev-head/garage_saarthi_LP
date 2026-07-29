@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaLaptop, FaAndroid, FaCloud, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";

@@ -1,23 +1,21 @@
-"use client";
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
 
-const BWSHero = dynamic(() => import('../../components/solutions/best-workshop-software/BWSHero'), { ssr: false });
-const BWSAnswer = dynamic(() => import('../../components/solutions/best-workshop-software/BWSAnswer'), { ssr: false });
-const BWSChecklist = dynamic(() => import('../../components/solutions/best-workshop-software/BWSChecklist'), { ssr: false });
-const BWSFeatureCoverage = dynamic(() => import('../../components/solutions/best-workshop-software/BWSFeatureCoverage'), { ssr: false });
-const BWSProductFit = dynamic(() => import('../../components/solutions/best-workshop-software/BWSProductFit'), { ssr: false });
-const BWSWorkflow = dynamic(() => import('../../components/solutions/best-workshop-software/BWSWorkflow'), { ssr: false });
-const BWSSmallWorkshops = dynamic(() => import('../../components/solutions/best-workshop-software/BWSSmallWorkshops'), { ssr: false });
-const BWSBusinessType = dynamic(() => import('../../components/solutions/best-workshop-software/BWSBusinessType'), { ssr: false });
-const BWSCloudAccess = dynamic(() => import('../../components/solutions/best-workshop-software/BWSCloudAccess'), { ssr: false });
-const BWSAffordability = dynamic(() => import('../../components/solutions/best-workshop-software/BWSAffordability'), { ssr: false });
-const BWSFreeTrial = dynamic(() => import('../../components/solutions/best-workshop-software/BWSFreeTrial'), { ssr: false });
-const BWSTestimonials = dynamic(() => import('../../components/solutions/best-workshop-software/BWSTestimonials'), { ssr: false });
-const BWSDecisionSummary = dynamic(() => import('../../components/solutions/best-workshop-software/BWSDecisionSummary'), { ssr: false });
-const BWSFAQ = dynamic(() => import('../../components/solutions/best-workshop-software/BWSFAQ'), { ssr: false });
-const BWSFinalCTA = dynamic(() => import('../../components/solutions/best-workshop-software/BWSFinalCTA'), { ssr: false });
+import BWSHero from "../../components/solutions/best-workshop-software/BWSHero";
+import BWSAnswer from "../../components/solutions/best-workshop-software/BWSAnswer";
+import BWSChecklist from "../../components/solutions/best-workshop-software/BWSChecklist";
+import BWSFeatureCoverage from "../../components/solutions/best-workshop-software/BWSFeatureCoverage";
+import BWSProductFit from "../../components/solutions/best-workshop-software/BWSProductFit";
+import BWSWorkflow from "../../components/solutions/best-workshop-software/BWSWorkflow";
+import BWSSmallWorkshops from "../../components/solutions/best-workshop-software/BWSSmallWorkshops";
+import BWSBusinessType from "../../components/solutions/best-workshop-software/BWSBusinessType";
+import BWSCloudAccess from "../../components/solutions/best-workshop-software/BWSCloudAccess";
+import BWSAffordability from "../../components/solutions/best-workshop-software/BWSAffordability";
+import BWSFreeTrial from "../../components/solutions/best-workshop-software/BWSFreeTrial";
+import BWSTestimonials from "../../components/solutions/best-workshop-software/BWSTestimonials";
+import BWSDecisionSummary from "../../components/solutions/best-workshop-software/BWSDecisionSummary";
+import BWSFAQ from "../../components/solutions/best-workshop-software/BWSFAQ";
+import BWSFinalCTA from "../../components/solutions/best-workshop-software/BWSFinalCTA";
 
 export default function BestWorkshopManagementSoftware() {
   return (

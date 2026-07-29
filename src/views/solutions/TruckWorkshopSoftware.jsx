@@ -1,27 +1,24 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
 
 // Section Components
-const TWHero = dynamic(() => import('../../components/solutions/truck-workshop/TWHero'), { ssr: false });
-const TWDefinition = dynamic(() => import('../../components/solutions/truck-workshop/TWDefinition'), { ssr: false });
-const TWJobCards = dynamic(() => import('../../components/solutions/truck-workshop/TWJobCards'), { ssr: false });
-const TWCustomerVehicle = dynamic(() => import('../../components/solutions/truck-workshop/TWCustomerVehicle'), { ssr: false });
-const TWInventory = dynamic(() => import('../../components/solutions/truck-workshop/TWInventory'), { ssr: false });
-const TWBillingFinance = dynamic(() => import('../../components/solutions/truck-workshop/TWBillingFinance'), { ssr: false });
-const TWServiceAlerts = dynamic(() => import('../../components/solutions/truck-workshop/TWServiceAlerts'), { ssr: false });
-const TWStaff = dynamic(() => import('../../components/solutions/truck-workshop/TWStaff'), { ssr: false });
-const TWDashboardReports = dynamic(() => import('../../components/solutions/truck-workshop/TWDashboardReports'), { ssr: false });
-const TWCloudAccess = dynamic(() => import('../../components/solutions/truck-workshop/TWCloudAccess'), { ssr: false });
-const TWBusinessType = dynamic(() => import('../../components/solutions/truck-workshop/TWBusinessType'), { ssr: false });
-const TWComparison = dynamic(() => import('../../components/solutions/truck-workshop/TWComparison'), { ssr: false });
-const TWWhyUs = dynamic(() => import('../../components/solutions/truck-workshop/TWWhyUs'), { ssr: false });
-const TWTestimonials = dynamic(() => import('../../components/solutions/truck-workshop/TWTestimonials'), { ssr: false });
-const TWPricing = dynamic(() => import('../../components/solutions/truck-workshop/TWPricing'), { ssr: false });
-const TWFAQ = dynamic(() => import('../../components/solutions/truck-workshop/TWFAQ'), { ssr: false });
-const TWFinalCTA = dynamic(() => import('../../components/solutions/truck-workshop/TWFinalCTA'), { ssr: false });
+import TWHero from "../../components/solutions/truck-workshop/TWHero";
+import TWDefinition from "../../components/solutions/truck-workshop/TWDefinition";
+import TWJobCards from "../../components/solutions/truck-workshop/TWJobCards";
+import TWCustomerVehicle from "../../components/solutions/truck-workshop/TWCustomerVehicle";
+import TWInventory from "../../components/solutions/truck-workshop/TWInventory";
+import TWBillingFinance from "../../components/solutions/truck-workshop/TWBillingFinance";
+import TWServiceAlerts from "../../components/solutions/truck-workshop/TWServiceAlerts";
+import TWStaff from "../../components/solutions/truck-workshop/TWStaff";
+import TWDashboardReports from "../../components/solutions/truck-workshop/TWDashboardReports";
+import TWCloudAccess from "../../components/solutions/truck-workshop/TWCloudAccess";
+import TWBusinessType from "../../components/solutions/truck-workshop/TWBusinessType";
+import TWComparison from "../../components/solutions/truck-workshop/TWComparison";
+import TWWhyUs from "../../components/solutions/truck-workshop/TWWhyUs";
+import TWTestimonials from "../../components/solutions/truck-workshop/TWTestimonials";
+import TWPricing from "../../components/solutions/truck-workshop/TWPricing";
+import TWFAQ from "../../components/solutions/truck-workshop/TWFAQ";
+import TWFinalCTA from "../../components/solutions/truck-workshop/TWFinalCTA";
 
 export default function TruckWorkshopSoftware() {
   return (

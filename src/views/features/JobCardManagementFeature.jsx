@@ -1,19 +1,16 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const JCMHero = dynamic(() => import("../../components/features/job-card-management/JCMHero"), { ssr: false });
-const JCMDefinition = dynamic(() => import("../../components/features/job-card-management/JCMDefinition"), { ssr: false });
-const JCMPaperVsDigital = dynamic(() => import("../../components/features/job-card-management/JCMPaperVsDigital"), { ssr: false });
-const JCMCoreCapabilities = dynamic(() => import("../../components/features/job-card-management/JCMCoreCapabilities"), { ssr: false });
-const JCMWorkflow = dynamic(() => import("../../components/features/job-card-management/JCMWorkflow"), { ssr: false });
-const JCMWorkshopTypes = dynamic(() => import("../../components/features/job-card-management/JCMWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const JCMFAQ = dynamic(() => import("../../components/features/job-card-management/JCMFAQ"), { ssr: false });
-const JCMFinalCTA = dynamic(() => import("../../components/features/job-card-management/JCMFinalCTA"), { ssr: false });
+import JCMHero from "../../components/features/job-card-management/JCMHero";
+import JCMDefinition from "../../components/features/job-card-management/JCMDefinition";
+import JCMPaperVsDigital from "../../components/features/job-card-management/JCMPaperVsDigital";
+import JCMCoreCapabilities from "../../components/features/job-card-management/JCMCoreCapabilities";
+import JCMWorkflow from "../../components/features/job-card-management/JCMWorkflow";
+import JCMWorkshopTypes from "../../components/features/job-card-management/JCMWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import JCMFAQ from "../../components/features/job-card-management/JCMFAQ";
+import JCMFinalCTA from "../../components/features/job-card-management/JCMFinalCTA";
 
 export default function JobCardManagementFeature() {
   return (

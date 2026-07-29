@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaTimesCircle, FaCheckCircle } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";

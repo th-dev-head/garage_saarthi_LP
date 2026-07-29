@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "GarageSaarthi is garage management software built for Indian workshops. Manage job cards, GST billing, inventory, customers, staff and finances. Start a 7-day free trial.",
   keywords:
-    "garage management software india, garage software india, garage management system india, workshop management software india, workshop software india, garage erp software india, garage management app india",
+    "garage management software free, free garage management software, garage management software india, garage software india, garage management system india, workshop management software india, workshop software india, garage erp software india, garage management app india",
   alternates: {
     canonical:
       "https://www.garagesaarthi.com/solutions/garage-management-software-india",

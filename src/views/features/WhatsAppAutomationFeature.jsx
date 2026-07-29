@@ -1,20 +1,17 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const WAHero = dynamic(() => import("../../components/features/whatsapp-automation/WAHero"), { ssr: false });
-const WADefinition = dynamic(() => import("../../components/features/whatsapp-automation/WADefinition"), { ssr: false });
-const WAManualVsDigital = dynamic(() => import("../../components/features/whatsapp-automation/WAManualVsDigital"), { ssr: false });
-const WACoreCapabilities = dynamic(() => import("../../components/features/whatsapp-automation/WACoreCapabilities"), { ssr: false });
-const WAWorkflow = dynamic(() => import("../../components/features/whatsapp-automation/WAWorkflow"), { ssr: false });
-const WAMessagingTypes = dynamic(() => import("../../components/features/whatsapp-automation/WAMessagingTypes"), { ssr: false });
-const WAWorkshopTypes = dynamic(() => import("../../components/features/whatsapp-automation/WAWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const WAFAQ = dynamic(() => import("../../components/features/whatsapp-automation/WAFAQ"), { ssr: false });
-const WAFinalCTA = dynamic(() => import("../../components/features/whatsapp-automation/WAFinalCTA"), { ssr: false });
+import WAHero from "../../components/features/whatsapp-automation/WAHero";
+import WADefinition from "../../components/features/whatsapp-automation/WADefinition";
+import WAManualVsDigital from "../../components/features/whatsapp-automation/WAManualVsDigital";
+import WACoreCapabilities from "../../components/features/whatsapp-automation/WACoreCapabilities";
+import WAWorkflow from "../../components/features/whatsapp-automation/WAWorkflow";
+import WAMessagingTypes from "../../components/features/whatsapp-automation/WAMessagingTypes";
+import WAWorkshopTypes from "../../components/features/whatsapp-automation/WAWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import WAFAQ from "../../components/features/whatsapp-automation/WAFAQ";
+import WAFinalCTA from "../../components/features/whatsapp-automation/WAFinalCTA";
 
 export default function WhatsAppAutomationFeature() {
   return (

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { FaTools, FaBoxes, FaUsers, FaMoneyBillWave, FaBuilding, FaChartLine, FaArrowRight } from "react-icons/fa";

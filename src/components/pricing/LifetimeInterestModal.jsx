@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Crown, X, CheckCircle2, Loader2 } from "lucide-react";
 import { cn } from "../../utils/cn";

@@ -12,7 +12,7 @@ export const metadata = {
   description:
     "GarageSaarthi is a smart, all-in-one garage management platform that helps auto workshops streamline operations, manage customers, and grow their business effortlessly.",
   keywords:
-    "garage management, auto workshop software, car service management, GarageSaarthi, vehicle repair software, garage billing, service center management",
+    "garage management, auto workshop software, car service management, GarageSaarthi, vehicle repair software, garage billing, service center management, garage management software free, free garage management software",
   authors: [{ name: "GarageSaarthi" }],
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   alternates: {

@@ -1,25 +1,22 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
-const WMHero = dynamic(() => import('../../components/solutions/workshop/WMHero'), { ssr: false });
-const WMProblem = dynamic(() => import('../../components/solutions/workshop/WMProblem'), { ssr: false });
-const WMProductDefinition = dynamic(() => import('../../components/solutions/workshop/WMProductDefinition'), { ssr: false });
-const WMWorkflow = dynamic(() => import('../../components/solutions/workshop/WMWorkflow'), { ssr: false });
-const WMFeatureGrid = dynamic(() => import('../../components/solutions/workshop/WMFeatureGrid'), { ssr: false });
-const WMWorkshopTypes = dynamic(() => import('../../components/solutions/workshop/WMWorkshopTypes'), { ssr: false });
-const WMComparison = dynamic(() => import('../../components/solutions/workshop/WMComparison'), { ssr: false });
-const WMAutomation = dynamic(() => import('../../components/solutions/workshop/WMAutomation'), { ssr: false });
-const WMStaff = dynamic(() => import('../../components/solutions/workshop/WMStaff'), { ssr: false });
-const WMMultiBranch = dynamic(() => import('../../components/solutions/workshop/WMMultiBranch'), { ssr: false });
-const WMFinance = dynamic(() => import('../../components/solutions/workshop/WMFinance'), { ssr: false });
-const WMMobile = dynamic(() => import('../../components/solutions/workshop/WMMobile'), { ssr: false });
-const WMWhyUs = dynamic(() => import('../../components/solutions/workshop/WMWhyUs'), { ssr: false });
-const WMReviews = dynamic(() => import('../../components/solutions/workshop/WMReviews'), { ssr: false });
-const WMPricing = dynamic(() => import('../../components/solutions/workshop/WMPricing'), { ssr: false });
-const WMFAQ = dynamic(() => import('../../components/solutions/workshop/WMFAQ'), { ssr: false });
-const WMFinalCTA = dynamic(() => import('../../components/solutions/workshop/WMFinalCTA'), { ssr: false });
+import WMHero from "../../components/solutions/workshop/WMHero";
+import WMProblem from "../../components/solutions/workshop/WMProblem";
+import WMProductDefinition from "../../components/solutions/workshop/WMProductDefinition";
+import WMWorkflow from "../../components/solutions/workshop/WMWorkflow";
+import WMFeatureGrid from "../../components/solutions/workshop/WMFeatureGrid";
+import WMWorkshopTypes from "../../components/solutions/workshop/WMWorkshopTypes";
+import WMComparison from "../../components/solutions/workshop/WMComparison";
+import WMAutomation from "../../components/solutions/workshop/WMAutomation";
+import WMStaff from "../../components/solutions/workshop/WMStaff";
+import WMMultiBranch from "../../components/solutions/workshop/WMMultiBranch";
+import WMFinance from "../../components/solutions/workshop/WMFinance";
+import WMMobile from "../../components/solutions/workshop/WMMobile";
+import WMWhyUs from "../../components/solutions/workshop/WMWhyUs";
+import WMReviews from "../../components/solutions/workshop/WMReviews";
+import WMPricing from "../../components/solutions/workshop/WMPricing";
+import WMFAQ from "../../components/solutions/workshop/WMFAQ";
+import WMFinalCTA from "../../components/solutions/workshop/WMFinalCTA";
 
 const WorkshopManagement = () => {
   return (

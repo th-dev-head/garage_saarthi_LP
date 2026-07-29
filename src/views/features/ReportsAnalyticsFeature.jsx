@@ -1,20 +1,17 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const RHero = dynamic(() => import("../../components/features/reports/RHero"), { ssr: false });
-const RDefinition = dynamic(() => import("../../components/features/reports/RDefinition"), { ssr: false });
-const RManualVsDigital = dynamic(() => import("../../components/features/reports/RManualVsDigital"), { ssr: false });
-const RCoreCapabilities = dynamic(() => import("../../components/features/reports/RCoreCapabilities"), { ssr: false });
-const RWorkflow = dynamic(() => import("../../components/features/reports/RWorkflow"), { ssr: false });
-const RReportTypes = dynamic(() => import("../../components/features/reports/RReportTypes"), { ssr: false });
-const RWorkshopTypes = dynamic(() => import("../../components/features/reports/RWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const RFAQ = dynamic(() => import("../../components/features/reports/RFAQ"), { ssr: false });
-const RFinalCTA = dynamic(() => import("../../components/features/reports/RFinalCTA"), { ssr: false });
+import RHero from "../../components/features/reports/RHero";
+import RDefinition from "../../components/features/reports/RDefinition";
+import RManualVsDigital from "../../components/features/reports/RManualVsDigital";
+import RCoreCapabilities from "../../components/features/reports/RCoreCapabilities";
+import RWorkflow from "../../components/features/reports/RWorkflow";
+import RReportTypes from "../../components/features/reports/RReportTypes";
+import RWorkshopTypes from "../../components/features/reports/RWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import RFAQ from "../../components/features/reports/RFAQ";
+import RFinalCTA from "../../components/features/reports/RFinalCTA";
 
 export default function ReportsAnalyticsFeature() {
   return (

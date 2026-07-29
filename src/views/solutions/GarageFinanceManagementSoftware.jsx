@@ -1,25 +1,23 @@
-"use client";
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
 
-const GFMHero = dynamic(() => import('../../components/solutions/garage-finance/GFMHero'), { ssr: false });
-const GFMDefinition = dynamic(() => import('../../components/solutions/garage-finance/GFMDefinition'), { ssr: false });
-const GFMIncomeExpense = dynamic(() => import('../../components/solutions/garage-finance/GFMIncomeExpense'), { ssr: false });
-const GFMPayments = dynamic(() => import('../../components/solutions/garage-finance/GFMPayments'), { ssr: false });
-const GFMVisibility = dynamic(() => import('../../components/solutions/garage-finance/GFMVisibility'), { ssr: false });
-const GFMAccounting = dynamic(() => import('../../components/solutions/garage-finance/GFMAccounting'), { ssr: false });
-const GFMBilling = dynamic(() => import('../../components/solutions/garage-finance/GFMBilling'), { ssr: false });
-const GFMLoans = dynamic(() => import('../../components/solutions/garage-finance/GFMLoans'), { ssr: false });
-const GFMCaAccess = dynamic(() => import('../../components/solutions/garage-finance/GFMCaAccess'), { ssr: false });
-const GFMConnected = dynamic(() => import('../../components/solutions/garage-finance/GFMConnected'), { ssr: false });
-const GFMWorkshopTypes = dynamic(() => import('../../components/solutions/garage-finance/GFMWorkshopTypes'), { ssr: false });
-const GFMManualVsSystem = dynamic(() => import('../../components/solutions/garage-finance/GFMManualVsSystem'), { ssr: false });
-const GFMWebMobile = dynamic(() => import('../../components/solutions/garage-finance/GFMWebMobile'), { ssr: false });
-const GFMWhySaarthi = dynamic(() => import('../../components/solutions/garage-finance/GFMWhySaarthi'), { ssr: false });
-const GFMPricing = dynamic(() => import('../../components/solutions/garage-finance/GFMPricing'), { ssr: false });
-const GFMFAQ = dynamic(() => import('../../components/solutions/garage-finance/GFMFAQ'), { ssr: false });
-const GFMFinalCTA = dynamic(() => import('../../components/solutions/garage-finance/GFMFinalCTA'), { ssr: false });
+import GFMHero from "../../components/solutions/garage-finance/GFMHero";
+import GFMDefinition from "../../components/solutions/garage-finance/GFMDefinition";
+import GFMIncomeExpense from "../../components/solutions/garage-finance/GFMIncomeExpense";
+import GFMPayments from "../../components/solutions/garage-finance/GFMPayments";
+import GFMVisibility from "../../components/solutions/garage-finance/GFMVisibility";
+import GFMAccounting from "../../components/solutions/garage-finance/GFMAccounting";
+import GFMBilling from "../../components/solutions/garage-finance/GFMBilling";
+import GFMLoans from "../../components/solutions/garage-finance/GFMLoans";
+import GFMCaAccess from "../../components/solutions/garage-finance/GFMCaAccess";
+import GFMConnected from "../../components/solutions/garage-finance/GFMConnected";
+import GFMWorkshopTypes from "../../components/solutions/garage-finance/GFMWorkshopTypes";
+import GFMManualVsSystem from "../../components/solutions/garage-finance/GFMManualVsSystem";
+import GFMWebMobile from "../../components/solutions/garage-finance/GFMWebMobile";
+import GFMWhySaarthi from "../../components/solutions/garage-finance/GFMWhySaarthi";
+import GFMPricing from "../../components/solutions/garage-finance/GFMPricing";
+import GFMFAQ from "../../components/solutions/garage-finance/GFMFAQ";
+import GFMFinalCTA from "../../components/solutions/garage-finance/GFMFinalCTA";
 
 export default function GarageFinanceManagementSoftware() {
   return (

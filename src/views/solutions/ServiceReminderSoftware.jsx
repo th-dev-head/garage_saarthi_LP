@@ -1,25 +1,23 @@
-"use client";
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
 
-const SRHero = dynamic(() => import('../../components/solutions/service-reminder/SRHero'), { ssr: false });
-const SRDefinition = dynamic(() => import('../../components/solutions/service-reminder/SRDefinition'), { ssr: false });
-const SRHowItWorks = dynamic(() => import('../../components/solutions/service-reminder/SRHowItWorks'), { ssr: false });
-const SRWhatsApp = dynamic(() => import('../../components/solutions/service-reminder/SRWhatsApp'), { ssr: false });
-const SRDueTracking = dynamic(() => import('../../components/solutions/service-reminder/SRDueTracking'), { ssr: false });
-const SRCustomerFollowUp = dynamic(() => import('../../components/solutions/service-reminder/SRCustomerFollowUp'), { ssr: false });
-const SRVehicleMaintenance = dynamic(() => import('../../components/solutions/service-reminder/SRVehicleMaintenance'), { ssr: false });
-const SRWorkshopTypes = dynamic(() => import('../../components/solutions/service-reminder/SRWorkshopTypes'), { ssr: false });
-const SRManualVsDigital = dynamic(() => import('../../components/solutions/service-reminder/SRManualVsDigital'), { ssr: false });
-const SRApp = dynamic(() => import('../../components/solutions/service-reminder/SRApp'), { ssr: false });
-const SRConnected = dynamic(() => import('../../components/solutions/service-reminder/SRConnected'), { ssr: false });
-const SRRetentionValue = dynamic(() => import('../../components/solutions/service-reminder/SRRetentionValue'), { ssr: false });
-const SRWhySaarthi = dynamic(() => import('../../components/solutions/service-reminder/SRWhySaarthi'), { ssr: false });
-const SRProductProof = dynamic(() => import('../../components/solutions/service-reminder/SRProductProof'), { ssr: false });
-const SRFreeTrial = dynamic(() => import('../../components/solutions/service-reminder/SRFreeTrial'), { ssr: false });
-const SRFAQ = dynamic(() => import('../../components/solutions/service-reminder/SRFAQ'), { ssr: false });
-const SRFinalCTA = dynamic(() => import('../../components/solutions/service-reminder/SRFinalCTA'), { ssr: false });
+import SRHero from "../../components/solutions/service-reminder/SRHero";
+import SRDefinition from "../../components/solutions/service-reminder/SRDefinition";
+import SRHowItWorks from "../../components/solutions/service-reminder/SRHowItWorks";
+import SRWhatsApp from "../../components/solutions/service-reminder/SRWhatsApp";
+import SRDueTracking from "../../components/solutions/service-reminder/SRDueTracking";
+import SRCustomerFollowUp from "../../components/solutions/service-reminder/SRCustomerFollowUp";
+import SRVehicleMaintenance from "../../components/solutions/service-reminder/SRVehicleMaintenance";
+import SRWorkshopTypes from "../../components/solutions/service-reminder/SRWorkshopTypes";
+import SRManualVsDigital from "../../components/solutions/service-reminder/SRManualVsDigital";
+import SRApp from "../../components/solutions/service-reminder/SRApp";
+import SRConnected from "../../components/solutions/service-reminder/SRConnected";
+import SRRetentionValue from "../../components/solutions/service-reminder/SRRetentionValue";
+import SRWhySaarthi from "../../components/solutions/service-reminder/SRWhySaarthi";
+import SRProductProof from "../../components/solutions/service-reminder/SRProductProof";
+import SRFreeTrial from "../../components/solutions/service-reminder/SRFreeTrial";
+import SRFAQ from "../../components/solutions/service-reminder/SRFAQ";
+import SRFinalCTA from "../../components/solutions/service-reminder/SRFinalCTA";
 
 export default function ServiceReminderSoftware() {
   return (

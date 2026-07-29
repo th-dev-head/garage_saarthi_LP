@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { FaTimes, FaArrowRight } from "react-icons/fa";
 import GformBg from "../assets/optimized/GformBg.webp";

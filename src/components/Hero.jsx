@@ -1,3 +1,5 @@
+"use client";
+
 import { FRONTEND_URL } from "@/src/config/env";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";

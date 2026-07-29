@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * DatePicker Component
  * Reusable date picker component using MUI

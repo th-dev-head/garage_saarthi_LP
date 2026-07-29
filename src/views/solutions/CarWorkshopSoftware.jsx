@@ -1,25 +1,23 @@
-"use client";
 import PageLayout from "@/src/components/common/PageLayout";
-import dynamic from 'next/dynamic';
 import React from "react";
 
-const CWHero = dynamic(() => import('../../components/solutions/car-workshop/CWHero'), { ssr: false });
-const CWDefinition = dynamic(() => import('../../components/solutions/car-workshop/CWDefinition'), { ssr: false });
-const CWJobCardWorkflow = dynamic(() => import('../../components/solutions/car-workshop/CWJobCardWorkflow'), { ssr: false });
-const CWInventory = dynamic(() => import('../../components/solutions/car-workshop/CWInventory'), { ssr: false });
-const CWBilling = dynamic(() => import('../../components/solutions/car-workshop/CWBilling'), { ssr: false });
-const CWServiceReminders = dynamic(() => import('../../components/solutions/car-workshop/CWServiceReminders'), { ssr: false });
-const CWStaffManagement = dynamic(() => import('../../components/solutions/car-workshop/CWStaffManagement'), { ssr: false });
-const CWDashboardReports = dynamic(() => import('../../components/solutions/car-workshop/CWDashboardReports'), { ssr: false });
-const CWMultiBranch = dynamic(() => import('../../components/solutions/car-workshop/CWMultiBranch'), { ssr: false });
-const CWWebMobile = dynamic(() => import('../../components/solutions/car-workshop/CWWebMobile'), { ssr: false });
-const CWTransformation = dynamic(() => import('../../components/solutions/car-workshop/CWTransformation'), { ssr: false });
-const CWWhySaarthi = dynamic(() => import('../../components/solutions/car-workshop/CWWhySaarthi'), { ssr: false });
-const CWCustomerProof = dynamic(() => import('../../components/solutions/car-workshop/CWCustomerProof'), { ssr: false });
-const CWPricing = dynamic(() => import('../../components/solutions/car-workshop/CWPricing'), { ssr: false });
-const CWRelatedSolutions = dynamic(() => import('../../components/solutions/car-workshop/CWRelatedSolutions'), { ssr: false });
-const CWFAQ = dynamic(() => import('../../components/solutions/car-workshop/CWFAQ'), { ssr: false });
-const CWFinalCTA = dynamic(() => import('../../components/solutions/car-workshop/CWFinalCTA'), { ssr: false });
+import CWHero from "../../components/solutions/car-workshop/CWHero";
+import CWDefinition from "../../components/solutions/car-workshop/CWDefinition";
+import CWJobCardWorkflow from "../../components/solutions/car-workshop/CWJobCardWorkflow";
+import CWInventory from "../../components/solutions/car-workshop/CWInventory";
+import CWBilling from "../../components/solutions/car-workshop/CWBilling";
+import CWServiceReminders from "../../components/solutions/car-workshop/CWServiceReminders";
+import CWStaffManagement from "../../components/solutions/car-workshop/CWStaffManagement";
+import CWDashboardReports from "../../components/solutions/car-workshop/CWDashboardReports";
+import CWMultiBranch from "../../components/solutions/car-workshop/CWMultiBranch";
+import CWWebMobile from "../../components/solutions/car-workshop/CWWebMobile";
+import CWTransformation from "../../components/solutions/car-workshop/CWTransformation";
+import CWWhySaarthi from "../../components/solutions/car-workshop/CWWhySaarthi";
+import CWCustomerProof from "../../components/solutions/car-workshop/CWCustomerProof";
+import CWPricing from "../../components/solutions/car-workshop/CWPricing";
+import CWRelatedSolutions from "../../components/solutions/car-workshop/CWRelatedSolutions";
+import CWFAQ from "../../components/solutions/car-workshop/CWFAQ";
+import CWFinalCTA from "../../components/solutions/car-workshop/CWFinalCTA";
 
 export default function CarWorkshopSoftware() {
   return (

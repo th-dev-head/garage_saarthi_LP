@@ -1,19 +1,16 @@
-"use client";
-
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-import dynamic from "next/dynamic";
 
-const CSHero = dynamic(() => import("../../components/features/counter-sales/CSHero"), { ssr: false });
-const CSDefinition = dynamic(() => import("../../components/features/counter-sales/CSDefinition"), { ssr: false });
-const CSPaperVsDigital = dynamic(() => import("../../components/features/counter-sales/CSPaperVsDigital"), { ssr: false });
-const CSCoreCapabilities = dynamic(() => import("../../components/features/counter-sales/CSCoreCapabilities"), { ssr: false });
-const CSWorkflow = dynamic(() => import("../../components/features/counter-sales/CSWorkflow"), { ssr: false });
-const CSWorkshopTypes = dynamic(() => import("../../components/features/counter-sales/CSWorkshopTypes"), { ssr: false });
-const CloudAccessCommon = dynamic(() => import("../../components/common/CloudAccessCommon"), { ssr: false });
-const TestimonialsGrid = dynamic(() => import("../../components/common/TestimonialsGrid"), { ssr: false });
-const CSFAQ = dynamic(() => import("../../components/features/counter-sales/CSFAQ"), { ssr: false });
-const CSFinalCTA = dynamic(() => import("../../components/features/counter-sales/CSFinalCTA"), { ssr: false });
+import CSHero from "../../components/features/counter-sales/CSHero";
+import CSDefinition from "../../components/features/counter-sales/CSDefinition";
+import CSPaperVsDigital from "../../components/features/counter-sales/CSPaperVsDigital";
+import CSCoreCapabilities from "../../components/features/counter-sales/CSCoreCapabilities";
+import CSWorkflow from "../../components/features/counter-sales/CSWorkflow";
+import CSWorkshopTypes from "../../components/features/counter-sales/CSWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
+import CSFAQ from "../../components/features/counter-sales/CSFAQ";
+import CSFinalCTA from "../../components/features/counter-sales/CSFinalCTA";
 
 export default function CounterSalesFeature() {
   return (
