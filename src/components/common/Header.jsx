@@ -278,7 +278,7 @@ const Header = () => {
 
                         {isActive && (
                           <span
-                            className="absolute left-0 -right-0 -bottom-1 h-[5px] w-7 mx-auto rounded-full"
+                            className="absolute left-0 -bottom-1 h-[5px] w-7 rounded-full"
                             style={{
                               background:
                                 "linear-gradient(90deg, #B02E0C 0%, #FF643C 100%)",
@@ -345,7 +345,7 @@ const Header = () => {
 
                     {isActive && (
                       <span
-                        className="absolute left-0 -right-0 -bottom-1 h-[5px] w-7 mx-auto rounded-full"
+                        className="absolute left-0 -bottom-1 h-[5px] w-7 rounded-full"
                         style={{
                           background:
                             "linear-gradient(90deg, #B02E0C 0%, #FF643C 100%)",

@@ -19,7 +19,7 @@ export default function GPLeaveStaffManagement() {
   const steps = [
     { title: "Attendance Management", desc: "Track daily login registers, present ratios, and active shifts for mechanics.", linkName: "Garage Attendance Management", url: "/features/attendance" },
     { title: "Leave Management", desc: "Log employee leave requests, paid/unpaid allocations, and balance records.", linkName: "Garage Leave Management", url: "/features/leave-management" },
-    { title: "Payroll Management", desc: "Verify basic salaries, calculate mechanic commissions, and output salary slips.", linkName: "Payroll Dashboard", url: null },
+    { title: "Payroll Management", desc: "Verify basic salaries, calculate mechanic commissions, and output salary slips.", linkName: "Garage Payroll Management", url: "/features/payroll" },
     { title: "User Management", desc: "Configure role permissions for administrators, service advisors, and billing desks.", linkName: "Garage User Management", url: "/features/user-management" }
   ];
 
@@ -42,7 +42,6 @@ export default function GPLeaveStaffManagement() {
           {steps.map((s, idx) => (
             <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
               <div className="space-y-3">
-                <span className="text-xs font-bold text-primary">0{idx + 1}.</span>
                 <h3 className="text-base font-bold text-text-dark">{s.title}</h3>
                 <p className="text-slate-500 text-xs leading-relaxed">{s.desc}</p>
               </div>

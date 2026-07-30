@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaFileInvoiceDollar, FaRegCreditCard, FaUserTie } from "react-icons/fa";
+import { FaArrowRight, FaFileInvoiceDollar, FaRegCreditCard, FaUserTie } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const billingCards = [
@@ -8,14 +8,14 @@ const billingCards = [
     icon: FaFileInvoiceDollar,
     title: "Create Studio Invoices",
     desc: "Generate professional, tax-compliant GST invoices containing separate parts, labor items, discounts, and customer billing prefixes in seconds.",
-    link: "/pricing",
+    link: "/features/billing",
     linkText: "View Invoicing Setup"
   },
   {
     icon: FaRegCreditCard,
     title: "Track Payments and Finance",
     desc: "Organize payments collected via cash, UPI, cards, or credit. Send payment links and digital invoice links straight to the customer's WhatsApp.",
-    link: "/features/billing",
+    link: "/features/finance",
     linkText: "Explore Payments"
   },
   {
@@ -60,8 +60,8 @@ export default function CDBillingFinance() {
                   </p>
                 </div>
                 <div className="pt-6 border-t border-slate-100 mt-6">
-                  <Link href={item.link} className="text-xs font-bold text-primary hover:underline">
-                    {item.linkText}
+                  <Link href={item.link} className="text-xs font-bold text-primary hover:underline flex items-center gap-2">
+                    {item.linkText} <FaArrowRight />
                   </Link>
                 </div>
               </div>

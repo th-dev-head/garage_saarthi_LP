@@ -59,7 +59,7 @@ export default function GAEcosystem() {
 
         <div className="flex justify-center pt-4">
           <Link href="/features" onClick={() => handleFeatureClick("Explore All Features", "/features")}>
-            <Button variant="secondary">
+            <Button>
               Explore All GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />
             </Button>
           </Link>

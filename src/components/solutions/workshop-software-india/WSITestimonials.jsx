@@ -33,7 +33,7 @@ export default function WSITestimonials() {
       subtitle="Hear from real independent garage owners, car detailing spas, and auto service center operators across India who trust GarageSaarthi."
       reviews={reviews}
       linkLabel="View Customer Stories"
-      linkHref="/customers"
+      linkHref="/features/customer-reviews"
       bgClass="bg-slate-50"
     />
   );

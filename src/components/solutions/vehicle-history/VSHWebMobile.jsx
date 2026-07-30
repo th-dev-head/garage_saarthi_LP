@@ -6,6 +6,7 @@ import PlayStoreBadge from "../../common/PlayStoreBadge";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
+import { FaArrowRight } from "react-icons/fa";
 
 const historySyncPlatforms = [
   { icon: "💻", title: "Web Portal (Front Office)", desc: "Invoicing & Detailed History Check", badgeText: "Synced" },
@@ -80,7 +81,7 @@ export default function VSHWebMobile() {
           </p>
           <div className="flex flex-wrap gap-4 items-center pt-4">
             <Button variant="trial" onClick={handleTrialClick}>
-              Start 7-Day Free Trial
+              Start 7-Day Free Trial <FaArrowRight />
             </Button>
             <div onClick={handleAndroidClick}>
               <PlayStoreBadge />

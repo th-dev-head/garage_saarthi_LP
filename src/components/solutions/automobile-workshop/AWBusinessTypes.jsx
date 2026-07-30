@@ -32,7 +32,7 @@ const businessTypes = [
   {
     title: "Independent Garages",
     desc: "Simplify customer contact sheets, multi-brand spares cataloguing, fast GST invoicing, and WhatsApp follow-ups for local client bases.",
-    link: "/solutions/independent-garage-software",
+    link: "/features/workshop-management-dashboard",
   },
   {
     title: "Multi-Branch Workshops",

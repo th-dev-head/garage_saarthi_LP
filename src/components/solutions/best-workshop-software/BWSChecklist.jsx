@@ -19,7 +19,6 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 const checklist12 = [
   {
-    num: "1",
     icon: <FaClipboardList />,
     title: "Digital Job Card Management",
     desc: "Create and track repair jobs digitally on vehicle arrival, recording customer complaints, labor estimates, and assigned mechanics.",
@@ -27,7 +26,6 @@ const checklist12 = [
     anchor: "Explore Job Cards",
   },
   {
-    num: "2",
     icon: <FaFileInvoiceDollar />,
     title: "GST Billing & Invoice Management",
     desc: "Generate GST-compliant invoices with custom numbering series, labor rates, spare parts breakdowns, and instant WhatsApp bill sharing.",
@@ -35,7 +33,6 @@ const checklist12 = [
     anchor: "Explore Billing & GST",
   },
   {
-    num: "3",
     icon: <FaBoxes />,
     title: "Spare Parts Inventory Management",
     desc: "Audit workshop stock levels, track parts checkouts on job sheets, receive low-stock alerts, and conduct counter retail sales.",
@@ -43,7 +40,6 @@ const checklist12 = [
     anchor: "Explore Inventory",
   },
   {
-    num: "4",
     icon: <FaAddressBook />,
     title: "Customer Management & CRM",
     desc: "Maintain organized customer contact profiles, track new lead enquiries, record notes, and build long-term customer relationships.",
@@ -51,7 +47,6 @@ const checklist12 = [
     anchor: "Explore Customer Records",
   },
   {
-    num: "5",
     icon: <FaCar />,
     title: "Vehicle Records & Service History",
     desc: "Link vehicle registration details, chassis numbers, odometer readings, and historical repair logs directly to the customer's profile.",
@@ -59,7 +54,6 @@ const checklist12 = [
     anchor: "Explore Vehicle Records",
   },
   {
-    num: "6",
     icon: <FaBell />,
     title: "Service Alerts & Customer Follow-Ups",
     desc: "Schedule upcoming vehicle maintenance due dates and automate WhatsApp service alerts to encourage repeat workshop visits.",
@@ -67,7 +61,6 @@ const checklist12 = [
     anchor: "Explore Service Alerts",
   },
   {
-    num: "7",
     icon: <FaWallet />,
     title: "Payment & Finance Visibility",
     desc: "Monitor cash collections, online UPI payments, outstanding accounts receivables, and loan records in real time.",
@@ -75,7 +68,6 @@ const checklist12 = [
     anchor: "Explore Finance & Payments",
   },
   {
-    num: "8",
     icon: <FaUserClock />,
     title: "Staff Attendance & Payroll",
     desc: "Log daily mechanic check-in times, manage leave requests, calculate job commissions, and compute monthly payroll.",
@@ -83,7 +75,6 @@ const checklist12 = [
     anchor: "Explore Staff & Payroll",
   },
   {
-    num: "9",
     icon: <FaChartBar />,
     title: "Workshop Reports & Analytics",
     desc: "Understand operational performance through clear dashboards, daily sales reports, stock valuation, and CA export tools.",
@@ -91,7 +82,6 @@ const checklist12 = [
     anchor: "Explore Reports",
   },
   {
-    num: "10",
     icon: <FaBuilding />,
     title: "Multi-Branch Management",
     desc: "Scale multi-location workshop networks with centralized control, inter-branch stock transfers, and branch-wise reporting.",
@@ -99,7 +89,6 @@ const checklist12 = [
     anchor: "Explore Multi-Branch Software",
   },
   {
-    num: "11",
     icon: <FaMobileAlt />,
     title: "Web and Mobile Access",
     question: "Can owners access software on multiple devices?",
@@ -108,7 +97,6 @@ const checklist12 = [
     anchor: "Explore Cloud & Mobile",
   },
   {
-    num: "12",
     icon: <FaCheckCircle />,
     title: "Free Trial & Transparent Pricing",
     desc: "Test software using real daily workshop tasks during a 7-day free trial before choosing flexible subscription durations.",
@@ -147,7 +135,6 @@ export default function BWSChecklist() {
                   <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
                     {item.icon}
                   </div>
-                  <span className="text-xs font-extrabold text-slate-300">#{item.num}</span>
                 </div>
                 <h3 className="text-sm font-bold text-slate-900">{item.title}</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>

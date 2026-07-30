@@ -36,7 +36,7 @@ const featureCards = [
     icon: <FaUsers />,
     title: "Garage CRM",
     desc: "Organize new service lead enquiries, log call records, and follow up with prospective garage clients.",
-    link: "/garage-crm",
+    link: "/solutions/garage-crm-software",
     anchor: "Explore Garage CRM",
   },
   {
@@ -57,14 +57,14 @@ const featureCards = [
     icon: <FaBell />,
     title: "Service Alerts",
     desc: "Automate service due notifications to encourage repeat maintenance visits. Also see dedicated reminder tools.",
-    link: "/service-reminder-software",
+    link: "/solutions/service-reminder-software",
     anchor: "Garage Service Reminder Software",
   },
   {
     icon: <FaPhoneAlt />,
     title: "Lead Follow-Ups",
     desc: "Maintain structured follow-up call logs and reminders for pending customer service quotations.",
-    link: "/garage-crm",
+    link: "/solutions/garage-crm-software",
     anchor: "Explore Lead Follow-Ups",
   },
   {

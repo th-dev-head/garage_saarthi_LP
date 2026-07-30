@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
-import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 
@@ -45,9 +46,14 @@ export default function GRAWebMobile() {
             GarageSaarthi is a cloud-based reporting system. View invoice stats on your browser dashboard or check active repair card counts from the Android application on the road.
           </p>
           <div className="flex flex-wrap gap-4 items-center pt-4">
-            <Button variant="trial" onClick={handleTrialClick}>
-              Start Free Trial
-            </Button>
+            <Link
+              href={`${FRONTEND_URL}/signup`}
+              target="_blank"
+              onClick={handleTrialClick}
+              className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
+            >
+              Start Free Trial <FaArrowRight className="w-3.5 h-3.5" />
+            </Link>
             <div onClick={handleAndroidClick}>
               <PlayStoreBadge />
             </div>
@@ -81,4 +87,4 @@ export default function GRAWebMobile() {
       </div>
     </section>
   );
-}
+}

@@ -26,8 +26,8 @@ const financeCards = [
     title: "Expenses & Cash Flow",
     desc: "Record operational expenses like electricity bills, rent, tea, or tool purchases. Monitor your daily cash register balances.",
     links: [
-      { href: "/features/expenses", text: "Expenses" },
-      { href: "/features/cash-management", text: "Cash" }
+      { href: "/features/finance", text: "Expenses" },
+      { href: "/features/finance", text: "Cash" }
     ]
   },
   {

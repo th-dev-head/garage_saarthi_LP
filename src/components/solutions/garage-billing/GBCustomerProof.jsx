@@ -11,7 +11,7 @@ export default function GBCustomerProof() {
   const handleCtaClick = () => {
     trackEvent("billing_customer_story_click", {
       page_path: "/solutions/garage-billing-software",
-      destination: "/customers"
+      destination: "/features/customer-reviews"
     });
   };
 
@@ -46,7 +46,7 @@ export default function GBCustomerProof() {
         </div>
 
         <div className="mt-10 flex item-center justify-center">
-          <Link href="/customers">
+          <Link href="/features/customer-reviews">
             <Button
               variant="hero"
               onClick={handleCtaClick}

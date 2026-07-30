@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
-import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GRASalesRevenue() {
@@ -38,9 +38,13 @@ export default function GRASalesRevenue() {
             Monitor billing trends over custom date ranges. Understand cash flow dynamics by checking reports categorized by payment modes, service bills, and counters sales. Perfect for tax calculation and CA auditing.
           </p>
           <div className="pt-2">
-            <Button href="/features/finance" onClick={handleFinanceClick} icon={<FaArrowRight className="w-3.5 h-3.5" />}>
-              Explore Garage Finance Management
-            </Button>
+            <Link
+              href="/features/finance"
+              onClick={handleFinanceClick}
+              className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
+            >
+              Explore Garage Finance Management <FaArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 const steps = [
   { icon: <FaUserAlt />, label: "Customer & Vehicle", href: "/features/job-card-management" },
-  { icon: <FaFileAlt />, label: "Estimate", href: "/features/estimates" },
+  { icon: <FaFileAlt />, label: "Estimate", href: "/features/job-card-management" },
   { icon: <FaTools />, label: "Job Card", href: "/features/job-card-management" },
   { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-card-management" },
   { icon: <FaFileInvoiceDollar />, label: "Invoice", href: "/features/billing" },
@@ -20,7 +20,7 @@ const featureCards = [
   {
     title: "Create Professional Estimates",
     desc: "Create transparent digital estimates. Share them with customers for quick approvals before mechanics begin any repair work.",
-    link: "/features/estimates",
+    link: "/features/job-card-management",
   },
   {
     title: "Create Digital Job Cards",
@@ -30,7 +30,7 @@ const featureCards = [
   {
     title: "Manage Parts Requisitions",
     desc: "Allow mechanics to request spare parts directly from the inventory. Track spare parts usage accurately.",
-    link: "/features/parts-requisition",
+    link: "/features/inventory",
   },
   {
     title: "Generate GST Invoices",

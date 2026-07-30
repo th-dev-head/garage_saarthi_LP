@@ -15,7 +15,7 @@ const challenges = [
     icon: <FaFilter />,
     title: "2. Track Service Leads & Opportunities",
     desc: "Record incoming customer call leads, quote requests, and follow-up dates in a dedicated workshop CRM.",
-    link: "/garage-crm",
+    link: "/solutions/garage-crm-software",
     anchor: "Explore Garage CRM",
   },
   {

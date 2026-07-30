@@ -14,7 +14,7 @@ export default function GCCustomerProof() {
       page_name: "garage_crm_software",
       cta_location: "customer_proof",
       cta_label: "View Customer Stories",
-      destination: "/customers"
+      destination: "/features/customer-reviews"
     });
   };
 
@@ -50,7 +50,7 @@ export default function GCCustomerProof() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <Link href="/customers">
+          <Link href="/features/customer-reviews">
             <Button
               variant="hero"
               onClick={handleCtaClick}

@@ -5,6 +5,7 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function GRAAnalyticsDecision() {
   const handleTrialClick = () => {
@@ -31,7 +32,7 @@ export default function GRAAnalyticsDecision() {
         </p>
         <div className="pt-4 flex justify-center">
           <Button variant="trial" onClick={handleTrialClick}>
-            Start Your 7-Day Free Trial
+            Start Your 7-Day Free Trial <FaArrowRight />
           </Button>
         </div>
       </div>

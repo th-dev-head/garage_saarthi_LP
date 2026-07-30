@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaUserClock, FaCalendarTimes, FaFileInvoice, FaLock } from "react-icons/fa";
+import { FaUserClock, FaCalendarTimes, FaFileInvoice, FaLock, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const staffCards = [
@@ -67,8 +67,8 @@ export default function EVStaff() {
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 mt-4">
-                  <Link href={item.link} className="text-xs font-bold text-primary hover:underline">
-                    {item.linkText}
+                  <Link href={item.link} className="text-xs font-bold text-primary hover:underline flex gap-2 items-center">
+                    {item.linkText} <FaArrowRight />
                   </Link>
                 </div>
               </div>

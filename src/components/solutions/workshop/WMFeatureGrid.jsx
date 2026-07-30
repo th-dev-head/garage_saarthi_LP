@@ -13,15 +13,15 @@ const features = [
   { icon: <FaBox />, title: "Inventory Management", link: "/features/inventory" },
   { icon: <FaUsers />, title: "Garage CRM", link: "/features/crm" },
   { icon: <FaWhatsapp />, title: "WhatsApp Billing", link: "/features/billing" },
-  { icon: <FaCar />, title: "Vehicle Management", link: "/features/vehicle-management" },
+  { icon: <FaCar />, title: "Vehicle Management", link: "/features/vehicles" },
   { icon: <FaFileInvoiceDollar />, title: "GST Billing", link: "/features/billing" },
   { icon: <FaMoneyBillWave />, title: "Counter Sales", link: "/features/counter-sales" },
   { icon: <FaCodeBranch />, title: "Multi-Branch Control", link: "/solutions/multi-branch-garage-software" },
   { icon: <FaBell />, title: "Service Reminders", link: "/features/service-reminders" },
-  { icon: <FaUserCog />, title: "Staff Management", link: "/features/staff-management" },
+  { icon: <FaUserCog />, title: "Staff Management", link: "/features/role-based-access" },
   { icon: <FaHandshake />, title: "Customer Portal", link: "/features/crm" },
   { icon: <FaLock />, title: "CA & Finance Access", link: "/features/finance" },
-  { icon: <FaMobile />, title: "Android Mobile App", link: "/download-app" },
+  { icon: <FaMobile />, title: "Android Mobile App", link: "/solutions/garage-management-app" },
 ];
 
 export default function WMFeatureGrid() {

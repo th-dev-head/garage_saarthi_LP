@@ -29,7 +29,7 @@ export default function CWCustomerProof() {
           Read how multi-brand car workshops, auto repair shops, and car service centers across India utilize our digital job cards and automated reminders to organize their daily operations.
         </p>
         <div className="pt-2 flex justify-center">
-          <Link href="/customers" onClick={handleStoriesClick}>
+          <Link href="/features/customer-reviews" onClick={handleStoriesClick}>
             <Button>
               View Customer Stories <FaArrowRight className="w-3.5 h-3.5" />
             </Button>

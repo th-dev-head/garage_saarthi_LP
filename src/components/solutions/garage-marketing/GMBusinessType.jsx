@@ -85,10 +85,10 @@ export default function GMBusinessType() {
 
         <div className="flex justify-center">
           <Link
-            href="/solutions"
+            href="/features"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
-            Explore GarageSaarthi Solutions <FaArrowRight className="w-3.5 h-3.5" />
+            Explore All Features <FaArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
       </div>
