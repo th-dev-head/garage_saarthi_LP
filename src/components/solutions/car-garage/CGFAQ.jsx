@@ -19,7 +19,7 @@ const faqData = [
     a: "Yes. Each vehicle is linked to a customer profile with a complete service history. When a car returns to your garage, your advisor can instantly view past repairs, spare parts replaced, amounts billed, and any recommendations made during previous visits.",
   },
   {
-    q: "Can I manage spare parts inventory with GarageSaarthi?",
+    q: "Can I manage spare parts inventory with GarageSaarthi?", 
     a: "Yes. GarageSaarthi includes live inventory management for spare parts and accessories. You can track purchases, log parts used in job cards, manage counter sales, and set low-stock alerts to avoid running out of fast-moving items.",
   },
   {

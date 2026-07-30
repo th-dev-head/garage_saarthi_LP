@@ -19,7 +19,7 @@ export default function JCMWorkflow() {
     {
       num: "03",
       icon: <FaWrench className="w-5 h-5 text-emerald-600" />,
-      title: "Mechanic Bay Assignment",
+      title: "Mechanic Assignment",
       desc: "Assign tasks to a technician and update live repair status to 'In Progress'."
     },
     {
