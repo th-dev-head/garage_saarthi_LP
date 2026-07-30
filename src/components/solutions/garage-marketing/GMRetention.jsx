@@ -22,7 +22,7 @@ const retentionCards = [
     icon: <FaRedo />,
     title: "Repeat Maintenance Bookings",
     desc: "Trigger periodic service alerts and promotional discounts to encourage routine maintenance visits.",
-    link: "/service-reminder-software",
+    link: "/solutions/service-reminder-software",
     anchor: "Explore Service Reminders",
   },
 ];

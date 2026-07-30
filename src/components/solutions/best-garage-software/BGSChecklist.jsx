@@ -17,7 +17,6 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 const checklistItems = [
   {
-    num: "1",
     icon: <FaClipboardList />,
     title: "Digital Job Card Management",
     question: "Can the software create and manage digital job cards?",
@@ -26,7 +25,6 @@ const checklistItems = [
     anchor: "Explore Digital Job Cards",
   },
   {
-    num: "2",
     icon: <FaFileInvoiceDollar />,
     title: "Billing and GST Support",
     question: "Can the garage create organized invoices and manage GST requirements?",
@@ -35,7 +33,6 @@ const checklistItems = [
     anchor: "Explore Invoicing & Payments",
   },
   {
-    num: "3",
     icon: <FaBoxes />,
     title: "Spare Parts Inventory Management",
     question: "Can the software track workshop stock and spare parts?",
@@ -44,7 +41,6 @@ const checklistItems = [
     anchor: "Explore Inventory Management",
   },
   {
-    num: "4",
     icon: <FaAddressBook />,
     title: "Customer and Vehicle Records",
     question: "Can customer and vehicle information be maintained in one system?",
@@ -53,7 +49,6 @@ const checklistItems = [
     anchor: "Explore Customer & Vehicle Records",
   },
   {
-    num: "5",
     icon: <FaUsersCog />,
     title: "CRM and Lead Management",
     question: "Can the garage track leads and customer opportunities?",
@@ -62,7 +57,6 @@ const checklistItems = [
     anchor: "Explore Garage CRM",
   },
   {
-    num: "6",
     icon: <FaBell />,
     title: "Service and WhatsApp Reminders",
     question: "Can the software help the garage follow up when service is due?",
@@ -71,7 +65,6 @@ const checklistItems = [
     anchor: "Explore Service Alerts",
   },
   {
-    num: "7",
     icon: <FaUserClock />,
     title: "Attendance, Leave and Payroll",
     question: "Can the same software help manage workshop staff?",
@@ -80,7 +73,6 @@ const checklistItems = [
     anchor: "Explore Payroll & Staff",
   },
   {
-    num: "8",
     icon: <FaChartLine />,
     title: "Finance and Business Reports",
     question: "Can garage owners understand payments, finances and performance?",
@@ -89,7 +81,6 @@ const checklistItems = [
     anchor: "Explore Reports & Analytics",
   },
   {
-    num: "9",
     icon: <FaSitemap />,
     title: "Multi-Branch Management",
     question: "Can the software scale when the garage opens another branch?",
@@ -98,7 +89,6 @@ const checklistItems = [
     anchor: "Explore Multi-Branch Software",
   },
   {
-    num: "10",
     icon: <FaMobileAlt />,
     title: "Web and Mobile Access",
     question: "Can the garage owner access software without depending on one PC?",
@@ -138,9 +128,6 @@ export default function BGSChecklist() {
                   <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
                     {item.icon}
                   </div>
-                  <span className="text-xs font-extrabold text-slate-300">
-                    Feature #{item.num}
-                  </span>
                 </div>
                 <h3 className="text-base font-bold text-slate-900">{item.title}</h3>
                 <p className="text-xs font-semibold text-primary">{item.question}</p>

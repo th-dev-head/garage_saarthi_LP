@@ -24,7 +24,7 @@ export default function IndustrialBenefits() {
   const router = useRouter();
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-4">
@@ -40,7 +40,7 @@ export default function IndustrialBenefits() {
             <div
               key={idx}
               onClick={() => router.push(item.link)}
-              className="bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-pointer text-center flex flex-col items-center justify-center min-h-[140px]"
+              className="bg-slate-50 p-6 rounded-xl border border-slate-200/60 shadow-sm hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-pointer text-center flex flex-col items-center justify-center min-h-[140px]"
             >
               <div className="w-12 h-12 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-4">
                 {item.icon}

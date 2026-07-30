@@ -4,8 +4,8 @@ import { FaUserPlus, FaTasks, FaUserCheck, FaCar, FaTags, FaBell, FaArrowRight }
 import GradientUnderline from "../../common/GradientUnderline";
 
 const steps = [
-  { icon: <FaUserPlus />, title: "1. Lead Enters CRM", desc: "New service enquiry or phone lead is logged in Garage CRM.", link: "/garage-crm", anchor: "Garage CRM" },
-  { icon: <FaTasks />, title: "2. Team Manages Lead", desc: "Staff provides service quotes, logs call notes, and sets follow-up dates.", link: "/garage-crm", anchor: "Lead Tracking" },
+  { icon: <FaUserPlus />, title: "1. Lead Enters CRM", desc: "New service enquiry or phone lead is logged in Garage CRM.", link: "/solutions/garage-crm-software", anchor: "Garage CRM" },
+  { icon: <FaTasks />, title: "2. Team Manages Lead", desc: "Staff provides service quotes, logs call notes, and sets follow-up dates.", link: "/solutions/garage-crm-software", anchor: "Lead Tracking" },
   { icon: <FaUserCheck />, title: "3. Lead Becomes Customer", desc: "Customer books repair job; profile moves into active customer database.", link: "/features/customers", anchor: "Customer Records" },
   { icon: <FaCar />, title: "4. Vehicle Logged", desc: "Vehicle model, chassis details, and repair history are permanently saved.", link: "/features/vehicles", anchor: "Vehicle Records" },
   { icon: <FaTags />, title: "5. Offers Applied", desc: "Promotions and seasonal discounts encourage repeat servicing.", link: "/features/offers-promotions", anchor: "Offers & Promotions" },

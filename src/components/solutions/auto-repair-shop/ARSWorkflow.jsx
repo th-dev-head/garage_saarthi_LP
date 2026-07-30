@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import {
   FaUserAlt, FaFileAlt, FaTools, FaWrench,
-  FaFileInvoiceDollar, FaCreditCard, FaBell, FaChevronRight, FaArrowRight
+  FaFileInvoiceDollar, FaCreditCard, FaBell, FaArrowRight
 } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import GradientUnderline from "../../common/GradientUnderline";

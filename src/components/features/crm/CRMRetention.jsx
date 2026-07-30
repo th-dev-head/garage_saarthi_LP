@@ -43,13 +43,13 @@ export default function CRMRetention() {
           <div className="flex flex-wrap gap-4 items-center">
             <Link
               href="/features/service-reminders"
-              className="text-xs text-primary font-bold hover:underline"
+              className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-2"
             >
               Explore Service Alerts <FaArrowRight />
             </Link>
             <Link
               href="/features/customer-reviews"
-              className="text-xs text-primary font-bold hover:underline"
+              className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-2"
             >
               Customer Review Collection <FaArrowRight />
             </Link>

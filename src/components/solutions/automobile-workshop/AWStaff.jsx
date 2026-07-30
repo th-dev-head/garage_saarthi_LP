@@ -26,7 +26,7 @@ const staffFeatures = [
     icon: <FaTasks className="w-5 h-5 text-primary" />,
     title: "Technician Productivity",
     desc: "Track how many job cards each mechanic completes, time taken per repair, and monitor service efficiency.",
-    link: "/features/technician-productivity",
+    link: "/features/reports",
   },
   {
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,

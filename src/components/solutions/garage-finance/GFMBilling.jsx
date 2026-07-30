@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
@@ -61,7 +61,7 @@ export default function GFMBilling() {
           <div className="pt-2">
             <Link href="/solutions/garage-billing-software" onClick={handleBillingClick}>
               <Button>
-                Explore Garage Billing Features <FaChevronRight className="w-3.5 h-3.5" />
+                Explore Garage Billing Features <FaArrowRight className="w-3.5 h-3.5" />
               </Button>
             </Link>
           </div>

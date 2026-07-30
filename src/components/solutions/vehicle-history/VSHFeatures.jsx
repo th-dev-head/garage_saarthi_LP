@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -46,7 +46,7 @@ export default function VSHFeatures() {
                 <p className="text-xs text-slate-500 mb-6">{f.desc}</p>
               </div>
               <Link href={f.link} onClick={() => handleFeatureClick(f.title)} className="flex items-center gap-1 text-xs text-primary font-bold hover:underline mt-auto self-start">
-                Explore Feature <FaChevronRight className="w-2.5 h-2.5" />
+                Explore Feature <FaArrowRight className="w-2.5 h-2.5" />
               </Link>
             </div>
           ))}
@@ -56,7 +56,7 @@ export default function VSHFeatures() {
               <p className="text-xs text-slate-300 mb-6">Explore the full power of GarageSaarthi platform.</p>
             </div>
             <Link href="/features" className="flex items-center gap-1 text-xs text-orange-400 font-bold hover:underline mt-auto self-start">
-              Explore All <FaChevronRight className="w-2.5 h-2.5" />
+              Explore All <FaArrowRight className="w-2.5 h-2.5" />
             </Link>
           </div>
         </div>

@@ -96,7 +96,7 @@ export default function TestimonialsGrid({
           <div className="flex justify-center mt-10">
             <Link
               href={linkHref}
-              className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors"
+              className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors hover:underline"
             >
               {linkLabel} <FaArrowRight className="w-4 h-4" />
             </Link>

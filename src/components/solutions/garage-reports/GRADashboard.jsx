@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 import Button from "../../common/Button";
@@ -35,9 +35,13 @@ export default function GRADashboard() {
             The central GarageSaarthi dashboard brings critical metrics together. Track closed invoices, active repair tasks, pending invoices, payments collected, stock levels, and total customer visits at a glance.
           </p>
           <div className="pt-2">
-            <Button href="/features/workshop-management-dashboard" onClick={handleDashboardClick} icon={<FaChevronRight className="w-3.5 h-3.5" />}>
-              Explore Garage Dashboard
-            </Button>
+            <Link
+              href="/features/workshop-management-dashboard"
+              onClick={handleDashboardClick}
+              className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
+            >
+              Explore Garage Dashboard <FaArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </div>
         <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">

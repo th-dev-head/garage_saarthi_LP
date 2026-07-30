@@ -10,7 +10,7 @@ const types = [
   { title: "Truck Workshops", desc: "Handle heavy duty commercial vehicle parameters and parts allocations.", link: "/solutions/truck-workshop-software" },
   { title: "Fleet Workshops", desc: "Centralized maintenance schedules, logs, and billing for fleet operators.", link: "/solutions/fleet-workshop-software" },
   { title: "Car Detailing Businesses", desc: "Keep track of detailing spa services, detailing products, and updates.", link: "/solutions/car-detailing-software" },
-  { title: "Independent Garages", desc: "Simple tool checklists and easy GST billing for smaller mechanic shops.", link: "/solutions/independent-garage-software" },
+  { title: "Independent Garages", desc: "Simple tool checklists and easy GST billing for smaller mechanic shops.", link: "/features/workshop-management-dashboard" },
   { title: "Multi-Branch Garages", desc: "Consolidated sales figures and stock transfer registries across branches.", link: "/solutions/multi-branch-garage-software" }
 ];
 
@@ -55,10 +55,10 @@ export default function GABusinessTypes() {
         {/* Global CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/solutions"
+            href="/features"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
-            Explore GarageSaarthi Solutions
+            Explore All Features
             <FaArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

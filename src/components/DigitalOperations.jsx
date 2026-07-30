@@ -41,6 +41,7 @@ export default function DigitalOperations() {
       titleHighlight="Digital Management System"
       subtitle="See how migrating to a digital garage management system transforms your workshop's daily routines and boosts profitability."
       comparisons={comparisons}
+      bgClass="bg-slate-50"
     />
   );
 }

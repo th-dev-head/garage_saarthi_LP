@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -44,7 +44,7 @@ export default function MBCentralized() {
               </div>
               {c.link && (
                 <Link href={c.link} onClick={() => handleFeatureClick(c.label)} className="flex items-center gap-1 text-xs text-primary font-bold hover:underline mt-auto self-start">
-                  Explore {c.label} <FaChevronRight className="w-2.5 h-2.5" />
+                  Explore {c.label} <FaArrowRight className="w-2.5 h-2.5" />
                 </Link>
               )}
             </div>

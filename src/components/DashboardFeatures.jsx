@@ -83,7 +83,7 @@ const DashboardFeatures = () => {
   const router = useRouter();
 
   return (
-    <div id="features" className="bg-white">
+    <div id="features" className="bg-slate-50">
       {/* Dashboard Preview Section */}
       <section className="relative z-20 pt-10 lg:pt-20 pb-10 px-4 flex justify-center">
         <div className="max-w-7xl w-full">
@@ -111,7 +111,7 @@ const DashboardFeatures = () => {
       </section>
 
       {/* Features Section */}
-      <section className="pb-10 lg:pb-20 px-4 lg:px-15 2xl:px-50 bg-white">
+      <section className="pb-10 lg:pb-20 px-4 lg:px-15 2xl:px-50 bg-slate-50">
         <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {features.map((feature, index) => (
@@ -148,16 +148,6 @@ const DashboardFeatures = () => {
             ))}
           </div>
 
-          {/* View All Features Button */}
-          <div className="flex justify-center mt-12">
-            <Button
-              onClick={() => router.push("/features")}
-              className="cursor-pointer"
-            >
-              View All Features
-              <HiArrowRight className="w-5 h-5" />
-            </Button>
-          </div>
         </div>
       </section>
     </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -47,7 +47,7 @@ export default function GRAReportsOverview() {
                 <p className="text-xs text-slate-500 mb-6 leading-relaxed">{r.desc}</p>
               </div>
               <Link href={r.link} onClick={() => handleFeatureClick(r.title)} className="flex items-center gap-1 text-xs text-primary font-bold hover:underline mt-auto self-start">
-                Explore {r.label} <FaChevronRight className="w-2.5 h-2.5" />
+                Explore {r.label} <FaArrowRight className="w-2.5 h-2.5" />
               </Link>
             </div>
           ))}

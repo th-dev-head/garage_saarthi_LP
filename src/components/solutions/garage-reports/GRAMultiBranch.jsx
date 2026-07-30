@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { FaChevronRight } from "react-icons/fa";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
-import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const outletMetrics = [
@@ -35,9 +35,13 @@ export default function GRAMultiBranch() {
             Operating a chain of auto centers or workshop franchise outlets? Switch between branch locations on the dashboard and track branch-level sales lists, stock details, and attendance logs. Consolidated analytics made simple.
           </p>
           <div className="pt-2">
-            <Button href="/solutions/multi-branch-garage-software" onClick={handleBranchClick} icon={<FaChevronRight className="w-3.5 h-3.5" />}>
-              Explore Multi-Branch Garage Software
-            </Button>
+            <Link
+              href="/solutions/multi-branch-garage-software"
+              onClick={handleBranchClick}
+              className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
+            >
+              Explore Multi-Branch Garage Software <FaArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </div>
         <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">

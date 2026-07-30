@@ -1,6 +1,6 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
-import { FaChevronRight, FaCar, FaClipboardList, FaWrench, FaFileInvoiceDollar, FaWallet, FaChartLine } from "react-icons/fa";
+import { FaArrowRight, FaCar, FaClipboardList, FaWrench, FaFileInvoiceDollar, FaWallet, FaChartLine } from "react-icons/fa";
 
 export default function GACConnected() {
   const steps = [
@@ -37,7 +37,7 @@ export default function GACConnected() {
               <p className="text-[10px] text-slate-500 leading-normal">{s.desc}</p>
               {idx < 5 && (
                 <div className="hidden lg:block absolute top-1/2 -right-3.5 -translate-y-1/2 text-slate-300 pointer-events-none z-10">
-                  <FaChevronRight className="w-3 h-3 text-primary/40" />
+                  <FaArrowRight className="w-3 h-3 text-primary/40" />
                 </div>
               )}
             </div>

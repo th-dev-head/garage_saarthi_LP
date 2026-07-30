@@ -14,13 +14,13 @@ const featureList = [
     icon: <FaClipboardList className="w-5 h-5 text-primary" />,
     title: "Parts Requisition",
     desc: "Track parts issued to technicians for specific job cards. Ensure spare parts are correctly billed to the job.",
-    link: "/features/parts-requisition",
+    link: "/features/inventory",
   },
   {
     icon: <FaShoppingCart className="w-5 h-5 text-primary" />,
     title: "Purchases",
     desc: "Record spare parts purchases, log vendor details, track purchase bills, and update stock counts automatically.",
-    link: "/features/purchases",
+    link: "/features/inventory",
   },
   {
     icon: <FaStore className="w-5 h-5 text-primary" />,

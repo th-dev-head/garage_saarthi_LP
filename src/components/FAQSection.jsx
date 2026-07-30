@@ -51,6 +51,7 @@ export default function FAQSection() {
       titleHighlight="Garage Management Software."
       subtitle="Everything you need to know about GarageSaarthi and how it can transform your workshop."
       faqs={faqs}
+      className="bg-slate-50"
     />
   );
 }

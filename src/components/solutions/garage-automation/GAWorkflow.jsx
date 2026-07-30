@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaFileAlt, FaUser, FaBox, FaReceipt, FaBell, FaUsers, FaUserClock, FaChartLine } from "react-icons/fa";
+import { FaFileAlt, FaUser, FaBox, FaReceipt, FaBell, FaUsers, FaUserClock, FaChartLine, FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GAWorkflow() {
@@ -151,7 +151,7 @@ export default function GAWorkflow() {
             href="/features"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
           >
-            Explore All GarageSaarthi Features
+            Explore All GarageSaarthi Features <FaArrowRight />
           </Link>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight, FaCreditCard, FaCoins, FaFileInvoice, FaUserTie, FaHandHoldingUsd, FaChartPie } from "react-icons/fa";
+import { FaArrowRight, FaCreditCard, FaCoins, FaFileInvoice, FaUserTie, FaHandHoldingUsd, FaChartPie } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
@@ -54,7 +54,7 @@ export default function GACCapabilities() {
               <div className="pt-6">
                 <Link href={c.url} onClick={() => handleFeatureClick(c.linkName, c.url)}>
                   <Button variant="secondary" className="w-full text-xs">
-                    {c.linkName} <FaChevronRight className="w-2.5 h-2.5" />
+                    {c.linkName} <FaArrowRight className="w-2.5 h-2.5" />
                   </Button>
                 </Link>
               </div>

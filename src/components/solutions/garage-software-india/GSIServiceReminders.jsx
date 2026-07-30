@@ -63,14 +63,14 @@ export default function GSIServiceReminders() {
         <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-3xl p-6 md:p-8 max-w-3xl mx-auto text-center space-y-3">
           <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
             Want to learn how service alerts drive repeat workshop bookings? Explore our dedicated{" "}
-            <Link href="/service-reminder-software" className="font-bold text-primary hover:underline">
+            <Link href="/solutions/service-reminder-software" className="font-bold text-primary hover:underline">
               Vehicle Service Reminder Software
             </Link>{" "}
             guide.
           </p>
           <div>
             <Link
-              href="/service-reminder-software"
+              href="/solutions/service-reminder-software"
               className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-xs md:text-sm transition-colors"
             >
               Explore Service Reminder Software <FaArrowRight className="w-3 h-3" />

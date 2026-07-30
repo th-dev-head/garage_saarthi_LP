@@ -6,6 +6,7 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
+import { FaArrowRight } from "react-icons/fa";
 
 const syncPlatforms = [
   { icon: "💻", title: "Web Portal Dashboard", desc: "Chrome, Safari & Desktop Access", badgeText: "Connected" },
@@ -74,7 +75,7 @@ export default function MBWebMobile() {
           </p>
           <div className="flex flex-wrap gap-4 items-center pt-4">
             <Button variant="trial" onClick={handleTrialClick}>
-              Start 7-Day Free Trial
+              Start 7-Day Free Trial <FaArrowRight />
             </Button>
             <div onClick={handleAndroidClick}>
               <PlayStoreBadge />

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 import Button from "../../common/Button";
@@ -29,9 +29,9 @@ export default function MBCustomerProof() {
           Read how multi-location workshop groups, auto repair chains, and franchise owners use GarageSaarthi to centralize their databases and switch from registers to cloud control.
         </p>
         <div className="pt-2 flex justify-center">
-          <Link href="/customers" onClick={handleStoriesClick}>
+          <Link href="/features/customer-reviews" onClick={handleStoriesClick}>
             <Button>
-              View Customer Stories <FaChevronRight className="w-3.5 h-3.5" />
+              View Customer Stories <FaArrowRight className="w-3.5 h-3.5" />
             </Button>
           </Link>
         </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaArrowRight, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
@@ -59,8 +59,8 @@ export default function GAEcosystem() {
 
         <div className="flex justify-center pt-4">
           <Link href="/features" onClick={() => handleFeatureClick("Explore All Features", "/features")}>
-            <Button variant="secondary">
-              Explore All GarageSaarthi Features <FaChevronRight className="w-3.5 h-3.5" />
+            <Button>
+              Explore All GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />
             </Button>
           </Link>
         </div>

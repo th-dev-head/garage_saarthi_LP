@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -50,7 +50,7 @@ export default function MBOperations() {
                 <p className="text-xs text-slate-500 mb-6 leading-relaxed">{m.desc}</p>
               </div>
               <Link href={m.link} onClick={() => handleFeatureClick(m.label)} className="flex items-center gap-1 text-xs text-primary font-bold hover:underline mt-auto self-start">
-                Explore {m.label} <FaChevronRight className="w-2.5 h-2.5" />
+                Explore {m.label} <FaArrowRight className="w-2.5 h-2.5" />
               </Link>
             </div>
           ))}

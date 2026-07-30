@@ -2,13 +2,13 @@ import React from "react";
 import Link from "next/link";
 import {
   FaUserAlt, FaFileAlt, FaTools, FaWrench,
-  FaFileInvoiceDollar, FaCreditCard, FaBell, FaChevronRight
+  FaFileInvoiceDollar, FaCreditCard, FaBell, FaArrowRight
 } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const steps = [
   { icon: <FaUserAlt />, label: "Customer & Vehicle", href: "/features/job-card-management" },
-  { icon: <FaFileAlt />, label: "Estimate", href: "/features/estimates" },
+  { icon: <FaFileAlt />, label: "Estimate", href: "/features/job-card-management" },
   { icon: <FaTools />, label: "Job Card", href: "/features/job-card-management" },
   { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-card-management" },
   { icon: <FaFileInvoiceDollar />, label: "Invoice", href: "/features/billing" },
@@ -20,7 +20,7 @@ const featureCards = [
   {
     title: "Create Professional Estimates",
     desc: "Create transparent digital estimates. Share them with customers for quick approvals before mechanics begin any repair work.",
-    link: "/features/estimates",
+    link: "/features/job-card-management",
   },
   {
     title: "Create Digital Job Cards",
@@ -30,7 +30,7 @@ const featureCards = [
   {
     title: "Manage Parts Requisitions",
     desc: "Allow mechanics to request spare parts directly from the inventory. Track spare parts usage accurately.",
-    link: "/features/parts-requisition",
+    link: "/features/inventory",
   },
   {
     title: "Generate GST Invoices",
@@ -73,7 +73,7 @@ export default function AWWorkflow() {
                 <span className="text-[11px] font-bold text-slate-800">{item.label}</span>
               </Link>
               {idx < steps.length - 1 && (
-                <FaChevronRight className="text-slate-400 w-3.5 h-3.5 hidden md:block" />
+                <FaArrowRight className="text-slate-400 w-3.5 h-3.5 hidden md:block" />
               )}
             </React.Fragment>
           ))}
@@ -94,7 +94,7 @@ export default function AWWorkflow() {
                 href={card.link}
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover transition-colors"
               >
-                Learn details <FaChevronRight className="w-2.5 h-2.5" />
+                Learn details <FaArrowRight className="w-2.5 h-2.5" />
               </Link>
             </div>
           ))}

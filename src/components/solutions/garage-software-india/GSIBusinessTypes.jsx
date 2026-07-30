@@ -97,7 +97,7 @@ export default function GSIBusinessTypes() {
 
         <div className="flex justify-center">
           <Link
-            href="/solutions"
+            href="/features"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Find Software for Your Workshop <FaArrowRight className="w-3.5 h-3.5" />

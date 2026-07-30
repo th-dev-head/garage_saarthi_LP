@@ -11,7 +11,7 @@ export default function GJCCustomerProof() {
   const handleCtaClick = () => {
     trackEvent("job_card_customer_story_click", {
       page_path: "/solutions/garage-job-card-software",
-      destination: "/customers"
+      destination: "/features/customer-reviews"
     });
   };
 
@@ -47,7 +47,7 @@ export default function GJCCustomerProof() {
         </div>
 
         <div className="mt-10 flex item-cetner justify-center">
-          <Link href="/customers">
+          <Link href="/features/customer-reviews">
             <Button
               variant="hero"
               onClick={handleCtaClick}

@@ -29,7 +29,7 @@ export default function FDefinition() {
           </div>
 
           <div className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
-            <h3 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3">
+            <h3 className="text-lg font-bold text-slate-900">
               Why Finance Management is Critical for Garages:
             </h3>
             <div className="grid grid-cols-2 gap-4 text-xs md:text-sm">
