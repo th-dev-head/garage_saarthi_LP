@@ -96,24 +96,25 @@ export default function GMOverview() {
         {/* Grid layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {featureCards.map((card, idx) => (
-            <div
+            <Link
               key={idx}
-              className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+              href={card.link}
+              className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between cursor-pointer hover:-translate-y-1 hover:border-primary/30 transition-all duration-300 group text-left"
             >
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
+                <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   {card.icon}
                 </div>
-                <h3 className="text-sm font-bold text-slate-900">{card.title}</h3>
+                <h3 className="text-sm font-bold text-slate-900 group-hover:text-primary transition-colors duration-300">{card.title}</h3>
                 <p className="text-xs text-slate-500 leading-normal">{card.desc}</p>
               </div>
 
               <div className="pt-4 mt-4 border-t border-slate-200/60">
-                <Link href={card.link} className="text-xs font-bold text-primary hover:underline flex items-center gap-2">
+                <span className="text-xs font-bold text-primary group-hover:underline flex items-center gap-2">
                   {card.anchor} <FaArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

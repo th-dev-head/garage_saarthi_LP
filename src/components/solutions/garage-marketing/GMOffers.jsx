@@ -55,15 +55,6 @@ export default function GMOffers() {
             );
           })}
         </div>
-
-        <div className="flex justify-center">
-          <Link
-            href="/features/offers-promotions"
-            className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
-          >
-            Explore Offers & Promotions <FaArrowRight className="w-3.5 h-3.5" />
-          </Link>
-        </div>
       </div>
     </section>
   );
