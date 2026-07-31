@@ -2,7 +2,7 @@ import React from "react";
 import { Check } from "lucide-react";
 import features1 from "../../assets/pricing/features1.svg";
 import features2 from "../../assets/pricing/features2.svg";
-import garageIcon from "../../assets/pricing/garagesaarthi-og.png";
+import garageIcon from "../../assets/pricing/garagesaarthi-og.webp";
 
 const featuresLayoutData = [
   {

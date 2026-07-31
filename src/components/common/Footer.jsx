@@ -2,9 +2,9 @@
 import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import Link from "next/link";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { FaFacebook, FaInstagram, FaYoutube, FaArrowRight } from "react-icons/fa";
-import GLogo from "../../assets/icons/Glogo.svg";
+import GLogo from "../../assets/icons/Glogo.webp";
 import Button from "./Button";
 import BgVector1 from "../../assets/icons/Bgvector-1.svg";
 import BgVector2 from "../../assets/icons/Bgvector-2.svg";
