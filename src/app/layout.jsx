@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/GS.png" />
 
         {/* Google Tag Manager */}
-        <Script id="gtm-script" strategy="afterInteractive">
+        <Script id="gtm-script" strategy="lazyOnload">
           {`(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
               'gtm.start':
@@ -73,9 +73,9 @@ export default function RootLayout({ children }) {
         {/* Google Ads Tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18303165940"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-ads-script" strategy="afterInteractive">
+        <Script id="google-ads-script" strategy="lazyOnload">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Meta Pixel Code */}
-        <Script id="meta-pixel" strategy="afterInteractive">
+        <Script id="meta-pixel" strategy="lazyOnload">
           {`!function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
               n.callMethod ?
