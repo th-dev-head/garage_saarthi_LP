@@ -7,6 +7,7 @@ import MockupBg from '../assets/icons/MockupDashboard.webp';
 import AppHand from '../assets/icons/Appdl.webp';
 import Button from './common/Button';
 import PlayStoreBadge from './common/PlayStoreBadge';
+import AppStoreBadge from './common/AppStoreBadge';
 
 const AppPromotion = () => {
   return (
@@ -22,6 +23,7 @@ const AppPromotion = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
+          opacity: 0.15
         }}
       />
       
@@ -51,22 +53,6 @@ const AppPromotion = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 items-center justify-center md:justify-start w-full">
-            {/* App Store Button */}
-            {/* <a 
-              href="https://apps.apple.com/in/app/garagesaarthi/id6475635390" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-black text-white px-5 py-2 md:py-3 rounded-full transition-all hover:-translate-y-1 active:scale-95 group"
-            >
-              <div className="p-1">
-                <img src={AppStoreIcon} alt="Apple App Store" className="w-8 h-8 object-contain" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-[11px] font-normal opacity-70 leading-tight">Download on the</span>
-                <span className="text-sm md:text-[20px] font-semibold leading-tight">App Store</span>
-              </div>
-            </a> */}
-
             {/* Primary CTA - Start Free Trial */}
             <Button
               variant="hero"
@@ -80,6 +66,9 @@ const AppPromotion = () => {
 
             {/* Play Store Button */}
             <PlayStoreBadge />
+
+            {/* App Store Button */}
+            {/* <AppStoreBadge /> */}
           </div>
         </div>
       </div>

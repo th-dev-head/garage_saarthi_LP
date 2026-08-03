@@ -116,7 +116,9 @@ export default function RootLayout({ children }) {
                     "url": "https://www.garagesaarthi.com/GS.svg"
                   },
                   "sameAs": [
-                    "https://www.instagram.com/garagesaarthi/"
+                    "https://www.instagram.com/garagesaarthi/",
+                    "https://www.facebook.com/people/GarageSaarthi/61586923957162/",
+                    "https://www.youtube.com/@GarageSaarthi"
                   ]
                 },
                 {
