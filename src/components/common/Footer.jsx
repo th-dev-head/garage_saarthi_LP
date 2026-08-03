@@ -3,13 +3,36 @@ import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
-import { FaFacebook, FaInstagram, FaYoutube, FaArrowRight } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaArrowRight } from "react-icons/fa";
 import GLogo from "../../assets/icons/Glogo.webp";
 import Button from "./Button";
 import BgVector1 from "../../assets/icons/Bgvector-1.svg";
 import BgVector2 from "../../assets/icons/Bgvector-2.svg";
 
 import { trackEvent } from "../../utils/pixel";
+
+const SOCIAL_LINKS = [
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/people/GarageSaarthi/61586923957162/",
+    icon: FaFacebook,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/garagesaarthi/",
+    icon: FaInstagram,
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@GarageSaarthi",
+    icon: FaYoutube,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/garagesaarthi",
+    icon: FaLinkedin,
+  },
+];
 
 const Footer = () => {
   return (
@@ -130,21 +153,21 @@ const Footer = () => {
             <div className="space-y-3">
               <h3 className="text-text-dark font-bold text-sm tracking-wide uppercase">Follow Us</h3>
               <div className="flex gap-3 flex-wrap">
-                {/* Facebook */}
-                <Link href="https://www.facebook.com/people/GarageSaarthi/61586923957162/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
-                  className="w-8 h-8 rounded-full border border-[#EEE] bg-orange-50 flex items-center justify-center hover:bg-[#B02E0C] hover:border-[#B02E0C] group transition-all">
-                  <FaFacebook className="w-4 h-4 text-[#B02E0C] group-hover:text-white" />
-                </Link>
-                {/* Instagram */}
-                <Link href="https://www.instagram.com/garagesaarthi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-                  className="w-8 h-8 rounded-full border border-[#EEE] bg-orange-50 flex items-center justify-center hover:bg-[#B02E0C] hover:border-[#B02E0C] group transition-all">
-                  <FaInstagram className="w-4 h-4 text-[#B02E0C] group-hover:text-white" />
-                </Link>
-                {/* YouTube */}
-                <Link href="https://www.youtube.com/@GarageSaarthi" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
-                  className="w-8 h-8 rounded-full border border-[#EEE] bg-orange-50 flex items-center justify-center hover:bg-[#B02E0C] hover:border-[#B02E0C] group transition-all">
-                  <FaYoutube className="w-4 h-4 text-[#B02E0C] group-hover:text-white" />
-                </Link>
+                {SOCIAL_LINKS.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={link.name}
+                      className="w-8 h-8 rounded-full border border-[#EEE] bg-orange-50 flex items-center justify-center hover:bg-[#B02E0C] hover:border-[#B02E0C] group transition-all"
+                    >
+                      <Icon className="w-4 h-4 text-[#B02E0C] group-hover:text-white" />
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
