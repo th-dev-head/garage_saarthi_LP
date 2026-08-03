@@ -118,7 +118,8 @@ export default function RootLayout({ children }) {
                   "sameAs": [
                     "https://www.instagram.com/garagesaarthi/",
                     "https://www.facebook.com/people/GarageSaarthi/61586923957162/",
-                    "https://www.youtube.com/@GarageSaarthi"
+                    "https://www.youtube.com/@GarageSaarthi",
+                    "https://www.linkedin.com/company/garagesaarthi"
                   ]
                 },
                 {
