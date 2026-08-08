@@ -196,72 +196,76 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        {/* UTM & Lead Source Injector and Interceptor */}
-        <Script id="utm-param-injector" strategy="afterInteractive">
-          {`(function () {
+        {/* Synchronous Immediate UTM & Lead Tracking Script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
             try {
               var STORAGE_KEY = 'gs_lp_source_params';
+              var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id', 'utm_adset', 'utm_ad', 'source', 'fbclid', 'gclid', 'msclkid', 'ttclid', 'li_fat_id', 'fbc', 'fbp'];
 
-              function getTrackingParams() {
-                var params = {};
-
-                // 1. Load any previously saved params from sessionStorage
+              function getStoredParams() {
+                var p = {};
                 try {
-                  var saved = sessionStorage.getItem(STORAGE_KEY);
-                  if (saved) {
-                    params = JSON.parse(saved) || {};
+                  var ls = localStorage.getItem(STORAGE_KEY);
+                  if (ls) p = Object.assign(p, JSON.parse(ls));
+                } catch (e) {}
+                try {
+                  var ss = sessionStorage.getItem(STORAGE_KEY);
+                  if (ss) p = Object.assign(p, JSON.parse(ss));
+                } catch (e) {}
+                return p;
+              }
+
+              function saveParams(p) {
+                try { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); } catch (e) {}
+                try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(p)); } catch (e) {}
+              }
+
+              // 1. Capture current URL search params immediately
+              var currentParams = getStoredParams();
+              var search = window.location.search;
+              if (search) {
+                var urlParams = new URLSearchParams(search);
+                var hasNew = false;
+                urlParams.forEach(function (val, key) {
+                  if (val && val.trim() !== '') {
+                    currentParams[key] = val.trim();
+                    hasNew = true;
+                  }
+                });
+                if (hasNew) saveParams(currentParams);
+              }
+
+              // 2. Fallbacks for source & utm_source
+              var currentPath = window.location.pathname || '/';
+              if (!currentParams['source'] && currentParams['utm_source']) {
+                currentParams['source'] = currentParams['utm_source'];
+              } else if (currentParams['source'] && !currentParams['utm_source']) {
+                currentParams['utm_source'] = currentParams['source'];
+              } else if (!currentParams['source'] && !currentParams['utm_source']) {
+                currentParams['source'] = 'landing_page';
+                currentParams['utm_source'] = 'landing_page';
+              }
+
+              if (!currentParams['utm_medium']) {
+                currentParams['utm_medium'] = 'website';
+              }
+
+              if (!currentParams['lp_path']) {
+                currentParams['lp_path'] = currentPath;
+              }
+
+              if (!currentParams['referrer'] && document.referrer) {
+                try {
+                  var refHost = new URL(document.referrer).hostname;
+                  if (refHost && refHost !== window.location.hostname) {
+                    currentParams['referrer'] = refHost;
                   }
                 } catch (e) {}
-
-                // 2. Parse current URL search params
-                var search = window.location.search;
-                if (search) {
-                  var urlParams = new URLSearchParams(search);
-                  var hasNewParams = false;
-                  urlParams.forEach(function (value, key) {
-                    if (value && value.trim() !== '') {
-                      params[key] = value.trim();
-                      hasNewParams = true;
-                    }
-                  });
-                  if (hasNewParams) {
-                    try {
-                      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(params));
-                    } catch (e) {}
-                  }
-                }
-
-                // 3. Ensure source & utm_source are always populated
-                var currentPath = window.location.pathname || '/';
-                
-                if (!params['source'] && params['utm_source']) {
-                  params['source'] = params['utm_source'];
-                } else if (params['source'] && !params['utm_source']) {
-                  params['utm_source'] = params['source'];
-                } else if (!params['source'] && !params['utm_source']) {
-                  params['source'] = 'landing_page';
-                  params['utm_source'] = 'landing_page';
-                }
-
-                if (!params['utm_medium']) {
-                  params['utm_medium'] = 'website';
-                }
-
-                if (!params['lp_path']) {
-                  params['lp_path'] = currentPath;
-                }
-
-                if (!params['referrer'] && document.referrer) {
-                  try {
-                    var refHost = new URL(document.referrer).hostname;
-                    if (refHost && refHost !== window.location.hostname) {
-                      params['referrer'] = refHost;
-                    }
-                  } catch (e) {}
-                }
-
-                return params;
               }
+
+              saveParams(currentParams);
 
               function isTargetUrl(urlStr) {
                 if (!urlStr || typeof urlStr !== 'string') return false;
@@ -271,24 +275,25 @@ export default function RootLayout({ children }) {
                   lower.indexOf('login') !== -1 ||
                   lower.indexOf('register') !== -1 ||
                   lower.indexOf('platform.garagesaarthi.com') !== -1 ||
-                  lower.indexOf(':5173') !== -1
+                  lower.indexOf(':5173') !== -1 ||
+                  lower.indexOf(':8080') !== -1
                 );
               }
 
               function appendParams(urlStr) {
                 if (!urlStr || typeof urlStr !== 'string') return urlStr;
                 try {
-                  var params = getTrackingParams();
-                  var paramKeys = Object.keys(params);
-                  if (paramKeys.length === 0) return urlStr;
+                  var p = getStoredParams();
+                  var keys = Object.keys(p);
+                  if (keys.length === 0) return urlStr;
 
                   var isAbsolute = urlStr.indexOf('http://') === 0 || urlStr.indexOf('https://') === 0 || urlStr.indexOf('//') === 0;
                   var base = window.location.origin;
                   var targetUrl = new URL(isAbsolute ? urlStr : (base + (urlStr.indexOf('/') === 0 ? '' : '/') + urlStr));
 
-                  paramKeys.forEach(function (key) {
-                    if (!targetUrl.searchParams.has(key)) {
-                      targetUrl.searchParams.set(key, params[key]);
+                  keys.forEach(function (k) {
+                    if (!targetUrl.searchParams.has(k)) {
+                      targetUrl.searchParams.set(k, p[k]);
                     }
                   });
 
@@ -307,7 +312,7 @@ export default function RootLayout({ children }) {
                 return originalOpen.call(this, url, target, features);
               };
 
-              // Intercept link clicks dynamically without pre-hydration DOM mutation
+              // Intercept link clicks dynamically
               document.addEventListener('click', function (e) {
                 var target = e.target;
                 while (target && target !== document) {
@@ -323,8 +328,9 @@ export default function RootLayout({ children }) {
             } catch (e) {
               console.error('UTM tracking script error:', e);
             }
-          })();`}
-        </Script>
+          })();`,
+          }}
+        />
       </body>
     </html>
   );
