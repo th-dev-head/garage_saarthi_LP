@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage photo management software, workshop photo management software, vehicle photo management software, repair photo management software, garage media gallery software, workshop media gallery software, before and after photo software, before after vehicle photos, car repair photo software, workshop repair photos software, vehicle inspection photo software, garage inspection photo software, service photos management software, vehicle service photo management, digital vehicle inspection photos, workshop image management software, garage image management software, car service photo software, damage photo management software, garage documentation software, workshop documentation software, vehicle repair documentation software, vehicle condition photo software, car damage photo tracking software, workshop photo records software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/media-gallery",
+    canonical: "https://www.garagesaarthi.com/features/media-gallery/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Workshop Media Gallery & Photo Management Software | GarageSaarthi",
     description:
       "Document car repair and service history with photos. Upload before & after repair images, scratch logs, and damage files directly to job cards.",
-    url: "https://www.garagesaarthi.com/features/media-gallery",
+    url: "https://www.garagesaarthi.com/features/media-gallery/",
     siteName: "GarageSaarthi",
     images: [
       {

@@ -7,8 +7,7 @@ export const metadata = {
   keywords:
     "garage management software free, free garage management software, garage management software india, garage software india, garage management system india, workshop management software india, workshop software india, garage erp software india, garage management app india",
   alternates: {
-    canonical:
-      "https://www.garagesaarthi.com/solutions/garage-management-software-india",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-management-software-india/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -16,8 +15,7 @@ export const metadata = {
     title: "Garage Management Software for Indian Workshops | GarageSaarthi",
     description:
       "Manage job cards, billing, inventory, customers, vehicles, mechanics, service alerts and finances with GarageSaarthi.",
-    url:
-      "https://www.garagesaarthi.com/solutions/garage-management-software-india",
+    url: "https://www.garagesaarthi.com/solutions/garage-management-software-india/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -50,8 +48,7 @@ const jsonLd = {
       name: "Garage Management Software India | GarageSaarthi",
       description:
         "GarageSaarthi is garage management software built for Indian workshops. Manage job cards, GST billing, inventory, customers, staff and finances. Start a 7-day free trial.",
-      url:
-        "https://www.garagesaarthi.com/solutions/garage-management-software-india",
+      url: "https://www.garagesaarthi.com/solutions/garage-management-software-india/",
       about: "Garage Management Software India",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

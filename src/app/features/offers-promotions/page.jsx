@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage marketing software, workshop promotions manager, auto repair marketing, discount coupons for workshop, customer loyalty program garage",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/offers-promotions",
+    canonical: "https://www.garagesaarthi.com/features/offers-promotions/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Workshop Offers & Promotions Marketing Software | GarageSaarthi",
     description:
       "Design and distribute custom discount coupons, loyalty programs, and promotional campaigns via SMS and WhatsApp notifications with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/features/offers-promotions",
+    url: "https://www.garagesaarthi.com/features/offers-promotions/",
     siteName: "GarageSaarthi",
     images: [
       {

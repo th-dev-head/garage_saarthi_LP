@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage billing software, workshop billing software, garage GST billing software, garage billing app, garage billing software India, workshop billing software India, garage invoice and billing software, car garage billing software, auto repair billing software, automobile workshop billing software, automotive workshop billing software, auto workshop billing software, vehicle workshop billing software, digital billing software for garage, online garage billing software, cloud garage billing software, workshop GST billing software, garage invoice software India, workshop invoice software, workshop billing app, garage invoice app",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-billing-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-billing-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Billing Software for Automotive Workshops | GarageSaarthi",
     description:
       "Create professional garage invoices, manage GST billing, track payments and connect workshop billing with daily garage operations.",
-    url: "https://www.garagesaarthi.com/solutions/garage-billing-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-billing-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Billing Software & Workshop Billing App | GarageSaarthi",
       description:
         "Create GST invoices, manage garage billing, track payments and connect job cards with billing using GarageSaarthi.",
-      url: "https://www.garagesaarthi.com/solutions/garage-billing-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-billing-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-billing-software#breadcrumb",

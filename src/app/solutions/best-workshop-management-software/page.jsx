@@ -7,8 +7,7 @@ export const metadata = {
   keywords:
     "best workshop management software, best workshop software, best workshop management software in India, best automotive workshop management software, best car workshop management software, compare workshop management software",
   alternates: {
-    canonical:
-      "https://www.garagesaarthi.com/solutions/best-workshop-management-software",
+    canonical: "https://www.garagesaarthi.com/solutions/best-workshop-management-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -16,8 +15,7 @@ export const metadata = {
     title: "Best Workshop Management Software for Modern Garages | GarageSaarthi",
     description:
       "See what to look for in workshop management software and explore how GarageSaarthi helps manage job cards, billing, inventory, customers, staff and workshop operations.",
-    url:
-      "https://www.garagesaarthi.com/solutions/best-workshop-management-software",
+    url: "https://www.garagesaarthi.com/solutions/best-workshop-management-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -50,8 +48,7 @@ const jsonLd = {
       name: "Best Workshop Management Software in India | GarageSaarthi",
       description:
         "Looking for the best workshop management software in India? Compare essential features and see how GarageSaarthi manages job cards, billing, inventory, CRM and more.",
-      url:
-        "https://www.garagesaarthi.com/solutions/best-workshop-management-software",
+      url: "https://www.garagesaarthi.com/solutions/best-workshop-management-software/",
       about: "Best Workshop Management Software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

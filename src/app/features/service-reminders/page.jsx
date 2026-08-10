@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage service reminder software, vehicle service reminder software, automated service reminders, car service due alerts, bike service reminder software, workshop service reminders, WhatsApp service reminders India, customer retention software for garages, vehicle maintenance alerts",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/service-reminders",
+    canonical: "https://www.garagesaarthi.com/features/service-reminders/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Automated Garage Service Reminders & WhatsApp Alerts | GarageSaarthi",
     description:
       "Never miss a vehicle maintenance due date. Automatically send WhatsApp service reminders, oil change due alerts, and booking links with GarageSaarthi software.",
-    url: "https://www.garagesaarthi.com/features/service-reminders",
+    url: "https://www.garagesaarthi.com/features/service-reminders/",
     siteName: "GarageSaarthi",
     images: [
       {

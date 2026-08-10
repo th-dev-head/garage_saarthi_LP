@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Send WhatsApp service reminders, service due alerts and customer notifications with GarageSaarthi. Automate garage follow-ups and stay connected with customers.",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -13,7 +13,7 @@ export const metadata = {
     title: "Garage WhatsApp Notification Software | GarageSaarthi",
     description:
       "Manage service reminders, customer notifications and garage follow-ups with GarageSaarthi's WhatsApp notification system.",
-    url: "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -43,7 +43,7 @@ const jsonLd = {
       name: "Garage WhatsApp Notification Software | GarageSaarthi",
       description:
         "Send WhatsApp service reminders, service due alerts and customer notifications with GarageSaarthi. Automate garage follow-ups and stay connected with customers.",
-      url: "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-whatsapp-notification-software#breadcrumb",

@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Automate job cards, GST billing, inventory, customer management, service reminders and garage operations with GarageSaarthi. Start a 7-day free trial.",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-automation-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-automation-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -13,7 +13,7 @@ export const metadata = {
     title: "Garage Automation Software for Modern Workshops | GarageSaarthi",
     description:
       "Digitize and automate daily garage operations with GarageSaarthi. Manage job cards, billing, inventory, customers, service reminders and reports from one platform.",
-    url: "https://www.garagesaarthi.com/solutions/garage-automation-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-automation-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -43,7 +43,7 @@ const jsonLd = {
       name: "Garage Automation Software in India | GarageSaarthi",
       description:
         "Automate job cards, GST billing, inventory, customer management, service reminders and garage operations with GarageSaarthi.",
-      url: "https://www.garagesaarthi.com/solutions/garage-automation-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-automation-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-automation-software#breadcrumb",

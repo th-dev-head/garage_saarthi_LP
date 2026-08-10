@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage ERP software, garage ERP system, ERP software for garage, ERP for garage workshop, garage workshop ERP, workshop ERP software, automobile workshop ERP software, automotive workshop ERP, auto repair ERP software, car garage ERP software, vehicle workshop ERP software, garage business ERP software, garage management ERP, workshop management ERP, auto workshop ERP software, cloud garage ERP software, cloud workshop ERP, online garage ERP software, web based garage ERP, garage ERP application, garage ERP platform, digital garage ERP software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-erp-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-erp-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage ERP Software for Automotive Workshops | GarageSaarthi",
     description:
       "Connect workshop operations, inventory, customers, employees, finances and branches with GarageSaarthi’s integrated garage ERP platform.",
-    url: "https://www.garagesaarthi.com/solutions/garage-erp-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-erp-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage ERP Software for Workshops in India | GarageSaarthi",
       description:
         "Manage workshop operations, inventory, customers, staff, finance and branches with GarageSaarthi garage ERP software.",
-      url: "https://www.garagesaarthi.com/solutions/garage-erp-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-erp-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-erp-software#breadcrumb",

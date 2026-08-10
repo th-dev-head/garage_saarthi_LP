@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Manage customer follow-ups, service reminders, notifications, offers and garage relationships with GarageSaarthi customer engagement software.",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -13,7 +13,7 @@ export const metadata = {
     title: "Garage Customer Engagement Software | GarageSaarthi",
     description:
       "Stay connected with garage customers through organized records, service alerts, follow-ups, CRM and offers with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -43,7 +43,7 @@ const jsonLd = {
       name: "Garage Customer Engagement Software | GarageSaarthi",
       description:
         "Manage customer follow-ups, service reminders, notifications, offers and garage relationships with GarageSaarthi customer engagement software.",
-      url: "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-customer-engagement-software#breadcrumb",

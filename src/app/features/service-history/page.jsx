@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "vehicle service history software, vehicle service history management software, vehicle service record software, vehicle service records software, car service history software, car service record software, garage service history software, workshop service history software, service history management system, vehicle repair history software, vehicle history management software, service history software India, digital vehicle service records software, customer vehicle tracking software, cloud vehicle management software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/service-history",
+    canonical: "https://www.garagesaarthi.com/features/service-history/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
     description:
       "Keep vehicle service, repair, and maintenance records organized digitally with GarageSaarthi. Access customer vehicle history and past workshop records in one place.",
-    url: "https://www.garagesaarthi.com/features/service-history",
+    url: "https://www.garagesaarthi.com/features/service-history/",
     siteName: "GarageSaarthi",
     images: [
       {

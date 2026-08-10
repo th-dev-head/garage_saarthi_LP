@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "truck workshop software, truck garage software, truck workshop management software, truck garage management software, truck repair shop software, heavy vehicle workshop software, heavy vehicle garage software, commercial vehicle workshop software, commercial vehicle garage software, truck service management software, truck service software, truck maintenance software, truck maintenance management software, truck workshop ERP, truck garage ERP",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/truck-workshop-software",
+    canonical: "https://www.garagesaarthi.com/solutions/truck-workshop-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Truck Workshop Software for Heavy Vehicle Workshops | GarageSaarthi",
     description:
       "Manage truck repair jobs, commercial vehicle records, spare parts, billing, staff and daily workshop operations with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/solutions/truck-workshop-software",
+    url: "https://www.garagesaarthi.com/solutions/truck-workshop-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -47,7 +47,7 @@ const jsonLd = {
       name: "Truck Workshop Software in India | GarageSaarthi",
       description:
         "Manage truck job cards, vehicle records, inventory, billing, staff and workshop operations with GarageSaarthi truck workshop software. Start a 7-day free trial.",
-      url: "https://www.garagesaarthi.com/solutions/truck-workshop-software",
+      url: "https://www.garagesaarthi.com/solutions/truck-workshop-software/",
       about: "Truck workshop software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage job card software, workshop job card management, digital job card software, garage repair order software, job card software for workshops, digital repair orders for garages, auto repair job card maker, car garage job card software, bike workshop job card app, digital job card app for android, mechanic repair order manager, workshop job card system in India, garage job card format pdf, digital vehicle inspection checklist, job card with whatsapp estimation, garage estimate and job card maker, vehicle repair history job card software, job card software with spare parts allocation, multi-stage vehicle repair tracking software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/job-card-management",
+    canonical: "https://www.garagesaarthi.com/features/job-card-management/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Digital Job Card Management Software | GarageSaarthi",
     description:
       "Create professional digital job cards in under 60 seconds. Track vehicle repair orders, log complaints, attach photos, assign mechanics, and send WhatsApp estimates.",
-    url: "https://www.garagesaarthi.com/features/job-card-management",
+    url: "https://www.garagesaarthi.com/features/job-card-management/",
     siteName: "GarageSaarthi",
     images: [
       {

@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "multi branch garage software, multi branch workshop software, multi garage management software, multiple garage management software, garage chain management software, workshop chain management software, multi location garage software, multi location workshop software, branch management software for garage, branch management software for workshop, centralized garage management software, centralized workshop management software, franchise garage management software, franchise workshop software, garage branch management system, workshop branch management system, cloud based multi garage software, cloud based workshop management software, multi workshop management system, garage software for multiple locations, workshop software for multiple locations, multi outlet garage software, multi outlet workshop software, garage software for franchise business, workshop software for franchise business, branch wise garage management software, branch wise workshop management software, multi branch auto repair software, auto repair software for multiple branches, multi location auto workshop software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/multi-branch-garage-software",
+    canonical: "https://www.garagesaarthi.com/solutions/multi-branch-garage-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Multi Branch Garage Software | GarageSaarthi",
     description:
       "Manage multiple garage locations, workshop branches, users and daily operations from one centralized GarageSaarthi platform.",
-    url: "https://www.garagesaarthi.com/solutions/multi-branch-garage-software",
+    url: "https://www.garagesaarthi.com/solutions/multi-branch-garage-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Multi Branch Garage Software in India | GarageSaarthi",
       description:
         "Manage multiple garage and workshop branches from one platform. Track branch operations, users, reports, inventory and finances with GarageSaarthi.",
-      url: "https://www.garagesaarthi.com/solutions/multi-branch-garage-software",
+      url: "https://www.garagesaarthi.com/solutions/multi-branch-garage-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/multi-branch-garage-software#breadcrumb",

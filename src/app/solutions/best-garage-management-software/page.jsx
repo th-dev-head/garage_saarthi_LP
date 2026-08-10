@@ -7,8 +7,7 @@ export const metadata = {
   keywords:
     "best garage management software, garage management software free, free garage management software, best free garage management software, best garage management software in india, best garage software, top garage management software, best garage management system, best garage management app, compare garage management software",
   alternates: {
-    canonical:
-      "https://www.garagesaarthi.com/solutions/best-garage-management-software",
+    canonical: "https://www.garagesaarthi.com/solutions/best-garage-management-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -16,8 +15,7 @@ export const metadata = {
     title: "Best Garage Management Software in India | GarageSaarthi",
     description:
       "See what to look for when choosing garage management software and explore GarageSaarthi for job cards, billing, inventory, CRM, staff and workshop management.",
-    url:
-      "https://www.garagesaarthi.com/solutions/best-garage-management-software",
+    url: "https://www.garagesaarthi.com/solutions/best-garage-management-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -50,8 +48,7 @@ const jsonLd = {
       name: "Best Garage Management Software in India | GarageSaarthi",
       description:
         "Looking for the best garage management software in India? Compare essential features like job cards, billing, inventory, CRM, service reminders and reports.",
-      url:
-        "https://www.garagesaarthi.com/solutions/best-garage-management-software",
+      url: "https://www.garagesaarthi.com/solutions/best-garage-management-software/",
       about: "Best Garage Management Software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

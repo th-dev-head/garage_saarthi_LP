@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage payroll software, workshop payroll software, mechanic payroll software, garage salary management software, workshop salary management software, payroll management software for garage, automobile workshop payroll software, automotive payroll software, garage employee payroll software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-payroll-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-payroll-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Payroll Software for Workshops | GarageSaarthi",
     description:
       "Manage mechanic salaries, employee payroll, attendance and leave records with GarageSaarthi’s workshop payroll management software.",
-    url: "https://www.garagesaarthi.com/solutions/garage-payroll-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-payroll-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Payroll Software for Workshops | GarageSaarthi",
       description:
         "Manage mechanic salaries and workshop staff payroll with GarageSaarthi garage payroll software. Connect payroll, attendance and leave records in one platform.",
-      url: "https://www.garagesaarthi.com/solutions/garage-payroll-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-payroll-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-payroll-software#breadcrumb",

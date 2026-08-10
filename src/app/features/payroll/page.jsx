@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage payroll software, workshop salary management software, mechanic commission payout software, garage wage slip generator, workshop employee payroll system India, auto repair staff salary software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/payroll",
+    canonical: "https://www.garagesaarthi.com/features/payroll/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Payroll & Mechanic Salary Management Software | GarageSaarthi",
     description:
       "Automate mechanic salaries, labor commission payouts, salary advances, and monthly wage slips with GarageSaarthi payroll management software.",
-    url: "https://www.garagesaarthi.com/features/payroll",
+    url: "https://www.garagesaarthi.com/features/payroll/",
     siteName: "GarageSaarthi",
     images: [
       {
