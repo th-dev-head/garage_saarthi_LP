@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage job card software, garage job card system, garage job card app, digital garage job card, garage work order software, garage repair order software, workshop job card software, mechanic job card software, vehicle job card software, repair order management software, garage job sheet software, repair job tracking software, car garage job card software, car workshop job card software, vehicle repair job card software, car service job card software, paperless garage job card, online garage job card software, cloud garage job card software, garage job card management software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-job-card-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-job-card-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Digital Garage Job Card Software | GarageSaarthi",
     description:
       "Create digital job cards, organize repair work and track workshop jobs with GarageSaarthi’s garage job card system.",
-    url: "https://www.garagesaarthi.com/solutions/garage-job-card-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-job-card-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Job Card Software for Workshops | GarageSaarthi",
       description:
         "Create digital job cards, manage repair work orders and track garage jobs with GarageSaarthi.",
-      url: "https://www.garagesaarthi.com/solutions/garage-job-card-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-job-card-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-job-card-software#breadcrumb",

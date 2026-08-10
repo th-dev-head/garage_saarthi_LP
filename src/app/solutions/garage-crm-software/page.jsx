@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage crm software, garage crm, garage customer management software, workshop crm software, workshop crm, automobile crm software, automotive crm software, auto repair crm software, auto workshop crm software, vehicle workshop crm software, car garage crm software, garage lead management software, garage customer follow up software, garage customer tracking software, garage customer database software, garage client management software, automotive customer management software, customer relationship management software for garage, workshop customer management software, mechanic customer management software, garage customer record software, garage customer history software, garage customer communication software, garage customer engagement software, workshop lead management software, vehicle owner management software, customer retention software for garages, crm software for car workshop, crm software for auto repair shop, crm for automobile workshop",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-crm-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-crm-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage CRM Software for Automotive Workshops | GarageSaarthi",
     description:
       "Manage leads, customer records and follow-ups with GarageSaarthi CRM software built for garages and automotive workshops.",
-    url: "https://www.garagesaarthi.com/solutions/garage-crm-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-crm-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage CRM Software for Workshops in India | GarageSaarthi",
       description:
         "Manage garage leads, customers, follow-ups and customer records with GarageSaarthi CRM software for automotive workshops.",
-      url: "https://www.garagesaarthi.com/solutions/garage-crm-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-crm-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-crm-software#breadcrumb",

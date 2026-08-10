@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage accounting software, workshop accounting software, auto workshop accounting software, automobile workshop accounting software, car garage accounting software, accounting software for garage, accounting software for workshops, garage finance management software, garage expense management software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-accounting-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-accounting-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Accounting Software for Automotive Workshops | GarageSaarthi",
     description:
       "Organize garage payments, expenses, financial records, GST billing and CA access with GarageSaarthi’s workshop-focused accounting and finance tools.",
-    url: "https://www.garagesaarthi.com/solutions/garage-accounting-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-accounting-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Accounting Software for Workshops | GarageSaarthi",
       description:
         "Manage garage payments, expenses, finances, GST billing and records with GarageSaarthi garage accounting software. Give your CA access and start a free trial.",
-      url: "https://www.garagesaarthi.com/solutions/garage-accounting-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-accounting-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-accounting-software#breadcrumb",

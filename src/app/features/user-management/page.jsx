@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "user management software, user management system, user management app, employee user management software, staff management software, employee management software, employee access management, role based access control software, role management software, user roles and permissions software, access control software, permission management software, multi user software, multi user management system, multi user access software, team management software, workforce management software, workshop staff management software, garage staff management software, garage employee management software, workshop employee management software, garage user management software, workshop user management software, garage access management software, workshop access control software, employee login management software, staff login management software, workshop user access control, garage role management software, secure user management software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/user-management",
+    canonical: "https://www.garagesaarthi.com/features/user-management/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Workshop Staff & User Management Software | GarageSaarthi",
     description:
       "Secure your garage billing operations and manage mechanic user access. Create staff logins, set role-based permissions, and track daily activity logs.",
-    url: "https://www.garagesaarthi.com/features/user-management",
+    url: "https://www.garagesaarthi.com/features/user-management/",
     siteName: "GarageSaarthi",
     images: [
       {

@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "bike workshop software, bike garage software, bike workshop management software, bike repair shop software, bike service center software, bike service management software, bike workshop management system, bike garage management system, motorcycle workshop software, motorcycle garage software, motorcycle repair shop software, two wheeler workshop software, two wheeler garage software, two wheeler service center software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/bike-workshop-software",
+    canonical: "https://www.garagesaarthi.com/solutions/bike-workshop-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Bike Workshop Software for Two-Wheeler Garages | GarageSaarthi",
     description:
       "Manage bike service jobs, spare parts, customers, vehicles, staff, billing and service follow-ups with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/solutions/bike-workshop-software",
+    url: "https://www.garagesaarthi.com/solutions/bike-workshop-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -47,7 +47,7 @@ const jsonLd = {
       name: "Bike Workshop Software in India | GarageSaarthi",
       description:
         "Manage bike job cards, spare parts, customers, service records, billing, staff and service alerts with GarageSaarthi bike workshop software. Try it free for 7 days.",
-      url: "https://www.garagesaarthi.com/solutions/bike-workshop-software",
+      url: "https://www.garagesaarthi.com/solutions/bike-workshop-software/",
       about: "Bike workshop software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

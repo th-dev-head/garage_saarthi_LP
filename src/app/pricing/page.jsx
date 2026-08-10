@@ -7,13 +7,13 @@ export const metadata = {
   keywords:
     "garage management software free, free garage management software, garage software free trial, garage software pricing India, affordable garage management software, workshop management software plans, GST billing software price, cheap garage software India",
   alternates: {
-    canonical: "https://garagesaarthi.com/pricing",
+    canonical: "https://garagesaarthi.com/pricing/",
   },
   openGraph: {
     title: "GarageSaarthi Pricing – Start Free Trial Today",
     description:
       "Simple, transparent pricing for Indian garage owners. Get GST billing, digital job cards & WhatsApp alerts at an unbeatable price.",
-    url: "https://garagesaarthi.com/pricing",
+    url: "https://garagesaarthi.com/pricing/",
     images: [{ url: "https://garagesaarthi.com/garage.png", width: 1200, height: 630 }],
   },
 };

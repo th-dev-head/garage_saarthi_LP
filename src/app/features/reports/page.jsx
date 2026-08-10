@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage reports software, workshop analytics software, auto repair shop performance reports, garage revenue tracker, spare parts velocity report, mechanic productivity analytics, workshop P&L report, GST tax reports garage, garage business reports, workshop financial report software, auto repair reporting software, garage sales analytics, workshop profit reports, garage audit trail logs, export garage reports for CA",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/reports",
+    canonical: "https://www.garagesaarthi.com/features/reports/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Reports & Analytics Software | GarageSaarthi",
     description:
       "Track daily workshop revenue trends, spare parts inventory turnover, technician labor productivity, and GST profit statements with GarageSaarthi analytics.",
-    url: "https://www.garagesaarthi.com/features/reports",
+    url: "https://www.garagesaarthi.com/features/reports/",
     siteName: "GarageSaarthi",
     images: [
       {

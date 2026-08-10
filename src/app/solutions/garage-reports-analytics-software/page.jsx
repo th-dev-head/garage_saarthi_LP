@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage reports software, garage reporting software, garage analytics software, workshop reports software, workshop reporting software, workshop analytics software, garage dashboard software, garage performance reports, garage KPI software, garage MIS reports, garage business reports software, garage sales reports software, garage revenue reports software, garage profit reports software, garage financial reports software, garage inventory reports software, garage service reports software, garage customer reports software, garage employee reports software, mechanic performance reports, garage business analytics, garage business intelligence software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Reports & Analytics Software | GarageSaarthi",
     description:
       "Understand your garage business with organized reports for sales, finance, inventory, services, customers and workshop operations.",
-    url: "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Reports & Analytics Software | GarageSaarthi",
       description:
         "Track garage sales, finance, inventory, services, customers and staff with GarageSaarthi reports and analytics software. Start your 7-day free trial.",
-      url: "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-reports-analytics-software#breadcrumb",

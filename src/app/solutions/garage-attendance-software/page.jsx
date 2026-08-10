@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage attendance software, workshop attendance software, mechanic attendance software, mechanic attendance app, attendance management software for garage, employee attendance software for garage, garage employee attendance system",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-attendance-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-attendance-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Attendance Software for Workshops | GarageSaarthi",
     description:
       "Manage mechanic and workshop staff attendance digitally with GarageSaarthi. Keep attendance, leave and payroll operations organized in one platform.",
-    url: "https://www.garagesaarthi.com/solutions/garage-attendance-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-attendance-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Attendance Software for Workshops | GarageSaarthi",
       description:
         "Track mechanic and staff attendance with GarageSaarthi garage attendance software. Manage daily attendance, leave and payroll records from one platform.",
-      url: "https://www.garagesaarthi.com/solutions/garage-attendance-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-attendance-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-attendance-software#breadcrumb",

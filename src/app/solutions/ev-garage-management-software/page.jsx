@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "EV Garage Management Software, EV Workshop Management Software, Electric Vehicle Garage Management Software, Electric Vehicle Workshop Management Software, EV Repair Shop Software, EV Workshop Software, EV Garage Software, EV Service Center Management Software, EV Service Station Software, EV Repair Workshop Software, EV Service Management Software, EV Workshop ERP Software, EV Garage ERP Software, EV Garage CRM Software, EV Workshop CRM",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/ev-garage-management-software",
+    canonical: "https://www.garagesaarthi.com/solutions/ev-garage-management-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "EV Garage Management Software for Modern EV Workshops | GarageSaarthi",
     description:
       "Manage your EV workshop operations with GarageSaarthi. Handle job cards, inventory, customers, vehicles, staff, finance and service alerts from one platform.",
-    url: "https://www.garagesaarthi.com/solutions/ev-garage-management-software",
+    url: "https://www.garagesaarthi.com/solutions/ev-garage-management-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -47,7 +47,7 @@ const jsonLd = {
       name: "EV Garage Management Software in India | GarageSaarthi",
       description:
         "Manage EV job cards, inventory, customers, vehicles, billing, staff and service alerts with GarageSaarthi EV garage management software. Start a 7-day free trial.",
-      url: "https://www.garagesaarthi.com/solutions/ev-garage-management-software",
+      url: "https://www.garagesaarthi.com/solutions/ev-garage-management-software/",
       about: "EV garage management software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

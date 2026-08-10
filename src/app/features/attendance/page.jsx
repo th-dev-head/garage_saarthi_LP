@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage attendance software, workshop attendance management, mechanic attendance app, garage staff attendance tracking, employee attendance software for garage, mechanic check in software India, garage leave and attendance manager",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/attendance",
+    canonical: "https://www.garagesaarthi.com/features/attendance/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Attendance Management Software for Workshops | GarageSaarthi",
     description:
       "Manage mechanic and workshop staff attendance digitally with GarageSaarthi. Keep attendance, leave and payroll operations organized in one platform.",
-    url: "https://www.garagesaarthi.com/features/attendance",
+    url: "https://www.garagesaarthi.com/features/attendance/",
     siteName: "GarageSaarthi",
     images: [
       {

@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "multi branch garage software, multi location workshop management, central garage software, chain workshop management, multi store garage app, centralized garage database",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/branches",
+    canonical: "https://www.garagesaarthi.com/features/branches/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Multi-Branch Garage & Workshop Management Software | GarageSaarthi",
     description:
       "Manage inventory, employee permissions, billing operations, and consolidated sales dashboards across multiple workshop branch locations with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/features/branches",
+    url: "https://www.garagesaarthi.com/features/branches/",
     siteName: "GarageSaarthi",
     images: [
       {

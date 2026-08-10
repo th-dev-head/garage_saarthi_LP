@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage Google review software, workshop customer review collection, auto repair shop rating growth, WhatsApp review links garage, Google 5 star reviews garage India, garage reputation management, local SEO workshop software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/customer-reviews",
+    canonical: "https://www.garagesaarthi.com/features/customer-reviews/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Automated Garage Google Review Collection Software | GarageSaarthi",
     description:
       "Turn happy customers into Google 5-star reviews automatically. Send WhatsApp feedback links post-invoice, shield negative ratings, and rank #1 in local workshop searches.",
-    url: "https://www.garagesaarthi.com/features/customer-reviews",
+    url: "https://www.garagesaarthi.com/features/customer-reviews/",
     siteName: "GarageSaarthi",
     images: [
       {

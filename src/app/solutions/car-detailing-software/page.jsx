@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "car detailing software, car detailing management software, detailing shop software, auto detailing software, automobile detailing software, vehicle detailing software, detailing workshop software, detailing garage software, detailing management system, car detailing system, detailing shop management software, auto detailing management software, detailing workshop management system, car detailing software India, detailing software India, detailing app, car detailing app",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/car-detailing-software",
+    canonical: "https://www.garagesaarthi.com/solutions/car-detailing-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Car Detailing Software for Modern Detailing Businesses | GarageSaarthi",
     description:
       "Manage detailing jobs, customers, vehicles, billing, inventory, staff and daily operations with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/solutions/car-detailing-software",
+    url: "https://www.garagesaarthi.com/solutions/car-detailing-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -47,7 +47,7 @@ const jsonLd = {
       name: "Car Detailing Software for Detailing Shops | GarageSaarthi",
       description:
         "Manage detailing jobs, customers, vehicles, billing, inventory, staff and service follow-ups with GarageSaarthi car detailing software. Start a 7-day free trial.",
-      url: "https://www.garagesaarthi.com/solutions/car-detailing-software",
+      url: "https://www.garagesaarthi.com/solutions/car-detailing-software/",
       about: "Car detailing software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

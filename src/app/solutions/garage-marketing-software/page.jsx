@@ -7,8 +7,7 @@ export const metadata = {
   keywords:
     "garage marketing software, auto repair shop marketing software, workshop marketing software, automotive marketing software, garage customer marketing software, garage promotion software, workshop promotion software, garage customer engagement software, garage customer retention software, garage WhatsApp marketing software, workshop WhatsApp marketing software, garage follow up software",
   alternates: {
-    canonical:
-      "https://www.garagesaarthi.com/solutions/garage-marketing-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-marketing-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -16,8 +15,7 @@ export const metadata = {
     title: "Garage Marketing Software for Automotive Workshops | GarageSaarthi",
     description:
       "Engage customers, manage garage promotions, send WhatsApp communication and improve customer follow-ups with GarageSaarthi.",
-    url:
-      "https://www.garagesaarthi.com/solutions/garage-marketing-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-marketing-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -50,8 +48,7 @@ const jsonLd = {
       name: "Garage Marketing Software for Workshops | GarageSaarthi",
       description:
         "Engage garage customers, share offers, manage follow-ups and send WhatsApp promotions with GarageSaarthi garage marketing software. Start a 7-day free trial.",
-      url:
-        "https://www.garagesaarthi.com/solutions/garage-marketing-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-marketing-software/",
       about: "Garage Marketing Software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

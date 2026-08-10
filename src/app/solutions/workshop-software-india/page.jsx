@@ -7,8 +7,7 @@ export const metadata = {
   keywords:
     "workshop software india, workshop management software india, workshop software for automobile workshops in india, car workshop software india, bike workshop software india, auto workshop software india",
   alternates: {
-    canonical:
-      "https://www.garagesaarthi.com/solutions/workshop-software-india",
+    canonical: "https://www.garagesaarthi.com/solutions/workshop-software-india/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -16,8 +15,7 @@ export const metadata = {
     title: "Workshop Software for Automobile Workshops in India | GarageSaarthi",
     description:
       "Manage job cards, GST billing, inventory, customer history, staff payroll, and service reminders with GarageSaarthi.",
-    url:
-      "https://www.garagesaarthi.com/solutions/workshop-software-india",
+    url: "https://www.garagesaarthi.com/solutions/workshop-software-india/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -50,8 +48,7 @@ const jsonLd = {
       name: "Workshop Software India | GarageSaarthi",
       description:
         "Manage job cards, GST billing, inventory, customers, vehicles, staff and service reminders with GarageSaarthi workshop software in India. Start a 7-day free trial.",
-      url:
-        "https://www.garagesaarthi.com/solutions/workshop-software-india",
+      url: "https://www.garagesaarthi.com/solutions/workshop-software-india/",
       about: "Workshop Software India",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

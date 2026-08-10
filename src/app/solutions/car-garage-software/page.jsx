@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "car garage management software, auto repair shop software, automobile workshop software, garage management software, vehicle workshop software, workshop management software, garage management system, car garage software India",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/car-garage-software",
+    canonical: "https://www.garagesaarthi.com/solutions/car-garage-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Car Garage Management Software | GarageSaarthi",
     description:
       "Manage your car garage with digital job cards, inventory, customer records, billing, service alerts, staff management and reports.",
-    url: "https://www.garagesaarthi.com/solutions/car-garage-software",
+    url: "https://www.garagesaarthi.com/solutions/car-garage-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -47,7 +47,7 @@ const jsonLd = {
       name: "Car Garage Management Software in India | GarageSaarthi",
       description:
         "Manage job cards, car service history, inventory, billing, customers, staff and service alerts with GarageSaarthi car garage management software.",
-      url: "https://www.garagesaarthi.com/solutions/car-garage-software",
+      url: "https://www.garagesaarthi.com/solutions/car-garage-software/",
       about: "Car garage management software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

@@ -6,7 +6,7 @@ export const metadata = {
     "Read the terms and conditions for using GarageSaarthi's garage management platform. Understand your rights and our service policies.",
   keywords: "GarageSaarthi terms conditions, garage software terms of service, usage policy garage app",
   alternates: {
-    canonical: "https://garagesaarthi.com/terms-and-conditions",
+    canonical: "https://garagesaarthi.com/terms-and-conditions/",
   },
   robots: "noindex, follow",
 };

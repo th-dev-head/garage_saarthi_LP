@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "role based access control software, role management software, user roles and permissions software, access control software, permission management software, secure user management software, staff login management software, workshop user access control, garage role management software, employee access management",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/role-based-access",
+    canonical: "https://www.garagesaarthi.com/features/role-based-access/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Role-Based Access Control Software for Garages | GarageSaarthi",
     description:
       "Protect your workshop's sensitive financial data. Set role-based access configurations for admin managers, cashiers, technicians, and mechanics.",
-    url: "https://www.garagesaarthi.com/features/role-based-access",
+    url: "https://www.garagesaarthi.com/features/role-based-access/",
     siteName: "GarageSaarthi",
     images: [
       {

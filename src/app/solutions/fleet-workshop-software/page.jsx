@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "fleet workshop management software, fleet workshop software, fleet maintenance software, fleet repair software, fleet service management software, fleet management software, fleet service software, fleet repair management software, fleet maintenance management software, vehicle fleet maintenance software, commercial fleet maintenance software, fleet garage software, fleet workshop management system, workshop software for fleet management, fleet vehicle workshop software, fleet repair shop software, fleet maintenance management system, vehicle maintenance software for fleets",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/fleet-workshop-software",
+    canonical: "https://www.garagesaarthi.com/solutions/fleet-workshop-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Fleet Workshop Management Software | GarageSaarthi",
     description:
       "Manage fleet repairs, maintenance workflows, job cards, vehicle records, inventory and workshop operations from one platform.",
-    url: "https://www.garagesaarthi.com/solutions/fleet-workshop-software",
+    url: "https://www.garagesaarthi.com/solutions/fleet-workshop-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -47,7 +47,7 @@ const jsonLd = {
       name: "Fleet Workshop Management Software | GarageSaarthi",
       description:
         "Manage fleet workshop repairs, job cards, vehicle service records, inventory, staff and maintenance operations with GarageSaarthi fleet workshop software. Start a 7-day free trial.",
-      url: "https://www.garagesaarthi.com/solutions/fleet-workshop-software",
+      url: "https://www.garagesaarthi.com/solutions/fleet-workshop-software/",
       about: "Fleet workshop management software",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {

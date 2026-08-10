@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "vehicle service history software, vehicle service history management software, vehicle service record software, vehicle service records software, car service history software, car service record software, garage service history software, workshop service history software, service history management system, vehicle repair history software, vehicle history management software, service history software India",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/vehicle-service-history-software",
+    canonical: "https://www.garagesaarthi.com/solutions/vehicle-service-history-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Vehicle Service History Software for Garages | GarageSaarthi",
     description:
       "Keep vehicle service, repair and maintenance records organized digitally with GarageSaarthi. Access customer vehicle history and past workshop records in one place.",
-    url: "https://www.garagesaarthi.com/solutions/vehicle-service-history-software",
+    url: "https://www.garagesaarthi.com/solutions/vehicle-service-history-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Vehicle Service History Software for Garages | GarageSaarthi",
       description:
         "Track vehicle service, repair and maintenance records digitally with GarageSaarthi vehicle service history software for garages and workshops in India.",
-      url: "https://www.garagesaarthi.com/solutions/vehicle-service-history-software",
+      url: "https://www.garagesaarthi.com/solutions/vehicle-service-history-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/vehicle-service-history-software#breadcrumb",

@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "customer management software, garage customer management software, workshop customer management software, auto repair customer management software, automobile customer management software, garage CRM software, workshop CRM software, automotive CRM software, customer database software, garage customer database software, workshop customer database software, customer record management software, customer records software, customer information management software, garage customer tracking software, workshop customer tracking software, customer follow up software, garage customer follow up software, workshop customer follow up software, customer relationship management software, automotive customer management system, garage customer management system, workshop customer management system, customer management app, garage customer management app, workshop customer management app, customer contact management software, customer data management software, customer profile management software, customer history management software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/customers",
+    canonical: "https://www.garagesaarthi.com/features/customers/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Customer Management Software & CRM | GarageSaarthi",
     description:
       "Maintain a 100% accurate customer records database. Track profiles, service history records, and WhatsApp follow-ups.",
-    url: "https://www.garagesaarthi.com/features/customers",
+    url: "https://www.garagesaarthi.com/features/customers/",
     siteName: "GarageSaarthi",
     images: [
       {

@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage finance management software, garage finance software, workshop finance management software, workshop finance software, automobile workshop finance software, auto repair finance software, garage expense management software, garage income and expense software, garage accounting software, workshop accounting software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-finance-management-software",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-finance-management-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Finance Management Software | GarageSaarthi",
     description:
       "Organize garage income, expenses, payments, loans and financial records with GarageSaarthi's workshop finance management software.",
-    url: "https://www.garagesaarthi.com/solutions/garage-finance-management-software",
+    url: "https://www.garagesaarthi.com/solutions/garage-finance-management-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Finance Management Software | GarageSaarthi",
       description:
         "Track garage income, expenses, payments, loans and financial reports with GarageSaarthi garage finance management software. Start a 7-day free trial.",
-      url: "https://www.garagesaarthi.com/solutions/garage-finance-management-software",
+      url: "https://www.garagesaarthi.com/solutions/garage-finance-management-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-finance-management-software#breadcrumb",

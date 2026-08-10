@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage inventory software, workshop spare parts management, auto repair stock tracker, spare parts inventory management software, garage stock control software India, low stock alert garage app, auto parts barcode inventory, garage inventory tracking software, workshop inventory tracking software, spare parts tracking software for garage, garage spare parts software, automotive inventory management software, garage parts management software, workshop parts inventory system, garage stock management software, spare parts stock tracker for workshop, auto parts stock control software, garage inventory management app, workshop spare parts inventory app, cloud garage inventory software, barcode spare parts inventory software, multi branch garage inventory software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/inventory",
+    canonical: "https://www.garagesaarthi.com/features/inventory/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Spare Parts & Inventory Management Software | GarageSaarthi",
     description:
       "Track spare parts and lubricants in real time. Eliminate stock theft, get automated low-stock alerts, and track vendor purchase invoices.",
-    url: "https://www.garagesaarthi.com/features/inventory",
+    url: "https://www.garagesaarthi.com/features/inventory/",
     siteName: "GarageSaarthi",
     images: [
       {

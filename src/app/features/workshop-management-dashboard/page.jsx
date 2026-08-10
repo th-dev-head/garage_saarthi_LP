@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage management dashboard, workshop management dashboard, garage dashboard software, workshop dashboard software, garage software dashboard, workshop software dashboard, automotive workshop dashboard, auto repair dashboard, auto repair shop dashboard, repair shop dashboard software, garage business dashboard, workshop business dashboard, mechanic dashboard software, service center dashboard software, vehicle service dashboard, garage KPI dashboard, workshop KPI dashboard, garage performance dashboard, workshop analytics dashboard, automotive business dashboard, garage operations dashboard, workshop operations dashboard, dashboard for garage management software, dashboard for workshop management software, garage owner dashboard, workshop owner dashboard",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/workshop-management-dashboard",
+    canonical: "https://www.garagesaarthi.com/features/workshop-management-dashboard/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Workshop Management Dashboard Software | GarageSaarthi",
     description:
       "Real-time workshop management dashboard for auto repair shop owners. Monitor job cards, daily revenue, mechanic KPIs, and spare parts stock from one screen.",
-    url: "https://www.garagesaarthi.com/features/workshop-management-dashboard",
+    url: "https://www.garagesaarthi.com/features/workshop-management-dashboard/",
     siteName: "GarageSaarthi",
     images: [
       {

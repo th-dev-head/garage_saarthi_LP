@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage billing software, workshop invoicing software, GST billing software for garage, auto repair invoice maker, garage invoice software India, digital workshop billing app, garage estimate and invoice maker, spare parts invoicing software, WhatsApp invoice for garage, garage GST invoice maker, workshop billing app for android, automobile billing software, auto parts GST invoice software, garage cash receipt software, cloud workshop billing software, 1 click job card billing, garage invoice generator",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/billing",
+    canonical: "https://www.garagesaarthi.com/features/billing/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Billing & Invoicing Software | GarageSaarthi",
     description:
       "Create professional GST invoices in seconds. Convert job cards to bills in 1 click, itemize spare parts and labor rates, and send WhatsApp PDF bills.",
-    url: "https://www.garagesaarthi.com/features/billing",
+    url: "https://www.garagesaarthi.com/features/billing/",
     siteName: "GarageSaarthi",
     images: [
       {

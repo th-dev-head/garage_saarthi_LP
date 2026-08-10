@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "vehicle management software, vehicle management system, vehicle tracking software for workshops, workshop vehicle management software, garage vehicle management software, automotive vehicle management software, vehicle record management software, vehicle database management software, customer vehicle management software, vehicle information management software, vehicle history management software, vehicle service history software, vehicle maintenance history software, vehicle repair history software, vehicle maintenance record software, vehicle service record software, vehicle service records management, digital vehicle records, vehicle profile management, vehicle details management software, software to manage customer vehicles, software to track vehicle service history, software for vehicle maintenance records, garage software for vehicle records, workshop software for vehicle history, digital vehicle service records software, customer vehicle tracking software, vehicle service management software, workshop vehicle records management, cloud vehicle management software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/vehicles",
+    canonical: "https://www.garagesaarthi.com/features/vehicles/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Vehicle Management Software & Database | GarageSaarthi",
     description:
       "Maintain secure digital vehicle records. Track service histories, chassis details, odometer logs, and body damage logs.",
-    url: "https://www.garagesaarthi.com/features/vehicles",
+    url: "https://www.garagesaarthi.com/features/vehicles/",
     siteName: "GarageSaarthi",
     images: [
       {

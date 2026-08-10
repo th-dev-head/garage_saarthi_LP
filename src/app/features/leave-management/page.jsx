@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "leave management software, employee leave management software, staff leave management software, leave management system, leave management app, online leave management system, employee leave tracking software, leave tracking software, leave request management software, employee leave tracker, staff leave tracker, leave approval software, leave approval system, annual leave management software, employee absence management software, absence management software, leave and attendance management software, employee leave application software, leave record management software, digital leave management system, cloud leave management software, leave management software for workshops, leave management software for garages, garage employee leave management, workshop staff leave management",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/leave-management",
+    canonical: "https://www.garagesaarthi.com/features/leave-management/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Staff Leave Management Software | GarageSaarthi",
     description:
       "Track mechanic leave requests, approval workflows, annual leave records, and digital leave tracking for Indian auto repair workshops.",
-    url: "https://www.garagesaarthi.com/features/leave-management",
+    url: "https://www.garagesaarthi.com/features/leave-management/",
     siteName: "GarageSaarthi",
     images: [
       {

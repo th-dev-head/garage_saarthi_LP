@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "loan management software, garage loan management software, workshop loan management software, business loan management software, loan tracking software, loan tracking system, EMI management software, EMI tracker software, loan EMI tracker, loan repayment tracker, debt management software, debt tracking software, payment reminder software, EMI reminder software, installment management software, installment tracker, business EMI management, garage finance management software, workshop finance management, loan record management software, loan register software, business loan tracker, loan payment management, manage business loans, loan management app, EMI management app, business finance tracker, garage loan EMI tracker, workshop loan tracker, loan ledger software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/loans",
+    canonical: "https://www.garagesaarthi.com/features/loans/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Loan & EMI Management Software | GarageSaarthi",
     description:
       "Track garage business loans, equipment financing, monthly EMI schedules, bank mandate auto-debits, and interest calculations with GarageSaarthi loan tracker.",
-    url: "https://www.garagesaarthi.com/features/loans",
+    url: "https://www.garagesaarthi.com/features/loans/",
     siteName: "GarageSaarthi",
     images: [
       {

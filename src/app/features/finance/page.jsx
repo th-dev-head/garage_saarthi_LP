@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage finance management software, workshop cash flow software, garage ledger software, auto repair shop P&L tracker, vendor credit management garage, garage GST accounting software India, workshop income expense manager",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/finance",
+    canonical: "https://www.garagesaarthi.com/features/finance/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Finance Management & Cash Flow Accounting Software | GarageSaarthi",
     description:
       "Track daily workshop revenue, counter cash, UPI settlements, vendor credit dues, mechanic commissions, and real-time net profit margins with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/features/finance",
+    url: "https://www.garagesaarthi.com/features/finance/",
     siteName: "GarageSaarthi",
     images: [
       {

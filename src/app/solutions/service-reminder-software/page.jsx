@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "service reminder software, vehicle service reminder software, car service reminder software, garage service reminder software, workshop service reminder software, service reminder system, WhatsApp service reminder software, service reminder app, automated service reminder software, customer reminder software",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/service-reminder-software",
+    canonical: "https://www.garagesaarthi.com/solutions/service-reminder-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Service Reminder Software for Garages | GarageSaarthi",
     description:
       "Track upcoming vehicle services, manage customer follow-ups and send WhatsApp service reminders with GarageSaarthi.",
-    url: "https://www.garagesaarthi.com/solutions/service-reminder-software",
+    url: "https://www.garagesaarthi.com/solutions/service-reminder-software/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Service Reminder Software for Garages | GarageSaarthi",
       description:
         "Automate vehicle service reminders and customer follow-ups with GarageSaarthi service reminder software. Send WhatsApp reminders and track due services.",
-      url: "https://www.garagesaarthi.com/solutions/service-reminder-software",
+      url: "https://www.garagesaarthi.com/solutions/service-reminder-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/service-reminder-software#breadcrumb",

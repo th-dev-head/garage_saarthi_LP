@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage WhatsApp automation software, workshop WhatsApp alerts, WhatsApp job card software, digital PDF bill WhatsApp, garage customer messaging software, workshop bill on WhatsApp, WhatsApp service reminders, auto repair shop WhatsApp alerts India",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/features/automation",
+    canonical: "https://www.garagesaarthi.com/features/automation/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage WhatsApp Automation & Digital Billing Software | GarageSaarthi",
     description:
       "Send automated WhatsApp job card estimates, digital PDF invoices, UPI payment links, and service due alerts directly to customers with GarageSaarthi software.",
-    url: "https://www.garagesaarthi.com/features/automation",
+    url: "https://www.garagesaarthi.com/features/automation/",
     siteName: "GarageSaarthi",
     images: [
       {

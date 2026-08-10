@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "garage management app, workshop management app, auto repair shop app, garage management mobile app, automobile workshop app, garage app, workshop app, mechanic app, garage software app, mechanic management app",
   alternates: {
-    canonical: "https://www.garagesaarthi.com/solutions/garage-management-app",
+    canonical: "https://www.garagesaarthi.com/solutions/garage-management-app/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata = {
     title: "Garage Management App for Modern Workshops | GarageSaarthi",
     description:
       "Manage daily garage operations from the GarageSaarthi app. Handle job cards, customers, vehicles, inventory, staff, finance and service alerts.",
-    url: "https://www.garagesaarthi.com/solutions/garage-management-app",
+    url: "https://www.garagesaarthi.com/solutions/garage-management-app/",
     siteName: "GarageSaarthi",
     images: [
       {
@@ -45,7 +45,7 @@ const jsonLd = {
       name: "Garage Management App for Workshops in India | GarageSaarthi",
       description:
         "Manage job cards, customers, vehicles, inventory, staff, finance and service alerts with the GarageSaarthi garage management app.",
-      url: "https://www.garagesaarthi.com/solutions/garage-management-app",
+      url: "https://www.garagesaarthi.com/solutions/garage-management-app/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
         "@id": "https://www.garagesaarthi.com/solutions/garage-management-app#breadcrumb",
