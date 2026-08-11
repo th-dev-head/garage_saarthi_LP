@@ -223,18 +223,21 @@ export default function RootLayout({ children }) {
               }
 
               // 1. Capture current URL search params immediately
-              var currentParams = getStoredParams();
               var search = window.location.search;
-              if (search) {
-                var urlParams = new URLSearchParams(search);
-                var hasNew = false;
+              var urlParams = search ? new URLSearchParams(search) : null;
+              var hasGoogleAdInUrl = urlParams && (urlParams.get('gclid') || urlParams.get('gad_source') || urlParams.get('gad_campaignid') || urlParams.get('gbraid') || urlParams.get('wbraid'));
+              var hasMetaAdInUrl = urlParams && (urlParams.get('fbclid') || urlParams.get('fbc'));
+              var hasNewUtmInUrl = urlParams && urlParams.get('utm_source');
+
+              // If a new Ad or new campaign is clicked, start fresh so previous test UTMs don't stick
+              var currentParams = (hasGoogleAdInUrl || hasMetaAdInUrl || hasNewUtmInUrl) ? {} : getStoredParams();
+
+              if (urlParams) {
                 urlParams.forEach(function (val, key) {
                   if (val && val.trim() !== '') {
                     currentParams[key] = val.trim();
-                    hasNew = true;
                   }
                 });
-                if (hasNew) saveParams(currentParams);
               }
 
               // 2. Intelligent Auto-Attribution for Google Ads and Meta Ads
@@ -242,24 +245,16 @@ export default function RootLayout({ children }) {
               var hasMetaAdParam = currentParams['fbclid'] || currentParams['fbc'];
 
               if (hasGoogleAdParam) {
-                if (!currentParams['utm_source'] || currentParams['utm_source'] === 'landing_page') {
-                  currentParams['utm_source'] = 'google_ads';
-                  currentParams['source'] = 'google_ads';
-                }
-                if (!currentParams['utm_medium'] || currentParams['utm_medium'] === 'website') {
-                  currentParams['utm_medium'] = 'cpc';
-                }
-                if (currentParams['gad_campaignid'] && !currentParams['utm_campaign']) {
+                currentParams['utm_source'] = 'google_ads';
+                currentParams['source'] = 'google_ads';
+                currentParams['utm_medium'] = 'cpc';
+                if (currentParams['gad_campaignid']) {
                   currentParams['utm_campaign'] = 'g_camp_' + currentParams['gad_campaignid'];
                 }
               } else if (hasMetaAdParam) {
-                if (!currentParams['utm_source'] || currentParams['utm_source'] === 'landing_page') {
-                  currentParams['utm_source'] = 'facebook_ads';
-                  currentParams['source'] = 'facebook_ads';
-                }
-                if (!currentParams['utm_medium'] || currentParams['utm_medium'] === 'website') {
-                  currentParams['utm_medium'] = 'paid_social';
-                }
+                currentParams['utm_source'] = 'facebook_ads';
+                currentParams['source'] = 'facebook_ads';
+                currentParams['utm_medium'] = 'paid_social';
               } else {
                 if (!currentParams['source'] && currentParams['utm_source']) {
                   currentParams['source'] = currentParams['utm_source'];
@@ -276,7 +271,7 @@ export default function RootLayout({ children }) {
               }
 
               if (!currentParams['lp_path']) {
-                currentParams['lp_path'] = currentPath;
+                currentParams['lp_path'] = window.location.pathname || '/';
               }
 
               if (!currentParams['referrer'] && document.referrer) {
@@ -288,6 +283,7 @@ export default function RootLayout({ children }) {
                 } catch (e) {}
               }
 
+              // ALWAYS save the finalized computed params to storage!
               saveParams(currentParams);
 
               function isTargetUrl(urlStr) {
@@ -306,7 +302,7 @@ export default function RootLayout({ children }) {
               function appendParams(urlStr) {
                 if (!urlStr || typeof urlStr !== 'string') return urlStr;
                 try {
-                  var p = getStoredParams();
+                  var p = (currentParams && Object.keys(currentParams).length > 0) ? currentParams : getStoredParams();
                   var keys = Object.keys(p);
                   if (keys.length === 0) return urlStr;
 
