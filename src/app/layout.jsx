@@ -237,19 +237,42 @@ export default function RootLayout({ children }) {
                 if (hasNew) saveParams(currentParams);
               }
 
-              // 2. Fallbacks for source & utm_source
-              var currentPath = window.location.pathname || '/';
-              if (!currentParams['source'] && currentParams['utm_source']) {
-                currentParams['source'] = currentParams['utm_source'];
-              } else if (currentParams['source'] && !currentParams['utm_source']) {
-                currentParams['utm_source'] = currentParams['source'];
-              } else if (!currentParams['source'] && !currentParams['utm_source']) {
-                currentParams['source'] = 'landing_page';
-                currentParams['utm_source'] = 'landing_page';
-              }
+              // 2. Intelligent Auto-Attribution for Google Ads and Meta Ads
+              var hasGoogleAdParam = currentParams['gclid'] || currentParams['gad_source'] || currentParams['gad_campaignid'] || currentParams['gbraid'] || currentParams['wbraid'];
+              var hasMetaAdParam = currentParams['fbclid'] || currentParams['fbc'];
 
-              if (!currentParams['utm_medium']) {
-                currentParams['utm_medium'] = 'website';
+              if (hasGoogleAdParam) {
+                if (!currentParams['utm_source'] || currentParams['utm_source'] === 'landing_page') {
+                  currentParams['utm_source'] = 'google_ads';
+                  currentParams['source'] = 'google_ads';
+                }
+                if (!currentParams['utm_medium'] || currentParams['utm_medium'] === 'website') {
+                  currentParams['utm_medium'] = 'cpc';
+                }
+                if (currentParams['gad_campaignid'] && !currentParams['utm_campaign']) {
+                  currentParams['utm_campaign'] = 'g_camp_' + currentParams['gad_campaignid'];
+                }
+              } else if (hasMetaAdParam) {
+                if (!currentParams['utm_source'] || currentParams['utm_source'] === 'landing_page') {
+                  currentParams['utm_source'] = 'facebook_ads';
+                  currentParams['source'] = 'facebook_ads';
+                }
+                if (!currentParams['utm_medium'] || currentParams['utm_medium'] === 'website') {
+                  currentParams['utm_medium'] = 'paid_social';
+                }
+              } else {
+                if (!currentParams['source'] && currentParams['utm_source']) {
+                  currentParams['source'] = currentParams['utm_source'];
+                } else if (currentParams['source'] && !currentParams['utm_source']) {
+                  currentParams['utm_source'] = currentParams['source'];
+                } else if (!currentParams['source'] && !currentParams['utm_source']) {
+                  currentParams['source'] = 'landing_page';
+                  currentParams['utm_source'] = 'landing_page';
+                }
+
+                if (!currentParams['utm_medium']) {
+                  currentParams['utm_medium'] = 'website';
+                }
               }
 
               if (!currentParams['lp_path']) {
