@@ -1,20 +1,20 @@
 import VehicleServiceHistoryFeature from "@/src/views/features/VehicleServiceHistoryFeature";
 
 export const metadata = {
-  title: "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
+  title: "Garage Service History Tracking Software for Auto Repair Shops | GarageSaarthi",
   description:
-    "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi. Manage customer vehicle service history database files, Odometer logs, and details on cloud.",
+    "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi workshop software. Manage customer vehicle history databases, odometer logs, and details on cloud.",
   keywords:
-    "vehicle service history software, vehicle service history management software, vehicle service record software, vehicle service records software, car service history software, car service record software, garage service history software, workshop service history software, service history management system, vehicle repair history software, vehicle history management software, service history software India, digital vehicle service records software, customer vehicle tracking software, cloud vehicle management software",
+    "garage service history software, vehicle repair history tracker, workshop service history software, customer vehicle tracking software, auto repair history system, car service record software",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/service-history/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
-    title: "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
+    title: "Garage Service History Tracking Software for Auto Repair Shops",
     description:
-      "Keep vehicle service, repair, and maintenance records organized digitally with GarageSaarthi. Access customer vehicle history and past workshop records in one place.",
+      "Track customer vehicle service, repair, and maintenance records digitally with GarageSaarthi workshop software. Manage databases on cloud.",
     url: "https://www.garagesaarthi.com/features/service-history/",
     siteName: "GarageSaarthi",
     images: [
@@ -29,9 +29,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
+    title: "Garage Service History Tracking Software for Auto Repair Shops",
     description:
-      "Keep vehicle service, repair, and maintenance records organized digitally with GarageSaarthi. Access customer vehicle history and past workshop records in one place.",
+      "Track customer vehicle service, repair, and maintenance records digitally with GarageSaarthi workshop software. Manage databases on cloud.",
     images: ["https://www.garagesaarthi.com/garagesaarthi-vehicle-service-history-software-og.webp"],
   },
 };
@@ -42,18 +42,18 @@ const jsonLd = {
     {
       "@type": "WebPage",
       "@id": "https://www.garagesaarthi.com/features/service-history",
-      "name": "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
-      "description": "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi. Manage customer vehicle service history database files, Odometer logs, and details on cloud.",
+      "name": "Garage Service History Tracking Software for Auto Repair Shops | GarageSaarthi",
+      "description": "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi workshop software. Manage customer vehicle history databases, odometer logs, and details on cloud.",
       "url": "https://www.garagesaarthi.com/features/service-history",
       "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
     },
     {
       "@type": "SoftwareApplication",
       "@id": "https://www.garagesaarthi.com/features/service-history#software",
-      "name": "Vehicle Service History Software for Garages & Workshops | GarageSaarthi",
+      "name": "Garage Service History Tracking Software for Auto Repair Shops | GarageSaarthi",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, Android",
-      "description": "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi. Manage customer vehicle service history database files, Odometer logs, and details on cloud.",
+      "description": "Track vehicle service, repair, and maintenance records digitally with GarageSaarthi workshop software. Manage customer vehicle history databases, odometer logs, and details on cloud.",
       "url": "https://www.garagesaarthi.com/features/service-history"
     },
     {

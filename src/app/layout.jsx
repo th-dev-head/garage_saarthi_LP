@@ -15,21 +15,21 @@ export const metadata = {
   authors: [{ name: "GarageSaarthi" }],
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   alternates: {
-    canonical: "https://garagesaarthi.com/",
+    canonical: "https://www.garagesaarthi.com/",
   },
   verification: {
     google: "jIZJKHDfWrzNp11N6RbFEM5wTDMr6QHZk6nyO7BG0X8",
   },
   openGraph: {
     type: "website",
-    url: "https://garagesaarthi.com/",
+    url: "https://www.garagesaarthi.com/",
     siteName: "GarageSaarthi",
     title: "GarageSaarthi – Your Digital Partner in Garage Management",
     description:
       "GarageSaarthi is a smart, all-in-one garage management platform that helps auto workshops streamline operations, manage customers, and grow their business effortlessly.",
     images: [
       {
-        url: "https://garagesaarthi.com/garage.png",
+        url: "https://www.garagesaarthi.com/garage.png",
         width: 1200,
         height: 630,
         alt: "GarageSaarthi Preview Image",
@@ -39,11 +39,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    url: "https://garagesaarthi.com/",
+    url: "https://www.garagesaarthi.com/",
     title: "GarageSaarthi – Your Digital Partner in Garage Management",
     description:
       "GarageSaarthi is a smart, all-in-one garage management platform that helps auto workshops streamline operations, manage customers, and grow their business effortlessly.",
-    images: ["https://garagesaarthi.com/garage.png"],
+    images: ["https://www.garagesaarthi.com/garage.png"],
   },
 };
 

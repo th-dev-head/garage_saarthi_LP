@@ -1,20 +1,20 @@
 import PricingPage from "@/src/views/PricingPage";
 
 export const metadata = {
-  title: "Pricing – GarageSaarthi | Affordable Garage Management Plans India",
+  title: "GarageSaarthi Pricing Plans | Start Your 7-Day Free Trial Today!",
   description:
-    "Explore GarageSaarthi pricing plans designed for Indian auto workshops. Start with a 7-day free trial. No credit card needed. GST billing, job cards, inventory & more.",
+    "Explore affordable garage management software pricing plans starting at best rates for Indian auto workshops. Get GST billing, digital job cards & WhatsApp alerts.",
   keywords:
-    "garage management software free, free garage management software, garage software free trial, garage software pricing India, affordable garage management software, workshop management software plans, GST billing software price, cheap garage software India",
+    "garage software pricing India, affordable garage management software, workshop management software plans, GST billing software price, cheap garage software India, garage software free trial",
   alternates: {
-    canonical: "https://garagesaarthi.com/pricing/",
+    canonical: "https://www.garagesaarthi.com/pricing/",
   },
   openGraph: {
     title: "GarageSaarthi Pricing – Start Free Trial Today",
     description:
       "Simple, transparent pricing for Indian garage owners. Get GST billing, digital job cards & WhatsApp alerts at an unbeatable price.",
-    url: "https://garagesaarthi.com/pricing/",
-    images: [{ url: "https://garagesaarthi.com/garage.png", width: 1200, height: 630 }],
+    url: "https://www.garagesaarthi.com/pricing/",
+    images: [{ url: "https://www.garagesaarthi.com/garage.png", width: 1200, height: 630 }],
   },
 };
 
