@@ -19,9 +19,9 @@ export default function GRAProductProof() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { title: "Financial Reports", desc: "Consolidated sales and cash flow logs.", img: "/images/topServices.png" },
-            { title: "Inventory & Spare parts activity", desc: "Low stock indicators and supplier logs.", img: "/images/sparePartsActivity.png" },
-            { title: "Mechanic Productivity sheets", desc: "Mechanic checkins and payroll metrics.", img: "/images/mechanicPerformance.png" }
+            { title: "Financial Reports", desc: "Consolidated sales and cash flow logs.", img: "/images/topServices.webp" },
+            { title: "Inventory & Spare parts activity", desc: "Low stock indicators and supplier logs.", img: "/images/sparePartsActivity.webp" },
+            { title: "Mechanic Productivity sheets", desc: "Mechanic checkins and payroll metrics.", img: "/images/mechanicPerformance.webp" }
           ].map((item, idx) => (
             <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
               <div className="rounded-2xl aspect-[4/3] mb-6 flex items-center justify-center border border-slate-200/60 overflow-hidden relative">
