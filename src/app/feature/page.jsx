@@ -7,14 +7,14 @@ export const metadata = {
   keywords:
     "garage software features India, workshop management tools, auto repair software features, garage billing features, digital job card garage India",
   alternates: {
-    canonical: "https://garagesaarthi.com/feature/",
+    canonical: "https://www.garagesaarthi.com/feature/",
   },
   openGraph: {
     title: "GarageSaarthi Features – Smart Tools for Auto Workshops",
     description:
       "See how GarageSaarthi's features help Indian garage owners save time, reduce paperwork and grow their business.",
-    url: "https://garagesaarthi.com/feature/",
-    images: [{ url: "https://garagesaarthi.com/garage.png", width: 1200, height: 630 }],
+    url: "https://www.garagesaarthi.com/feature/",
+    images: [{ url: "https://www.garagesaarthi.com/garage.png", width: 1200, height: 630 }],
   },
 };
 

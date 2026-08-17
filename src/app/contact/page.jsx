@@ -7,14 +7,14 @@ export const metadata = {
   keywords:
     "book demo garage software India, garage management software demo, workshop software trial India, free garage software demo",
   alternates: {
-    canonical: "https://garagesaarthi.com/contact/",
+    canonical: "https://www.garagesaarthi.com/contact/",
   },
   openGraph: {
     title: "Book a Free Demo – GarageSaarthi",
     description:
       "See GarageSaarthi in action. Book a free demo and discover how to digitize your workshop in minutes.",
-    url: "https://garagesaarthi.com/contact/",
-    images: [{ url: "https://garagesaarthi.com/garage.png", width: 1200, height: 630 }],
+    url: "https://www.garagesaarthi.com/contact/",
+    images: [{ url: "https://www.garagesaarthi.com/garage.png", width: 1200, height: 630 }],
   },
 };
 

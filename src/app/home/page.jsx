@@ -7,14 +7,14 @@ export const metadata = {
   keywords:
     "garage management software India, workshop management software, auto repair shop software India, garage billing software, GST billing for garages, digital job card software, workshop CRM",
   alternates: {
-    canonical: "https://garagesaarthi.com/",
+    canonical: "https://www.garagesaarthi.com/",
   },
   openGraph: {
     title: "GarageSaarthi – #1 Garage Management Software India",
     description:
       "Streamline your auto workshop with digital job cards, GST billing, inventory & WhatsApp alerts. Trusted by garages across India.",
-    url: "https://garagesaarthi.com/",
-    images: [{ url: "https://garagesaarthi.com/garage.png", width: 1200, height: 630 }],
+    url: "https://www.garagesaarthi.com/",
+    images: [{ url: "https://www.garagesaarthi.com/garage.png", width: 1200, height: 630 }],
   },
 };
 

@@ -64,12 +64,12 @@ const definitions = [
       <>
         refers to GarageSaarthi, accessible from{" "}
         <Link
-          href="https://garagesaarthi.com"
+          href="https://www.garagesaarthi.com"
           rel="external nofollow noopener"
           target="_blank"
           className="text-primary hover:underline"
         >
-          https://garagesaarthi.com
+          https://www.garagesaarthi.com
         </Link>
       </>
     )
