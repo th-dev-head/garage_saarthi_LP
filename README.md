@@ -1,16 +1,40 @@
-# React + Vite
+# GarageSaarthi Landing Page (LP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repository for the **GarageSaarthi** landing page. It is built using **Next.js** with a static export configuration, optimized for performance and SEO.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Framework:** Next.js (Static HTML Export)
+* **Library:** React
+* **Styling:** Tailwind CSS & Custom CSS
+* **Icons:** Lucide React & React Icons
+* **UI Components:** Material UI (MUI)
 
-## React Compiler
+## 🛠️ Development Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Run the following commands in the project root directory:
 
-## Expanding the ESLint configuration
+### Run Development Server
+```bash
+npm run dev
+```
+Starts the development server on `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Build & Export Production Bundle
+```bash
+npm run build
+```
+Generates a highly optimized static HTML export under the `dist` directory (by compiling and copying the `out` output).
+
+### Lint Codebase
+```bash
+npm run lint
+```
+Checks for code quality and style guidelines.
+
+## 🌐 SEO & Configurations
+
+* **Canonical Domain:** `https://www.garagesaarthi.com/` (Always use `www` version for links and page alternates).
+* **Robots & Sitemap:** `public/robots.txt` points to `public/sitemap.xml`.
+* **Security Info:** RFC 9116 compliant security parameters are defined in `public/.well-known/security.txt`.
+* **Redirection:** `.htaccess` file in `public` handles non-www to `www` redirection on Apache environments.
