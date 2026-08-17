@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /api/
 
-Sitemap: https://garagesaarthi.com/sitemap.xml
+Sitemap: https://www.garagesaarthi.com/sitemap.xml
