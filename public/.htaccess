@@ -53,3 +53,10 @@
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType font/ttf "access plus 1 year"
 </IfModule>
+
+# 5. Redirect non-www to www (SEO Best Practice)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^garagesaarthi\.com [NC]
+  RewriteRule ^(.*)$ https://www.garagesaarthi.com/$1 [R=301,L]
+</IfModule>
