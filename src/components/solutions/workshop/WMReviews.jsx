@@ -10,7 +10,7 @@ const reviews = [
     text: "GarageSaarthi has completely transformed how we track job cards. We used to lose paper cards, but now everything is digital. Our customers love getting invoice links directly on WhatsApp!",
   },
   {
-    name: "BHAGWATI SERVICE CENTER",
+    name: "Bhagwati Service Center",
     role: "Owner, Bhagwati Service Center",
     location: "Uttrakhand",
     initials: "BS",

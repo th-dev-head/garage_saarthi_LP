@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaCheckSquare, FaClipboardList } from "react-icons/fa";
+import { FaCheckSquare, FaClipboardList, FaArrowRight } from "react-icons/fa";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
@@ -49,16 +49,16 @@ export default function GJCCustomerVehicle() {
             <Link
               href="/features/customers"
               onClick={() => handleLinkClick("Customer Management")}
-              className="text-xs text-primary font-bold hover:underline"
+              className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1"
             >
-              Customer Management
+              Customer Management <FaArrowRight className="w-3 h-3" />
             </Link>
             <Link
               href="/features/vehicles"
               onClick={() => handleLinkClick("Vehicle Management")}
-              className="text-xs text-primary font-bold hover:underline"
+              className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1"
             >
-              Vehicle Management
+              Vehicle Management <FaArrowRight className="w-3 h-3" />
             </Link>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function GJCCustomerVehicle() {
         <div className="bg-white border border-slate-200/80 p-8 rounded-3xl space-y-4 shadow-sm">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-4">
             <FaClipboardList className="text-primary w-5 h-5" />
-            <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">Vehicle service log</h3>
+            <h3 className="text-sm font-bold text-text-dark tracking-wide">Vehicle Service Log</h3>
           </div>
           <div className="space-y-3.5 text-xs text-slate-600">
             <div className="bg-slate-50 p-3 rounded-xl">
@@ -75,8 +75,8 @@ export default function GJCCustomerVehicle() {
                 <span>Creta (GJ-05-CD-5678)</span>
                 <span className="text-primary">Completed</span>
               </div>
-              <p className="text-[10px] text-slate-400 mt-1">Advisor: Rajesh Patel | Completed: May 24, 2026</p>
-              <p className="text-[11px] text-slate-500 mt-2">Services: General Oil Service, Brake Pad Replacement</p>
+              <p className="text-xs text-slate-400 mt-1">Advisor: Rajesh Patel • Completed: May 24, 2026</p>
+              <p className="text-xs text-slate-500 mt-2">Services: General Oil Service, Brake Pad Replacement</p>
             </div>
           </div>
         </div>

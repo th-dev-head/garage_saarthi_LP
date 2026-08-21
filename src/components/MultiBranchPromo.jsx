@@ -24,7 +24,7 @@ export default function MultiBranchPromo() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
           {/* Left — Feature list */}
           <div>
@@ -51,7 +51,7 @@ export default function MultiBranchPromo() {
 
             <Link
               href="/solutions/multi-branch-garage-software"
-              className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200 bg-primary text-white hover:bg-primary-hover shadow-sm px-6 py-2.5 text-sm cursor-pointer w-max mt-2"
             >
               Explore Multi-Branch Garage Software
               <FaArrowRight className="w-4 h-4" />

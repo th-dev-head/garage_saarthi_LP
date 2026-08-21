@@ -44,12 +44,12 @@ export default function WMMobile() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">
             Responsive Platform
           </p>
-          <h2 className="text-xl md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-[44px] font-bold text-[#111827] mb-5">
+          <h2 className="text-xl md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-4xl font-bold text-text-dark mb-5">
             Access Your Workshop on{" "}
             <GradientUnderline>Web and Mobile.</GradientUnderline>
           </h2>
 
-          <p className="text-[#4B5563] text-sm md:text-lg mb-7 md:mb-10 max-w-3xl leading-relaxed font-medium">
+          <p className="text-gray-600 text-sm md:text-lg mb-7 md:mb-10 max-w-3xl leading-relaxed font-medium">
             Manage your garage business from anywhere. Run invoices and check financial reports on your office desktop, while mechanics create digital job cards and update service statuses directly on the shop floor using our Android app.
           </p>
 

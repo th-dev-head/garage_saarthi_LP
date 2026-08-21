@@ -30,7 +30,7 @@ const Button = ({
       "hover:opacity-95 active:scale-[0.98] cursor-pointer",
 
     trial:
-      "bg-primary text-white hover:bg-primary-hover shadow-lg px-8 py-3 text-sm font-semibold",
+      "bg-primary text-white hover:bg-primary-hover shadow-sm px-6 py-2.5 text-sm font-semibold",
   };
 
   return (

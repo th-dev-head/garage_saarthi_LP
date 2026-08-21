@@ -44,7 +44,7 @@ const AppPromotion = () => {
 
         {/* Right Side - Content */}
         <div className="w-full flex flex-col items-start text-center md:text-left">
-          <h2 className="text-xl md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-[44px] font-bold text-[#111827] mb-5">
+          <h2 className="text-xl md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-4xl font-bold text-text-dark mb-5">
             Manage Your Garage on <span className="relative inline-block">Web and Mobile.<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
           </h2>
           
@@ -56,6 +56,7 @@ const AppPromotion = () => {
             {/* Primary CTA - Start Free Trial */}
             <Button
               variant="hero"
+              className="h-[46px]"
               onClick={() => {
                 window.open(`${FRONTEND_URL}/register`, "_blank");
               }}

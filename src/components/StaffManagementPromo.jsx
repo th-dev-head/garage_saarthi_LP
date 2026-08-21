@@ -37,7 +37,7 @@ export default function StaffManagementPromo() {
               </div>
               <Link
                 href={item.link}
-                className="text-xs font-bold text-primary hover:text-primary-hover transition-colors inline-flex items-center gap-1"
+                className="text-sm font-bold text-primary hover:text-primary-hover transition-colors inline-flex items-center gap-1"
               >
                 Explore {item.label} <FaArrowRight />
               </Link>

@@ -26,7 +26,7 @@ export default function WhyGarageSaarthi() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {points.map((point, idx) => (
             <div key={idx} className="bg-slate-50 p-6 rounded-xl border border-slate-200/60 shadow-sm">
-              <div className="w-12 h-12 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-4">
                 {point.icon}
               </div>
               <h3 className="text-xl font-bold text-slate-950 mb-2">{point.title}</h3>

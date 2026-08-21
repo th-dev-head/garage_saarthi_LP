@@ -41,22 +41,22 @@ export default function GJCBusinessType() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {workshopTypes.map((type, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-sm transition-shadow duration-200">
+            <Link
+              key={idx}
+              href={type.link}
+              onClick={() => handleSolutionClick(type.title)}
+              className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md hover:border-primary/20 transition-all duration-200 cursor-pointer group"
+            >
               <div>
-                <h3 className="text-sm font-bold text-text-dark mb-2">{type.title}</h3>
-                <p className="text-xs text-slate-500 mb-6 leading-relaxed">
+                <h3 className="text-sm font-bold text-text-dark group-hover:text-primary transition-colors flex items-center justify-between mb-2">
+                  {type.title}
+                  <FaArrowRight className="w-3 h-3 text-primary opacity-0 group-hover:opacity-100 transition-opacity ml-2 shrink-0" />
+                </h3>
+                <p className="text-xs text-slate-500 mb-2 leading-relaxed">
                   {type.desc}
                 </p>
               </div>
-              <Link
-                href={type.link}
-                onClick={() => handleSolutionClick(type.title)}
-                className="flex items-center gap-1 text-xs text-primary font-bold hover:underline self-start mt-auto"
-              >
-                Explore Solution
-                <FaArrowRight className="w-2.5 h-2.5" />
-              </Link>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

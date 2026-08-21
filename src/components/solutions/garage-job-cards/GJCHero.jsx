@@ -36,7 +36,7 @@ export default function GJCHero() {
       <div className="mx-auto max-w-full lg:max-w-6xl w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-          <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-6 inline-block">
+          <span className="text-xs bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-10 inline-block tracking-wide">
             Digital Job Cards
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">

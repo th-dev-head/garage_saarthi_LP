@@ -72,15 +72,18 @@ const Hero = () => {
               <FaArrowRight className="w-4 h-4 ml-2" />
             </Button>
 
-            <button
+            <Button
+              variant="secondary"
+              className="!px-8 !py-3 text-lg min-[350px]:text-lg shadow-lg justify-center"
               onClick={() => setShowVideo(true)}
-              className="flex items-center gap-3 px-5 py-2 rounded-full bg-white text-gray-900 font-medium hover:bg-gray-100 transition shadow-lg cursor-pointer text-sm min-[350px]:text-lg"
+              icon={
+                <span className="w-5 h-5 rounded-full bg-gray-900 flex items-center justify-center shrink-0">
+                  <FaPlay className="w-2 h-2 text-white pl-[1.5px]" />
+                </span>
+              }
             >
-              <span className="w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center">
-                <FaPlay className="w-2.5 h-2.5 text-white ml-0.5" />
-              </span>
               Watch Demo
-            </button>
+            </Button>
           </div>
         </div>
       </div>
