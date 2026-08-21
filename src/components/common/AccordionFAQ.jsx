@@ -6,8 +6,11 @@ import GradientUnderline from "./GradientUnderline";
 
 export default function AccordionFAQ({ title, titleHighlight, subtitle, faqs = [], className = "" }) {
   const [openIndex, setOpenIndex] = useState(0);
+  const [showAll, setShowAll] = useState(false);
 
   const toggle = (idx) => setOpenIndex(openIndex === idx ? -1 : idx);
+
+  const visibleFaqs = showAll ? faqs : faqs.slice(0, 6);
 
   return (
     <section className={`px-4 lg:px-15 2xl:px-50 py-10 lg:py-20 flex justify-center ${className || "bg-white"}`}>
@@ -25,8 +28,8 @@ export default function AccordionFAQ({ title, titleHighlight, subtitle, faqs = [
         </div>
 
         {/* FAQ Accordion */}
-        <div className="flex flex-col gap-4">
-          {faqs.map((faq, idx) => {
+        <div className="flex flex-col gap-6">
+          {visibleFaqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
               <div
@@ -51,6 +54,17 @@ export default function AccordionFAQ({ title, titleHighlight, subtitle, faqs = [
             );
           })}
         </div>
+
+        {faqs.length > 6 && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="px-6 py-2 rounded-full border border-primary bg-transparent text-primary font-semibold text-sm hover:bg-primary/5 transition-colors cursor-pointer"
+            >
+              {showAll ? "Show Less Questions" : "Show All Questions"}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

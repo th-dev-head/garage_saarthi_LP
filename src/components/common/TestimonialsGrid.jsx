@@ -45,7 +45,7 @@ export default function TestimonialsGrid({
             {titleHighlight ? <>{title}{" "}<GradientUnderline>{titleHighlight}</GradientUnderline></> : title}
           </h2>
           {subtitle && (
-            <p className="text-[#575757] text-sm md:text-base mt-6">
+            <p className="text-slate-600 text-sm md:text-base mt-6">
               {subtitle}
             </p>
           )}
@@ -67,7 +67,7 @@ export default function TestimonialsGrid({
                 </div>
 
                 {/* Text */}
-                <p className="text-[#575757] text-sm leading-relaxed mb-6 italic">
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 italic">
                   &ldquo;{review.text}&rdquo;
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default function TestimonialsGrid({
                   <p className="font-semibold text-text-dark text-sm leading-tight">
                     {review.name}
                   </p>
-                  <p className="text-xs text-[#575757] mt-0.5">
+                  <p className="text-xs text-slate-600 mt-0.5">
                     {review.role} • {review.location}
                   </p>
                 </div>

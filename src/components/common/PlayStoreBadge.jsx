@@ -29,7 +29,7 @@ export default function PlayStoreBadge({ className = "" }) {
         />
       </div>
       <div className="flex flex-col text-left leading-none">
-        <span className="text-[9px] font-normal opacity-70 whitespace-nowrap">Download on the</span>
+        <span className="text-[10px] font-normal opacity-70 whitespace-nowrap">Download on the</span>
         <span className="text-xs font-semibold mt-0.5 whitespace-nowrap">Play Store</span>
       </div>
     </Link>

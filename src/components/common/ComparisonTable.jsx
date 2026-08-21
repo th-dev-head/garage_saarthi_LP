@@ -29,7 +29,7 @@ export default function ComparisonTable({
         {/* Clean Comparison Grid Container */}
         <div className="border border-slate-100 rounded-2xl overflow-hidden shadow-sm bg-white">
           {/* Header Row */}
-          <div className="hidden md:grid grid-cols-12 gap-4 bg-slate-50/80 px-6 py-4 border-b border-slate-100 text-xs font-bold uppercase tracking-wider text-slate-500">
+          <div className="hidden md:grid grid-cols-12 gap-4 bg-slate-50/80 px-6 py-4 border-b border-slate-100 text-sm font-bold uppercase tracking-wider text-slate-500">
             <div className="col-span-3">Operational Area</div>
             <div className="col-span-4 text-slate-700">{manualHeader}</div>
             <div className="col-span-5 text-primary">{digitalHeader}</div>
@@ -40,17 +40,17 @@ export default function ComparisonTable({
             {comparisons.map((row, idx) => (
               <div
                 key={idx}
-                className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start p-6 hover:bg-slate-50/40 transition-colors duration-200"
+                className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start py-8 px-6 hover:bg-slate-50/40 transition-colors duration-200"
               >
                 {/* Operational Area Title */}
                 <div className="col-span-1 md:col-span-3 flex items-center md:pt-1">
-                  <span className="text-sm font-bold text-slate-900 border-l-2 border-primary/40 pl-3">
+                  <span className="text-sm font-bold text-slate-900 border-l-2 border-primary/40 pl-4.5">
                     {row.label}
                   </span>
                 </div>
 
                 {/* Manual Pain Points Description */}
-                <div className="col-span-1 md:col-span-4 flex items-start gap-2.5 text-slate-500 text-sm leading-relaxed">
+                <div className="col-span-1 md:col-span-4 flex items-start gap-2.5 text-slate-600 text-sm leading-relaxed">
                   <FaTimes className="text-rose-500 w-3.5 h-3.5 mt-1 flex-shrink-0" />
                   <span>{row.manual}</span>
                 </div>

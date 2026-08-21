@@ -11,6 +11,7 @@ import PaymentsIcon from "../assets/icons/Payments.svg";
 import InventoryIcon from "../assets/icons/Inventory.svg";
 import WhatsAppIcon from "../assets/icons/WhatsApp.svg";
 import Button from "./common/Button";
+import GradientUnderline from "./common/GradientUnderline";
 
 const features = [
   {
@@ -89,10 +90,10 @@ const DashboardFeatures = () => {
         <div className="max-w-7xl w-full">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6">
-              Manage Your Entire Garage <span className="relative inline-block">from One Platform.<span className="absolute -bottom-1 left-0 w-full h-[3px] rounded-full bg-[linear-gradient(90deg,#B02E0C_0%,#FF643C_100%)]"></span></span>
+              All-in-One Garage Management Software for <GradientUnderline>Your Workshop</GradientUnderline>
             </h2>
-            <p className="text-sm md:text-base mb-6 text-slate-600">
-              GarageSaarthi is a cloud-based platform for automotive workshops to manage job cards, GST billing, inventory, CRM, staff, and service alerts - all in one place.
+            <p className="text-sm md:text-base mb-8 text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              GarageSaarthi brings your entire daily workshop operations into a single, cloud-based platform. Replace disconnected paper registers, separate Excel sheets, and manual tracking with one unified workspace to manage job cards, GST billing, inventory, CRM, staff, and service alerts.
             </p>
             <div className="flex justify-center">
               <Button
@@ -102,7 +103,7 @@ const DashboardFeatures = () => {
                   router.push("/features");
                 }}
               >
-                Explore Features
+                Explore GarageSaarthi Features
                 <HiArrowRight className="w-5 h-5" />
               </Button>
             </div>

@@ -91,7 +91,7 @@ export default function GJCWorkflow() {
                       key={lIdx}
                       href={link.href}
                       onClick={() => handleLinkClick(link.label)}
-                      className="text-[10px] text-primary font-bold hover:underline"
+                      className="text-xs text-primary font-bold hover:underline"
                     >
                       {link.label}
                     </Link>
@@ -104,7 +104,7 @@ export default function GJCWorkflow() {
                   <Link
                     href={s.link.href}
                     onClick={() => handleLinkClick(s.link.label)}
-                    className="text-[10px] text-primary font-bold hover:underline"
+                    className="text-xs text-primary font-bold hover:underline"
                   >
                     {s.link.label}
                   </Link>

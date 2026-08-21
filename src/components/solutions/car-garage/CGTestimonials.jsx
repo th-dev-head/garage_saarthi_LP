@@ -38,7 +38,7 @@ const reviews = [
     text: "Automated service reminders send WhatsApp notifications to car owners when their vehicle is due for service, bringing them back precisely on schedule. Repeat business has improved significantly.",
   },
   {
-    name: "BHAGWATI SERVICE CENTER",
+    name: "Bhagwati Service Center",
     role: "Owner, Bhagwati Service Center",
     location: "Uttrakhand",
     initials: "BS",

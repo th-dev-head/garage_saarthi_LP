@@ -51,7 +51,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="px-4 lg:px-15 2xl:px-50 pt-10 lg:pt-20 pb-10 lg:pb-20 flex justify-center bg-slate-50">
       <div
-        className="relative w-full mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full min-h-[420px] rounded-[28px] overflow-hidden flex items-center"
+        className="relative w-full mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full min-h-[420px] rounded-3xl overflow-hidden flex items-center"
         style={{
           backgroundImage: `url(${GformBg})`,
           backgroundSize: "cover",
@@ -148,7 +148,7 @@ const ContactSection = () => {
               <p className="text-red-400 text-xs mb-3 text-center">{submitError}</p>
             )}
 
-            <div className="relative flex justify-center sm:justify-end pb-6">
+            <div className="relative flex justify-start pb-6">
               <Button
                 type="submit"
                 variant="hero"

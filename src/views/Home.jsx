@@ -3,7 +3,6 @@ import React from 'react';
 import Hero from '../components/Hero';
 import ProductDefinition from '../components/ProductDefinition';
 import DashboardFeatures from '../components/DashboardFeatures';
-
 import IndustrialBenefits from "../components/IndustrialBenefits";
 import DigitalOperations from "../components/DigitalOperations";
 import SmartDashboard from "../components/SmartDashboard";
@@ -22,23 +21,22 @@ import ContactSection from "../components/ContactSection";
 const Home = () => {
   return (
     <PageLayout className="bg-white">
-        <Hero />
-        <ProductDefinition />
-        <DashboardFeatures />
-        <IndustrialBenefits />
-        <DigitalOperations />
-        <SmartDashboard />
-        <MultiBranchPromo />
-        <CustomerRetentionPromo />
-        <StaffManagementPromo />
-        <FinancePromo />
-        <AppPromotion />
-        <WhyGarageSaarthi />
-        <ReviewSection />
-        <PricingCTA />
-        <FAQSection />
-        <FinalCTA />
-        <ContactSection />
+      <Hero />
+      <DashboardFeatures />
+      <IndustrialBenefits />
+      <DigitalOperations />
+      <SmartDashboard />
+      <MultiBranchPromo />
+      <CustomerRetentionPromo />
+      <StaffManagementPromo />
+      <FinancePromo />
+      <AppPromotion />
+      <WhyGarageSaarthi />
+      <ReviewSection />
+      <PricingCTA />
+      <FAQSection />
+      <FinalCTA />
+      <ContactSection />
     </PageLayout>
   );
 };

@@ -40,8 +40,8 @@ export default function GJCCustomerProof() {
               AR
             </div>
             <div>
-              <h4 className="text-xs font-bold text-text-dark">Anil R.</h4>
-              <p className="text-[10px] text-slate-400">Apex Motor Works, Surat (Car Garage &amp; Multi-Brand Repair services)</p>
+              <h3 className="text-xs font-bold text-text-dark">Anil R.</h3>
+              <p className="text-xs text-slate-400">Apex Motor Works, Surat (Car Garage &amp; Multi-Brand Repair services)</p>
             </div>
           </div>
         </div>

@@ -44,34 +44,28 @@ export default function GJCProductContext() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {modules.map((m, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col justify-between">
+            <Link
+              key={idx}
+              href={m.href}
+              onClick={() => handleFeatureClick(m.name)}
+              className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-200 cursor-pointer group flex flex-col justify-between"
+            >
               <div>
-                <h3 className="text-sm font-bold text-text-dark mb-2">{m.name}</h3>
-                <p className="text-xs text-slate-500 mb-6 leading-relaxed">{m.desc}</p>
+                <h3 className="text-sm font-bold text-text-dark group-hover:text-primary transition-colors flex items-center justify-between mb-2">
+                  {m.name}
+                  <FaArrowRight className="w-3 h-3 text-primary opacity-0 group-hover:opacity-100 transition-opacity ml-2 shrink-0" />
+                </h3>
+                <p className="text-xs text-slate-500 mb-2 leading-relaxed">{m.desc}</p>
               </div>
-              <Link
-                href={m.href}
-                onClick={() => handleFeatureClick(m.name)}
-                className="flex items-center gap-1 text-xs text-primary font-bold hover:underline self-start mt-auto"
-              >
-                Explore Feature
-                <FaArrowRight className="w-2.5 h-2.5" />
-              </Link>
-            </div>
+            </Link>
           ))}
         </div>
 
-        <div className="flex justify-center gap-4 flex-wrap items-center">
+        <div className="flex justify-center">
           <Link href="/features">
             <Button variant="hero">
               Explore All GarageSaarthi Features
             </Button>
-          </Link>
-          <Link
-            href="/"
-            className="text-xs text-slate-600 hover:text-primary font-bold hover:underline"
-          >
-            Explore Garage Management Software
           </Link>
         </div>
       </div>
