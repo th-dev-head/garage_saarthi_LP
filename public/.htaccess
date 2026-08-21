@@ -60,3 +60,6 @@
   RewriteCond %{HTTP_HOST} ^garagesaarthi\.com [NC]
   RewriteRule ^(.*)$ https://www.garagesaarthi.com/$1 [R=301,L]
 </IfModule>
+
+# 6. Handle 404 Errors with proper status code
+ErrorDocument 404 /404.html
