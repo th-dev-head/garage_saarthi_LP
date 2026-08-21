@@ -235,6 +235,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/features/vehicle-inspection/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/features/counter-sales/`,
       lastModified,
       changeFrequency: "monthly",

@@ -76,6 +76,7 @@ const Header = () => {
       { name: "Counter Sales", href: "/features/counter-sales" },
       { name: "Billing & Invoicing", href: "/features/billing" },
       { name: "Inventory Management", href: "/features/inventory" },
+      { name: "Vehicle Inspection", href: "/features/vehicle-inspection" },
     ],
     "Customer & Vehicle": [
       { name: "CRM & Lead Management", href: "/features/crm" },
