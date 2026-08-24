@@ -5,17 +5,18 @@ import React from "react";
 import { FaLaptop, FaMobileAlt, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const wsiPlatforms = [
   { icon: FaLaptop, title: "Cloud Web Portal", desc: "For Billing, GST & Analytics" },
-  { icon: FaMobileAlt, title: "Android Application", desc: "For Fast Job Card Creation in Bays" }
+  { icon: FaMobileAlt, title: "Android & iOS Mobile App", desc: "For Fast Job Cards on Floor (Android & iOS)" }
 ];
 
 const wsiBullets = [
   "Real-time data synchronization between workshop floor and front office",
   "Role-based user permissions for owners, managers, cashiers, and mechanics",
-  "Native Android app on Google Play (iOS app coming soon to Apple App Store)"
+  "Native Android app on Google Play & iOS app on Apple App Store"
 ];
 
 export default function WSICloudAccess() {
@@ -74,8 +75,11 @@ export default function WSICloudAccess() {
               >
                 Start 7-Day Free Trial
               </Button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
         </div>
       </div>

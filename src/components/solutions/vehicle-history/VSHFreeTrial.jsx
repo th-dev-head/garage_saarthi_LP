@@ -11,7 +11,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function VSHFreeTrial() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/vehicle-service-history-software",
+      page_path: "/solutions/vehicle-service-history-software/",
       cta_location: "free_trial_banner",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -21,10 +21,10 @@ export default function VSHFreeTrial() {
 
   const handlePricingClick = () => {
     trackEvent("pricing_click", {
-      page_path: "/solutions/vehicle-service-history-software",
+      page_path: "/solutions/vehicle-service-history-software/",
       cta_location: "free_trial_banner",
       cta_label: "View Pricing",
-      destination: "/pricing"
+      destination: "/pricing/"
     });
   };
 
@@ -44,7 +44,7 @@ export default function VSHFreeTrial() {
           <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />}>
             Start 7-Day Free Trial
           </Button>
-          <Link href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11 text-center">
+          <Link href="/pricing/" onClick={handlePricingClick} className="rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11 text-center">
             View Pricing
           </Link>
         </div>

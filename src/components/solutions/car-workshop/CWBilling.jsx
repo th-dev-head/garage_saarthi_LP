@@ -8,7 +8,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function CWBilling() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "billing_section",
       cta_label: name,
       destination: url
@@ -63,11 +63,11 @@ export default function CWBilling() {
               <h3 className="text-base font-bold text-slate-800">Payment & Finance</h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed font-normal">
                 Check pending dues, log expenses, and maintain digital accounts sheets. Explore{" "}
-                <Link href="/features/billing" onClick={() => handleLinkClick("Payments Feature Link", "/features/billing")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/billing/" onClick={() => handleLinkClick("Payments Feature Link", "/features/billing/")} className="text-primary font-semibold hover:underline">
                   Payments
                 </Link>{" "}
                 and{" "}
-                <Link href="/features/finance" onClick={() => handleLinkClick("Finance Feature Link", "/features/finance")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/finance/" onClick={() => handleLinkClick("Finance Feature Link", "/features/finance/")} className="text-primary font-semibold hover:underline">
                   Finance Management
                 </Link>.
               </p>

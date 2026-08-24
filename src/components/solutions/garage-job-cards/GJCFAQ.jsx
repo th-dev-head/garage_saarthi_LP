@@ -13,7 +13,7 @@ export default function GJCFAQ() {
     },
     {
       question: "Can I create digital job cards with GarageSaarthi?",
-      answer: "Yes. You can generate digital job cards on-the-go from any laptop web browser or our mobile Android application, then share a copy with the customer via WhatsApp."
+      answer: "Yes. You can generate digital job cards on-the-go from any laptop web browser or our mobile app (Android & iOS), then share a copy with the customer via WhatsApp."
     },
     {
       question: "Can GarageSaarthi be used as workshop job card software?",
@@ -37,7 +37,7 @@ export default function GJCFAQ() {
     },
     {
       question: "Is there a garage job card app?",
-      answer: "Yes, we maintain a live Android application on the Google Play Store for quick on-the-floor job card creation."
+      answer: "Yes, we maintain mobile apps on Google Play Store and Apple App Store for quick on-the-floor job card creation."
     },
     {
       question: "Can car and bike workshops use GarageSaarthi Job Cards?",

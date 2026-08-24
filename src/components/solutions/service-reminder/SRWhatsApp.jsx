@@ -8,7 +8,7 @@ import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel"; export default function SRWhatsApp() {
   const handleTrialClick = () => {
     trackEvent("whatsapp_reminder_cta_click", {
-      page_path: "/solutions/service-reminder-software",
+      page_path: "/solutions/service-reminder-software/",
       cta_location: "whatsapp_section",
       cta_label: "Start Sending Service Reminders",
       destination: `${FRONTEND_URL}/signup`

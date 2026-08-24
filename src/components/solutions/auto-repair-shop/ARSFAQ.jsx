@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "Can GarageSaarthi create digital job cards?",
-    a: "Yes, you can create digital job cards in under 60 seconds on any web browser or Android mobile app. Track diagnostic complaints, allocate workers, and attach spare parts."
+    a: "Yes, you can create digital job cards in under 60 seconds on any web browser, Android, or iOS mobile app. Track diagnostic complaints, allocate workers, and attach spare parts."
   },
   {
     q: "Does GarageSaarthi support GST billing for auto repair shops?",

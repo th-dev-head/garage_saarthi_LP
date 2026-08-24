@@ -40,7 +40,7 @@ const faqData = [
   },
   {
     q: "Is GarageSaarthi available as an automobile workshop app?",
-    a: "Yes. GarageSaarthi is available as an Android application downloadable from the Google Play Store, alongside a desktop web browser version for reception billing counters.",
+    a: "Yes. GarageSaarthi is available as mobile apps on Google Play Store and Apple App Store, alongside a desktop web browser version for reception billing counters.",
   },
   {
     q: "Is GarageSaarthi cloud-based?",

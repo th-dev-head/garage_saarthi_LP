@@ -45,7 +45,7 @@ const registryItems = [
 export default function GISpareParts() {
   const handleTrialClick = () => {
     trackEvent("inventory_trial_cta_click", {
-      page_path: "/solutions/garage-inventory-software",
+      page_path: "/solutions/garage-inventory-software/",
       cta_location: "spare_parts_section",
       cta_label: "Manage Your Garage Inventory",
       destination: `${FRONTEND_URL}/signup`,

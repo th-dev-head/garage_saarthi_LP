@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaLaptop, FaMobileAlt, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function FLCloudAccess() {
@@ -27,8 +28,8 @@ export default function FLCloudAccess() {
               <div className="flex items-center gap-4 text-slate-800">
                 <FaMobileAlt className="text-4xl text-primary flex-shrink-0" />
                 <div className="text-left">
-                  <h4 className="text-xs font-bold">Android Application</h4>
-                  <p className="text-[10px] text-slate-400">For Quick Job Cards & Inventory Checks</p>
+                  <h4 className="text-xs font-bold">Android & iOS Mobile App</h4>
+                  <p className="text-[10px] text-slate-400">For Quick Job Cards & Floor Operations</p>
                 </div>
               </div>
             </div>
@@ -43,7 +44,7 @@ export default function FLCloudAccess() {
               Manage Your Fleet Workshop on <GradientUnderline>Web and Mobile</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              Access your workshop records from any device. Open digital job cards, verify spares inventory, or generate invoices right beside the vehicle using the Android app, or use the detailed web panel from your office desk.
+              Access your workshop records from any device. Open digital job cards, verify spares inventory, or generate invoices right beside the vehicle using the Android & iOS apps, or use the detailed web panel from your office desk.
             </p>
 
             {/* CTAs */}
@@ -55,8 +56,11 @@ export default function FLCloudAccess() {
               >
                 Start 7-Day Free Trial
               </Button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
         </div>
       </div>

@@ -59,6 +59,9 @@
   RewriteEngine On
   RewriteCond %{HTTP_HOST} ^garagesaarthi\.com [NC]
   RewriteRule ^(.*)$ https://www.garagesaarthi.com/$1 [R=301,L]
+
+  # 301 Redirects for non-existent or old URLs
+  RewriteRule ^solutions/tyre-shop-software/?$ /solutions/car-workshop-software/ [R=301,L]
 </IfModule>
 
 # 6. Handle 404 Errors with proper status code

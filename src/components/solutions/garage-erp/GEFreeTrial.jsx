@@ -19,7 +19,7 @@ const trialBenefits = [
 export default function GEFreeTrial() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "free_trial",
@@ -31,12 +31,12 @@ export default function GEFreeTrial() {
 
   const handlePricingClick = () => {
     trackEvent("pricing_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "free_trial",
       cta_label: "View Pricing",
-      destination: "/pricing"
+      destination: "/pricing/"
     });
   };
 
@@ -70,7 +70,7 @@ export default function GEFreeTrial() {
                   Start Free Trial Now
                 </Button>
                 <Link
-                  href="/pricing"
+                  href="/pricing/"
                   onClick={handlePricingClick}
                   className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-100 px-6 py-2.5 text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11 whitespace-nowrap w-full sm:w-auto"
                 >

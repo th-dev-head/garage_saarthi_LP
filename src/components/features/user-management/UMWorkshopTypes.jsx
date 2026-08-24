@@ -5,10 +5,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function UMWorkshopTypes() {
   const workshopTypes = [
-    { title: "Car Garage User Controls", link: "/solutions/car-garage-software", desc: "Block mechanics from viewing car parts pricing, billing tables, and owner profit dashboards." },
-    { title: "Bike Workshop Team Logins", link: "/solutions/bike-workshop-software", desc: "Assign custom profiles to service advisors for check-ins and billing cashiers for checkout." },
-    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software", desc: "Enable role permissions to prevent deleting closed estimates and modifying digital invoices." },
-    { title: "Independent Repair Shops", link: "/solutions/workshop-management-software", desc: "Audit edits, trace job card creations, and restrict logins strictly to the shop Wi-Fi network." }
+    { title: "Car Garage User Controls", link: "/solutions/car-garage-software/", desc: "Block mechanics from viewing car parts pricing, billing tables, and owner profit dashboards." },
+    { title: "Bike Workshop Team Logins", link: "/solutions/bike-workshop-software/", desc: "Assign custom profiles to service advisors for check-ins and billing cashiers for checkout." },
+    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software/", desc: "Enable role permissions to prevent deleting closed estimates and modifying digital invoices." },
+    { title: "Independent Repair Shops", link: "/solutions/workshop-management-software/", desc: "Audit edits, trace job card creations, and restrict logins strictly to the shop Wi-Fi network." }
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function UMWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Profiles
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             User Roles and Staff Controls for <GradientUnderline>All Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

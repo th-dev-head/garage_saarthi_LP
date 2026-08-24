@@ -4,7 +4,7 @@ import { FaWrench, FaMobileAlt, FaClock, FaFlag, FaFileInvoiceDollar, FaUserLock
 export default function WhyGarageSaarthi() {
   const points = [
     { icon: <FaWrench className="w-6 h-6" />, title: "Built for Workshops", desc: "Designed explicitly for automotive garages, bike repair shops, EV stations, and auto spas." },
-    { icon: <FaMobileAlt className="w-6 h-6" />, title: "Web & Mobile Access", desc: "Work from a laptop, desktop, or on your Android mobile device seamlessly." },
+    { icon: <FaMobileAlt className="w-6 h-6" />, title: "Web & Mobile Access", desc: "Work from a laptop, desktop, or on your Android and iOS mobile devices seamlessly." },
     { icon: <FaClock className="w-6 h-6" />, title: "Quick Setup & Onboarding", desc: "No complex installations or database configs. master the tool in under 15 minutes." },
     { icon: <FaFlag className="w-6 h-6" />, title: "India-Focused Design", desc: "GST calculations, customized SMS templates, and UPI tracking built for the Indian market." },
     { icon: <FaFileInvoiceDollar className="w-6 h-6" />, title: "All-in-One Operations", desc: "Manage job cards, billing, counter sales, inventory, and mechanic logs inside a single platform." },

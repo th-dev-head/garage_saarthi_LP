@@ -8,7 +8,7 @@ export default function ARSFreeTrialCTA() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full text-center bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-text-dark leading-tight mb-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight mb-4">
           Try GarageSaarthi for Your{" "}
           <GradientUnderline>Auto Repair Shop</GradientUnderline>
         </h2>
@@ -26,7 +26,7 @@ export default function ARSFreeTrialCTA() {
             <FaArrowRight className="w-4 h-4" />
           </Link>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-transparent text-slate-700 border border-slate-300 hover:bg-slate-50 px-6 py-3 text-sm font-semibold transition-all"
           >
             View Pricing Plans

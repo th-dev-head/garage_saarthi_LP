@@ -6,6 +6,7 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const accessPlatforms = [
@@ -18,7 +19,7 @@ const accessPlatforms = [
   {
     icon: FaAndroid,
     iconClass: "text-green-500 w-5 h-5 flex-shrink-0",
-    title: "Android Mobile Application",
+    title: "Android & iOS Mobile App",
     desc: "Advisors check items at the vehicle racks and scan stock on-the-go."
   }
 ];
@@ -26,23 +27,13 @@ const accessPlatforms = [
 export default function GIAccess() {
   const handleTrialClick = () => {
     trackEvent("inventory_trial_cta_click", {
-      page_path: "/solutions/garage-inventory-software",
+      page_path: "/solutions/garage-inventory-software/",
       cta_location: "web_mobile_section",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`,
       keyword_page_topic: "garage_inventory_software"
     });
     window.open(`${FRONTEND_URL}/signup`, "_blank");
-  };
-
-  const handleDownloadClick = () => {
-    trackEvent("inventory_android_download_click", {
-      page_path: "/solutions/garage-inventory-software",
-      cta_location: "web_mobile_section",
-      cta_label: "Download Android App",
-      destination: "Google Play Store Link",
-      keyword_page_topic: "garage_inventory_software"
-    });
   };
 
   return (
@@ -85,11 +76,11 @@ export default function GIAccess() {
               Your stock metrics shouldn't be trapped on a single local computer. GarageSaarthi utilizes a secure, cloud-based network architecture to keep counts updated on both desktops and mobile devices simultaneously.
             </p>
             <p>
-              Advisors can scan, search, and assign parts using the live Android application while mechanics perform the physical repair, and the dashboard synchronizes instantly.
+              Advisors can scan, search, and assign parts using the mobile app (Android & iOS) while mechanics perform the physical repair, and the dashboard synchronizes instantly.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 items-center">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-center">
             <Button
               variant="trial"
               onClick={handleTrialClick}
@@ -98,9 +89,10 @@ export default function GIAccess() {
             >
               Start 7-Day Free Trial
             </Button>
-            <div onClick={handleDownloadClick} className="w-full sm:w-auto">
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
       </div>

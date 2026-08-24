@@ -10,11 +10,11 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GCCustomerProof() {
   const handleCtaClick = () => {
     trackEvent("customer_story_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "customer_proof",
       cta_label: "View Customer Stories",
-      destination: "/features/customer-reviews"
+      destination: "/features/customer-reviews/"
     });
   };
 
@@ -50,7 +50,7 @@ export default function GCCustomerProof() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <Link href="/features/customer-reviews">
+          <Link href="/features/customer-reviews/">
             <Button
               variant="hero"
               onClick={handleCtaClick}

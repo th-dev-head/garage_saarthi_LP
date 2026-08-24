@@ -58,7 +58,7 @@ export default function WSICustomerService() {
 
         <div className="flex justify-center">
           <Link
-            href="/features/customers"
+            href="/features/customers/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore Customer Records <FaArrowRight className="w-3.5 h-3.5" />

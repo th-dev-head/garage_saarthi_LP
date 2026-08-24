@@ -58,7 +58,7 @@ export default function WSIBillingInventory() {
 
         <div className="flex justify-center">
           <Link
-            href="/features/inventory"
+            href="/features/inventory/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore Inventory & Billing <FaArrowRight className="w-3.5 h-3.5" />

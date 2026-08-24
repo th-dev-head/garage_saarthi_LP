@@ -33,7 +33,7 @@ export default function GBFAQ() {
     },
     {
       question: "Is there a mobile billing application available?",
-      answer: "Yes. Download our Android application from the Google Play Store to manage invoicing and payments from your mobile."
+      answer: "Yes. Download our app from Google Play Store or Apple App Store to manage invoicing and payments from your mobile."
     },
     {
       question: "Does GarageSaarthi offer a free trial for billing software?",

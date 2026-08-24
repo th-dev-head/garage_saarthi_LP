@@ -12,63 +12,63 @@ const workflows = [
     icon: <FaClipboardList />,
     title: "Create and Manage Job Cards",
     desc: "Record customer complaints, scratches, and fuel levels on digital sheets.",
-    link: "/features/job-card-management",
+    link: "/features/job-card-management/",
     btnText: "Explore Digital Job Cards"
   },
   {
     icon: <FaUsers />,
     title: "Manage Customers",
     desc: "Keep records of names, contact numbers, and complete repair timelines.",
-    link: "/features/customers",
+    link: "/features/customers/",
     btnText: "Explore Customer Management"
   },
   {
     icon: <FaCar />,
     title: "Manage Customer Vehicles",
     desc: "Track service history records by registration plate numbers easily.",
-    link: "/features/vehicles",
+    link: "/features/vehicles/",
     btnText: "Explore Vehicle Tracking"
   },
   {
     icon: <FaBoxOpen />,
     title: "Check and Manage Inventory",
     desc: "Check available spare parts stock and count quantities on the go.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
     btnText: "Explore Inventory Management"
   },
   {
     icon: <FaFileInvoiceDollar />,
     title: "Manage Payments and Finance",
     desc: "Create simple labor bills, input parts prices, and collect payments.",
-    link: "/features/billing",
+    link: "/features/billing/",
     btnText: "Explore Billing & Payments"
   },
   {
     icon: <FaUserClock />,
     title: "Track Staff Attendance",
     desc: "Monitor mechanic attendance, login times, and clock-out hours.",
-    link: "/features/attendance",
+    link: "/features/attendance/",
     btnText: "Explore Staff Tracking"
   },
   {
     icon: <FaWallet />,
     title: "Manage Payroll and Leaves",
     desc: "Track helper commissions, monthly base salaries, and leave data.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
     btnText: "Explore Payroll Features"
   },
   {
     icon: <FaBell />,
     title: "Check Service Alerts",
     desc: "View upcoming vehicle service schedules and follow up with reminders.",
-    link: "/features/service-reminders",
+    link: "/features/service-reminders/",
     btnText: "Explore Service Alerts"
   },
   {
     icon: <FaChartBar />,
     title: "View Garage Reports",
     desc: "Check daily operations, job card progress counts, and invoice sales stats.",
-    link: "/features/reports",
+    link: "/features/reports/",
     btnText: "Explore Reports & Dashboards"
   }
 ];
@@ -117,7 +117,7 @@ export default function GADailyWork() {
         {/* Global CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/features"
+            href="/features/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             View All GarageSaarthi Features

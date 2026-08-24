@@ -8,6 +8,7 @@ import PlayStoreBadge from "./PlayStoreBadge";
 import GLogo from "@/src/assets/icons/Glogo.webp";
 import { FRONTEND_URL } from "@/src/config/env";
 import GradientUnderline from "./GradientUnderline";
+import AppStoreBadge from "./AppStoreBadge";
 
 export default function CloudAccessCommon({
   badge = "Cloud Access",
@@ -22,7 +23,7 @@ export default function CloudAccessCommon({
     },
     {
       icon: <FaAndroid className="w-4 h-4 text-emerald-600" />,
-      title: "Android Mobile App",
+      title: "Android & iOS Mobile App",
       desc: "Instant job card creation, photo uploads, and mechanic status tracking on the go."
     }
   ],
@@ -59,7 +60,7 @@ export default function CloudAccessCommon({
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-col md:flex-row gap-4 items-center">
               <Button
                 variant="hero"
                 icon={<FaArrowRight className="w-4 h-4" />}
@@ -68,17 +69,21 @@ export default function CloudAccessCommon({
                 Start 7-Day Free Trial
               </Button>
               <PlayStoreBadge />
+              <AppStoreBadge />
             </div>
           </div>
 
           {/* Visual Column */}
           <div className="bg-slate-50 max-w-xl mx-auto border border-slate-200/80 rounded-2xl p-8 flex flex-col justify-center items-center text-center h-full min-h-[320px]">
-            <span className="text-xs font-bold text-slate-800 mb-4 block">Android Play Store App Available</span>
+            <span className="text-xs font-bold text-slate-800 mb-4 block">Android & iOS Apps Available</span>
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 w-full mx-auto" style={{ maxWidth: "280px" }}>
               <img src={GLogo} alt="GarageSaarthi Logo" className="w-22 h-16 object-contain mx-auto mb-4" width={88} height={64} />
               <h4 className="font-bold text-slate-900 mb-1">GarageSaarthi App</h4>
               <p className="text-[10px] text-slate-500 mb-4">Complete garage management software for mobile.</p>
-              <PlayStoreBadge className="w-full justify-center" />
+              <div className="flex flex-col gap-2.5 w-full">
+                <PlayStoreBadge className="w-full justify-center" />
+                <AppStoreBadge className="w-full justify-center" />
+              </div>
             </div>
           </div>
 

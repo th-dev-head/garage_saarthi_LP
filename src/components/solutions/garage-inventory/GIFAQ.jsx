@@ -33,7 +33,7 @@ export default function GIFAQ() {
       answer: (
         <>
           Yes, GarageSaarthi is fully designed for car workshops. You can easily manage bulk passenger car spares, lubricants, filters, and other vehicle parts. See our{" "}
-          <Link href="/solutions/car-garage-software" className="text-primary hover:underline font-semibold">
+          <Link href="/solutions/car-garage-software/" className="text-primary hover:underline font-semibold">
             Car Garage Software
           </Link>{" "}
           page for more information.
@@ -45,7 +45,7 @@ export default function GIFAQ() {
       answer: (
         <>
           Absolutely. Two-wheeler workshops can track specialized bike spares like spark plugs, drive chains, cables, and clutch plates. Explore details on our{" "}
-          <Link href="/solutions/bike-workshop-software" className="text-primary hover:underline font-semibold">
+          <Link href="/solutions/bike-workshop-software/" className="text-primary hover:underline font-semibold">
             Bike Workshop Software
           </Link>{" "}
           page.
@@ -80,7 +80,7 @@ export default function GIFAQ() {
       question: "Can I access garage inventory from a mobile app?",
       answer: (
         <>
-          Yes, you can manage inventory logs directly from our live Android application. An iOS app is currently in development and will be released on the Apple App Store soon.
+          Yes, you can manage inventory logs directly from our mobile apps on Google Play Store and Apple App Store.
         </>
       )
     },
@@ -97,7 +97,7 @@ export default function GIFAQ() {
       answer: (
         <>
           We offer flexible monthly, quarterly, and annual subscription plans. Please visit our{" "}
-          <Link href="/pricing" className="text-primary hover:underline font-semibold">
+          <Link href="/pricing/" className="text-primary hover:underline font-semibold">
             Pricing
           </Link>{" "}
           page for details.

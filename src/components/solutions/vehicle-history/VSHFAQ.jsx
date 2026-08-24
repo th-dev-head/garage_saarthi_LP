@@ -41,7 +41,7 @@ export default function VSHFAQ() {
     },
     {
       question: "Is GarageSaarthi available on mobile?",
-      answer: "Yes. We maintain a live Android mobile application on the Google Play Store, alongside our web dashboard."
+      answer: "Yes. We maintain a live mobile apps on Google Play Store & Apple App Store, alongside our web dashboard."
     },
     {
       question: "Is vehicle service history included in the GarageSaarthi free trial?",

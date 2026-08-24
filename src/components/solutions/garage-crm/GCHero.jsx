@@ -7,11 +7,12 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 
 export default function GCHero() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
@@ -22,7 +23,7 @@ export default function GCHero() {
 
   const handleFeatureClick = () => {
     trackEvent("crm_feature_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "hero",
       cta_label: "Explore CRM Features",
@@ -36,9 +37,9 @@ export default function GCHero() {
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="mx-auto max-w-full lg:max-w-3xl w-full relative z-10 text-center flex flex-col items-center">
+      <div className="mx-auto max-w-full lg:max-w-5xl w-full relative z-10 text-center flex flex-col items-center">
         {/* Left Content */}
-        <div className="flex flex-col items-center text-center max-w-3xl">
+        <div className="flex flex-col items-center text-center max-w-5xl">
           <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-6 inline-block">
             Workshop CRM
           </span>
@@ -59,14 +60,17 @@ export default function GCHero() {
               Start 7-Day Free Trial
             </Button>
             <Link
-              href="/features/crm"
+              href="/features/crm/"
               onClick={handleFeatureClick}
               className="rounded-full border border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer w-full sm:w-auto whitespace-nowrap h-11 text-center"
             >
               Explore CRM Features
             </Link>
-            <PlayStoreBadge />
-          </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
         </div>
       </div>
     </section>

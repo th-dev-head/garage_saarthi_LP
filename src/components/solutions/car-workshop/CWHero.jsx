@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
@@ -11,7 +12,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function CWHero() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -21,7 +22,7 @@ export default function CWHero() {
 
   const handleAndroidClick = () => {
     trackEvent("android_download_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "hero",
       cta_label: "Download Android App"
     });
@@ -48,9 +49,10 @@ export default function CWHero() {
             <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />} className="w-full sm:w-auto">
               Start 7-Day Free Trial
             </Button>
-            <div onClick={handleAndroidClick}>
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
 

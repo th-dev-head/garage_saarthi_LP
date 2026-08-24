@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function VSHFeatures() {
   const handleFeatureClick = (name) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/vehicle-service-history-software",
+      page_path: "/solutions/vehicle-service-history-software/",
       cta_location: "related_features",
       cta_label: "Explore Feature",
       feature_name: name
@@ -17,13 +17,13 @@ export default function VSHFeatures() {
   };
 
   const features = [
-    { title: "Digital Job Cards", desc: "Open job sheets with checklists.", link: "/features/job-card-management" },
-    { title: "Customer Management", desc: "Keep owner details organized.", link: "/features/customers" },
-    { title: "Vehicle Management", desc: "Link multiple logs to one owner.", link: "/features/vehicles" },
-    { title: "Service Alerts", desc: "Track upcoming due timelines.", link: "/features/service-reminders" },
-    { title: "Inventory Management", desc: "Manage spare parts stock logs.", link: "/features/inventory" },
-    { title: "Garage CRM", desc: "Manage customer followups.", link: "/features/crm" },
-    { title: "Reports", desc: "Access business reports sheets.", link: "/features/reports" }
+    { title: "Digital Job Cards", desc: "Open job sheets with checklists.", link: "/features/job-card-management/" },
+    { title: "Customer Management", desc: "Keep owner details organized.", link: "/features/customers/" },
+    { title: "Vehicle Management", desc: "Link multiple logs to one owner.", link: "/features/vehicles/" },
+    { title: "Service Alerts", desc: "Track upcoming due timelines.", link: "/features/service-reminders/" },
+    { title: "Inventory Management", desc: "Manage spare parts stock logs.", link: "/features/inventory/" },
+    { title: "Garage CRM", desc: "Manage customer followups.", link: "/features/crm/" },
+    { title: "Reports", desc: "Access business reports sheets.", link: "/features/reports/" }
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function VSHFeatures() {
               <h3 className="text-sm font-bold mb-2">View All Features</h3>
               <p className="text-xs text-slate-300 mb-6">Explore the full power of GarageSaarthi platform.</p>
             </div>
-            <Link href="/features" className="flex items-center gap-1 text-xs text-orange-400 font-bold hover:underline mt-auto self-start">
+            <Link href="/features/" className="flex items-center gap-1 text-xs text-orange-400 font-bold hover:underline mt-auto self-start">
               Explore All <FaArrowRight className="w-2.5 h-2.5" />
             </Link>
           </div>

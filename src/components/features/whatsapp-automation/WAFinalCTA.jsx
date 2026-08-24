@@ -4,6 +4,7 @@ import React from "react";
 import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
 const waCtaGuarantees = [
@@ -15,7 +16,7 @@ const waCtaGuarantees = [
 export default function WAFinalCTA() {
   const handleCtaClick = () => {
     trackEvent("whatsapp_automation_feature_final_cta_click", {
-      page_path: "/features/automation",
+      page_path: "/features/automation/",
       cta_location: "final_cta",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/register`,
@@ -33,7 +34,7 @@ export default function WAFinalCTA() {
         <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold inline-block">
           Upgrade Your Workshop Communication
         </span>
-        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+        <h2 className="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
           Ready to Automate Your Workshop WhatsApp Messaging?
         </h2>
         <p className="text-slate-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
@@ -48,8 +49,11 @@ export default function WAFinalCTA() {
             Start 7-Day Free Trial
             <FaArrowRight className="w-4 h-4" />
           </button>
-          <PlayStoreBadge />
-        </div>
+          <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
 
         <div className="flex flex-wrap justify-center gap-6 text-xs text-slate-400 pt-4">
           {waCtaGuarantees.map((item, idx) => (

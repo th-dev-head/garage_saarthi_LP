@@ -5,7 +5,7 @@ const transformations = [
   {
     label: "Job Card Entry",
     manual: "Paper job sheets getting dirty, misplaced, or torn in repair bays.",
-    digital: "Digital Job Cards accessible on Android phones and laptops.",
+    digital: "Digital Job Cards accessible on Android & iOS phones and laptops.",
   },
   {
     label: "Customer & Vehicle Records",

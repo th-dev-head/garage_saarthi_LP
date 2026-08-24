@@ -64,7 +64,7 @@ export default function WSIDefinition() {
         <div className="text-center">
           <p className="text-xs md:text-sm text-slate-600">
             Learn more about our core{" "}
-            <Link href="/solutions/workshop-management-software" className="font-bold text-primary hover:underline">
+            <Link href="/solutions/workshop-management-software/" className="font-bold text-primary hover:underline">
               workshop management software
             </Link>{" "}
             platform.

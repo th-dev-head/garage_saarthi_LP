@@ -58,14 +58,14 @@ export default function ARSStaff() {
         {/* CTAs */}
         <div className="mt-8 flex flex-wrap gap-4 items-center justify-center">
           <Link
-            href="/features/attendance"
+            href="/features/attendance/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             Explore Staff Management Features
             <FaArrowRight className="w-3.5 h-3.5" />
           </Link>
           <Link
-            href="/features/user-management"
+            href="/features/user-management/"
             className="text-xs font-bold text-primary hover:underline"
           >
             Explore User Management & Roles

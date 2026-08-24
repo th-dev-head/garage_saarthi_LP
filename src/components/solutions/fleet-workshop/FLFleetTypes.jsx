@@ -66,11 +66,11 @@ export default function FLFleetTypes() {
             Do you manage specialized vehicle types? We support diverse setups.
           </p>
           <div className="flex justify-center gap-6 text-xs font-bold text-primary">
-            <Link href="/solutions/truck-workshop-software" className="hover:underline">
+            <Link href="/solutions/truck-workshop-software/" className="hover:underline">
               Truck Workshop Software
             </Link>
             <span>|</span>
-            <Link href="/solutions/car-garage-software" className="hover:underline">
+            <Link href="/solutions/car-garage-software/" className="hover:underline">
               Car Garage Software
             </Link>
           </div>

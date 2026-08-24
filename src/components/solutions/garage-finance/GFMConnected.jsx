@@ -8,7 +8,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GFMConnected() {
   const handleLinkClick = (name, url) => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "connected_finance_section",
       cta_label: name,
       destination: url
@@ -16,14 +16,14 @@ export default function GFMConnected() {
   };
 
   const connections = [
-    { activity: "Job Cards", desc: "Workshop repair work records", page: "Job Cards", url: "/features/job-card-management" },
-    { activity: "Counter Sales", desc: "Direct spare part sales bills", page: "Counter Sales", url: "/features/counter-sales" },
-    { activity: "Inventory", desc: "Warehouse stock values", page: "Inventory", url: "/features/inventory" },
-    { activity: "Payments", desc: "Outstanding bills and collections logs", page: "Payments", url: "/features/billing" },
-    { activity: "Payroll", desc: "Mechanic commissions & salaries logs", page: "Payroll", url: "/features/payroll" },
-    { activity: "Loans", desc: "Capital loan installment schedules", page: "Loans", url: "/features/loans" },
-    { activity: "Finance", desc: "Daily income & operating expense records", page: "Finance", url: "/features/finance" },
-    { activity: "Reports", desc: "Business collection & profit graphs", page: "Reports", url: "/features/reports" }
+    { activity: "Job Cards", desc: "Workshop repair work records", page: "Job Cards", url: "/features/job-card-management/" },
+    { activity: "Counter Sales", desc: "Direct spare part sales bills", page: "Counter Sales", url: "/features/counter-sales/" },
+    { activity: "Inventory", desc: "Warehouse stock values", page: "Inventory", url: "/features/inventory/" },
+    { activity: "Payments", desc: "Outstanding bills and collections logs", page: "Payments", url: "/features/billing/" },
+    { activity: "Payroll", desc: "Mechanic commissions & salaries logs", page: "Payroll", url: "/features/payroll/" },
+    { activity: "Loans", desc: "Capital loan installment schedules", page: "Loans", url: "/features/loans/" },
+    { activity: "Finance", desc: "Daily income & operating expense records", page: "Finance", url: "/features/finance/" },
+    { activity: "Reports", desc: "Business collection & profit graphs", page: "Reports", url: "/features/reports/" }
   ];
 
   return (

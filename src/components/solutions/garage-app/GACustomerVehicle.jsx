@@ -46,14 +46,14 @@ export default function GACustomerVehicle() {
 
             <div className="flex flex-wrap gap-4 items-center mb-6">
               <Link
-                href="/features/customers"
+                href="/features/customers/"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Customer Features
                 <FaArrowRight className="w-3.5 h-3.5" />
               </Link>
               <Link
-                href="/features/vehicles"
+                href="/features/vehicles/"
                 className="text-xs font-bold text-primary hover:underline"
               >
                 Explore Vehicle History Features

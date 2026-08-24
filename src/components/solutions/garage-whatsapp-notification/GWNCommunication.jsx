@@ -8,28 +8,28 @@ export default function GWNCommunication() {
     {
       icon: <FaUserPlus className="text-blue-600" />,
       title: "Customer Records",
-      link: "/features/customers",
+      link: "/features/customers/",
       anchor: "Customer Management",
       desc: "Log customer contact details, query comments, preferences, and messaging history."
     },
     {
       icon: <FaCar className="text-orange-500" />,
       title: "Vehicle Records",
-      link: "/features/vehicles",
+      link: "/features/vehicles/",
       anchor: "Vehicle Management",
       desc: "Link odometer readings, insurance papers, chassis details, and repair checklists directly."
     },
     {
       icon: <FaSearch className="text-green-600" />,
       title: "Garage CRM",
-      link: "/features/crm",
+      link: "/features/crm/",
       anchor: "Garage CRM",
       desc: "Manage leads, walk-ins, and schedule follow-up dates and pipeline statuses."
     },
     {
       icon: <FaGift className="text-purple-500" />,
       title: "Offers & Promotions",
-      link: "/features/offers-promotions",
+      link: "/features/offers-promotions/",
       anchor: "Offers & Promotions",
       desc: "Create and dispatch special coupons, monsoon packages, and loyalty discounts."
     }

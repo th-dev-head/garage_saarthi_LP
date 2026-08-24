@@ -8,7 +8,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function CWDashboardReports() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "reports_section",
       cta_label: name,
       destination: url
@@ -34,7 +34,7 @@ export default function CWDashboardReports() {
               <h3 className="text-base font-bold text-slate-800">Car Workshop Dashboard</h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
                 Check active job status counts, today's collections, and pending delivery schedules. Explore{" "}
-                <Link href="/features/workshop-management-dashboard" onClick={() => handleLinkClick("Dashboard Feature Link", "/features/workshop-management-dashboard")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/workshop-management-dashboard/" onClick={() => handleLinkClick("Dashboard Feature Link", "/features/workshop-management-dashboard/")} className="text-primary font-semibold hover:underline">
                   Dashboard
                 </Link>.
               </p>
@@ -44,7 +44,7 @@ export default function CWDashboardReports() {
               <h3 className="text-base font-bold text-slate-800">Workshop Reports</h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed font-normal">
                 Export daily collections logs, parts consumption metrics, and tax registers. Explore{" "}
-                <Link href="/features/reports" onClick={() => handleLinkClick("Reports Feature Link", "/features/reports")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/reports/" onClick={() => handleLinkClick("Reports Feature Link", "/features/reports/")} className="text-primary font-semibold hover:underline">
                   Workshop Reports
                 </Link>.
               </p>

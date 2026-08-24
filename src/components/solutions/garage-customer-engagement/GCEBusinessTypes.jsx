@@ -9,35 +9,35 @@ export default function GCEBusinessTypes() {
       icon: <FaCar className="text-blue-500 w-5 h-5" />,
       title: "Car Garages",
       desc: "Send service reminders, check periodic maintenance history, and handle automated WhatsApp follow-ups.",
-      link: "/solutions/car-garage-software",
+      link: "/solutions/car-garage-software/",
       anchor: "Car Garage"
     },
     {
       icon: <FaMotorcycle className="text-orange-500 w-5 h-5" />,
       title: "Bike Workshops",
       desc: "Manage fast-paced motorcycle records, service alerts, and repeat client communication schedules.",
-      link: "/solutions/bike-workshop-software",
+      link: "/solutions/bike-workshop-software/",
       anchor: "Bike Workshop"
     },
     {
       icon: <FaPlug className="text-green-500 w-5 h-5" />,
       title: "EV Garages",
       desc: "Track battery status, custom EV diagnostic alerts, and organize vehicle customer records together.",
-      link: "/solutions/ev-garage-management-software",
+      link: "/solutions/ev-garage-management-software/",
       anchor: "EV Garage"
     },
     {
       icon: <FaWrench className="text-slate-500 w-5 h-5" />,
       title: "Auto Repair Workshops",
       desc: "Streamline body shop estimates, parts consumption alerts, and repair check updates.",
-      link: "/solutions/auto-repair-shop-software",
+      link: "/solutions/auto-repair-shop-software/",
       anchor: "Auto Repair Shop"
     },
     {
       icon: <FaCodeBranch className="text-purple-500 w-5 h-5" />,
       title: "Multi-Branch Garages",
       desc: "Monitor consolidated customer counts, share common coupons, and view metrics across branches.",
-      link: "/solutions/multi-branch-garage-software",
+      link: "/solutions/multi-branch-garage-software/",
       anchor: "Multi-Branch Garage"
     }
   ];

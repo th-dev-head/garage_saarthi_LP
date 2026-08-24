@@ -50,7 +50,7 @@ export default function MultiBranchPromo() {
             </div>
 
             <Link
-              href="/solutions/multi-branch-garage-software"
+              href="/solutions/multi-branch-garage-software/"
               className="inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200 bg-primary text-white hover:bg-primary-hover shadow-sm px-6 py-2.5 text-sm cursor-pointer w-max mt-2"
             >
               Explore Multi-Branch Garage Software

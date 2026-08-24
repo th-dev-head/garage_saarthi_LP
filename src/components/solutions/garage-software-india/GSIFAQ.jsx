@@ -8,7 +8,7 @@ const gsiFaqData = [
   },
   {
     question: "Which garage management software is suitable for Indian workshops?",
-    answer: "An Indian workshop requires GST billing, customizable invoice series, view-only CA access, WhatsApp service alert automations, and Android mobile app access. GarageSaarthi provides these features built specifically for Indian workshop workflows.",
+    answer: "An Indian workshop requires GST billing, customizable invoice series, view-only CA access, WhatsApp service alert automations, and Android and iOS mobile app access. GarageSaarthi provides these features built specifically for Indian workshop workflows.",
   },
   {
     question: "Can GarageSaarthi manage GST billing?",
@@ -24,7 +24,7 @@ const gsiFaqData = [
   },
   {
     question: "Can I use GarageSaarthi on an Android mobile phone?",
-    answer: "Yes. GarageSaarthi is available as an Android app on the Google Play Store and as a web platform accessible on any browser. (iOS app coming soon).",
+    answer: "Yes. GarageSaarthi is available as an Android app on the Google Play Store & Apple App Store, and as a cloud web platform on any browser.",
   },
   {
     question: "Can I manage spare parts inventory?",

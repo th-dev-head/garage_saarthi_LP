@@ -11,7 +11,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GBFreeTrial() {
   const handleTrialClick = () => {
     trackEvent("billing_trial_cta_click", {
-      page_path: "/solutions/garage-billing-software",
+      page_path: "/solutions/garage-billing-software/",
       cta_location: "pricing_section",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -21,10 +21,10 @@ export default function GBFreeTrial() {
 
   const handlePricingClick = () => {
     trackEvent("billing_pricing_click", {
-      page_path: "/solutions/garage-billing-software",
+      page_path: "/solutions/garage-billing-software/",
       cta_location: "pricing_section",
       cta_label: "View Pricing",
-      destination: "/pricing"
+      destination: "/pricing/"
     });
   };
 
@@ -51,7 +51,7 @@ export default function GBFreeTrial() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             onClick={handlePricingClick}
             className="rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer font-semibold"
           >

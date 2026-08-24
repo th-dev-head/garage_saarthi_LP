@@ -1,5 +1,6 @@
 import React from "react";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GAAndroidApp() {
@@ -15,18 +16,21 @@ export default function GAAndroidApp() {
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Download the GarageSaarthi Garage Management{" "}
             <GradientUnderline>
-              App for Android
+              App for Android & iOS
             </GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Get the official application downloaded on your Android tablet or smartphone today. Get a 7-day unrestricted free trial. iOS app is coming soon.
+            Get the official application downloaded on your Android phone, tablet, or iPhone today. Get a 7-day unrestricted free trial.
           </p>
         </div>
 
         {/* Action Badge */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <PlayStoreBadge />
-          <span className="text-xs font-semibold text-slate-500">iOS app coming soon.</span>
+          <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+
         </div>
 
       </div>

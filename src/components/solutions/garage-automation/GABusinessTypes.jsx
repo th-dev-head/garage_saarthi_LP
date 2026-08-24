@@ -9,35 +9,35 @@ export default function GABusinessTypes() {
       icon: <FaCar className="text-blue-500 w-5 h-5" />,
       title: "Car Workshops",
       desc: "Manage periodic maintenance reminders, vehicle records, and body shop job cards.",
-      link: "/solutions/car-garage-software",
+      link: "/solutions/car-garage-software/",
       anchor: "Car Garage"
     },
     {
       icon: <FaWrench className="text-slate-500 w-5 h-5" />,
       title: "Automobile Workshops",
       desc: "Track multibrand repair work, inventory spares catalog, and labor tasks.",
-      link: "/solutions/automobile-workshop-software",
+      link: "/solutions/automobile-workshop-software/",
       anchor: "Automobile Workshop"
     },
     {
       icon: <FaWrench className="text-orange-500 w-5 h-5" />,
       title: "Auto Repair Shops",
       desc: "Digitize repair checklists, parts consumption records, and payment tracking.",
-      link: "/solutions/auto-repair-shop-software",
+      link: "/solutions/auto-repair-shop-software/",
       anchor: "Auto Repair Shop"
     },
     {
       icon: <FaWarehouse className="text-teal-500 w-5 h-5" />,
       title: "Service Centers",
       desc: "Streamline customer check-in lanes, service alerts, and WhatsApp reminder updates.",
-      link: "/solutions/best-workshop-management-software",
+      link: "/solutions/best-workshop-management-software/",
       anchor: "Workshop Management"
     },
     {
       icon: <FaCodeBranch className="text-purple-500 w-5 h-5" />,
       title: "Multi-Branch Garages",
       desc: "Consolidate operations, configure user roles, and track central analytics.",
-      link: "/solutions/multi-branch-garage-software",
+      link: "/solutions/multi-branch-garage-software/",
       anchor: "Multi-Branch Garage"
     }
   ];

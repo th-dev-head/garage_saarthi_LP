@@ -19,7 +19,7 @@ export default function GMServiceReminder() {
 
         <div className="pt-2">
           <Link
-            href="/solutions/service-reminder-software"
+            href="/solutions/service-reminder-software/"
             className="inline-flex items-center gap-2 rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-3 text-sm font-bold transition-all shadow-md"
           >
             Explore Garage Service Reminder Software <FaArrowRight className="w-3.5 h-3.5" />

@@ -8,7 +8,7 @@ const faqData = [
   },
   {
     question: "What is the best garage management software in India?",
-    answer: "When choosing garage management software in India, look for GST billing, localized workshop workflows, Android mobile app access, automated WhatsApp reminders, and multi-branch management capabilities. GarageSaarthi provides these features tailored for Indian automotive workshops.",
+    answer: "When choosing garage management software in India, look for GST billing, localized workshop workflows, Android and iOS mobile app access, automated WhatsApp reminders, and multi-branch management capabilities. GarageSaarthi provides these features tailored for Indian automotive workshops.",
   },
   {
     question: "What features should the best garage software have?",
@@ -40,7 +40,7 @@ const faqData = [
   },
   {
     question: "Is GarageSaarthi available as a mobile app?",
-    answer: "Yes. GarageSaarthi is available as an Android application on the Google Play Store and as a web platform accessible on any browser. (iOS app coming soon).",
+    answer: "Yes. GarageSaarthi is available as an Android application on the Google Play Store & Apple App Store, and as a cloud web platform on any browser.",
   },
   {
     question: "Can I try GarageSaarthi before buying?",

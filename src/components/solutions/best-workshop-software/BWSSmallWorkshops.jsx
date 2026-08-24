@@ -50,7 +50,7 @@ export default function BWSSmallWorkshops() {
               >
                 Start Your 7-Day Free Trial
               </Button>
-              <Link href="/solutions/automobile-workshop-software" className="text-xs font-bold text-primary hover:underline">
+              <Link href="/solutions/automobile-workshop-software/" className="text-xs font-bold text-primary hover:underline">
                 Explore Independent Workshop Solutions →
               </Link>
             </div>

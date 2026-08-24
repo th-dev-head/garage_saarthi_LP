@@ -25,7 +25,7 @@ export default function VIDefinition() {
         <div className="flex justify-center">
           <Button
             variant="primary"
-            onClick={() => router.push("/download-app")}
+            onClick={() => router.push("/download-app/")}
           >
             Get the GarageSaarthi App
             <FaArrowRight className="w-4 h-4 ml-2" />

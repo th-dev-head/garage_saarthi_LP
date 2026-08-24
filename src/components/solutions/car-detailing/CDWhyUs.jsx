@@ -12,7 +12,7 @@ const differentiators = [
   "Manages new enquiries and sales quotes inside a dedicated CRM Leads module",
   "Sends automated WhatsApp service due alerts and invoice links",
   "Integrates mechanic and detailer attendance, leaves, and payroll commission calculations",
-  "Ensures cloud access from any web browser and a native Android application",
+  "Ensures cloud access from any web browser and a native Android and iOS mobile applications",
   "Supports multi-branch controls and role-based staff access permissions",
   "Offers a fully functional 7-day free trial with zero registration charges",
   "India-focused product positioning custom-made for independent garages",

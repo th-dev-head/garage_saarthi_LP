@@ -25,14 +25,14 @@ export default function WATracking() {
 
             <div className="flex flex-wrap gap-4 items-center mb-6">
               <Link
-                href="/features/workshop-management-dashboard"
+                href="/features/workshop-management-dashboard/"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Dashboard Features
                 <FaArrowRight className="w-3.5 h-3.5" />
               </Link>
               <Link
-                href="/features/reports"
+                href="/features/reports/"
                 className="text-xs font-bold text-primary hover:underline"
               >
                 Explore Report Metrics

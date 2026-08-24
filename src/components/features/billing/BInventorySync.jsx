@@ -12,7 +12,7 @@ export default function BInventorySync() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Stock Connection
           </span>
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Connect Billing with Spare Parts <GradientUnderline>Inventory Management</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
@@ -22,7 +22,7 @@ export default function BInventorySync() {
             GarageSaarthi connects your billing terminal with spare parts stock lists. Adding parts to a job card or direct counter sale invoice auto-updates current stock counts, registers tax calculations, and applies pre-saved retail prices.
           </p>
 
-          <Link href="/features/inventory" className="text-xs text-primary font-bold hover:underline">
+          <Link href="/features/inventory/" className="text-xs text-primary font-bold hover:underline">
             Explore Garage Inventory Features →
           </Link>
         </div>

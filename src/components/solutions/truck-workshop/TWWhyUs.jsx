@@ -11,7 +11,7 @@ const differentiators = [
   "Track corporate fleet credit cycles and partial payment status",
   "Sends automated WhatsApp service due alerts and invoice links",
   "Integrates mechanic attendance, leave records, and payroll commission calculations",
-  "Ensures cloud access from any web browser and a native Android application",
+  "Ensures cloud access from any web browser and a native Android and iOS mobile applications",
   "Supports multi-branch controls and role-based staff access permissions",
   "Allows you to invite your CA for direct GST export access",
   "Offers a fully functional 7-day free trial with zero registration charges",

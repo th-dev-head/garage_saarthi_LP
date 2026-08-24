@@ -15,10 +15,10 @@ const challenges = [
 export default function GFMDefinition() {
   const handleFeatureClick = () => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "product_definition",
       cta_label: "Explore Finance Features",
-      destination: "/features/finance"
+      destination: "/features/finance/"
     });
   };
 
@@ -39,7 +39,7 @@ export default function GFMDefinition() {
             GarageSaarthi provides a workshop-focused finance management system that integrates transactions, bills, payments, and loans. You can easily record income, track business expenses, and configure roles to give your CA read-only visibility.
           </p>
           <div className="pt-2">
-            <Link href="/features/finance" onClick={handleFeatureClick}>
+            <Link href="/features/finance/" onClick={handleFeatureClick}>
               <Button variant="secondary">
                 Explore Finance Features
               </Button>

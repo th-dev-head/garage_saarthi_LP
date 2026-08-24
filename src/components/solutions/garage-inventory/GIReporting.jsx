@@ -56,7 +56,7 @@ export default function GIReporting() {
             ))}
           </div>
 
-          <Link href="/features/reports" className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1.5">
+          <Link href="/features/reports/" className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1.5">
             Learn More About Reports <FaArrowRight className="w-3 h-3" />
           </Link>
         </div>

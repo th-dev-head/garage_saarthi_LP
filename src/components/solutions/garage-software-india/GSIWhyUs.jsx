@@ -17,7 +17,7 @@ const differentiators = [
   "Automates WhatsApp service due alerts to increase customer retention",
   "Integrates mechanic attendance, leave applications, and labor commissions",
   "Supports multi-branch garage networks with centralized owner controls",
-  "Provides cloud web platform access and native Android mobile application",
+  "Provides cloud web platform access and native Android and iOS mobile apps",
   "Offers a fully functional 7-day free trial with zero registration fee",
 ];
 
@@ -60,7 +60,7 @@ export default function GSIWhyUs() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-100 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11"
           >
             View Pricing Plans

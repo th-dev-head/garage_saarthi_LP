@@ -5,10 +5,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function BWorkshopTypes() {
   const workshopTypes = [
-    { title: "Car Garage Billing Software", link: "/solutions/car-garage-software", desc: "Separate parts and labor billing, damage logs, and WhatsApp bill link sharing." },
-    { title: "Bike Workshop Billing Software", link: "/solutions/bike-workshop-software", desc: "Rapid service checkout logs, counter spare parts sales, and payment collections." },
-    { title: "Automobile Service Centers", link: "/solutions/automobile-workshop-software", desc: "Multi-brand repairs log, customized invoice series prefixes, and CA account registers." },
-    { title: "Vehicle Repair Businesses", link: "/solutions/workshop-management-software", desc: "Track estimates, log split payment modes, and monitor outstanding customer balances." }
+    { title: "Car Garage Billing Software", link: "/solutions/car-garage-software/", desc: "Separate parts and labor billing, damage logs, and WhatsApp bill link sharing." },
+    { title: "Bike Workshop Billing Software", link: "/solutions/bike-workshop-software/", desc: "Rapid service checkout logs, counter spare parts sales, and payment collections." },
+    { title: "Automobile Service Centers", link: "/solutions/automobile-workshop-software/", desc: "Multi-brand repairs log, customized invoice series prefixes, and CA account registers." },
+    { title: "Vehicle Repair Businesses", link: "/solutions/workshop-management-software/", desc: "Track estimates, log split payment modes, and monitor outstanding customer balances." }
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function BWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Profiles
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Invoicing and Billing Built for <GradientUnderline>All Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

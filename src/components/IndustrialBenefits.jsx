@@ -9,16 +9,16 @@ import {
 } from "react-icons/fa";
 
 const solutions = [
-  { icon: <FaCar className="w-8 h-8" />, title: "Car Garages", link: "/solutions/car-garage-software" },
-  { icon: <FaMotorcycle className="w-8 h-8" />, title: "Bike Workshops", link: "/solutions/bike-workshop-software" },
-  { icon: <FaBolt className="w-8 h-8" />, title: "EV Garages", link: "/solutions/ev-garage-management-software" },
-  { icon: <FaTruck className="w-8 h-8" />, title: "Truck Workshops", link: "/solutions/truck-workshop-software" },
-  { icon: <FaBus className="w-8 h-8" />, title: "Fleet Workshops", link: "/solutions/fleet-workshop-software" },
-  { icon: <FaPaintBrush className="w-8 h-8" />, title: "Car Detailing", link: "/solutions/car-detailing-software" },
-  { icon: <FaRing className="w-8 h-8" />, title: "Tyre Shops", link: "/solutions/car-detailing-software" },
-  { icon: <FaBatteryFull className="w-8 h-8" />, title: "Battery Shops", link: "/solutions/ev-garage-management-software" },
-  { icon: <FaCodeBranch className="w-8 h-8" />, title: "Multi-Branch Garages", link: "/solutions/multi-branch-garage-software" },
-  { icon: <FaUserCheck className="w-8 h-8" />, title: "Independent Garages", link: "/solutions/best-garage-management-software" }
+  { icon: <FaCar className="w-8 h-8" />, title: "Car Garages", link: "/solutions/car-garage-software/" },
+  { icon: <FaMotorcycle className="w-8 h-8" />, title: "Bike Workshops", link: "/solutions/bike-workshop-software/" },
+  { icon: <FaBolt className="w-8 h-8" />, title: "EV Garages", link: "/solutions/ev-garage-management-software/" },
+  { icon: <FaTruck className="w-8 h-8" />, title: "Truck Workshops", link: "/solutions/truck-workshop-software/" },
+  { icon: <FaBus className="w-8 h-8" />, title: "Fleet Workshops", link: "/solutions/fleet-workshop-software/" },
+  { icon: <FaPaintBrush className="w-8 h-8" />, title: "Car Detailing", link: "/solutions/car-detailing-software/" },
+  { icon: <FaRing className="w-8 h-8" />, title: "Tyre Shops", link: "/solutions/car-detailing-software/" },
+  { icon: <FaBatteryFull className="w-8 h-8" />, title: "Battery Shops", link: "/solutions/ev-garage-management-software/" },
+  { icon: <FaCodeBranch className="w-8 h-8" />, title: "Multi-Branch Garages", link: "/solutions/multi-branch-garage-software/" },
+  { icon: <FaUserCheck className="w-8 h-8" />, title: "Independent Garages", link: "/solutions/best-garage-management-software/" }
 ];
 
 export default function IndustrialBenefits() {

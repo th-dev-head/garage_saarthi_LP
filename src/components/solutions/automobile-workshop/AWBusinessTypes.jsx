@@ -7,37 +7,37 @@ const businessTypes = [
   {
     title: "Car Garages",
     desc: "Manage complex multi-system diagnostics, scheduled car wash stages, body shop painting timelines, and high-value spare parts records.",
-    link: "/solutions/car-garage-software",
+    link: "/solutions/car-garage-software/",
   },
   {
     title: "Bike Workshops",
     desc: "Optimize high-volume two-wheeler services, quick engine oil changes, chain lubrication job cards, and fast-moving spares cataloguing.",
-    link: "/solutions/bike-workshop-software",
+    link: "/solutions/bike-workshop-software/",
   },
   {
     title: "EV Garages",
     desc: "Track battery health status records, battery temperature parameters, specialized motor controller spares, and electrical technician safety guides.",
-    link: "/solutions/ev-garage-management-software",
+    link: "/solutions/ev-garage-management-software/",
   },
   {
     title: "Truck Workshops",
     desc: "Log heavy commercial vehicle heavy-duty suspension repair jobs, hydraulic parts checklists, and long-duration commercial repair sheets.",
-    link: "/solutions/truck-workshop-software",
+    link: "/solutions/truck-workshop-software/",
   },
   {
     title: "Fleet Workshops",
     desc: "Centrally monitor internal vehicle fleet preventative maintenance checklists, driver logs, spare parts usage, and log breakdowns.",
-    link: "/solutions/fleet-workshop-software",
+    link: "/solutions/fleet-workshop-software/",
   },
   {
     title: "Independent Garages",
     desc: "Simplify customer contact sheets, multi-brand spares cataloguing, fast GST invoicing, and WhatsApp follow-ups for local client bases.",
-    link: "/features/workshop-management-dashboard",
+    link: "/features/workshop-management-dashboard/",
   },
   {
     title: "Multi-Branch Workshops",
     desc: "Track real-time outlet operations, branch-wise sales registers, and consolidate stock levels of spare parts across all branch outlets.",
-    link: "/solutions/multi-branch-garage-software",
+    link: "/solutions/multi-branch-garage-software/",
   },
 ];
 

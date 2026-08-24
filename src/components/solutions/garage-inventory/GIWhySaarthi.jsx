@@ -16,8 +16,8 @@ export default function GIWhySaarthi() {
     },
     {
       icon: <FaMobileAlt className="w-5 h-5 text-primary" />,
-      title: "Web and Android Access",
-      desc: "Work on a large desktop monitor at the bill desk, or update inventory items directly from the garage floor with the Android app."
+      title: "Web, Android & iOS Access",
+      desc: "Work on a large desktop monitor at the bill desk, or update inventory items directly from the garage floor with the Android & iOS apps."
     },
     {
       icon: <FaFolderPlus className="w-5 h-5 text-primary" />,

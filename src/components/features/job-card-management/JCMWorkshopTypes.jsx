@@ -5,12 +5,12 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function JCMWorkshopTypes() {
   const workshopTypes = [
-    { title: "Car Garage Job Cards", link: "/solutions/car-garage-software", desc: "Log multi-brand car specifications, vehicle damage checklists, fuel scales, and engine diagnostics notes." },
-    { title: "Bike Workshop Job Cards", link: "/solutions/bike-workshop-software", desc: "Quick mobile check-ins for two-wheelers, tracking bike components, engine numbers, and rapid mechanics updates." },
-    { title: "Automobile Repair Workshops", link: "/solutions/automobile-workshop-software", desc: "Track extensive repair order details, mechanic assignments, and counter parts margins." },
-    { title: "Mechanics & Repair Teams", link: "/features/user-management", desc: "Set custom roles and logins for staff and mechanics. Allow mechanics to view assigned work sheets without access to billing details." },
-    { title: "Truck Workshops", link: "/solutions/truck-workshop-software", desc: "Manage heavy vehicle repair orders, wheel alignment logs, and high-value spares." },
-    { title: "EV Workshops", link: "/solutions/ev-garage-management-software", desc: "Track battery serial numbers, warranty details, and electrical diagnostic logs." }
+    { title: "Car Garage Job Cards", link: "/solutions/car-garage-software/", desc: "Log multi-brand car specifications, vehicle damage checklists, fuel scales, and engine diagnostics notes." },
+    { title: "Bike Workshop Job Cards", link: "/solutions/bike-workshop-software/", desc: "Quick mobile check-ins for two-wheelers, tracking bike components, engine numbers, and rapid mechanics updates." },
+    { title: "Automobile Repair Workshops", link: "/solutions/automobile-workshop-software/", desc: "Track extensive repair order details, mechanic assignments, and counter parts margins." },
+    { title: "Mechanics & Repair Teams", link: "/features/user-management/", desc: "Set custom roles and logins for staff and mechanics. Allow mechanics to view assigned work sheets without access to billing details." },
+    { title: "Truck Workshops", link: "/solutions/truck-workshop-software/", desc: "Manage heavy vehicle repair orders, wheel alignment logs, and high-value spares." },
+    { title: "EV Workshops", link: "/solutions/ev-garage-management-software/", desc: "Track battery serial numbers, warranty details, and electrical diagnostic logs." }
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function JCMWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Profiles
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Job Card Software Built for <GradientUnderline>Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

@@ -27,7 +27,7 @@ const bwsMatrix = [
   { feature: "Role-Based Access", why: "Control staff permissions by job role", status: "Yes" },
   { feature: "CA Access Portal", why: "Grant view-only accounting export access", status: "Yes" },
   { feature: "Web Portal Access", why: "Access dashboard from any laptop browser", status: "Yes" },
-  { feature: "Android Mobile App", why: "Manage workshop jobs on Android phones", status: "Yes" },
+  { feature: "Android & iOS Mobile App", why: "Manage workshop jobs on Android & iOS phones", status: "Yes" },
   { feature: "7-Day Free Trial", why: "Test all features before subscribing", status: "7 Days" },
 ];
 

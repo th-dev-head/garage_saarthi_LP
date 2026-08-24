@@ -10,10 +10,10 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GACCaAccess() {
   const handleFeatureClick = () => {
     trackEvent("ca_access_feature_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "ca_access_section",
       cta_label: "Explore CA Access",
-      destination: "/features/ca-access"
+      destination: "/features/ca-access/"
     });
   };
 
@@ -34,7 +34,7 @@ export default function GACCaAccess() {
             They can log in independently to download collections logs, expense records, and tax summaries, without having permissions to modify your live database.
           </p>
           <div className="pt-2">
-            <Link href="/features/ca-access" onClick={handleFeatureClick}>
+            <Link href="/features/ca-access/" onClick={handleFeatureClick}>
               <Button>
                 Explore CA Access <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

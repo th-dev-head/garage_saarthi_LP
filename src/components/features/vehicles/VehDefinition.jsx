@@ -17,7 +17,7 @@ export default function VehDefinition() {
             <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
               What is Workshop Vehicle Management?
             </span>
-            <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+            <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
               Cloud <GradientUnderline>Garage Vehicle Management Software</GradientUnderline> & System
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">

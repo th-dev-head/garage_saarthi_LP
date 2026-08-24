@@ -12,7 +12,7 @@ export default function WAFinalCTA() {
           <GradientUnderline>from One App?</GradientUnderline>
         </>
       }
-      subtitle="Start your trial or download the Android app and digitize your workshop management with GarageSaarthi."
+      subtitle="Start your trial or download the Android & iOS mobile apps and digitize your workshop management with GarageSaarthi."
       trialUrl={`${FRONTEND_URL}/signup`}
     />
   );

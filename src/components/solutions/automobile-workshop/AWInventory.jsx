@@ -8,25 +8,25 @@ const featureList = [
     icon: <FaBoxOpen className="w-5 h-5 text-primary" />,
     title: "Inventory Management",
     desc: "Maintain a live catalog of spare parts, engine oils, and accessories. Track current stock counts and values.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
   },
   {
     icon: <FaClipboardList className="w-5 h-5 text-primary" />,
     title: "Parts Requisition",
     desc: "Track parts issued to technicians for specific job cards. Ensure spare parts are correctly billed to the job.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
   },
   {
     icon: <FaShoppingCart className="w-5 h-5 text-primary" />,
     title: "Purchases",
     desc: "Record spare parts purchases, log vendor details, track purchase bills, and update stock counts automatically.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
   },
   {
     icon: <FaStore className="w-5 h-5 text-primary" />,
     title: "Counter Sales",
     desc: "Sell spare parts and lubricants directly over the counter without opening a job card. Generate bills instantly.",
-    link: "/features/counter-sales",
+    link: "/features/counter-sales/",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function AWInventory() {
         {/* Main CTA */}
         <div className="text-center">
           <Link
-            href="/features/inventory"
+            href="/features/inventory/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
           >
             Explore Inventory Management

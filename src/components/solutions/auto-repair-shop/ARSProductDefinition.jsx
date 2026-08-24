@@ -35,7 +35,7 @@ export default function ARSProductDefinition() {
               GarageSaarthi is a centralized auto repair shop management system built to run these daily workflows on one secure platform. It helps vehicle repair shops, independent garages, and automotive service centers organize operations, control leakage, and stay connected with customers.
             </p>
             <Link
-              href="/feature"
+              href="/feature/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
             >
               Explore GarageSaarthi Features

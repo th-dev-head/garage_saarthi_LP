@@ -11,11 +11,11 @@ export default function GWNWorkflow() {
       desc: (
         <>
           Store contact parameters and vehicle profiles in one system. Link customer data under our{" "}
-          <Link href="/features/customers" className="text-primary font-bold hover:underline">
+          <Link href="/features/customers/" className="text-primary font-bold hover:underline">
             Customer Management
           </Link>{" "}
           hub and{" "}
-          <Link href="/features/vehicles" className="text-primary font-bold hover:underline">
+          <Link href="/features/vehicles/" className="text-primary font-bold hover:underline">
             Vehicle Management
           </Link>{" "}
           registers.
@@ -28,7 +28,7 @@ export default function GWNWorkflow() {
       desc: (
         <>
           Log periodic servicing milestones and keep maintenance dates linked with vehicle profiles. Refer to details in{" "}
-          <Link href="/features/service-reminders" className="text-primary font-bold hover:underline">
+          <Link href="/features/service-reminders/" className="text-primary font-bold hover:underline">
             Service Alerts
           </Link>.
         </>

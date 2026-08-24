@@ -62,14 +62,14 @@ export default function ARSBillingFinance() {
 
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Link
-                href="/features/billing"
+                href="/features/billing/"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Explore Payments & Finance
                 <FaArrowRight className="w-3.5 h-3.5" />
               </Link>
               <Link
-                href="/features/ca-access"
+                href="/features/ca-access/"
                 className="text-xs font-bold text-primary hover:underline"
               >
                 Share Data with CA

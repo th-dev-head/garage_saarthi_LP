@@ -10,11 +10,11 @@ export default function ScrollToHash() {
     const cleanPath = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
 
     let id = "";
-    if (cleanPath === "/contact" || cleanPath === "/book-demo") {
+    if (cleanPath === "/contact/" || cleanPath === "/book-demo") {
       id = "contact";
-    } else if (cleanPath === "/download-app") {
+    } else if (cleanPath === "/download-app/") {
       id = "download-app";
-    } else if (cleanPath === "/feature") {
+    } else if (cleanPath === "/feature/") {
       id = "features";
     } else if (cleanPath === "/home" || cleanPath === "/") {
       id = "home";

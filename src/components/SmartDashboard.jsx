@@ -35,7 +35,7 @@ const SmartDashboard = () => {
             variant="hero"
             className="!px-8"
             onClick={() => {
-              router.push("/features/workshop-management-dashboard");
+              router.push("/features/workshop-management-dashboard/");
             }}
           >
             Explore Dashboard

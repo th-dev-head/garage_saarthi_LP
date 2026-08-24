@@ -1,14 +1,15 @@
 "use client";
 
-import { FRONTEND_URL } from "@/src/config/env";
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 import { FaArrowRight } from "react-icons/fa";
 import MockupBg from "../../../assets/icons/MockupDashboard.webp";
 import AppHand from "../../../assets/icons/Appdl.webp";
-import PlayStoreIcon from "../../../assets/icons/Playstore.webp";
 import Button from "../../common/Button";
+import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import Link from "next/link";
+import { FRONTEND_URL } from "@/src/config/env";
 
 export default function WMMobile() {
   return (
@@ -50,7 +51,7 @@ export default function WMMobile() {
           </h2>
 
           <p className="text-gray-600 text-sm md:text-lg mb-7 md:mb-10 max-w-3xl leading-relaxed font-medium">
-            Manage your garage business from anywhere. Run invoices and check financial reports on your office desktop, while mechanics create digital job cards and update service statuses directly on the shop floor using our Android app.
+            Manage your garage business from anywhere. Run invoices and check financial reports on your office desktop, while mechanics create digital job cards and update service statuses directly on the shop floor using our Android and iOS apps.
           </p>
 
           <div className="flex flex-wrap gap-4 items-center justify-center md:justify-start w-full">
@@ -65,21 +66,11 @@ export default function WMMobile() {
               <FaArrowRight className="w-4 h-4 ml-2" />
             </Button>
 
-            {/* Play Store Button */}
-            <Link
-              href="https://play.google.com/store/apps/details?id=com.th.garagesaarthi&hl=en_IN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full whitespace-nowrap transition-all hover:-translate-y-1 active:scale-95 group h-[46px]"
-            >
-              <div className="p-0.5">
-                <img src={PlayStoreIcon} alt="Google Play Store" className="w-6 h-6 object-contain" />
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="text-[9px] font-normal opacity-70 leading-none">Download on the</span>
-                <span className="text-xs font-semibold leading-tight mt-0.5">Play Store</span>
-              </div>
-            </Link>
+            {/* App Store & Play Store Badges */}
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
       </div>

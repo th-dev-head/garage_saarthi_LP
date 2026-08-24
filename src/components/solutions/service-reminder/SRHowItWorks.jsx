@@ -9,35 +9,35 @@ export default function SRHowItWorks() {
       num: "01",
       title: "Keep Records Organized",
       desc: "Connect customer details with their vehicles and garage records seamlessly.",
-      link: "/features/customers",
+      link: "/features/customers/",
       label: "customer records"
     },
     {
       num: "02",
       title: "Track Upcoming Due Dates",
       desc: "Use GarageSaarthi service alerts to identify vehicles with upcoming service requirements.",
-      link: "/features/service-reminders",
+      link: "/features/service-reminders/",
       label: "service alerts"
     },
     {
       num: "03",
       title: "Review Follow-Up Lists",
       desc: "View relevant upcoming service information and organize daily garage follow-up tasks.",
-      link: "/features/crm",
+      link: "/features/crm/",
       label: "garage crm"
     },
     {
       num: "04",
       title: "Send WhatsApp Reminders",
       desc: "Send service due alerts directly to customers using supported WhatsApp reminder workflows.",
-      link: "/features/service-reminders",
+      link: "/features/service-reminders/",
       label: "whatsapp alerts"
     },
     {
       num: "05",
       title: "Manage Service History",
       desc: "Keep customer, vehicle, and garage service logs structured and updated.",
-      link: "/features/vehicles",
+      link: "/features/vehicles/",
       label: "vehicle logs"
     }
   ];

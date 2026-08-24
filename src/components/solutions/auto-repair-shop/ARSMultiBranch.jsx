@@ -23,7 +23,7 @@ import GradientUnderline from "../../common/GradientUnderline"; export default f
               Check live stock levels at other branches. If one outlet runs out of an oil filter or brake pads, check availability elsewhere instantly.
             </p>
             <Link
-              href="/solutions/multi-branch-garage-software"
+              href="/solutions/multi-branch-garage-software/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
             >
               Explore Multi-Branch Garage Software

@@ -57,7 +57,7 @@ export default function WMHero() {
             <span>✓ No credit card required</span>
             <span>✓ 7-day free trial</span>
             <span>✓ GST billing included</span>
-            <span>✓ Android app available</span>
+            <span>✓ Android & iOS apps available</span>
           </div>
         </div>
       </div>

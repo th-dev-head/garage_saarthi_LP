@@ -9,21 +9,21 @@ export default function GIWorkshopTypes() {
       icon: <FaCar className="w-5 h-5" />,
       title: "Car Workshop Inventory Software",
       desc: "Manage massive catalogs for multi-brand passenger cars. Track complex spares like cabin air filters, specific grades of engine oils, brake discs/pads, suspension linkages, and general shop consumables.",
-      link: "/solutions/car-garage-software",
+      link: "/solutions/car-garage-software/",
       linkText: "Explore Car Garage Software"
     },
     {
       icon: <FaMotorcycle className="w-5 h-5" />,
       title: "Bike Workshop Inventory Software",
       desc: "Tailored for two-wheeler mechanics. Track high-velocity parts such as spark plugs, drive chains, sprockets, accelerator/brake cables, clutch plates, and common scooter air filter elements.",
-      link: "/solutions/bike-workshop-software",
+      link: "/solutions/bike-workshop-software/",
       linkText: "Explore Bike Workshop Software"
     },
     {
       icon: <FaWrench className="w-5 h-5" />,
       title: "Auto Workshop Inventory Software",
       desc: "Designed for general automobile workshop services, auto detailing centers, and tyre repair businesses. Maintain accurate registers for fast-moving replacement parts and billing transactions.",
-      link: "/solutions/workshop-management-software",
+      link: "/solutions/workshop-management-software/",
       linkText: "Explore Workshop Management Software"
     }
   ];

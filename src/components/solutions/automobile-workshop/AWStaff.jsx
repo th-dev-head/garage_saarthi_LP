@@ -8,31 +8,31 @@ const staffFeatures = [
     icon: <FaUserCheck className="w-5 h-5 text-primary" />,
     title: "Attendance Management",
     desc: "Log daily attendance entries, clock-in times, and clock-out details for all workshop mechanics.",
-    link: "/features/attendance",
+    link: "/features/attendance/",
   },
   {
     icon: <FaCalendarMinus className="w-5 h-5 text-primary" />,
     title: "Leave Management",
     desc: "Track staff leaves, permission records, and calculate paid/unpaid leaves automatically.",
-    link: "/features/leave-management",
+    link: "/features/leave-management/",
   },
   {
     icon: <FaMoneyBillWave className="w-5 h-5 text-primary" />,
     title: "Wage & Payroll",
     desc: "Manage salary payments, calculate fixed wages, and track commissions based on jobs completed.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
   },
   {
     icon: <FaTasks className="w-5 h-5 text-primary" />,
     title: "Technician Productivity",
     desc: "Track how many job cards each mechanic completes, time taken per repair, and monitor service efficiency.",
-    link: "/features/reports",
+    link: "/features/reports/",
   },
   {
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     title: "User Management & Roles",
     desc: "Create safe, role-based access logins for workshop receptionists, advisors, helpers, and storekeepers.",
-    link: "/features/user-management",
+    link: "/features/user-management/",
   },
 ];
 

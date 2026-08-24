@@ -7,7 +7,7 @@ const criteria = [
   "GST compliance with customizable billing series and HSN/SAC breakdown",
   "View-only CA portal access for monthly tax return filing and exports",
   "Automated WhatsApp service due reminders sent directly to customers",
-  "Android mobile application for bay floor job card creation",
+  "Android and iOS mobile apps for bay floor job card creation",
   "Digital job cards recording pre-repair scratch notes and labor rates",
   "Real-time spare parts stock tracking with dynamic checkout deductions",
   "Mechanic staff attendance, leave management, and job commissions",
@@ -45,7 +45,7 @@ export default function GSICriteria() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Compare GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />

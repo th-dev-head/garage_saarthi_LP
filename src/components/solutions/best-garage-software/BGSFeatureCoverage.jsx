@@ -24,7 +24,7 @@ const featureMatrix = [
   { feature: "CA Access Portal", available: true, label: "Yes" },
   { feature: "Cloud Web Portal Access", available: true, label: "Yes" },
   { feature: "Android Mobile Application", available: true, label: "Yes" },
-  { feature: "iOS Application (iPhone/iPad)", available: false, label: "Coming Soon" },
+  { feature: "iOS Application (iPhone/iPad)", available: true, label: "Yes" },
 ];
 
 export default function BGSFeatureCoverage() {
@@ -77,7 +77,7 @@ export default function BGSFeatureCoverage() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore All Features <FaArrowRight className="w-3.5 h-3.5" />

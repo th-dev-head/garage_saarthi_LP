@@ -41,7 +41,7 @@ export default function MBFAQ() {
     },
     {
       question: "Can I use GarageSaarthi on mobile?",
-      answer: "Yes. We maintain a live Android mobile application on the Google Play Store, alongside our main web dashboard."
+      answer: "Yes. We maintain a live mobile apps on Google Play Store & Apple App Store, alongside our main web dashboard."
     },
     {
       question: "Does GarageSaarthi offer a free trial?",

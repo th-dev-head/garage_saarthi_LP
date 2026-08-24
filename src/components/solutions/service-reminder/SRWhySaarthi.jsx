@@ -7,7 +7,7 @@ export default function SRWhySaarthi() {
     { title: "Connected Records", desc: "Customer contacts and vehicle models linked inside one database." },
     { title: "Due Calendars", desc: "Service alerts dashboard to plan future outreach actions." },
     { title: "WhatsApp Support", desc: "Authorized WhatsApp messaging template flow for reminders." },
-    { title: "Multi-Platform Access", desc: "Switch seamlessly between browser dashboard and Android application." }
+    { title: "Multi-Platform Access", desc: "Switch seamlessly between browser dashboard, Android, and iOS applications." }
   ];
 
   return (

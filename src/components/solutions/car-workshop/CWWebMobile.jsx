@@ -3,6 +3,7 @@
 import React from "react";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
@@ -11,7 +12,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function CWWebMobile() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "web_mobile_section",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -21,7 +22,7 @@ export default function CWWebMobile() {
 
   const handleAndroidClick = () => {
     trackEvent("android_download_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "web_mobile_section",
       cta_label: "Download Android App"
     });
@@ -35,7 +36,7 @@ export default function CWWebMobile() {
             <span className="text-5xl">📱</span>
             <h3 className="text-base font-bold text-text-dark">Cloud Sync Active</h3>
             <p className="text-xs text-slate-500 max-w-xs">
-              Every job card check-in, part update, and invoice raised syncs instantly between the Android app and web dashboard.
+              Every job card check-in, part update, and invoice raised syncs instantly between mobile apps (Android & iOS) and web dashboard.
             </p>
           </div>
         </div>
@@ -48,19 +49,20 @@ export default function CWWebMobile() {
             Manage Your Car Workshop on <GradientUnderline>Web and Mobile</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Record employee parameters or create digital job cards on any screen. GarageSaarthi functions as an online car workshop management app, offering a browser dashboard alongside our live Android mobile application.
+            Record employee parameters or create digital job cards on any screen. GarageSaarthi functions as an online car workshop management app, offering a browser dashboard alongside our Android and iOS mobile applications.
           </p>
           <p className="text-slate-500 text-xs">
-            *Note: Currently, we support web browser environments and Android devices. iOS support is coming soon.
+            *Note: Currently, we support web browser environments and Android devices. iOS apps are fully available.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-center pt-2">
             <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />} className="w-full sm:w-auto">
               Start 7-Day Free Trial
             </Button>
-            <div onClick={handleAndroidClick}>
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
       </div>

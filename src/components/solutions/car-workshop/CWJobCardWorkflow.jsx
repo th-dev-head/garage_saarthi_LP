@@ -9,21 +9,21 @@ const workflowSteps = [
   {
     title: "Digital Job Cards",
     desc: "Log services and repair activities on our web or mobile app dashboard. Explore ",
-    href: "/features/job-card-management",
+    href: "/features/job-card-management/",
     linkText: "Digital Job Cards",
     label: "Job Cards Feature Link"
   },
   {
     title: "Customer Records",
     desc: "Track phone numbers, billing profiles, and active cars centrally. Explore ",
-    href: "/features/customers",
+    href: "/features/customers/",
     linkText: "Customer Records",
     label: "Customers Feature Link"
   },
   {
     title: "Vehicle History",
     desc: "Review past invoice records, spare part bills, and checklists. Explore ",
-    href: "/features/vehicles",
+    href: "/features/vehicles/",
     linkText: "Vehicle History",
     label: "Vehicles Feature Link"
   }
@@ -32,7 +32,7 @@ const workflowSteps = [
 export default function CWJobCardWorkflow() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "job_card_workflow_section",
       cta_label: name,
       destination: url

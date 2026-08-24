@@ -3,6 +3,7 @@
 import React from "react";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
@@ -11,7 +12,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GAWebMobile() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "web_mobile_section",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -21,7 +22,7 @@ export default function GAWebMobile() {
 
   const handleAndroidClick = () => {
     trackEvent("android_download_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "web_mobile_section",
       cta_label: "Download Android App"
     });
@@ -35,7 +36,7 @@ export default function GAWebMobile() {
             <span className="text-5xl">📱</span>
             <h3 className="text-base font-bold text-text-dark">Cloud Sync Active</h3>
             <p className="text-xs text-slate-500 max-w-xs">
-              Mechanic check-ins logged on the Android mobile app synchronize instantly with the owner's browser dashboard.
+              Mechanic check-ins logged on the Android and iOS mobile apps synchronize instantly with the owner's browser dashboard.
             </p>
           </div>
         </div>
@@ -48,19 +49,20 @@ export default function GAWebMobile() {
             Manage Workshop Attendance on <GradientUnderline>Web and Mobile</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Record employee parameters or verify shift statuses on any screen. GarageSaarthi functions as an online mechanic attendance app, offering a full browser dashboard alongside our specialized Android mobile application.
+            Record employee parameters or verify shift statuses on any screen. GarageSaarthi functions as an online mechanic attendance app, offering a full browser dashboard alongside our Android and iOS mobile applications.
           </p>
           <p className="text-slate-500 text-xs">
-            *Note: The iOS version of the app is coming soon. Web dashboard access works across all mobile browsers.
+            *Note: GarageSaarthi is available on both Android (Google Play) and iOS (Apple App Store), plus desktop web.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-center pt-2">
             <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />} className="w-full sm:w-auto">
               Start 7-Day Free Trial
             </Button>
-            <div onClick={handleAndroidClick}>
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
       </div>

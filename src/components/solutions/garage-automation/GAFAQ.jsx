@@ -37,7 +37,7 @@ export default function GAFAQ() {
     },
     {
       question: "Is GarageSaarthi available as a garage automation app?",
-      answer: "Yes, our web dashboard is paired with a dedicated Android application on the Google Play Store, letting you manage the workshop on the go."
+      answer: "Yes, our web dashboard is paired with a dedicated mobile apps on Google Play Store and Apple App Store, letting you manage the workshop on the go."
     },
     {
       question: "Is GarageSaarthi cloud-based?",

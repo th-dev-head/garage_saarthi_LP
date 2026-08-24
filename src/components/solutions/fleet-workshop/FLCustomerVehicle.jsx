@@ -8,21 +8,21 @@ const vehicleCards = [
     icon: FaUserTie,
     title: "Manage Corporate Fleet Profiles",
     desc: "Maintain profile files containing customer names, contact numbers, active WhatsApp details, and previous visit logs securely.",
-    link: "/features/customers",
+    link: "/features/customers/",
     linkText: "Explore Fleet Profiles"
   },
   {
     icon: FaTruckMoving,
     title: "Keep Vehicle Info Organized",
     desc: "Log vehicle registration codes, chassis numbers, engine configurations, cargo payload specifications, and odometer readings.",
-    link: "/features/vehicles",
+    link: "/features/vehicles/",
     linkText: "Explore Vehicle Logs"
   },
   {
     icon: FaHistory,
     title: "View Maintenance History",
     desc: "Track previous engine adjustments, parts substituted, labor records, and technician notes, building customer trust with total operational transparency.",
-    link: "/solutions/vehicle-service-history-software",
+    link: "/solutions/vehicle-service-history-software/",
     linkText: "Explore Maintenance Logs"
   }
 ];

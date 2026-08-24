@@ -15,7 +15,7 @@ const jobCardBenefits = [
 export default function GJCCustomerVehicle() {
   const handleLinkClick = (label) => {
     trackEvent("job_card_feature_link_click", {
-      page_path: "/solutions/garage-job-card-software",
+      page_path: "/solutions/garage-job-card-software/",
       cta_location: "customer_vehicle_connection",
       cta_label: label
     });
@@ -47,14 +47,14 @@ export default function GJCCustomerVehicle() {
 
           <div className="flex flex-wrap gap-4 items-center">
             <Link
-              href="/features/customers"
+              href="/features/customers/"
               onClick={() => handleLinkClick("Customer Management")}
               className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1"
             >
               Customer Management <FaArrowRight className="w-3 h-3" />
             </Link>
             <Link
-              href="/features/vehicles"
+              href="/features/vehicles/"
               onClick={() => handleLinkClick("Vehicle Management")}
               className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1"
             >

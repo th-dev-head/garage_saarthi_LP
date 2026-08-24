@@ -5,10 +5,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function MGWorkshopTypes() {
   const workshopTypes = [
-    { title: "Car Detailing & Painting Spas", link: "/solutions/car-detailing-software", desc: "Compare side-by-side Before/After body detailing photos, ceramic coatings, and paint transformations." },
-    { title: "Car Repair Workshop Galleries", link: "/solutions/car-workshop-software", desc: "Snap engine component damage, worn brake rotors, and suspension leaks to justify part replacements." },
-    { title: "Two Wheeler Service Spares", link: "/solutions/bike-workshop-software", desc: "Share images of dirty spark plugs or worn chains directly with bike owners via WhatsApp link." },
-    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software", desc: "Maintain structured image logs of pre-existing scratch check-ins before starting diagnostic jobs." }
+    { title: "Car Detailing & Painting Spas", link: "/solutions/car-detailing-software/", desc: "Compare side-by-side Before/After body detailing photos, ceramic coatings, and paint transformations." },
+    { title: "Car Repair Workshop Galleries", link: "/solutions/car-workshop-software/", desc: "Snap engine component damage, worn brake rotors, and suspension leaks to justify part replacements." },
+    { title: "Two Wheeler Service Spares", link: "/solutions/bike-workshop-software/", desc: "Share images of dirty spark plugs or worn chains directly with bike owners via WhatsApp link." },
+    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software/", desc: "Maintain structured image logs of pre-existing scratch check-ins before starting diagnostic jobs." }
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function MGWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Profiles
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Photo Galleries and Visual Logs for <GradientUnderline>All Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

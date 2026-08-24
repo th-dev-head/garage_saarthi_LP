@@ -5,6 +5,7 @@ import React from "react";
 import { FaLaptop, FaMobileAlt, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const accessPoints = [
@@ -15,7 +16,7 @@ const accessPoints = [
   },
   {
     icon: FaMobileAlt,
-    title: "Android Application",
+    title: "Android & iOS Mobile App",
     desc: "For Bay Floor Job Cards & Inventory Checks"
   }
 ];
@@ -23,7 +24,7 @@ const accessPoints = [
 const cloudBenefits = [
   "Access data securely from any web browser or Android phone",
   "Live synchronization between workshop bay and front office desk",
-  "Multi-user role permissions (iOS app under Apple App Store review)"
+  "Multi-user role permissions & iOS app on Apple App Store"
 ];
 
 export default function BGSCloudAccess() {
@@ -82,8 +83,11 @@ export default function BGSCloudAccess() {
               >
                 Start 7-Day Free Trial
               </Button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
         </div>
       </div>

@@ -63,7 +63,7 @@ export default function CDOperations() {
 
         <div className="flex justify-center pt-2">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-1.5 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore Detailing Features <FaArrowRight className="w-3.5 h-3.5" />

@@ -1,9 +1,10 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 
 const steps = [
-  { step: "1", title: "Download on Mobile", desc: "Search for 'GarageSaarthi' on the Google Play Store and install the app." },
+  { step: "1", title: "Download on Mobile", desc: "Search for 'GarageSaarthi' on Google Play Store or Apple App Store and install the app." },
   { step: "2", title: "Create Your Account", desc: "Sign up using your mobile number and add basic workshop parameters." },
   { step: "3", title: "Start Free Trial", desc: "Get a full 7-day free trial activated instantly with no card details required." },
   { step: "4", title: "Log Daily Services", desc: "Create your first digital job card and start tracking vehicle progress." }
@@ -21,7 +22,7 @@ export default function WAAndroidDownload() {
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Download the GarageSaarthi Workshop{" "}
-            <GradientUnderline>Management App for Android</GradientUnderline>
+            <GradientUnderline>Management App for Android & iOS</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Get complete control over your garage operations. Follow these simple steps to download the app and digitize your workshop.
@@ -43,8 +44,11 @@ export default function WAAndroidDownload() {
 
         {/* PlayStore Button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <PlayStoreBadge />
-          <span className="text-xs font-semibold text-slate-500">iOS app coming soon.</span>
+          <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+
         </div>
 
       </div>

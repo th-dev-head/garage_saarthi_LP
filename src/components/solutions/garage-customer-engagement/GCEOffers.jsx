@@ -48,7 +48,7 @@ export default function GCEOffers() {
 
             <div className="pt-4">
               <Link
-                href="/features/offers-promotions"
+                href="/features/offers-promotions/"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
               >
                 Explore <span className="font-bold">Offers & Promotions</span>

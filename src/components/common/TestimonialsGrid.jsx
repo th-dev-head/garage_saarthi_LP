@@ -32,7 +32,7 @@ export default function TestimonialsGrid({
   titleHighlight = "India",
   subtitle = "Read real experiences from automobile workshop owners, service advisors, and mechanics using GarageSaarthi daily.",
   reviews = defaultReviews,
-  linkHref = "/solutions/best-garage-management-software",
+  linkHref = "/solutions/best-garage-management-software/",
   linkLabel = "View All Customer Stories",
   bgClass = "bg-slate-50",
 }) {

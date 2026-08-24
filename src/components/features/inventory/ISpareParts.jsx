@@ -46,7 +46,7 @@ export default function ISpareParts() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Spare Parts Management
           </span>
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Keep Garage Spare Parts <GradientUnderline>Organized and Easy to Track</GradientUnderline>
           </h2>
 

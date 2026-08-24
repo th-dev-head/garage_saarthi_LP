@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GRAReportsOverview() {
   const handleFeatureClick = (name) => {
     trackEvent("reports_feature_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "reports_overview",
       cta_label: "Explore Category",
       feature_name: name
@@ -17,14 +17,14 @@ export default function GRAReportsOverview() {
   };
 
   const reports = [
-    { title: "Sales Reports", desc: "Track sales invoice data and counters sales summaries.", link: "/features/counter-sales", label: "Counter Sales" },
-    { title: "Finance Reports", desc: "Manage payment receipts, bills, and expense summaries.", link: "/features/finance", label: "Finance Management" },
-    { title: "Inventory Reports", desc: "Monitor spare parts stock lists, reorder levels, and entries.", link: "/features/inventory", label: "Inventory" },
-    { title: "Service Reports", desc: "View detailed workshop checklists and job card lists.", link: "/features/job-card-management", label: "Digital Job Cards" },
-    { title: "Customer Reports", desc: "Access repeat visit sheets and customer profile sheets.", link: "/features/customers", label: "Customer List" },
-    { title: "Employee & Staff Reports", desc: "Check attendance metrics and payroll statements.", link: "/features/attendance", label: "Staff Records" },
-    { title: "Vehicle Reports", desc: "Review diagnostic logs and historical repair summaries.", link: "/features/vehicles", label: "Vehicle Profiles" },
-    { title: "Branch Reports", desc: "Track multibranch sales and performance comparisons.", link: "/features/branches", label: "Branch Operations" }
+    { title: "Sales Reports", desc: "Track sales invoice data and counters sales summaries.", link: "/features/counter-sales/", label: "Counter Sales" },
+    { title: "Finance Reports", desc: "Manage payment receipts, bills, and expense summaries.", link: "/features/finance/", label: "Finance Management" },
+    { title: "Inventory Reports", desc: "Monitor spare parts stock lists, reorder levels, and entries.", link: "/features/inventory/", label: "Inventory" },
+    { title: "Service Reports", desc: "View detailed workshop checklists and job card lists.", link: "/features/job-card-management/", label: "Digital Job Cards" },
+    { title: "Customer Reports", desc: "Access repeat visit sheets and customer profile sheets.", link: "/features/customers/", label: "Customer List" },
+    { title: "Employee & Staff Reports", desc: "Check attendance metrics and payroll statements.", link: "/features/attendance/", label: "Staff Records" },
+    { title: "Vehicle Reports", desc: "Review diagnostic logs and historical repair summaries.", link: "/features/vehicles/", label: "Vehicle Profiles" },
+    { title: "Branch Reports", desc: "Track multibranch sales and performance comparisons.", link: "/features/branches/", label: "Branch Operations" }
   ];
 
   return (

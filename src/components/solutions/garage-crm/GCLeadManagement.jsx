@@ -26,7 +26,7 @@ const leadCards = [
 export default function GCLeadManagement() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "lead_management",
       cta_label: "Manage Garage Leads with GarageSaarthi",
@@ -37,7 +37,7 @@ export default function GCLeadManagement() {
 
   const handleLinkClick = () => {
     trackEvent("crm_feature_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "lead_management",
       cta_label: "CRM Feature Link Clicked",
@@ -80,7 +80,7 @@ export default function GCLeadManagement() {
             Manage Garage Leads with GarageSaarthi
           </Button>
           <Link
-            href="/features/crm"
+            href="/features/crm/"
             onClick={handleLinkClick}
             className="text-xs text-primary font-bold hover:underline"
           >

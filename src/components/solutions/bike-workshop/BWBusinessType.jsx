@@ -65,7 +65,7 @@ export default function BWBusinessType() {
         <div className="text-center bg-[#EFE9E7]/40 border border-primary/20 p-6 rounded-3xl max-w-2xl mx-auto">
           <p className="text-xs text-slate-700 leading-relaxed">
             Operating a growing workshop chain? Move from disconnected tools and paper records to a centralized digital system.{" "}
-            <Link href="/solutions/multi-branch-garage-software" className="font-bold text-primary hover:underline">
+            <Link href="/solutions/multi-branch-garage-software/" className="font-bold text-primary hover:underline">
               Explore Multi-Branch Garage Software
             </Link>
           </p>

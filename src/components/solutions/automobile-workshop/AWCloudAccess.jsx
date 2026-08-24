@@ -11,7 +11,7 @@ export default function AWCloudAccess() {
     },
     {
       icon: <FaAndroid className="text-green-500" />,
-      title: "Android Mobile Application",
+      title: "Android & iOS Mobile App",
       desc: "Great for workshop floor advisors. Walk around incoming vehicles, take photos of scratches or parts, and register complaints instantly on-site."
     }
   ];

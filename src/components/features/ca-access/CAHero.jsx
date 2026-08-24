@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaArrowRight, FaUserShield } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
 const caHeroBlocks = [
@@ -16,7 +17,7 @@ const caHeroBlocks = [
 export default function CAHero() {
   const handleTrialClick = () => {
     trackEvent("ca_access_feature_trial_cta_click", {
-      page_path: "/features/ca-access",
+      page_path: "/features/ca-access/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/register`,
@@ -37,7 +38,7 @@ export default function CAHero() {
             <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-2 inline-block">
               CA & Accountant Login Portal
             </span>
-            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
               Garage Accounting &{" "}
               <span className="relative inline-block">
                 Read-Only CA Access
@@ -56,8 +57,11 @@ export default function CAHero() {
                 Start 7-Day Free Trial
                 <FaArrowRight className="w-4 h-4" />
               </button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
 
           {/* Hero Right Visual Column */}

@@ -9,37 +9,37 @@ export default function GIRelatedFeatures() {
     {
       icon: <FaWrench className="w-5 h-5 text-primary" />,
       title: "Digital Job Cards",
-      link: "/features/job-card-management",
+      link: "/features/job-card-management/",
       desc: "Assign tasks to technicians, inspect vehicles visually, and record customer complaints."
     },
     {
       icon: <FaFileInvoice className="w-5 h-5 text-primary" />,
       title: "Counter Sales",
-      link: "/features/counter-sales",
+      link: "/features/counter-sales/",
       desc: "Log quick spare parts transactions directly to walk-in buyers without full workshop logs."
     },
     {
       icon: <FaUsers className="w-5 h-5 text-primary" />,
       title: "Customer Profiles",
-      link: "/features/customers",
+      link: "/features/customers/",
       desc: "Maintain records of contact logs, vehicle histories, and pending customer dues."
     },
     {
       icon: <FaCar className="w-5 h-5 text-primary" />,
       title: "Vehicle Database",
-      link: "/features/vehicles",
+      link: "/features/vehicles/",
       desc: "Map license numbers with specific engine codes and historical repair logs."
     },
     {
       icon: <FaCoins className="w-5 h-5 text-primary" />,
       title: "Payments & Finance",
-      link: "/features/finance",
+      link: "/features/finance/",
       desc: "Track pending bills, advances, digital payment links, and split workshop expenses."
     },
     {
       icon: <FaChartPie className="w-5 h-5 text-primary" />,
       title: "Analytics & Reports",
-      link: "/features/reports",
+      link: "/features/reports/",
       desc: "Access daily counter registers, profit margins, tax summaries, and staff performance."
     }
   ];
@@ -78,7 +78,7 @@ export default function GIRelatedFeatures() {
           ))}
         </div>
 
-        <Link href="/features" className="text-center flex justify-center">
+        <Link href="/features/" className="text-center flex justify-center">
           <Button>
             View All GarageSaarthi Features
             <FaArrowRight className="w-3.5 h-3.5" />

@@ -16,10 +16,10 @@ const visibilityMetrics = [
 export default function GFMVisibility() {
   const handleFeatureClick = () => {
     trackEvent("finance_report_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "visibility_section",
       cta_label: "Explore Garage Reports",
-      destination: "/features/reports"
+      destination: "/features/reports/"
     });
   };
 
@@ -40,7 +40,7 @@ export default function GFMVisibility() {
             Get clear financial reports detailing overall collections, spare part sales margins, mechanic payroll outputs, and pending dues. It acts as clean garage cash flow management software and revenue tracking without complex setups.
           </p>
           <div className="pt-2">
-            <Link href="/features/reports" onClick={handleFeatureClick}>
+            <Link href="/features/reports/" onClick={handleFeatureClick}>
               <Button>
                 Explore Garage Reports <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

@@ -59,9 +59,10 @@ export default function AccordionFAQ({ title, titleHighlight, subtitle, faqs = [
           <div className="flex justify-center mt-8">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="px-6 py-2 rounded-full border border-primary bg-transparent text-primary font-semibold text-sm hover:bg-primary/5 transition-colors cursor-pointer"
+              className="px-6 py-2.5 rounded-full border border-primary bg-transparent text-primary font-semibold text-sm hover:bg-primary/5 transition-all duration-200 cursor-pointer inline-flex items-center gap-2"
             >
-              {showAll ? "Show Less Questions" : "Show All Questions"}
+              <span>{showAll ? "Show Less Questions" : "Show All Questions"}</span>
+              <FaChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${showAll ? "rotate-180" : "rotate-0"}`} />
             </button>
           </div>
         )}

@@ -44,7 +44,7 @@ const faqData = [
   },
   {
     q: "Is GarageSaarthi available as a car detailing app?",
-    a: "Yes. We offer an Android application on the Play Store, plus a web app accessible on any mobile, tablet or PC browser.",
+    a: "Yes. We offer mobile apps on Google Play Store and Apple App Store, plus a web app accessible on any mobile, tablet or PC browser.",
   },
   {
     q: "Is there a free trial for GarageSaarthi?",

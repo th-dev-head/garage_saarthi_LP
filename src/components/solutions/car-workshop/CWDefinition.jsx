@@ -9,10 +9,10 @@ import { FaArrowRight } from "react-icons/fa";
 export default function CWDefinition() {
   const handleExploreClick = () => {
     trackEvent("feature_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "product_definition",
       cta_label: "Explore Features",
-      destination: "/features"
+      destination: "/features/"
     });
   };
 
@@ -33,7 +33,7 @@ export default function CWDefinition() {
             GarageSaarthi consolidates your car workshop operations into a single secure cloud dashboard. Track active jobs, manage warehouse stocks, and send automatic WhatsApp reminder files to boost retention rates.
           </p>
           <div className="pt-2">
-            <Link href="/features" onClick={handleExploreClick} className="text-primary font-bold hover:underline text-xs md:text-sm flex items-center gap-1">
+            <Link href="/features/" onClick={handleExploreClick} className="text-primary font-bold hover:underline text-xs md:text-sm flex items-center gap-1">
               Explore GarageSaarthi Features <FaArrowRight className="w-3 h-3" />
             </Link>
           </div>

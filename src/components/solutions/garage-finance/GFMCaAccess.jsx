@@ -10,10 +10,10 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GFMCaAccess() {
   const handleFeatureClick = () => {
     trackEvent("ca_access_feature_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "ca_access_section",
       cta_label: "Explore CA Access",
-      destination: "/features/ca-access"
+      destination: "/features/ca-access/"
     });
   };
 
@@ -59,7 +59,7 @@ export default function GFMCaAccess() {
             They can download raw invoice summaries, sales logs, and categorized expense records directly to prepare reports, without having permission to edit or delete any files in your live database.
           </p>
           <div className="pt-2">
-            <Link href="/features/ca-access" onClick={handleFeatureClick}>
+            <Link href="/features/ca-access/" onClick={handleFeatureClick}>
               <Button>
                 Explore CA Access <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

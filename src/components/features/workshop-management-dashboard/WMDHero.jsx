@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
 const wmdHeroAnalytics = [
@@ -16,7 +17,7 @@ const wmdHeroAnalytics = [
 export default function WMDHero() {
   const handleTrialClick = () => {
     trackEvent("dashboard_feature_trial_cta_click", {
-      page_path: "/features/workshop-management-dashboard",
+      page_path: "/features/workshop-management-dashboard/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/register`,
@@ -37,7 +38,7 @@ export default function WMDHero() {
             <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-2 inline-block">
               Workshop Management Dashboard
             </span>
-            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
               Centralized Workshop Dashboard &{" "}
               <span className="relative inline-block">
                 Garage Analytics Software
@@ -56,8 +57,11 @@ export default function WMDHero() {
                 Start 7-Day Free Trial
                 <FaArrowRight className="w-4 h-4" />
               </button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
 
           {/* Hero Right Visual Column */}

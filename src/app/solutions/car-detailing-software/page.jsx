@@ -168,7 +168,7 @@ const jsonLd = {
           name: "Is GarageSaarthi available as a car detailing app?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. We offer an Android application on the Play Store, plus a web app accessible on any mobile, tablet or PC browser.",
+            text: "Yes. We offer mobile apps on Google Play Store and Apple App Store, plus a web app accessible on any mobile, tablet or PC browser.",
           },
         },
         {

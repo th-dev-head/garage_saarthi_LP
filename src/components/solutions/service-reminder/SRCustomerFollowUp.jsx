@@ -9,21 +9,21 @@ export default function SRCustomerFollowUp() {
       icon: <FaRegCalendarAlt className="text-primary w-5 h-5" />,
       title: "Know Which Customers Need Follow-Up",
       desc: "Use service alerts and customer files to locate repeat customer profiles whose vehicles are due for check-ins.",
-      link: "/features/crm",
+      link: "/features/crm/",
       label: "garage CRM"
     },
     {
       icon: <FaCar className="text-primary w-5 h-5" />,
       title: "Keep Customer and Vehicle Details Connected",
       desc: "Access registration logs, customer details, and past invoice data in one single click during follow-up call sessions.",
-      link: "/features/vehicles",
+      link: "/features/vehicles/",
       label: "vehicle records"
     },
     {
       icon: <FaUsers className="text-primary w-5 h-5" />,
       title: "Manage Follow-Ups Consistently",
       desc: "Create a structured, process-oriented workflow instead of depending on memory, paper sticky notes, or loose diaries.",
-      link: "/features/customers",
+      link: "/features/customers/",
       label: "customer management"
     }
   ];

@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GCCustomerVehicle() {
   const handleLinkClick = (label, dest) => {
     trackEvent("vehicle_feature_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "customer_vehicle_history",
       cta_label: label,
@@ -52,15 +52,15 @@ export default function GCCustomerVehicle() {
 
           <div className="flex flex-wrap gap-4 items-center">
             <Link
-              href="/features/customers"
-              onClick={() => handleLinkClick("Customer Records", "/features/customers")}
+              href="/features/customers/"
+              onClick={() => handleLinkClick("Customer Records", "/features/customers/")}
               className="text-xs text-primary font-bold hover:underline"
             >
               Customer Records
             </Link>
             <Link
-              href="/features/vehicles"
-              onClick={() => handleLinkClick("Vehicle Records", "/features/vehicles")}
+              href="/features/vehicles/"
+              onClick={() => handleLinkClick("Vehicle Records", "/features/vehicles/")}
               className="text-xs text-primary font-bold hover:underline"
             >
               Vehicle Records

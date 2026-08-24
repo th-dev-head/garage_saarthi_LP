@@ -18,56 +18,56 @@ const operationsList = [
     icon: <FaClipboardList />,
     title: "Digital Job Cards",
     desc: "Create work orders on vehicle arrival, recording scratch notes, labor estimates, and assigned mechanics.",
-    link: "/features/job-card-management",
+    link: "/features/job-card-management/",
     anchor: "Explore Job Cards",
   },
   {
     icon: <FaFileInvoiceDollar />,
     title: "GST Billing & Tax Compliance",
     desc: "Generate GST-compliant invoices with custom numbering rules, HSN/SAC codes, and direct WhatsApp sharing.",
-    link: "/features/billing",
+    link: "/features/billing/",
     anchor: "Explore GST Billing",
   },
   {
     icon: <FaBoxes />,
     title: "Spare Parts Inventory",
     desc: "Audit spare parts stock levels, dynamic checkouts per job card, low stock warnings, and counter retail sales.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
     anchor: "Explore Inventory",
   },
   {
     icon: <FaAddressBook />,
     title: "Customer & Vehicle Records",
     desc: "Maintain detailed databases linking customer profiles with vehicle registration codes, chassis numbers, and service history.",
-    link: "/features/customers",
+    link: "/features/customers/",
     anchor: "Explore Customer & Vehicle Records",
   },
   {
     icon: <FaUserClock />,
     title: "Staff Attendance & Payroll",
     desc: "Track mechanic check-in/out, approve leave requests, calculate labor commissions, and compute net salary.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
     anchor: "Explore Staff & Payroll",
   },
   {
     icon: <FaBell />,
     title: "Service Alerts & WhatsApp",
     desc: "Automate periodic service due notifications and promotional reminders sent directly to your customers' WhatsApp.",
-    link: "/features/service-reminders",
+    link: "/features/service-reminders/",
     anchor: "Explore Service Alerts",
   },
   {
     icon: <FaBullhorn />,
     title: "Garage CRM & Follow-Ups",
     desc: "Track new service lead enquiries, record call notes, and manage repair quotes inside a dedicated CRM.",
-    link: "/features/crm",
+    link: "/features/crm/",
     anchor: "Explore Garage CRM",
   },
   {
     icon: <FaChartLine />,
     title: "Reports & Analytics",
     desc: "Gain complete business visibility with live sales dashboards, stock valuation, and mechanic performance metrics.",
-    link: "/features/reports",
+    link: "/features/reports/",
     anchor: "Explore Reports",
   },
 ];
@@ -115,7 +115,7 @@ export default function WSIOperations() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore All Features <FaArrowRight className="w-3.5 h-3.5" />

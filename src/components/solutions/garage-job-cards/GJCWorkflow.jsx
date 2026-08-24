@@ -19,8 +19,8 @@ export default function GJCWorkflow() {
       title: "Add Customer and Vehicle Details",
       desc: "Save the customer name, phone number, vehicle registration, and model specifications.",
       links: [
-        { label: "Customer Management", href: "/features/customers" },
-        { label: "Vehicle Management", href: "/features/vehicles" }
+        { label: "Customer Management", href: "/features/customers/" },
+        { label: "Vehicle Management", href: "/features/vehicles/" }
       ]
     },
     {
@@ -51,7 +51,7 @@ export default function GJCWorkflow() {
 
   const handleLinkClick = (linkLabel) => {
     trackEvent("job_card_feature_link_click", {
-      page_path: "/solutions/garage-job-card-software",
+      page_path: "/solutions/garage-job-card-software/",
       cta_location: "job_card_workflow",
       cta_label: linkLabel
     });

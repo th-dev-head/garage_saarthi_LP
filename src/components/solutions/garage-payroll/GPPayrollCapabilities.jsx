@@ -32,7 +32,7 @@ const payrollCapabilities = [
     iconBg: "bg-blue-100 text-blue-600",
     title: "Manage Workshop Staff",
     descPrefix: "Manage permissions so admins, managers, and mechanics see only relevant info. Explore ",
-    linkHref: "/features/user-management",
+    linkHref: "/features/user-management/",
     linkText: "User Management",
     descSuffix: "."
   }
@@ -41,7 +41,7 @@ const payrollCapabilities = [
 export default function GPPayrollCapabilities() {
   const handleTrialClick = () => {
     trackEvent("payroll_trial_cta_click", {
-      page_path: "/solutions/garage-payroll-software",
+      page_path: "/solutions/garage-payroll-software/",
       cta_location: "payroll_capabilities_section",
       cta_label: "Start Managing Garage Payroll",
       destination: `${FRONTEND_URL}/signup`
@@ -51,10 +51,10 @@ export default function GPPayrollCapabilities() {
 
   const handleLinkClick = () => {
     trackEvent("payroll_feature_click", {
-      page_path: "/solutions/garage-payroll-software",
+      page_path: "/solutions/garage-payroll-software/",
       cta_location: "payroll_capabilities_section",
       cta_label: "User Management Dashboard",
-      destination: "/features/user-management"
+      destination: "/features/user-management/"
     });
   };
 

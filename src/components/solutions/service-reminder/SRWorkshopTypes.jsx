@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function SRWorkshopTypes() {
   const handleSolutionClick = (solutionName) => {
     trackEvent("service_solution_click", {
-      page_path: "/solutions/service-reminder-software",
+      page_path: "/solutions/service-reminder-software/",
       cta_location: "workshop_types",
       cta_label: "Explore Solution",
       solution_name: solutionName
@@ -17,12 +17,12 @@ export default function SRWorkshopTypes() {
   };
 
   const types = [
-    { title: "Car Garages", desc: "Track customer passenger cars, model logs, next service due milestones, and send car service reminders.", link: "/solutions/car-garage-software" },
-    { title: "Bike Workshops", desc: "Manage motorcycle and scooter regular check-ups, scheduled washings, and fast due reminders.", link: "/solutions/bike-workshop-software" },
-    { title: "EV Garages", desc: "Keep track of EV battery checks, custom maintenance logs, and electronic service due reminders.", link: "/solutions/ev-garage-management-software" },
-    { title: "Truck Workshops", desc: "Coordinate heavy-vehicle preventative check-ups, transport fleets, and maintenance schedules.", link: "/solutions/truck-workshop-software" },
-    { title: "Multi-Branch Garages", desc: "Manage customer follow-ups and central service logs across multiple branches from one login.", link: "/solutions/multi-branch-garage-software" },
-    { title: "Independent Garages", desc: "Replace physical log registers and diaries with a simple, digital vehicle service reminder app.", link: "/solutions/auto-repair-shop-software" }
+    { title: "Car Garages", desc: "Track customer passenger cars, model logs, next service due milestones, and send car service reminders.", link: "/solutions/car-garage-software/" },
+    { title: "Bike Workshops", desc: "Manage motorcycle and scooter regular check-ups, scheduled washings, and fast due reminders.", link: "/solutions/bike-workshop-software/" },
+    { title: "EV Garages", desc: "Keep track of EV battery checks, custom maintenance logs, and electronic service due reminders.", link: "/solutions/ev-garage-management-software/" },
+    { title: "Truck Workshops", desc: "Coordinate heavy-vehicle preventative check-ups, transport fleets, and maintenance schedules.", link: "/solutions/truck-workshop-software/" },
+    { title: "Multi-Branch Garages", desc: "Manage customer follow-ups and central service logs across multiple branches from one login.", link: "/solutions/multi-branch-garage-software/" },
+    { title: "Independent Garages", desc: "Replace physical log registers and diaries with a simple, digital vehicle service reminder app.", link: "/solutions/auto-repair-shop-software/" }
   ];
 
   return (

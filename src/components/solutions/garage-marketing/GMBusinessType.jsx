@@ -8,37 +8,37 @@ const businessTypes = [
     icon: <FaCar />,
     title: "Car Garages",
     desc: "Discuss customer service offers, checkup packages, and routine maintenance follow-ups.",
-    link: "/solutions/car-garage-software",
+    link: "/solutions/car-garage-software/",
   },
   {
     icon: <FaMotorcycle />,
     title: "Bike Workshops",
     desc: "Manage repeat chain lube and oil change customer communication for high daily volume.",
-    link: "/solutions/bike-workshop-software",
+    link: "/solutions/bike-workshop-software/",
   },
   {
     icon: <FaBolt />,
     title: "EV Garages",
     desc: "Maintain customer profiles, battery check logs, and future service communication.",
-    link: "/solutions/ev-garage-management-software",
+    link: "/solutions/ev-garage-management-software/",
   },
   {
     icon: <FaMagic />,
     title: "Car Detailing Studios",
     desc: "Promote ceramic coating deals, PPF maintenance packages, and repeat customer offers.",
-    link: "/solutions/car-detailing-software",
+    link: "/solutions/car-detailing-software/",
   },
   {
     icon: <FaBuilding />,
     title: "Multi-Branch Garages",
     desc: "Coordinate organized customer engagement across a growing garage business network.",
-    link: "/solutions/multi-branch-garage-software",
+    link: "/solutions/multi-branch-garage-software/",
   },
   {
     icon: <FaWrench />,
     title: "Independent Garages",
     desc: "Simple customer communication and promotion management for independent workshop owners.",
-    link: "/solutions/car-garage-software",
+    link: "/solutions/car-garage-software/",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function GMBusinessType() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore All Features <FaArrowRight className="w-3.5 h-3.5" />

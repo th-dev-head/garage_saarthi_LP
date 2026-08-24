@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GRASalesRevenue() {
   const handleFinanceClick = () => {
     trackEvent("reports_finance_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "sales_revenue_section",
       cta_label: "Explore Garage Finance Management"
     });
@@ -39,7 +39,7 @@ export default function GRASalesRevenue() {
           </p>
           <div className="pt-2">
             <Link
-              href="/features/finance"
+              href="/features/finance/"
               onClick={handleFinanceClick}
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
             >

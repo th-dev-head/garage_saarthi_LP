@@ -9,35 +9,35 @@ export default function VSHCapabilities() {
       icon: <FaBookOpen className="text-primary w-5 h-5" />,
       title: "Vehicle Service Records",
       desc: "Maintain detailed logs of past general services, invoice values, and visit frequencies under each vehicle's profile.",
-      link: "/features/vehicles",
+      link: "/features/vehicles/",
       label: "vehicle logs"
     },
     {
       icon: <FaWrench className="text-primary w-5 h-5" />,
       title: "Vehicle Repair History",
       desc: "Record past repair jobs, mechanic logs, and diagnostic checklists to refer back when a customer returns.",
-      link: "/features/job-card-management",
+      link: "/features/job-card-management/",
       label: "job card manager"
     },
     {
       icon: <FaTools className="text-primary w-5 h-5" />,
       title: "Vehicle Maintenance History",
       desc: "Track scheduled maintenance checks like oil changes, alignment runs, and periodic replacements.",
-      link: "/features/service-reminders",
+      link: "/features/service-reminders/",
       label: "service alerts"
     },
     {
       icon: <FaFileInvoice className="text-primary w-5 h-5" />,
       title: "Digital Service Logs",
       desc: "Say goodbye to physical paper registers. Store all job, parts, and invoice entries in a secure cloud database.",
-      link: "/features/billing",
+      link: "/features/billing/",
       label: "digital billing"
     },
     {
       icon: <FaUsers className="text-primary w-5 h-5" />,
       title: "Customer Vehicle History",
       desc: "View linked profiles showing owner contacts, multiple vehicle entries, and communication trails in one place.",
-      link: "/features/customers",
+      link: "/features/customers/",
       label: "customer lists"
     }
   ];

@@ -7,7 +7,7 @@ const recordTypes = [
     borderClass: "border-l-4 border-primary pl-4",
     title: "Customer Records",
     descPrefix: "Store contact details, communication history, preferences, and logs. Access the comprehensive ",
-    linkHref: "/features/customers",
+    linkHref: "/features/customers/",
     linkText: "Customer Management",
     descSuffix: " hub anytime to view customer details."
   },
@@ -15,7 +15,7 @@ const recordTypes = [
     borderClass: "border-l-4 border-slate-300 pl-4",
     title: "Vehicle Records",
     descPrefix: "Link multiple vehicles under one customer. Log chassis numbers, fuel types, insurance info, and odometer records inside our ",
-    linkHref: "/features/vehicles",
+    linkHref: "/features/vehicles/",
     linkText: "Vehicle Management",
     descSuffix: " database."
   },

@@ -20,7 +20,7 @@ export default function ProductDefinition() {
         <div className="flex justify-center">
           <Button
             variant="hero"
-            onClick={() => router.push("/features")}
+            onClick={() => router.push("/features/")}
           >
             Explore GarageSaarthi Features
             <FaArrowRight className="w-4 h-4 ml-2" />

@@ -10,10 +10,10 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GACExpenseManagement() {
   const handleFeatureClick = () => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "expense_management_section",
       cta_label: "Explore Garage Finance Management",
-      destination: "/features/finance"
+      destination: "/features/finance/"
     });
   };
 
@@ -34,7 +34,7 @@ export default function GACExpenseManagement() {
             Understand your daily operating ratios, track cash balances, and identify cost anomalies using our specialized workshop expense management software modules.
           </p>
           <div className="pt-2">
-            <Link href="/features/finance" onClick={handleFeatureClick}>
+            <Link href="/features/finance/" onClick={handleFeatureClick}>
               <Button>
                 Explore Garage Finance Management <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

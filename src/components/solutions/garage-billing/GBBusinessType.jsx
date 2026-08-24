@@ -9,16 +9,16 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GBBusinessType() {
   const handleSolutionClick = (solutionName) => {
     trackEvent("billing_solution_link_click", {
-      page_path: "/solutions/garage-billing-software",
+      page_path: "/solutions/garage-billing-software/",
       solution_name: solutionName
     });
   };
 
   const workshopTypes = [
-    { title: "Car Garage Billing Software", link: "/solutions/car-garage-software", desc: "Separate parts and labour billing, damage logs, and WhatsApp bill link sharing." },
-    { title: "Bike Workshop Billing Software", link: "/solutions/bike-workshop-software", desc: "Rapid service checkout logs, counter spare parts sales, and payment collections." },
-    { title: "Automobile Service Centers", link: "/solutions/garage-automation-software", desc: "Multi-brand repairs log, customized invoice series prefixes, and CA account registers." },
-    { title: "Vehicle Repair Businesses", link: "/solutions/workshop-management-software", desc: "Track estimates, log split payment modes, and monitor outstanding customer balances." }
+    { title: "Car Garage Billing Software", link: "/solutions/car-garage-software/", desc: "Separate parts and labour billing, damage logs, and WhatsApp bill link sharing." },
+    { title: "Bike Workshop Billing Software", link: "/solutions/bike-workshop-software/", desc: "Rapid service checkout logs, counter spare parts sales, and payment collections." },
+    { title: "Automobile Service Centers", link: "/solutions/garage-automation-software/", desc: "Multi-brand repairs log, customized invoice series prefixes, and CA account registers." },
+    { title: "Vehicle Repair Businesses", link: "/solutions/workshop-management-software/", desc: "Track estimates, log split payment modes, and monitor outstanding customer balances." }
   ];
 
   return (

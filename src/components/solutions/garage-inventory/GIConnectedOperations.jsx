@@ -21,19 +21,19 @@ const syncSteps = [
 const operationsConnections = [
   {
     icon: FaWrench,
-    href: "/features/job-card-management",
+    href: "/features/job-card-management/",
     title: "Inventory and Job Cards",
     desc: "Mechanics assign parts directly from stock to repair cards, auto-calculating retail margins on checkout."
   },
   {
     icon: FaFileInvoice,
-    href: "/features/counter-sales",
+    href: "/features/counter-sales/",
     title: "Inventory and Counter Sales",
     desc: "Sell spare parts directly to walk-in clients without creating a formal job card repair order."
   },
   {
     icon: FaChartLine,
-    href: "/features/reports",
+    href: "/features/reports/",
     title: "Inventory Reports",
     desc: "Monitor stock valuation, monthly parts turnover, and high-margin consumables automatically."
   }

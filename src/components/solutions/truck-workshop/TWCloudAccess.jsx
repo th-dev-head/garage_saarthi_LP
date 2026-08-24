@@ -5,11 +5,12 @@ import React from "react";
 import { FaLaptop, FaMobileAlt, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const truckPlatforms = [
   { icon: FaLaptop, title: "Cloud Web Portal", desc: "For Billing, Invoicing & Reports" },
-  { icon: FaMobileAlt, title: "Android Application", desc: "For Quick Job Cards & Inventory Checks" }
+  { icon: FaMobileAlt, title: "Android & iOS Mobile App", desc: "For Quick Job Cards & Floor Operations" }
 ];
 
 export default function TWCloudAccess() {
@@ -26,13 +27,16 @@ export default function TWCloudAccess() {
               Manage Your Truck Workshop on <GradientUnderline>Web and Mobile</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              Open digital job cards, verify spares inventory, and check active repair status right beside the commercial vehicle using our mobile Android app. Generate GST invoices and view business analytics logs using the cloud web dashboard.
+              Open digital job cards, verify spares inventory, and check active repair status right beside the commercial vehicle using our Android & iOS mobile apps. Generate GST invoices and view business analytics logs using the cloud web dashboard.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 items-center">
-              <PlayStoreBadge />
-              <Button
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+<Button
                 variant="primary"
                 icon={<FaArrowRight className="w-3.5 h-3.5" />}
                 onClick={() => window.open(`${FRONTEND_URL}/signup`, "_blank")}

@@ -57,16 +57,16 @@ export default function CGJobCards() {
             ))}
             <div className="flex flex-wrap gap-4 pt-2">
               <Link
-                href="/features/job-card-management"
+                href="/features/job-card-management/"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
               >
                 Explore Digital Job Cards
                 <FaArrowRight className="w-3.5 h-3.5" />
               </Link>
-              <Link href="/features/vehicles" className="text-xs font-bold text-primary hover:underline self-center flex items-center gap-1">
+              <Link href="/features/vehicles/" className="text-xs font-bold text-primary hover:underline self-center flex items-center gap-1">
                 Vehicle Management <FaArrowRight className="w-3 h-3" />
               </Link>
-              <Link href="/features/customers" className="text-xs font-bold text-primary hover:underline self-center flex items-center gap-1">
+              <Link href="/features/customers/" className="text-xs font-bold text-primary hover:underline self-center flex items-center gap-1">
                 Customer Records <FaArrowRight className="w-3 h-3" />
               </Link>
             </div>

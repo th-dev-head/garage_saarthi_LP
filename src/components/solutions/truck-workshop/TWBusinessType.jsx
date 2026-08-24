@@ -65,7 +65,7 @@ export default function TWBusinessType() {
         <div className="text-center bg-[#EFE9E7]/40 border border-primary/20 p-6 rounded-3xl max-w-2xl mx-auto">
           <p className="text-xs text-slate-700 leading-relaxed">
             Managing corporate transport fleets or contract repairs? Streamline your workflows centrally.{" "}
-            <Link href="/solutions/fleet-workshop-software" className="font-bold text-primary hover:underline">
+            <Link href="/solutions/fleet-workshop-software/" className="font-bold text-primary hover:underline">
               Explore Fleet Workshop Software
             </Link>
           </p>

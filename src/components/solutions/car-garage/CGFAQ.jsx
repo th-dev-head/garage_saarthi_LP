@@ -40,7 +40,7 @@ const faqData = [
   },
   {
     q: "Is GarageSaarthi available as a mobile app?",
-    a: "Yes. GarageSaarthi is available as an Android application on the Google Play Store, alongside the full desktop web version. The app lets garage owners and advisors manage job cards, check inventory, and send service reminders from their mobile phones.",
+    a: "Yes. GarageSaarthi is available as mobile apps on Google Play Store and Apple App Store, alongside the full desktop web version. The app lets garage owners and advisors manage job cards, check inventory, and send service reminders from their mobile phones.",
   },
   {
     q: "Is GarageSaarthi suitable for independent car garages?",

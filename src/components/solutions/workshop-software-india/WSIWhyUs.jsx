@@ -17,7 +17,7 @@ const differentiators = [
   "Automates WhatsApp service due alerts to increase repeat customer visits",
   "Integrates mechanic staff attendance, leave approval, and labor commissions",
   "Supports multi-branch workshop networks with centralized owner controls",
-  "Offers cloud web platform access and native Android mobile application",
+  "Offers cloud web platform access and native Android and iOS mobile apps",
   "Provides a fully functional 7-day free trial with zero registration fee",
 ];
 
@@ -60,7 +60,7 @@ export default function WSIWhyUs() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-100 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11"
           >
             View Pricing Plans

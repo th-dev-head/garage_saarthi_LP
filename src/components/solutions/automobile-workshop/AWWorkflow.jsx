@@ -7,40 +7,40 @@ import {
 import GradientUnderline from "../../common/GradientUnderline";
 
 const steps = [
-  { icon: <FaUserAlt />, label: "Customer & Vehicle", href: "/features/job-card-management" },
-  { icon: <FaFileAlt />, label: "Estimate", href: "/features/job-card-management" },
-  { icon: <FaTools />, label: "Job Card", href: "/features/job-card-management" },
-  { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-card-management" },
-  { icon: <FaFileInvoiceDollar />, label: "Invoice", href: "/features/billing" },
-  { icon: <FaCreditCard />, label: "Payment", href: "/features/billing" },
-  { icon: <FaBell />, label: "Service Follow-up", href: "/features/service-reminders" },
+  { icon: <FaUserAlt />, label: "Customer & Vehicle", href: "/features/job-card-management/" },
+  { icon: <FaFileAlt />, label: "Estimate", href: "/features/job-card-management/" },
+  { icon: <FaTools />, label: "Job Card", href: "/features/job-card-management/" },
+  { icon: <FaWrench />, label: "Repair Progress", href: "/features/job-card-management/" },
+  { icon: <FaFileInvoiceDollar />, label: "Invoice", href: "/features/billing/" },
+  { icon: <FaCreditCard />, label: "Payment", href: "/features/billing/" },
+  { icon: <FaBell />, label: "Service Follow-up", href: "/features/service-reminders/" },
 ];
 
 const featureCards = [
   {
     title: "Create Professional Estimates",
     desc: "Create transparent digital estimates. Share them with customers for quick approvals before mechanics begin any repair work.",
-    link: "/features/job-card-management",
+    link: "/features/job-card-management/",
   },
   {
     title: "Create Digital Job Cards",
     desc: "Replace paper job cards. Log customer details, complaints, and mechanic allocations in under 60 seconds on any device.",
-    link: "/features/job-card-management",
+    link: "/features/job-card-management/",
   },
   {
     title: "Manage Parts Requisitions",
     desc: "Allow mechanics to request spare parts directly from the inventory. Track spare parts usage accurately.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
   },
   {
     title: "Generate GST Invoices",
     desc: "Generate professional, GST-compliant invoices. Print or share directly via a WhatsApp link with a single click.",
-    link: "/features/billing",
+    link: "/features/billing/",
   },
   {
     title: "Track Payments & Dues",
     desc: "Log cash, card, UPI, and digital wallet payments. Track pending balances and client credit history in real time.",
-    link: "/features/billing",
+    link: "/features/billing/",
   },
 ];
 

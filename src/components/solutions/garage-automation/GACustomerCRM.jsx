@@ -9,25 +9,25 @@ export default function GACustomerCRM() {
       icon: <FaUserFriends className="text-blue-500 w-5 h-5" />,
       title: "Customer Management",
       desc: "Maintain profiles, logs, and preferences centrally.",
-      link: "/features/customers"
+      link: "/features/customers/"
     },
     {
       icon: <FaCar className="text-orange-500 w-5 h-5" />,
       title: "Vehicle & Service History",
       desc: "Log odometer parameters, insurance due dates, and past service invoices.",
-      link: "/features/vehicles"
+      link: "/features/vehicles/"
     },
     {
       icon: <FaFunnelDollar className="text-green-500 w-5 h-5" />,
       title: "Garage CRM & Lead Tracking",
       desc: "Organize walk-in leads, call notes, and schedule callbacks.",
-      link: "/features/crm"
+      link: "/features/crm/"
     },
     {
       icon: <FaGift className="text-purple-500 w-5 h-5" />,
       title: "Offers & Promotions",
       desc: "Configure coupons and seasonal discounts to re-engage previous clients.",
-      link: "/features/offers-promotions"
+      link: "/features/offers-promotions/"
     }
   ];
 

@@ -11,7 +11,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Create and assign repair jobs digitally. Refer to features on{" "}
-          <Link href="/features/job-card-management" className="text-primary font-bold hover:underline">
+          <Link href="/features/job-card-management/" className="text-primary font-bold hover:underline">
             Digital Job Card Management
           </Link>.
         </>
@@ -23,11 +23,11 @@ export default function GAWorkflow() {
       desc: (
         <>
           Organize client profiles with vehicle registers using{" "}
-          <Link href="/features/customers" className="text-primary font-bold hover:underline">
+          <Link href="/features/customers/" className="text-primary font-bold hover:underline">
             Customer Management
           </Link>{" "}
           and{" "}
-          <Link href="/features/vehicles" className="text-primary font-bold hover:underline">
+          <Link href="/features/vehicles/" className="text-primary font-bold hover:underline">
             Vehicle Management
           </Link>{" "}
           databases.
@@ -40,7 +40,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Track spare parts catalog and log counter sales. View parameters in{" "}
-          <Link href="/features/inventory" className="text-primary font-bold hover:underline">
+          <Link href="/features/inventory/" className="text-primary font-bold hover:underline">
             Inventory Management
           </Link>.
         </>
@@ -52,7 +52,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Create GST-supported billing details and compile estimates instantly under{" "}
-          <Link href="/features/billing" className="text-primary font-bold hover:underline">
+          <Link href="/features/billing/" className="text-primary font-bold hover:underline">
             Payments Log
           </Link>.
         </>
@@ -64,7 +64,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Set up alerts and send periodic reminders via WhatsApp using our{" "}
-          <Link href="/features/service-reminders" className="text-primary font-bold hover:underline">
+          <Link href="/features/service-reminders/" className="text-primary font-bold hover:underline">
             Service Alerts
           </Link>{" "}
           system.
@@ -77,7 +77,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Configure pipeline check points and callback lists using{" "}
-          <Link href="/features/crm" className="text-primary font-bold hover:underline">
+          <Link href="/features/crm/" className="text-primary font-bold hover:underline">
             Garage CRM
           </Link>{" "}
           options.
@@ -90,14 +90,14 @@ export default function GAWorkflow() {
       desc: (
         <>
           Log check-in timings and calculate basic mechanic commissions using{" "}
-          <Link href="/features/attendance" className="text-primary font-bold hover:underline">
+          <Link href="/features/attendance/" className="text-primary font-bold hover:underline">
             Attendance
           </Link>,{" "}
-          <Link href="/features/leave-management" className="text-primary font-bold hover:underline">
+          <Link href="/features/leave-management/" className="text-primary font-bold hover:underline">
             Leave Logs
           </Link>{" "}
           and{" "}
-          <Link href="/features/payroll" className="text-primary font-bold hover:underline">
+          <Link href="/features/payroll/" className="text-primary font-bold hover:underline">
             Payroll
           </Link>.
         </>
@@ -109,7 +109,7 @@ export default function GAWorkflow() {
       desc: (
         <>
           Compile business metrics and consolidated branch figures. Check features in{" "}
-          <Link href="/features/reports" className="text-primary font-bold hover:underline">
+          <Link href="/features/reports/" className="text-primary font-bold hover:underline">
             Garage Reports
           </Link>.
         </>
@@ -148,7 +148,7 @@ export default function GAWorkflow() {
 
         <div className="pt-12 text-center">
           <Link
-            href="/features"
+            href="/features/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
           >
             Explore All GarageSaarthi Features <FaArrowRight />

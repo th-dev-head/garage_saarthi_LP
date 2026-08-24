@@ -37,7 +37,7 @@ export default function GACFAQ() {
     },
     {
       question: "Is GarageSaarthi available online and on mobile?",
-      answer: "Yes, we maintain a secure cloud web dashboard and a live Android mobile application on the Google Play Store. iOS support is coming soon."
+      answer: "Yes, we maintain a secure cloud web dashboard and a live mobile apps on Google Play Store & Apple App Store. iOS apps are fully available."
     },
     {
       question: "Does GarageSaarthi offer a free trial?",

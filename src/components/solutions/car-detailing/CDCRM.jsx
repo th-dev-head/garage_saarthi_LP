@@ -49,7 +49,7 @@ export default function CDCRM() {
 
             <div className="pt-4">
               <Link
-                href="/features/crm-leads"
+                href="/features/crm-leads/"
                 className="inline-flex items-center gap-1.5 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
               >
                 Explore CRM Leads <FaArrowRight className="w-3.5 h-3.5" />

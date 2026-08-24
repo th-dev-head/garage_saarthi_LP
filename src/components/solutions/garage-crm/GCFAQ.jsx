@@ -45,7 +45,7 @@ export default function GCFAQ() {
     },
     {
       question: "Is GarageSaarthi CRM available on mobile?",
-      answer: "Yes. We maintain a live Android mobile application on the Google Play Store."
+      answer: "Yes. We maintain a live mobile apps on Google Play Store & Apple App Store."
     },
     {
       question: "Is GarageSaarthi only a CRM software?",

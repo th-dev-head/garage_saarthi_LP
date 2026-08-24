@@ -160,7 +160,7 @@ const jsonLd = {
           name: "Is GarageSaarthi available on mobile?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. It is available as an Android mobile app on the Google Play Store and as a web platform accessible on any device.",
+            text: "Yes. It is available as an mobile apps on Google Play Store and Apple App Store and as a web platform accessible on any device.",
           },
         },
         {

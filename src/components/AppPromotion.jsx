@@ -69,7 +69,7 @@ const AppPromotion = () => {
             <PlayStoreBadge />
 
             {/* App Store Button */}
-            {/* <AppStoreBadge /> */}
+            <AppStoreBadge />
           </div>
         </div>
       </div>

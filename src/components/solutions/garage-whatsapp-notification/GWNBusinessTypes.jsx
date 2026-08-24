@@ -9,37 +9,37 @@ export default function GWNBusinessTypes() {
       icon: <FaCar className="text-blue-500 w-5 h-5" />,
       title: "Car Garages",
       desc: "Manage periodic maintenance alerts, service history logs, and vehicle owner notifications.",
-      link: "/solutions/car-garage-software"
+      link: "/solutions/car-garage-software/"
     },
     {
       icon: <FaMotorcycle className="text-orange-500 w-5 h-5" />,
       title: "Bike Workshops",
       desc: "Track fast check-ins, repeat washing follow-ups, and customer WhatsApp messaging workflows.",
-      link: "/solutions/bike-workshop-software"
+      link: "/solutions/bike-workshop-software/"
     },
     {
       icon: <FaPlug className="text-green-500 w-5 h-5" />,
       title: "EV Garages",
       desc: "Monitor battery parameters, electric vehicle profile histories, and custom alert deadlines.",
-      link: "/solutions/ev-garage-management-software"
+      link: "/solutions/ev-garage-management-software/"
     },
     {
       icon: <FaTruck className="text-slate-500 w-5 h-5" />,
       title: "Truck Workshops",
       desc: "Handle heavy vehicle check logs, part alerts, and corporate driver reminders.",
-      link: "/solutions/truck-workshop-software"
+      link: "/solutions/truck-workshop-software/"
     },
     {
       icon: <FaWarehouse className="text-teal-500 w-5 h-5" />,
       title: "Fleet Workshops",
       desc: "Log commercial fleet details, dispatch updates to managers, and track service history.",
-      link: "/solutions/fleet-workshop-software"
+      link: "/solutions/fleet-workshop-software/"
     },
     {
       icon: <FaCodeBranch className="text-purple-500 w-5 h-5" />,
       title: "Multi-Branch Garages",
       desc: "Centralize customer registers, track branch user performance, and compile message statistics.",
-      link: "/solutions/multi-branch-garage-software"
+      link: "/solutions/multi-branch-garage-software/"
     }
   ];
 

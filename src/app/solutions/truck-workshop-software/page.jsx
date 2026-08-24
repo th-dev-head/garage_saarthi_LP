@@ -160,7 +160,7 @@ const jsonLd = {
           name: "Is GarageSaarthi available as a truck workshop app?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. GarageSaarthi offers a mobile Android app available on the Play Store as well as a cloud-based web application for tablets and computers.",
+            text: "Yes. GarageSaarthi offers a mobile apps on Google Play Store & Apple App Store as well as a cloud-based web application for tablets and computers.",
           },
         },
         {

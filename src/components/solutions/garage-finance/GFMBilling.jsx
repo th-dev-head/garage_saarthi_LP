@@ -10,10 +10,10 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GFMBilling() {
   const handleBillingClick = () => {
     trackEvent("billing_page_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "gst_billing_section",
       cta_label: "Explore Garage Billing Features",
-      destination: "/solutions/garage-billing-software"
+      destination: "/solutions/garage-billing-software/"
     });
   };
 
@@ -59,7 +59,7 @@ export default function GFMBilling() {
             *Note: While GarageSaarthi manages billing files and compiles taxes, it does not support direct return filing on the GSTN government portal.
           </p>
           <div className="pt-2">
-            <Link href="/solutions/garage-billing-software" onClick={handleBillingClick}>
+            <Link href="/solutions/garage-billing-software/" onClick={handleBillingClick}>
               <Button>
                 Explore Garage Billing Features <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

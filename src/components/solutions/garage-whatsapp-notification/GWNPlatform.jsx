@@ -5,12 +5,12 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GWNPlatform() {
   const steps = [
-    { icon: <FaUserAlt />, label: "Customer Records", link: "/features/customers" },
-    { icon: <FaCarAlt />, label: "Vehicle Records", link: "/features/vehicles" },
-    { icon: <FaClipboardList />, label: "Digital Job Cards", link: "/features/job-card-management" },
-    { icon: <FaUsers />, label: "Garage CRM", link: "/features/crm" },
-    { icon: <FaPercent />, label: "Offers & Promotions", link: "/features/offers-promotions" },
-    { icon: <FaChartBar />, label: "Garage Reports", link: "/features/reports" }
+    { icon: <FaUserAlt />, label: "Customer Records", link: "/features/customers/" },
+    { icon: <FaCarAlt />, label: "Vehicle Records", link: "/features/vehicles/" },
+    { icon: <FaClipboardList />, label: "Digital Job Cards", link: "/features/job-card-management/" },
+    { icon: <FaUsers />, label: "Garage CRM", link: "/features/crm/" },
+    { icon: <FaPercent />, label: "Offers & Promotions", link: "/features/offers-promotions/" },
+    { icon: <FaChartBar />, label: "Garage Reports", link: "/features/reports/" }
   ];
 
   return (

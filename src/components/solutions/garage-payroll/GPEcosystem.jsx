@@ -8,7 +8,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GPEcosystem() {
   const handleLinkClick = (name, url) => {
     trackEvent("payroll_feature_click", {
-      page_path: "/solutions/garage-payroll-software",
+      page_path: "/solutions/garage-payroll-software/",
       cta_location: "ecosystem_section",
       cta_label: name,
       destination: url
@@ -16,18 +16,18 @@ export default function GPEcosystem() {
   };
 
   const modules = [
-    { name: "Job Cards", url: "/features/job-card-management" },
-    { name: "Inventory", url: "/features/inventory" },
-    { name: "Customers", url: "/features/customers" },
-    { name: "Vehicles", url: "/features/vehicles" },
-    { name: "CRM & Alerts", url: "/features/crm" },
-    { name: "Payments", url: "/features/billing" },
-    { name: "Finance", url: "/features/finance" },
-    { name: "Attendance", url: "/features/attendance" },
-    { name: "Leave Logs", url: "/features/leave-management" },
-    { name: "Reports", url: "/features/reports" },
-    { name: "Service Alerts", url: "/features/service-reminders" },
-    { name: "Branches", url: "/features/branches" }
+    { name: "Job Cards", url: "/features/job-card-management/" },
+    { name: "Inventory", url: "/features/inventory/" },
+    { name: "Customers", url: "/features/customers/" },
+    { name: "Vehicles", url: "/features/vehicles/" },
+    { name: "CRM & Alerts", url: "/features/crm/" },
+    { name: "Payments", url: "/features/billing/" },
+    { name: "Finance", url: "/features/finance/" },
+    { name: "Attendance", url: "/features/attendance/" },
+    { name: "Leave Logs", url: "/features/leave-management/" },
+    { name: "Reports", url: "/features/reports/" },
+    { name: "Service Alerts", url: "/features/service-reminders/" },
+    { name: "Branches", url: "/features/branches/" }
   ];
 
   return (

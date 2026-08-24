@@ -15,7 +15,7 @@ const inventoryFeatures = [
   {
     title: "Connect Inventory with Garage Operations",
     descPrefix: "Link spares directly under our active job cards or track counter sales inside the consolidated ",
-    linkHref: "/features/inventory",
+    linkHref: "/features/inventory/",
     linkText: "Inventory Management",
     descSuffix: " registers."
   }

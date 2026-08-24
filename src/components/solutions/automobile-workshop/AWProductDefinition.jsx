@@ -32,7 +32,7 @@ export default function AWProductDefinition() {
               It helps independent garages, car workshops, and multi-branch automobile service centres eliminate manual mistakes, save administrative time, and build long-term customer relationships.
             </p>
             <Link
-              href="/features"
+              href="/features/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
             >
               Explore All Features

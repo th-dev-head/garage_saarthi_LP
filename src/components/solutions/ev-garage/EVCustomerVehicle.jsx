@@ -8,21 +8,21 @@ const vehicleCards = [
     icon: FaUser,
     title: "Manage EV Customer Records",
     desc: "Maintain profile records containing customer names, contact numbers, active WhatsApp details, and previous visit logs securely.",
-    link: "/features/customers",
+    link: "/features/customers/",
     linkText: "Explore Customer Management"
   },
   {
     icon: FaPlug,
     title: "Keep Vehicle Information Organized",
     desc: "Log EV registration codes, chassis numbers, motor capacities, battery serial configurations, and odometer readings.",
-    link: "/features/vehicles",
+    link: "/features/vehicles/",
     linkText: "Explore Vehicle Management"
   },
   {
     icon: FaHistory,
     title: "View Service History",
     desc: "Track previous diagnostic logs, labor records, and parts checkouts to maintain transparency on repeating repair visits.",
-    link: "/solutions/vehicle-service-history-software",
+    link: "/solutions/vehicle-service-history-software/",
     linkText: "Explore Service History"
   }
 ];

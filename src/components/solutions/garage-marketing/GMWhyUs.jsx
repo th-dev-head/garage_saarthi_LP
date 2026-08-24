@@ -15,7 +15,7 @@ const differentiators = [
   "Provides a built-in Garage CRM to log new lead enquiries and quote follow-ups",
   "Automates periodic vehicle service due reminders to increase repeat visits",
   "Connects customer marketing directly with job card and GST billing workflows",
-  "Offers cloud web platform access and native Android mobile application",
+  "Offers cloud web platform access and native Android and iOS mobile apps",
   "Provides a fully functional 7-day free trial with zero registration fee",
 ];
 
@@ -58,7 +58,7 @@ export default function GMWhyUs() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-100 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11"
           >
             View Pricing Plans

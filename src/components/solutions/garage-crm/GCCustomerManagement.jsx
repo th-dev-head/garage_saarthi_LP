@@ -21,7 +21,7 @@ const customerDetails = [
 export default function GCCustomerManagement() {
   const handleFeatureClick = () => {
     trackEvent("customer_feature_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "customer_management",
       cta_label: "Explore Customer Management",
@@ -52,7 +52,7 @@ export default function GCCustomerManagement() {
             ))}
           </div>
 
-          <Link href="/features/customers">
+          <Link href="/features/customers/">
             <Button
               variant="hero"
               onClick={handleFeatureClick}

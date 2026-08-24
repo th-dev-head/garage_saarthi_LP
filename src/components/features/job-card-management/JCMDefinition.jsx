@@ -17,7 +17,7 @@ export default function JCMDefinition() {
             <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 block">
               What is Digital Job Card Management?
             </span>
-            <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+            <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
               Replace Paper Registers with <GradientUnderline>Digital Repair Orders</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-4">

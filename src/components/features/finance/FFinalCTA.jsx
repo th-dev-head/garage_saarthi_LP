@@ -4,6 +4,7 @@ import React from "react";
 import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
 const fCtaGuarantees = [
@@ -15,7 +16,7 @@ const fCtaGuarantees = [
 export default function FFinalCTA() {
   const handleCtaClick = () => {
     trackEvent("finance_management_feature_final_cta_click", {
-      page_path: "/features/finance",
+      page_path: "/features/finance/",
       cta_location: "final_cta",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/register`,
@@ -33,7 +34,7 @@ export default function FFinalCTA() {
         <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold inline-block">
           Take Control of Your Garage Finances
         </span>
-        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+        <h2 className="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
           Ready to Track Your Workshop Cash Flow & Net Profits?
         </h2>
         <p className="text-slate-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
@@ -48,8 +49,11 @@ export default function FFinalCTA() {
             Start 7-Day Free Trial
             <FaArrowRight className="w-4 h-4" />
           </button>
-          <PlayStoreBadge />
-        </div>
+          <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
 
         <div className="flex flex-wrap justify-center gap-6 text-xs text-slate-400 pt-4">
           {fCtaGuarantees.map((item, idx) => (

@@ -4,10 +4,10 @@ import { FaUserCheck, FaCalendarTimes, FaMoneyBillWave, FaShieldAlt, FaArrowRigh
 
 export default function StaffManagementPromo() {
   const staffFeatures = [
-    { icon: <FaUserCheck className="w-5 h-5" />, label: "Attendance Tracking", desc: "Clock check-in and check-out times.", link: "/features/attendance" },
-    { icon: <FaCalendarTimes className="w-5 h-5" />, label: "Leave Management", desc: "Log employee leaves and track balances.", link: "/features/leave-management" },
-    { icon: <FaMoneyBillWave className="w-5 h-5" />, label: "Payroll Management", desc: "Automate salary calculation base on attendance.", link: "/features/payroll" },
-    { icon: <FaShieldAlt className="w-5 h-5" />, label: "User Management", desc: "Assign specific roles and restrict system access.", link: "/features/user-management" }
+    { icon: <FaUserCheck className="w-5 h-5" />, label: "Attendance Tracking", desc: "Clock check-in and check-out times.", link: "/features/attendance/" },
+    { icon: <FaCalendarTimes className="w-5 h-5" />, label: "Leave Management", desc: "Log employee leaves and track balances.", link: "/features/leave-management/" },
+    { icon: <FaMoneyBillWave className="w-5 h-5" />, label: "Payroll Management", desc: "Automate salary calculation base on attendance.", link: "/features/payroll/" },
+    { icon: <FaShieldAlt className="w-5 h-5" />, label: "User Management", desc: "Assign specific roles and restrict system access.", link: "/features/user-management/" }
   ];
 
   return (

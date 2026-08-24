@@ -8,14 +8,14 @@ const features = [
     icon: <FaColumns className="w-4 h-4" />,
     title: "Real-Time Dashboard",
     desc: "Review today's total collection, new walk-ins, pending deliveries, and inventory alerts from a centralized console.",
-    linkHref: "/features/workshop-management-dashboard",
+    linkHref: "/features/workshop-management-dashboard/",
     linkText: "Explore Dashboard",
   },
   {
     icon: <FaChartBar className="w-4 h-4" />,
     title: "Reports & Analytics",
     desc: "Download GST tax reports, parts purchase lists, customer credit balance summaries, and technician commission statements.",
-    linkHref: "/features/reports",
+    linkHref: "/features/reports/",
     linkText: "Explore Reports",
   },
 ];

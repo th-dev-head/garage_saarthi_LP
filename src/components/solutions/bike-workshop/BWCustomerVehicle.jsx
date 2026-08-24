@@ -8,21 +8,21 @@ const historyCards = [
     icon: FaUser,
     title: "Keep Customer Information Organized",
     desc: "Maintain profile files containing customer names, contact numbers, active WhatsApp details, and previous visit dates securely in the cloud.",
-    link: "/features/customers",
+    link: "/features/customers/",
     linkText: "Explore Customer Management"
   },
   {
     icon: FaMotorcycle,
     title: "Manage Bike and Vehicle Records",
     desc: "Log vehicle registration number, brand, model, chassis numbers, odometer readings, and engine numbers for returning two-wheelers.",
-    link: "/features/vehicles",
+    link: "/features/vehicles/",
     linkText: "Explore Vehicle Management"
   },
   {
     icon: FaHistory,
     title: "View Service History",
     desc: "Track previous engine adjustments, parts substituted, labor records, and technician notes, building customer trust with total operational transparency.",
-    link: "/solutions/vehicle-service-history-software",
+    link: "/solutions/vehicle-service-history-software/",
     linkText: "Explore Service History"
   }
 ];

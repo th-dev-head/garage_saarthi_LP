@@ -10,7 +10,7 @@ import Button from "../../common/Button";
 export default function MBBranchReports() {
   const handleReportsClick = () => {
     trackEvent("reports_feature_click", {
-      page_path: "/solutions/multi-branch-garage-software",
+      page_path: "/solutions/multi-branch-garage-software/",
       cta_location: "branch_reports_section",
       cta_label: "Explore Garage Reports"
     });
@@ -39,7 +39,7 @@ export default function MBBranchReports() {
             Eliminate manual reports, Excel files, and calls. GarageSaarthi compiles branch-wise operational performance logs, letting you compare branches, analyze stock movements, and evaluate user efficiency charts centrally.
           </p>
           <div className="pt-2">
-            <Link href="/features/reports" onClick={handleReportsClick}>
+            <Link href="/features/reports/" onClick={handleReportsClick}>
               <Button>
                 Explore Garage Reports <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

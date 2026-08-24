@@ -5,9 +5,9 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function CSWorkshopTypes() {
   const types = [
-    { title: "Spare Parts Retail Shops", desc: "Sell automotive spare parts, engine oil, components, and accessories directly to walk-in customers with HSN-compliant billing.", url: "/solutions/garage-billing-software" },
-    { title: "Multi-Brand Car Workshops", desc: "Speed up counter transactions for oil changes or single parts sales without opening a full service job card.", url: "/solutions/car-garage-software" },
-    { title: "Two-Wheeler Service Centers", desc: "Quick retail checkout for helmets, spark plugs, lubricants, and cables directly from the POS interface.", url: "/solutions/bike-workshop-software" }
+    { title: "Spare Parts Retail Shops", desc: "Sell automotive spare parts, engine oil, components, and accessories directly to walk-in customers with HSN-compliant billing.", url: "/solutions/garage-billing-software/" },
+    { title: "Multi-Brand Car Workshops", desc: "Speed up counter transactions for oil changes or single parts sales without opening a full service job card.", url: "/solutions/car-garage-software/" },
+    { title: "Two-Wheeler Service Centers", desc: "Quick retail checkout for helmets, spark plugs, lubricants, and cables directly from the POS interface.", url: "/solutions/bike-workshop-software/" }
   ];
 
   return (
@@ -17,7 +17,7 @@ export default function CSWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Models
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Counter Sales POS for <GradientUnderline>Diverse Automotive Retail</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

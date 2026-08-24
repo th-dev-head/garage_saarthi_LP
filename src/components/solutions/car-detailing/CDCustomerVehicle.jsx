@@ -8,21 +8,21 @@ const historyCards = [
     icon: FaUser,
     title: "Manage Customer Profiles",
     desc: "Maintain profile files containing customer names, contact numbers, active WhatsApp details, and previous visit logs securely.",
-    link: "/features/customers",
+    link: "/features/customers/",
     linkText: "Explore Customer Profiles"
   },
   {
     icon: FaCar,
     title: "Keep Vehicle Info Organized",
     desc: "Log car registration codes, chassis numbers, paint specifications, pre-treatment observations, and odometer readings.",
-    link: "/features/vehicles",
+    link: "/features/vehicles/",
     linkText: "Explore Vehicle Logs"
   },
   {
     icon: FaHistory,
     title: "View Detailing History",
     desc: "Track previous polishing grades, warranty years, coating specs, and detailer notes to maintain transparency on repeating studio visits.",
-    link: "/solutions/vehicle-service-history-software",
+    link: "/solutions/vehicle-service-history-software/",
     linkText: "Explore Detailing History"
   }
 ];

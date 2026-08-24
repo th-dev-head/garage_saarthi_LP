@@ -20,7 +20,7 @@ const features = [
     icon: JobIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/job-card-management"
+    link: "/features/job-card-management/"
   },
   {
     title: "Real-time Dashboard",
@@ -28,7 +28,7 @@ const features = [
     icon: DashboardIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/workshop-management-dashboard"
+    link: "/features/workshop-management-dashboard/"
   },
   {
     title: "Counter Sales",
@@ -36,7 +36,7 @@ const features = [
     icon: PaymentsIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/counter-sales"
+    link: "/features/counter-sales/"
   },
   {
     title: "Inventory Management",
@@ -44,7 +44,7 @@ const features = [
     icon: InventoryIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/inventory"
+    link: "/features/inventory/"
   },
   {
     title: "Garage CRM",
@@ -52,7 +52,7 @@ const features = [
     icon: WhatsAppIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/crm"
+    link: "/features/crm/"
   },
   {
     title: "Staff & Payroll",
@@ -60,7 +60,7 @@ const features = [
     icon: PortalIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/payroll"
+    link: "/features/payroll/"
   },
   {
     title: "Service Alerts",
@@ -68,7 +68,7 @@ const features = [
     icon: WhatsAppIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/service-reminders"
+    link: "/features/service-reminders/"
   },
   {
     title: "Reports & Analytics",
@@ -76,7 +76,7 @@ const features = [
     icon: FinanceIcon,
     bgColor: "bg-orange-50",
     iconColor: "#D13F26",
-    link: "/features/reports"
+    link: "/features/reports/"
   }
 ];
 
@@ -100,7 +100,7 @@ const DashboardFeatures = () => {
                 variant="hero"
                 className="cursor-pointer"
                 onClick={() => {
-                  router.push("/features");
+                  router.push("/features/");
                 }}
               >
                 Explore GarageSaarthi Features

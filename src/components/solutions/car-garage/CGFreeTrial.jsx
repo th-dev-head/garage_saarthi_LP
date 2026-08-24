@@ -12,7 +12,7 @@ const trialBenefits = [
   "No credit card required to register",
   "Add your mechanics and car garage details in minutes",
   "Includes free data import assistance from Excel or paper records",
-  "Available on web browser and Android mobile app",
+  "Available on web browser, Android, and iOS mobile apps",
 ];
 
 export default function CGFreeTrial() {
@@ -41,7 +41,7 @@ export default function CGFreeTrial() {
                   Start 7-Day Free Trial
                 </Button>
                 <Link
-                  href="/pricing"
+                  href="/pricing/"
                   className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-100 px-6 py-2.5 text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11 whitespace-nowrap"
                 >
                   View Pricing

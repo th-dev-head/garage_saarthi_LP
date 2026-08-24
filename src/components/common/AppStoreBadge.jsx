@@ -3,7 +3,7 @@ import Link from "next/link";
 import AppleIcon from "@/src/assets/icons/Apple.webp";
 
 const APP_STORE_URL =
-  "https://apps.apple.com/in/app/garagesaarthi/id6475635390";
+  "https://apps.apple.com/in/app/garagesaarthi-garage-software/id6760575656";
 
 /**
  * AppStoreBadge — Reusable Apple App Store download badge.

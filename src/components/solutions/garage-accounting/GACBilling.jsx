@@ -10,10 +10,10 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GACBilling() {
   const handleBillingClick = () => {
     trackEvent("billing_page_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "billing_section",
       cta_label: "Explore Garage Billing Features",
-      destination: "/solutions/garage-billing-software"
+      destination: "/solutions/garage-billing-software/"
     });
   };
 
@@ -49,13 +49,13 @@ export default function GACBilling() {
           </p>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             By using our specialized{" "}
-            <Link href="/solutions/garage-billing-software" onClick={handleBillingClick} className="font-semibold text-primary hover:underline">
+            <Link href="/solutions/garage-billing-software/" onClick={handleBillingClick} className="font-semibold text-primary hover:underline">
               garage billing software
             </Link>{" "}
             module, you eliminate manual errors and keep your financial registers accurate.
           </p>
           <div className="pt-2">
-            <Link href="/solutions/garage-billing-software" onClick={handleBillingClick}>
+            <Link href="/solutions/garage-billing-software/" onClick={handleBillingClick}>
               <Button>
                 Explore Garage Invoicing Features <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

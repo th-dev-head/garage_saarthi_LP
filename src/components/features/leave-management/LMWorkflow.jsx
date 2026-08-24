@@ -37,7 +37,7 @@ export default function LMWorkflow() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block">
             Simple 4-Step Process
           </span>
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             How GarageSaarthi <GradientUnderline>Leave Management Works</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

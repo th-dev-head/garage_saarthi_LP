@@ -16,10 +16,10 @@ const loanLedgerRows = [
 export default function GFMLoans() {
   const handleFeatureClick = () => {
     trackEvent("loan_feature_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "loan_section",
       cta_label: "Explore Loan Management",
-      destination: "/features/loans"
+      destination: "/features/loans/"
     });
   };
 
@@ -40,7 +40,7 @@ export default function GFMLoans() {
             *Disclaimer: GarageSaarthi is a workshop management software tool and does not provide, broker, approve, or sell loans. We are not a financial or lending institution.
           </p>
           <div className="pt-2">
-            <Link href="/features/loans" onClick={handleFeatureClick}>
+            <Link href="/features/loans/" onClick={handleFeatureClick}>
               <Button>
                 Explore Loan Management <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

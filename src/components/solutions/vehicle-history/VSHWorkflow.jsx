@@ -4,7 +4,7 @@ import ComparisonTable from "../../common/ComparisonTable";
 export default function VSHWorkflow() {
   const data = [
     { label: "Record Searching", manual: "Flip through old folders, registers, invoices", digital: "Instantly search by registration or phone number" },
-    { label: "Mechanic Access", manual: "Ask other staff, depend on memory", digital: "View linked vehicle files on Android app" },
+    { label: "Mechanic Access", manual: "Ask other staff, depend on memory", digital: "View linked vehicle files on Android & iOS apps" },
     { label: "Customer Connection", manual: "Contact lists separate from service files", digital: "Unified owner and vehicle profile dashboard" },
     { label: "Job Card Linking", manual: "Scribbling records on paper job cards", digital: "Job cards linked to permanent vehicle timelines" },
     { label: "Replaced Parts Logs", manual: "Deciphering hand-written invoices", digital: "Clear digital spare parts audit trail" }

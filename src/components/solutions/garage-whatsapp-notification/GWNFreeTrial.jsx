@@ -11,7 +11,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GWNFreeTrial() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-whatsapp-notification-software",
+      page_path: "/solutions/garage-whatsapp-notification-software/",
       page_name: "garage_whatsapp_notification_software",
       cta_location: "free_trial_banner",
       cta_label: "Start 7-Day Free Trial",
@@ -40,7 +40,7 @@ export default function GWNFreeTrial() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-slate-50 border border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer h-11"
           >
             View Pricing

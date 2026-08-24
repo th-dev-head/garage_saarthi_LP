@@ -8,19 +8,19 @@ const cards = [
     icon: <FaTachometerAlt className="w-5 h-5" />,
     title: "Garage Dashboard",
     desc: "See today's job cards, pending vehicles, revenue collected, and outstanding dues at a glance. The GarageSaarthi dashboard gives car garage owners a real-time operational summary.",
-    link: "/features/workshop-management-dashboard",
+    link: "/features/workshop-management-dashboard/",
   },
   {
     icon: <FaFileAlt className="w-5 h-5" />,
     title: "Operational Reports",
     desc: "Access detailed reports on job completion rates, spare parts consumption, mechanic productivity, and service history. Understand what is driving your garage operations.",
-    link: "/features/reports",
+    link: "/features/reports/",
   },
   {
     icon: <FaChartBar className="w-5 h-5" />,
     title: "Business Visibility",
     desc: "Track daily revenue, monthly collections, outstanding payments, and expense patterns. Move from guessing your garage's financial health to knowing it with accurate data.",
-    link: "/features/reports",
+    link: "/features/reports/",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function CGDashboardReports() {
 
         <div className="text-center">
           <Link
-            href="/features/reports"
+            href="/features/reports/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             Explore Garage Reports

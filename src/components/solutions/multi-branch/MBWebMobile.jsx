@@ -2,6 +2,7 @@
 
 import React from "react";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
@@ -10,13 +11,13 @@ import { FaArrowRight } from "react-icons/fa";
 
 const syncPlatforms = [
   { icon: "💻", title: "Web Portal Dashboard", desc: "Chrome, Safari & Desktop Access", badgeText: "Connected" },
-  { icon: "📱", title: "Android Garage Saarthi App", desc: "Mechanic & Mobile Advisor View", badgeText: "Connected" }
+  { icon: "📱", title: "Android & iOS Mobile App", desc: "Mechanic & Mobile Advisor View", badgeText: "Connected" }
 ];
 
 export default function MBWebMobile() {
   const handleTrialClick = () => {
     trackEvent("multi_branch_trial_cta_click", {
-      page_path: "/solutions/multi-branch-garage-software",
+      page_path: "/solutions/multi-branch-garage-software/",
       cta_location: "web_mobile_section",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -26,7 +27,7 @@ export default function MBWebMobile() {
 
   const handleAndroidClick = () => {
     trackEvent("android_download_click", {
-      page_path: "/solutions/multi-branch-garage-software",
+      page_path: "/solutions/multi-branch-garage-software/",
       cta_location: "web_mobile_section",
       cta_label: "Download Android App"
     });
@@ -71,15 +72,16 @@ export default function MBWebMobile() {
             Access Your Multi-Location Garage Software on <GradientUnderline>Web and Mobile</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Manage your garage business from anywhere. Whether checking reports on your browser dashboard or reviewing active job card queues on the Android mobile app, all entries are stored safely in a central cloud database.
+            Manage your garage business from anywhere. Whether checking reports on your browser dashboard or reviewing active job card queues on the Android and iOS mobile apps, all entries are stored safely in a central cloud database.
           </p>
           <div className="flex flex-wrap gap-4 items-center pt-4">
             <Button variant="trial" onClick={handleTrialClick}>
               Start 7-Day Free Trial <FaArrowRight />
             </Button>
-            <div onClick={handleAndroidClick}>
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
       </div>

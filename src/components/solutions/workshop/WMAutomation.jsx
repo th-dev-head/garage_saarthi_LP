@@ -45,7 +45,7 @@ export default function WMAutomation() {
             </div>
 
             <Link
-              href="/features/automation"
+              href="/features/automation/"
               className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors text-sm"
             >
               Explore Automation Features <FaArrowRight className="w-3.5 h-3.5" />

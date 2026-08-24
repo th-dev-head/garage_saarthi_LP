@@ -10,7 +10,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GAHero() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -20,7 +20,7 @@ export default function GAHero() {
 
   const handleFeaturesClick = () => {
     trackEvent("attendance_feature_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "hero",
       cta_label: "Explore Attendance Features",
       destination: "#attendance-features"
