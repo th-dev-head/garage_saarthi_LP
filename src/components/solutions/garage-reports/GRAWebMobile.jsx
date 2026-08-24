@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 
@@ -16,7 +17,7 @@ const mobileReportPreviewItems = [
 export default function GRAWebMobile() {
   const handleTrialClick = () => {
     trackEvent("reports_trial_cta_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "web_mobile_section",
       cta_label: "Start Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -26,7 +27,7 @@ export default function GRAWebMobile() {
 
   const handleAndroidClick = () => {
     trackEvent("reports_android_download_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "web_mobile_section",
       cta_label: "Download Android App"
     });
@@ -43,7 +44,7 @@ export default function GRAWebMobile() {
             Access Garage Reports on <GradientUnderline>Web and Mobile</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            GarageSaarthi is a cloud-based reporting system. View invoice stats on your browser dashboard or check active repair card counts from the Android application on the road.
+            GarageSaarthi is a cloud-based reporting system. View invoice stats on your browser dashboard or check active repair card counts from the mobile app (Android & iOS) on the road.
           </p>
           <div className="flex flex-wrap gap-4 items-center pt-4">
             <Link
@@ -54,9 +55,10 @@ export default function GRAWebMobile() {
             >
               Start Free Trial <FaArrowRight className="w-3.5 h-3.5" />
             </Link>
-            <div onClick={handleAndroidClick}>
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
         <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
@@ -67,7 +69,7 @@ export default function GRAWebMobile() {
               <span className="text-xs font-bold text-slate-800">Mobile Reports & Analytics</span>
             </div>
             <div className="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-emerald-200/60">
-              📱 Android Live
+              📱 Android & iOS Live
             </div>
           </div>
 

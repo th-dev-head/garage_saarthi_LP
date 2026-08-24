@@ -99,7 +99,7 @@ const jsonLd = {
           name: "Is the workshop analytics dashboard updated in real-time?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes! Every time a service advisor opens a job card, a mechanic updates a repair stage on the Android mobile app, or a spare part is sold, the central dashboard updates immediately without requiring manual refresh.",
+            text: "Yes! Every time a service advisor opens a job card, a mechanic updates a repair stage on the Android and iOS mobile apps, or a spare part is sold, the central dashboard updates immediately without requiring manual refresh.",
           },
         },
       ],

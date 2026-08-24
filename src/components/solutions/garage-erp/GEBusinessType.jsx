@@ -10,7 +10,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GEBusinessType() {
   const handleTypeClick = (typeName) => {
     trackEvent("solution_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "business_type",
@@ -23,7 +23,7 @@ export default function GEBusinessType() {
     {
       title: "Car Garages",
       desc: "Connect passenger car check-in registers, parts inventory, mechanics, and billing summaries.",
-      link: "/solutions/car-garage-software"
+      link: "/solutions/car-garage-software/"
     },
     {
       title: "Automobile Workshops",
@@ -33,22 +33,22 @@ export default function GEBusinessType() {
     {
       title: "Auto Repair Shops",
       desc: "Manage customer leads, work orders, service reminders, and invoice sheets.",
-      link: "/solutions/auto-repair-shop-software"
+      link: "/solutions/auto-repair-shop-software/"
     },
     {
       title: "Vehicle Workshops",
       desc: "Run independent or dealership level work orders, mechanic shifts, and spare parts stock.",
-      link: "/solutions/workshop-management-software"
+      link: "/solutions/workshop-management-software/"
     },
     {
       title: "Multi-Branch Garages",
       desc: "Manage multi-center networks with central logins, consolidated reports, and branch comparisons.",
-      link: "/solutions/multi-branch-garage-software"
+      link: "/solutions/multi-branch-garage-software/"
     },
     {
       title: "Workshop Chains",
       desc: "Run franchised networks with central inventories, pricing lists, and consolidated logs.",
-      link: "/solutions/workshop-management-app"
+      link: "/solutions/workshop-management-app/"
     }
   ];
 

@@ -8,21 +8,21 @@ const billingCards = [
     icon: FaFileInvoiceDollar,
     title: "Create Organized Workshop Bills",
     desc: "Generate professional, tax-compliant GST invoices containing separate parts, labor items, discounts, and customer billing prefixes in seconds.",
-    link: "/pricing",
+    link: "/pricing/",
     linkText: "View Billing Setup"
   },
   {
     icon: FaStore,
     title: "Manage Counter Sales",
     desc: "Record quick sales of lubricants, spare items, helmets, or service consumables directly without having to populate a service job card.",
-    link: "/features/counter-sales",
+    link: "/features/counter-sales/",
     linkText: "Explore Counter Sales"
   },
   {
     icon: FaMoneyCheckAlt,
     title: "Track Payments",
     desc: "Organize payments collected via cash, UPI, cards, or credit. Send payment links and digital invoice links straight to the customer's WhatsApp.",
-    link: "/features/billing",
+    link: "/features/billing/",
     linkText: "Explore Payment Management"
   }
 ];

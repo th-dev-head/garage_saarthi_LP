@@ -8,28 +8,28 @@ const staffCards = [
     icon: FaUserClock,
     title: "Track Staff Attendance",
     desc: "Log daily check-in/out times of mechanics and office staff on a simple web dashboard.",
-    link: "/features/attendance",
+    link: "/features/attendance/",
     linkText: "Explore Attendance"
   },
   {
     icon: FaCalendarTimes,
     title: "Manage Leave Records",
     desc: "Monitor leave history, sick days, and vacation parameters to schedule shift coverage.",
-    link: "/features/leave-management",
+    link: "/features/leave-management/",
     linkText: "Explore Leaves"
   },
   {
     icon: FaFileInvoice,
     title: "Handle Workshop Payroll",
     desc: "Compute net salaries, deduct leaves, and add job card commissions for your mechanics.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
     linkText: "Explore Payroll"
   },
   {
     icon: FaLock,
     title: "Control User Access",
     desc: "Create user logins. Restrict billing data or stock details based on employee roles.",
-    link: "/features/user-management",
+    link: "/features/user-management/",
     linkText: "Explore Access Controls"
   }
 ];

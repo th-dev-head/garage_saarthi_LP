@@ -33,7 +33,7 @@ export default function GPFAQ() {
     },
     {
       question: "Is GarageSaarthi a payroll app for garages?",
-      answer: "Yes. We provide browser access alongside a live Android application on the Google Play Store so staff attendance and payroll statuses can be updated on mobile. iOS support is coming soon."
+      answer: "Yes. We provide browser access alongside mobile apps on Google Play Store and Apple App Store so staff attendance and payroll statuses can be updated on mobile. iOS apps are fully available."
     },
     {
       question: "Does GarageSaarthi only manage payroll?",

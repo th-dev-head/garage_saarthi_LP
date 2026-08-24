@@ -14,7 +14,7 @@ const criteriaList = [
   "Mechanic staff attendance, leave & payroll commissions",
   "Multi-branch scaling & role-based user permissions",
   "Business dashboard, sales reports & CA export access",
-  "Web browser & Android mobile app availability",
+  "Web browser & Android & iOS mobile app availability",
   "7-day free trial availability without credit card required",
 ];
 
@@ -81,7 +81,7 @@ export default function BGSFramework() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Compare GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />

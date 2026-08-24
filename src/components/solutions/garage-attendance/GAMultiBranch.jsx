@@ -15,10 +15,10 @@ const branchList = [
 export default function GAMultiBranch() {
   const handleSolutionClick = () => {
     trackEvent("multi_branch_solution_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "multi_branch_attendance_section",
       cta_label: "Explore Multi-Branch Garage Software",
-      destination: "/solutions/multi-branch-garage-software"
+      destination: "/solutions/multi-branch-garage-software/"
     });
   };
 
@@ -54,7 +54,7 @@ export default function GAMultiBranch() {
             Owners can switch branch dashboard views in seconds, checking localized shift check-ins, leaves, and staff permissions centrally.
           </p>
           <div className="pt-2">
-            <Link href="/solutions/multi-branch-garage-software" onClick={handleSolutionClick}>
+            <Link href="/solutions/multi-branch-garage-software/" onClick={handleSolutionClick}>
               <Button>
                 Explore Multi-Branch Garage Software <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

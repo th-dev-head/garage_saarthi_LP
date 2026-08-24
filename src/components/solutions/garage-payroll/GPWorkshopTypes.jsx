@@ -9,7 +9,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GPWorkshopTypes() {
   const handleSolutionClick = (name, url) => {
     trackEvent("payroll_solution_click", {
-      page_path: "/solutions/garage-payroll-software",
+      page_path: "/solutions/garage-payroll-software/",
       cta_location: "workshop_types_section",
       cta_label: name,
       destination: url
@@ -17,12 +17,12 @@ export default function GPWorkshopTypes() {
   };
 
   const types = [
-    { title: "Car Garages", desc: "Manage salaries and job commission rates for multi-brand car mechanics, painters, and washing staff.", url: "/solutions/car-garage-software" },
-    { title: "Bike Workshops", desc: "Track daily wages for bike mechanics, helper allowances, and weekly payout rosters.", url: "/solutions/bike-workshop-software" },
-    { title: "EV Garages", desc: "Manage technical salary codes for battery technicians and EV repair supervisors.", url: "/solutions/ev-garage-management-software" },
-    { title: "Truck Workshops", desc: "Organize commissions, overtime, and monthly wages for commercial vehicle repair teams.", url: "/solutions/truck-workshop-software" },
-    { title: "Fleet Workshops", desc: "Manage payroll and transaction files for designated fleet maintenance engineers.", url: "/solutions/fleet-workshop-software" },
-    { title: "Multi-Branch Garages", desc: "Compare staff payroll logs, calculate leaf counts, and audit salaries centrally across branches.", url: "/solutions/multi-branch-garage-software" }
+    { title: "Car Garages", desc: "Manage salaries and job commission rates for multi-brand car mechanics, painters, and washing staff.", url: "/solutions/car-garage-software/" },
+    { title: "Bike Workshops", desc: "Track daily wages for bike mechanics, helper allowances, and weekly payout rosters.", url: "/solutions/bike-workshop-software/" },
+    { title: "EV Garages", desc: "Manage technical salary codes for battery technicians and EV repair supervisors.", url: "/solutions/ev-garage-management-software/" },
+    { title: "Truck Workshops", desc: "Organize commissions, overtime, and monthly wages for commercial vehicle repair teams.", url: "/solutions/truck-workshop-software/" },
+    { title: "Fleet Workshops", desc: "Manage payroll and transaction files for designated fleet maintenance engineers.", url: "/solutions/fleet-workshop-software/" },
+    { title: "Multi-Branch Garages", desc: "Compare staff payroll logs, calculate leaf counts, and audit salaries centrally across branches.", url: "/solutions/multi-branch-garage-software/" }
   ];
 
   return (

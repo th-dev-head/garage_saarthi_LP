@@ -5,7 +5,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 const differentiators = [
   {
     icon: <FaMobileAlt />,
-    title: "Android Mobile App",
+    title: "Android & iOS Mobile App",
     desc: "Perform quick diagnostics, check parts stock, and update job progress logs from your phone."
   },
   {

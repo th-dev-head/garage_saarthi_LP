@@ -8,7 +8,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GACDefinition() {
   const handleLinkClick = (name, url) => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "product_definition",
       cta_label: name,
       destination: url
@@ -36,7 +36,7 @@ export default function GACDefinition() {
               garage management software
             </Link>
             <span className="text-slate-300">|</span>
-            <Link href="/features/finance" onClick={() => handleLinkClick("Finance Feature Page", "/features/finance")} className="hover:underline">
+            <Link href="/features/finance/" onClick={() => handleLinkClick("Finance Feature Page", "/features/finance/")} className="hover:underline">
               Finance Module Details
             </Link>
           </div>

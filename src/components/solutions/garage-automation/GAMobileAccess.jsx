@@ -3,6 +3,7 @@
 import React from "react";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
@@ -11,7 +12,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function GAMobileAccess() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-automation-software",
+      page_path: "/solutions/garage-automation-software/",
       page_name: "garage_automation_software",
       cta_location: "mobile_access",
       cta_label: "Start 7-Day Free Trial",
@@ -37,8 +38,11 @@ export default function GAMobileAccess() {
           <Button variant="trial" onClick={handleTrialClick}>
             Start 7-Day Free Trial <FaArrowRight />
           </Button>
-          <PlayStoreBadge />
-        </div>
+          <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
       </div>
     </section>
   );

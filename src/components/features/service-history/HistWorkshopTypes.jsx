@@ -5,10 +5,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function HistWorkshopTypes() {
   const workshopTypes = [
-    { title: "Car Service Centers", link: "/solutions/car-garage-software", desc: "Access comprehensive records linked to car models, diagnostic checklists, and past invoices." },
-    { title: "Two-Wheeler Workshops", link: "/solutions/bike-workshop-software", desc: "Fast-moving service history lookups for engine checkups, lubricants replacement, and quick checkout logs." },
-    { title: "Commercial Fleet Garages", link: "/solutions/fleet-workshop-software", desc: "Centralized repair logs for transporter networks, organizational credits, and scheduled maintenance checklists." },
-    { title: "Multi-Branch Operations", link: "/solutions/multi-branch-garage-software", desc: "Compare and share diagnostic and billing histories across all workshop locations centrally." }
+    { title: "Car Service Centers", link: "/solutions/car-garage-software/", desc: "Access comprehensive records linked to car models, diagnostic checklists, and past invoices." },
+    { title: "Two-Wheeler Workshops", link: "/solutions/bike-workshop-software/", desc: "Fast-moving service history lookups for engine checkups, lubricants replacement, and quick checkout logs." },
+    { title: "Commercial Fleet Garages", link: "/solutions/fleet-workshop-software/", desc: "Centralized repair logs for transporter networks, organizational credits, and scheduled maintenance checklists." },
+    { title: "Multi-Branch Operations", link: "/solutions/multi-branch-garage-software/", desc: "Compare and share diagnostic and billing histories across all workshop locations centrally." }
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function HistWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Profiles
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Vehicle History Databases for <GradientUnderline>Diverse Garage Models</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

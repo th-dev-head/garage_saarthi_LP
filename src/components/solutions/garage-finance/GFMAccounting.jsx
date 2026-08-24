@@ -8,7 +8,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GFMAccounting() {
   const handleLinkClick = (name, url) => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "accounting_records_section",
       cta_label: name,
       destination: url
@@ -39,15 +39,15 @@ export default function GFMAccounting() {
         </div>
 
         <div className="pt-4 flex flex-wrap gap-6 justify-center text-xs md:text-sm font-semibold text-primary">
-          <Link href="/features/finance" onClick={() => handleLinkClick("Finance Feature", "/features/finance")} className="hover:underline">
+          <Link href="/features/finance/" onClick={() => handleLinkClick("Finance Feature", "/features/finance/")} className="hover:underline">
             Finance Management
           </Link>
           <span className="text-slate-300">|</span>
-          <Link href="/features/ca-access" onClick={() => handleLinkClick("CA Access Feature", "/features/ca-access")} className="hover:underline">
+          <Link href="/features/ca-access/" onClick={() => handleLinkClick("CA Access Feature", "/features/ca-access/")} className="hover:underline">
             CA Access Dashboard
           </Link>
           <span className="text-slate-300">|</span>
-          <Link href="/features/reports" onClick={() => handleLinkClick("Reports Feature", "/features/reports")} className="hover:underline">
+          <Link href="/features/reports/" onClick={() => handleLinkClick("Reports Feature", "/features/reports/")} className="hover:underline">
             Financial Reports
           </Link>
         </div>

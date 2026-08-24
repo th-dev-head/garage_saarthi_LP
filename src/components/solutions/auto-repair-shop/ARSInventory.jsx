@@ -58,14 +58,14 @@ export default function ARSInventory() {
         {/* CTA Links */}
         <div className="mt-8 flex flex-wrap gap-4 items-center justify-center">
           <Link
-            href="/features/inventory"
+            href="/features/inventory/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             Explore Inventory Management
             <FaArrowRight className="w-3.5 h-3.5" />
           </Link>
           <Link
-            href="/features/counter-sales"
+            href="/features/counter-sales/"
             className="text-xs font-bold text-primary hover:underline"
           >
             Explore Counter Sales

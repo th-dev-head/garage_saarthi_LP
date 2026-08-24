@@ -10,16 +10,16 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GAWorkflow() {
   const handlePayrollClick = () => {
     trackEvent("payroll_feature_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "workflow_section",
       cta_label: "Explore Garage Payroll Management",
-      destination: "/features/payroll"
+      destination: "/features/payroll/"
     });
   };
 
   const handleLinkClick = (name, url) => {
     trackEvent("attendance_feature_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "workflow_section",
       cta_label: name,
       destination: url
@@ -41,17 +41,17 @@ export default function GAWorkflow() {
           </p>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Our platform provides integrated staff profiles so you can manage role permissions securely. Explore our{" "}
-            <Link href="/features/leave-management" onClick={() => handleLinkClick("Leave Management Link", "/features/leave-management")} className="text-primary font-semibold hover:underline">
+            <Link href="/features/leave-management/" onClick={() => handleLinkClick("Leave Management Link", "/features/leave-management/")} className="text-primary font-semibold hover:underline">
               Leave Management
             </Link>{" "}
             and{" "}
-            <Link href="/features/user-management" onClick={() => handleLinkClick("User Management Link", "/features/user-management")} className="text-primary font-semibold hover:underline">
+            <Link href="/features/user-management/" onClick={() => handleLinkClick("User Management Link", "/features/user-management/")} className="text-primary font-semibold hover:underline">
               User Permissions
             </Link>{" "}
             dashboards.
           </p>
           <div className="pt-2">
-            <Link href="/features/payroll" onClick={handlePayrollClick}>
+            <Link href="/features/payroll/" onClick={handlePayrollClick}>
               <Button>
                 Explore Garage Payroll Management <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

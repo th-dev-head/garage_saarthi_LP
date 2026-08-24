@@ -22,12 +22,12 @@ const billingCardRows = [
 export default function GEIndiaPositioning() {
   const handleCtaClick = () => {
     trackEvent("pricing_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "india_positioning",
       cta_label: "View GarageSaarthi Pricing",
-      destination: "/pricing"
+      destination: "/pricing/"
     });
   };
 
@@ -58,7 +58,7 @@ export default function GEIndiaPositioning() {
             ))}
             {/* Button */}
             <div className="pt-2">
-              <Link href="/pricing">
+              <Link href="/pricing/">
                 <Button variant="hero" onClick={handleCtaClick}>
                   View GarageSaarthi Pricing
                 </Button>

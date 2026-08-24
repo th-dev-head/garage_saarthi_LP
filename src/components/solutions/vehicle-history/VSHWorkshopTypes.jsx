@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function VSHWorkshopTypes() {
   const handleSolutionClick = (solutionName) => {
     trackEvent("solution_click", {
-      page_path: "/solutions/vehicle-service-history-software",
+      page_path: "/solutions/vehicle-service-history-software/",
       cta_location: "workshop_types",
       cta_label: "Explore Solution",
       solution_name: solutionName
@@ -17,12 +17,12 @@ export default function VSHWorkshopTypes() {
   };
 
   const types = [
-    { title: "Car Garages", desc: "Track model records, r`epair history logs, filter past invoices, and schedule car service records.", link: "/solutions/car-garage-software" },
-    { title: "Bike Workshops", desc: "Manage fast check-ins for scooters and bikes, oil change histories, and regular wash records.", link: "/solutions/bike-workshop-software" },
-    { title: "EV Garages", desc: "Log battery specifications, EV maintenance check sheets, and past electronic checkups.", link: "/solutions/ev-garage-management-software" },
-    { title: "Truck Workshops", desc: "Maintain repair logs for commercial trucks, engine checks, and preventative checklists.", link: "/solutions/truck-workshop-software" },
-    { title: "Fleet Workshops", desc: "Access central histories for business fleet operators, transporters, and corporate accounts.", link: "/solutions/fleet-workshop-software" },
-    { title: "Multi-Branch Garages", desc: "Centralize diagnostic and billing histories across all workshop locations centrally.", link: "/solutions/multi-branch-garage-software" }
+    { title: "Car Garages", desc: "Track model records, r`epair history logs, filter past invoices, and schedule car service records.", link: "/solutions/car-garage-software/" },
+    { title: "Bike Workshops", desc: "Manage fast check-ins for scooters and bikes, oil change histories, and regular wash records.", link: "/solutions/bike-workshop-software/" },
+    { title: "EV Garages", desc: "Log battery specifications, EV maintenance check sheets, and past electronic checkups.", link: "/solutions/ev-garage-management-software/" },
+    { title: "Truck Workshops", desc: "Maintain repair logs for commercial trucks, engine checks, and preventative checklists.", link: "/solutions/truck-workshop-software/" },
+    { title: "Fleet Workshops", desc: "Access central histories for business fleet operators, transporters, and corporate accounts.", link: "/solutions/fleet-workshop-software/" },
+    { title: "Multi-Branch Garages", desc: "Centralize diagnostic and billing histories across all workshop locations centrally.", link: "/solutions/multi-branch-garage-software/" }
   ];
 
   return (

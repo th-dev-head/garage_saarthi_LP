@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 const wsiTrialBenefits = [
   "Full 7-Day Free Trial",
-  "Web & Android Mobile Access",
+  "Web, Android & iOS Mobile Access",
   "No Credit Card Required"
 ];
 
@@ -47,7 +47,7 @@ export default function WSIPricing() {
               Start 7-Day Free Trial
             </Button>
             <Link
-              href="/pricing"
+              href="/pricing/"
               className="rounded-full bg-white text-slate-900 hover:bg-slate-100 px-6 py-2.5 text-sm font-bold transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap h-11"
             >
               View Pricing Plans

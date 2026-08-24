@@ -9,7 +9,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GPLeaveStaffManagement() {
   const handleLinkClick = (name, url) => {
     trackEvent("payroll_feature_click", {
-      page_path: "/solutions/garage-payroll-software",
+      page_path: "/solutions/garage-payroll-software/",
       cta_location: "leave_staff_section",
       cta_label: name,
       destination: url
@@ -17,10 +17,10 @@ export default function GPLeaveStaffManagement() {
   };
 
   const steps = [
-    { title: "Attendance Management", desc: "Track daily login registers, present ratios, and active shifts for mechanics.", linkName: "Garage Attendance Management", url: "/features/attendance" },
-    { title: "Leave Management", desc: "Log employee leave requests, paid/unpaid allocations, and balance records.", linkName: "Garage Leave Management", url: "/features/leave-management" },
-    { title: "Payroll Management", desc: "Verify basic salaries, calculate mechanic commissions, and output salary slips.", linkName: "Garage Payroll Management", url: "/features/payroll" },
-    { title: "User Management", desc: "Configure role permissions for administrators, service advisors, and billing desks.", linkName: "Garage User Management", url: "/features/user-management" }
+    { title: "Attendance Management", desc: "Track daily login registers, present ratios, and active shifts for mechanics.", linkName: "Garage Attendance Management", url: "/features/attendance/" },
+    { title: "Leave Management", desc: "Log employee leave requests, paid/unpaid allocations, and balance records.", linkName: "Garage Leave Management", url: "/features/leave-management/" },
+    { title: "Payroll Management", desc: "Verify basic salaries, calculate mechanic commissions, and output salary slips.", linkName: "Garage Payroll Management", url: "/features/payroll/" },
+    { title: "User Management", desc: "Configure role permissions for administrators, service advisors, and billing desks.", linkName: "Garage User Management", url: "/features/user-management/" }
   ];
 
   return (

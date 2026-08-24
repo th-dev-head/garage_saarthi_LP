@@ -8,28 +8,28 @@ const workshopCategories = [
     icon: <FaCar />,
     title: "Car Workshops",
     desc: "Manage 4-wheeler vehicle inspection walkarounds, spare parts, customer history, and GST invoices for car repair centers.",
-    link: "/solutions/car-workshop-software",
+    link: "/solutions/car-workshop-software/",
     anchor: "Explore Car Workshop Software",
   },
   {
     icon: <FaMotorcycle />,
     title: "Bike Workshops",
     desc: "Handle high two-wheeler daily volume, rapid counter parts checkout, customer contact profiles, and oil change reminders.",
-    link: "/solutions/bike-workshop-software",
+    link: "/solutions/bike-workshop-software/",
     anchor: "Explore Bike Workshop Software",
   },
   {
     icon: <FaBolt />,
     title: "EV Workshops",
     desc: "Maintain customer profiles, EV vehicle records, component repair job cards, and mechanic staff without diagnostic claims.",
-    link: "/solutions/ev-garage-management-software",
+    link: "/solutions/ev-garage-management-software/",
     anchor: "Explore EV Workshop Software",
   },
   {
     icon: <FaTruckMoving />,
     title: "Truck Workshops",
     desc: "Coordinate commercial heavy vehicle overhaul jobs, bulk lubricant stock, chassis details, and transport fleet credit terms.",
-    link: "/solutions/truck-workshop-software",
+    link: "/solutions/truck-workshop-software/",
     anchor: "Explore Truck Workshop Software",
   },
 ];
@@ -77,7 +77,7 @@ export default function WSIBusinessTypes() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Find Software for Your Workshop <FaArrowRight className="w-3.5 h-3.5" />

@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "Can I create job cards from the GarageSaarthi app?",
-    a: "Yes. You can create digital job cards in under 60 seconds on any web browser or Android mobile app. Add vehicle plates, note fuel levels, and record complaints easily."
+    a: "Yes. You can create digital job cards in under 60 seconds on any web browser, Android, or iOS mobile app. Add vehicle plates, note fuel levels, and record complaints easily."
   },
   {
     q: "Can I manage customers and vehicles from the app?",
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Is GarageSaarthi available for iPhone?",
-    a: "The iOS application has been submitted for App Store review and is not yet publicly available. iOS app is coming soon."
+    a: "Yes! GarageSaarthi is available on both Google Play Store for Android and Apple App Store for iOS."
   },
   {
     q: "Can I use GarageSaarthi on a computer?",

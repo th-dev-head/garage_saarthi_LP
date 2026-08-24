@@ -3,20 +3,21 @@
 import React from "react";
 import GradientUnderline from "../../common/GradientUnderline";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import { FaArrowRight } from "react-icons/fa";
 
 const historySyncPlatforms = [
-  { icon: "💻", title: "Web Portal (Front Office)", desc: "Invoicing & Detailed History Check", badgeText: "Synced" },
-  { icon: "📱", title: "Android App (Bay Mechanic)", desc: "Quick Vehicle History & Check-In", badgeText: "Synced" }
+  { icon: "💻", title: "Web Portal ", desc: "Invoicing & Detailed History Check", badgeText: "Synced" },
+  { icon: "📱", title: "Android & iOS App", desc: "Quick Vehicle History & Check-In", badgeText: "Synced" }
 ];
 
 export default function VSHWebMobile() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/vehicle-service-history-software",
+      page_path: "/solutions/vehicle-service-history-software/",
       cta_location: "web_mobile_section",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -26,7 +27,7 @@ export default function VSHWebMobile() {
 
   const handleAndroidClick = () => {
     trackEvent("android_download_click", {
-      page_path: "/solutions/vehicle-service-history-software",
+      page_path: "/solutions/vehicle-service-history-software/",
       cta_location: "web_mobile_section",
       cta_label: "Download Android App"
     });
@@ -77,15 +78,16 @@ export default function VSHWebMobile() {
             Manage Vehicle Service History on <GradientUnderline>Web and Mobile</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Mechanics on the bay can check previous service details on the Android mobile application, while the front office accesses the complete web dashboard for invoicing. All inputs sync in real-time.
+            Mechanics on the bay can check previous service details on the Android and iOS mobile application, while the front office accesses the complete web dashboard for invoicing. All inputs sync in real-time.
           </p>
           <div className="flex flex-wrap gap-4 items-center pt-4">
             <Button variant="trial" onClick={handleTrialClick}>
               Start 7-Day Free Trial <FaArrowRight />
             </Button>
-            <div onClick={handleAndroidClick}>
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
       </div>

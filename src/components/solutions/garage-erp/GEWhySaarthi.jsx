@@ -10,7 +10,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GEWhySaarthi() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "why_garagesaarthi",

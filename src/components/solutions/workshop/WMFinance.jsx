@@ -54,7 +54,7 @@ export default function WMFinance() {
                 <p className="text-sm text-slate-600 leading-relaxed mb-6">{card.desc}</p>
               </div>
               <Link
-                href="/features/billing"
+                href="/features/billing/"
                 className="text-xs font-bold text-primary hover:text-primary-hover transition-colors inline-flex items-center gap-1"
               >
                 Explore Billing <FaArrowRight className="w-3 h-3" />

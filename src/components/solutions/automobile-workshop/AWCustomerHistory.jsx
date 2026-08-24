@@ -8,14 +8,14 @@ const historyFeatures = [
     icon: FaUserPlus,
     title: "Customer Management",
     desc: "Save client details, mobile numbers, and check client balances on any device.",
-    link: "/features/customers",
+    link: "/features/customers/",
     linkText: "Explore Customers"
   },
   {
     icon: FaCar,
     title: "Vehicle Management",
     desc: "Link multiple cars or bikes to a single customer, log registration numbers, and chassis numbers.",
-    link: "/features/vehicles",
+    link: "/features/vehicles/",
     linkText: "Explore Vehicles"
   }
 ];

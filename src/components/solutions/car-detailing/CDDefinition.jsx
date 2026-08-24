@@ -15,7 +15,7 @@ const problems = [
 const solutions = [
   "Digital job cards detailing paint correction, ceramic coatings, or PPF jobs.",
   "Centralized vehicle profiles linked automatically to customer records.",
-  "Cloud-based history logs accessible instantly on web and Android app.",
+  "Cloud-based history logs accessible instantly on web, Android, and iOS apps.",
   "Integrated coating inventory tracking with low stock dashboards.",
   "Tax-compliant GST invoice parameters configured in seconds.",
   "Mechanic and detailer payroll, check-ins, and job cards commissions sync-mapped.",
@@ -74,7 +74,7 @@ export default function CDDefinition() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-primary-hover transition-colors"
           >
             Explore GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />

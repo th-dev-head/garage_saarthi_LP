@@ -38,7 +38,7 @@ export default function AWPricing() {
                   Start 7-Day Free Trial
                 </Button>
                 <Link
-                  href="/pricing"
+                  href="/pricing/"
                   className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-50 px-6 py-2.5 text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11 whitespace-nowrap"
                 >
                   View Pricing Plans

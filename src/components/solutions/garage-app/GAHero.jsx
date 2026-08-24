@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaPlay, FaArrowRight, FaLaptop, FaAndroid } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import Button from "../../common/Button";
 
 export default function GAHero() {
@@ -32,8 +33,11 @@ export default function GAHero() {
             </p>
             
             <div className="flex flex-wrap gap-4 items-center pt-4">
-              <PlayStoreBadge />
-              <Link
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+<Link
                 href={FRONTEND_URL + "/register"}
                 target="_blank"
                 rel="noopener noreferrer"

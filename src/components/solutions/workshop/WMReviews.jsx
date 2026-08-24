@@ -53,7 +53,7 @@ export default function WMReviews() {
       titleHighlight="to Run Their Business."
       subtitle="Hear from real workshop owners across India who digitized their operations with GarageSaarthi."
       reviews={reviews}
-      linkHref="/features/customer-reviews"
+      linkHref="/features/customer-reviews/"
       linkLabel="View All Customer Stories"
       bgClass="bg-white"
     />

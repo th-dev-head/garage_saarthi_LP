@@ -54,7 +54,7 @@ export default function CGCRM() {
               </div>
             ))}
             <Link
-              href="/features/crm"
+              href="/features/crm/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap mt-4"
             >
               Explore Garage CRM

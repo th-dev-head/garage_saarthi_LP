@@ -10,7 +10,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GJCProductContext() {
   const handleFeatureClick = (featureName) => {
     trackEvent("job_card_feature_link_click", {
-      page_path: "/solutions/garage-job-card-software",
+      page_path: "/solutions/garage-job-card-software/",
       cta_location: "product_context",
       cta_label: "Explore Feature",
       feature_name: featureName
@@ -18,12 +18,12 @@ export default function GJCProductContext() {
   };
 
   const modules = [
-    { name: "Garage Dashboard", href: "/features/workshop-management-dashboard", desc: "Monitor active job cards, revenue metrics, and branch analytics." },
-    { name: "Counter Sales", href: "/features/counter-sales", desc: "Sell spare parts and inventory items directly without full job cards." },
-    { name: "Garage Inventory", href: "/features/inventory", desc: "Manage spare parts stock, purchases, and low-stock indicators." },
-    { name: "Customer CRM", href: "/solutions/garage-crm-software", desc: "Log enquiries, follow-up alerts, and discount promo offers." },
-    { name: "Payments & Finance", href: "/features/billing", desc: "Create GST-compliant bills and log collection records." },
-    { name: "Employee Payroll", href: "/features/payroll", desc: "Track mechanic attendance sheets, leaves, and commissions." }
+    { name: "Garage Dashboard", href: "/features/workshop-management-dashboard/", desc: "Monitor active job cards, revenue metrics, and branch analytics." },
+    { name: "Counter Sales", href: "/features/counter-sales/", desc: "Sell spare parts and inventory items directly without full job cards." },
+    { name: "Garage Inventory", href: "/features/inventory/", desc: "Manage spare parts stock, purchases, and low-stock indicators." },
+    { name: "Customer CRM", href: "/solutions/garage-crm-software/", desc: "Log enquiries, follow-up alerts, and discount promo offers." },
+    { name: "Payments & Finance", href: "/features/billing/", desc: "Create GST-compliant bills and log collection records." },
+    { name: "Employee Payroll", href: "/features/payroll/", desc: "Track mechanic attendance sheets, leaves, and commissions." }
   ];
 
   return (
@@ -62,7 +62,7 @@ export default function GJCProductContext() {
         </div>
 
         <div className="flex justify-center">
-          <Link href="/features">
+          <Link href="/features/">
             <Button variant="hero">
               Explore All GarageSaarthi Features
             </Button>

@@ -7,21 +7,21 @@ const branchFeatures = [
   {
     title: "Centralized Operations",
     descPrefix: "Monitor active job cards, billing outputs, and spare parts stocks across branches centrally. Refer to details on ",
-    linkHref: "/solutions/multi-branch-garage-software",
+    linkHref: "/solutions/multi-branch-garage-software/",
     linkText: "Multi-Branch Garage Software",
     descSuffix: "."
   },
   {
     title: "Role-Based Access Controls",
     descPrefix: "Assign custom roles for billing managers, advisors, helpers, and branch owners under ",
-    linkHref: "/features/user-management",
+    linkHref: "/features/user-management/",
     linkText: "User Management",
     descSuffix: "."
   },
   {
     title: "Consolidated Reports",
     descPrefix: "Analyze daily business performance, net collections, and branch conversions in consolidated ",
-    linkHref: "/features/reports",
+    linkHref: "/features/reports/",
     linkText: "Reports",
     descSuffix: "."
   }

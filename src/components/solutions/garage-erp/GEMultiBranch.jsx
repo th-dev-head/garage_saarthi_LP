@@ -11,7 +11,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GEMultiBranch() {
   const handleCtaClick = () => {
     trackEvent("solution_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "multi_branch",
@@ -39,7 +39,7 @@ export default function GEMultiBranch() {
             GarageSaarthi provides multi-branch consolidated reporting, live branch comparison metrics, and centralized staff access controls. You can switch between branches, manage spare parts transfers, and monitor sales without visiting each center physically.
           </p>
 
-          <Link href="/solutions/multi-branch-garage-software">
+          <Link href="/solutions/multi-branch-garage-software/">
             <Button
               variant="hero"
               onClick={handleCtaClick}

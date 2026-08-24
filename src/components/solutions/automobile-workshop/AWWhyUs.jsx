@@ -60,7 +60,7 @@ const differentiators = [
   {
     icon: <FaLaptop className="w-5 h-5" />,
     title: "Cross-Device Access",
-    desc: "Flexible cloud access on desktop web browsers or native Android application for workshop floor advisors.",
+    desc: "Flexible cloud access on desktop web browsers or native Android and iOS mobile applications for workshop floor advisors.",
   },
   {
     icon: <FaCheckCircle className="w-5 h-5" />,

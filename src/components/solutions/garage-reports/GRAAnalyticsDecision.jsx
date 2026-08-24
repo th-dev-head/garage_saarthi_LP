@@ -10,7 +10,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function GRAAnalyticsDecision() {
   const handleTrialClick = () => {
     trackEvent("reports_trial_cta_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "analytics_decision_section",
       cta_label: "Start Your 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`

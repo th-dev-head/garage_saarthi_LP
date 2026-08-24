@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
-import PlayStoreBadge from "../../common/PlayStoreBadge"; export default function ARSHero() {
+import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge"; export default function ARSHero() {
   return (
     <section className="relative pt-48 pb-24 md:pt-56 md:pb-32 lg:pt-60 px-4 lg:px-15 2xl:px-50 bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white overflow-hidden flex justify-center">
       {/* Decorative blobs */}
@@ -38,8 +39,11 @@ import PlayStoreBadge from "../../common/PlayStoreBadge"; export default functio
                 Start 7-Day Free Trial
                 <FaArrowRight className="w-4 h-4" />
               </Link>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
 
           {/* Hero Right Visual Column */}

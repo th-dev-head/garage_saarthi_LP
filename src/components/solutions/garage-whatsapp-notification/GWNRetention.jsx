@@ -53,7 +53,7 @@ export default function GWNRetention() {
 
         <div className="mt-12 text-center text-xs text-slate-600">
           Want deeper pipeline tracking? Explore the dedicated{" "}
-          <Link href="/features/crm" className="text-primary font-bold hover:underline">
+          <Link href="/features/crm/" className="text-primary font-bold hover:underline">
             Garage CRM
           </Link>{" "}
           module parameters.

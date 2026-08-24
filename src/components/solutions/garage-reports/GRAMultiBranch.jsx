@@ -15,7 +15,7 @@ const outletMetrics = [
 export default function GRAMultiBranch() {
   const handleBranchClick = () => {
     trackEvent("reports_multibranch_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "multi_branch_section",
       cta_label: "Explore Multi-Branch Garage Software"
     });
@@ -36,7 +36,7 @@ export default function GRAMultiBranch() {
           </p>
           <div className="pt-2">
             <Link
-              href="/solutions/multi-branch-garage-software"
+              href="/solutions/multi-branch-garage-software/"
               onClick={handleBranchClick}
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
             >

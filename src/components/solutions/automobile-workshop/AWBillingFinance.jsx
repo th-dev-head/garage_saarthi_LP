@@ -9,7 +9,7 @@ const financeCards = [
     title: "GST Billing & Invoices",
     desc: "Create professional GST invoices. Auto-calculate state/central taxes (SGST, CGST, IGST) based on parts and service rates.",
     links: [
-      { href: "/features/billing", text: "Explore Billing", hasArrow: true }
+      { href: "/features/billing/", text: "Explore Billing", hasArrow: true }
     ]
   },
   {
@@ -17,8 +17,8 @@ const financeCards = [
     title: "Payments & Finance",
     desc: "Log incoming cash, UPI, cards, and bank transfer payments. Keep transparent records of pending credits and outstanding customer dues.",
     links: [
-      { href: "/features/billing", text: "Payments" },
-      { href: "/features/finance", text: "Finance" }
+      { href: "/features/billing/", text: "Payments" },
+      { href: "/features/finance/", text: "Finance" }
     ]
   },
   {
@@ -26,8 +26,8 @@ const financeCards = [
     title: "Expenses & Cash Flow",
     desc: "Record operational expenses like electricity bills, rent, tea, or tool purchases. Monitor your daily cash register balances.",
     links: [
-      { href: "/features/finance", text: "Expenses" },
-      { href: "/features/finance", text: "Cash" }
+      { href: "/features/finance/", text: "Expenses" },
+      { href: "/features/finance/", text: "Cash" }
     ]
   },
   {
@@ -35,7 +35,7 @@ const financeCards = [
     title: "CA Access & Reports",
     desc: "Give read-only login access to your accountant or CA. Allow them to directly download sales, purchase, and GST summaries.",
     links: [
-      { href: "/features/ca-access", text: "Explore CA Access", hasArrow: true }
+      { href: "/features/ca-access/", text: "Explore CA Access", hasArrow: true }
     ]
   }
 ];

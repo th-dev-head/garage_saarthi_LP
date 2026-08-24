@@ -9,21 +9,21 @@ export default function IWorkshopTypes() {
       icon: <FaCar className="w-5 h-5 text-primary" />,
       title: "Car Workshop Inventory Software",
       desc: "Manage massive catalogs for multi-brand passenger cars. Track complex spares like cabin air filters, specific grades of engine oils, brake discs/pads, suspension linkages, and general shop consumables.",
-      link: "/solutions/car-garage-software",
+      link: "/solutions/car-garage-software/",
       linkText: "Explore Car Garage Software"
     },
     {
       icon: <FaMotorcycle className="w-5 h-5 text-orange-600" />,
       title: "Bike Workshop Inventory Software",
       desc: "Tailored for two-wheeler mechanics. Track high-velocity parts such as spark plugs, drive chains, sprockets, accelerator/brake cables, clutch plates, and common scooter air filter elements.",
-      link: "/solutions/bike-workshop-software",
+      link: "/solutions/bike-workshop-software/",
       linkText: "Explore Bike Workshop Software"
     },
     {
       icon: <FaWrench className="w-5 h-5 text-emerald-600" />,
       title: "Auto Workshop Inventory Software",
       desc: "Designed for general automobile workshop services, auto detailing centers, and tyre repair businesses. Maintain accurate registers for fast-moving replacement parts and billing transactions.",
-      link: "/solutions/workshop-management-software",
+      link: "/solutions/workshop-management-software/",
       linkText: "Explore Workshop Management Software"
     }
   ];
@@ -35,7 +35,7 @@ export default function IWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Customization
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Inventory Software for Car, Bike and <GradientUnderline>Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

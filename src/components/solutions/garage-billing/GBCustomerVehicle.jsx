@@ -24,13 +24,13 @@ export default function GBCustomerVehicle() {
           </p>
           <div className="flex flex-wrap gap-4 items-center">
             <Link
-              href="/features/customers"
+              href="/features/customers/"
               className="text-xs text-primary font-bold hover:underline"
             >
               Customer Records
             </Link>
             <Link
-              href="/features/vehicles"
+              href="/features/vehicles/"
               className="text-xs text-primary font-bold hover:underline"
             >
               Vehicle Records

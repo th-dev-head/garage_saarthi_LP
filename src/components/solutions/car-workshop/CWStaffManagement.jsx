@@ -10,8 +10,8 @@ const staffFeatures = [
     title: "Attendance & Leaves",
     descBefore: "Log daily check-ins online. Explore ",
     links: [
-      { href: "/features/attendance", label: "Attendance Feature Link", text: "Attendance" },
-      { href: "/features/leave-management", label: "Leaves Feature Link", text: "Leaves", prefix: " and " }
+      { href: "/features/attendance/", label: "Attendance Feature Link", text: "Attendance" },
+      { href: "/features/leave-management/", label: "Leaves Feature Link", text: "Leaves", prefix: " and " }
     ],
     descAfter: "."
   },
@@ -19,7 +19,7 @@ const staffFeatures = [
     title: "Workshop Payroll",
     descBefore: "Manage commissions & salaries. Explore ",
     links: [
-      { href: "/features/payroll", label: "Payroll Feature Link", text: "Payroll" }
+      { href: "/features/payroll/", label: "Payroll Feature Link", text: "Payroll" }
     ],
     descAfter: "."
   },
@@ -27,7 +27,7 @@ const staffFeatures = [
     title: "User Access",
     descBefore: "Configure staff login profiles. Explore ",
     links: [
-      { href: "/features/user-management", label: "User Management Link", text: "User Permissions" }
+      { href: "/features/user-management/", label: "User Management Link", text: "User Permissions" }
     ],
     descAfter: "."
   }
@@ -36,7 +36,7 @@ const staffFeatures = [
 export default function CWStaffManagement() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "staff_management_section",
       cta_label: name,
       destination: url

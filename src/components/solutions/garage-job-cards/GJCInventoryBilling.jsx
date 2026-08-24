@@ -8,7 +8,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GJCInventoryBilling() {
   const handleLinkClick = (label) => {
     trackEvent("job_card_inventory_link_click", {
-      page_path: "/solutions/garage-job-card-software",
+      page_path: "/solutions/garage-job-card-software/",
       cta_location: "inventory_billing_connection",
       cta_label: label
     });
@@ -50,14 +50,14 @@ export default function GJCInventoryBilling() {
 
           <div className="flex gap-4">
             <Link
-              href="/features/inventory"
+              href="/features/inventory/"
               onClick={() => handleLinkClick("Garage Inventory Management")}
               className="text-xs text-primary font-bold hover:underline"
             >
               Garage Inventory Management
             </Link>
             <Link
-              href="/solutions/garage-billing-software"
+              href="/solutions/garage-billing-software/"
               onClick={() => handleLinkClick("Garage Billing Software")}
               className="text-xs text-primary font-bold hover:underline"
             >

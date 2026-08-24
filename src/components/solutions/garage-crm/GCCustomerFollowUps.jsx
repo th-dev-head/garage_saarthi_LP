@@ -11,7 +11,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GCCustomerFollowUps() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "follow_ups",
       cta_label: "Start 7-Day Free Trial",
@@ -22,11 +22,11 @@ export default function GCCustomerFollowUps() {
 
   const handleAlertsClick = () => {
     trackEvent("service_alert_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "follow_ups",
       cta_label: "Explore Service Alerts",
-      destination: "/features/service-reminders"
+      destination: "/features/service-reminders/"
     });
   };
 
@@ -53,7 +53,7 @@ export default function GCCustomerFollowUps() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/features/service-reminders"
+            href="/features/service-reminders/"
             onClick={handleAlertsClick}
             className="rounded-full bg-slate-50 border border-slate-300 hover:bg-slate-100 text-slate-700 px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer"
           >

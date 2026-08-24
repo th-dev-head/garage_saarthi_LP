@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 
 export default function   WAFreeTrial() {
   return (
@@ -12,7 +13,7 @@ export default function   WAFreeTrial() {
         <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
           Free Onboarding
         </span>
-        <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mt-4 mb-4 leading-tight">
+        <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
             Try the GarageSaarthi Workshop Management {" "}
             <GradientUnderline>App Free for 7 Days</GradientUnderline>
           </h2>
@@ -30,9 +31,12 @@ export default function   WAFreeTrial() {
             Start 7-Day Free Trial
             <FaArrowRight className="w-3.5 h-3.5" />
           </Link>
-          <PlayStoreBadge />
-          <Link
-            href="/pricing"
+          <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+<Link
+            href="/pricing/"
             className="text-xs font-bold text-primary hover:underline"
           >
             View Pricing

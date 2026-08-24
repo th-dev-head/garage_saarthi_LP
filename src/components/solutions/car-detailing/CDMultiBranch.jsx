@@ -55,7 +55,7 @@ export default function CDMultiBranch() {
 
             <div className="pt-4">
               <Link
-                href="/solutions/multi-branch-garage-software"
+                href="/solutions/multi-branch-garage-software/"
                 className="inline-flex items-center gap-1.5 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
               >
                 Explore Multi-Branch Garage Software <FaArrowRight className="w-3.5 h-3.5" />

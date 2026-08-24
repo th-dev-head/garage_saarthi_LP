@@ -6,7 +6,7 @@ export default function GPWhySaarthi() {
     { title: "Automotive-Specific Module", desc: "Designed around repair jobs, mechanic commissions, helper daily rates, and labor allocations." },
     { title: "Ecosystem Integration", desc: "Commissions and job card records link directly to staff payroll profiles, eliminating manual entry." },
     { title: "Attendance & Leaves Linked", desc: "Check present days, paid leaves, and overtime metrics on a single payroll sheet." },
-    { title: "Browser & Android Sync", desc: "Log shifts or check salary statuses on your desktop office browser or Android app." },
+    { title: "Browser, Android & iOS Sync", desc: "Log shifts or check salary statuses on your desktop office browser or Android app." },
     { title: "Multi-Branch Roster", desc: "Maintain separate staff lists, role permissions, and payouts logs by location." },
     { title: "7-Day Free Trial", desc: "Start with full access to payroll, attendance, leaves, and user roles setup with no commitment." }
   ];

@@ -74,7 +74,7 @@ export default function GADefinition() {
         {/* Explore All Features Link */}
         <div className="mt-10 text-center">
           <Link
-            href="/features"
+            href="/features/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             Explore All Features

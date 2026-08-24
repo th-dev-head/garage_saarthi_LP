@@ -10,7 +10,7 @@ const indianContextPoints = [
   "Automated WhatsApp service due notifications to boost customer retention",
   "Mechanic staff attendance, leave approval, and job-based commission tracking",
   "Cash vs UPI payment collection registers to keep daily balances clear",
-  "Android mobile application for quick bay floor operation on local smartphones",
+  "Android and iOS mobile apps for quick bay floor operation on local smartphones",
 ];
 
 export default function WSIIndianContext() {

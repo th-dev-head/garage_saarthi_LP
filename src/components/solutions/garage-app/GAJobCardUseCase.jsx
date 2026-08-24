@@ -42,7 +42,7 @@ export default function GAJobCardUseCase() {
             </div>
 
             <Link
-              href="/features/job-card-management"
+              href="/features/job-card-management/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
             >
               Explore Job Card Management

@@ -30,7 +30,7 @@ const attendanceFeatures = [
     icon: "📝",
     title: "Attendance & Leaves",
     descPrefix: "Connect daily shifts with employee leave records, paid leave balances, and absent ratios. Explore ",
-    linkHref: "/features/leave-management",
+    linkHref: "/features/leave-management/",
     linkText: "Garage Leave Management",
     linkName: "Leave Management Link"
   },
@@ -38,7 +38,7 @@ const attendanceFeatures = [
     icon: "💳",
     title: "Attendance & Payroll",
     descPrefix: "Verify salary payouts and mechanic commissions by linking daily shifts directly. Explore ",
-    linkHref: "/features/payroll",
+    linkHref: "/features/payroll/",
     linkText: "Garage Payroll Management",
     linkName: "Payroll Management Link"
   }
@@ -47,7 +47,7 @@ const attendanceFeatures = [
 export default function GAFeatures() {
   const handleLinkClick = (name, url) => {
     trackEvent("attendance_feature_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "attendance_features",
       cta_label: name,
       destination: url

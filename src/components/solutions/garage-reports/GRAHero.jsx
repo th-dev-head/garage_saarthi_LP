@@ -10,7 +10,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GRAHero() {
   const handleTrialClick = () => {
     trackEvent("reports_trial_cta_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -20,7 +20,7 @@ export default function GRAHero() {
 
   const handleFeatureClick = () => {
     trackEvent("reports_feature_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "hero",
       cta_label: "Explore Garage Reports"
     });
@@ -31,7 +31,7 @@ export default function GRAHero() {
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="mx-auto max-w-full lg:max-w-3xl w-full relative z-10 text-center flex flex-col items-center">
+      <div className="mx-auto max-w-full lg:max-w-5xl w-full relative z-10 text-center flex flex-col items-center">
         <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-6 inline-block">
           MIS & Analytics
         </span>

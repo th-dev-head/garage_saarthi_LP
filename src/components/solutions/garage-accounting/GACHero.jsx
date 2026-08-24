@@ -10,7 +10,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GACHero() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -20,19 +20,19 @@ export default function GACHero() {
 
   const handlePricingClick = () => {
     trackEvent("pricing_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "hero",
       cta_label: "View Pricing",
-      destination: "/pricing"
+      destination: "/pricing/"
     });
   };
 
   const handleExploreClick = () => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "hero",
       cta_label: "Explore Finance Features",
-      destination: "/features/finance"
+      destination: "/features/finance/"
     });
   };
 
@@ -57,10 +57,10 @@ export default function GACHero() {
             <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />} className="w-full sm:w-auto">
               Start 7-Day Free Trial
             </Button>
-            <Link href="/pricing" onClick={handlePricingClick} className="rounded-full border border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer w-full sm:w-auto whitespace-nowrap h-11 text-center">
+            <Link href="/pricing/" onClick={handlePricingClick} className="rounded-full border border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer w-full sm:w-auto whitespace-nowrap h-11 text-center">
               View Pricing
             </Link>
-            <Link href="/features/finance" onClick={handleExploreClick} className="text-slate-300 text-xs font-semibold hover:underline">
+            <Link href="/features/finance/" onClick={handleExploreClick} className="text-slate-300 text-xs font-semibold hover:underline">
               Explore Finance Features
             </Link>
           </div>

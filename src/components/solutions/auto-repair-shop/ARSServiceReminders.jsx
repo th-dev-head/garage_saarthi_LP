@@ -34,14 +34,14 @@ export default function ARSServiceReminders() {
 
             <div className="flex flex-wrap gap-4 items-center">
               <Link
-                href="/features/service-reminders"
+                href="/features/service-reminders/"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
               >
                 Explore Service Alerts
                 <FaArrowRight className="w-3.5 h-3.5" />
               </Link>
               <Link
-                href="/features/crm"
+                href="/features/crm/"
                 className="text-xs font-bold text-primary hover:underline"
               >
                 Explore Garage CRM

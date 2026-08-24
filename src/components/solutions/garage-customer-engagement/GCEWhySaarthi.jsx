@@ -10,7 +10,7 @@ export default function GCEWhySaarthi() {
     { icon: <FaUsers className="text-purple-500" />, title: "Garage CRM", desc: "Manage leads, walk-ins, phone bookings, and call follow-up logs from a unified dashboard." },
     { icon: <FaTags className="text-red-500" />, title: "Offers & Promotions", desc: "Generate coupons and discounts to bring back clients who haven't visited in over 90 days." },
     { icon: <FaLink className="text-teal-500" />, title: "Connected with Garage Operations", desc: "Customer updates are linked directly to active job cards, billing sheets, and spare stocks." },
-    { icon: <FaMobileAlt className="text-slate-600" />, title: "Web & Mobile Access", desc: "Access the backend systems from any standard browser or our dedicated Android mobile app." }
+    { icon: <FaMobileAlt className="text-slate-600" />, title: "Web & Mobile Access", desc: "Access the backend systems from any standard browser or our dedicated Android & iOS mobile apps." }
   ];
 
   return (

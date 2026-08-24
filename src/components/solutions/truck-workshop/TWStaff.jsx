@@ -8,28 +8,28 @@ const truckStaffCards = [
     icon: FaUserClock,
     title: "Track Staff Attendance",
     desc: "Log clock-ins of mechanics and heavy vehicle operators on a centralized cloud screen.",
-    linkHref: "/features/attendance",
+    linkHref: "/features/attendance/",
     linkText: "Explore Attendance"
   },
   {
     icon: FaCalendarMinus,
     title: "Manage Leave Records",
     desc: "Manage leave parameters, approve time-off requests, and maintain shift coverage records.",
-    linkHref: "/features/leave-management",
+    linkHref: "/features/leave-management/",
     linkText: "Explore Leaves"
   },
   {
     icon: FaPercent,
     title: "Handle Workshop Payroll",
     desc: "Compute net salaries, deduct unpaid leaves, and add job commissions automatically.",
-    linkHref: "/features/payroll",
+    linkHref: "/features/payroll/",
     linkText: "Explore Payroll"
   },
   {
     icon: FaUserShield,
     title: "Control User Access",
     desc: "Create dashboard logins for your advisors. Restrict billing data or stock pricing details.",
-    linkHref: "/features/user-management",
+    linkHref: "/features/user-management/",
     linkText: "Explore Access Controls"
   }
 ];

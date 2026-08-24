@@ -8,20 +8,20 @@ import {
 import GradientUnderline from "../../common/GradientUnderline";
 
 const features = [
-  { icon: <FaClipboardList />, title: "Digital Job Cards", link: "/features/job-card-management" },
-  { icon: <FaChartPie />, title: "Real-Time Dashboard", link: "/features/workshop-management-dashboard" },
-  { icon: <FaBox />, title: "Inventory Management", link: "/features/inventory" },
-  { icon: <FaUsers />, title: "Garage CRM", link: "/features/crm" },
-  { icon: <FaWhatsapp />, title: "WhatsApp Billing", link: "/features/billing" },
-  { icon: <FaCar />, title: "Vehicle Management", link: "/features/vehicles" },
-  { icon: <FaFileInvoiceDollar />, title: "GST Billing", link: "/features/billing" },
-  { icon: <FaMoneyBillWave />, title: "Counter Sales", link: "/features/counter-sales" },
-  { icon: <FaCodeBranch />, title: "Multi-Branch Control", link: "/solutions/multi-branch-garage-software" },
-  { icon: <FaBell />, title: "Service Reminders", link: "/features/service-reminders" },
-  { icon: <FaUserCog />, title: "Staff Management", link: "/features/role-based-access" },
-  { icon: <FaHandshake />, title: "Customer Portal", link: "/features/crm" },
-  { icon: <FaLock />, title: "CA & Finance Access", link: "/features/finance" },
-  { icon: <FaMobile />, title: "Android Mobile App", link: "/solutions/garage-management-app" },
+  { icon: <FaClipboardList />, title: "Digital Job Cards", link: "/features/job-card-management/" },
+  { icon: <FaChartPie />, title: "Real-Time Dashboard", link: "/features/workshop-management-dashboard/" },
+  { icon: <FaBox />, title: "Inventory Management", link: "/features/inventory/" },
+  { icon: <FaUsers />, title: "Garage CRM", link: "/features/crm/" },
+  { icon: <FaWhatsapp />, title: "WhatsApp Billing", link: "/features/billing/" },
+  { icon: <FaCar />, title: "Vehicle Management", link: "/features/vehicles/" },
+  { icon: <FaFileInvoiceDollar />, title: "GST Billing", link: "/features/billing/" },
+  { icon: <FaMoneyBillWave />, title: "Counter Sales", link: "/features/counter-sales/" },
+  { icon: <FaCodeBranch />, title: "Multi-Branch Control", link: "/solutions/multi-branch-garage-software/" },
+  { icon: <FaBell />, title: "Service Reminders", link: "/features/service-reminders/" },
+  { icon: <FaUserCog />, title: "Staff Management", link: "/features/role-based-access/" },
+  { icon: <FaHandshake />, title: "Customer Portal", link: "/features/crm/" },
+  { icon: <FaLock />, title: "CA & Finance Access", link: "/features/finance/" },
+  { icon: <FaMobile />, title: "Android & iOS Mobile App", link: "/solutions/garage-management-app/" },
 ];
 
 export default function WMFeatureGrid() {
@@ -55,7 +55,7 @@ export default function WMFeatureGrid() {
 
         <div className="flex justify-center mt-10">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors text-sm"
           >
             View All Features <FaArrowRight className="w-3.5 h-3.5" />

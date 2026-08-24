@@ -57,7 +57,7 @@ export default function WMStaff() {
 
         <div className="flex justify-center mt-10">
           <Link
-            href="/features/role-based-access"
+            href="/features/role-based-access/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors text-sm"
           >
             Explore Staff Management <FaArrowRight className="w-3.5 h-3.5" />

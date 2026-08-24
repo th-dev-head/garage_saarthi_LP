@@ -25,7 +25,7 @@ export default function CRMRetention() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Customer Retention
           </span>
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Turn Service Records into <GradientUnderline>Better Customer Retention</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
@@ -42,13 +42,13 @@ export default function CRMRetention() {
 
           <div className="flex flex-wrap gap-4 items-center">
             <Link
-              href="/features/service-reminders"
+              href="/features/service-reminders/"
               className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-2"
             >
               Explore Service Alerts <FaArrowRight />
             </Link>
             <Link
-              href="/features/customer-reviews"
+              href="/features/customer-reviews/"
               className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-2"
             >
               Customer Review Collection <FaArrowRight />

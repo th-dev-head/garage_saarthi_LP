@@ -8,21 +8,21 @@ const truckBillingCards = [
     icon: FaFileInvoiceDollar,
     title: "Create Workshop Invoices",
     desc: "Generate GST-compliant invoices containing labor items, bulk parts, and fleet customer tax profiles in under a minute.",
-    linkHref: "/pricing",
+    linkHref: "/pricing/",
     linkText: "View Billing Options"
   },
   {
     icon: FaRegCreditCard,
     title: "Track Payments and Finance",
     desc: "Audit cash, UPI, or credit terms extended to logistics companies. Send outstanding invoice reminders directly.",
-    linkHref: "/features/billing",
+    linkHref: "/features/billing/",
     linkText: "Explore Payment logs"
   },
   {
     icon: FaUserTie,
     title: "Give Your CA Access",
     desc: "Invite your Chartered Accountant (CA) to log in and download GST spreadsheets directly, saving hours of manual billing coordination.",
-    linkHref: "/features/ca-access",
+    linkHref: "/features/ca-access/",
     linkText: "Explore CA Controls"
   }
 ];

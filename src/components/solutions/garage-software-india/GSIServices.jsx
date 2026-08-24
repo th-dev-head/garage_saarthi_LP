@@ -18,56 +18,56 @@ const modules = [
     icon: <FaClipboardList />,
     title: "Digital Job Cards",
     desc: "Generate digital job sheets recording vehicle entry, pre-repair walkaround notes, customer complaints, and labor rates.",
-    link: "/features/job-card-management",
+    link: "/features/job-card-management/",
     anchor: "Explore Digital Job Cards",
   },
   {
     icon: <FaFileInvoiceDollar />,
     title: "GST Billing & Invoices",
     desc: "Create GST-compliant bills with custom invoice series, multiple payment terms, and direct WhatsApp invoice sharing.",
-    link: "/features/billing",
+    link: "/features/billing/",
     anchor: "Explore GST Billing",
   },
   {
     icon: <FaBoxes />,
     title: "Spare Parts Inventory",
     desc: "Audit spare parts stock levels, dynamic checkouts per job card, low stock warnings, and retail counter sales.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
     anchor: "Explore Inventory",
   },
   {
     icon: <FaAddressBook />,
     title: "Customers & Vehicles",
     desc: "Maintain detailed databases linking customer contact details with vehicle registration, model, and service logs.",
-    link: "/features/customers",
+    link: "/features/customers/",
     anchor: "Explore Customer Records",
   },
   {
     icon: <FaUserClock />,
     title: "Mechanics & Staff Payroll",
     desc: "Track mechanic attendance, approve leave requests, calculate job commissions, and compute net salary.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
     anchor: "Explore Staff & Payroll",
   },
   {
     icon: <FaWallet />,
     title: "Payments & CA Access",
     desc: "Monitor cash/online collections, expense ledgers, loan accounts, and invite your CA to export view-only GST data.",
-    link: "/features/ca-access",
+    link: "/features/ca-access/",
     anchor: "Explore CA Access",
   },
   {
     icon: <FaBullhorn />,
     title: "Garage CRM & Follow-Ups",
     desc: "Organize service lead enquiries, track quotations, and follow up with new prospects before they book elsewhere.",
-    link: "/features/crm",
+    link: "/features/crm/",
     anchor: "Explore Garage CRM",
   },
   {
     icon: <FaChartLine />,
     title: "Reports & Dashboard",
     desc: "Gain complete business visibility with live sales dashboards, stock valuation, and mechanic performance metrics.",
-    link: "/features/reports",
+    link: "/features/reports/",
     anchor: "Explore Business Reports",
   },
 ];
@@ -115,7 +115,7 @@ export default function GSIServices() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore All GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />

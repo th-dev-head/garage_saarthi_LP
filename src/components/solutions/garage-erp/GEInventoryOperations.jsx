@@ -24,12 +24,12 @@ const inventoryItems = [
 export default function GEInventoryOperations() {
   const handleCtaClick = () => {
     trackEvent("feature_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "inventory",
       cta_label: "Explore Inventory Management",
-      destination: "/features/inventory"
+      destination: "/features/inventory/"
     });
   };
 
@@ -52,7 +52,7 @@ export default function GEInventoryOperations() {
             With GarageSaarthi workshop ERP, your parts store is directly linked to the workshop floor. Parts issued to active job cards are mapped in real-time, helping you check current stock levels, trace mechanics using spares, perform counter sales billing instantly, and set automatic low-stock alarms.
           </p>
 
-          <Link href="/features/inventory">
+          <Link href="/features/inventory/">
             <Button
               variant="hero"
               onClick={handleCtaClick}

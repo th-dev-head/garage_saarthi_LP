@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 const reasons = [
-  { icon: <FaMobile />, title: "Works on Web & Android", desc: "Manage your workshop from office laptop or shop-floor phone." },
+  { icon: <FaMobile />, title: "Works on Web, Android & iOS", desc: "Manage your workshop from office laptop or shop-floor phone." },
   { icon: <FaCodeBranch />, title: "Multi-Branch Ready", desc: "Control all your branches from a single admin dashboard." },
   { icon: <FaUserShield />, title: "Role-Based Access", desc: "Set different permissions for owner, manager, and mechanic roles." },
   { icon: <FaHeadset />, title: "Dedicated Support", desc: "Onboarding support and customer care whenever you need it." },

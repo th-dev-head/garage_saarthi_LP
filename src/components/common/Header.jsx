@@ -9,118 +9,117 @@ import GLogo from "../../assets/icons/Glogo.webp";
 import { trackEvent } from "../../utils/pixel";
 
 const Header = () => {
-  const [active, setActive] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpenMobile, setIsSolutionsOpenMobile] = useState(false);
-  const dropdownRef = useRef(null);
   const router = useRouter();
   const pathname = usePathname();
+
+  const cleanPath = pathname?.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : (pathname || "");
+  let active = "";
+  if (cleanPath === "/pricing") {
+    active = "Pricing";
+  } else if (cleanPath === "/download-app") {
+    active = "Download App";
+  } else if (cleanPath === "/contact" || cleanPath === "/book-demo") {
+    active = "Contact";
+  } else if (cleanPath === "" || cleanPath === "/" || cleanPath === "/home") {
+    active = "Home";
+  } else if (cleanPath.startsWith("/solutions")) {
+    active = "Solutions";
+  } else if (cleanPath.startsWith("/features") || cleanPath.startsWith("/feature")) {
+    active = "Features";
+  }
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Solutions", href: "#", isDropdown: true, dropdownType: "solutions" },
     { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
-    { name: "Download App", href: "/download-app" },
+    { name: "Download App", href: "/download-app/" },
     { name: "Contact", href: "/contact/" },
-    { name: "Pricing", href: "/pricing" },
+    { name: "Pricing", href: "/pricing/" },
   ];
 
   const solutionsMegaMenu = {
     "Core Modules": [
-      { name: "Job Cards", href: "/solutions/garage-job-card-software" },
-      { name: "GST Billing", href: "/solutions/garage-billing-software" },
-      { name: "CRM", href: "/solutions/garage-crm-software" },
-      { name: "ERP", href: "/solutions/garage-erp-software" },
-      { name: "Inventory", href: "/solutions/garage-inventory-software" },
-      { name: "Service Reminders", href: "/solutions/service-reminder-software" },
-      { name: "Customer Engagement", href: "/solutions/garage-customer-engagement-software" },
-      { name: "WhatsApp Automation", href: "/solutions/garage-whatsapp-notification-software" },
-      { name: "Automation", href: "/solutions/garage-automation-software" },
-      { name: "Finance", href: "/solutions/garage-finance-management-software" },
-      { name: "Accounting", href: "/solutions/garage-accounting-software" },
-      { name: "Payroll", href: "/solutions/garage-payroll-software" },
-      { name: "Attendance", href: "/solutions/garage-attendance-software" },
+      { name: "Job Cards", href: "/solutions/garage-job-card-software/" },
+      { name: "GST Billing", href: "/solutions/garage-billing-software/" },
+      { name: "CRM", href: "/solutions/garage-crm-software/" },
+      { name: "ERP", href: "/solutions/garage-erp-software/" },
+      { name: "Inventory", href: "/solutions/garage-inventory-software/" },
+      { name: "Service Reminders", href: "/solutions/service-reminder-software/" },
+      { name: "Customer Engagement", href: "/solutions/garage-customer-engagement-software/" },
+      { name: "WhatsApp Automation", href: "/solutions/garage-whatsapp-notification-software/" },
+      { name: "Automation", href: "/solutions/garage-automation-software/" },
+      { name: "Finance", href: "/solutions/garage-finance-management-software/" },
+      { name: "Accounting", href: "/solutions/garage-accounting-software/" },
+      { name: "Payroll", href: "/solutions/garage-payroll-software/" },
+      { name: "Attendance", href: "/solutions/garage-attendance-software/" },
     ],
     "Workshop Solutions": [
-      { name: "Workshop Management", href: "/solutions/workshop-management-software" },
+      { name: "Workshop Management", href: "/solutions/workshop-management-software/" },
       { name: "Automobile Workshop", href: "/solutions/automobile-workshop-software/" },
-      { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software" },
-      { name: "Car Garage", href: "/solutions/car-garage-software" },
-      { name: "Car Workshop", href: "/solutions/car-workshop-software" },
-      { name: "Bike Workshop", href: "/solutions/bike-workshop-software" },
-      { name: "Truck Workshop", href: "/solutions/truck-workshop-software" },
-      { name: "EV Garage", href: "/solutions/ev-garage-management-software" },
-      { name: "Car Detailing", href: "/solutions/car-detailing-software" },
-      { name: "Fleet Workshop", href: "/solutions/fleet-workshop-software" },
+      { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software/" },
+      { name: "Car Garage", href: "/solutions/car-garage-software/" },
+      { name: "Car Workshop", href: "/solutions/car-workshop-software/" },
+      { name: "Bike Workshop", href: "/solutions/bike-workshop-software/" },
+      { name: "Truck Workshop", href: "/solutions/truck-workshop-software/" },
+      { name: "EV Garage", href: "/solutions/ev-garage-management-software/" },
+      { name: "Car Detailing", href: "/solutions/car-detailing-software/" },
+      { name: "Fleet Workshop", href: "/solutions/fleet-workshop-software/" },
     ],
     "Buying & Business": [
-      { name: "Best Garage Software", href: "/solutions/best-garage-management-software" },
-      { name: "Best Workshop Software", href: "/solutions/best-workshop-management-software" },
-      { name: "Software India (Garage)", href: "/solutions/garage-management-software-india" },
-      { name: "Software India (Workshop)", href: "/solutions/workshop-software-india" },
-      { name: "Marketing", href: "/solutions/garage-marketing-software" },
-      { name: "Multi-Branch", href: "/solutions/multi-branch-garage-software" },
-      { name: "Service History", href: "/solutions/vehicle-service-history-software" },
-      { name: "Reports & Analytics", href: "/solutions/garage-reports-analytics-software" },
+      { name: "Best Garage Software", href: "/solutions/best-garage-management-software/" },
+      { name: "Best Workshop Software", href: "/solutions/best-workshop-management-software/" },
+      { name: "Software India (Garage)", href: "/solutions/garage-management-software-india/" },
+      { name: "Software India (Workshop)", href: "/solutions/workshop-software-india/" },
+      { name: "Marketing", href: "/solutions/garage-marketing-software/" },
+      { name: "Multi-Branch", href: "/solutions/multi-branch-garage-software/" },
+      { name: "Service History", href: "/solutions/vehicle-service-history-software/" },
+      { name: "Reports & Analytics", href: "/solutions/garage-reports-analytics-software/" },
     ],
     "Apps & Mobile": [
-      { name: "Garage App", href: "/solutions/garage-management-app" },
-      { name: "Workshop App", href: "/solutions/workshop-management-app" },
+      { name: "Garage App", href: "/solutions/garage-management-app/" },
+      { name: "Workshop App", href: "/solutions/workshop-management-app/" },
     ]
   };
 
   const featuresMegaMenu = {
     "Workshop Operations": [
-      { name: "Workshop Management Dashboard", href: "/features/workshop-management-dashboard" },
-      { name: "Job Card Management", href: "/features/job-card-management" },
-      { name: "Counter Sales", href: "/features/counter-sales" },
-      { name: "Billing & Invoicing", href: "/features/billing" },
-      { name: "Inventory Management", href: "/features/inventory" },
-      { name: "Vehicle Inspection", href: "/features/vehicle-inspection" },
+      { name: "Workshop Management Dashboard", href: "/features/workshop-management-dashboard/" },
+      { name: "Job Card Management", href: "/features/job-card-management/" },
+      { name: "Counter Sales", href: "/features/counter-sales/" },
+      { name: "Billing & Invoicing", href: "/features/billing/" },
+      { name: "Inventory Management", href: "/features/inventory/" },
+      { name: "Vehicle Inspection", href: "/features/vehicle-inspection/" },
     ],
     "Customer & Vehicle": [
-      { name: "CRM & Lead Management", href: "/features/crm" },
-      { name: "Customer Management", href: "/features/customers" },
-      { name: "Vehicle Management", href: "/features/vehicles" },
-      { name: "Vehicle Service History", href: "/features/service-history" },
-      { name: "Service Reminders", href: "/features/service-reminders" },
-      { name: "WhatsApp Automation", href: "/features/automation" },
-      { name: "Customer Review Collection", href: "/features/customer-reviews" },
+      { name: "CRM & Lead Management", href: "/features/crm/" },
+      { name: "Customer Management", href: "/features/customers/" },
+      { name: "Vehicle Management", href: "/features/vehicles/" },
+      { name: "Vehicle Service History", href: "/features/service-history/" },
+      { name: "Service Reminders", href: "/features/service-reminders/" },
+      { name: "WhatsApp Automation", href: "/features/automation/" },
+      { name: "Customer Review Collection", href: "/features/customer-reviews/" },
     ],
     "Business & Finance": [
-      { name: "Finance Management", href: "/features/finance" },
-      { name: "Loan Management", href: "/features/loans" },
-      { name: "Reports & Analytics", href: "/features/reports" },
-      { name: "CA Access", href: "/features/ca-access" },
+      { name: "Finance Management", href: "/features/finance/" },
+      { name: "Loan Management", href: "/features/loans/" },
+      { name: "Reports & Analytics", href: "/features/reports/" },
+      { name: "CA Access", href: "/features/ca-access/" },
     ],
     "Team Management": [
-      { name: "Attendance Management", href: "/features/attendance" },
-      { name: "Payroll Management", href: "/features/payroll" },
-      { name: "Leave Management", href: "/features/leave-management" },
-      { name: "User Management", href: "/features/user-management" },
-      { name: "Role-Based Access", href: "/features/role-based-access" },
-      { name: "Multi-Branch Management", href: "/features/branches" },
+      { name: "Attendance Management", href: "/features/attendance/" },
+      { name: "Payroll Management", href: "/features/payroll/" },
+      { name: "Leave Management", href: "/features/leave-management/" },
+      { name: "User Management", href: "/features/user-management/" },
+      { name: "Role-Based Access", href: "/features/role-based-access/" },
+      { name: "Multi-Branch Management", href: "/features/branches/" },
     ],
     "Marketing & Media": [
-      { name: "Offers & Promotions", href: "/features/offers-promotions" },
-      { name: "Media Gallery (Before & After Photos)", href: "/features/media-gallery" },
+      { name: "Offers & Promotions", href: "/features/offers-promotions/" },
+      { name: "Media Gallery (Before & After Photos)", href: "/features/media-gallery/" },
     ],
   };
-
-  useEffect(() => {
-    const cleanPath = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
-    if (cleanPath === "/pricing") {
-      setActive("Pricing");
-    } else if (cleanPath === "/download-app") {
-      setActive("Download App");
-    } else if (cleanPath === "/contact" || cleanPath === "/book-demo") {
-      setActive("Contact");
-    } else if (cleanPath === "/" || cleanPath === "/home") {
-      setActive("Home");
-    } else {
-      setActive("");
-    }
-  }, [pathname]);
 
   const handleNavClick = (e, link) => {
     if (link.isDropdown) {
@@ -128,7 +127,7 @@ const Header = () => {
       return;
     }
     e.preventDefault();
-    const shouldScroll = link.href === "/pricing" || link.href === "/features";
+    const shouldScroll = link.href === "/pricing/" || link.href === "/features/";
     router.push(link.href, { scroll: shouldScroll });
     setIsMenuOpen(false);
   };
@@ -267,7 +266,9 @@ const Header = () => {
                             e.preventDefault();
                             toggleDesktop();
                           }}
-                          className="text-xs xl:text-sm 2xl:text-base font-semibold pb-2 hover:text-[#B02E0C] transition-colors cursor-pointer animate-none"
+                          className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors cursor-pointer animate-none ${
+                            isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
+                          }`}
                         >
                           {link.name}
                           <FaChevronDown className={`w-2.5 h-2.5 ml-1 xl:ml-2 inline-block align-middle transition-transform duration-200 ${isOpenDesktop ? "rotate-180" : "group-hover:rotate-180"}`} />
@@ -335,7 +336,9 @@ const Header = () => {
                     <Link
                       href={link.href}
                       onClick={(e) => handleNavClick(e, link)}
-                      className="text-xs xl:text-sm 2xl:text-base font-semibold pb-2 hover:text-[#B02E0C] transition-colors whitespace-nowrap"
+                      className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors whitespace-nowrap ${
+                        isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
+                      }`}
                     >
                       {link.name}
                     </Link>

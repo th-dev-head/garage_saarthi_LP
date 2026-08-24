@@ -33,7 +33,7 @@ export default function GAFAQ() {
     },
     {
       question: "Can I use GarageSaarthi attendance software on mobile?",
-      answer: "Yes, we maintain a live Android mobile application on the Google Play Store. iOS support is coming soon."
+      answer: "Yes, we maintain a live mobile apps on Google Play Store & Apple App Store. iOS apps are fully available."
     },
     {
       question: "Does GarageSaarthi support biometric attendance?",

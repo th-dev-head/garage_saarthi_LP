@@ -28,7 +28,7 @@ export default function WMProductDefinition() {
               <GradientUnderline>All-in-One Workshop Operating System.</GradientUnderline>
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6 text-sm md:text-base">
-              Workshop management software is a digital platform that replaces paper-based processes in automobile workshops. GarageSaarthi brings every operation — from opening a job card to closing the invoice — into one connected, cloud-based system that works on both web and Android.
+              Workshop management software is a digital platform that replaces paper-based processes in automobile workshops. GarageSaarthi brings every operation — from opening a job card to closing the invoice — into one connected, cloud-based system that works on web, Android, and iOS devices.
             </p>
             <p className="text-slate-600 leading-relaxed text-sm md:text-base">
               Designed for Indian automobile workshops of all sizes — single-bay garages to multi-branch chains — GarageSaarthi is built to fit the way you already work, without complicated setup or technical expertise.

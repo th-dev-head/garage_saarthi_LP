@@ -50,7 +50,7 @@ export default function CDDashboardReports() {
 
             <div className="pt-4">
               <Link
-                href="/features/reports"
+                href="/features/reports/"
                 className="inline-flex items-center gap-1.5 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
               >
                 Explore Garage Reports <FaArrowRight className="w-3.5 h-3.5" />

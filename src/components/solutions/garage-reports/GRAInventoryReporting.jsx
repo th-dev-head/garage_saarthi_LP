@@ -14,7 +14,7 @@ const lowStockQueue = [
 export default function GRAInventoryReporting() {
   const handleInventoryClick = () => {
     trackEvent("reports_inventory_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "inventory_section",
       cta_label: "Explore Inventory Management"
     });
@@ -34,7 +34,7 @@ export default function GRAInventoryReporting() {
             Verify stock levels without manually visiting the store. GarageSaarthi compiles current stock logs, item movements, counter spare parts sales, and supplier histories. Get low-stock indicators automatically.
           </p>
           <div className="pt-2">
-            <Link href="/features/inventory" onClick={handleInventoryClick} className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
+            <Link href="/features/inventory/" onClick={handleInventoryClick} className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
               Explore Inventory Management <FaArrowRight className="w-2.5 h-2.5" />
             </Link>
           </div>

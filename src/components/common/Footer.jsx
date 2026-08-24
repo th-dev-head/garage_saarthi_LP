@@ -96,13 +96,13 @@ const Footer = () => {
             <ul className="space-y-2.5 ">
               {[
                 { label: "Home", link: "/" },
-                { label: "Features", link: "/feature" },
-                { label: "Pricing", link: "/pricing" },
+                { label: "Features", link: "/feature/" },
+                { label: "Pricing", link: "/pricing/" },
                 { label: "Book Demo", link: "/contact/" },
                 { label: "Contact", link: "/contact/" },
               ].map((item) => (
                 <li key={item.label}>
-                  <Link href={item.link} scroll={item.link === "/pricing" || item.link === "/features"} className="text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
+                  <Link href={item.link} scroll={item.link === "/pricing/" || item.link === "/features/"} className="text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
                     {item.label}
                   </Link>
                 </li>
@@ -114,10 +114,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-text-dark font-bold text-sm tracking-wide uppercase">Features</h3>
             <ul className="space-y-2.5">
-              {["Job Cards", "GST Billing", "Inventory", "Reports", "Customer History"].map((f) => (
-                <li key={f}>
-                  <Link href="/features" className="text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium">
-                    {f}
+              {[
+                { label: "Job Cards", link: "/features/job-card-management/" },
+                { label: "GST Billing", link: "/features/billing/" },
+                { label: "Inventory", link: "/features/inventory/" },
+                { label: "Reports", link: "/features/reports/" },
+                { label: "Customer History", link: "/features/service-history/" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link href={item.link} className="text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium">
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -181,10 +187,10 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-8 text-slate-600">
-            <Link href="/privacy-policy" className="text-sm hover:text-primary transition-colors">
+            <Link href="/privacy-policy/" className="text-sm hover:text-primary transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-and-conditions" className="text-sm hover:text-primary transition-colors">
+            <Link href="/terms-and-conditions/" className="text-sm hover:text-primary transition-colors">
               Terms of Service
             </Link>
           </div>

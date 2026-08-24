@@ -60,7 +60,7 @@ export default function BWSAnswer() {
         <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-3xl p-6 md:p-8 max-w-4xl mx-auto text-center space-y-2">
           <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
             Exploring general workshop automation? Learn more about our comprehensive{" "}
-            <Link href="/solutions/workshop-management-software" className="font-bold text-primary hover:underline">
+            <Link href="/solutions/workshop-management-software/" className="font-bold text-primary hover:underline">
               workshop management software
             </Link>{" "}
             solutions or explore our feature breakdown below.

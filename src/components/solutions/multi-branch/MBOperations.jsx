@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function MBOperations() {
   const handleFeatureClick = (name) => {
     trackEvent("branch_feature_click", {
-      page_path: "/solutions/multi-branch-garage-software",
+      page_path: "/solutions/multi-branch-garage-software/",
       cta_location: "operations_section",
       cta_label: "Explore Module",
       feature_name: name
@@ -17,14 +17,14 @@ export default function MBOperations() {
   };
 
   const modules = [
-    { title: "Job Cards", desc: "Manage job sheets by location.", link: "/features/job-card-management", label: "Job Cards" },
-    { title: "Counter Sales", desc: "Track sales logs at counters.", link: "/features/counter-sales", label: "Counter Sales" },
-    { title: "Inventory", desc: "Audit stocks across branches.", link: "/features/inventory", label: "Inventory" },
-    { title: "Customers", desc: "Keep central customer profiles.", link: "/features/customers", label: "Customers" },
-    { title: "Vehicles", desc: "Access registration logs.", link: "/features/vehicles", label: "Vehicles" },
-    { title: "Payments & Finance", desc: "Manage payments centrally.", link: "/features/finance", label: "Payments" },
-    { title: "Staff Operations", desc: "Calculate attendance and payroll.", link: "/features/attendance", label: "Staff" },
-    { title: "Reports", desc: "View branch analytics.", link: "/features/reports", label: "Reports" }
+    { title: "Job Cards", desc: "Manage job sheets by location.", link: "/features/job-card-management/", label: "Job Cards" },
+    { title: "Counter Sales", desc: "Track sales logs at counters.", link: "/features/counter-sales/", label: "Counter Sales" },
+    { title: "Inventory", desc: "Audit stocks across branches.", link: "/features/inventory/", label: "Inventory" },
+    { title: "Customers", desc: "Keep central customer profiles.", link: "/features/customers/", label: "Customers" },
+    { title: "Vehicles", desc: "Access registration logs.", link: "/features/vehicles/", label: "Vehicles" },
+    { title: "Payments & Finance", desc: "Manage payments centrally.", link: "/features/finance/", label: "Payments" },
+    { title: "Staff Operations", desc: "Calculate attendance and payroll.", link: "/features/attendance/", label: "Staff" },
+    { title: "Reports", desc: "View branch analytics.", link: "/features/reports/", label: "Reports" }
   ];
 
   return (

@@ -8,21 +8,21 @@ const truckVehicleCards = [
     icon: FaTruck,
     title: "Commercial Vehicle Database",
     desc: "Log load carrying parameters, trailer lengths, chassis codes, and engine specifications for transport trucks, tippers, or commercial trailers.",
-    linkHref: "/features/vehicles",
+    linkHref: "/features/vehicles/",
     linkText: "Explore Vehicle Management"
   },
   {
     icon: FaFileAlt,
     title: "Vehicle Service Logs",
     desc: "Organize details of past engine services, transmission overhauls, or axle work, so your service managers are always well-informed.",
-    linkHref: "/solutions/vehicle-service-history-software",
+    linkHref: "/solutions/vehicle-service-history-software/",
     linkText: "View Service Logs"
   },
   {
     icon: FaHistory,
     title: "Corporate Fleet History",
     desc: "Track previous job lists and service alerts mapping to corporate transport clients, building lasting B2B operational trust.",
-    linkHref: "/features/vehicles",
+    linkHref: "/features/vehicles/",
     linkText: "Explore Fleet Records"
   }
 ];

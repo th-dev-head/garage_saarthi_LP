@@ -27,7 +27,7 @@ export default function GRAFiltersAccess() {
             Filter billing lists or stock summaries with custom parameters. You can export data lists to Excel or PDF files in one tap. Define CA permissions so your chartered accountant can audit files directly.
           </p>
           <div className="pt-2">
-            <Link href="/features/ca-access" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
+            <Link href="/features/ca-access/" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
               Explore CA Access <FaArrowRight className="w-2.5 h-2.5" />
             </Link>
           </div>

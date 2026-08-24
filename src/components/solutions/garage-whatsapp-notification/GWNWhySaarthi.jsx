@@ -10,7 +10,7 @@ export default function GWNWhySaarthi() {
     { icon: <FaWhatsapp className="text-teal-500" />, title: "WhatsApp Customer Notifications", desc: "Dispatch template-based WhatsApp texts in one click directly from browser/app." },
     { icon: <FaCalendarCheck className="text-red-500" />, title: "Service Due Reminder Management", desc: "Compile all upcoming oil, battery, and alignment due dates in one panel." },
     { icon: <FaUsers className="text-purple-500" />, title: "Garage CRM", desc: "Track walk-ins, schedule callback reminders, and manage inquiries centrally." },
-    { icon: <FaLaptopCode className="text-slate-600" />, title: "Web & Android Access", desc: "Access the console from browser dashboards or our Google Play Store Android app." }
+    { icon: <FaLaptopCode className="text-slate-600" />, title: "Web, Android & iOS Access", desc: "Access the console from browser dashboards or our Android and iOS mobile apps." }
   ];
 
   return (

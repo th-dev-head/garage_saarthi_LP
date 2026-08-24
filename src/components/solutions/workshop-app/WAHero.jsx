@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 
 export default function WAHero() {
   return (
@@ -37,9 +38,12 @@ export default function WAHero() {
                 Start 7-Day Free Trial
                 <FaArrowRight className="w-4 h-4" />
               </Link>
-              <PlayStoreBadge />
-            </div>
-            <p className="text-xs text-slate-400">iOS app coming soon.</p>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
+            
           </div>
 
           {/* Hero Right Visual Column */}

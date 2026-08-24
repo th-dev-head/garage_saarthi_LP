@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GAFreeTrialCTA() {
@@ -12,7 +13,7 @@ export default function GAFreeTrialCTA() {
         <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
           Get Started Now
         </span>
-        <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mt-4 mb-4 leading-tight">
+        <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
           Try the GarageSaarthi Garage Management{" "}
           <GradientUnderline>App Free for 7 Days</GradientUnderline>
         </h2>
@@ -21,8 +22,11 @@ export default function GAFreeTrialCTA() {
         </p>
 
         <div className="flex flex-wrap gap-4 items-center justify-center">
-          <PlayStoreBadge />
-          <Link
+          <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+<Link
             href={FRONTEND_URL + "/register"}
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +36,7 @@ export default function GAFreeTrialCTA() {
             <FaArrowRight className="w-3.5 h-3.5" />
           </Link>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="text-xs font-bold text-primary hover:underline"
           >
             View Pricing

@@ -11,7 +11,7 @@ export default function ARSCloudAccess() {
     },
     {
       icon: <FaAndroid className="text-green-500" />,
-      title: "Android Mobile App",
+      title: "Android & iOS Mobile App",
       desc: "Great for diagnostic advisors on the workshop floor. Take vehicle walkaround photos, write down scratch marks, and save customer complaints right beside the vehicle."
     }
   ];

@@ -10,7 +10,7 @@ import Button from "../../common/Button";
 export default function MBCustomerProof() {
   const handleStoriesClick = () => {
     trackEvent("customer_story_click", {
-      page_path: "/solutions/multi-branch-garage-software",
+      page_path: "/solutions/multi-branch-garage-software/",
       cta_location: "customer_proof_section",
       cta_label: "View Customer Stories"
     });
@@ -29,7 +29,7 @@ export default function MBCustomerProof() {
           Read how multi-location workshop groups, auto repair chains, and franchise owners use GarageSaarthi to centralize their databases and switch from registers to cloud control.
         </p>
         <div className="pt-2 flex justify-center">
-          <Link href="/features/customer-reviews" onClick={handleStoriesClick}>
+          <Link href="/features/customer-reviews/" onClick={handleStoriesClick}>
             <Button>
               View Customer Stories <FaArrowRight className="w-3.5 h-3.5" />
             </Button>

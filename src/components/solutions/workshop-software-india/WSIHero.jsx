@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 
 export default function WSIHero() {
   return (
@@ -48,20 +49,23 @@ export default function WSIHero() {
               Start 7-Day Free Trial
             </Button>
             <Link
-              href="/pricing"
+              href="/pricing/"
               className="flex items-center gap-2 px-6 py-3 rounded-full whitespace-nowrap bg-white/10 text-white font-medium border border-white/20 hover:bg-white/20 transition-colors text-base"
             >
               View Pricing
             </Link>
-            <PlayStoreBadge />
-          </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
 
           {/* Trust strip */}
           <div className="flex flex-wrap justify-center gap-6 text-white/60 text-sm font-medium">
             <span>✓ No credit card required</span>
             <span>✓ 7-day free trial</span>
             <span>✓ GST billing included</span>
-            <span>✓ Android app available</span>
+            <span>✓ Android & iOS apps available</span>
           </div>
         </div>
       </div>

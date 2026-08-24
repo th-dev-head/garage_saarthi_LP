@@ -10,16 +10,16 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GACMultiBranch() {
   const handleSolutionClick = () => {
     trackEvent("solution_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "multi_branch_section",
       cta_label: "Explore Multi-Branch Garage Software",
-      destination: "/solutions/multi-branch-garage-software"
+      destination: "/solutions/multi-branch-garage-software/"
     });
   };
 
   const handleLinkClick = (name, url) => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "multi_branch_section",
       cta_label: name,
       destination: url
@@ -58,17 +58,17 @@ export default function GACMultiBranch() {
           </p>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             Owners maintain centralized visibility, while staff logins can be restricted to their assigned branch. Explore our{" "}
-            <Link href="/features/branches" onClick={() => handleLinkClick("Branches Page Link", "/features/branches")} className="font-semibold text-primary hover:underline">
+            <Link href="/features/branches/" onClick={() => handleLinkClick("Branches Page Link", "/features/branches/")} className="font-semibold text-primary hover:underline">
               Branches
             </Link>{" "}
             and{" "}
-            <Link href="/features/reports" onClick={() => handleLinkClick("Reports Page Link", "/features/reports")} className="font-semibold text-primary hover:underline">
+            <Link href="/features/reports/" onClick={() => handleLinkClick("Reports Page Link", "/features/reports/")} className="font-semibold text-primary hover:underline">
               Reports
             </Link>{" "}
             workspaces.
           </p>
           <div className="pt-2">
-            <Link href="/solutions/multi-branch-garage-software" onClick={handleSolutionClick}>
+            <Link href="/solutions/multi-branch-garage-software/" onClick={handleSolutionClick}>
               <Button>
                 Explore Multi-Branch Garage Software <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

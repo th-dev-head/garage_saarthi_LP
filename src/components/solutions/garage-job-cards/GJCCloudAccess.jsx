@@ -11,7 +11,7 @@ export default function GJCCloudAccess() {
     },
     {
       icon: <FaAndroid className="text-primary mt-1" />,
-      title: "Google Play Android Application",
+      title: "Android & iOS Mobile Apps",
       desc: "Download our mobile-friendly dashboard app to check stats, upload photos, and draft job cards on-the-go."
     }
   ];
@@ -21,7 +21,7 @@ export default function GJCCloudAccess() {
       badge="Cloud Access"
       title="Access Garage Job Cards Online on"
       titleHighlight="Web and Mobile"
-      subtitle="GarageSaarthi runs on secure cloud servers, giving you instant web access on laptop browsers and live synchronization with our Android application."
+      subtitle="GarageSaarthi runs on secure cloud servers, giving you instant web access on laptop browsers and live synchronization with our Android and iOS applications."
       features={cloudFeatures}
       bgClass="bg-slate-50"
     />

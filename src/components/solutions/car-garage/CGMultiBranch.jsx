@@ -21,7 +21,7 @@ export default function CGMultiBranch() {
               If you operate more than one car garage location, GarageSaarthi lets you manage all branches from a single account. Monitor each outlet's performance, control user access, and view consolidated reports without visiting each branch physically.
             </p>
             <Link
-              href="/solutions/multi-branch-garage-software"
+              href="/solutions/multi-branch-garage-software/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
             >
               Explore Multi-Branch Garage Software

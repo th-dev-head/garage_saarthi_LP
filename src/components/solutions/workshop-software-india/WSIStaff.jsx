@@ -58,7 +58,7 @@ export default function WSIStaff() {
 
         <div className="flex justify-center">
           <Link
-            href="/features/payroll"
+            href="/features/payroll/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore Staff & Payroll Features <FaArrowRight className="w-3.5 h-3.5" />

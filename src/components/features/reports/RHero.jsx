@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaArrowRight, FaChartLine } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { trackEvent } from "@/src/utils/pixel";
 
 const rHeroBlocks = [
@@ -16,7 +17,7 @@ const rHeroBlocks = [
 export default function RHero() {
   const handleTrialClick = () => {
     trackEvent("reports_analytics_feature_trial_cta_click", {
-      page_path: "/features/reports",
+      page_path: "/features/reports/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/register`,
@@ -37,7 +38,7 @@ export default function RHero() {
             <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-2 inline-block">
               Garage Reports & Analytics
             </span>
-            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
               Real-Time Workshop Insights &{" "}
               <span className="relative inline-block">
                 Performance Analytics
@@ -56,8 +57,11 @@ export default function RHero() {
                 Start 7-Day Free Trial
                 <FaArrowRight className="w-4 h-4" />
               </button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
 
           {/* Hero Right Visual Column */}

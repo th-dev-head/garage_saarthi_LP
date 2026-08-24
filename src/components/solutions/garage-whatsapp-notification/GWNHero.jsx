@@ -7,12 +7,13 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GWNHero() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-whatsapp-notification-software",
+      page_path: "/solutions/garage-whatsapp-notification-software/",
       page_name: "garage_whatsapp_notification_software",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
@@ -23,7 +24,7 @@ export default function GWNHero() {
 
   const handleAlertsClick = () => {
     trackEvent("whatsapp_feature_click", {
-      page_path: "/solutions/garage-whatsapp-notification-software",
+      page_path: "/solutions/garage-whatsapp-notification-software/",
       page_name: "garage_whatsapp_notification_software",
       cta_location: "hero",
       cta_label: "Explore Service Alerts",
@@ -37,8 +38,8 @@ export default function GWNHero() {
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="mx-auto max-w-full lg:max-w-3xl w-full relative z-10 text-center flex flex-col items-center">
-        <div className="flex flex-col items-center text-center max-w-3xl">
+      <div className="mx-auto max-w-full lg:max-w-5xl w-full relative z-10 text-center flex flex-col items-center">
+        <div className="flex flex-col items-center text-center max-w-5xl">
           <span className="text-xs uppercase tracking-widest bg-orange-600/30 text-orange-400 px-3 py-1.5 rounded-full border border-orange-500/20 font-semibold mb-6 inline-block">
             WhatsApp Integration
           </span>
@@ -59,14 +60,17 @@ export default function GWNHero() {
               Start 7-Day Free Trial
             </Button>
             <Link
-              href="/features/service-reminders"
+              href="/features/service-reminders/"
               onClick={handleAlertsClick}
               className="rounded-full border border-white/30 bg-white/5 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer w-full sm:w-auto whitespace-nowrap h-11 text-center"
             >
               Explore Service Alerts
             </Link>
-            <PlayStoreBadge />
-          </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
         </div>
       </div>
     </section>

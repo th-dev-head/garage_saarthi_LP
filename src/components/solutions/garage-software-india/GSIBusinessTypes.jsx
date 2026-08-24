@@ -8,49 +8,49 @@ const businessTypes = [
     icon: <FaCar />,
     title: "Car Garages",
     desc: "Manage 4-wheeler repair job sheets, vehicle history logs, spare parts, and customer service alerts.",
-    link: "/solutions/car-garage-software",
+    link: "/solutions/car-garage-software/",
   },
   {
     icon: <FaMotorcycle />,
     title: "Bike Workshops",
     desc: "Track high daily two-wheeler repair volume, bike records, fast counter sales, and mechanic commissions.",
-    link: "/solutions/bike-workshop-software",
+    link: "/solutions/bike-workshop-software/",
   },
   {
     icon: <FaBolt />,
     title: "EV Garages",
     desc: "Maintain EV vehicle records, customer profiles, component repair job sheets, and workshop teams.",
-    link: "/solutions/ev-garage-management-software",
+    link: "/solutions/ev-garage-management-software/",
   },
   {
     icon: <FaTruckMoving />,
     title: "Truck Workshops",
     desc: "Coordinate heavy commercial vehicle overhaul jobs, bulk lubricant stock, chassis details, and fleet billing.",
-    link: "/solutions/truck-workshop-software",
+    link: "/solutions/truck-workshop-software/",
   },
   {
     icon: <FaBus />,
     title: "Fleet Workshops",
     desc: "Manage in-house transport vehicle checkups, preventative maintenance, parts allocation, and service logs.",
-    link: "/solutions/fleet-workshop-software",
+    link: "/solutions/fleet-workshop-software/",
   },
   {
     icon: <FaMagic />,
     title: "Car Detailing Studios",
     desc: "Schedule ceramic coating, PPF, washing jobs, customer lead quotes, and package billing easily.",
-    link: "/solutions/car-detailing-software",
+    link: "/solutions/car-detailing-software/",
   },
   {
     icon: <FaBuilding />,
     title: "Multi-Branch Garages",
     desc: "Centralize multi-location workshop management, inter-branch stock transfers, and branch-wise reporting.",
-    link: "/solutions/multi-branch-garage-software",
+    link: "/solutions/multi-branch-garage-software/",
   },
   {
     icon: <FaWrench />,
     title: "Independent Garages",
     desc: "Simple, affordable software configuration for single-bay or independent workshop owners in India.",
-    link: "/solutions/car-garage-software",
+    link: "/solutions/car-garage-software/",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function GSIBusinessTypes() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Find Software for Your Workshop <FaArrowRight className="w-3.5 h-3.5" />

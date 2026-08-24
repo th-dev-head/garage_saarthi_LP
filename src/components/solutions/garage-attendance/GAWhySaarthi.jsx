@@ -6,7 +6,7 @@ export default function GAWhySaarthi() {
     { title: "Designed for Workshops", desc: "Tailored specifically for car, bike, EV, and truck garages, avoiding generic corporate templates." },
     { title: "Direct Operational Link", desc: "Connect shifts directly to active job cards, staff commission logs, and basic salaries." },
     { title: "Attendance & Leaves Linked", desc: "Check leaves, holiday records, check-in schedules, and absent ratios in one file." },
-    { title: "Browser & Android Sync", desc: "Enable desk managers or mechanics to update presence easily on mobile screens or desktops." },
+    { title: "Browser, Android & iOS Sync", desc: "Enable desk managers or mechanics to update presence easily on mobile screens or desktops." },
     { title: "Multi-Branch Roster", desc: "Maintain separate employee shift files and attendance statistics by location." },
     { title: "7-Day Free Trial", desc: "Log in with full access to attendance, leaves, payroll, and user settings setup with no commitments." }
   ];

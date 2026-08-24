@@ -9,7 +9,7 @@ const cards = [
     title: "Create Garage Invoices",
     desc: "Generate professional, GST-compliant invoices for every car repair and service. Auto-calculate SGST, CGST, and IGST on spare parts and mechanic labour. Share via WhatsApp in one click.",
     links: [
-      { label: "Explore Billing", href: "/features/billing" },
+      { label: "Explore Billing", href: "/features/billing/" },
     ],
   },
   {
@@ -17,7 +17,7 @@ const cards = [
     title: "Track Customer Payments",
     desc: "Log cash, UPI, card, and digital wallet payments against each job. Track outstanding balances, customer credit history, and pending dues — all in real time.",
     links: [
-      { label: "Payments", href: "/features/billing" },
+      { label: "Payments", href: "/features/billing/" },
     ],
   },
   {
@@ -25,8 +25,8 @@ const cards = [
     title: "Organize Garage Finances",
     desc: "Record vendor purchases, operational expenses, and daily cash movement. Get a clear view of your garage's financial position without needing a separate accounting tool.",
     links: [
-      { label: "Finance", href: "/features/finance" },
-      { label: "Loans", href: "/features/loans" },
+      { label: "Finance", href: "/features/finance/" },
+      { label: "Loans", href: "/features/loans/" },
     ],
   },
   {
@@ -34,7 +34,7 @@ const cards = [
     title: "Give Your CA Access",
     desc: "Provide read-only access to your accountant or chartered accountant. Let them download sales reports, purchase records, and GST summaries directly — without sharing full system access.",
     links: [
-      { label: "CA Access", href: "/features/ca-access" },
+      { label: "CA Access", href: "/features/ca-access/" },
     ],
   },
 ];
@@ -81,7 +81,7 @@ export default function CGBillingFinance() {
 
         <div className="text-center">
           <Link
-            href="/features/finance"
+            href="/features/finance/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             Explore Garage Finance Management

@@ -13,7 +13,7 @@ export default function WMDFAQ() {
     },
     {
       question: "Is the workshop analytics dashboard updated in real-time?",
-      answer: "Yes! Every time a service advisor opens a job card, a mechanic updates a repair stage on the Android mobile app, or a spare part is sold, the central dashboard updates immediately without requiring manual refresh."
+      answer: "Yes! Every time a service advisor opens a job card, a mechanic updates a repair stage on the Android and iOS mobile apps, or a spare part is sold, the central dashboard updates immediately without requiring manual refresh."
     },
     {
       question: "Can I monitor mechanic performance on the mechanic dashboard software?",

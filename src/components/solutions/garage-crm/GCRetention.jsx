@@ -20,7 +20,7 @@ const retentionAlertRows = [
 export default function GCRetention() {
   const handleLinkClick = (label, dest) => {
     trackEvent("service_alert_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "customer_retention",
       cta_label: label,
@@ -53,15 +53,15 @@ export default function GCRetention() {
 
           <div className="flex flex-wrap gap-4 items-center">
             <Link
-              href="/features/service-reminders"
-              onClick={() => handleLinkClick("Explore Service Alerts", "/features/service-reminders")}
+              href="/features/service-reminders/"
+              onClick={() => handleLinkClick("Explore Service Alerts", "/features/service-reminders/")}
               className="text-xs text-primary font-bold hover:underline"
             >
               Explore Service Alerts
             </Link>
             <Link
-              href="/features/offers-promotions"
-              onClick={() => handleLinkClick("Offers & Promotions", "/features/offers-promotions")}
+              href="/features/offers-promotions/"
+              onClick={() => handleLinkClick("Offers & Promotions", "/features/offers-promotions/")}
               className="text-xs text-primary font-bold hover:underline"
             >
               Offers &amp; Promotions

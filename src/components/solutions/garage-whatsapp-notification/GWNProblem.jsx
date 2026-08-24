@@ -41,7 +41,7 @@ export default function GWNProblem() {
               By switching to <strong className="text-primary capitalize">garage customer reminder software</strong>, you bring these disjointed records into a structured database.
             </p>
             <div className="pt-2">
-              <Link href="/features/customers" className="text-primary font-bold hover:underline text-xs">
+              <Link href="/features/customers/" className="text-primary font-bold hover:underline text-xs">
                 Explore Customer Management &rarr;
               </Link>
             </div>

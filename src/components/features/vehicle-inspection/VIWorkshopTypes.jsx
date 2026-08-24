@@ -28,7 +28,7 @@ export default function VIWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             For Every Workshop
           </span>
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Inspections for Any <GradientUnderline>Vehicle Type</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

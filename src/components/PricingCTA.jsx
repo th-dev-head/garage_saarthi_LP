@@ -26,7 +26,7 @@ export default function PricingCTA() {
             <FaArrowRight className="w-4 h-4 ml-2" />
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 text-sm font-medium text-slate-700 hover:border-primary/40 hover:text-primary transition-colors cursor-pointer"
           >
             View Pricing

@@ -8,21 +8,21 @@ const billingCards = [
     icon: FaFileInvoiceDollar,
     title: "Create Workshop Invoices",
     desc: "Generate professional, tax-compliant GST invoices containing separate parts, labor items, discounts, and customer billing prefixes in seconds.",
-    link: "/pricing",
+    link: "/pricing/",
     linkText: "View Billing Setup"
   },
   {
     icon: FaMoneyBillWave,
     title: "Track Payments and Finance",
     desc: "Organize payments collected via cash, UPI, cards, or credit. Send payment links and digital invoice links straight to the customer's WhatsApp.",
-    link: "/features/billing",
+    link: "/features/billing/",
     linkText: "Explore Payments"
   },
   {
     icon: FaUserCheck,
     title: "Give Your CA Access",
     desc: "Invite your Chartered Accountant (CA) to log in and download GST spreadsheets directly, saving hours of manual billing coordination.",
-    link: "/features/ca-access",
+    link: "/features/ca-access/",
     linkText: "Explore CA Controls"
   }
 ];

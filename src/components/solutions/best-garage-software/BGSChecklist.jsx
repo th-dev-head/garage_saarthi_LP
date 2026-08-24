@@ -21,7 +21,7 @@ const checklistItems = [
     title: "Digital Job Card Management",
     question: "Can the software create and manage digital job cards?",
     desc: "Digital job cards record vehicle entry details, initial customer complaints, repair estimates, and parts assignment dynamically, replacing oily paper sheets.",
-    link: "/features/job-card-management",
+    link: "/features/job-card-management/",
     anchor: "Explore Digital Job Cards",
   },
   {
@@ -29,7 +29,7 @@ const checklistItems = [
     title: "Billing and GST Support",
     question: "Can the garage create organized invoices and manage GST requirements?",
     desc: "Ensure software supports custom invoice series, GST breakdown calculations, multiple payment methods, and instant WhatsApp bill sharing.",
-    link: "/features/billing",
+    link: "/features/billing/",
     anchor: "Explore Invoicing & Payments",
   },
   {
@@ -37,7 +37,7 @@ const checklistItems = [
     title: "Spare Parts Inventory Management",
     question: "Can the software track workshop stock and spare parts?",
     desc: "Track stock levels, monitor low stock alerts, deduct parts dynamically when checked out on job cards, and manage retail counter sales.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
     anchor: "Explore Inventory Management",
   },
   {
@@ -45,7 +45,7 @@ const checklistItems = [
     title: "Customer and Vehicle Records",
     question: "Can customer and vehicle information be maintained in one system?",
     desc: "Maintain detailed profiles linking customer phone numbers with vehicle registration codes, chassis numbers, and past service history.",
-    link: "/features/customers",
+    link: "/features/customers/",
     anchor: "Explore Customer & Vehicle Records",
   },
   {
@@ -53,7 +53,7 @@ const checklistItems = [
     title: "CRM and Lead Management",
     question: "Can the garage track leads and customer opportunities?",
     desc: "Distinguish new customer leads from active databases, recording call notes, follow-up dates, and service quotes inside a dedicated CRM.",
-    link: "/features/crm",
+    link: "/features/crm/",
     anchor: "Explore Garage CRM",
   },
   {
@@ -61,7 +61,7 @@ const checklistItems = [
     title: "Service and WhatsApp Reminders",
     question: "Can the software help the garage follow up when service is due?",
     desc: "Automate service due notifications and promotional reminders sent directly via WhatsApp, keeping your service bays active.",
-    link: "/features/service-reminders",
+    link: "/features/service-reminders/",
     anchor: "Explore Service Alerts",
   },
   {
@@ -69,7 +69,7 @@ const checklistItems = [
     title: "Attendance, Leave and Payroll",
     question: "Can the same software help manage workshop staff?",
     desc: "Log daily mechanic clock-in/out, approve leave requests, calculate commission rates based on completed job cards, and compute net salary.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
     anchor: "Explore Payroll & Staff",
   },
   {
@@ -77,7 +77,7 @@ const checklistItems = [
     title: "Finance and Business Reports",
     question: "Can garage owners understand payments, finances and performance?",
     desc: "Track daily sales, cash vs. online collections, income/expense ledgers, loan balances, and grant direct view access to your CA.",
-    link: "/features/reports",
+    link: "/features/reports/",
     anchor: "Explore Reports & Analytics",
   },
   {
@@ -85,15 +85,15 @@ const checklistItems = [
     title: "Multi-Branch Management",
     question: "Can the software scale when the garage opens another branch?",
     desc: "Centralize multi-location management, monitor branch-wise collections, transfer spare parts stock, and configure role-based user access.",
-    link: "/solutions/multi-branch-garage-software",
+    link: "/solutions/multi-branch-garage-software/",
     anchor: "Explore Multi-Branch Software",
   },
   {
     icon: <FaMobileAlt />,
     title: "Web and Mobile Access",
     question: "Can the garage owner access software without depending on one PC?",
-    desc: "Manage operations from laptop web browsers and on-the-go via the Android mobile app. (iOS app coming soon to the Apple App Store).",
-    link: "/features/workshop-management-dashboard",
+    desc: "Manage operations from laptop web browsers and on-the-go via the Android & iOS mobile apps. & iOS app on the Apple App Store.",
+    link: "/features/workshop-management-dashboard/",
     anchor: "Explore Cloud & Mobile",
   },
 ];

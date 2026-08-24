@@ -3,6 +3,7 @@
 import React from "react";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import { FaArrowRight } from "react-icons/fa";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
@@ -11,7 +12,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GACWebMobile() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "cloud_access",
       cta_label: "Start Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -21,7 +22,7 @@ export default function GACWebMobile() {
 
   const handleAndroidClick = () => {
     trackEvent("android_download_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "cloud_access",
       cta_label: "Download Android App"
     });
@@ -35,7 +36,7 @@ export default function GACWebMobile() {
             <span className="text-5xl">☁️</span>
             <h3 className="text-base font-bold text-text-dark">Cloud Sync Active</h3>
             <p className="text-xs text-slate-500 max-w-xs">
-              Every invoice raised, expense logged, and payment recorded synchronizes instantly between browser and Android application.
+              Every invoice raised, expense logged, and payment recorded synchronizes instantly between web browser and Android/iOS mobile apps.
             </p>
           </div>
         </div>
@@ -48,19 +49,20 @@ export default function GACWebMobile() {
             Access Your Garage Financial <GradientUnderline>Records Online</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Record employee commissions or check daily transaction logs from any location. GarageSaarthi acts as an online garage accounting software database, offering a full browser dashboard alongside our specialized Android mobile application.
+            Record employee commissions or check daily transaction logs from any location. GarageSaarthi acts as an online garage accounting software database, offering a full browser dashboard alongside our Android and iOS mobile applications.
           </p>
           <p className="text-slate-500 text-xs">
-            *Note: Currently, we support web browser environments and Android devices. iOS version is coming soon.
+            *Note: GarageSaarthi supports Android devices, iOS devices (Apple App Store), and web browser environments.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-center pt-2">
             <Button variant="trial" onClick={handleTrialClick} icon={<FaArrowRight className="w-3.5 h-3.5" />} className="w-full sm:w-auto">
               Start Free Trial
             </Button>
-            <div onClick={handleAndroidClick}>
-              <PlayStoreBadge />
-            </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
           </div>
         </div>
       </div>

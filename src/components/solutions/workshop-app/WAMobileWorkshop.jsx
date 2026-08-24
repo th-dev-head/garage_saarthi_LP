@@ -1,5 +1,6 @@
 import React from "react";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function WAMobileWorkshop() {
@@ -37,8 +38,11 @@ export default function WAMobileWorkshop() {
             </p>
             
             <div className="flex flex-wrap gap-4 items-center">
-              <PlayStoreBadge />
-              <span className="text-xs font-semibold text-slate-500">iOS app coming soon.</span>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+
             </div>
           </div>
 

@@ -15,7 +15,7 @@ const staffRolesConfig = [
 export default function MBUserRoleManagement() {
   const handleUserClick = () => {
     trackEvent("user_management_click", {
-      page_path: "/solutions/multi-branch-garage-software",
+      page_path: "/solutions/multi-branch-garage-software/",
       cta_location: "user_roles_section",
       cta_label: "Explore User Management"
     });
@@ -35,7 +35,7 @@ export default function MBUserRoleManagement() {
             Manage your garage team easily. Create logins for mechanics, billing staff, and managers, and restrict their visibility to their assigned location. The owner maintains centralized admin rights across all branches.
           </p>
           <div className="pt-2">
-            <Link href="/features/user-management" onClick={handleUserClick} className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
+            <Link href="/features/user-management/" onClick={handleUserClick} className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1">
               Explore User Management <FaArrowRight className="w-2.5 h-2.5" />
             </Link>
           </div>

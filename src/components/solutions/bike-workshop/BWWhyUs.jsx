@@ -11,7 +11,7 @@ const differentiators = [
   "Generates GST-compliant bills and handles multiple invoice series",
   "Sends automated WhatsApp service due alerts and payment links",
   "Integrates mechanic attendance, leave records, and payroll commission calculations",
-  "Ensures cloud access from any web browser and a native Android application",
+  "Ensures cloud access from any web browser and a native Android and iOS mobile applications",
   "Supports multi-branch controls and role-based staff access permissions",
   "Provides real-time dashboards and detailed business collection reports",
   "Offers a fully functional 7-day free trial with zero registration charges",

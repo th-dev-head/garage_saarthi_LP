@@ -50,7 +50,7 @@ export default function BWInventory() {
 
             <div className="pt-4">
               <Link
-                href="/features/inventory"
+                href="/features/inventory/"
                 className="inline-flex items-center gap-1.5 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
               >
                 Explore Inventory Management <FaArrowRight className="w-3.5 h-3.5" />

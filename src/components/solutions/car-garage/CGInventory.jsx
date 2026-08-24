@@ -8,21 +8,21 @@ const items = [
     icon: <FaBoxOpen className="w-5 h-5" />,
     title: "Track Garage Inventory",
     desc: "Maintain a live catalogue of all spare parts, lubricants, and accessories stocked in your car garage. Set low-stock thresholds and get warnings before fast-moving items run out.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
     linkLabel: "Explore Inventory",
   },
   {
     icon: <FaCashRegister className="w-5 h-5" />,
     title: "Manage Counter Sales",
     desc: "Record direct spare parts sales to walk-in customers at the counter — separate from job card repairs. Maintain accurate stock deduction and billing for every counter transaction.",
-    link: "/features/counter-sales",
+    link: "/features/counter-sales/",
     linkLabel: "Explore Counter Sales",
   },
   {
     icon: <FaEye className="w-5 h-5" />,
     title: "Improve Stock Visibility",
     desc: "See exactly what is available in your car garage inventory at any moment. Track purchase history, parts consumption per job card, and closing stock across your workshop.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
     linkLabel: "Explore Stock Reports",
   },
 ];
@@ -71,7 +71,7 @@ export default function CGInventory() {
 
         <div className="text-center">
           <Link
-            href="/features/inventory"
+            href="/features/inventory/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             Explore Inventory Management

@@ -24,7 +24,7 @@ export default function AWMultiBranch() {
             </p>
 
             <Link
-              href="/solutions/multi-branch-garage-software"
+              href="/solutions/multi-branch-garage-software/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
             >
               Explore Multi-Branch Garage Software

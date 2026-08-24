@@ -7,7 +7,7 @@ const points = [
   "GST billing designed for Indian spare parts and service tax structures.",
   "Workflows built around how independent and multi-brand car garages operate in India.",
   "Subscription plans in INR with monthly and longer-duration options.",
-  "Android application available for garage owners and advisors across Indian cities.",
+  "Android and iOS mobile applications available for garage owners and advisors across Indian cities.",
   "Designed for single-location car garages and growing multi-branch workshop chains.",
   "Cloud-based online garage management — no hardware or server required.",
 ];
@@ -30,7 +30,7 @@ export default function CGIndiaPositioning() {
               GarageSaarthi is designed specifically for car garages and automotive workshops operating in India. The platform reflects the actual workflows, billing requirements, and operational realities of Indian garage businesses — from independent workshops to growing multi-branch service centres.
             </p>
             <Link
-              href="/pricing"
+              href="/pricing/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer whitespace-nowrap"
             >
               View GarageSaarthi Pricing

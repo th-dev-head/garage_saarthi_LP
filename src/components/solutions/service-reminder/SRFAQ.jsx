@@ -37,7 +37,7 @@ export default function SRFAQ() {
     },
     {
       question: "Is there a service reminder app for garages?",
-      answer: "Yes. We maintain a live Android mobile application on the Google Play Store, alongside our main web-based platform."
+      answer: "Yes. We maintain a live mobile apps on Google Play Store & Apple App Store, alongside our main web-based platform."
     },
     {
       question: "Does GarageSaarthi offer automated service reminders?",

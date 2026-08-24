@@ -59,7 +59,7 @@ export default function BWSDecisionSummary() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-100 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11"
           >
             View Pricing

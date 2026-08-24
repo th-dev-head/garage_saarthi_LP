@@ -28,11 +28,11 @@ export default function GABilling() {
       desc: (
         <>
           Log transaction records, check outstanding dues, and check lists in our dedicated{" "}
-          <Link href="/features/billing" className="text-primary font-bold hover:underline">
+          <Link href="/features/billing/" className="text-primary font-bold hover:underline">
             Payments
           </Link>{" "}
           and{" "}
-          <Link href="/features/finance" className="text-primary font-bold hover:underline">
+          <Link href="/features/finance/" className="text-primary font-bold hover:underline">
             Finance
           </Link>{" "}
           panels.

@@ -8,28 +8,28 @@ const staffCards = [
     icon: FaUserClock,
     title: "Track Staff Attendance",
     desc: "Log daily check-in/out times of detailers and office staff on a simple web dashboard.",
-    link: "/features/attendance",
+    link: "/features/attendance/",
     linkText: "Explore Attendance"
   },
   {
     icon: FaCalendarMinus,
     title: "Manage Leave Records",
     desc: "Monitor leave history, sick days, and vacation parameters to schedule shift coverage.",
-    link: "/features/leave-management",
+    link: "/features/leave-management/",
     linkText: "Explore Leaves"
   },
   {
     icon: FaPercent,
     title: "Handle Studio Payroll",
     desc: "Compute net salaries, deduct leaves, and add job commissions automatically based on service job cards.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
     linkText: "Explore Payroll"
   },
   {
     icon: FaUserShield,
     title: "Control User Access",
     desc: "Create user logins. Restrict billing data or stock details based on employee roles.",
-    link: "/features/user-management",
+    link: "/features/user-management/",
     linkText: "Explore Access Controls"
   }
 ];

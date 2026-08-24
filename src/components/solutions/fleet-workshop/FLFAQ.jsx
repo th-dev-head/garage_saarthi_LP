@@ -40,7 +40,7 @@ const faqData = [
   },
   {
     q: "Is GarageSaarthi available on mobile?",
-    a: "Yes. It is available as an Android mobile app on the Google Play Store and as a web platform accessible on any device.",
+    a: "Yes. It is available as an mobile apps on Google Play Store and Apple App Store and as a web platform accessible on any device.",
   },
   {
     q: "Does GarageSaarthi offer a free trial?",

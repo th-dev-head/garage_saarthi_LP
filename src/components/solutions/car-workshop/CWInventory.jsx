@@ -8,7 +8,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function CWInventory() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "inventory_section",
       cta_label: name,
       destination: url
@@ -34,7 +34,7 @@ export default function CWInventory() {
               <h3 className="text-base font-bold text-slate-800">Workshop Inventory</h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
                 Log spare parts stock, track purchases, and check low stock alerts. Explore{" "}
-                <Link href="/features/inventory" onClick={() => handleLinkClick("Inventory Feature Link", "/features/inventory")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/inventory/" onClick={() => handleLinkClick("Inventory Feature Link", "/features/inventory/")} className="text-primary font-semibold hover:underline">
                   Workshop Inventory
                 </Link>.
               </p>
@@ -44,7 +44,7 @@ export default function CWInventory() {
               <h3 className="text-base font-bold text-slate-800">Counter Sales</h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed font-normal">
                 Bill loose spare parts, oil barrels, or coolant products directly to customer walk-ins. Explore{" "}
-                <Link href="/features/counter-sales" onClick={() => handleLinkClick("Counter Sales Feature Link", "/features/counter-sales")} className="text-primary font-semibold hover:underline">
+                <Link href="/features/counter-sales/" onClick={() => handleLinkClick("Counter Sales Feature Link", "/features/counter-sales/")} className="text-primary font-semibold hover:underline">
                   Counter Sales
                 </Link>.
               </p>

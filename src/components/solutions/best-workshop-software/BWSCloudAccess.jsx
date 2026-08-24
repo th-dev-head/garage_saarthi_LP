@@ -5,6 +5,7 @@ import React from "react";
 import { FaLaptop, FaMobileAlt, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const accessPoints = [
@@ -15,15 +16,15 @@ const accessPoints = [
   },
   {
     icon: FaMobileAlt,
-    title: "Android Mobile App",
+    title: "Android & iOS Mobile App",
     desc: "For Quick Bay Floor Job Cards"
   }
 ];
 
 const cloudBenefits = [
-  "Real-time data synchronization across web browsers and Android devices",
+  "Real-time data synchronization across web browsers, Android, and iOS devices",
   "Role-based user permissions for managers, billing clerks, and mechanics",
-  "Multi-branch workshop visibility (iOS app under Apple App Store review)"
+  "Multi-branch workshop visibility & iOS app on Apple App Store"
 ];
 
 export default function BWSCloudAccess() {
@@ -61,7 +62,7 @@ export default function BWSCloudAccess() {
               Cloud-Based Workshop Management on <GradientUnderline>Web and Mobile</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              GarageSaarthi gives you instant access to your workshop records from any device. Open digital job sheets right beside the vehicle using the Android mobile app, or manage GST billing, inventory, and analytics from your office laptop.
+              GarageSaarthi gives you instant access to your workshop records from any device. Open digital job sheets right beside the vehicle using our Android and iOS mobile apps, or manage GST billing, inventory, and analytics from your office laptop.
             </p>
 
             <ul className="space-y-2 text-xs md:text-sm text-slate-700 font-medium">
@@ -82,8 +83,11 @@ export default function BWSCloudAccess() {
               >
                 Start 7-Day Free Trial
               </Button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
         </div>
       </div>

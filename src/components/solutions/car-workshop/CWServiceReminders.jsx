@@ -9,14 +9,14 @@ const reminderFeatures = [
   {
     title: "Vehicle Service Alerts",
     desc: "Log upcoming service alerts based on past check-in sheets. Explore ",
-    href: "/features/service-reminders",
+    href: "/features/service-reminders/",
     label: "Service Alerts Feature Link",
     linkText: "Service Alerts"
   },
   {
     title: "WhatsApp Reminders",
     desc: "Send pre-populated WhatsApp reminder templates to clients with a single click. Explore ",
-    href: "/features/automation",
+    href: "/features/automation/",
     label: "WhatsApp Alerts Feature Link",
     linkText: "WhatsApp Alerts"
   }
@@ -25,7 +25,7 @@ const reminderFeatures = [
 export default function CWServiceReminders() {
   const handleLinkClick = (name, url) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/car-workshop-software",
+      page_path: "/solutions/car-workshop-software/",
       cta_location: "service_reminders_section",
       cta_label: name,
       destination: url

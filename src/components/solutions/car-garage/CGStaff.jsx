@@ -8,25 +8,25 @@ const features = [
     icon: <FaUserClock className="w-5 h-5" />,
     title: "Staff Attendance",
     desc: "Track daily clock-in and clock-out records for mechanics, technicians, and other garage staff. Maintain a reliable digital attendance log instead of paper registers.",
-    link: "/features/attendance",
+    link: "/features/attendance/",
   },
   {
     icon: <FaCalendarAlt className="w-5 h-5" />,
     title: "Leave Management",
     desc: "Record and approve employee leave requests. Maintain accurate leave balances and ensure your garage is never short-staffed without proper visibility into leave schedules.",
-    link: "/features/leave-management",
+    link: "/features/leave-management/",
   },
   {
     icon: <FaWallet className="w-5 h-5" />,
     title: "Payroll Management",
     desc: "Calculate monthly salaries based on attendance records, commissions, and advance deductions. Generate payroll summaries without manual spreadsheet calculations.",
-    link: "/features/payroll",
+    link: "/features/payroll/",
   },
   {
     icon: <FaUserShield className="w-5 h-5" />,
     title: "User Management and Role-Based Access",
     desc: "Create individual logins for each team member. Assign appropriate roles so your front desk staff, mechanics, and managers only see what is relevant to their work.",
-    link: "/features/user-management",
+    link: "/features/user-management/",
   },
 ];
 

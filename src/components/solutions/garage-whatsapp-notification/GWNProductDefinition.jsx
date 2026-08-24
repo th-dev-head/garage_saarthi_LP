@@ -10,7 +10,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function GWNProductDefinition() {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
-      page_path: "/solutions/garage-whatsapp-notification-software",
+      page_path: "/solutions/garage-whatsapp-notification-software/",
       page_name: "garage_whatsapp_notification_software",
       cta_location: "product_definition",
       cta_label: "Start Free Trial",

@@ -8,12 +8,12 @@ export default function CRMWorkshopTypes() {
     {
       title: "CRM for Car Garages",
       desc: "Manage passenger car owner profiles, fuel levels, diagnostic check-ins, and service reminders.",
-      link: "/solutions/car-garage-software"
+      link: "/solutions/car-garage-software/"
     },
     {
       title: "CRM for Auto Repair Shops",
       desc: "Track repair inquiries, lead progress sheets, mechanic assignments, and estimate follow-ups.",
-      link: "/solutions/auto-repair-shop-software"
+      link: "/solutions/auto-repair-shop-software/"
     },
     {
       title: "CRM for Automobile Workshops",
@@ -23,12 +23,12 @@ export default function CRMWorkshopTypes() {
     {
       title: "CRM for Vehicle Workshops",
       desc: "Manage customer contact database files, vehicle history cards, and service campaigns.",
-      link: "/features/vehicles"
+      link: "/features/vehicles/"
     },
     {
       title: "CRM for Multi-Branch Garages",
       desc: "Centralize customer records across locations, comparison sheets, and role assignments.",
-      link: "/solutions/multi-branch-garage-software"
+      link: "/solutions/multi-branch-garage-software/"
     }
   ];
 
@@ -39,7 +39,7 @@ export default function CRMWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Profiles
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Garage CRM Software for Different <GradientUnderline>Automotive Workshops</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

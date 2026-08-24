@@ -12,63 +12,63 @@ const cards = [
     icon: <FaClipboardList />,
     title: "Manage Digital Job Cards",
     desc: "Record vehicle fuel levels, complaints, diagnostics, and assign technicians.",
-    link: "/features/job-card-management",
+    link: "/features/job-card-management/",
     btnText: "Explore Job Cards"
   },
   {
     icon: <FaUsers />,
     title: "Keep Customer Records Organized",
     desc: "Maintain complete contact details, histories, and communication timelines.",
-    link: "/features/customers",
+    link: "/features/customers/",
     btnText: "Explore Customer Features"
   },
   {
     icon: <FaCar />,
     title: "Manage Customer Vehicles",
     desc: "Check service history records mapped to vehicle registration numbers.",
-    link: "/features/vehicles",
+    link: "/features/vehicles/",
     btnText: "Explore Vehicle Features"
   },
   {
     icon: <FaBoxOpen />,
     title: "Track Workshop Inventory",
     desc: "View spare parts catalog stock counts and part allocations instantly.",
-    link: "/features/inventory",
+    link: "/features/inventory/",
     btnText: "Explore Inventory Features"
   },
   {
     icon: <FaFileInvoiceDollar />,
     title: "Manage Payments and Finance",
     desc: "Generate professional invoices, input parts usage, and track payments.",
-    link: "/features/billing",
+    link: "/features/billing/",
     btnText: "Explore Billing Features"
   },
   {
     icon: <FaUserClock />,
     title: "Manage Staff Attendance & Payroll",
     desc: "Log daily login shifts, helper leaves, and technician commissions.",
-    link: "/features/attendance",
+    link: "/features/attendance/",
     btnText: "Explore Staff Features"
   },
   {
     icon: <FaPhoneVolume />,
     title: "Track Leads with Garage CRM",
     desc: "Keep records of prospect inquiries, bookings, and customer opportunities.",
-    link: "/features/crm",
+    link: "/features/crm/",
     btnText: "Explore CRM Features"
   },
   {
     icon: <FaBell />,
     title: "Stay Updated with Service Alerts",
     desc: "Schedule vehicle service visits and broadcast alerts over WhatsApp.",
-    link: "/features/service-reminders",
+    link: "/features/service-reminders/",
     btnText: "Explore Alerts Features"
   },
   {
     icon: <FaChartBar />,
     title: "View Workshop Reports",
     desc: "Verify daily sales, payments collected, active jobs, and parts listings.",
-    link: "/features/reports",
+    link: "/features/reports/",
     btnText: "Explore Reports Features"
   }
 ];
@@ -117,7 +117,7 @@ export default function WACoreCapabilities() {
         {/* Global CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/features"
+            href="/features/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             View All GarageSaarthi Features

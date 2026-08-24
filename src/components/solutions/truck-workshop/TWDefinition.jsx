@@ -74,7 +74,7 @@ export default function TWDefinition() {
 
         <div className="flex justify-center">
           <Link
-            href="/features"
+            href="/features/"
             className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-primary-hover transition-colors"
           >
             Explore GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />

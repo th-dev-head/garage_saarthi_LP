@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GCDefinition() {
   const handleCtaClick = () => {
     trackEvent("crm_feature_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "definition",
       cta_label: "Explore GarageSaarthi CRM",
@@ -34,7 +34,7 @@ export default function GCDefinition() {
         </p>
 
         <div className="flex justify-center">
-          <Link href="/features/crm">
+          <Link href="/features/crm/">
             <Button
               variant="hero"
               onClick={handleCtaClick}

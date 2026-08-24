@@ -18,7 +18,7 @@ const differentiators = [
   "Automates WhatsApp service due reminders and promotional messages",
   "Integrates mechanic attendance, leave management, and payroll commissions",
   "Tracks cash/online ledgers, loans, and offers CA export access",
-  "Provides cloud web platform access and native Android mobile application",
+  "Provides cloud web platform access and native Android and iOS mobile apps",
   "Supports multi-branch controls with role-based staff access permissions",
   "Offers a fully functional 7-day free trial with zero registration fee",
 ];
@@ -62,7 +62,7 @@ export default function BGSWhyUs() {
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-transparent text-slate-800 border border-slate-300 hover:bg-slate-100 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer h-11"
           >
             View Pricing Plans

@@ -5,6 +5,7 @@ import React from "react";
 import { FaLaptop, FaMobileAlt, FaArrowRight } from "react-icons/fa";
 import Button from "../../common/Button";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const accessPlatforms = [
@@ -15,7 +16,7 @@ const accessPlatforms = [
   },
   {
     icon: FaMobileAlt,
-    title: "Android Application",
+    title: "Android & iOS Mobile App",
     desc: "For Fast Customer Lookup & WhatsApp Alerts"
   }
 ];
@@ -23,7 +24,7 @@ const accessPlatforms = [
 const cloudBenefits = [
   "Real-time cloud synchronization between office laptops and smartphones",
   "Integrated customer profiles and vehicle service history lookup",
-  "Native Android app on Google Play (iOS app under Apple App Store review)"
+  "Native Android app on Google Play & iOS app on Apple App Store"
 ];
 
 export default function GMCloudAccess() {
@@ -61,7 +62,7 @@ export default function GMCloudAccess() {
               Manage Garage Customer Engagement on <GradientUnderline>Web and Mobile</GradientUnderline>
             </h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              GarageSaarthi allows workshop owners and staff to manage customer engagement workflows from any location. Access CRM lead records and promotional campaign tools on web browsers or via the native Android mobile app.
+              GarageSaarthi allows workshop owners and staff to manage customer engagement workflows from any location. Access CRM lead records and promotional campaign tools on web browsers or via our Android and iOS mobile apps.
             </p>
 
             <ul className="space-y-2 text-xs md:text-sm text-slate-700 font-medium">
@@ -82,8 +83,11 @@ export default function GMCloudAccess() {
               >
                 Start Free Trial
               </Button>
-              <PlayStoreBadge />
-            </div>
+              <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
           </div>
         </div>
       </div>

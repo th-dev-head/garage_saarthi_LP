@@ -9,7 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function GFMWorkshopTypes() {
   const handleSolutionClick = (name, url) => {
     trackEvent("finance_solution_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "workshop_types_section",
       cta_label: name,
       destination: url
@@ -17,12 +17,12 @@ export default function GFMWorkshopTypes() {
   };
 
   const types = [
-    { title: "Car Garages", desc: "Manage detailed spare part logs, washing jobs, mechanic payroll margins, and pending client billing.", url: "/solutions/car-garage-software" },
-    { title: "Bike Workshops", desc: "Speed up counter sales invoices, monitor mechanic commissions, and track daily cash balances.", url: "/solutions/bike-workshop-software" },
-    { title: "EV Garages", desc: "Track battery repair service records, specialized EV part entries, and specific tech payroll logs.", url: "/solutions/ev-garage-management-software" },
-    { title: "Truck Workshops", desc: "Track heavy commercial fleet service files, credit accounts, and large parts purchases.", url: "/solutions/truck-workshop-software" },
-    { title: "Fleet Workshops", desc: "Track organizational credit transactions, driver payments records, and scheduled maintenance checklists.", url: "/solutions/fleet-workshop-software" },
-    { title: "Multi-Branch Garages", desc: "Compare billing sheets across outlets, audit warehouses, and restrict staff logins by branch.", url: "/solutions/multi-branch-garage-software" }
+    { title: "Car Garages", desc: "Manage detailed spare part logs, washing jobs, mechanic payroll margins, and pending client billing.", url: "/solutions/car-garage-software/" },
+    { title: "Bike Workshops", desc: "Speed up counter sales invoices, monitor mechanic commissions, and track daily cash balances.", url: "/solutions/bike-workshop-software/" },
+    { title: "EV Garages", desc: "Track battery repair service records, specialized EV part entries, and specific tech payroll logs.", url: "/solutions/ev-garage-management-software/" },
+    { title: "Truck Workshops", desc: "Track heavy commercial fleet service files, credit accounts, and large parts purchases.", url: "/solutions/truck-workshop-software/" },
+    { title: "Fleet Workshops", desc: "Track organizational credit transactions, driver payments records, and scheduled maintenance checklists.", url: "/solutions/fleet-workshop-software/" },
+    { title: "Multi-Branch Garages", desc: "Compare billing sheets across outlets, audit warehouses, and restrict staff logins by branch.", url: "/solutions/multi-branch-garage-software/" }
   ];
 
   return (

@@ -4,13 +4,13 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function SRConnected() {
   const links = [
-    { name: "Customer Management", url: "/features/customers" },
-    { name: "Vehicle Records", url: "/features/vehicles" },
-    { name: "Digital Job Cards", url: "/features/job-card-management" },
-    { name: "Service Alerts", url: "/features/service-reminders" },
-    { name: "Garage CRM Software", url: "/features/crm" },
-    { name: "Offers & Promotions", url: "/features/offers-promotions" },
-    { name: "Performance Reports", url: "/features/reports" }
+    { name: "Customer Management", url: "/features/customers/" },
+    { name: "Vehicle Records", url: "/features/vehicles/" },
+    { name: "Digital Job Cards", url: "/features/job-card-management/" },
+    { name: "Service Alerts", url: "/features/service-reminders/" },
+    { name: "Garage CRM Software", url: "/features/crm/" },
+    { name: "Offers & Promotions", url: "/features/offers-promotions/" },
+    { name: "Performance Reports", url: "/features/reports/" }
   ];
 
   return (

@@ -16,10 +16,10 @@ const branchStaffRows = [
 export default function GPMultiBranch() {
   const handleSolutionClick = () => {
     trackEvent("payroll_solution_click", {
-      page_path: "/solutions/garage-payroll-software",
+      page_path: "/solutions/garage-payroll-software/",
       cta_location: "multi_branch_payroll_section",
       cta_label: "Explore Multi-Branch Garage Software",
-      destination: "/solutions/multi-branch-garage-software"
+      destination: "/solutions/multi-branch-garage-software/"
     });
   };
 
@@ -55,7 +55,7 @@ export default function GPMultiBranch() {
             Owners can switch branch dashboard views in seconds, checking localized present ratios, commissions outlays, and total payroll statuses centrally.
           </p>
           <div className="pt-2">
-            <Link href="/solutions/multi-branch-garage-software" onClick={handleSolutionClick}>
+            <Link href="/solutions/multi-branch-garage-software/" onClick={handleSolutionClick}>
               <Button>
                 Explore Multi-Branch Garage Software <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

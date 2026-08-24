@@ -8,21 +8,21 @@ const followUpCards = [
     icon: <FaPhoneVolume />,
     title: "CRM Lead & Enquiry Logs",
     desc: "Record incoming customer phone calls, quote requests, and follow-up dates in an integrated workshop CRM.",
-    link: "/solutions/garage-crm-software",
+    link: "/solutions/garage-crm-software/",
     anchor: "Explore Garage CRM",
   },
   {
     icon: <FaAddressCard />,
     title: "Searchable Customer Database",
     desc: "Lookup customer profiles and past vehicle service notes instantly to provide knowledgeable phone service.",
-    link: "/features/customers",
+    link: "/features/customers/",
     anchor: "Explore Customer Records",
   },
   {
     icon: <FaBell />,
     title: "Periodic Service Reminders",
     desc: "Schedule automated WhatsApp follow-up alerts when regular vehicle maintenance due dates approach.",
-    link: "/solutions/service-reminder-software",
+    link: "/solutions/service-reminder-software/",
     anchor: "Explore Reminder Tools",
   },
 ];
@@ -73,7 +73,7 @@ export default function GMFollowUp() {
 
         <div className="flex justify-center">
           <Link
-            href="/solutions/garage-crm-software"
+            href="/solutions/garage-crm-software/"
             className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover text-sm transition-colors"
           >
             Explore Garage CRM <FaArrowRight className="w-3.5 h-3.5" />

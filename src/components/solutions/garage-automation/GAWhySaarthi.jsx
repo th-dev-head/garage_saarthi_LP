@@ -10,17 +10,17 @@ export default function GAWhySaarthi() {
 
   const points = [
     { icon: <FaWrench />, title: "Built for Automotive Workshops", desc: "Designed around mechanic work lanes, vehicle checklists, and parts logs.", link: "/solutions/automobile-workshop-software/" },
-    { icon: <FaSlidersH />, title: "All-in-One Operations Platform", desc: "Centralize customer records, billing, payroll, and reports in one system.", link: "/solutions/best-workshop-management-software" },
-    { icon: <FaFileAlt />, title: "Digital Job Cards", desc: "Create and update repair tasks digitally, eliminating lost paper sheets.", link: "/features/job-card-management" },
-    { icon: <FaReceipt />, title: "GST Billing Workflows", desc: "Generate invoices with CGST/SGST layouts matching Indian workshop standards.", link: "/features/billing" },
-    { icon: <FaBoxes />, title: "Inventory Management", desc: "Track spare stock balances, purchase invoices, and log counter sales.", link: "/features/inventory" },
-    { icon: <FaUsers />, title: "CRM & Customer Management", desc: "Organize customer registers and schedule follow-ups for inquiries.", link: "/features/crm" },
-    { icon: <FaRegBell />, title: "Automated Service Reminders", desc: "Track periodic service dates and upcoming maintenance alerts.", link: "/features/service-reminders" },
-    { icon: <FaWhatsapp />, title: "WhatsApp Integration", desc: "Trigger pre-designed message templates directly from dashboard queues.", link: "/solutions/garage-whatsapp-notification-software" },
-    { icon: <FaClock />, title: "Attendance & Payroll", desc: "Track daily staff shifts and compile mechanic commission parameters.", link: "/features/attendance" },
-    { icon: <FaStore />, title: "Multi-Branch Management", desc: "Monitor total sales and active job sheets across branches centrally.", link: "/features/branches" },
-    { icon: <FaChartLine />, title: "Garage Reports", desc: "Review daily collections, parts consumed, and branch comparisons.", link: "/features/reports" },
-    { icon: <FaAndroid />, title: "Web & Android Access", desc: "Coordinate daily operations from browser dashboards or mobile app.", link: "/solutions/garage-management-app" }
+    { icon: <FaSlidersH />, title: "All-in-One Operations Platform", desc: "Centralize customer records, billing, payroll, and reports in one system.", link: "/solutions/best-workshop-management-software/" },
+    { icon: <FaFileAlt />, title: "Digital Job Cards", desc: "Create and update repair tasks digitally, eliminating lost paper sheets.", link: "/features/job-card-management/" },
+    { icon: <FaReceipt />, title: "GST Billing Workflows", desc: "Generate invoices with CGST/SGST layouts matching Indian workshop standards.", link: "/features/billing/" },
+    { icon: <FaBoxes />, title: "Inventory Management", desc: "Track spare stock balances, purchase invoices, and log counter sales.", link: "/features/inventory/" },
+    { icon: <FaUsers />, title: "CRM & Customer Management", desc: "Organize customer registers and schedule follow-ups for inquiries.", link: "/features/crm/" },
+    { icon: <FaRegBell />, title: "Automated Service Reminders", desc: "Track periodic service dates and upcoming maintenance alerts.", link: "/features/service-reminders/" },
+    { icon: <FaWhatsapp />, title: "WhatsApp Integration", desc: "Trigger pre-designed message templates directly from dashboard queues.", link: "/solutions/garage-whatsapp-notification-software/" },
+    { icon: <FaClock />, title: "Attendance & Payroll", desc: "Track daily staff shifts and compile mechanic commission parameters.", link: "/features/attendance/" },
+    { icon: <FaStore />, title: "Multi-Branch Management", desc: "Monitor total sales and active job sheets across branches centrally.", link: "/features/branches/" },
+    { icon: <FaChartLine />, title: "Garage Reports", desc: "Review daily collections, parts consumed, and branch comparisons.", link: "/features/reports/" },
+    { icon: <FaAndroid />, title: "Web, Android & iOS Access", desc: "Coordinate daily operations from browser dashboards or mobile app.", link: "/solutions/garage-management-app/" }
   ];
 
   return (

@@ -44,7 +44,7 @@ const bwsFaqData = [
   },
   {
     question: "Is GarageSaarthi cloud-based and available on mobile?",
-    answer: "Yes. GarageSaarthi runs on secure cloud servers accessible via desktop web browsers and our native Android mobile app on the Google Play Store.",
+    answer: "Yes. GarageSaarthi runs on secure cloud servers accessible via desktop web browsers and our native Android & iOS mobile apps on the Google Play Store.",
   },
   {
     question: "Does GarageSaarthi offer a free trial?",

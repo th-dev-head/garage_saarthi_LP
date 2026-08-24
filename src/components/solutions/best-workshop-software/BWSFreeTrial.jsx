@@ -14,7 +14,7 @@ const trialChecklist = [
   "Generate a GST-compliant invoice with custom series",
   "Clock mechanic staff attendance & view commission logs",
   "Audit daily cash vs online collections on the dashboard",
-  "Test job sheet creation on the Android mobile app",
+  "Test job sheet creation on the Android and iOS mobile apps",
 ];
 
 export default function BWSFreeTrial() {

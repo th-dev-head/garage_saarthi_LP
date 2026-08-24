@@ -24,7 +24,7 @@ const screenshots = [
   },
   {
     icon: <FaMobileAlt />,
-    title: "Android Mobile App",
+    title: "Android & iOS Mobile App",
     desc: "Manage bay floor operations, upload vehicle photo logs, and generate job cards right beside the car.",
   },
 ];

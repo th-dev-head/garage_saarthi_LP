@@ -32,7 +32,7 @@ const incomeExpenseCards = [
 export default function GFMIncomeExpense() {
   const handleTrialClick = () => {
     trackEvent("finance_trial_cta_click", {
-      page_path: "/solutions/garage-finance-management-software",
+      page_path: "/solutions/garage-finance-management-software/",
       cta_location: "income_expense_section",
       cta_label: "Start Managing Garage Finances",
       destination: `${FRONTEND_URL}/signup`

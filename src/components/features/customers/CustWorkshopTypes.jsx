@@ -5,10 +5,10 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function CustWorkshopTypes() {
   const workshopTypes = [
-    { title: "Car Service Centers", link: "/solutions/car-garage-software", desc: "Manage detailed customer contact books linked to car models, diagnostic check-sheets, and fuel metrics." },
-    { title: "Two-Wheeler Workshops", link: "/solutions/bike-workshop-software", desc: "Fast-moving customer profiles with automated service alerts, engine number tracking, and quick billing checkout." },
-    { title: "Car Detailing & EV Studios", link: "/solutions/car-detailing-software", desc: "Track customer membership plans, detailing packages, warranties, and multi-vehicle garage sheets." },
-    { title: "Multi-Branch Operations", link: "/solutions/multi-branch-garage-software", desc: "Centralize customer databases across outlets with secure user roles, preventing database theft." }
+    { title: "Car Service Centers", link: "/solutions/car-garage-software/", desc: "Manage detailed customer contact books linked to car models, diagnostic check-sheets, and fuel metrics." },
+    { title: "Two-Wheeler Workshops", link: "/solutions/bike-workshop-software/", desc: "Fast-moving customer profiles with automated service alerts, engine number tracking, and quick billing checkout." },
+    { title: "Car Detailing & EV Studios", link: "/solutions/car-detailing-software/", desc: "Track customer membership plans, detailing packages, warranties, and multi-vehicle garage sheets." },
+    { title: "Multi-Branch Operations", link: "/solutions/multi-branch-garage-software/", desc: "Centralize customer databases across outlets with secure user roles, preventing database theft." }
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function CustWorkshopTypes() {
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
             Workshop Customization
           </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
             Customer Databases Designed for <GradientUnderline>Diverse Garage Types</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">

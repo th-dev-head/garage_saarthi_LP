@@ -8,7 +8,7 @@ import Button from "../../common/Button";
 
 const benefits = [
   "Full Access to All Features",
-  "Support Web & Android App",
+  "Support Web, Android & iOS Apps",
   "Cancel Anytime, No Questions"
 ];
 
@@ -50,7 +50,7 @@ export default function CDPricing() {
               Start 7-Day Free Trial
             </Button>
             <Link
-              href="/pricing"
+              href="/pricing/"
               className="rounded-full bg-transparent text-white border border-white hover:bg-white/10 px-6 py-2.5 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap h-11"
             >
               View Pricing Plans

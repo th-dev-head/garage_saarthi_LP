@@ -10,7 +10,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GJCHero() {
   const handleTrialClick = () => {
     trackEvent("job_card_trial_cta_click", {
-      page_path: "/solutions/garage-job-card-software",
+      page_path: "/solutions/garage-job-card-software/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`
@@ -20,7 +20,7 @@ export default function GJCHero() {
 
   const handleScrollClick = () => {
     trackEvent("job_card_workflow_scroll", {
-      page_path: "/solutions/garage-job-card-software",
+      page_path: "/solutions/garage-job-card-software/",
       cta_location: "hero",
       cta_label: "View How Job Cards Work",
       destination: "#job-card-workflow"

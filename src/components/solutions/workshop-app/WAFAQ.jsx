@@ -19,12 +19,12 @@ const faqs = [
     a: "Yes. GarageSaarthi gives you visibility over stock counts, parts catalog logs, and tracks parts consumption against active job cards."
   },
   {
-    q: "Is GarageSaarthi available for Android?",
-    a: "Yes, the official GarageSaarthi application is available and live for public download on the Google Play Store."
+    q: "Is GarageSaarthi available for Android and iOS?",
+    a: "Yes, the official GarageSaarthi application is available and live for public download on the Google Play Store and Apple App Store."
   },
   {
     q: "Is GarageSaarthi available for iPhone?",
-    a: "The iOS application has been submitted for App Store review. iOS app is coming soon."
+    a: "Yes! GarageSaarthi is available on both Google Play Store for Android and Apple App Store for iOS."
   },
   {
     q: "Can car and bike workshops use GarageSaarthi?",

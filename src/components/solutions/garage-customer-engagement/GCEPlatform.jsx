@@ -5,11 +5,11 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 export default function GCEPlatform() {
   const steps = [
-    { icon: <FaUser />, label: "Customer", link: "/features/customers", anchor: "Customer Management" },
-    { icon: <FaCar />, label: "Vehicle", link: "/features/vehicles", anchor: "Vehicle Management" },
-    { icon: <FaFileAlt />, label: "Job Card", link: "/features/job-card-management", anchor: "Job Card Features" },
-    { icon: <FaHandHoldingUsd />, label: "Payment", link: "/features/billing", anchor: "Payments Log" },
-    { icon: <FaBell />, label: "Service Alert", link: "/features/service-reminders", anchor: "Service Alerts" }
+    { icon: <FaUser />, label: "Customer", link: "/features/customers/", anchor: "Customer Management" },
+    { icon: <FaCar />, label: "Vehicle", link: "/features/vehicles/", anchor: "Vehicle Management" },
+    { icon: <FaFileAlt />, label: "Job Card", link: "/features/job-card-management/", anchor: "Job Card Features" },
+    { icon: <FaHandHoldingUsd />, label: "Payment", link: "/features/billing/", anchor: "Payments Log" },
+    { icon: <FaBell />, label: "Service Alert", link: "/features/service-reminders/", anchor: "Service Alerts" }
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function GCEPlatform() {
 
           <div className="pt-4">
             <Link
-              href="/features"
+              href="/features/"
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
             >
               Explore All GarageSaarthi Features

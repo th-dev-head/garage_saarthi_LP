@@ -15,10 +15,10 @@ const attendanceStats = [
 export default function GPAttendanceConnection() {
   const handleAttendanceClick = () => {
     trackEvent("payroll_attendance_link_click", {
-      page_path: "/solutions/garage-payroll-software",
+      page_path: "/solutions/garage-payroll-software/",
       cta_location: "attendance_connection_section",
       cta_label: "Explore Attendance Management",
-      destination: "/features/attendance"
+      destination: "/features/attendance/"
     });
   };
 
@@ -68,7 +68,7 @@ export default function GPAttendanceConnection() {
             By keeping employee data unified, our garage employee payroll software reduces manual bookkeeping tasks and ensures transparent wage tracking for helpers, techs, and supervisors.
           </p>
           <div className="pt-2">
-            <Link href="/features/attendance" onClick={handleAttendanceClick}>
+            <Link href="/features/attendance/" onClick={handleAttendanceClick}>
               <Button>
                 Explore Attendance Management <FaArrowRight className="w-3.5 h-3.5" />
               </Button>

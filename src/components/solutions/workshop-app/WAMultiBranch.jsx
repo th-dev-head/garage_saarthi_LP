@@ -47,7 +47,7 @@ export default function WAMultiBranch() {
             
             <div className="flex flex-wrap gap-4 items-center">
               <Link
-                href="/solutions/multi-branch-garage-software"
+                href="/solutions/multi-branch-garage-software/"
                 className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
               >
                 Explore Multi-Branch Setup

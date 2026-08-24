@@ -10,7 +10,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GBFeatures() {
   const handleFeatureClick = (featureName) => {
     trackEvent("billing_feature_click", {
-      page_path: "/solutions/garage-billing-software",
+      page_path: "/solutions/garage-billing-software/",
       feature_name: featureName
     });
   };
@@ -20,37 +20,37 @@ export default function GBFeatures() {
       icon: <FaFileInvoice className="text-primary w-6 h-6" />,
       title: "GST and Custom Invoices",
       desc: "Generate professional GST bills with custom invoice numbers, HSN rates, and tax parameters.",
-      link: "/features/billing"
+      link: "/features/billing/"
     },
     {
       icon: <FaPercent className="text-primary w-6 h-6" />,
       title: "Labor and Spares Separated",
       desc: "Split service invoices into labor charges and spare parts replacement rows for transparent customer billing.",
-      link: "/solutions/garage-job-card-software"
+      link: "/solutions/garage-job-card-software/"
     },
     {
       icon: <FaCoins className="text-primary w-6 h-6" />,
       title: "Split Payment Management",
       desc: "Record split payments (Cash, UPI, Card, Net Banking) and track collections under specific registers.",
-      link: "/features/billing"
+      link: "/features/billing/"
     },
     {
       icon: <FaUserLock className="text-primary w-6 h-6" />,
       title: "Dedicated CA Access Login",
       desc: "Grant a secure login to your tax accountant to directly access GST reports and sales invoice logs.",
-      link: "/features/ca-access"
+      link: "/features/ca-access/"
     },
     {
       icon: <FaFileInvoice className="text-primary w-6 h-6" />,
       title: "Direct Counter Sales Invoices",
       desc: "Bill walk-in customers for parts and items directly without opening workshop job card logs.",
-      link: "/features/counter-sales"
+      link: "/features/counter-sales/"
     },
     {
       icon: <FaCoins className="text-primary w-6 h-6" />,
       title: "Custom Service Estimates",
       desc: "Draft price quotes for customers and convert them into final invoices with a single tap.",
-      link: "/solutions/garage-job-card-software"
+      link: "/solutions/garage-job-card-software/"
     }
   ];
 

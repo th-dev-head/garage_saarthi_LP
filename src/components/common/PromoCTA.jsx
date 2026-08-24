@@ -19,7 +19,7 @@ export default function PromoCTA({
       <div className="mx-auto max-w-full lg:max-w-5xl w-full bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-3xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-        <h2 className="text-2xl md:text-4xl font-extrabold mb-6 leading-tight">
+        <h2 className="text-2xl md:text-4xl font-bold mb-6 leading-tight">
           {title}
         </h2>
         <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -35,7 +35,7 @@ export default function PromoCTA({
             Start 7-Day Free Trial
           </Button>
           <Link
-            href="/pricing"
+            href="/pricing/"
             className="rounded-full bg-transparent border border-white/30 hover:bg-white/10 text-white px-8 py-3 text-sm font-semibold transition-all duration-200 flex items-center justify-center cursor-pointer"
           >
             View Pricing

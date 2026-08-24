@@ -61,7 +61,7 @@ export default function WAOwnersMechanics() {
         {/* Global CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/features/user-management"
+            href="/features/user-management/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-6 py-2.5 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer"
           >
             Explore User Permissions

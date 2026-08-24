@@ -13,7 +13,7 @@ export default function CWFAQ() {
     },
     {
       question: "Can GarageSaarthi create digital job cards for cars?",
-      answer: "Yes, you can generate detailed digital job cards on your desktop browser or Android mobile app, adding customer complaints, vehicle details, and repair tasks."
+      answer: "Yes, you can generate detailed digital job cards on your desktop browser, Android, or iOS mobile app, adding customer complaints, vehicle details, and repair tasks."
     },
     {
       question: "Can I maintain vehicle service history in GarageSaarthi?",
@@ -41,7 +41,7 @@ export default function CWFAQ() {
     },
     {
       question: "Is GarageSaarthi available as a mobile app?",
-      answer: "Yes, we maintain a live Android mobile application on the Google Play Store alongside our web platform. iOS support is coming soon."
+      answer: "Yes, we maintain a live mobile apps on Google Play Store & Apple App Store alongside our web platform. iOS apps are fully available."
     },
     {
       question: "Is GarageSaarthi cloud-based?",

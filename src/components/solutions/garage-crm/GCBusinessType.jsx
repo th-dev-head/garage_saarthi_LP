@@ -9,7 +9,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GCBusinessType() {
   const handleSolutionClick = (solutionName) => {
     trackEvent("solution_click", {
-      page_path: "/solutions/garage-crm-software",
+      page_path: "/solutions/garage-crm-software/",
       page_name: "garage_crm_software",
       cta_location: "business_type",
       cta_label: "Solution Link Clicked",
@@ -18,11 +18,11 @@ export default function GCBusinessType() {
   };
 
   const types = [
-    { title: "CRM for Car Garages", desc: "Manage passenger car owner profiles, fuel levels, diagnostic check-ins, and service reminders.", link: "/solutions/car-garage-software" },
-    { title: "CRM for Auto Repair Shops", desc: "Track repair inquiries, lead progress sheets, mechanic assignments, and estimate follow-ups.", link: "/solutions/auto-repair-shop-software" },
-    { title: "CRM for Automobile Workshops", desc: "Keep multi-brand customer registries, vehicle specifications, and collection dues organized.", link: "/solutions/garage-automation-software" },
-    { title: "CRM for Vehicle Workshops", desc: "Manage customer contact database files, vehicle history cards, and service campaigns.", link: "/features/vehicles" },
-    { title: "CRM for Multi-Branch Garages", desc: "Centralize customer records across locations, comparison sheets, and roles centrally.", link: "/solutions/multi-branch-garage-software" }
+    { title: "CRM for Car Garages", desc: "Manage passenger car owner profiles, fuel levels, diagnostic check-ins, and service reminders.", link: "/solutions/car-garage-software/" },
+    { title: "CRM for Auto Repair Shops", desc: "Track repair inquiries, lead progress sheets, mechanic assignments, and estimate follow-ups.", link: "/solutions/auto-repair-shop-software/" },
+    { title: "CRM for Automobile Workshops", desc: "Keep multi-brand customer registries, vehicle specifications, and collection dues organized.", link: "/solutions/garage-automation-software/" },
+    { title: "CRM for Vehicle Workshops", desc: "Manage customer contact database files, vehicle history cards, and service campaigns.", link: "/features/vehicles/" },
+    { title: "CRM for Multi-Branch Garages", desc: "Centralize customer records across locations, comparison sheets, and roles centrally.", link: "/solutions/multi-branch-garage-software/" }
   ];
 
   return (

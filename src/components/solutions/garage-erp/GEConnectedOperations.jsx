@@ -10,7 +10,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function GEConnectedOperations() {
   const handleFeatureClick = (featureName) => {
     trackEvent("feature_click", {
-      page_path: "/solutions/garage-erp-software",
+      page_path: "/solutions/garage-erp-software/",
       page_type: "core_commercial",
       page_topic: "garage_erp_software",
       cta_location: "erp_modules",
@@ -25,10 +25,10 @@ export default function GEConnectedOperations() {
       title: "Workshop Operations",
       desc: "Manage digital job cards, customer vehicle details, mechanic assignments, and counter sales billing workflows.",
       links: [
-        { label: "Digital Job Cards", href: "/solutions/garage-job-card-software" },
-        { label: "Counter Sales", href: "/features/counter-sales" },
-        { label: "Vehicle Management", href: "/features/vehicles" },
-        { label: "Customer Management", href: "/features/customers" }
+        { label: "Digital Job Cards", href: "/solutions/garage-job-card-software/" },
+        { label: "Counter Sales", href: "/features/counter-sales/" },
+        { label: "Vehicle Management", href: "/features/vehicles/" },
+        { label: "Customer Management", href: "/features/customers/" }
       ]
     },
     {
@@ -36,7 +36,7 @@ export default function GEConnectedOperations() {
       title: "Inventory & Spare Parts",
       desc: "Get real-time visibility into your spare parts stock. Record stock adjustments, buy logs, and low-stock alerts.",
       links: [
-        { label: "Garage Inventory Management", href: "/features/inventory" }
+        { label: "Garage Inventory Management", href: "/features/inventory/" }
       ]
     },
     {
@@ -44,8 +44,8 @@ export default function GEConnectedOperations() {
       title: "Customer & CRM Operations",
       desc: "Log enquiries, set follow-up dates, manage customer history, and run promotional offers and coupons.",
       links: [
-        { label: "Garage CRM", href: "/solutions/garage-crm-software" },
-        { label: "Offers & Promotions", href: "/features/offers-promotions" }
+        { label: "Garage CRM", href: "/solutions/garage-crm-software/" },
+        { label: "Offers & Promotions", href: "/features/offers-promotions/" }
       ]
     },
     {
@@ -53,10 +53,10 @@ export default function GEConnectedOperations() {
       title: "Payments & Finance",
       desc: "Generate professional GST bills, track customer payments, set customized invoice series, and grant CA access.",
       links: [
-        { label: "Payment Management", href: "/features/billing" },
-        { label: "Garage Finance Management", href: "/features/finance" },
-        { label: "Loan Management", href: "/features/loans" },
-        { label: "CA Access", href: "/features/ca-access" }
+        { label: "Payment Management", href: "/features/billing/" },
+        { label: "Garage Finance Management", href: "/features/finance/" },
+        { label: "Loan Management", href: "/features/loans/" },
+        { label: "CA Access", href: "/features/ca-access/" }
       ]
     },
     {
@@ -64,10 +64,10 @@ export default function GEConnectedOperations() {
       title: "Employee Operations",
       desc: "Track employee daily clock-in/out attendance, approve leaves, manage user roles, and run payroll.",
       links: [
-        { label: "Employee Attendance", href: "/features/attendance" },
-        { label: "Leave Management", href: "/features/leave-management" },
-        { label: "Garage Payroll Management", href: "/features/payroll" },
-        { label: "User Management", href: "/features/user-management" }
+        { label: "Employee Attendance", href: "/features/attendance/" },
+        { label: "Leave Management", href: "/features/leave-management/" },
+        { label: "Garage Payroll Management", href: "/features/payroll/" },
+        { label: "User Management", href: "/features/user-management/" }
       ]
     },
     {
@@ -75,9 +75,9 @@ export default function GEConnectedOperations() {
       title: "Reports & Business Visibility",
       desc: "Access aggregated garage reports, daily metrics logs, mechanic performance sheets, and branch operations.",
       links: [
-        { label: "Garage Reports", href: "/features/reports" },
-        { label: "Garage Dashboard", href: "/features/workshop-management-dashboard" },
-        { label: "Branch Management", href: "/features/branches" }
+        { label: "Garage Reports", href: "/features/reports/" },
+        { label: "Garage Dashboard", href: "/features/workshop-management-dashboard/" },
+        { label: "Branch Management", href: "/features/branches/" }
       ]
     }
   ];
@@ -129,7 +129,7 @@ export default function GEConnectedOperations() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <Link href="/features">
+          <Link href="/features/">
             <Button
               variant="hero"
               icon={<FaArrowRight className="w-4 h-4" />}

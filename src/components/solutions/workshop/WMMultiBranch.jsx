@@ -60,7 +60,7 @@ export default function WMMultiBranch() {
             </div>
 
             <Link
-              href="/solutions/multi-branch-garage-software"
+              href="/solutions/multi-branch-garage-software/"
               className="inline-flex items-center gap-2 font-bold text-primary hover:text-primary-hover transition-colors text-sm"
             >
               Learn about Multi-Branch Setup <FaArrowRight className="w-3.5 h-3.5" />

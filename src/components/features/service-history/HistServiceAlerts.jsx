@@ -10,7 +10,7 @@ export default function HistServiceAlerts() {
         <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block">
           Customer Retention
         </span>
-        <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+        <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
           Use Vehicle Service Records for Better <GradientUnderline>Service Follow-Ups</GradientUnderline>
         </h2>
         <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
@@ -19,7 +19,7 @@ export default function HistServiceAlerts() {
 
         <div className="pt-4 flex justify-center">
           <Link
-            href="/features/service-reminders"
+            href="/features/service-reminders/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 cursor-pointer inline-flex items-center gap-2"
           >
             Explore Service Alerts <FaArrowRight className="w-4 h-4" />

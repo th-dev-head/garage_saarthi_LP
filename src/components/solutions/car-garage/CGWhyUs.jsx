@@ -59,8 +59,8 @@ const differentiators = [
   },
   {
     icon: <FaLaptop className="w-5 h-5" />,
-    title: "Web and Android Access",
-    desc: "Use GarageSaarthi from any browser or the GarageSaarthi Android app — no hardware dependency.",
+    title: "Web, Android & iOS Access",
+    desc: "Use GarageSaarthi from any browser or the GarageSaarthi Android & iOS apps — no hardware dependency.",
   },
   {
     icon: <FaCheckCircle className="w-5 h-5" />,

@@ -28,7 +28,7 @@ const wsiFaqData = [
   },
   {
     question: "Can I use GarageSaarthi on an Android mobile phone?",
-    answer: "Yes. GarageSaarthi is available as an Android app on the Google Play Store and as a web platform accessible on any browser. (iOS app coming soon).",
+    answer: "Yes. GarageSaarthi is available as an Android app on the Google Play Store & Apple App Store, and as a cloud web platform on any browser.",
   },
   {
     question: "Can GarageSaarthi handle multi-branch workshops?",

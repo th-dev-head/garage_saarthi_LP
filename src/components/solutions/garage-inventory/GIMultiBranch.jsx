@@ -54,12 +54,12 @@ export default function GIMultiBranch() {
               Growing your business shouldn't create stock tracking problems. GarageSaarthi connects stock counts across all locations inside one central dashboard interface.
             </p>
             <p>
-              Check stock levels at other branches to see if a missing part is available nearby before ordering from your vendor. Use our <Link href="/solutions/multi-branch-garage-software" className="text-primary font-semibold hover:underline">Multi-Branch Garage Software</Link> database to track items across branches.
+              Check stock levels at other branches to see if a missing part is available nearby before ordering from your vendor. Use our <Link href="/solutions/multi-branch-garage-software/" className="text-primary font-semibold hover:underline">Multi-Branch Garage Software</Link> database to track items across branches.
             </p>
           </div>
 
           <Link
-            href="/solutions/multi-branch-garage-software"
+            href="/solutions/multi-branch-garage-software/"
             className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-lg w-fit"
           >
             Explore Multi-Branch Garage Management

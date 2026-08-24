@@ -10,7 +10,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GAEcosystem() {
   const handleFeatureClick = (name, url) => {
     trackEvent("attendance_feature_click", {
-      page_path: "/solutions/garage-attendance-software",
+      page_path: "/solutions/garage-attendance-software/",
       cta_location: "ecosystem_section",
       cta_label: name,
       destination: url
@@ -18,12 +18,12 @@ export default function GAEcosystem() {
   };
 
   const modules = [
-    { title: "Payroll", desc: "Manage salaries and commissions for mechanics.", url: "/features/payroll" },
-    { title: "Leave Management", desc: "Log shift breaks and paid leave parameters.", url: "/features/leave-management" },
-    { title: "User Management", desc: "Configure role permissions for mechanics and managers.", url: "/features/user-management" },
-    { title: "Job Cards", desc: "Create and manage customer repair orders.", url: "/features/job-card-management" },
-    { title: "Inventory", desc: "Track spare parts and audit stock levels.", url: "/features/inventory" },
-    { title: "Reports", desc: "Analyze daily collections and operational metrics.", url: "/features/reports" }
+    { title: "Payroll", desc: "Manage salaries and commissions for mechanics.", url: "/features/payroll/" },
+    { title: "Leave Management", desc: "Log shift breaks and paid leave parameters.", url: "/features/leave-management/" },
+    { title: "User Management", desc: "Configure role permissions for mechanics and managers.", url: "/features/user-management/" },
+    { title: "Job Cards", desc: "Create and manage customer repair orders.", url: "/features/job-card-management/" },
+    { title: "Inventory", desc: "Track spare parts and audit stock levels.", url: "/features/inventory/" },
+    { title: "Reports", desc: "Analyze daily collections and operational metrics.", url: "/features/reports/" }
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function GAEcosystem() {
         </div>
 
         <div className="flex justify-center pt-4">
-          <Link href="/features" onClick={() => handleFeatureClick("Explore All Features", "/features")}>
+          <Link href="/features/" onClick={() => handleFeatureClick("Explore All Features", "/features/")}>
             <Button>
               Explore All GarageSaarthi Features <FaArrowRight className="w-3.5 h-3.5" />
             </Button>

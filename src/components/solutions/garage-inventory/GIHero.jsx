@@ -7,11 +7,12 @@ import Button from "../../common/Button";
 import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import PlayStoreBadge from "../../common/PlayStoreBadge";
+import AppStoreBadge from "../../common/AppStoreBadge";
 
 export default function GIHero() {
   const handleTrialClick = () => {
     trackEvent("inventory_trial_cta_click", {
-      page_path: "/solutions/garage-inventory-software",
+      page_path: "/solutions/garage-inventory-software/",
       cta_location: "hero",
       cta_label: "Start 7-Day Free Trial",
       destination: `${FRONTEND_URL}/signup`,
@@ -22,7 +23,7 @@ export default function GIHero() {
 
   const handleExploreClick = () => {
     trackEvent("inventory_feature_click", {
-      page_path: "/solutions/garage-inventory-software",
+      page_path: "/solutions/garage-inventory-software/",
       cta_location: "hero",
       cta_label: "Explore Inventory Features",
       feature_name: "Inventory Features",
@@ -65,8 +66,11 @@ export default function GIHero() {
             >
               Explore Inventory Features
             </Link>
-            <PlayStoreBadge />
-          </div>
+            <div className="flex items-center gap-4">
+<PlayStoreBadge />
+<AppStoreBadge />
+</div>
+</div>
         </div>
 
         {/* Right UI Preview Card */}

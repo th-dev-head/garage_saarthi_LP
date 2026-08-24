@@ -15,7 +15,7 @@ const kpiBars = [
 export default function GRADashboard() {
   const handleDashboardClick = () => {
     trackEvent("reports_dashboard_click", {
-      page_path: "/solutions/garage-reports-analytics-software",
+      page_path: "/solutions/garage-reports-analytics-software/",
       cta_location: "dashboard_section",
       cta_label: "Explore Garage Dashboard"
     });
@@ -36,7 +36,7 @@ export default function GRADashboard() {
           </p>
           <div className="pt-2">
             <Link
-              href="/features/workshop-management-dashboard"
+              href="/features/workshop-management-dashboard/"
               onClick={handleDashboardClick}
               className="rounded-full bg-primary hover:bg-primary-hover text-white px-8 py-3 text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2 cursor-pointer shadow-md"
             >

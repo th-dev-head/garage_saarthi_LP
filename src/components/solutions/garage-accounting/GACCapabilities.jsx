@@ -10,7 +10,7 @@ import { trackEvent } from "@/src/utils/pixel";
 export default function GACCapabilities() {
   const handleFeatureClick = (name, url) => {
     trackEvent("finance_feature_click", {
-      page_path: "/solutions/garage-accounting-software",
+      page_path: "/solutions/garage-accounting-software/",
       cta_location: "capabilities_section",
       cta_label: name,
       destination: url
@@ -18,12 +18,12 @@ export default function GACCapabilities() {
   };
 
   const cards = [
-    { icon: <FaCreditCard className="w-6 h-6 text-primary" />, title: "Track Garage Payments", desc: "Manage outstanding client balances, UPI/Card payment modes, and log invoices payouts.", linkName: "Explore Payments", url: "/features/billing" },
-    { icon: <FaCoins className="w-6 h-6 text-primary" />, title: "Manage Income & Expenses", desc: "Track operational cash inflow, store purchase bills, and check expenses logs dynamically.", linkName: "Explore Finance Management", url: "/features/finance" },
-    { icon: <FaFileInvoice className="w-6 h-6 text-primary" />, title: "GST Billing & Invoices", desc: "Generate tax-compliant bills with custom invoice series, CGST, and SGST parameters.", linkName: "Explore Billing Features", url: "/features/billing" },
-    { icon: <FaUserTie className="w-6 h-6 text-primary" />, title: "Give Your CA Access", desc: "Invite your Chartered Accountant (CA) under a restricted, read-only profile to audit files.", linkName: "Explore CA Access", url: "/features/ca-access" },
-    { icon: <FaHandHoldingUsd className="w-6 h-6 text-primary" />, title: "Manage Garage Loans", desc: "Record machinery loan liabilities, repayment EMI dates, and outstanding calculations.", linkName: "Explore Loan Management", url: "/features/loans" },
-    { icon: <FaChartPie className="w-6 h-6 text-primary" />, title: "View Financial Reports", desc: "Get real-time operational collections data, payment mode audits, and monthly metrics.", linkName: "Explore Garage Reports", url: "/features/reports" }
+    { icon: <FaCreditCard className="w-6 h-6 text-primary" />, title: "Track Garage Payments", desc: "Manage outstanding client balances, UPI/Card payment modes, and log invoices payouts.", linkName: "Explore Payments", url: "/features/billing/" },
+    { icon: <FaCoins className="w-6 h-6 text-primary" />, title: "Manage Income & Expenses", desc: "Track operational cash inflow, store purchase bills, and check expenses logs dynamically.", linkName: "Explore Finance Management", url: "/features/finance/" },
+    { icon: <FaFileInvoice className="w-6 h-6 text-primary" />, title: "GST Billing & Invoices", desc: "Generate tax-compliant bills with custom invoice series, CGST, and SGST parameters.", linkName: "Explore Billing Features", url: "/features/billing/" },
+    { icon: <FaUserTie className="w-6 h-6 text-primary" />, title: "Give Your CA Access", desc: "Invite your Chartered Accountant (CA) under a restricted, read-only profile to audit files.", linkName: "Explore CA Access", url: "/features/ca-access/" },
+    { icon: <FaHandHoldingUsd className="w-6 h-6 text-primary" />, title: "Manage Garage Loans", desc: "Record machinery loan liabilities, repayment EMI dates, and outstanding calculations.", linkName: "Explore Loan Management", url: "/features/loans/" },
+    { icon: <FaChartPie className="w-6 h-6 text-primary" />, title: "View Financial Reports", desc: "Get real-time operational collections data, payment mode audits, and monthly metrics.", linkName: "Explore Garage Reports", url: "/features/reports/" }
   ];
 
   return (
