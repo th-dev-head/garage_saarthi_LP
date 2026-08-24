@@ -7,7 +7,7 @@ export default function UMWorkshopTypes() {
   const workshopTypes = [
     { title: "Car Garage User Controls", link: "/solutions/car-garage-software", desc: "Block mechanics from viewing car parts pricing, billing tables, and owner profit dashboards." },
     { title: "Bike Workshop Team Logins", link: "/solutions/bike-workshop-software", desc: "Assign custom profiles to service advisors for check-ins and billing cashiers for checkout." },
-    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software", desc: "Enable role permissions to prevent deleting closed estimates and modifying digital invoices." },
+    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software/", desc: "Enable role permissions to prevent deleting closed estimates and modifying digital invoices." },
     { title: "Independent Repair Shops", link: "/solutions/workshop-management-software", desc: "Audit edits, trace job card creations, and restrict logins strictly to the shop Wi-Fi network." }
   ];
 

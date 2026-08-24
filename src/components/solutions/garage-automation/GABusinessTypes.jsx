@@ -16,7 +16,7 @@ export default function GABusinessTypes() {
       icon: <FaWrench className="text-slate-500 w-5 h-5" />,
       title: "Automobile Workshops",
       desc: "Track multibrand repair work, inventory spares catalog, and labor tasks.",
-      link: "/solutions/automobile-workshop-software",
+      link: "/solutions/automobile-workshop-software/",
       anchor: "Automobile Workshop"
     },
     {

@@ -9,7 +9,7 @@ export default function GAWhySaarthi() {
   const router = useRouter();
 
   const points = [
-    { icon: <FaWrench />, title: "Built for Automotive Workshops", desc: "Designed around mechanic work lanes, vehicle checklists, and parts logs.", link: "/solutions/automobile-workshop-software" },
+    { icon: <FaWrench />, title: "Built for Automotive Workshops", desc: "Designed around mechanic work lanes, vehicle checklists, and parts logs.", link: "/solutions/automobile-workshop-software/" },
     { icon: <FaSlidersH />, title: "All-in-One Operations Platform", desc: "Centralize customer records, billing, payroll, and reports in one system.", link: "/solutions/best-workshop-management-software" },
     { icon: <FaFileAlt />, title: "Digital Job Cards", desc: "Create and update repair tasks digitally, eliminating lost paper sheets.", link: "/features/job-card-management" },
     { icon: <FaReceipt />, title: "GST Billing Workflows", desc: "Generate invoices with CGST/SGST layouts matching Indian workshop standards.", link: "/features/billing" },

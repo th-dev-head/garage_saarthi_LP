@@ -8,7 +8,7 @@ export default function MGWorkshopTypes() {
     { title: "Car Detailing & Painting Spas", link: "/solutions/car-detailing-software", desc: "Compare side-by-side Before/After body detailing photos, ceramic coatings, and paint transformations." },
     { title: "Car Repair Workshop Galleries", link: "/solutions/car-workshop-software", desc: "Snap engine component damage, worn brake rotors, and suspension leaks to justify part replacements." },
     { title: "Two Wheeler Service Spares", link: "/solutions/bike-workshop-software", desc: "Share images of dirty spark plugs or worn chains directly with bike owners via WhatsApp link." },
-    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software", desc: "Maintain structured image logs of pre-existing scratch check-ins before starting diagnostic jobs." }
+    { title: "Multi-Brand Service Hubs", link: "/solutions/automobile-workshop-software/", desc: "Maintain structured image logs of pre-existing scratch check-ins before starting diagnostic jobs." }
   ];
 
   return (

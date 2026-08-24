@@ -43,7 +43,7 @@ export default function WSIIndianContext() {
         <div className="text-center">
           <p className="text-xs md:text-sm text-slate-600">
             Explore our specialized{" "}
-            <Link href="/solutions/automobile-workshop-software" className="font-bold text-primary hover:underline">
+            <Link href="/solutions/automobile-workshop-software/" className="font-bold text-primary hover:underline">
               automobile workshop software
             </Link>{" "}
             solution.

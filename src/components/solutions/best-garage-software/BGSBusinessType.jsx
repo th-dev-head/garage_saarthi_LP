@@ -22,7 +22,7 @@ const businessTypes = [
     icon: <FaTools />,
     title: "Multi-Brand Automobile Workshops",
     desc: "Handle diverse vehicle makes, complex mechanic labor commissions, bulk inventory stock, and dedicated CRM lead tracking.",
-    link: "/solutions/automobile-workshop-software",
+    link: "/solutions/automobile-workshop-software/",
     anchor: "Explore Multi-Brand Software",
   },
   {

@@ -28,7 +28,7 @@ export default function GEBusinessType() {
     {
       title: "Automobile Workshops",
       desc: "Streamline multi-brand repair cycles, vehicle records, and CA accounting list access.",
-      link: "/solutions/automobile-workshop-software"
+      link: "/solutions/automobile-workshop-software/"
     },
     {
       title: "Auto Repair Shops",

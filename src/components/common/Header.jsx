@@ -21,7 +21,7 @@ const Header = () => {
     { name: "Solutions", href: "#", isDropdown: true, dropdownType: "solutions" },
     { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
     { name: "Download App", href: "/download-app" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/contact/" },
     { name: "Pricing", href: "/pricing" },
   ];
 
@@ -43,7 +43,7 @@ const Header = () => {
     ],
     "Workshop Solutions": [
       { name: "Workshop Management", href: "/solutions/workshop-management-software" },
-      { name: "Automobile Workshop", href: "/solutions/automobile-workshop-software" },
+      { name: "Automobile Workshop", href: "/solutions/automobile-workshop-software/" },
       { name: "Auto Repair Shop", href: "/solutions/auto-repair-shop-software" },
       { name: "Car Garage", href: "/solutions/car-garage-software" },
       { name: "Car Workshop", href: "/solutions/car-workshop-software" },

@@ -18,7 +18,7 @@ export default function CRMWorkshopTypes() {
     {
       title: "CRM for Automobile Workshops",
       desc: "Keep multi-brand customer registries, vehicle specifications, and collection dues organized.",
-      link: "/solutions/automobile-workshop-software"
+      link: "/solutions/automobile-workshop-software/"
     },
     {
       title: "CRM for Vehicle Workshops",

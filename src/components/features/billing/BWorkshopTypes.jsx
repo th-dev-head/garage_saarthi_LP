@@ -7,7 +7,7 @@ export default function BWorkshopTypes() {
   const workshopTypes = [
     { title: "Car Garage Billing Software", link: "/solutions/car-garage-software", desc: "Separate parts and labor billing, damage logs, and WhatsApp bill link sharing." },
     { title: "Bike Workshop Billing Software", link: "/solutions/bike-workshop-software", desc: "Rapid service checkout logs, counter spare parts sales, and payment collections." },
-    { title: "Automobile Service Centers", link: "/solutions/automobile-workshop-software", desc: "Multi-brand repairs log, customized invoice series prefixes, and CA account registers." },
+    { title: "Automobile Service Centers", link: "/solutions/automobile-workshop-software/", desc: "Multi-brand repairs log, customized invoice series prefixes, and CA account registers." },
     { title: "Vehicle Repair Businesses", link: "/solutions/workshop-management-software", desc: "Track estimates, log split payment modes, and monitor outstanding customer balances." }
   ];
 
