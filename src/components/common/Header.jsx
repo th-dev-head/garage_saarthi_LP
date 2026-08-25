@@ -266,9 +266,8 @@ const Header = () => {
                             e.preventDefault();
                             toggleDesktop();
                           }}
-                          className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors cursor-pointer animate-none ${
-                            isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
-                          }`}
+                          className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors cursor-pointer animate-none ${isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
+                            }`}
                         >
                           {link.name}
                           <FaChevronDown className={`w-2.5 h-2.5 ml-1 xl:ml-2 inline-block align-middle transition-transform duration-200 ${isOpenDesktop ? "rotate-180" : "group-hover:rotate-180"}`} />
@@ -336,9 +335,8 @@ const Header = () => {
                     <Link
                       href={link.href}
                       onClick={(e) => handleNavClick(e, link)}
-                      className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors whitespace-nowrap ${
-                        isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
-                      }`}
+                      className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors whitespace-nowrap ${isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
+                        }`}
                     >
                       {link.name}
                     </Link>
