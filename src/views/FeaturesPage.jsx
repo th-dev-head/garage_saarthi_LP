@@ -19,6 +19,7 @@ import ExpenseIcon from "../assets/icons/Expense.svg";
 import ReportIcon from "../assets/icons/Report.svg";
 import PayrollIcon from "../assets/icons/Payroll.svg";
 import ClockIcon from "../assets/icons/Clock.svg";
+import GreetingIcon from "../assets/icons/Greeting.svg";
 
 const allFeaturesList = [
   {
@@ -57,7 +58,8 @@ const allFeaturesList = [
     items: [
       { title: "CRM & Lead Management", description: "Empower your team with effective lead management tools.", icon: PortalIcon },
       { title: "WhatsApp Notifications", description: "Auto-send bookings, service alerts, and invoice links directly to customer WhatsApp.", icon: WhatsAppIcon },
-      { title: "Customer Management", description: "Online platform for customers to interact and access services.", icon: PortalIcon },
+      { title: "Occasion Greetings", description: "Auto-send Birthday & Anniversary WhatsApp wishes with custom discount coupons.", icon: GreetingIcon },
+      { title: "Customer Management", description: "Central customer records with linked vehicles and service histories.", icon: PortalIcon },
       { title: "Ratings & Reviews", description: "Respond to reviews and address customer concerns directly.", icon: AnalyticsIcon },
       { title: "Customer Complaints", description: "Track & analyze complaints gain insights to prevent future issues.", icon: AnalyticsIcon }
     ]

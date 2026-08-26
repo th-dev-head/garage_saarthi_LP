@@ -23,7 +23,7 @@ const srWhatsAppFeatures = [
 export default function SRWhatsAppIntegration() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side Features */}
         <div>
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
@@ -77,7 +77,7 @@ export default function SRWhatsAppIntegration() {
               <span className="text-amber-400 font-bold block">🎁 Special Offer: 15% OFF Labor Charge</span>
               <span className="text-slate-400 block">Valid for bookings made this week!</span>
             </div>
-            <div className="pt-2 flex justify-between items-center text-[10px] text-slate-400 border-t border-slate-700">
+            <div className="pt-2 flex justify-between items-center text-[10px] text-slate-400">
               <span>Sent at 10:30 AM</span>
               <span className="text-emerald-400 flex items-center gap-1 font-semibold">
                 <FaCheckDouble /> Read

@@ -1,12 +1,17 @@
 import React from "react";
 import Link from "next/link";
-import { FaWhatsapp, FaBell, FaHistory, FaArrowRight } from "react-icons/fa";
+import { FaWhatsapp, FaBell, FaHistory, FaArrowRight, FaGift } from "react-icons/fa";
 
 const features = [
   {
     icon: <FaWhatsapp className="w-4.5 h-4.5" />,
     title: "WhatsApp Shared Links",
     desc: "Share professional invoices, job card status summaries, and estimates with one click.",
+  },
+  {
+    icon: <FaGift className="w-4.5 h-4.5" />,
+    title: "Birthday & Anniversary Wishes",
+    desc: "Auto-send warm WhatsApp greetings with personalized discounts on customer birthdays & anniversaries.",
   },
   {
     icon: <FaBell className="w-4.5 h-4.5" />,

@@ -40,7 +40,7 @@ const linkedVehicles = [
 export default function GCERecords() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         {/* Comparison Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Text Column */}

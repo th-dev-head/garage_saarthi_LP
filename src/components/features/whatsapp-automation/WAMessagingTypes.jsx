@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle } from "react-icons/fa";
+import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle, FaGift } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const waMessagingTypes = [
@@ -12,6 +12,11 @@ const waMessagingTypes = [
     icon: FaReceipt,
     title: "GST / Non-GST Invoices",
     desc: "Share PDF invoices with tax breakdown, warranty terms, and clickable online payment buttons."
+  },
+  {
+    icon: FaGift,
+    title: "Birthday & Anniversary Wishes",
+    desc: "Delight vehicle owners with auto-scheduled WhatsApp greetings and exclusive service discount vouchers on their special days."
   },
   {
     icon: FaCheckCircle,
@@ -28,7 +33,7 @@ const waMessagingTypes = [
 export default function WAMessagingTypes() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side Features */}
         <div>
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">

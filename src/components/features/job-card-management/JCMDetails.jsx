@@ -11,7 +11,7 @@ const checkInChecklist = [
 export default function JCMDetails() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side Visual Check-in Mockup */}
         <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-sm">
           <div className="flex items-center justify-between border-b border-slate-200 pb-3">

@@ -5,7 +5,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function BFinanceVisibility() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left card representation */}
         <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-4 shadow-sm order-2 md:order-1">
           <div className="flex items-center gap-2 border-b border-slate-200 pb-4">

@@ -19,7 +19,7 @@ export default function GBInventoryConnection() {
 
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left text */}
         <div>
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">

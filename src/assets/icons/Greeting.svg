@@ -1,0 +1,11 @@
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gift box body -->
+  <path d="M9 18H33V33C33 34.6569 31.6569 36 30 36H12C10.3431 36 9 34.6569 9 33V18Z" stroke="#B02E0C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Gift box lid -->
+  <rect x="6" y="13" width="30" height="6" rx="1.5" stroke="#B02E0C" stroke-width="3" fill="none"/>
+  <!-- Vertical Ribbon -->
+  <path d="M21 13V36" stroke="#B02E0C" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bow loops -->
+  <path d="M21 13C17.5 7.5 10 7.5 12 11.5C13.5 14 18 13 21 13Z" stroke="#B02E0C" stroke-width="2.5" fill="#B02E0C"/>
+  <path d="M21 13C24.5 7.5 32 7.5 30 11.5C28.5 14 24 13 21 13Z" stroke="#B02E0C" stroke-width="2.5" fill="#B02E0C"/>
+</svg>
