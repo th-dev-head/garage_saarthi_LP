@@ -19,7 +19,7 @@ export default function GCCustomerVehicle() {
 
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Card visual */}
         <div className="bg-white border border-slate-200/80 p-8 rounded-3xl space-y-4 shadow-sm">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-4">

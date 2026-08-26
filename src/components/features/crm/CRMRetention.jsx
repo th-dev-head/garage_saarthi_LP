@@ -6,13 +6,14 @@ import GradientUnderline from "../../common/GradientUnderline";
 const retentionFields = [
   { label: "Customer", val: "Ramesh Patel", valClass: "text-slate-900 font-bold" },
   { label: "Vehicle", val: "Honda City • GJ 05 CD 5678", valClass: "text-slate-900 font-bold" },
-  { label: "Alert Type", val: "Next Service Due (6 Months)", valClass: "text-primary font-bold" },
-  { label: "Action", val: "WhatsApp Reminder Sent ✅", valClass: "text-emerald-600 font-bold" }
+  { label: "Special Occasion", val: "Birthday / Anniversary Wish 🎂", valClass: "text-purple-600 font-bold" },
+  { label: "Action", val: "WhatsApp Greeting & 10% Coupon Sent ✅", valClass: "text-emerald-600 font-bold" }
 ];
 
 export default function CRMRetention() {
   const checkPoints = [
     "Maintain organized service records connected to customer & vehicle profiles.",
+    "Auto-schedule Birthday & Anniversary WhatsApp wishes with personalized discount offers.",
     "Track upcoming service requirements based on calendar alerts and mileage.",
     "Help improve customer follow-ups and marketing coupon distribution."
   ];

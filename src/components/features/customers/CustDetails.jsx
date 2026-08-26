@@ -4,9 +4,9 @@ import GradientUnderline from "../../common/GradientUnderline";
 
 const custRecordSections = [
   {
-    title: "Customer Records",
+    title: "Customer Records & Occasions",
     borderStyle: "border-l-4 border-primary",
-    desc: "Store contact details, communication history, preferences, and logs. Access the comprehensive customer management hub anytime to view customer details."
+    desc: "Store contact details, communication history, Birthday and Anniversary dates to trigger automated celebration greetings and loyalty offers."
   },
   {
     title: "Vehicle Records",
@@ -28,7 +28,7 @@ const linkedVehiclesList = [
 export default function CustDetails() {
   return (
     <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         {/* Comparison Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Text Column */}
@@ -78,6 +78,10 @@ export default function CustDetails() {
                 <p className="text-slate-600">
                   <strong>Phone Number:</strong> +91 98765 43210
                 </p>
+                <div className="flex justify-between items-center bg-purple-50/60 border border-purple-100 p-2 rounded-lg text-slate-700 text-[11px]">
+                  <span>🎂 <strong>Birthday:</strong> 14 August</span>
+                  <span className="text-[9px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">Auto-Wish Active</span>
+                </div>
                 <p className="text-slate-600">
                   <strong>Linked Vehicles:</strong>
                 </p>

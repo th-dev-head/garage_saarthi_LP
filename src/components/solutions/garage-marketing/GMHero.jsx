@@ -16,7 +16,7 @@ export default function GMHero() {
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 px-4 lg:px-15 2xl:px-50 pt-36 pb-20 md:pt-44 md:pb-28 flex justify-center">
-        <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full text-center">
+        <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-4xl text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/80 text-xs font-semibold px-4 py-1.5 rounded-full border border-white/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />

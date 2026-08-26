@@ -1,9 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import { FaTags, FaPercent } from "react-icons/fa";
+import { FaTags, FaPercent, FaGift } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const offerCards = [
+  {
+    badgeText: "Birthday & Occasion",
+    badgeClass: "bg-purple-100 text-purple-700 font-bold px-2 py-0.5 rounded text-[8px] uppercase tracking-wider",
+    iconBg: "bg-purple-100 text-purple-700",
+    icon: FaGift,
+    title: "Birthday / Anniversary Gift",
+    desc: "Auto-sent greeting with 10% discount on labor or free foam wash.",
+    code: "CODE: BDAYGIFT"
+  },
   {
     badgeText: "Festive Special",
     badgeClass: "bg-primary/10 text-primary font-bold px-2 py-0.5 rounded text-[8px] uppercase tracking-wider",
@@ -27,7 +36,7 @@ const offerCards = [
 export default function GCEOffers() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-6xl w-full">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* Text Column Left */}

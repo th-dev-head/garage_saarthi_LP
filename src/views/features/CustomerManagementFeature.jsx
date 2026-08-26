@@ -1,8 +1,8 @@
 import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
-
 import CustHero from "../../components/features/customers/CustHero";
 import CustDefinition from "../../components/features/customers/CustDefinition";
+import CustDetails from "../../components/features/customers/CustDetails";
 import CustPaperVsDigital from "../../components/features/customers/CustPaperVsDigital";
 import CustCoreCapabilities from "../../components/features/customers/CustCoreCapabilities";
 import CustWorkflow from "../../components/features/customers/CustWorkflow";
@@ -17,6 +17,7 @@ export default function CustomerManagementFeature() {
     <PageLayout>
       <CustHero />
       <CustDefinition />
+      <CustDetails />
       <CustPaperVsDigital />
       <CustCoreCapabilities />
       <CustWorkflow />
