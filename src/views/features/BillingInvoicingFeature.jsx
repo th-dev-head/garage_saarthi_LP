@@ -7,6 +7,7 @@ import BPaperVsDigital from "../../components/features/billing/BPaperVsDigital";
 import BCoreCapabilities from "../../components/features/billing/BCoreCapabilities";
 import BWorkflow from "../../components/features/billing/BWorkflow";
 import BGSTBilling from "../../components/features/billing/BGSTBilling";
+import BInvoiceThemes from "../../components/features/billing/BInvoiceThemes";
 import BWorkshopTypes from "../../components/features/billing/BWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
 import TestimonialsGrid from "../../components/common/TestimonialsGrid";
@@ -22,6 +23,7 @@ export default function BillingInvoicingFeature() {
       <BCoreCapabilities />
       <BWorkflow />
       <BGSTBilling />
+      <BInvoiceThemes />
       <BWorkshopTypes />
       <CloudAccessCommon bgClass="bg-white" />
       <TestimonialsGrid bgClass="bg-slate-50" />

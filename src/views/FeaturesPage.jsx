@@ -2,6 +2,8 @@
 
 import PageLayout from "@/src/components/common/PageLayout";
 import React, { useEffect } from "react";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 import JobIcon from "../assets/icons/Job.svg";
 import DashboardIcon from "../assets/icons/Gdashboard.svg";
@@ -25,52 +27,53 @@ const allFeaturesList = [
   {
     category: "Repairs & Operations",
     items: [
-      { title: "Job Management", description: "Track repairs from start to finish with digital job cards.", icon: JobIcon },
-      { title: "Estimates", description: "Send professional estimates in seconds. Get approvals faster and get to work sooner.", icon: FinanceIcon },
-      { title: "Vehicle Management", description: "Track every vehicle and maintain detailed customer records.", icon: GarageIcon },
-      { title: "Service Reminders", description: "Diagnose multiple systems with a single tool.", icon: DashboardIcon },
-      { title: "Parts Requisition", description: "Reduce downtime with timely parts and accurate requisitions.", icon: InventoryIcon },
-      { title: "Counter Sales", description: "Quick parts checkout, walk-in customer billing, and instant counter sales.", icon: CartIcon }
+      { title: "Job Management", description: "Track repairs from start to finish with digital job cards.", icon: JobIcon, href: "/features/job-card-management/" },
+      { title: "Estimates", description: "Send professional estimates in seconds. Get approvals faster and get to work sooner.", icon: FinanceIcon, href: "/features/job-card-management/" },
+      { title: "Vehicle Management", description: "Track every vehicle and maintain detailed customer records.", icon: GarageIcon, href: "/features/vehicles/" },
+      { title: "Service Reminders", description: "Diagnose multiple systems with a single tool.", icon: DashboardIcon, href: "/features/service-reminders/" },
+      { title: "Parts Requisition", description: "Reduce downtime with timely parts and accurate requisitions.", icon: InventoryIcon, href: "/features/inventory/" },
+      { title: "Counter Sales", description: "Quick parts checkout, walk-in customer billing, and instant counter sales.", icon: CartIcon, href: "/features/counter-sales/" }
     ]
   },
   {
     category: "Billing & Finance",
     items: [
-      { title: "Billing & Invoicing", description: "Generation and sending of bills for products or services rendered.", icon: PaymentsIcon },
-      { title: "Finance Management", description: "Manage billing, payments, accounts ledger, and expense tracking in one place.", icon: RupeeIcon },
-      { title: "Expenses", description: "Simplify budgeting and forecasting with clear insights.", icon: ExpenseIcon },
-      { title: "Purchases", description: "Control spending and optimize parts purchases.", icon: InventoryIcon },
-      { title: "Cash Management", description: "Manage petty cash and track expenses efficiently.", icon: MoneyBagIcon }
+      { title: "Billing & Invoicing", description: "Generation and sending of bills for products or services rendered.", icon: PaymentsIcon, href: "/features/billing/" },
+      { title: "8+ Invoice Themes", description: "Customize invoice layouts with 8 modern, luxury, GST, and A5 templates with live UPI QR.", icon: PaymentsIcon, href: "/features/billing/" },
+      { title: "Finance Management", description: "Manage billing, payments, accounts ledger, and expense tracking in one place.", icon: RupeeIcon, href: "/features/finance/" },
+      { title: "Expenses", description: "Simplify budgeting and forecasting with clear insights.", icon: ExpenseIcon, href: "/features/finance/" },
+      { title: "Purchases", description: "Control spending and optimize parts purchases.", icon: InventoryIcon, href: "/features/inventory/" },
+      { title: "Cash Management", description: "Manage petty cash and track expenses efficiently.", icon: MoneyBagIcon, href: "/features/finance/" }
     ]
   },
   {
     category: "Staff & Workforce",
     items: [
-      { title: "Staff & Payroll", description: "Track staff attendance, calculate commissions, and generate wage slips.", icon: PayrollIcon },
-      { title: "Staff Tracking", description: "Monitoring and recording the duration of tasks or activities.", icon: PortalIcon },
-      { title: "Technician Productivity", description: "Enhance Technician Efficiency Maximize output and optimize.", icon: AnalyticsIcon },
-      { title: "Employee Attendance", description: "Boost accountability to promote punctuality and productivity.", icon: ClockIcon },
-      { title: "Employee Payroll", description: "Employee Self-Service Access payroll and tax details.", icon: PortalIcon }
+      { title: "Staff & Payroll", description: "Track staff attendance, calculate commissions, and generate wage slips.", icon: PayrollIcon, href: "/features/payroll/" },
+      { title: "Staff Tracking", description: "Monitoring and recording the duration of tasks or activities.", icon: PortalIcon, href: "/features/attendance/" },
+      { title: "Technician Productivity", description: "Enhance Technician Efficiency Maximize output and optimize.", icon: AnalyticsIcon, href: "/features/user-management/" },
+      { title: "Employee Attendance", description: "Boost accountability to promote punctuality and productivity.", icon: ClockIcon, href: "/features/attendance/" },
+      { title: "Employee Payroll", description: "Employee Self-Service Access payroll and tax details.", icon: PortalIcon, href: "/features/payroll/" }
     ]
   },
   {
     category: "CRM & Customer Experience",
     items: [
-      { title: "CRM & Lead Management", description: "Empower your team with effective lead management tools.", icon: PortalIcon },
-      { title: "WhatsApp Notifications", description: "Auto-send bookings, service alerts, and invoice links directly to customer WhatsApp.", icon: WhatsAppIcon },
-      { title: "Occasion Greetings", description: "Auto-send Birthday & Anniversary WhatsApp wishes with custom discount coupons.", icon: GreetingIcon },
-      { title: "Customer Management", description: "Central customer records with linked vehicles and service histories.", icon: PortalIcon },
-      { title: "Ratings & Reviews", description: "Respond to reviews and address customer concerns directly.", icon: AnalyticsIcon },
-      { title: "Customer Complaints", description: "Track & analyze complaints gain insights to prevent future issues.", icon: AnalyticsIcon }
+      { title: "CRM & Lead Management", description: "Empower your team with effective lead management tools.", icon: PortalIcon, href: "/features/crm/" },
+      { title: "WhatsApp Notifications", description: "Auto-send bookings, service alerts, and invoice links directly to customer WhatsApp.", icon: WhatsAppIcon, href: "/features/automation/" },
+      { title: "Occasion Greetings", description: "Auto-send Birthday & Anniversary WhatsApp wishes with custom discount coupons.", icon: GreetingIcon, href: "/features/automation/" },
+      { title: "Customer Management", description: "Central customer records with linked vehicles and service histories.", icon: PortalIcon, href: "/features/customers/" },
+      { title: "Ratings & Reviews", description: "Respond to reviews and address customer concerns directly.", icon: AnalyticsIcon, href: "/features/customer-reviews/" },
+      { title: "Customer Complaints", description: "Track & analyze complaints gain insights to prevent future issues.", icon: AnalyticsIcon, href: "/features/customer-reviews/" }
     ]
   },
   {
     category: "Administration & Control",
     items: [
-      { title: "Real-time Dashboard", description: "Monitor operations with live analytics and insights.", icon: DashboardIcon },
-      { title: "Reports & Analytics", description: "Data and insights compilation for analysis and decision-making.", icon: ReportIcon },
-      { title: "Multi-Branch System", description: "Manage inventory, staff, and analytics across multiple branches.", icon: GarageIcon },
-      { title: "Vendor Management", description: "Track vendor performance and identify partners.", icon: PortalIcon }
+      { title: "Real-time Dashboard", description: "Monitor operations with live analytics and insights.", icon: DashboardIcon, href: "/features/workshop-management-dashboard/" },
+      { title: "Reports & Analytics", description: "Data and insights compilation for analysis and decision-making.", icon: ReportIcon, href: "/features/reports/" },
+      { title: "Multi-Branch System", description: "Manage inventory, staff, and analytics across multiple branches.", icon: GarageIcon, href: "/features/branches/" },
+      { title: "Vendor Management", description: "Track vendor performance and identify partners.", icon: PortalIcon, href: "/features/inventory/" }
     ]
   }
 ];
@@ -110,30 +113,39 @@ const FeaturesPage = () => {
               {/* Features Card Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {cat.items.map((item, itemIdx) => (
-                  <div
+                  <Link
                     key={itemIdx}
-                    className="relative p-5 border border-[#EEE] bg-white transition-all duration-300 hover:shadow-sm hover:-translate-y-1 cursor-pointer rounded-lg"
+                    href={item.href || "/features/"}
+                    className="group relative p-5 border border-[#EEE] bg-white transition-all duration-300 hover:shadow-md hover:border-primary/40 hover:-translate-y-1 cursor-pointer rounded-xl flex flex-col justify-between"
                   >
-                    {/* Icon */}
-                    <div className="w-12 h-12 flex items-center justify-center mb-6">
-                      <img
-                        src={item.icon}
-                        alt={item.title}
-                        className="w-9 h-9"
-                      />
+                    <div>
+                      {/* Icon */}
+                      <div className="w-12 h-12 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-200">
+                        <img
+                          src={item.icon}
+                          alt={item.title}
+                          className="w-9 h-9"
+                        />
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                        {item.title.split(" ").slice(0, -1).join(" ")} <br />
+                        {item.title.split(" ").slice(-1)}
+                      </h3>
+
+                      {/* Description */}
+                      <p className="text-sm leading-relaxed text-[#575757] mb-4">
+                        {item.description}
+                      </p>
                     </div>
 
-                    {/* Title */}
-                    <h3 className="text-lg font-semibold mb-2">
-                      {item.title.split(" ").slice(0, -1).join(" ")} <br />
-                      {item.title.split(" ").slice(-1)}
-                    </h3>
-
-                    {/* Description */}
-                    <p className="text-sm leading-relaxed text-[#575757]">
-                      {item.description}
-                    </p>
-                  </div>
+                    {/* Explore Link */}
+                    <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-primary group-hover:underline mt-auto">
+                      <span>Explore Feature</span>
+                      <FaArrowRight className="w-2.5 h-2.5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -145,3 +157,4 @@ const FeaturesPage = () => {
 };
 
 export default FeaturesPage;
+

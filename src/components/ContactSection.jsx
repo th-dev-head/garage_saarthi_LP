@@ -6,7 +6,17 @@ import GformBg from "../assets/optimized/GformBg.webp";
 import BookDemoIcon from "../assets/icons/Bookd.webp";
 import Button from "./common/Button";
 
-const FORMSPREE_URL = process.env.NEXT_PUBLIC_FORMSPREE_URL;
+const getApiBaseUrl = () => {
+  if (typeof window !== "undefined") {
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      return "http://localhost:3000";
+    }
+  }
+  return (
+    process.env.NEXT_PUBLIC_API_BASE_URL ||
+    "https://api-garagesaarthi.techifyhouse.in"
+  );
+};
 
 const ContactSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,23 +31,44 @@ const ContactSection = () => {
     setSubmitError("");
 
     const formData = new FormData(e.target);
+    const payload = {
+      fullName: (formData.get("full_name") || "").toString().trim(),
+      mobile: (formData.get("mobile") || mobile || "").toString().trim(),
+      garageName: (formData.get("garage_name") || "").toString().trim(),
+      message: (formData.get("message") || "").toString().trim(),
+      source: "Landing Page Demo Form",
+    };
+
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get("utm_source")) payload.utm_source = urlParams.get("utm_source");
+      if (urlParams.get("utm_medium")) payload.utm_medium = urlParams.get("utm_medium");
+      if (urlParams.get("utm_campaign")) payload.utm_campaign = urlParams.get("utm_campaign");
+      if (urlParams.get("utm_term")) payload.utm_term = urlParams.get("utm_term");
+      if (urlParams.get("utm_content")) payload.utm_content = urlParams.get("utm_content");
+    }
 
     try {
-      const response = await fetch(FORMSPREE_URL, {
+      const baseUrl = getApiBaseUrl().replace(/\/api\/?$/, "");
+      const response = await fetch(`${baseUrl}/api/public/demo-inquiry`, {
         method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (response.ok && data?.success) {
         setSubmittedMobile(mobile);
         setIsModalOpen(true);
         e.target.reset();
         setMobile("");
       } else {
-        const data = await response.json();
         setSubmitError(
-          data?.errors?.map((err) => err.message).join(", ") ||
+          data?.message ||
           "Something went wrong. Please try again."
         );
       }
@@ -198,7 +229,7 @@ const ContactSection = () => {
                 Your demo is successfully booked
               </h3>
               <p className="text-gray-600 text-sm md:text-md 2xl:text-xl max-w-xl 2xl:max-w-2xl leading-relaxed">
-                You will receive a response regarding your GarageSaarthi registration demo at your registered email address <span className="font-bold text-[#0F172A]">{submittedEmail}</span> or Mobile Number <span className="font-bold text-[#0F172A]">{submittedMobile}</span>
+                You will receive a response regarding your GarageSaarthi registration demo on your Mobile Number <span className="font-bold text-[#0F172A]">+91 {submittedMobile}</span>
               </p>
             </div>
           </div>
