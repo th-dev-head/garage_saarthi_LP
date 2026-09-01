@@ -1,6 +1,6 @@
 "use client";
 import { FRONTEND_URL } from "@/src/config/env";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaArrowRight } from "react-icons/fa";
@@ -10,6 +10,18 @@ import BgVector1 from "../../assets/icons/Bgvector-1.svg";
 import BgVector2 from "../../assets/icons/Bgvector-2.svg";
 
 import { trackEvent } from "../../utils/pixel";
+
+const getApiBaseUrl = () => {
+  if (typeof window !== "undefined") {
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      return "http://localhost:3000";
+    }
+  }
+  return (
+    process.env.NEXT_PUBLIC_API_BASE_URL ||
+    "https://api-garagesaarthi.techifyhouse.in"
+  );
+};
 
 const SOCIAL_LINKS = [
   {
@@ -35,6 +47,42 @@ const SOCIAL_LINKS = [
 ];
 
 const Footer = () => {
+  const [contactInfo, setContactInfo] = useState({
+    phone: "+91 7574045260",
+    secondaryPhone: "+91 8866484903",
+    displayPhone: "+91 7574045260 | +91 8866484903",
+    email: "contact@garagesaarthi.com",
+  });
+
+  useEffect(() => {
+    const fetchContact = async () => {
+      try {
+        const baseUrl = getApiBaseUrl().replace(/\/api\/?$/, "");
+        const res = await fetch(`${baseUrl}/api/public/contact-info`, {
+          headers: { Accept: "application/json" },
+        });
+        const data = await res.json();
+        if (data?.success && data?.data) {
+          setContactInfo((prev) => ({
+            ...prev,
+            ...data.data,
+          }));
+        }
+      } catch (err) {
+        console.warn("Could not load dynamic contact info:", err);
+      }
+    };
+    fetchContact();
+  }, []);
+
+  const primaryPhoneClean = (contactInfo.phone || "+917574045260").replace(/[^0-9+]/g, "");
+  const displayPhoneText =
+    contactInfo.displayPhone ||
+    (contactInfo.phone && contactInfo.secondaryPhone
+      ? `${contactInfo.phone} | ${contactInfo.secondaryPhone}`
+      : contactInfo.phone || "+91 7574045260 | +91 8866484903");
+  const contactEmailText = contactInfo.email || "contact@garagesaarthi.com";
+
   return (
     <footer className="relative px-4 lg:px-15 2xl:px-50 py-12 bg-white overflow-hidden border-t border-gray-200/60">
       {/* Bottom Left Shadow Vector */}
@@ -136,15 +184,15 @@ const Footer = () => {
               <h3 className="text-text-dark font-bold text-sm tracking-wide uppercase">Contact</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link href="tel:+917574045260" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium group">
+                  <Link href={`tel:${primaryPhoneClean}`} className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium group">
                     <Phone className="w-4 h-4 shrink-0 text-[#B02E0C]" />
-                    +91 7574045260 | +91 8866484903
+                    {displayPhoneText}
                   </Link>
                 </li>
                 <li>
-                  <Link href="mailto:contact@garagesaarthi.com" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium">
+                  <Link href={`mailto:${contactEmailText}`} className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium">
                     <Mail className="w-4 h-4 shrink-0 text-[#B02E0C]" />
-                    contact@garagesaarthi.com
+                    {contactEmailText}
                   </Link>
                 </li>
               </ul>

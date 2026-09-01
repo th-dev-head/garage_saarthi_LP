@@ -31,12 +31,17 @@ import { trackEvent } from "@/src/utils/pixel"; export default function SRWhatsA
             </div>
             {/* Message Body */}
             <div className="bg-slate-800/80 rounded-2xl p-4 text-xs leading-relaxed space-y-2 mb-4 border border-slate-700/50">
-              <p>Dear Customer, your vehicle <strong>(MH-12-AB-1234)</strong> service is due on <strong>25th August</strong>.</p>
-              <p>Book your service slot at <strong>Sai Auto Care</strong> today for smooth performance.</p>
-              <p className="text-[10px] text-slate-400 text-right mt-1">10:30 AM</p>
+              <p>🛡️ <strong>Dear Customer,</strong></p>
+              <p className="text-slate-300 text-[11px] leading-relaxed">
+                Motor Insurance for your vehicle <strong>(MH-12-AB-1234)</strong> expires on <strong>15th Oct</strong>. Your <strong>PUC Certificate</strong> is also due for renewal on <strong>28th Sep</strong>.
+              </p>
+              <div className="bg-slate-900/60 p-2 rounded-lg border border-slate-700 text-[10px] text-amber-300">
+                ⚠️ Avoid heavy traffic fines. Renew hassle-free at <strong>Sai Auto Care</strong> today!
+              </div>
+              <p className="text-[10px] text-slate-400 text-right mt-1">10:30 AM • Delivered ✓✓</p>
             </div>
             <div className="bg-white text-slate-800 rounded-xl p-3 text-center text-xs font-bold border border-slate-200">
-              Tap to Approve & Send on WhatsApp
+              Auto-Triggered on Expiry Date
             </div>
           </div>
         </div>
@@ -45,17 +50,17 @@ import { trackEvent } from "@/src/utils/pixel"; export default function SRWhatsA
             WhatsApp Integration
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
-            Send <GradientUnderline>WhatsApp Service Reminders</GradientUnderline> to Your Customers
+            Send <GradientUnderline>WhatsApp Service & Document Reminders</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-            Reach customers where they are active. GarageSaarthi lets you coordinate and send personalized vehicle service reminder communication through WhatsApp.
+            Reach customers where they are active. GarageSaarthi automatically schedules and sends personalized WhatsApp alerts for upcoming service intervals, Insurance policy renewals, and PUC certification expiry.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               "Periodic service due reminders",
-              "Upcoming vehicle service alerts",
-              "Customer service follow-up notes",
-              "Vehicle maintenance reminder tasks"
+              "Motor Insurance expiry alerts",
+              "PUC certificate renewal reminders",
+              "Customer service follow-up notes"
             ].map((item, idx) => (
               <div key={idx} className="flex items-center gap-2.5 text-xs md:text-sm text-slate-700">
                 <FaCheckCircle className="text-emerald-500 w-4 h-4 flex-shrink-0" />

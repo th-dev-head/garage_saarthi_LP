@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle, FaGift } from "react-icons/fa";
+import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle, FaGift, FaShieldAlt } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const waMessagingTypes = [
@@ -17,6 +17,11 @@ const waMessagingTypes = [
     icon: FaGift,
     title: "Birthday & Anniversary Wishes",
     desc: "Delight vehicle owners with auto-scheduled WhatsApp greetings and exclusive service discount vouchers on their special days."
+  },
+  {
+    icon: FaShieldAlt,
+    title: "Insurance & PUC Expiry Reminders",
+    desc: "Auto-notify car and bike owners before their motor insurance policy or PUC validation expires to secure renewals and regular checkups."
   },
   {
     icon: FaCheckCircle,

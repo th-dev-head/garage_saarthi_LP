@@ -5,7 +5,8 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function BGSTBilling() {
   const points = [
     "Auto-split tax parameters (SGST, CGST, and IGST) on print sheets.",
-    "Map standard HSN code rates to spare parts and service items.",
+    "Map standard HSN/SAC code rates to spare parts and service items.",
+    "B2B & B2C billing with customer GSTIN and PAN verification on tax invoices.",
     "Custom invoice series prefix and running billing number configurations."
   ];
 
@@ -21,7 +22,7 @@ export default function BGSTBilling() {
             GST-Compliant Invoicing <GradientUnderline>Built for Indian Regulations</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
-            Tax compliance shouldn't add manual complexity to your busy garage. GarageSaarthi automatically tracks and applies GST taxes correctly.
+            Tax compliance shouldn't add manual complexity to your busy garage. GarageSaarthi automatically tracks and applies GST taxes correctly with full B2B customer GSTIN and PAN support.
           </p>
           <div className="space-y-4 mb-8">
             {points.map((point, idx) => (
@@ -35,7 +36,22 @@ export default function BGSTBilling() {
 
         {/* Right UI snippet */}
         <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
-          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tax Summary View — Live</span>
+          <div className="flex justify-between items-center">
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tax Summary View — Live</span>
+            <span className="text-[9px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full">B2B Verified</span>
+          </div>
+
+          <div className="bg-white border border-slate-100 p-4 rounded-xl text-[11px] space-y-1 text-slate-600 font-mono">
+            <div className="flex justify-between">
+              <span>Customer GSTIN:</span>
+              <strong className="text-slate-800">24AAAPC1234F1Z5</strong>
+            </div>
+            <div className="flex justify-between">
+              <span>Customer PAN:</span>
+              <strong className="text-slate-800">AAAPC1234F</strong>
+            </div>
+          </div>
+
           <div className="bg-white border border-slate-100 p-6 rounded-2xl space-y-3 text-xs">
             <div className="flex justify-between text-slate-600 font-medium">
               <span>Taxable Value (Labor + Spares)</span>
@@ -55,7 +71,7 @@ export default function BGSTBilling() {
             </div>
           </div>
           <div className="text-center text-[11px] text-slate-400">
-            Split taxes accurately without manual computation errors.
+            Generate compliant B2B tax invoices with seamless Input Tax Credit (ITC).
           </div>
         </div>
       </div>
