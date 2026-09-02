@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMobileAlt, FaTools, FaCamera, FaWhatsapp, FaReceipt, FaHistory } from "react-icons/fa";
+import { FaMobileAlt, FaTools, FaCamera, FaWhatsapp, FaReceipt, FaHistory, FaFileInvoice } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function JCMCoreCapabilities() {
@@ -11,7 +11,13 @@ export default function JCMCoreCapabilities() {
       badge: "Fast Intake"
     },
     {
-      icon: <FaWhatsapp className="w-6 h-6 text-emerald-600" />,
+      icon: <FaFileInvoice className="w-6 h-6 text-emerald-600" />,
+      title: "Inward Acknowledgement Receipts",
+      description: "Generate professional check-in vouchers. Instantly download printable PDF slips and send intake confirmation via WhatsApp.",
+      badge: "Customer Proof"
+    },
+    {
+      icon: <FaWhatsapp className="w-6 h-6 text-green-600" />,
       title: "WhatsApp Estimate Sharing",
       description: "Send professional PDF job cards and cost estimates directly to your customer's WhatsApp for instant approval.",
       badge: "WhatsApp Integration"
@@ -33,6 +39,18 @@ export default function JCMCoreCapabilities() {
       title: "1-Click GST Invoice Conversion",
       description: "Convert completed repair job cards into final GST invoices instantly without re-typing parts or labor charges.",
       badge: "Seamless Billing"
+    },
+    {
+      icon: <FaTools className="w-6 h-6 text-cyan-600" />,
+      title: "Complaint & Solution Mapping",
+      description: "Map each customer-reported symptom to the exact mechanical action or repair done, creating clear transparent job sheets.",
+      badge: "Problem Solved"
+    },
+    {
+      icon: <FaHistory className="w-6 h-6 text-rose-600" />,
+      title: "Edit History & Audit Trail",
+      description: "Maintain a tamper-proof log of every edit, part addition, or price discount made by Admins, Managers, and Mechanics.",
+      badge: "Full Audit"
     },
     {
       icon: <FaHistory className="w-6 h-6 text-teal-600" />,

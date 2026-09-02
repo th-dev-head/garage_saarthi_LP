@@ -5,6 +5,8 @@ import JCMHero from "../../components/features/job-card-management/JCMHero";
 import JCMDefinition from "../../components/features/job-card-management/JCMDefinition";
 import JCMPaperVsDigital from "../../components/features/job-card-management/JCMPaperVsDigital";
 import JCMCoreCapabilities from "../../components/features/job-card-management/JCMCoreCapabilities";
+import JCMDetails from "../../components/features/job-card-management/JCMDetails";
+import JCMResolutionAudit from "../../components/features/job-card-management/JCMResolutionAudit";
 import JCMWorkflow from "../../components/features/job-card-management/JCMWorkflow";
 import JCMWorkshopTypes from "../../components/features/job-card-management/JCMWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
@@ -19,6 +21,8 @@ export default function JobCardManagementFeature() {
       <JCMDefinition />
       <JCMPaperVsDigital />
       <JCMCoreCapabilities />
+      <JCMDetails />
+      <JCMResolutionAudit />
       <JCMWorkflow />
       <JCMWorkshopTypes />
       <CloudAccessCommon bgClass="bg-slate-50" />

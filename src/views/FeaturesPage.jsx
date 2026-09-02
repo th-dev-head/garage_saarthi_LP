@@ -28,6 +28,8 @@ const allFeaturesList = [
     category: "Repairs & Operations",
     items: [
       { title: "Job Management", description: "Track repairs from start to finish with digital job cards.", icon: JobIcon, href: "/features/job-card-management/" },
+      { title: "Inward Acknowledgement", description: "Instant vehicle check-in vouchers with 1-click WhatsApp sending & printable PDF.", icon: ReportIcon, href: "/features/job-card-management/" },
+      { title: "Job Card Audit & History", description: "Track every staff edit, timestamp, and map customer complaints to mechanical solutions.", icon: JobIcon, href: "/features/job-card-management/" },
       { title: "Estimates", description: "Send professional estimates in seconds. Get approvals faster and get to work sooner.", icon: FinanceIcon, href: "/features/job-card-management/" },
       { title: "Vehicle Management", description: "Track every vehicle and maintain detailed customer records.", icon: GarageIcon, href: "/features/vehicles/" },
       { title: "Service Reminders", description: "Diagnose multiple systems with a single tool.", icon: DashboardIcon, href: "/features/service-reminders/" },

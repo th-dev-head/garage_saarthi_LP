@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Discover all GarageSaarthi features: digital job cards, GST-compliant billing, spare parts inventory, WhatsApp notifications, staff payroll, CRM & multi-branch management for Indian workshops.",
   keywords:
-    "garage software features, digital job card software India, GST billing for auto workshop, spare parts inventory management, WhatsApp notification garage, staff payroll workshop India, multi-branch garage management",
+    "garage software features, digital job card software India, GST billing for auto workshop, spare parts inventory management, WhatsApp notification garage, staff payroll workshop India, multi-branch garage management, vehicle inward acknowledgement receipt, job card edit history audit log, complaint resolution mapping, 8 invoice themes software, vehicle insurance puc reminder whatsapp",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/",
   },

@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
   keywords:
-    "garage billing software, workshop invoicing software, GST billing software for garage, auto repair invoice maker, garage invoice software India, digital workshop billing app, garage estimate and invoice maker, spare parts invoicing software, WhatsApp invoice for garage, garage GST invoice maker, workshop billing app for android, automobile billing software, auto parts GST invoice software, garage cash receipt software, cloud workshop billing software, 1 click job card billing, garage invoice generator",
+    "garage billing software, workshop invoicing software, GST billing software for garage, auto repair invoice maker, garage invoice software India, digital workshop billing app, garage estimate and invoice maker, spare parts invoicing software, WhatsApp invoice for garage, garage GST invoice maker, workshop billing app for android, automobile billing software, auto parts GST invoice software, garage cash receipt software, cloud workshop billing software, 1 click job card billing, garage invoice generator, 8 invoice themes garage software, b2b gst billing with pan card, customer gstin pan invoice software, custom invoice layouts upi qr",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/billing/",
   },
