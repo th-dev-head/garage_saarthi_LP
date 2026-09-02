@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Create digital job cards, manage repair work orders and track garage jobs with GarageSaarthi. Built for car, bike and automotive workshops in India.",
   keywords:
-    "garage job card software, garage job card system, garage job card app, digital garage job card, garage work order software, garage repair order software, workshop job card software, mechanic job card software, vehicle job card software, repair order management software, garage job sheet software, repair job tracking software, car garage job card software, car workshop job card software, vehicle repair job card software, car service job card software, paperless garage job card, online garage job card software, cloud garage job card software, garage job card management software",
+    "garage job card software, garage job card system, garage job card app, digital garage job card, garage work order software, garage repair order software, workshop job card software, mechanic job card software, vehicle job card software, repair order management software, garage job sheet software, repair job tracking software, car garage job card software, car workshop job card software, vehicle repair job card software, car service job card software, paperless garage job card, online garage job card software, cloud garage job card software, garage job card management software, garage job card audit log, job card edit history tracking, vehicle inward acknowledgement slip, customer complaint solution tracking, digital vehicle intake voucher",
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/garage-job-card-software/",
   },

@@ -1,8 +1,13 @@
 import React from "react";
-import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle, FaGift, FaShieldAlt } from "react-icons/fa";
+import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle, FaGift, FaShieldAlt, FaClipboardCheck } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const waMessagingTypes = [
+  {
+    icon: FaClipboardCheck,
+    title: "Inward Acknowledgement Receipts",
+    desc: "Send instant check-in confirmation slips to customer WhatsApp with vehicle number, model, fuel level, and job card ID upon workshop arrival."
+  },
   {
     icon: FaTools,
     title: "Estimates & Job Cards",
