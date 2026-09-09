@@ -31,7 +31,7 @@ export default function SRFAQ() {
       titleHighlight="FAQs"
       subtitle="Everything you need to know about GarageSaarthi automated service reminders."
       faqs={faqs}
-      className="bg-white"
+      className="bg-slate-50"
     />
   );
 }

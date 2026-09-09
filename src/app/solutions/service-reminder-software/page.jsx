@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Automate vehicle service reminders and customer follow-ups with GarageSaarthi service reminder software. Send WhatsApp reminders and track due services.",
   keywords:
-    "service reminder software, vehicle service reminder software, car service reminder software, garage service reminder software, workshop service reminder software, service reminder system, WhatsApp service reminder software, service reminder app, automated service reminder software, customer reminder software",
+    "service reminder software, vehicle service reminder software, car service reminder software, garage service reminder software, workshop service reminder software, service reminder system, WhatsApp service reminder software, service reminder app, automated service reminder software, customer reminder software, sent service reminder history, workshop reminder dispatch log, automated whatsapp reminder history",
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/service-reminder-software/",
   },

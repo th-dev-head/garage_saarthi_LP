@@ -5,8 +5,9 @@ import SRHero from "../../components/features/service-reminders/SRHero";
 import SRDefinition from "../../components/features/service-reminders/SRDefinition";
 import SRManualVsDigital from "../../components/features/service-reminders/SRManualVsDigital";
 import SRCoreCapabilities from "../../components/features/service-reminders/SRCoreCapabilities";
-import SRWorkflow from "../../components/features/service-reminders/SRWorkflow";
+import SRReminderHistory from "../../components/features/service-reminders/SRReminderHistory";
 import SRWhatsAppIntegration from "../../components/features/service-reminders/SRWhatsAppIntegration";
+import SRWorkflow from "../../components/features/service-reminders/SRWorkflow";
 import SRWorkshopTypes from "../../components/features/service-reminders/SRWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
 import TestimonialsGrid from "../../components/common/TestimonialsGrid";
@@ -20,11 +21,12 @@ export default function ServiceRemindersFeature() {
       <SRDefinition />
       <SRManualVsDigital />
       <SRCoreCapabilities />
-      <SRWorkflow />
+      <SRReminderHistory />
       <SRWhatsAppIntegration />
+      <SRWorkflow />
       <SRWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
       <SRFAQ />
       <SRFinalCTA />
     </PageLayout>

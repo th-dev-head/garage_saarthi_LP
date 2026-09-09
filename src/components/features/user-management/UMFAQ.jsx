@@ -23,6 +23,10 @@ const faqs = [
     a: "No. Standard staff profiles do not have access to any business reports, cash summaries, or analytics metrics. Only the admin/owner can view overall finances."
   },
   {
+    q: "Can I record technician experience, allotted workshop tools, and certificates?",
+    a: "Yes! During staff registration or profile editing, you can record domain experience (Years & Months), assigned workshop tools (e.g., scanners, drills, socket sets), dress/uniform allocation dates, commute transportation modes, and upload digital certificates in PDF/image format."
+  },
+  {
     q: "What happens if a staff member tries to delete or modify a bill?",
     a: "Only the admin profile has deletion and revision rights. Standard staff profiles cannot delete estimates, bills, or payment logs once they are saved."
   }

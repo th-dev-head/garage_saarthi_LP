@@ -5,8 +5,9 @@ import CRHero from "../../components/features/customer-reviews/CRHero";
 import CRDefinition from "../../components/features/customer-reviews/CRDefinition";
 import CRManualVsDigital from "../../components/features/customer-reviews/CRManualVsDigital";
 import CRCoreCapabilities from "../../components/features/customer-reviews/CRCoreCapabilities";
-import CRWorkflow from "../../components/features/customer-reviews/CRWorkflow";
+import CRRatingModules from "../../components/features/customer-reviews/CRRatingModules";
 import CRReviewChannels from "../../components/features/customer-reviews/CRReviewChannels";
+import CRWorkflow from "../../components/features/customer-reviews/CRWorkflow";
 import CRWorkshopTypes from "../../components/features/customer-reviews/CRWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
 import TestimonialsGrid from "../../components/common/TestimonialsGrid";
@@ -20,11 +21,12 @@ export default function CustomerReviewsFeature() {
       <CRDefinition />
       <CRManualVsDigital />
       <CRCoreCapabilities />
-      <CRWorkflow />
+      <CRRatingModules />
       <CRReviewChannels />
+      <CRWorkflow />
       <CRWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
       <CRFAQ />
       <CRFinalCTA />
     </PageLayout>

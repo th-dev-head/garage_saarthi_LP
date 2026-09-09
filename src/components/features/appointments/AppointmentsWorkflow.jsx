@@ -1,0 +1,76 @@
+import React from "react";
+import { FaCalendarPlus, FaCarSide, FaWrench, FaCheckDouble, FaWhatsapp } from "react-icons/fa";
+import GradientUnderline from "../../common/GradientUnderline";
+
+const steps = [
+  {
+    num: "01",
+    icon: <FaCalendarPlus className="w-5 h-5 text-primary" />,
+    title: "Slot Booking & Customer Entry",
+    desc: "Record customer details, car model, service requirements, and desired time slot in under 30 seconds.",
+  },
+  {
+    num: "02",
+    icon: <FaCarSide className="w-5 h-5 text-amber-600" />,
+    title: "Driver Dispatch & Pickup",
+    desc: "Assign a workshop driver who receives a direct 1-click Google Maps link to the customer address.",
+  },
+  {
+    num: "03",
+    icon: <FaWrench className="w-5 h-5 text-emerald-600" />,
+    title: "1-Click Job Card Inward",
+    desc: "Convert appointment to an active job card upon vehicle arrival. Log fuel, inspection photos, and start work.",
+  },
+  {
+    num: "04",
+    icon: <FaCheckDouble className="w-5 h-5 text-cyan-600" />,
+    title: "Service Done & Quality Check",
+    desc: "Technicians complete repair work, verify checklist, convert job card to GST invoice, and initiate drop.",
+  },
+  {
+    num: "05",
+    icon: <FaWhatsapp className="w-5 h-5 text-purple-600" />,
+    title: "Doorstep Drop & Delivery",
+    desc: "Driver delivers vehicle back to customer doorstep, collects payment via UPI QR, and sends WhatsApp invoice.",
+  },
+];
+
+export default function AppointmentsWorkflow() {
+  return (
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
+            End-to-End Booking Cycle
+          </span>
+          <h2 className="text-2xl md:text-4xl font-bold text-text-dark mb-6 leading-tight">
+            5-Step <GradientUnderline>Appointment & Pickup Workflow</GradientUnderline>
+          </h2>
+          <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+            From initial customer inquiry to vehicle doorstep drop-off, manage every touchpoint effortlessly.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 relative">
+          {steps.map((step, idx) => (
+            <div
+              key={idx}
+              className="p-6 rounded-2xl bg-slate-50/80 border border-slate-200/80 flex flex-col justify-between relative transition-colors shadow-2xs hover:border-primary/30"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-2xl font-black text-slate-300">{step.num}</span>
+                  <div className="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center shadow-xs">
+                    {step.icon}
+                  </div>
+                </div>
+                <h3 className="text-base font-bold text-slate-900 mb-2">{step.title}</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">{step.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
