@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserShield, FaUsers, FaHistory, FaUserLock } from "react-icons/fa";
+import { FaUserShield, FaUsers, FaHistory, FaUserLock, FaBriefcase, FaWrench } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const capabilities = [
@@ -7,6 +7,16 @@ const capabilities = [
     icon: <FaUserShield className="w-6 h-6 text-primary" />,
     title: "Role-Based Access Control (RBAC)",
     desc: "Assign predefined roles like Admin, Service Advisor, Cashier, or Mechanic. Restrict staff from viewing cash boxes, net profit, or editing closed job cards."
+  },
+  {
+    icon: <FaBriefcase className="w-6 h-6 text-primary" />,
+    title: "Technician Profiles & Skill Vault",
+    desc: "Record exact years and months of domain experience, technician certificates, and commuting details during staff onboarding."
+  },
+  {
+    icon: <FaWrench className="w-6 h-6 text-primary" />,
+    title: "Tool Allotment & Equipment Tracking",
+    desc: "Assign diagnostic scanners, power drills, and socket sets directly to individual technicians to eliminate tool loss and disputes."
   },
   {
     icon: <FaUsers className="w-6 h-6 text-primary" />,
@@ -39,7 +49,7 @@ export default function UMCoreCapabilities() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {capabilities.map((c, idx) => (
             <div key={idx} className="bg-slate-50 border border-slate-200/80 p-6 rounded-2xl flex flex-col justify-between h-full min-h-[220px] transition-shadow hover:shadow-md">
               <div>

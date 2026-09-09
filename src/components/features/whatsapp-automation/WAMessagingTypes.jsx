@@ -1,8 +1,13 @@
 import React from "react";
-import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle, FaGift, FaShieldAlt, FaClipboardCheck } from "react-icons/fa";
+import { FaPaperPlane, FaReceipt, FaTools, FaCheckCircle, FaGift, FaShieldAlt, FaClipboardCheck, FaCalendarCheck } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const waMessagingTypes = [
+  {
+    icon: FaCalendarCheck,
+    title: "Appointment & Pickup-Drop Confirmations",
+    desc: "Auto-send booking confirmations with date, time slot, driver contact, and Google Maps live pickup tracking link to customer WhatsApp."
+  },
   {
     icon: FaClipboardCheck,
     title: "Inward Acknowledgement Receipts",

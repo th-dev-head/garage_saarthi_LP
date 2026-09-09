@@ -41,6 +41,7 @@ const Header = () => {
 
   const solutionsMegaMenu = {
     "Core Modules": [
+      { name: "Appointments & Pickup-Drop", href: "/solutions/garage-appointment-software/" },
       { name: "Job Cards", href: "/solutions/garage-job-card-software/" },
       { name: "GST Billing", href: "/solutions/garage-billing-software/" },
       { name: "CRM", href: "/solutions/garage-crm-software/" },
@@ -93,6 +94,7 @@ const Header = () => {
       { name: "Vehicle Inspection", href: "/features/vehicle-inspection/" },
     ],
     "Customer & Vehicle": [
+      { name: "Appointments & Pickup-Drop", href: "/features/appointments/" },
       { name: "CRM & Lead Management", href: "/features/crm/" },
       { name: "Customer Management", href: "/features/customers/" },
       { name: "Vehicle Management", href: "/features/vehicles/" },

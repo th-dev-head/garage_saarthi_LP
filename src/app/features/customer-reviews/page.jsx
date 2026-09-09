@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Turn happy customers into Google 5-star reviews automatically. Send WhatsApp feedback links post-invoice, shield negative ratings, and rank #1 in local workshop searches.",
   keywords:
-    "garage Google review software, workshop customer review collection, auto repair shop rating growth, WhatsApp review links garage, Google 5 star reviews garage India, garage reputation management, local SEO workshop software",
+    "garage Google review software, workshop customer review collection, auto repair shop rating growth, WhatsApp review links garage, Google 5 star reviews garage India, garage reputation management, local SEO workshop software, review rating modules, custom feedback criteria, service quality rating parameters, multi criteria customer reviews garage",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/customer-reviews/",
   },
@@ -84,6 +84,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "When an invoice is marked as paid or vehicle is delivered, GarageSaarthi automatically queues a friendly thank-you WhatsApp message containing your direct Google Maps review link.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I customize which service parameters customers rate?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! Under Settings > Review Rating Modules, you can configure, reorder, or toggle custom criteria such as Service Quality, Staff Behavior, Cleanliness, Turnaround Time, and Pricing Transparency.",
           },
         },
         {

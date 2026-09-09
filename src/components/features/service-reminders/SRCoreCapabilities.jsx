@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBell, FaCalendarCheck, FaComments, FaCar, FaShieldAlt, FaChartLine } from "react-icons/fa";
+import { FaBell, FaCalendarCheck, FaComments, FaCar, FaShieldAlt, FaChartLine, FaHistory } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const srCoreCapabilities = [
@@ -27,6 +27,11 @@ const srCoreCapabilities = [
     icon: FaBell,
     title: "Customer Call Back Log",
     desc: "Enable service advisors to log customer responses, rescheduled visit dates, and call back comments in real time."
+  },
+  {
+    icon: FaHistory,
+    title: "Sent Reminder History & Audit Log",
+    desc: "Maintain complete timestamped records of automatic bot vs manual staff reminder dispatches with delivery status."
   },
   {
     icon: FaChartLine,

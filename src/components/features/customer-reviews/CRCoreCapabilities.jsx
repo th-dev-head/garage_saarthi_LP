@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar, FaWhatsapp, FaQrcode, FaShieldAlt, FaChartLine, FaBell } from "react-icons/fa";
+import { FaStar, FaWhatsapp, FaQrcode, FaShieldAlt, FaChartLine, FaBell, FaSlidersH } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const crCoreCapabilities = [
@@ -7,6 +7,11 @@ const crCoreCapabilities = [
     icon: FaWhatsapp,
     title: "1-Click WhatsApp Review Links",
     desc: "Send personalized review links directly to customer WhatsApp right after invoice payment."
+  },
+  {
+    icon: FaSlidersH,
+    title: "Custom Review Rating Modules",
+    desc: "Define custom parameters like Service Quality, Staff Behavior, Cleanliness, and Turnaround Time with active toggle controls."
   },
   {
     icon: FaShieldAlt,

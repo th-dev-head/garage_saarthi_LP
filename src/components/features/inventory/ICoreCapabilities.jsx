@@ -36,6 +36,12 @@ export default function ICoreCapabilities() {
     },
     {
       icon: <FaSearch className="w-6 h-6 text-teal-600" />,
+      title: "Storage Location & Bin Tracking",
+      description: "Define warehouses, shelves, racks, and numbered bin boxes to locate spare parts on the shop floor in 2 seconds.",
+      badge: "Rack & Bin"
+    },
+    {
+      icon: <FaBoxes className="w-6 h-6 text-cyan-600" />,
       title: "Master Spare Parts Catalog",
       description: "Organize parts by category (Engine, Brakes, Suspension, Oils) with pre-filled HSN codes and MRP pricing.",
       badge: "Master Catalog"

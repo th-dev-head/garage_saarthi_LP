@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Secure your garage billing operations and manage mechanic user access. Create staff logins, set role-based permissions, and track daily activity logs.",
   keywords:
-    "user management software, user management system, user management app, employee user management software, staff management software, employee management software, employee access management, role based access control software, role management software, user roles and permissions software, access control software, permission management software, multi user software, multi user management system, multi user access software, team management software, workforce management software, workshop staff management software, garage staff management software, garage employee management software, workshop employee management software, garage user management software, workshop user management software, garage access management software, workshop access control software, employee login management software, staff login management software, workshop user access control, garage role management software, secure user management software",
+    "user management software, user management system, user management app, employee user management software, staff management software, employee management software, employee access management, role based access control software, role management software, user roles and permissions software, access control software, permission management software, multi user software, multi user management system, multi user access software, team management software, workforce management software, workshop staff management software, garage staff management software, garage employee management software, workshop employee management software, garage user management software, workshop user management software, garage access management software, workshop access control software, employee login management software, staff login management software, workshop user access control, garage role management software, secure user management software, staff details management, technician tools allotment, uniform allocation tracking, technician certificate vault garage",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/user-management/",
   },
@@ -84,6 +84,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Yes. With role-based permissions, you can block mechanics or service advisors from seeing billing collections and financial reports entirely.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I record technician experience, allotted workshop tools, and certificates?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! During staff registration or profile editing, you can record domain experience (Years & Months), assigned workshop tools (e.g., scanners, drills, socket sets), dress/uniform allocation dates, commute transportation modes, and upload digital certificates in PDF/image format.",
           },
         },
       ],

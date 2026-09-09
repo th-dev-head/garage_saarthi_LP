@@ -5,6 +5,8 @@ import IHero from "../../components/features/inventory/IHero";
 import IDefinition from "../../components/features/inventory/IDefinition";
 import IPaperVsDigital from "../../components/features/inventory/IPaperVsDigital";
 import ICoreCapabilities from "../../components/features/inventory/ICoreCapabilities";
+import ILocationManagement from "../../components/features/inventory/ILocationManagement";
+import ISpareParts from "../../components/features/inventory/ISpareParts";
 import IWorkflow from "../../components/features/inventory/IWorkflow";
 import IWorkshopTypes from "../../components/features/inventory/IWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
@@ -19,6 +21,8 @@ export default function InventoryManagementFeature() {
       <IDefinition />
       <IPaperVsDigital />
       <ICoreCapabilities />
+      <ILocationManagement />
+      <ISpareParts />
       <IWorkflow />
       <IWorkshopTypes />
       <CloudAccessCommon bgClass="bg-slate-50" />

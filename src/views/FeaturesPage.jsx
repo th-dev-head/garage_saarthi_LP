@@ -61,11 +61,12 @@ const allFeaturesList = [
   {
     category: "CRM & Customer Experience",
     items: [
+      { title: "Appointments & Pickup-Drop", description: "Online customer booking calendar, doorstep vehicle pickup & drop with Google Maps driver navigation.", icon: ClockIcon, href: "/features/appointments/" },
       { title: "CRM & Lead Management", description: "Empower your team with effective lead management tools.", icon: PortalIcon, href: "/features/crm/" },
       { title: "WhatsApp Notifications", description: "Auto-send bookings, service alerts, and invoice links directly to customer WhatsApp.", icon: WhatsAppIcon, href: "/features/automation/" },
       { title: "Occasion Greetings", description: "Auto-send Birthday & Anniversary WhatsApp wishes with custom discount coupons.", icon: GreetingIcon, href: "/features/automation/" },
       { title: "Customer Management", description: "Central customer records with linked vehicles and service histories.", icon: PortalIcon, href: "/features/customers/" },
-      { title: "Ratings & Reviews", description: "Respond to reviews and address customer concerns directly.", icon: AnalyticsIcon, href: "/features/customer-reviews/" },
+      { title: "Ratings & Reviews", description: "Custom rating modules (Service Quality, Staff Behavior, Turnaround Time), 5-star Google review links & private feedback shields.", icon: AnalyticsIcon, href: "/features/customer-reviews/" },
       { title: "Customer Complaints", description: "Track & analyze complaints gain insights to prevent future issues.", icon: AnalyticsIcon, href: "/features/customer-reviews/" }
     ]
   },

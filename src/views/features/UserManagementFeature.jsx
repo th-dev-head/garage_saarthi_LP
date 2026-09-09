@@ -5,6 +5,7 @@ import UMHero from "../../components/features/user-management/UMHero";
 import UMDefinition from "../../components/features/user-management/UMDefinition";
 import UMManualVsDigital from "../../components/features/user-management/UMManualVsDigital";
 import UMCoreCapabilities from "../../components/features/user-management/UMCoreCapabilities";
+import UMStaffDetails from "../../components/features/user-management/UMStaffDetails";
 import UMWorkflow from "../../components/features/user-management/UMWorkflow";
 import UMWorkshopTypes from "../../components/features/user-management/UMWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
@@ -19,6 +20,7 @@ export default function UserManagementFeature() {
       <UMDefinition />
       <UMManualVsDigital />
       <UMCoreCapabilities />
+      <UMStaffDetails />
       <UMWorkflow />
       <UMWorkshopTypes />
       <CloudAccessCommon bgClass="bg-white" />

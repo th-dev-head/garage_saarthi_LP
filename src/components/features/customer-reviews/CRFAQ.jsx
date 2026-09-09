@@ -8,6 +8,10 @@ export default function CRFAQ() {
       answer: "When an invoice is marked as paid or vehicle is delivered, GarageSaarthi automatically queues a friendly thank-you WhatsApp message containing your direct Google Maps review link."
     },
     {
+      question: "Can I customize which service parameters customers rate?",
+      answer: "Yes! Under Settings > Review Rating Modules, you can configure, reorder, or toggle custom criteria such as Service Quality, Staff Behavior, Cleanliness, Turnaround Time, and Pricing Transparency."
+    },
+    {
       question: "What happens if a customer wants to give a 1-star or 2-star review?",
       answer: "GarageSaarthi includes a smart feedback filter. Lower rating submissions are routed privately to the garage owner or manager so you can resolve the customer's complaint directly before it reaches Google."
     },
@@ -31,7 +35,7 @@ export default function CRFAQ() {
       titleHighlight="FAQs"
       subtitle="Everything you need to know about GarageSaarthi automated review collection."
       faqs={faqs}
-      className="bg-white"
+      className="bg-slate-50"
     />
   );
 }

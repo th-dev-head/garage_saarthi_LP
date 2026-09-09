@@ -26,7 +26,7 @@ const crWorkshopTypes = [
 
 export default function CRWorkshopTypes() {
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block">
@@ -42,8 +42,8 @@ export default function CRWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {crWorkshopTypes.map((ws, idx) => (
-            <div key={idx} className="bg-white border border-slate-200 p-6 rounded-3xl space-y-3 shadow-xs">
-              <span className="text-[10px] uppercase font-bold text-primary bg-orange-50 px-2.5 py-1 rounded-full inline-block">
+            <div key={idx} className="bg-slate-50 border border-slate-200/80 p-6 rounded-3xl space-y-3 shadow-xs">
+              <span className="text-[10px] uppercase font-bold text-primary bg-orange-100/70 px-2.5 py-1 rounded-full inline-block">
                 {ws.badge}
               </span>
               <h3 className="text-base font-bold text-slate-900">{ws.title}</h3>
