@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "All-in-one digital job card software for auto workshops, car garages & bike repair centers in India. Create repair orders, log complaints, attach photos, and send WhatsApp estimates.",
   keywords:
-    "garage job card software, workshop job card management, digital job card software, garage repair order software, job card software for workshops, digital repair orders for garages, auto repair job card maker, car garage job card software, bike workshop job card app, digital job card app for android, mechanic repair order manager, workshop job card system in India, garage job card format pdf, digital vehicle inspection checklist, job card with whatsapp estimation, garage estimate and job card maker, vehicle repair history job card software, job card software with spare parts allocation, multi-stage vehicle repair tracking software, job card edit history software, garage audit log tracking, workshop job card audit trail, customer complaint solution tracking, vehicle inward acknowledgement receipt, job card acknowledgement receipt pdf, whatsapp vehicle check-in slip, garage tamper proof job cards, complaint to repair action mapping",
+    "garage job card software, workshop job card management, digital job card software, garage repair order software, job card software for workshops, digital repair orders for garages, auto repair job card maker, car garage job card software, bike workshop job card app, digital job card app for android, mechanic repair order manager, workshop job card system in India, garage job card format pdf, digital vehicle inspection checklist, job card with whatsapp estimation, garage estimate and job card maker, vehicle repair history job card software, job card software with spare parts allocation, multi-stage vehicle repair tracking software, job card edit history software, garage audit log tracking, workshop job card audit trail, customer complaint solution tracking, vehicle inward acknowledgement receipt, job card acknowledgement receipt pdf, whatsapp vehicle check-in slip, garage tamper proof job cards, complaint to repair action mapping, job card internal team chat, workshop team discussion @mention, job card activity timeline log",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/job-card-management/",
   },
@@ -84,6 +84,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "A digital job card software is a mobile and web application that replaces paper repair registers in auto workshops. It allows service advisors to create repair orders, log customer complaints, attach inspection photos, assign mechanics, and send estimates via WhatsApp.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can workshop team members chat and mention each other on a job card?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! Every job card has a private 'Activity & Discussion' drawer. Service advisors, mechanics, and admins can chat, use @mentions (e.g., @Detailer) to notify colleagues, and view live status changes in one shared thread.",
           },
         },
         {

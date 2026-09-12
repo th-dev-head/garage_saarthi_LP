@@ -7,6 +7,7 @@ import JCMPaperVsDigital from "../../components/features/job-card-management/JCM
 import JCMCoreCapabilities from "../../components/features/job-card-management/JCMCoreCapabilities";
 import JCMDetails from "../../components/features/job-card-management/JCMDetails";
 import JCMResolutionAudit from "../../components/features/job-card-management/JCMResolutionAudit";
+import JCMTeamChatActivity from "../../components/features/job-card-management/JCMTeamChatActivity";
 import JCMWorkflow from "../../components/features/job-card-management/JCMWorkflow";
 import JCMWorkshopTypes from "../../components/features/job-card-management/JCMWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
@@ -23,10 +24,11 @@ export default function JobCardManagementFeature() {
       <JCMCoreCapabilities />
       <JCMDetails />
       <JCMResolutionAudit />
+      <JCMTeamChatActivity />
       <JCMWorkflow />
       <JCMWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-slate-50" />
-      <TestimonialsGrid bgClass="bg-white" />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
       <JCMFAQ />
       <JCMFinalCTA />
     </PageLayout>

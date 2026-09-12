@@ -8,6 +8,10 @@ export default function SRFAQ() {
       answer: "GarageSaarthi calculates next service dates automatically whenever a job card is closed or invoice generated. You can configure standard intervals like 3 months, 6 months, or specific KM readings."
     },
     {
+      question: "How does the Insurance & PUC Expiry Follow-up tracker work?",
+      answer: "GarageSaarthi monitors insurance policies and PUC certificate expiry countdowns in a unified dashboard. Service advisors can log call discussion notes, select customer interest status (Interested, Call Back, Renewed), schedule callback dates, view discussion history, and trigger 1-click WhatsApp alerts."
+    },
+    {
       question: "Can I customize the WhatsApp message sent to customers?",
       answer: "Yes! You can fully customize message text templates, insert custom discount codes, add booking links, and attach garage contact details."
     },
@@ -31,7 +35,7 @@ export default function SRFAQ() {
       titleHighlight="FAQs"
       subtitle="Everything you need to know about GarageSaarthi automated service reminders."
       faqs={faqs}
-      className="bg-slate-50"
+      className="bg-white"
     />
   );
 }

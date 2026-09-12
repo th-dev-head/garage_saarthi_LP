@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Never miss a vehicle maintenance due date. Automatically send WhatsApp service reminders, oil change due alerts, and booking links with GarageSaarthi software.",
   keywords:
-    "garage service reminder software, vehicle service reminder software, automated service reminders, car service due alerts, bike service reminder software, workshop service reminders, WhatsApp service reminders India, customer retention software for garages, vehicle maintenance alerts, sent service reminder history, workshop reminder audit log, whatsapp reminder dispatch history, automated cron reminder tracking, insurance puc expiry reminder history",
+    "garage service reminder software, vehicle service reminder software, automated service reminders, car service due alerts, bike service reminder software, workshop service reminders, WhatsApp service reminders India, customer retention software for garages, vehicle maintenance alerts, sent service reminder history, workshop reminder audit log, whatsapp reminder dispatch history, automated cron reminder tracking, insurance puc expiry reminder history, garage insurance renewal follow up, puc expiry tracker software, workshop customer follow up log",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/service-reminders/",
   },
@@ -84,6 +84,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "GarageSaarthi calculates next service dates automatically whenever a job card is closed or invoice generated. You can configure standard intervals like 3 months, 6 months, or specific KM readings.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does the Insurance & PUC Expiry Follow-up tracker work?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "GarageSaarthi monitors insurance policies and PUC certificate expiry countdowns in a unified dashboard. Service advisors can log call discussion notes, select customer interest status (Interested, Call Back, Renewed), schedule callback dates, view discussion history, and trigger 1-click WhatsApp alerts.",
           },
         },
         {

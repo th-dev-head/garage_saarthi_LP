@@ -31,7 +31,7 @@ const srWorkflowSteps = [
 
 export default function SRWorkflow() {
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block">
@@ -49,7 +49,7 @@ export default function SRWorkflow() {
           {srWorkflowSteps.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white border border-slate-200 p-5 rounded-2xl space-y-3 shadow-xs flex flex-col justify-between relative"
+              className="bg-slate-50 border border-slate-200/80 p-5 rounded-2xl space-y-3 shadow-xs flex flex-col justify-between relative"
             >
               <div className="space-y-2">
                 <span className="text-2xl font-black text-primary/30 block">{item.step}</span>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMobileAlt, FaTools, FaCamera, FaWhatsapp, FaReceipt, FaHistory, FaFileInvoice } from "react-icons/fa";
+import { FaMobileAlt, FaTools, FaCamera, FaWhatsapp, FaReceipt, FaHistory, FaFileInvoice, FaComments } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 export default function JCMCoreCapabilities() {
@@ -9,6 +9,12 @@ export default function JCMCoreCapabilities() {
       title: "Instant Digital Vehicle Intake",
       description: "Log vehicle number, customer details, fuel level, odometer reading, and complaints in under a minute from mobile or desktop.",
       badge: "Fast Intake"
+    },
+    {
+      icon: <FaComments className="w-6 h-6 text-orange-600" />,
+      title: "Team Chat & @Mentions",
+      description: "Communicate directly inside job cards. Mention mechanics and managers with @, share repair updates, and track status transitions in real time.",
+      badge: "Team Chat"
     },
     {
       icon: <FaFileInvoice className="w-6 h-6 text-emerald-600" />,
@@ -51,12 +57,6 @@ export default function JCMCoreCapabilities() {
       title: "Edit History & Audit Trail",
       description: "Maintain a tamper-proof log of every edit, part addition, or price discount made by Admins, Managers, and Mechanics.",
       badge: "Full Audit"
-    },
-    {
-      icon: <FaHistory className="w-6 h-6 text-teal-600" />,
-      title: "Complete Vehicle Service History",
-      description: "Access past job cards, replaced spare parts, and previous service records anytime by searching vehicle registration number.",
-      badge: "History Tracker"
     }
   ];
 
