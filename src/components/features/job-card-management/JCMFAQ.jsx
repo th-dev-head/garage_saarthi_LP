@@ -20,6 +20,10 @@ export default function JCMFAQ() {
       answer: "Yes. You can assign one or more mechanics to specific line items on a job card, set estimated completion times, and track their progress on the shop floor."
     },
     {
+      question: "Can workshop team members chat and mention each other on a job card?",
+      answer: "Yes! Every job card has a private 'Activity & Discussion' drawer. Service advisors, mechanics, and admins can chat, use @mentions (e.g., @Detailer) to notify colleagues, and view live status changes in one shared thread."
+    },
+    {
       question: "Does the job card software automatically deduct spare parts from inventory?",
       answer: "Absolutely. As soon as spare parts or lubricants are issued to a job card, the quantities are automatically deducted from your central stock levels."
     },
@@ -35,7 +39,7 @@ export default function JCMFAQ() {
       titleHighlight="FAQs"
       subtitle="Got questions about switching from paper registers to digital repair orders? We've got answers."
       faqs={faqs}
-      className="bg-slate-50"
+      className="bg-white"
     />
   );
 }

@@ -26,8 +26,8 @@ export default function GJCBenefits() {
     },
     {
       icon: <FaCheckCircle className="text-primary w-6 h-6" />,
-      title: "Give Your Team Structured Job Information",
-      desc: "Ensure advisors, managers, and mechanics access the same work list based on user roles."
+      title: "Team Chat & In-Context Discussions",
+      desc: "Allow mechanics, service advisors, and managers to chat with @mentions directly inside each job card."
     },
     {
       icon: <FaCheckCircle className="text-primary w-6 h-6" />,

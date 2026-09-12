@@ -24,6 +24,10 @@ export default function GJCFAQ() {
       answer: "Yes. You can assign specific user access permissions. Mechanics can view their assigned job sheets and update repair progress from a mobile browser or app."
     },
     {
+      question: "Can workshop mechanics and advisors chat internally on a job card?",
+      answer: "Yes! Every job card includes a private 'Activity & Discussion' drawer where staff can exchange messages, use @mentions (e.g. @Detailer or @Mechanic), and view live status updates."
+    },
+    {
       question: "Can I connect job cards with customer and vehicle records?",
       answer: "Yes. Typing the registration number instantly retrieves customer details and vehicle history records, linking the new job card to the vehicle's permanent profile."
     },

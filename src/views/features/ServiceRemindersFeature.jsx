@@ -6,6 +6,7 @@ import SRDefinition from "../../components/features/service-reminders/SRDefiniti
 import SRManualVsDigital from "../../components/features/service-reminders/SRManualVsDigital";
 import SRCoreCapabilities from "../../components/features/service-reminders/SRCoreCapabilities";
 import SRReminderHistory from "../../components/features/service-reminders/SRReminderHistory";
+import SRInsurancePUCTracker from "../../components/features/service-reminders/SRInsurancePUCTracker";
 import SRWhatsAppIntegration from "../../components/features/service-reminders/SRWhatsAppIntegration";
 import SRWorkflow from "../../components/features/service-reminders/SRWorkflow";
 import SRWorkshopTypes from "../../components/features/service-reminders/SRWorkshopTypes";
@@ -22,11 +23,12 @@ export default function ServiceRemindersFeature() {
       <SRManualVsDigital />
       <SRCoreCapabilities />
       <SRReminderHistory />
+      <SRInsurancePUCTracker />
       <SRWhatsAppIntegration />
       <SRWorkflow />
       <SRWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-slate-50" />
-      <TestimonialsGrid bgClass="bg-white" />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
       <SRFAQ />
       <SRFinalCTA />
     </PageLayout>
