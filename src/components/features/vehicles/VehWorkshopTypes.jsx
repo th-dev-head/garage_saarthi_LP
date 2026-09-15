@@ -10,11 +10,11 @@ export default function VehWorkshopTypes() {
     { title: "EV Garages", desc: "Log battery specifications, EV maintenance check sheets, and past electronic checkups.", link: "/solutions/ev-garage-management-software/" },
     { title: "Truck Workshops", desc: "Maintain repair logs for commercial trucks, engine checks, and preventative checklists.", link: "/solutions/truck-workshop-software/" },
     { title: "Fleet Workshops", desc: "Access central histories for business fleet operators, transporters, and corporate accounts.", link: "/solutions/fleet-workshop-software/" },
-    { title: "Multi-Branch Garages", desc: "Centralize diagnostic and billing histories across all workshop locations centrally.", link: "/solutions/multi-branch-garage-software/" }
+    { title: "Multi-Brand Garages", desc: "Centralize diagnostic and billing histories across all workshop locations centrally.", link: "/solutions/multi-branch-garage-software/" }
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
@@ -30,7 +30,7 @@ export default function VehWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {types.map((t, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-150 hover:border-primary/30">
+            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-150 hover:border-primary/30">
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">{t.title}</h3>
                 <p className="text-xs text-slate-500 mb-6 leading-relaxed">{t.desc}</p>

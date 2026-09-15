@@ -5,6 +5,7 @@ import VehHero from "../../components/features/vehicles/VehHero";
 import VehDefinition from "../../components/features/vehicles/VehDefinition";
 import VehPaperVsDigital from "../../components/features/vehicles/VehPaperVsDigital";
 import VehCoreCapabilities from "../../components/features/vehicles/VehCoreCapabilities";
+import VehAddVehicleAndDocs from "../../components/features/vehicles/VehAddVehicleAndDocs";
 import VehWorkflow from "../../components/features/vehicles/VehWorkflow";
 import VehWorkshopTypes from "../../components/features/vehicles/VehWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
@@ -19,11 +20,12 @@ export default function VehicleManagementFeature() {
       <VehDefinition />
       <VehPaperVsDigital />
       <VehCoreCapabilities />
+      <VehAddVehicleAndDocs />
       <VehWorkflow />
       <VehWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-slate-50" />
-      <TestimonialsGrid bgClass="bg-white" />
-      <VehFAQ className="bg-slate-50" />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
+      <VehFAQ className="bg-white" />
       <VehFinalCTA />
     </PageLayout>
   );
