@@ -37,7 +37,7 @@ export default function VehWorkflow() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
@@ -55,12 +55,12 @@ export default function VehWorkflow() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between relative hover:border-primary/40 transition-colors"
+              className="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between relative hover:border-primary/40 transition-colors"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-2xl font-black text-slate-300">{step.num}</span>
-                  <div className="w-9 h-9 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center shadow-xs">
+                  <div className="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center shadow-xs">
                     {step.icon}
                   </div>
                 </div>

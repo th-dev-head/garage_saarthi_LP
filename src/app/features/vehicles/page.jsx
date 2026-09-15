@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Secure workshop vehicle record management software for garages in India. Track Odometer KM logs, diagnostics checkups, service history logs, damage records, and parts history. Start a 7-day free trial.",
   keywords:
-    "vehicle management software, vehicle management system, vehicle tracking software for workshops, workshop vehicle management software, garage vehicle management software, automotive vehicle management software, vehicle record management software, vehicle database management software, customer vehicle management software, vehicle information management software, vehicle history management software, vehicle service history software, vehicle maintenance history software, vehicle repair history software, vehicle maintenance record software, vehicle service record software, vehicle service records management, digital vehicle records, vehicle profile management, vehicle details management software, software to manage customer vehicles, software to track vehicle service history, software for vehicle maintenance records, garage software for vehicle records, workshop software for vehicle history, digital vehicle service records software, customer vehicle tracking software, vehicle service management software, workshop vehicle records management, cloud vehicle management software",
+    "vehicle management software, vehicle management system, vehicle tracking software for workshops, workshop vehicle management software, garage vehicle management software, automotive vehicle management software, vehicle record management software, vehicle database management software, customer vehicle management software, vehicle information management software, vehicle history management software, vehicle service history software, vehicle maintenance history software, vehicle repair history software, vehicle maintenance record software, vehicle service record software, vehicle service records management, digital vehicle records, vehicle profile management, vehicle details management software, software to manage customer vehicles, software to track vehicle service history, software for vehicle maintenance records, garage software for vehicle records, workshop software for vehicle history, digital vehicle service records software, customer vehicle tracking software, vehicle service management software, workshop vehicle records management, cloud vehicle management software, garage amc management software, vehicle amc contract tracker, vehicle documents locker software, rc insurance puc locker garage, split insurance od tp expiry tracker",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/vehicles/",
   },
@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
     title: "Garage Vehicle Management Software & Database | GarageSaarthi",
     description:
-      "Maintain secure digital vehicle records. Track service histories, chassis details, odometer logs, and body damage logs.",
+      "Maintain secure digital vehicle records. Track service histories, chassis details, odometer logs, AMC contracts, and digital document locker.",
     url: "https://www.garagesaarthi.com/features/vehicles/",
     siteName: "GarageSaarthi",
     images: [
@@ -31,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Garage Vehicle Management Software & Database | GarageSaarthi",
     description:
-      "Digital vehicle service records and Odometer tracking for automotive workshops.",
+      "Digital vehicle service records, AMC contract tracking, and digital document locker for automotive workshops.",
     images: ["https://www.garagesaarthi.com/garage.png"],
   },
 };
@@ -43,7 +43,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.garagesaarthi.com/features/vehicles",
       "name": "Garage Vehicle Management Software & Record Database | GarageSaarthi",
-      "description": "Secure workshop vehicle record management software for garages in India. Track Odometer KM logs, diagnostics checkups, service history logs, damage records, and parts history. Start a 7-day free trial.",
+      "description": "Secure workshop vehicle record management software for garages in India. Track Odometer KM logs, diagnostics checkups, service history logs, damage records, AMC contracts, and digital document locker. Start a 7-day free trial.",
       "url": "https://www.garagesaarthi.com/features/vehicles",
       "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
     },
@@ -53,7 +53,7 @@ const jsonLd = {
       "name": "Garage Vehicle Management Software & Record Database | GarageSaarthi",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, Android",
-      "description": "Secure workshop vehicle record management software for garages in India. Track Odometer KM logs, diagnostics checkups, service history logs, damage records, and parts history. Start a 7-day free trial.",
+      "description": "Secure workshop vehicle record management software for garages in India. Track Odometer KM logs, diagnostics checkups, service history logs, damage records, AMC contracts, and digital document locker. Start a 7-day free trial.",
       "url": "https://www.garagesaarthi.com/features/vehicles"
     },
     {
@@ -88,18 +88,26 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Can I track the full service history of returning customer vehicles?",
+          name: "How does AMC (Annual Maintenance Contract) management work in GarageSaarthi?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes! Every repair, part replacement, and billing transaction is saved permanently under the vehicle's registration plate number, allowing you to access complete service histories in 2 seconds.",
+            text: "During vehicle intake or editing, you can record a 4-digit AMC contract number, contract start date, and end date. The system automatically tags the vehicle as active AMC, allowing advisors and mechanics to honor maintenance benefits and schedule timely checkups.",
           },
         },
         {
           "@type": "Question",
-          name: "Does it support Odometer and KM logging?",
+          name: "Can I store RC copies, insurance policies, and PUC certificates digitally?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. You can record vehicle Odometer/KM readings during intake. This helps calculate upcoming service targets and intervals, which triggers automated service reminders.",
+            text: "Yes! Every vehicle has a dedicated Digital Document Locker. You can upload PDFs or images of Vehicle RC (Front/Back), Insurance Policies, Driving Licenses, PUC Certificates, and PAN cards up to 15MB each for lifetime access.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I track the full service history of returning customer vehicles?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! Every repair, part replacement, and billing transaction is saved permanently under the vehicle's registration plate number, allowing you to access complete service histories in 2 seconds.",
           },
         },
       ],
