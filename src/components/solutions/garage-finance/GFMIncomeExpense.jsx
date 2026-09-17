@@ -11,21 +11,27 @@ import { trackEvent } from "@/src/utils/pixel";
 const incomeExpenseCards = [
   {
     icon: "💰",
-    iconBg: "bg-orange-100 text-orange-600",
-    title: "Record Garage Income",
-    desc: "Track overall service revenue, spare parts billing, counter sales, and extra services. Get real-time insight into garage revenue management software records and keep your cash inflows clear."
+    iconBg: "bg-emerald-100 text-emerald-600",
+    title: "Record Garage Income with Categories",
+    desc: "Track service revenue, spare parts sales, counter cash, and scrap disposal (Bhangar/Putha). Group into custom categories & subcategories for complete revenue clarity."
   },
   {
     icon: "📉",
     iconBg: "bg-rose-100 text-rose-600",
-    title: "Record Workshop Expenses",
-    desc: "Manage operating costs, supplier payments, utility invoices, and salary outlays using our garage expense management software. Maintain a detailed garage expense tracker log without manual journals."
+    title: "Categorized Workshop Expenses",
+    desc: "Log supplier payments, technician salaries, shop rent, utility bills, and tea/coffee. Tag subcategories to detect exactly where operational costs are spiking."
+  },
+  {
+    icon: "📊",
+    iconBg: "bg-amber-100 text-amber-600",
+    title: "Category Analytics & Visual Breakdowns",
+    desc: "Get automated doughnut charts, percentage distribution cards, and month-over-month trends comparing income vs expenses for data-backed profit decisions."
   },
   {
     icon: "📁",
-    iconBg: "bg-emerald-100 text-emerald-600",
-    title: "Keep Financial Records Organized",
-    desc: "Keep your digital records unified. Linking expenses directly to specific garage branches or categories ensures your garage income management software files remain up to date and audit-ready."
+    iconBg: "bg-orange-100 text-primary",
+    title: "Audit & CA Export Ready Ledgers",
+    desc: "Keep digital financial records organized across garage branches. Export categorized P&L statements ready for GST audit and Chartered Accountant review."
   }
 ];
 
@@ -55,13 +61,13 @@ export default function GFMIncomeExpense() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {incomeExpenseCards.map((card, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-8 shadow-sm space-y-4">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
               <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-xl font-bold ${card.iconBg}`}>
                 {card.icon}
               </div>
-              <h3 className="text-lg font-bold text-text-dark">{card.title}</h3>
+              <h3 className="text-base font-bold text-text-dark">{card.title}</h3>
               <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
                 {card.desc}
               </p>

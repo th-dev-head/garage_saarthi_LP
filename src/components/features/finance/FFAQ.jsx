@@ -16,12 +16,20 @@ export default function FFAQ() {
       answer: "Yes! You can maintain vendor ledger accounts, record purchase invoices, and track outstanding supplier balances."
     },
     {
+      question: "Can I create custom categories and subcategories for expenses and income?",
+      answer: "Yes! GarageSaarthi allows you to create custom parent categories (e.g., Spare Parts, Staff Welfare, Scrap) and infinite subcategories (e.g., Engine Oils, Brake Pads, Tea & Snacks) directly on the fly while recording entries."
+    },
+    {
+      question: "How do category analytics help reduce workshop losses?",
+      answer: "The interactive category analytics dashboard gives you instant percentage breakdowns, donut charts, and monthly trends. You can immediately pinpoint which suppliers or operational heads account for the largest share of your expenses."
+    },
+    {
       question: "Does it support GST tax calculations?",
       answer: "Yes. GarageSaarthi separates tax amounts into CGST, SGST, and IGST breakdowns, allowing you to export clean monthly reports for your CA."
     },
     {
       question: "Is Finance Management available during the 7-day free trial?",
-      answer: "Yes! You get full access to cashbooks, expense logs, P&L reports, and vendor ledger tools during your 7-day free trial."
+      answer: "Yes! You get full access to cashbooks, expense logs, P&L reports, category analytics, and vendor ledger tools during your 7-day free trial."
     }
   ];
 
@@ -31,7 +39,7 @@ export default function FFAQ() {
       titleHighlight="FAQs"
       subtitle="Everything you need to know about GarageSaarthi financial tracking."
       faqs={faqs}
-      className="bg-white"
+      className="bg-slate-50"
     />
   );
 }

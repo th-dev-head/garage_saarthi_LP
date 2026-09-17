@@ -49,18 +49,17 @@ export default function GACExpenseManagement() {
               <p className="text-sm font-bold text-slate-800">Workshop Purchases</p>
             </div>
             <div className="space-y-2">
-              <div className="flex justify-between text-xs text-slate-600">
-                <span>Category</span>
-                <span className="font-semibold text-slate-800">Engine Oil wholesale</span>
-              </div>
-              <div className="flex justify-between text-xs text-slate-600">
-                <span>Amount Paid</span>
-                <span className="font-bold text-rose-500">₹45,000</span>
-              </div>
-              <div className="flex justify-between text-xs text-slate-600">
-                <span>Payment Mode</span>
-                <span className="text-slate-800 font-semibold">Bank Transfer</span>
-              </div>
+              {[
+                { label: "Category", value: "Workshop Purchases", valColor: "text-slate-800 font-semibold" },
+                { label: "Subcategory", value: "Engine Oil Wholesale", valColor: "text-primary font-semibold" },
+                { label: "Amount Paid", value: "₹45,000.00", valColor: "font-bold text-rose-500" },
+                { label: "Payment Mode", value: "Bank Transfer", valColor: "text-slate-800 font-semibold" }
+              ].map((row, idx) => (
+                <div key={idx} className="flex justify-between text-xs text-slate-600">
+                  <span>{row.label}</span>
+                  <span className={row.valColor}>{row.value}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

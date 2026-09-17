@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Track daily workshop revenue, counter cash, UPI settlements, vendor credit dues, mechanic commissions, and real-time net profit margins with GarageSaarthi.",
   keywords:
-    "garage finance management software, workshop cash flow software, garage ledger software, auto repair shop P&L tracker, vendor credit management garage, garage GST accounting software India, workshop income expense manager",
+    "garage finance management software, workshop cash flow software, garage expense category analytics, garage subcategory expense tracker, garage ledger software, auto repair shop P&L tracker, vendor credit management garage, garage GST accounting software India, workshop income expense manager",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/finance/",
   },
@@ -84,6 +84,22 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Not at all! GarageSaarthi is designed specifically for garage owners. Incomes and expenses are automatically logged as you create job cards, buy spare parts, or collect payments.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I create custom categories and subcategories for expenses and income?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! GarageSaarthi allows you to create custom parent categories (e.g., Spare Parts, Staff Welfare, Scrap) and infinite subcategories (e.g., Engine Oils, Brake Pads, Tea & Snacks) directly on the fly while recording entries.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do category analytics help reduce workshop losses?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The interactive category analytics dashboard gives you instant percentage breakdowns, donut charts, and monthly trends. You can immediately pinpoint which suppliers or operational heads account for the largest share of your expenses.",
           },
         },
         {

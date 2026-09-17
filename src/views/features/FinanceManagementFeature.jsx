@@ -7,6 +7,7 @@ import FManualVsDigital from "../../components/features/finance/FManualVsDigital
 import FCoreCapabilities from "../../components/features/finance/FCoreCapabilities";
 import FWorkflow from "../../components/features/finance/FWorkflow";
 import FFinanceTools from "../../components/features/finance/FFinanceTools";
+import FCategoryAnalytics from "../../components/features/finance/FCategoryAnalytics";
 import FWorkshopTypes from "../../components/features/finance/FWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
 import TestimonialsGrid from "../../components/common/TestimonialsGrid";
@@ -21,10 +22,11 @@ export default function FinanceManagementFeature() {
       <FManualVsDigital />
       <FCoreCapabilities />
       <FWorkflow />
+      <FCategoryAnalytics />
       <FFinanceTools />
       <FWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
       <FFAQ />
       <FFinalCTA />
     </PageLayout>
