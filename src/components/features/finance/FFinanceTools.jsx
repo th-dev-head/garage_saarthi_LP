@@ -25,9 +25,16 @@ const fFinanceTools = [
   }
 ];
 
+const fLedgerSummary = [
+  { label: "Total Billing Revenue", value: "₹1,24,500.00", valClass: "font-bold text-emerald-400", labelClass: "text-slate-300", hasBorder: true },
+  { label: "Spare Parts Expense", value: "₹52,000.00", valClass: "font-bold text-rose-400", labelClass: "text-slate-300", hasBorder: true },
+  { label: "Mechanic Commissions", value: "₹14,500.00", valClass: "font-bold text-rose-400", labelClass: "text-slate-300", hasBorder: true },
+  { label: "Net Workshop Profit", value: "₹58,000.00 (46.5%)", valClass: "font-bold text-amber-400 text-sm", labelClass: "font-bold text-white", hasBorder: false }
+];
+
 export default function FFinanceTools() {
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side Features */}
         <div>
@@ -75,22 +82,17 @@ export default function FFinanceTools() {
           </div>
 
           <div className="bg-slate-800/90 rounded-2xl p-4 space-y-3 text-xs border border-slate-700/60 font-sans">
-            <div className="flex justify-between items-center pb-2 border-b border-slate-700">
-              <span className="text-slate-300">Total Billing Revenue</span>
-              <span className="font-bold text-emerald-400">₹1,24,500.00</span>
-            </div>
-            <div className="flex justify-between items-center pb-2 border-b border-slate-700">
-              <span className="text-slate-300">Spare Parts Expense</span>
-              <span className="font-bold text-rose-400">₹52,000.00</span>
-            </div>
-            <div className="flex justify-between items-center pb-2 border-b border-slate-700">
-              <span className="text-slate-300">Mechanic Commissions</span>
-              <span className="font-bold text-rose-400">₹14,500.00</span>
-            </div>
-            <div className="flex justify-between items-center pt-1">
-              <span className="font-bold text-white">Net Workshop Profit</span>
-              <span className="font-bold text-amber-400 text-sm">₹58,000.00 (46.5%)</span>
-            </div>
+            {fLedgerSummary.map((item, idx) => (
+              <div
+                key={idx}
+                className={`flex justify-between items-center ${
+                  item.hasBorder ? "pb-2 border-b border-slate-700" : "pt-1"
+                }`}
+              >
+                <span className={item.labelClass}>{item.label}</span>
+                <span className={item.valClass}>{item.value}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
