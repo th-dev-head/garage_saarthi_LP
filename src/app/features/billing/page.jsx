@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
   keywords:
-    "garage billing software, workshop invoicing software, GST billing software for garage, auto repair invoice maker, garage invoice software India, digital workshop billing app, garage estimate and invoice maker, spare parts invoicing software, WhatsApp invoice for garage, garage GST invoice maker, workshop billing app for android, automobile billing software, auto parts GST invoice software, garage cash receipt software, cloud workshop billing software, 1 click job card billing, garage invoice generator, 8 invoice themes garage software, b2b gst billing with pan card, customer gstin pan invoice software, custom invoice layouts upi qr",
+    "garage billing software, workshop invoicing software, GST billing software for garage, auto repair invoice maker, garage invoice software India, digital workshop billing app, garage estimate and invoice maker, spare parts invoicing software, WhatsApp invoice for garage, garage GST invoice maker, workshop billing app for android, automobile billing software, auto parts GST invoice software, garage cash receipt software, cloud workshop billing software, 1 click job card billing, garage invoice generator, 8 invoice themes garage software, b2b gst billing with pan card, customer gstin pan invoice software, custom invoice layouts upi qr, profit margin protection garage software, max discount capping billing, loss making invoice prevention",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/billing/",
   },
@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
     title: "Garage Billing & Invoicing Software | GarageSaarthi",
     description:
-      "Create professional GST invoices in seconds. Convert job cards to bills in 1 click, itemize spare parts and labor rates, and send WhatsApp PDF bills.",
+      "Create professional GST invoices in seconds. Convert job cards to bills in 1 click, protect profit margins with max discount capping, and send WhatsApp PDF bills.",
     url: "https://www.garagesaarthi.com/features/billing/",
     siteName: "GarageSaarthi",
     images: [
@@ -31,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Garage Billing & GST Invoicing Software | GarageSaarthi",
     description:
-      "Express GST invoicing for Indian auto workshops. Send WhatsApp PDF bills & convert job cards in 1 click.",
+      "Express GST invoicing & profit-margin guardrails for Indian auto workshops. Send WhatsApp PDF bills & convert job cards in 1 click.",
     images: ["https://www.garagesaarthi.com/garage.png"],
   },
 };
@@ -43,7 +43,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.garagesaarthi.com/features/billing",
       "name": "Garage Billing & GST Invoicing Software | GarageSaarthi",
-      "description": "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
+      "description": "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, profit margin protection, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
       "url": "https://www.garagesaarthi.com/features/billing",
       "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
     },
@@ -53,7 +53,7 @@ const jsonLd = {
       "name": "Garage Billing & GST Invoicing Software | GarageSaarthi",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, Android",
-      "description": "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
+      "description": "All-in-one GST billing and invoicing software for auto repair shops & workshops in India. Fast 1-click job card conversion, profit margin protection, HSN codes, WhatsApp PDF bills, and multi-mode payment logs.",
       "url": "https://www.garagesaarthi.com/features/billing"
     },
     {
@@ -84,6 +84,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Garage billing software is a specialized application for auto workshops that automates tax invoice generation, calculates GST splits (CGST/SGST/IGST), records spare parts & labor charges, and tracks customer payment statuses.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does the Max Discount Capping & Profit Margin Protection work?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "GarageSaarthi calculates the real-time gross profit margin on every job card by subtracting vendor purchase costs from customer selling prices across all parts and labor. The system automatically restricts the maximum allowable discount to this margin, blocking loss-making bills.",
           },
         },
         {

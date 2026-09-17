@@ -5,6 +5,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 const collections = [
   { label: "Cash Register", amount: "₹14,500.00", amountClass: "font-bold text-slate-700" },
   { label: "UPI Payments", amount: "₹32,200.00", amountClass: "font-bold text-slate-700" },
+  { label: "Gross Profit Margin (Protected)", amount: "₹12,450.00", amountClass: "font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded" },
   { label: "Unpaid Balance (Dues)", amount: "₹8,400.00", amountClass: "font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded" }
 ];
 
@@ -31,14 +32,13 @@ export default function GBFinanceVisibility() {
         {/* Right text */}
         <div className="order-1 lg:order-2">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
-            Collections Tracker
+            Collections &amp; Margin Guardrails
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark mt-4 mb-6 leading-tight">
-            Track Payments, Dues and Cash{" "}
-            <GradientUnderline>Register Summaries</GradientUnderline>
+            Track Payments, Dues and <GradientUnderline>Profit-Protected Margins</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
-            Invoicing is only the first step. Track cash, UPI, card, and digital collections under specific registers to avoid cash mismatch.
+            Invoicing is only the first step. Track cash, UPI, card, and digital collections under specific registers to avoid cash mismatch, while automatic <strong>Max Discount Capping</strong> prevents discounts that exceed your gross profit margins (Selling Price − Vendor Cost).
           </p>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed">
             For vehicles released before payment clearance, log outstanding balances as pending dues under the customer's permanent database profile. This ensures outstanding amounts are clearly highlighted during their next workshop check-in.

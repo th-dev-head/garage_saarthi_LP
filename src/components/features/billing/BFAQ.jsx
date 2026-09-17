@@ -1,11 +1,15 @@
 import React from "react";
 import AccordionFAQ from "../../common/AccordionFAQ";
 
-export default function BFAQ() {
+export default function BFAQ({ className = "bg-white" }) {
   const faqs = [
     {
       question: "What is garage billing & invoicing software?",
       answer: "Garage billing software is a specialized application for auto workshops that automates tax invoice generation, calculates GST splits (CGST/SGST/IGST), records spare parts & labor charges, and tracks customer payment statuses."
+    },
+    {
+      question: "How does the Max Discount Capping & Profit Margin Protection work?",
+      answer: "GarageSaarthi calculates the real-time gross profit margin on every job card by subtracting vendor purchase costs from customer selling prices across all parts and labor. The system automatically restricts the maximum allowable discount to this margin, blocking loss-making bills."
     },
     {
       question: "Can I generate GST-compliant invoices with HSN codes?",
@@ -33,8 +37,9 @@ export default function BFAQ() {
     <AccordionFAQ
       title="Garage Billing & Invoicing"
       titleHighlight="FAQs"
-      subtitle="Got questions about switching from manual bill books to digital GST invoicing? We've got answers."
+      subtitle="Got questions about switching from manual bill books to digital GST invoicing & profit-margin protection? We've got answers."
       faqs={faqs}
+      className={className}
     />
   );
 }

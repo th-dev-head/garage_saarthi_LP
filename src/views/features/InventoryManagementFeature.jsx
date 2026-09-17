@@ -6,6 +6,7 @@ import IDefinition from "../../components/features/inventory/IDefinition";
 import IPaperVsDigital from "../../components/features/inventory/IPaperVsDigital";
 import ICoreCapabilities from "../../components/features/inventory/ICoreCapabilities";
 import ILocationManagement from "../../components/features/inventory/ILocationManagement";
+import IUsageTracking from "../../components/features/inventory/IUsageTracking";
 import ISpareParts from "../../components/features/inventory/ISpareParts";
 import IWorkflow from "../../components/features/inventory/IWorkflow";
 import IWorkshopTypes from "../../components/features/inventory/IWorkshopTypes";
@@ -22,12 +23,13 @@ export default function InventoryManagementFeature() {
       <IPaperVsDigital />
       <ICoreCapabilities />
       <ILocationManagement />
+      <IUsageTracking />
       <ISpareParts />
       <IWorkflow />
       <IWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-slate-50" />
-      <TestimonialsGrid bgClass="bg-white" />
-      <IFAQ />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
+      <IFAQ className="bg-white" />
       <IFinalCTA />
     </PageLayout>
   );
