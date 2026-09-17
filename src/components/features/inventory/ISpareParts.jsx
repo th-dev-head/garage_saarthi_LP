@@ -39,7 +39,7 @@ const mockSparePartsItems = [
 
 export default function ISpareParts() {
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Text and Features */}
         <div>
@@ -69,7 +69,7 @@ export default function ISpareParts() {
         </div>
 
         {/* Right Visual Mockup Card */}
-        <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-sm">
+        <div className="bg-white border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-sm">
           <div className="flex items-center justify-between border-b border-slate-200/60 pb-3">
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wide">Spare Parts Registry</h4>
             <span className="text-[10px] text-slate-500 font-medium">102 Total Items</span>
@@ -77,7 +77,7 @@ export default function ISpareParts() {
 
           <div className="space-y-2 text-xs text-slate-600">
             {mockSparePartsItems.map((item, idx) => (
-              <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200/80">
+              <div key={idx} className="bg-slate-50 p-4 rounded-xl border border-slate-200/80">
                 <div className="flex justify-between font-bold text-slate-900 mb-1">
                   <span>{item.name}</span>
                   <span className="text-primary font-bold">{item.price}</span>
@@ -85,7 +85,7 @@ export default function ISpareParts() {
                 <p className="text-[10px] text-slate-400">Suitable for: {item.suitable}</p>
                 <div className="mt-2 flex justify-between items-center text-[10px] border-t border-slate-100 pt-2">
                   <span>Rack: {item.rack}</span>
-                  <span className="text-slate-700 font-semibold bg-slate-100 px-2.5 py-0.5 rounded">Qty: {item.qty}</span>
+                  <span className="text-slate-700 font-semibold bg-white border border-slate-200 px-2.5 py-0.5 rounded">Qty: {item.qty}</span>
                 </div>
               </div>
             ))}

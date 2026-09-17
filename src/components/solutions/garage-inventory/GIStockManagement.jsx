@@ -5,18 +5,18 @@ import GradientUnderline from "../../common/GradientUnderline";
 const stockCapabilities = [
   {
     icon: <FaSearch className="text-primary w-4 h-4" />,
-    title: "Current Stock Quantity",
-    desc: "Instantly check exact quantities in stock from any system dashboard without visiting the physical storage rack."
+    title: "Current Stock & Storage Bins",
+    desc: "Instantly check exact quantities in stock and view Warehouse/Rack/Bin locations from any system dashboard."
+  },
+  {
+    icon: <FaHistory className="text-primary w-4 h-4" />,
+    title: "Item Consumption & Usage History",
+    desc: "Track every unit's full lifecycle across Job Cards and Counter Sales with mechanic and customer audit logs."
   },
   {
     icon: <FaExclamationTriangle className="w-4 h-4" style={{ color: "#f97316" }} />,
     title: "Low-Stock Alerts",
     desc: "Receive proactive notifications when critical replacement parts fall below safety re-order levels."
-  },
-  {
-    icon: <FaHistory className="text-green-500 w-4 h-4" />,
-    title: "Stock Adjustments & Movements",
-    desc: "Log manual quantity corrections for scrap parts, return-to-vendor parts, or internal usage audits."
   },
   {
     icon: <FaAddressBook className="w-4 h-4" style={{ color: "#3b82f6" }} />,
@@ -26,8 +26,9 @@ const stockCapabilities = [
 ];
 
 const adjustmentLogs = [
-  { icon: FaArrowUp, iconColor: "text-green-500", label: "Purchase Inflow", val: "+50 Engine Oils" },
-  { icon: FaArrowDown, iconColor: "text-red-500", label: "Job Card Use", val: "-1 Tyre (JC-2342)" }
+  { icon: FaArrowUp, iconColor: "text-green-500", label: "Purchase Inflow", val: "+50 Ltr Oil (Supplier)" },
+  { icon: FaArrowDown, iconColor: "text-blue-500", label: "Job Card Use", val: "-3.5L Oil (JC-2026-089)" },
+  { icon: FaArrowDown, iconColor: "text-emerald-500", label: "Counter Sale", val: "-1.0L Oil (CS-1042)" }
 ];
 
 export default function GIStockManagement() {
