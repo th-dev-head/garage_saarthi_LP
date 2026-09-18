@@ -36,8 +36,16 @@ export default function IFAQ({ className = "bg-white" }) {
       answer: "Yes! You can log vendor purchase bills, track cost price variations over time, and maintain pending payment balances for all your spare parts suppliers."
     },
     {
-      question: "Can I view total inventory stock valuation?",
-      answer: "Yes. The inventory dashboard calculates the total monetary value of your current stock based on purchase cost and potential retail margin."
+      question: "How does Godown Warehouse & Inter-Location Stock Transfer work in GarageSaarthi?",
+      answer: "GarageSaarthi allows you to isolate bulk godown warehouse stock from active shop floor stock. You can execute 1-tap stock transfers between Godown and Shop floor with live projected balance previews, transfer reasons, and full audit logs."
+    },
+    {
+      question: "Can I receive vendor purchases and bulk Excel uploads directly into my Godown?",
+      answer: "Yes! When logging supplier purchase bills or importing catalog batches via Excel/CSV, you can choose whether the incoming stock should be routed directly to your Godown Warehouse or placed on active Shop Floor racks."
+    },
+    {
+      question: "Can I view total inventory stock valuation across Shop and Godown?",
+      answer: "Yes. The inventory dashboard calculates the total monetary value and quantity breakdown of your current stock across active shop floor racks and backroom godowns based on purchase cost and potential retail margin."
     }
   ];
 

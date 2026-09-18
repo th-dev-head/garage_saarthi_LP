@@ -1,31 +1,43 @@
 import React from "react";
 import Link from "next/link";
-import { FaBoxOpen, FaClipboardList, FaShoppingCart, FaStore, FaArrowRight } from "react-icons/fa";
+import { FaBoxOpen, FaClipboardList, FaShoppingCart, FaStore, FaArrowRight, FaWarehouse, FaBarcode } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const featureList = [
   {
+    icon: <FaWarehouse className="w-5 h-5 text-primary" />,
+    title: "Godown & Stock Transfers",
+    desc: "Maintain separate backroom Godown warehouse stock, execute 1-tap transfers to active shop racks with live projected balance previews.",
+    link: "/features/inventory/",
+  },
+  {
+    icon: <FaBarcode className="w-5 h-5 text-primary" />,
+    title: "Auto Barcode & Scanner Hub",
+    desc: "Generate Code-128 barcodes, print 50x25mm thermal stickers, and scan via hardware scanner guns or mobile cameras.",
+    link: "/features/inventory/",
+  },
+  {
     icon: <FaBoxOpen className="w-5 h-5 text-primary" />,
-    title: "Inventory Management",
-    desc: "Maintain a live catalog of spare parts, engine oils, and accessories. Track current stock counts and values.",
+    title: "Live Inventory & Storage Bins",
+    desc: "Maintain a live catalog of spare parts, engine oils, and accessories mapped to Warehouse, Rack, and Bin locations.",
     link: "/features/inventory/",
   },
   {
     icon: <FaClipboardList className="w-5 h-5 text-primary" />,
-    title: "Parts Requisition",
-    desc: "Track parts issued to technicians for specific job cards. Ensure spare parts are correctly billed to the job.",
+    title: "Parts Requisition & Usage Audit",
+    desc: "Track parts issued to technicians for specific job cards with full vehicle-level consumption history and accountability.",
     link: "/features/inventory/",
   },
   {
     icon: <FaShoppingCart className="w-5 h-5 text-primary" />,
-    title: "Purchases",
-    desc: "Record spare parts purchases, log vendor details, track purchase bills, and update stock counts automatically.",
+    title: "Vendor Purchases & Intake",
+    desc: "Record spare parts purchases, route stock directly to Godown or Shop Floor, and track purchase bill pricing trends.",
     link: "/features/inventory/",
   },
   {
     icon: <FaStore className="w-5 h-5 text-primary" />,
-    title: "Counter Sales",
-    desc: "Sell spare parts and lubricants directly over the counter without opening a job card. Generate bills instantly.",
+    title: "Counter Sales Billing",
+    desc: "Sell spare parts and lubricants directly over the counter without opening a job card with instant GST invoices.",
     link: "/features/counter-sales/",
   },
 ];
@@ -48,7 +60,7 @@ export default function AWInventory() {
         </div>
 
         {/* Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {featureList.map((item, idx) => (
             <div
               key={idx}
