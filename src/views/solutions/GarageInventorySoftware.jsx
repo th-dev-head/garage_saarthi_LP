@@ -5,6 +5,7 @@ import GIHero from "../../components/solutions/garage-inventory/GIHero";
 import GIDefinition from "../../components/solutions/garage-inventory/GIDefinition";
 import GISpareParts from "../../components/solutions/garage-inventory/GISpareParts";
 import GIStockManagement from "../../components/solutions/garage-inventory/GIStockManagement";
+import GIGodownManagement from "../../components/solutions/garage-inventory/GIGodownManagement";
 import GIAutomotiveParts from "../../components/solutions/garage-inventory/GIAutomotiveParts";
 import GIWorkshopTypes from "../../components/solutions/garage-inventory/GIWorkshopTypes";
 import GIConnectedOperations from "../../components/solutions/garage-inventory/GIConnectedOperations";
@@ -20,10 +21,12 @@ import GIFinalCTA from "../../components/solutions/garage-inventory/GIFinalCTA";
 
 export default function GarageInventorySoftware() {
   return (
-    <PageLayout>      <GIHero />
+    <PageLayout>
+      <GIHero />
       <GIDefinition />
       <GISpareParts />
       <GIStockManagement />
+      <GIGodownManagement />
       <GIAutomotiveParts />
       <GIWorkshopTypes />
       <GIConnectedOperations />

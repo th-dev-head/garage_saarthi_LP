@@ -1,27 +1,34 @@
 import React from "react";
 import Link from "next/link";
-import { FaBoxOpen, FaCashRegister, FaEye, FaArrowRight } from "react-icons/fa";
+import { FaBoxOpen, FaCashRegister, FaEye, FaArrowRight, FaWarehouse } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const items = [
   {
+    icon: <FaWarehouse className="w-5 h-5" />,
+    title: "Godown & Stock Transfers",
+    desc: "Maintain bulk car spares in your Godown warehouse and transfer items to active bay racks with 1 tap, live balance previews, and audit logs.",
+    link: "/features/inventory/",
+    linkLabel: "Explore Godown Transfers",
+  },
+  {
     icon: <FaBoxOpen className="w-5 h-5" />,
     title: "Track Garage Inventory",
-    desc: "Maintain a live catalogue of all spare parts, lubricants, and accessories stocked in your car garage. Set low-stock thresholds and get warnings before fast-moving items run out.",
+    desc: "Maintain a live catalogue of all spare parts, lubricants, and accessories stocked in your car garage. Set low-stock thresholds and get automated warnings.",
     link: "/features/inventory/",
     linkLabel: "Explore Inventory",
   },
   {
     icon: <FaCashRegister className="w-5 h-5" />,
     title: "Manage Counter Sales",
-    desc: "Record direct spare parts sales to walk-in customers at the counter — separate from job card repairs. Maintain accurate stock deduction and billing for every counter transaction.",
+    desc: "Record direct spare parts sales to walk-in customers at the counter — separate from job card repairs. Maintain accurate stock deduction and billing.",
     link: "/features/counter-sales/",
     linkLabel: "Explore Counter Sales",
   },
   {
     icon: <FaEye className="w-5 h-5" />,
-    title: "Improve Stock Visibility",
-    desc: "See exactly what is available in your car garage inventory at any moment. Track purchase history, parts consumption per job card, and closing stock across your workshop.",
+    title: "Stock & Usage Visibility",
+    desc: "See exactly what is available across Godown and Shop floors. Track purchase history, parts consumption per job card, and stock valuation.",
     link: "/features/inventory/",
     linkLabel: "Explore Stock Reports",
   },
@@ -34,19 +41,19 @@ export default function CGInventory() {
         {/* Header */}
         <div className="mb-12">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
-            Inventory & Counter Sales
+            Inventory, Godown &amp; Counter Sales
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-text-dark mt-4 mb-4 leading-tight">
-            Manage Spare Parts Inventory and{" "}
+            Manage Spare Parts, Godown Stock and{" "}
             <GradientUnderline>Counter Sales</GradientUnderline>
           </h2>
           <p className="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl">
-            Keep every spare part accounted for. GarageSaarthi connects your car garage inventory directly to job cards and billing, so you always know what is in stock and what has been used.
+            Keep every spare part accounted for. GarageSaarthi connects your car garage godown and inventory directly to job cards and billing, so you always know what is in stock and what has been used.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {items.map((item, idx) => (
             <div
               key={idx}

@@ -1,8 +1,13 @@
 import React from "react";
-import { FaExclamationTriangle, FaSearch, FaHistory, FaAddressBook, FaArrowUp, FaArrowDown, FaBarcode, FaPrint, FaBolt } from "react-icons/fa";
+import { FaExclamationTriangle, FaSearch, FaHistory, FaAddressBook, FaArrowUp, FaArrowDown, FaBarcode, FaPrint, FaBolt, FaWarehouse, FaExchangeAlt } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const stockCapabilities = [
+  {
+    icon: <FaWarehouse className="text-primary w-4 h-4" />,
+    title: "Godown & Inter-Location Transfers",
+    desc: "Separate backroom Godown bulk stock from active shop floor racks with 1-tap transfer workflows and balance audit logs."
+  },
   {
     icon: <FaBarcode className="text-primary w-4 h-4" />,
     title: "Auto Barcode & Label Print",
@@ -15,7 +20,7 @@ const stockCapabilities = [
   },
   {
     icon: <FaSearch className="text-primary w-4 h-4" />,
-    title: "Current Stock & Storage Bins",
+    title: "Storage Bins & Rack Locator",
     desc: "Instantly check exact quantities in stock and view Warehouse/Rack/Bin locations from any system dashboard."
   },
   {
@@ -27,15 +32,11 @@ const stockCapabilities = [
     icon: <FaExclamationTriangle className="w-4 h-4" style={{ color: "#f97316" }} />,
     title: "Low-Stock Alerts",
     desc: "Receive proactive notifications when critical replacement parts fall below safety re-order levels."
-  },
-  {
-    icon: <FaAddressBook className="w-4 h-4" style={{ color: "#3b82f6" }} />,
-    title: "Supplier & Purchase Info",
-    desc: "Link parts directly with vendor profiles, making it simple to repeat orders at verified wholesale purchase rates."
   }
 ];
 
 const adjustmentLogs = [
+  { icon: FaExchangeAlt, iconColor: "text-amber-500", label: "Godown Transfer", val: "+20 Ltr (Godown ➔ Shop Floor)" },
   { icon: FaBarcode, iconColor: "text-primary", label: "Barcode Scan", val: "GS-MOT-710010W50 (Rack A-02)" },
   { icon: FaArrowUp, iconColor: "text-green-500", label: "Purchase Inflow", val: "+50 Ltr Oil (Supplier)" },
   { icon: FaArrowDown, iconColor: "text-blue-500", label: "Job Card Use", val: "-3.5L Oil (JC-2026-089)" },

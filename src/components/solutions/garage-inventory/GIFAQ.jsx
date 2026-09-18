@@ -37,10 +37,18 @@ export default function GIFAQ() {
       )
     },
     {
+      question: "Can I manage separate Godown Warehouse stock and transfer parts to my Shop Floor?",
+      answer: (
+        <>
+          Yes! GarageSaarthi provides dedicated Godown Warehouse management. You can store bulk reserves in Godown stock, execute 1-tap stock transfers to active Shop Floor racks with live projected balance previews, and view complete timestamped transfer history.
+        </>
+      )
+    },
+    {
       question: "Can I use GarageSaarthi for workshop stock management?",
       answer: (
         <>
-          Yes, you can track exact current stock quantities, set up low-stock re-order thresholds, receive alerts, log manual adjustments, and monitor item consumption statistics directly.
+          Yes, you can track exact current stock quantities across Shop &amp; Godown, set up low-stock re-order thresholds, receive alerts, log manual adjustments, and monitor item consumption statistics directly.
         </>
       )
     },

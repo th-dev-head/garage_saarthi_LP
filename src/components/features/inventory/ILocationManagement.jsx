@@ -83,7 +83,7 @@ export default function ILocationManagement() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left: Location Manager Dialog Mockup */}
           <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+            <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <span className="w-8 h-8 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
                   <FaWarehouse />
@@ -150,7 +150,7 @@ export default function ILocationManagement() {
               </table>
             </div>
 
-            <div className="pt-2 text-[11px] text-slate-500 flex items-center justify-between border-t border-slate-100">
+            <div className="text-[11px] text-slate-500 flex items-center justify-between">
               <span>Supports infinite warehouses, racks & storage bins</span>
               <span className="text-primary font-bold">Zero Misplaced Stock</span>
             </div>
@@ -185,7 +185,7 @@ export default function ILocationManagement() {
               ))}
             </div>
 
-            <div className="pt-2 text-[11px] text-emerald-700 font-bold flex items-center gap-1.5 border-t border-slate-100">
+            <div className="pt-2 text-[11px] text-emerald-700 font-bold flex items-center gap-1.5">
               <FaCheckCircle className="text-emerald-500" /> Automatically printed on mechanic job sheets
             </div>
           </div>

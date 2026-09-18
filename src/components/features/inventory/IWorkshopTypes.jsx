@@ -29,7 +29,7 @@ export default function IWorkshopTypes() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
@@ -45,7 +45,7 @@ export default function IWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {workshopTypes.map((item, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between hover:border-primary/30">
+            <div key={idx} className="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between hover:border-primary/30">
               <div className="space-y-4">
                 <div className="w-10 h-10 bg-orange-50 rounded-xl flex items-center justify-center">
                   {item.icon}
