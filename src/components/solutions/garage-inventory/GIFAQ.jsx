@@ -21,6 +21,22 @@ export default function GIFAQ() {
       )
     },
     {
+      question: "Can I generate barcodes and print thermal stickers for spare parts in GarageSaarthi?",
+      answer: (
+        <>
+          Yes! GarageSaarthi automatically generates Code-128 vector barcodes for spare parts. You can print 50x25mm and 50x38mm thermal label stickers or 30-label A4 sheets for storage bins and boxes with 1 click.
+        </>
+      )
+    },
+    {
+      question: "Can I use physical USB / Bluetooth barcode scanner guns?",
+      answer: (
+        <>
+          Yes! GarageSaarthi supports all standard USB and wireless 2.4GHz / Bluetooth barcode scanner guns with rapid &lt;40ms scan detection, as well as live mobile camera scanning with flashlight support.
+        </>
+      )
+    },
+    {
       question: "Can I use GarageSaarthi for workshop stock management?",
       answer: (
         <>
