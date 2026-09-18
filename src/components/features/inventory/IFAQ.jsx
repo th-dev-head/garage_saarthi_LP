@@ -24,8 +24,12 @@ export default function IFAQ({ className = "bg-white" }) {
       answer: "Yes! You can define minimum reorder threshold levels for each spare part. When stock falls below that number, GarageSaarthi sends an automatic low-stock alert."
     },
     {
-      question: "Does it support barcode scanning for spare parts?",
-      answer: "Yes. You can connect a USB or Bluetooth barcode scanner to quickly scan product barcodes during vendor purchase intake and customer checkout."
+      question: "Does GarageSaarthi auto-generate barcodes and print thermal stickers for spare parts?",
+      answer: "Yes! GarageSaarthi automatically generates standard Code-128 vector barcodes for newly added spare parts. You can print 50x25mm / 50x38mm thermal label stickers or 30-label A4 sheets for boxes and storage bins with 1 click."
+    },
+    {
+      question: "Can I use physical USB / Bluetooth barcode scanner guns or mobile cameras?",
+      answer: "Yes! GarageSaarthi features a rapid scanner listener (<40ms) supporting all hardware wireless/USB barcode guns without manual input focusing, as well as live mobile camera scanning with flashlight support for fast stock lookup and 1-tap stock-in."
     },
     {
       question: "Can I track vendor purchases and supplier payments?",

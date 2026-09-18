@@ -1,8 +1,18 @@
 import React from "react";
-import { FaExclamationTriangle, FaSearch, FaHistory, FaAddressBook, FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { FaExclamationTriangle, FaSearch, FaHistory, FaAddressBook, FaArrowUp, FaArrowDown, FaBarcode, FaPrint, FaBolt } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
 const stockCapabilities = [
+  {
+    icon: <FaBarcode className="text-primary w-4 h-4" />,
+    title: "Auto Barcode & Label Print",
+    desc: "Generate Code-128 barcodes instantly for parts and print 50x25mm / 50x38mm thermal stickers for storage racks."
+  },
+  {
+    icon: <FaBolt className="text-primary w-4 h-4" />,
+    title: "Scanner Gun & Camera Hub",
+    desc: "Scan barcodes via USB/Bluetooth hardware scanner guns or mobile cameras for 1-second stock lookups and quick stock-in."
+  },
   {
     icon: <FaSearch className="text-primary w-4 h-4" />,
     title: "Current Stock & Storage Bins",
@@ -26,6 +36,7 @@ const stockCapabilities = [
 ];
 
 const adjustmentLogs = [
+  { icon: FaBarcode, iconColor: "text-primary", label: "Barcode Scan", val: "GS-MOT-710010W50 (Rack A-02)" },
   { icon: FaArrowUp, iconColor: "text-green-500", label: "Purchase Inflow", val: "+50 Ltr Oil (Supplier)" },
   { icon: FaArrowDown, iconColor: "text-blue-500", label: "Job Card Use", val: "-3.5L Oil (JC-2026-089)" },
   { icon: FaArrowDown, iconColor: "text-emerald-500", label: "Counter Sale", val: "-1.0L Oil (CS-1042)" }
@@ -40,7 +51,7 @@ export default function GIStockManagement() {
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-              <span className="text-xs font-bold text-slate-800 uppercase tracking-wide">Stock Alerts</span>
+              <span className="text-xs font-bold text-slate-800 uppercase tracking-wide">Stock & Scanner Hub</span>
             </div>
             <span 
               className="text-[10px] font-bold px-2 py-0.5 rounded-full"
@@ -57,7 +68,7 @@ export default function GIStockManagement() {
             >
               <div>
                 <h5 className="font-bold text-slate-900">4T Engine Oil 1L (Motul)</h5>
-                <p className="text-[10px] text-slate-400">Supplier: Star Distributors</p>
+                <p className="text-[10px] text-slate-400">Barcode: GS-MOT-710010W50 • Rack A-02</p>
               </div>
               <div className="text-right">
                 <span className="font-bold block" style={{ color: "#dc2626" }}>4 Ltr Left</span>
@@ -85,7 +96,7 @@ export default function GIStockManagement() {
                 const Icon = log.icon;
                 return (
                   <div key={idx} className="flex justify-between items-center text-slate-600">
-                    <span className="flex items-center gap-1"><Icon className={`${log.iconColor} w-2 h-2`} /> {log.label}</span>
+                    <span className="flex items-center gap-1"><Icon className={`${log.iconColor} w-2.5 h-2.5`} /> {log.label}</span>
                     <span className="font-semibold text-slate-900">{log.val}</span>
                   </div>
                 );
