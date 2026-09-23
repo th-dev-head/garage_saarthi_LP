@@ -1,7 +1,7 @@
 import React from "react";
 import AccordionFAQ from "../../common/AccordionFAQ";
 
-export default function JCMFAQ() {
+export default function JCMFAQ({ className = "bg-slate-50" }) {
   const faqs = [
     {
       question: "What is a digital job card software?",
@@ -28,8 +28,20 @@ export default function JCMFAQ() {
       answer: "Absolutely. As soon as spare parts or lubricants are issued to a job card, the quantities are automatically deducted from your central stock levels."
     },
     {
+      question: "How does Mechanic Work & Break Time Clocking work in GarageSaarthi?",
+      answer: "Technicians can start live stopwatch timers on specific job card labour tasks or the whole repair order. When pausing for lunch, tea, parts waiting, or customer approval, the break duration is logged and subtracted from total elapsed time to record 100% accurate active working hours."
+    },
+    {
+      question: "Can mechanics access the live clocking timer from any page in the app?",
+      answer: "Yes! A persistent global floating timer bar stays at the bottom right across all app pages, allowing mechanics to check parts or inventory while keeping 1-tap Break, Resume, and Finish buttons immediately accessible."
+    },
+    {
       question: "Can I attach before and after repair photos to a job card?",
       answer: "Yes! You can capture and upload vehicle inspection photos, scratch diagrams, and completed repair photos directly using the Android mobile app or web portal."
+    },
+    {
+      question: "Does the system generate mechanic productivity and efficiency reports?",
+      answer: "Yes. GarageSaarthi aggregates total active working hours, total break duration, completed job card count, and productivity percentage for each technician to power transparent performance evaluations and incentive payroll."
     }
   ];
 
@@ -37,9 +49,9 @@ export default function JCMFAQ() {
     <AccordionFAQ
       title="Digital Job Card Management"
       titleHighlight="FAQs"
-      subtitle="Got questions about switching from paper registers to digital repair orders? We've got answers."
+      subtitle="Got questions about digital repair orders, mechanic time tracking, and workshop workflow? We've got answers."
       faqs={faqs}
-      className="bg-white"
+      className={className}
     />
   );
 }

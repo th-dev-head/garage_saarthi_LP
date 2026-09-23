@@ -6,6 +6,7 @@ import GJCDefinition from "../../components/solutions/garage-job-cards/GJCDefini
 import GJCWorkflow from "../../components/solutions/garage-job-cards/GJCWorkflow";
 import GJCPaperVsDigital from "../../components/solutions/garage-job-cards/GJCPaperVsDigital";
 import GJCWorkOrders from "../../components/solutions/garage-job-cards/GJCWorkOrders";
+import GJCMechanicClocking from "../../components/solutions/garage-job-cards/GJCMechanicClocking";
 import GJCBusinessType from "../../components/solutions/garage-job-cards/GJCBusinessType";
 import GJCCustomerVehicle from "../../components/solutions/garage-job-cards/GJCCustomerVehicle";
 import GJCInventoryBilling from "../../components/solutions/garage-job-cards/GJCInventoryBilling";
@@ -19,12 +20,13 @@ import GCFinalCTA from "../../components/solutions/garage-job-cards/GCFinalCTA";
 
 export default function GarageJobCards() {
   return (
-    <PageLayout>     
+    <PageLayout>
       <GJCHero />
       <GJCDefinition />
       <GJCWorkflow />
       <GJCPaperVsDigital />
       <GJCWorkOrders />
+      <GJCMechanicClocking />
       <GJCBusinessType />
       <GJCCustomerVehicle />
       <GJCInventoryBilling />

@@ -30,6 +30,10 @@ export default function BFAQ({ className = "bg-white" }) {
     {
       question: "Can I convert job cards to invoices automatically?",
       answer: "Absolutely. With 1-click job card conversion, all spare parts issued and labor tasks recorded are instantly transferred to the final bill without re-typing."
+    },
+    {
+      question: "Does GarageSaarthi generate digital QR gate passes upon invoice settlement?",
+      answer: "Yes! Once an invoice is paid or settled, the system automatically creates a digital Gate Pass with a cryptographic QR code. Security guards can scan this QR code with any smartphone camera to verify clearance before releasing the vehicle."
     }
   ];
 

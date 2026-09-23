@@ -55,6 +55,7 @@ const Header = () => {
       { name: "Accounting", href: "/solutions/garage-accounting-software/" },
       { name: "Payroll", href: "/solutions/garage-payroll-software/" },
       { name: "Attendance", href: "/solutions/garage-attendance-software/" },
+      { name: "Digital Gate Pass", href: "/solutions/garage-gate-pass-software/" },
     ],
     "Workshop Solutions": [
       { name: "Workshop Management", href: "/solutions/workshop-management-software/" },
@@ -90,6 +91,7 @@ const Header = () => {
       { name: "Job Card Management", href: "/features/job-card-management/" },
       { name: "Counter Sales", href: "/features/counter-sales/" },
       { name: "Billing & Invoicing", href: "/features/billing/" },
+      { name: "Digital Gate Pass", href: "/features/gate-pass/" },
       { name: "Inventory Management", href: "/features/inventory/" },
       { name: "Vehicle Inspection", href: "/features/vehicle-inspection/" },
     ],

@@ -37,7 +37,7 @@ const linkedVehiclesList = [
 
 export default function CustDetails() {
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         {/* Comparison Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -68,7 +68,7 @@ export default function CustDetails() {
           </div>
 
           {/* Right Visual Representation Column */}
-          <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 shadow-sm">
+          <div className="bg-white border border-slate-200/80 rounded-3xl p-8 shadow-sm">
             <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">
               Customer Registry View
             </span>

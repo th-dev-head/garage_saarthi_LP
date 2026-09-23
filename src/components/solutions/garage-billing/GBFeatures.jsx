@@ -57,6 +57,12 @@ export default function GBFeatures() {
       title: "Custom Service Estimates",
       desc: "Draft price quotes for customers and convert them into final invoices with a single tap.",
       link: "/solutions/garage-job-card-software/"
+    },
+    {
+      icon: <FaUserLock className="text-primary w-6 h-6" />,
+      title: "Digital QR Gate Pass Security",
+      desc: "Auto-issue QR gate passes on payment settlement for instant smartphone exit verification by security guards.",
+      link: "/features/gate-pass/"
     }
   ];
 

@@ -3,6 +3,7 @@ import React from "react";
 import CustHero from "../../components/features/customers/CustHero";
 import CustDefinition from "../../components/features/customers/CustDefinition";
 import CustDetails from "../../components/features/customers/CustDetails";
+import CustDocumentsVault from "../../components/features/customers/CustDocumentsVault";
 import CustPaperVsDigital from "../../components/features/customers/CustPaperVsDigital";
 import CustCoreCapabilities from "../../components/features/customers/CustCoreCapabilities";
 import CustWorkflow from "../../components/features/customers/CustWorkflow";
@@ -18,14 +19,16 @@ export default function CustomerManagementFeature() {
       <CustHero />
       <CustDefinition />
       <CustDetails />
+      <CustDocumentsVault />
       <CustPaperVsDigital />
       <CustCoreCapabilities />
       <CustWorkflow />
       <CustWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
-      <CustFAQ />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
+      <CustFAQ className="bg-slate-50" />
       <CustFinalCTA />
     </PageLayout>
   );
 }
+
