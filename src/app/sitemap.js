@@ -6,6 +6,7 @@ export default function sitemap() {
   const lastModified = new Date();
 
   return [
+    // Primary Pages
     {
       url: `${baseUrl}/`,
       lastModified,
@@ -18,6 +19,20 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/contact/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/download-app/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
+    // Workshop & Industry Solutions
     {
       url: `${baseUrl}/solutions/workshop-management-software/`,
       lastModified,
@@ -37,97 +52,7 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/garage-management-app/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/workshop-management-app/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/solutions/car-garage-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-erp-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-job-card-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-billing-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-crm-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/service-reminder-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/vehicle-service-history-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-reports-analytics-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/multi-branch-garage-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-inventory-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-finance-management-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-payroll-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-attendance-software/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/garage-accounting-software/`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
@@ -168,6 +93,100 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+
+    // Core Module Solutions
+    {
+      url: `${baseUrl}/solutions/garage-appointment-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-job-card-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-billing-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-gate-pass-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-crm-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-erp-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-inventory-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/service-reminder-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-customer-engagement-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-whatsapp-notification-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-automation-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-finance-management-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-accounting-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-payroll-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-attendance-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
+    // Business & Region Solutions
     {
       url: `${baseUrl}/solutions/best-garage-management-software/`,
       lastModified,
@@ -199,29 +218,51 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/garage-automation-software/`,
+      url: `${baseUrl}/solutions/multi-branch-garage-software/`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/garage-customer-engagement-software/`,
+      url: `${baseUrl}/solutions/vehicle-service-history-software/`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/garage-whatsapp-notification-software/`,
+      url: `${baseUrl}/solutions/garage-reports-analytics-software/`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/solutions/garage-management-app/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/workshop-management-app/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
+    // Feature Hub Pages
     {
       url: `${baseUrl}/features/`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/feature/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+
+    // Workshop Operations Features
     {
       url: `${baseUrl}/features/workshop-management-dashboard/`,
       lastModified,
@@ -253,7 +294,21 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/features/gate-pass/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/features/inventory/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
+    // Customer & Vehicle Features
+    {
+      url: `${baseUrl}/features/appointments/`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
@@ -300,6 +355,8 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+
+    // Finance & Business Features
     {
       url: `${baseUrl}/features/finance/`,
       lastModified,
@@ -324,6 +381,8 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+
+    // Team & Branch Management Features
     {
       url: `${baseUrl}/features/attendance/`,
       lastModified,
@@ -372,24 +431,8 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/feature/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/download-app/`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+
+    // Legal & Policy Pages
     {
       url: `${baseUrl}/privacy-policy/`,
       lastModified,
