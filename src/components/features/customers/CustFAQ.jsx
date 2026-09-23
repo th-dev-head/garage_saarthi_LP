@@ -1,11 +1,15 @@
 import React from "react";
 import AccordionFAQ from "../../common/AccordionFAQ";
 
-export default function CustFAQ() {
+export default function CustFAQ({ className = "bg-white" }) {
   const faqs = [
     {
       question: "What is garage customer management software?",
       answer: "Garage customer management software is a cloud database designed for auto workshops to securely store vehicle owner details, contact information, service histories, outstanding dues, and diagnostic feedback logs."
+    },
+    {
+      question: "Can I upload and organize customer documents, RC books, and insurance policies?",
+      answer: "Yes! The Customer Documents & History Vault allows you to store vehicle RC smartcards, insurance policies, claim approval slips, repair estimate approvals, and inspection photos under categorized folders with instant preview and download."
     },
     {
       question: "How does the system link customers to vehicles?",
@@ -35,6 +39,7 @@ export default function CustFAQ() {
       titleHighlight="FAQs"
       subtitle="Got questions about managing customer profiles, securing contact databases, and tracking history? We've got answers."
       faqs={faqs}
+      className={className}
     />
   );
 }

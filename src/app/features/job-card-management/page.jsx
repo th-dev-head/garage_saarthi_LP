@@ -1,20 +1,20 @@
 import JobCardManagementFeature from "@/src/views/features/JobCardManagementFeature";
 
 export const metadata = {
-  title: "Digital Job Card Software & Repair Order Management | GarageSaarthi",
+  title: "Digital Job Card & Mechanic Time Tracking Software | GarageSaarthi",
   description:
-    "All-in-one digital job card software for auto workshops, car garages & bike repair centers in India. Create repair orders, log complaints, attach photos, and send WhatsApp estimates.",
+    "All-in-one digital job card and mechanic time tracking software for auto workshops in India. Live task stopwatch, work & break clocking, WhatsApp estimates, and auto invoice conversion.",
   keywords:
-    "garage job card software, workshop job card management, digital job card software, garage repair order software, job card software for workshops, digital repair orders for garages, auto repair job card maker, car garage job card software, bike workshop job card app, digital job card app for android, mechanic repair order manager, workshop job card system in India, garage job card format pdf, digital vehicle inspection checklist, job card with whatsapp estimation, garage estimate and job card maker, vehicle repair history job card software, job card software with spare parts allocation, multi-stage vehicle repair tracking software, job card edit history software, garage audit log tracking, workshop job card audit trail, customer complaint solution tracking, vehicle inward acknowledgement receipt, job card acknowledgement receipt pdf, whatsapp vehicle check-in slip, garage tamper proof job cards, complaint to repair action mapping, job card internal team chat, workshop team discussion @mention, job card activity timeline log",
+    "garage job card software, mechanic time tracking software, garage mechanic clocking software, workshop job card management, digital job card software, garage repair order software, mechanic break tracking app, technician productivity tracker garage, job card software for workshops, digital repair orders for garages, auto repair job card maker, car garage job card software, bike workshop job card app, digital job card app for android, mechanic repair order manager, workshop job card system in India, garage job card format pdf, digital vehicle inspection checklist, job card with whatsapp estimation, garage estimate and job card maker, vehicle repair history job card software, job card software with spare parts allocation, multi-stage vehicle repair tracking software, job card edit history software, garage audit log tracking, workshop job card audit trail, customer complaint solution tracking, vehicle inward acknowledgement receipt, job card acknowledgement receipt pdf, whatsapp vehicle check-in slip, garage tamper proof job cards, complaint to repair action mapping, job card internal team chat, workshop team discussion @mention, job card activity timeline log",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/job-card-management/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
-    title: "Digital Job Card Management Software | GarageSaarthi",
+    title: "Digital Job Card & Mechanic Time Tracking Software | GarageSaarthi",
     description:
-      "Create professional digital job cards in under 60 seconds. Track vehicle repair orders, log complaints, attach photos, assign mechanics, and send WhatsApp estimates.",
+      "Create digital job cards in under 60 seconds. Track live mechanic labor hours, log breaks (lunch/tea/parts waiting), send WhatsApp estimates, and convert job cards to GST invoices.",
     url: "https://www.garagesaarthi.com/features/job-card-management/",
     siteName: "GarageSaarthi",
     images: [
@@ -29,9 +29,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Job Card Software & Repair Order Management | GarageSaarthi",
+    title: "Digital Job Card & Mechanic Time Tracking Software | GarageSaarthi",
     description:
-      "All-in-one digital job card software for auto repair shops in India. Send WhatsApp estimates & convert job cards to GST invoices.",
+      "All-in-one digital job card software with live mechanic clocking & WhatsApp estimates for Indian auto repair workshops.",
     images: ["https://www.garagesaarthi.com/garage.png"],
   },
 };
@@ -42,18 +42,18 @@ const jsonLd = {
     {
       "@type": "WebPage",
       "@id": "https://www.garagesaarthi.com/features/job-card-management",
-      "name": "Digital Job Card Software & Repair Order Management | GarageSaarthi",
-      "description": "All-in-one digital job card software for auto workshops, car garages & bike repair centers in India. Create repair orders, log complaints, attach photos, and send WhatsApp estimates.",
+      "name": "Digital Job Card & Mechanic Time Tracking Software | GarageSaarthi",
+      "description": "All-in-one digital job card and mechanic time tracking software for auto workshops, car garages & bike repair centers in India. Create repair orders, track live task stopwatch, log breaks, and send WhatsApp estimates.",
       "url": "https://www.garagesaarthi.com/features/job-card-management",
       "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
     },
     {
       "@type": "SoftwareApplication",
       "@id": "https://www.garagesaarthi.com/features/job-card-management#software",
-      "name": "Digital Job Card Software & Repair Order Management | GarageSaarthi",
+      "name": "Digital Job Card & Mechanic Time Tracking Software | GarageSaarthi",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, Android",
-      "description": "All-in-one digital job card software for auto workshops, car garages & bike repair centers in India. Create repair orders, log complaints, attach photos, and send WhatsApp estimates.",
+      "description": "All-in-one digital job card and mechanic time tracking software for auto workshops, car garages & bike repair centers in India. Create repair orders, track live task stopwatch, log breaks, and send WhatsApp estimates.",
       "url": "https://www.garagesaarthi.com/features/job-card-management"
     },
     {
@@ -88,6 +88,14 @@ const jsonLd = {
         },
         {
           "@type": "Question",
+          name: "How does Mechanic Work & Break Time Clocking work in GarageSaarthi?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Technicians can start live stopwatch timers on specific job card labour tasks or the whole repair order. When pausing for lunch, tea, parts waiting, or customer approval, the break duration is logged and subtracted from total elapsed time to record 100% accurate active working hours.",
+          },
+        },
+        {
+          "@type": "Question",
           name: "Can workshop team members chat and mention each other on a job card?",
           acceptedAnswer: {
             "@type": "Answer",
@@ -100,6 +108,14 @@ const jsonLd = {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Digital job cards eliminate manual handwriting and redundant data entry. Searching past customer or vehicle service records takes just 2 seconds by registration number, and completing job cards automatically converts them into GST invoices in 1 click.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I attach before and after repair photos to a job card?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes! You can capture and upload vehicle inspection photos, scratch diagrams, and completed repair photos directly using the Android mobile app or web portal.",
           },
         },
         {

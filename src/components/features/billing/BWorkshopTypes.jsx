@@ -12,7 +12,7 @@ export default function BWorkshopTypes() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">
@@ -28,7 +28,7 @@ export default function BWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {workshopTypes.map((type, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-sm transition-shadow duration-150 hover:border-primary/30">
+            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-sm transition-shadow duration-150 hover:border-primary/30">
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">{type.title}</h3>
                 <p className="text-xs text-slate-500 mb-6 leading-relaxed">{type.desc}</p>

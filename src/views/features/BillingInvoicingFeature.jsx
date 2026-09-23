@@ -9,6 +9,7 @@ import BWorkflow from "../../components/features/billing/BWorkflow";
 import BGSTBilling from "../../components/features/billing/BGSTBilling";
 import BMaxDiscountGuard from "../../components/features/billing/BMaxDiscountGuard";
 import BInvoiceThemes from "../../components/features/billing/BInvoiceThemes";
+import BGatePassSecurity from "../../components/features/billing/BGatePassSecurity";
 import BWorkshopTypes from "../../components/features/billing/BWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
 import TestimonialsGrid from "../../components/common/TestimonialsGrid";
@@ -26,10 +27,11 @@ export default function BillingInvoicingFeature() {
       <BGSTBilling />
       <BMaxDiscountGuard />
       <BInvoiceThemes />
+      <BGatePassSecurity />
       <BWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
-      <BFAQ className="bg-white" />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
+      <BFAQ className="bg-slate-50" />
       <BFinalCTA />
     </PageLayout>
   );

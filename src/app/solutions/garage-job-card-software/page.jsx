@@ -1,20 +1,20 @@
 import GarageJobCards from "@/src/views/solutions/GarageJobCards";
 
 export const metadata = {
-  title: "Garage Job Card Software for Workshops | GarageSaarthi",
+  title: "Garage Job Card & Mechanic Time Tracking Software | GarageSaarthi",
   description:
-    "Create digital job cards, manage repair work orders and track garage jobs with GarageSaarthi. Built for car, bike and automotive workshops in India.",
+    "Create digital job cards, manage repair work orders, and track live mechanic labour & break hours with GarageSaarthi. Built for car, bike and automotive workshops in India.",
   keywords:
-    "garage job card software, garage job card system, garage job card app, digital garage job card, garage work order software, garage repair order software, workshop job card software, mechanic job card software, vehicle job card software, repair order management software, garage job sheet software, repair job tracking software, car garage job card software, car workshop job card software, vehicle repair job card software, car service job card software, paperless garage job card, online garage job card software, cloud garage job card software, garage job card management software, garage job card audit log, job card edit history tracking, vehicle inward acknowledgement slip, customer complaint solution tracking, digital vehicle intake voucher, job card internal team chat, workshop team discussion @mention, job card activity timeline log",
+    "garage job card software, mechanic time tracking software, garage mechanic clocking software, garage job card system, garage job card app, digital garage job card, garage work order software, garage repair order software, workshop job card software, mechanic job card software, vehicle job card software, repair order management software, garage job sheet software, repair job tracking software, car garage job card software, car workshop job card software, vehicle repair job card software, car service job card software, paperless garage job card, online garage job card software, cloud garage job card software, garage job card management software, garage job card audit log, job card edit history tracking, vehicle inward acknowledgement slip, customer complaint solution tracking, digital vehicle intake voucher, job card internal team chat, workshop team discussion @mention, job card activity timeline log",
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/garage-job-card-software/",
   },
   robots: process.env.NEXT_PUBLIC_NO_INDEX === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
-    title: "Digital Garage Job Card Software | GarageSaarthi",
+    title: "Digital Garage Job Card & Mechanic Time Tracking Software | GarageSaarthi",
     description:
-      "Create digital job cards, organize repair work and track workshop jobs with GarageSaarthi’s garage job card system.",
+      "Create digital job cards, organize repair work, and track live mechanic work & break hours with GarageSaarthi’s garage job card system.",
     url: "https://www.garagesaarthi.com/solutions/garage-job-card-software/",
     siteName: "GarageSaarthi",
     images: [
@@ -29,9 +29,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Garage Job Card Software | GarageSaarthi",
+    title: "Digital Garage Job Card & Mechanic Time Tracking Software | GarageSaarthi",
     description:
-      "Create digital job cards, organize repair work and track workshop jobs with GarageSaarthi’s garage job card system.",
+      "Create digital job cards, organize repair work, and track live mechanic work & break hours with GarageSaarthi’s garage job card system.",
     images: ["https://www.garagesaarthi.com/garagesaarthi-garage-job-card-software-og.webp"],
   },
 };
@@ -42,9 +42,9 @@ const jsonLd = {
     {
       "@type": "WebPage",
       "@id": "https://www.garagesaarthi.com/solutions/garage-job-card-software",
-      name: "Garage Job Card Software for Workshops | GarageSaarthi",
+      name: "Garage Job Card & Mechanic Time Tracking Software | GarageSaarthi",
       description:
-        "Create digital job cards, manage repair work orders and track garage jobs with GarageSaarthi.",
+        "Create digital job cards, manage repair work orders, and track live mechanic labour & break hours with GarageSaarthi.",
       url: "https://www.garagesaarthi.com/solutions/garage-job-card-software/",
       isPartOf: { "@id": "https://www.garagesaarthi.com/#website" },
       breadcrumb: {
@@ -73,10 +73,10 @@ const jsonLd = {
     {
       "@type": "SoftwareApplication",
       "@id": "https://www.garagesaarthi.com/solutions/garage-job-card-software#software",
-      "name": "Garage Job Card Software for Workshops | GarageSaarthi",
+      "name": "Garage Job Card & Mechanic Time Tracking Software | GarageSaarthi",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, Android",
-      "description": "Create digital job cards, manage repair work orders and track garage jobs with GarageSaarthi. Built for car, bike and automotive workshops in India.",
+      "description": "Create digital job cards, manage repair work orders and track live mechanic labour & break hours with GarageSaarthi. Built for car, bike and automotive workshops in India.",
       "url": "https://www.garagesaarthi.com/solutions/garage-job-card-software"
     },
   ],
