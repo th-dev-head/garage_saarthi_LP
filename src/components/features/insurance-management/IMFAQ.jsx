@@ -1,8 +1,8 @@
 import React from "react";
 import AccordionFAQ from "../../common/AccordionFAQ";
 
-export default function IMFAQ() {
-  const faqData = [
+export default function IMFAQ({ className = "bg-white" }) {
+  const faqs = [
     {
       question: "How does GarageSaarthi calculate material depreciation on accidental parts?",
       answer: "GarageSaarthi incorporates standard IRDAI insurance guidelines: 50% for all rubber and nylon parts, 30% for fiberglass parts, 0% for glass parts, and standard progressive age-based depreciation slabs for sheet metal components. You can also customize rates for Zero Depreciation (Bumper-to-Bumper) policies.",
@@ -30,14 +30,12 @@ export default function IMFAQ() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full">
-        <AccordionFAQ
-          title="Frequently Asked Questions"
-          subtitle="Everything you need to know about Bodyshop & Cashless Insurance Claim Management in GarageSaarthi."
-          data={faqData}
-        />
-      </div>
-    </section>
+    <AccordionFAQ
+      title="Frequently Asked"
+      titleHighlight="Questions"
+      subtitle="Everything you need to know about Bodyshop & Cashless Insurance Claim Management in GarageSaarthi."
+      faqs={faqs}
+      className={className}
+    />
   );
 }

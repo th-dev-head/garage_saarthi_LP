@@ -1,3 +1,4 @@
+import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
 import GICHero from "../../components/solutions/garage-insurance-claim/GICHero";
 import GICProblemDefinition from "../../components/solutions/garage-insurance-claim/GICProblemDefinition";
@@ -13,7 +14,7 @@ import GICFinalCTA from "../../components/solutions/garage-insurance-claim/GICFi
 
 export default function GarageInsuranceClaimSoftware() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <PageLayout>
       <GICHero />
       <GICProblemDefinition />
       <GICProductDefinition />
@@ -25,6 +26,6 @@ export default function GarageInsuranceClaimSoftware() {
       <GICFreeTrial />
       <GICFAQ />
       <GICFinalCTA />
-    </div>
+    </PageLayout>
   );
 }
