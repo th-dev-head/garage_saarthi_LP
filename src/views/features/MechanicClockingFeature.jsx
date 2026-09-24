@@ -1,3 +1,4 @@
+import PageLayout from "@/src/components/common/PageLayout";
 import React from "react";
 import MCHero from "../../components/features/mechanic-clocking/MCHero";
 import MCDefinition from "../../components/features/mechanic-clocking/MCDefinition";
@@ -6,12 +7,14 @@ import MCCoreCapabilities from "../../components/features/mechanic-clocking/MCCo
 import MCWorkflow from "../../components/features/mechanic-clocking/MCWorkflow";
 import MCInteractiveDemo from "../../components/features/mechanic-clocking/MCInteractiveDemo";
 import MCWorkshopTypes from "../../components/features/mechanic-clocking/MCWorkshopTypes";
+import CloudAccessCommon from "../../components/common/CloudAccessCommon";
+import TestimonialsGrid from "../../components/common/TestimonialsGrid";
 import MCFAQ from "../../components/features/mechanic-clocking/MCFAQ";
 import MCFinalCTA from "../../components/features/mechanic-clocking/MCFinalCTA";
 
 export default function MechanicClockingFeature() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <PageLayout>
       <MCHero />
       <MCDefinition />
       <MCPaperVsDigital />
@@ -19,8 +22,10 @@ export default function MechanicClockingFeature() {
       <MCWorkflow />
       <MCInteractiveDemo />
       <MCWorkshopTypes />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
       <MCFAQ />
       <MCFinalCTA />
-    </div>
+    </PageLayout>
   );
 }
