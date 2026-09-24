@@ -185,6 +185,24 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/solutions/garage-gate-pass-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-test-drive-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/solutions/garage-insurance-claim-software/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
 
     // Business & Region Solutions
     {
@@ -300,6 +318,18 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/features/test-drive/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/features/insurance-management/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/features/inventory/`,
       lastModified,
       changeFrequency: "monthly",
@@ -383,6 +413,12 @@ export default function sitemap() {
     },
 
     // Team & Branch Management Features
+    {
+      url: `${baseUrl}/features/mechanic-clocking/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/features/attendance/`,
       lastModified,

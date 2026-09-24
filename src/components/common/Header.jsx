@@ -56,6 +56,8 @@ const Header = () => {
       { name: "Payroll", href: "/solutions/garage-payroll-software/" },
       { name: "Attendance", href: "/solutions/garage-attendance-software/" },
       { name: "Digital Gate Pass", href: "/solutions/garage-gate-pass-software/" },
+      { name: "Test Drive", href: "/solutions/garage-test-drive-software/" },
+      { name: "Insurance Claims", href: "/solutions/garage-insurance-claim-software/" },
     ],
     "Workshop Solutions": [
       { name: "Workshop Management", href: "/solutions/workshop-management-software/" },
@@ -89,6 +91,8 @@ const Header = () => {
     "Workshop Operations": [
       { name: "Workshop Management Dashboard", href: "/features/workshop-management-dashboard/" },
       { name: "Job Card Management", href: "/features/job-card-management/" },
+      { name: "Test Drive Management", href: "/features/test-drive/" },
+      { name: "Insurance Management", href: "/features/insurance-management/" },
       { name: "Counter Sales", href: "/features/counter-sales/" },
       { name: "Billing & Invoicing", href: "/features/billing/" },
       { name: "Digital Gate Pass", href: "/features/gate-pass/" },
@@ -112,6 +116,7 @@ const Header = () => {
       { name: "CA Access", href: "/features/ca-access/" },
     ],
     "Team Management": [
+      { name: "Mechanic Clocking", href: "/features/mechanic-clocking/" },
       { name: "Attendance Management", href: "/features/attendance/" },
       { name: "Payroll Management", href: "/features/payroll/" },
       { name: "Leave Management", href: "/features/leave-management/" },
