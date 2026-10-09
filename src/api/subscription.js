@@ -1,27 +1,35 @@
-const getApiBaseUrl = () => {
-  if (typeof window !== "undefined") {
-    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-      return "http://localhost:3000/api";
-    }
-  }
-  const base = process.env.NEXT_PUBLIC_API_BASE_URL || "https://api-garagesaarthi.techifyhouse.in";
-  return base.replace(/\/api\/?$/, "") + "/api";
-};
+import { API_URL } from "@/src/config/env";
 
 export const subscriptionApi = {
   getActivePlans: async () => {
-    const response = await fetch(`${getApiBaseUrl()}/subscription/plans`);
-    return await response.json();
+    try {
+      const response = await fetch(`${API_URL}/subscription/plans`);
+      if (!response.ok) {
+        return { success: false, data: [] };
+      }
+      return await response.json();
+    } catch (err) {
+      console.error("subscriptionApi.getActivePlans error:", err);
+      return { success: false, data: [] };
+    }
   },
   
   getActiveCreditPlans: async () => {
-    const response = await fetch(`${getApiBaseUrl()}/subscription/credit-plans`);
-    return await response.json();
+    try {
+      const response = await fetch(`${API_URL}/subscription/credit-plans`);
+      if (!response.ok) {
+        return { success: false, data: [] };
+      }
+      return await response.json();
+    } catch (err) {
+      console.error("subscriptionApi.getActiveCreditPlans error:", err);
+      return { success: false, data: [] };
+    }
   },
 
   submitInterest: async (data) => {
     try {
-      const response = await fetch(`${getApiBaseUrl()}/public/demo-inquiry`, {
+      const response = await fetch(`${API_URL}/public/demo-inquiry`, {
         method: "POST",
         headers: {
           Accept: "application/json",

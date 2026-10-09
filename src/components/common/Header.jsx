@@ -97,6 +97,7 @@ const Header = () => {
       { name: "Billing & Invoicing", href: "/features/billing/" },
       { name: "Digital Gate Pass", href: "/features/gate-pass/" },
       { name: "Inventory Management", href: "/features/inventory/" },
+      { name: "Vendor Management", href: "/features/vendor-management/" },
       { name: "Vehicle Inspection", href: "/features/vehicle-inspection/" },
     ],
     "Customer & Vehicle": [
