@@ -5,18 +5,7 @@ import { FaTimes, FaArrowRight } from "react-icons/fa";
 import GformBg from "../assets/optimized/GformBg.webp";
 import BookDemoIcon from "../assets/icons/Bookd.webp";
 import Button from "./common/Button";
-
-const getApiBaseUrl = () => {
-  if (typeof window !== "undefined") {
-    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-      return "http://localhost:3000";
-    }
-  }
-  return (
-    process.env.NEXT_PUBLIC_API_BASE_URL ||
-    "https://api-garagesaarthi.techifyhouse.in"
-  );
-};
+import { API_URL } from "@/src/config/env";
 
 const ContactSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,8 +38,7 @@ const ContactSection = () => {
     }
 
     try {
-      const baseUrl = getApiBaseUrl().replace(/\/api\/?$/, "");
-      const response = await fetch(`${baseUrl}/api/public/demo-inquiry`, {
+      const response = await fetch(`${API_URL}/public/demo-inquiry`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
