@@ -9,7 +9,7 @@ export default function CustFeedback() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* Visual Column Left (Customer Notes Visual) */}
-          <div className="order-last lg:order-first bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
+          <div className="order-last lg:order-first bg-white border border-slate-200 rounded-xl p-8 shadow-sm">
             <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">
               Client Profile Notes
             </span>

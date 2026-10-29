@@ -216,7 +216,7 @@ export default function BInvoiceThemes() {
 
           {/* Right Live Visual Card (5 Col) */}
           <div className="lg:col-span-5 sticky top-24">
-            <div className="bg-white rounded-3xl border border-slate-200 p-6 shadow-lg space-y-4">
+            <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-lg space-y-4">
               <div className="flex justify-between items-center pb-2 border-b border-slate-100">
                 <div className="flex items-center gap-2">
                   <FaPalette className="text-primary text-sm" />

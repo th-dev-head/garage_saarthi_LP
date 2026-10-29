@@ -116,7 +116,7 @@ export default function FCategoryAnalytics() {
         </div>
 
         {/* Interactive Category Analytics Dashboard Mockup */}
-        <div className="bg-slate-50/80 border border-slate-200 rounded-3xl p-4 md:p-8 shadow-sm space-y-6">
+        <div className="bg-slate-50/80 border border-slate-200 rounded-xl p-4 md:p-8 shadow-sm space-y-6">
           {/* Top Control Bar */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             {/* Tabs */}
@@ -269,7 +269,7 @@ export default function FCategoryAnalytics() {
             return (
               <div
                 key={idx}
-                className="bg-slate-50 border border-slate-200/80 p-6 rounded-3xl space-y-3 shadow-2xs hover:border-primary/40 hover:shadow-md transition-all"
+                className="bg-slate-50 border border-slate-200/80 p-6 rounded-xl space-y-3 shadow-2xs hover:border-primary/40 hover:shadow-md transition-all"
               >
                 <div className="w-10 h-10 rounded-2xl bg-orange-100/70 text-primary flex items-center justify-center font-bold">
                   <Icon className="w-5 h-5" />

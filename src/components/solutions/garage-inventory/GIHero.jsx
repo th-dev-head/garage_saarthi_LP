@@ -75,7 +75,7 @@ export default function GIHero() {
 
         {/* Right UI Preview Card */}
         <div className="relative flex justify-center md:justify-end">
-          <div className="bg-slate-900/60 backdrop-blur-xl border border-white/10 p-6 rounded-3xl shadow-2xl max-w-lg w-full relative overflow-hidden">
+          <div className="bg-slate-900/60 backdrop-blur-xl border border-white/10 p-6 rounded-xl shadow-2xl max-w-lg w-full relative overflow-hidden">
             {/* Header */}
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">

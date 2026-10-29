@@ -25,7 +25,7 @@ export default function GPAttendanceConnection() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between aspect-[4/3] relative overflow-hidden">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between aspect-[4/3] relative overflow-hidden">
           <div className="absolute top-0 right-0 p-4">
             <span className="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">
               Attendance Verified

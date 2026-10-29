@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function JCMWorkshopTypes() {
+export default function JCMWorkshopTypes({ bgClass = "bg-slate-50" }) {
   const workshopTypes = [
     { title: "Car Garage Job Cards", link: "/solutions/car-garage-software/", desc: "Log multi-brand car specifications, vehicle damage checklists, fuel scales, and engine diagnostics notes." },
     { title: "Bike Workshop Job Cards", link: "/solutions/bike-workshop-software/", desc: "Quick mobile check-ins for two-wheelers, tracking bike components, engine numbers, and rapid mechanics updates." },
@@ -14,7 +14,7 @@ export default function JCMWorkshopTypes() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className={`py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center`.replace(/bg-[a-z0-9\-]+/, bgClass)}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">

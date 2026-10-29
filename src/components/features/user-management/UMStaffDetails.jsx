@@ -93,7 +93,7 @@ export default function UMStaffDetails() {
         </div>
 
         {/* Interactive Mockup Form Card */}
-        <div className="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-10 shadow-sm max-w-4xl mx-auto space-y-6">
+        <div className="bg-white border border-slate-200/90 rounded-xl p-6 sm:p-10 shadow-sm max-w-4xl mx-auto space-y-6">
           {/* Card Legend / Title */}
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
             <div className="flex items-center gap-2.5 text-primary font-bold text-base sm:text-lg">

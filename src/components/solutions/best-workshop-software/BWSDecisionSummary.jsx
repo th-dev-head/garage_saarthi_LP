@@ -38,7 +38,7 @@ export default function BWSDecisionSummary() {
         </div>
 
         {/* Grid layout */}
-        <div className="bg-white border border-slate-200/80 rounded-3xl p-8 shadow-sm max-w-4xl mx-auto mb-12">
+        <div className="bg-white border border-slate-200/80 rounded-xl p-8 shadow-sm max-w-4xl mx-auto mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {decisionPoints.map((text, idx) => (
               <div key={idx} className="flex items-start gap-3">

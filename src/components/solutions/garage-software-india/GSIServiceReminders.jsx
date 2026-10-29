@@ -46,7 +46,7 @@ export default function GSIServiceReminders() {
           {serviceReminderColumns.map((col, idx) => {
             const Icon = col.icon;
             return (
-              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-xl p-6 shadow-sm space-y-3">
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center text-base ${col.iconBg}`}>
                   <Icon />
                 </div>
@@ -60,7 +60,7 @@ export default function GSIServiceReminders() {
         </div>
 
         {/* Semantic Bridge Callout to Dedicated Page */}
-        <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-3xl p-6 md:p-8 max-w-3xl mx-auto text-center space-y-3">
+        <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-xl p-6 md:p-8 max-w-3xl mx-auto text-center space-y-3">
           <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
             Want to learn how service alerts drive repeat workshop bookings? Explore our dedicated{" "}
             <Link href="/solutions/service-reminder-software/" className="font-bold text-primary hover:underline">

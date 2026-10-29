@@ -197,7 +197,9 @@ export default function RootLayout({ children }) {
         {children}
 
         {/* Synchronous Immediate UTM & Lead Tracking Script */}
-        <script
+        <Script
+          id="utm-lead-tracker"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function () {
             try {

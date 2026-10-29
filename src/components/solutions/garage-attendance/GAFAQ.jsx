@@ -1,7 +1,7 @@
 import React from "react";
 import AccordionFAQ from "../../common/AccordionFAQ";
 
-export default function GAFAQ() {
+export default function GAFAQ({ className = "bg-white" }) {
   const data = [
     {
       question: "What is garage attendance software?",
@@ -36,8 +36,12 @@ export default function GAFAQ() {
       answer: "Yes, we maintain a live mobile apps on Google Play Store & Apple App Store. iOS apps are fully available."
     },
     {
-      question: "Does GarageSaarthi support biometric attendance?",
-      answer: "GarageSaarthi provides digital attendance management for garage and workshop staff. Biometric device integration is not currently supported."
+      question: "Does GarageSaarthi support biometric or selfie attendance?",
+      answer: "Yes! GarageSaarthi includes built-in live camera selfie verification during punch-in and punch-out. Mechanics capture a real-time photo on the workshop mobile, tablet, or desktop webcam, completely eliminating buddy punching and proxy attendance without requiring expensive biometric hardware."
+    },
+    {
+      question: "Can I make selfie verification mandatory for workshop mechanics?",
+      answer: "Yes. Workshop owners can toggle selfie capture as mandatory or optional in Attendance Settings, set grace periods for late punch-ins, and inspect live photo-verified check-in logs directly from the Admin Live Attendance roster."
     },
     {
       question: "Does GarageSaarthi offer a free trial?",
@@ -50,7 +54,7 @@ export default function GAFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Garage Attendance Software"
       faqs={data}
-      className="bg-slate-50"
+      className={className}
     />
   );
 }

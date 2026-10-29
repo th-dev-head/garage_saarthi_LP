@@ -40,7 +40,7 @@ export default function WMDKPIAnalytics() {
           {kpis.map((kpi, index) => (
             <div
               key={index}
-              className="p-8 rounded-3xl bg-white border border-slate-200/80 hover:border-primary/50 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              className="p-8 rounded-xl bg-white border border-slate-200/80 hover:border-primary/50 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-white shadow-xs border border-slate-200 flex items-center justify-center mb-6">

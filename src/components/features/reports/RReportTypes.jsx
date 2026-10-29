@@ -60,7 +60,7 @@ export default function RReportTypes() {
         </div>
 
         {/* Right Side Visual Reports Summary Card Mockup */}
-        <div className="bg-slate-900 rounded-3xl p-6 shadow-xl border border-slate-800 text-white space-y-4 max-w-md mx-auto w-full">
+        <div className="bg-slate-900 rounded-xl p-6 shadow-xl border border-slate-800 text-white space-y-4 max-w-md mx-auto w-full">
           <div className="flex items-center justify-between pb-3 border-b border-slate-800">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-xs">

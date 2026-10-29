@@ -70,7 +70,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="px-4 lg:px-15 2xl:px-50 pt-10 lg:pt-20 pb-10 lg:pb-20 flex justify-center bg-slate-50">
       <div
-        className="relative w-full mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full min-h-[420px] rounded-3xl overflow-hidden flex items-center"
+        className="relative w-full mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full min-h-[420px] rounded-xl overflow-hidden flex items-center"
         style={{
           backgroundImage: `url(${GformBg})`,
           backgroundSize: "cover",
@@ -193,7 +193,7 @@ const ContactSection = () => {
           />
 
           {/* Modal Content */}
-          <div className="relative bg-white rounded-3xl w-full max-w-full md:max-w-3xl 2xl:max-w-5xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-300">
+          <div className="relative bg-white rounded-xl w-full max-w-full md:max-w-3xl 2xl:max-w-5xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-300">
             {/* Close Button */}
             <button
               onClick={() => setIsModalOpen(false)}

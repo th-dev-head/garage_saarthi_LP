@@ -28,6 +28,14 @@ export default function VehFAQ({ className = "bg-white" }) {
       answer: "Absolutely. You can map any number of cars or two-wheelers to one customer profile, keeping all invoices and histories organized under a single family account."
     },
     {
+      question: "Does GarageSaarthi include a preloaded Vehicle Master database for Indian cars and bikes?",
+      answer: "Yes! GarageSaarthi comes pre-loaded with an extensive directory of over 2,400+ vehicle makes, models, and variants across Cars, Two-Wheelers, 3-Wheelers, Commercial Trucks, and Buses. Plus, you can add custom brands or variants anytime with 1 click."
+    },
+    {
+      question: "Can I record EV battery capacity (kWh) and charging specs in vehicle profiles?",
+      answer: "Yes! Modern electric vehicles (EVs) have dedicated fields for battery pack capacity in kWh, motor serial numbers, state of health (SoH), and charger connector standards (CCS2, Type 2, GB/T) to streamline high-voltage EV servicing."
+    },
+    {
       question: "Does it support different vehicle types like electric vehicles (EVs) or heavy trucks?",
       answer: "Yes. GarageSaarthi supports customized vehicle categories. Track EV battery serial numbers, EV two-wheeler security passcodes, warranty details, or heavy commercial truck wheel alignments."
     }

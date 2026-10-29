@@ -46,7 +46,7 @@ export default function BGSFeatureCoverage() {
         </div>
 
         {/* Feature Table */}
-        <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-sm overflow-x-auto mb-8">
+        <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-6 md:p-8 shadow-sm overflow-x-auto mb-8">
           <table className="w-full text-left text-xs md:text-sm">
             <thead>
               <tr className="border-b border-slate-200 text-slate-900 font-extrabold uppercase text-[11px] tracking-wider">

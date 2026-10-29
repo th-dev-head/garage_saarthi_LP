@@ -77,7 +77,7 @@ export default function SRReminderHistory() {
         </div>
 
         {/* Interactive Table Mockup */}
-        <div className="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm space-y-5">
+        <div className="bg-white border border-slate-200/90 rounded-xl p-6 sm:p-8 shadow-sm space-y-5">
           {/* Mockup Tabs */}
           <div className="flex flex-wrap items-center justify-between border-b border-slate-200 pb-3 gap-3">
             <div className="flex items-center gap-2">

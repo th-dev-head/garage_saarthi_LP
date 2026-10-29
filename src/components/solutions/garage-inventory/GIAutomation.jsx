@@ -43,7 +43,7 @@ export default function GIAutomation() {
         </div>
 
         {/* Comparison Table */}
-        <div className="bg-white border border-slate-200/60 rounded-3xl overflow-hidden shadow-sm max-w-4xl mx-auto">
+        <div className="bg-white border border-slate-200/60 rounded-xl overflow-hidden shadow-sm max-w-4xl mx-auto">
           {/* Header */}
           <div className="grid grid-cols-2 bg-slate-50 px-6 py-4 border-b border-slate-100 text-xs font-bold uppercase tracking-wider">
             <div className="text-slate-500">Manual Inventory Management</div>

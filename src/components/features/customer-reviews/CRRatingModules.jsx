@@ -68,7 +68,7 @@ export default function CRRatingModules() {
         {/* Dual Panel Interactive Mockup */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Panel: Review Rating Modules Settings */}
-          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-xl p-6 sm:p-8 shadow-sm space-y-6">
             {/* Header & Badges */}
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
               <div>
@@ -155,7 +155,7 @@ export default function CRRatingModules() {
           </div>
 
           {/* Right Panel: Live Customer Preview */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm space-y-5">
+          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-xl p-6 sm:p-7 shadow-sm space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />

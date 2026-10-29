@@ -62,7 +62,7 @@ export default function GIReporting() {
         </div>
 
         {/* Right Side Visual Report Card Mockup */}
-        <div className="bg-white border border-slate-100 p-6 md:p-8 rounded-3xl space-y-4 shadow-md">
+        <div className="bg-white border border-slate-100 p-6 md:p-8 rounded-xl space-y-4 shadow-md">
           <div className="flex items-center justify-between pb-3 border-b border-slate-100">
             <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wide">Valuation Dashboard</h4>
             <span className="text-[10px] text-slate-500 bg-slate-100 px-2 py-0.5 rounded">This Month</span>

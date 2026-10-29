@@ -29,7 +29,7 @@ export default function GCEPlatform() {
         </div>
 
         {/* Process Map */}
-        <div className="bg-white border border-slate-200/80 rounded-3xl p-8 shadow-xs text-center space-y-8">
+        <div className="bg-white border border-slate-200/80 rounded-xl p-8 shadow-xs text-center space-y-8">
           <h3 className="text-sm font-bold text-slate-900">The Connected Workspace Flow</h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-xs">

@@ -7,7 +7,7 @@ export default function GRAEmployeeReporting() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-white border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
+        <div className="lg:col-span-5 bg-white border border-slate-200/60 rounded-xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Supported HR Reports:</h3>
           <ul className="space-y-2 text-xs text-slate-500 leading-relaxed">
             <li>• Daily attendance and leave registers</li>

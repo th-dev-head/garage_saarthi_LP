@@ -7,7 +7,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function ARSFreeTrialCTA() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full text-center bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm">
+      <div className="mx-auto max-w-full lg:max-w-4xl 2xl:max-w-full w-full text-center bg-white border border-slate-200/80 rounded-xl p-8 md:p-12 shadow-sm">
         <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight mb-4">
           Try GarageSaarthi for Your{" "}
           <GradientUnderline>Auto Repair Shop</GradientUnderline>

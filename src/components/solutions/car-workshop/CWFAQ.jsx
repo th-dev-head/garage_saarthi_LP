@@ -62,7 +62,7 @@ export default function CWFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Car Workshop Software"
       faqs={data}
-      className="bg-slate-50"
+      className="bg-white"
     />
   );
 }

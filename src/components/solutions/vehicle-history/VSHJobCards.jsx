@@ -27,7 +27,7 @@ export default function VSHJobCards() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {steps.map((s, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-8">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-xl p-8">
               <h3 className="text-base font-bold text-text-dark mb-4">{s.title}</h3>
               <p className="text-xs text-slate-500 leading-relaxed mb-6">{s.desc}</p>
               {idx === 0 && (

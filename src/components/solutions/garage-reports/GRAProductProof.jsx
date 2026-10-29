@@ -23,7 +23,7 @@ export default function GRAProductProof() {
             { title: "Inventory & Spare parts activity", desc: "Low stock indicators and supplier logs.", img: "/images/sparePartsActivity.webp" },
             { title: "Mechanic Productivity sheets", desc: "Mechanic checkins and payroll metrics.", img: "/images/mechanicPerformance.webp" }
           ].map((item, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between">
               <div className="rounded-2xl aspect-[4/3] mb-6 flex items-center justify-center border border-slate-200/60 overflow-hidden relative">
                 <img
                   src={item.img}

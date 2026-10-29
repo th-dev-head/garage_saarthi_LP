@@ -63,7 +63,7 @@ export default function GEInventoryOperations() {
         </div>
 
         {/* Right card */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-6">
             <FaBoxes className="text-primary w-6 h-6" />
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">E-Inventory Dashboard</h3>

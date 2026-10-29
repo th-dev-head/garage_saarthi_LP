@@ -20,9 +20,9 @@ export default function MediaGalleryFeature() {
       <MGCoreCapabilities />
       <MGWorkflow />
       <MGWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
-      <MGFAQ />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
+      <MGFAQ className="bg-slate-50" />
       <MGFinalCTA />
     </PageLayout>
   );

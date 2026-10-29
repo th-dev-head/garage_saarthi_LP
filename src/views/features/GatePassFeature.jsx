@@ -7,6 +7,7 @@ import GPPaperVsDigital from "../../components/features/gate-pass/GPPaperVsDigit
 import GPCoreCapabilities from "../../components/features/gate-pass/GPCoreCapabilities";
 import GPWorkflow from "../../components/features/gate-pass/GPWorkflow";
 import GPInteractiveDemo from "../../components/features/gate-pass/GPInteractiveDemo";
+import GPRestrictedExit from "../../components/features/gate-pass/GPRestrictedExit";
 import GPWorkshopTypes from "../../components/features/gate-pass/GPWorkshopTypes";
 import CloudAccessCommon from "../../components/common/CloudAccessCommon";
 import TestimonialsGrid from "../../components/common/TestimonialsGrid";
@@ -22,10 +23,11 @@ export default function GatePassFeature() {
       <GPCoreCapabilities />
       <GPWorkflow />
       <GPInteractiveDemo />
-      <GPWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
-      <GPFAQ className="bg-white" />
+      <GPRestrictedExit bgClass="bg-slate-50" />
+      <GPWorkshopTypes bgClass="bg-white" />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
+      <GPFAQ className="bg-slate-50" />
       <GPFinalCTA />
     </PageLayout>
   );

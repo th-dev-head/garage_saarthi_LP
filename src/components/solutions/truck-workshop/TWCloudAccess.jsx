@@ -47,7 +47,7 @@ export default function TWCloudAccess() {
           </div>
 
           {/* Visual block - Right Column */}
-          <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-8 shadow-sm flex flex-col justify-center min-h-[300px]">
+          <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-8 shadow-sm flex flex-col justify-center min-h-[300px]">
             <div className="max-w-xs w-full mx-auto space-y-6">
               {truckPlatforms.map((plat, idx) => {
                 const Icon = plat.icon;

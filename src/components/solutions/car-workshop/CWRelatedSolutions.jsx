@@ -26,7 +26,7 @@ export default function CWRelatedSolutions() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full space-y-10 text-center">
         <div className="space-y-4">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -42,7 +42,7 @@ export default function CWRelatedSolutions() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
           {solutions.map((s, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
+            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
               <div className="space-y-2">
                 <h3 className="text-base font-bold text-text-dark">{s.title}</h3>
                 <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{s.desc}</p>

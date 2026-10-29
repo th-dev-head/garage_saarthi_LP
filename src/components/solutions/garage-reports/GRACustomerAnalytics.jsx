@@ -22,7 +22,7 @@ export default function GRACustomerAnalytics() {
             <Link href="/features/vehicles/" className="text-xs text-primary font-bold hover:underline inline-flex items-center gap-1.5">Explore Vehicle Records <FaArrowRight className="w-3 h-3" /></Link>
           </div>
         </div>
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-xl p-8 shadow-sm space-y-4">
           <h3 className="text-sm font-bold text-text-dark">Customer Database Metrics:</h3>
           <ul className="space-y-2 text-xs text-slate-500 leading-relaxed">
             <li>• Unique customer profiles list</li>

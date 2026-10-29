@@ -25,7 +25,7 @@ export default function MBDefinition() {
             GarageSaarthi provides a centralized, cloud-based multi-location system. Consolidate your branch data, manage distinct user groups and roles, and check branch-wise performance metrics centrally. Keep your growing business organized.
           </p>
         </div>
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Common Multi-Branch Pitfalls</h3>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
             {multiBranchPitfalls.map((item, idx) => (

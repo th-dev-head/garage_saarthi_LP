@@ -174,7 +174,7 @@ export default function IGodownTransfers() {
         </div>
 
         {/* Interactive Dual-Panel Showcase */}
-        <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+        <div className="bg-white rounded-xl border border-slate-200 shadow-xl overflow-hidden">
           {/* Top Bar with Mode Switcher */}
           <div className="p-4 md:p-6 bg-slate-900 text-white flex flex-wrap items-center justify-between gap-4 border-b border-slate-800">
             <div className="flex items-center gap-3">

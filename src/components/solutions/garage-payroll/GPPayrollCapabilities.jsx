@@ -75,7 +75,7 @@ export default function GPPayrollCapabilities() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {payrollCapabilities.map((card, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm space-y-3">
               <div className={`w-10 h-10 rounded-2xl flex items-center justify-center text-lg ${card.iconBg}`}>
                 {card.icon}
               </div>

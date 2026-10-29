@@ -42,7 +42,7 @@ export default function SRWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {srWorkshopTypes.map((ws, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/80 p-6 rounded-3xl space-y-3 shadow-xs">
+            <div key={idx} className="bg-white border border-slate-200/80 p-6 rounded-xl space-y-3 shadow-xs">
               <span className="text-[10px] uppercase font-bold text-primary bg-orange-100/70 px-2.5 py-1 rounded-full inline-block">
                 {ws.badge}
               </span>

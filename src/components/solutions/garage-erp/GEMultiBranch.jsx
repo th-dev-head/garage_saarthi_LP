@@ -50,7 +50,7 @@ export default function GEMultiBranch() {
         </div>
 
         {/* Left Card visual */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-4">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl space-y-4">
           <div className="flex items-center gap-3">
             <FaBuilding className="text-primary w-6 h-6" />
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">Centralized multi-branch control</h3>

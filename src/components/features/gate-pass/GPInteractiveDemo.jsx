@@ -126,7 +126,7 @@ export default function GPInteractiveDemo() {
         </div>
 
         {/* Interactive Container */}
-        <div className="bg-slate-900 rounded-3xl border border-slate-800 shadow-2xl overflow-hidden text-white">
+        <div className="bg-slate-900 rounded-xl border border-slate-800 shadow-2xl overflow-hidden text-white">
           {/* Top Bar with Vehicle Scenario Switcher */}
           <div className="p-4 md:p-6 bg-slate-950 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
@@ -194,7 +194,7 @@ export default function GPInteractiveDemo() {
             {activeTab === "slip" && (
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Printable Slip (7 Cols) */}
-                <div className="lg:col-span-7 bg-white text-slate-900 rounded-3xl p-6 shadow-xl border border-slate-200 space-y-4">
+                <div className="lg:col-span-7 bg-white text-slate-900 rounded-xl p-6 shadow-xl border border-slate-200 space-y-4">
                   {/* Slip Header */}
                   <div className="flex flex-wrap items-center justify-between border-b border-slate-200 pb-3 gap-2">
                     <div>
@@ -312,7 +312,7 @@ export default function GPInteractiveDemo() {
             )}
 
             {activeTab === "guard" && (
-              <div className="max-w-xl mx-auto bg-slate-950 rounded-3xl p-6 border border-slate-800 space-y-5">
+              <div className="max-w-xl mx-auto bg-slate-950 rounded-xl p-6 border border-slate-800 space-y-5">
                 <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                   <div className="flex items-center gap-2">
                     <span className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />

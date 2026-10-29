@@ -7,7 +7,7 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
-export default function GAWorkflow() {
+export default function GAWorkflow({ bgClass = "bg-slate-50" }) {
   const handlePayrollClick = () => {
     trackEvent("payroll_feature_click", {
       page_path: "/solutions/garage-attendance-software/",
@@ -27,7 +27,7 @@ export default function GAWorkflow() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -59,7 +59,7 @@ export default function GAWorkflow() {
           </div>
         </div>
 
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-8 shadow-sm text-center space-y-6">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-8 shadow-sm text-center space-y-6">
           <h3 className="text-base font-bold text-text-dark">Staff Payout Process</h3>
           <div className="flex flex-col items-center gap-2">
             <div className="bg-white border border-slate-200 rounded-xl px-4 py-2 text-xs font-semibold text-slate-800 shadow-sm w-full max-w-xs">

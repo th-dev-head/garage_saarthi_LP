@@ -52,7 +52,7 @@ export default function BWDefinition() {
         {/* Comparison Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           {/* Problems */}
-          <div className="bg-white border border-slate-200/80 p-8 rounded-3xl shadow-sm">
+          <div className="bg-white border border-slate-200/80 p-8 rounded-xl shadow-sm">
             <h3 className="text-base font-extrabold text-red-700 mb-6 flex items-center gap-2">
               The Manual Way
             </h3>
@@ -67,7 +67,7 @@ export default function BWDefinition() {
           </div>
 
           {/* Solutions */}
-          <div className="bg-[#EFE9E7]/40 border border-primary/20 p-8 rounded-3xl shadow-sm">
+          <div className="bg-[#EFE9E7]/40 border border-primary/20 p-8 rounded-xl shadow-sm">
             <h3 className="text-base font-extrabold text-primary mb-6 flex items-center gap-2">
                With GarageSaarthi
             </h3>

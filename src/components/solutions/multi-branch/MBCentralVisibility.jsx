@@ -22,7 +22,7 @@ export default function MBCentralVisibility() {
             As a garage business owner, you cannot be physically present at every branch. GarageSaarthi gathers operational updates centrally, showing you total job cards opened, bills generated, cash counters, and stock logs for each location on a clean dashboard.
           </p>
         </div>
-        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-xl p-5 shadow-lg shadow-slate-100 space-y-4">
           {/* Header Bar */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <div className="flex items-center gap-2">

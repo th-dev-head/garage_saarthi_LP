@@ -18,8 +18,8 @@ const Header = () => {
   let active = "";
   if (cleanPath === "/pricing") {
     active = "Pricing";
-  } else if (cleanPath === "/download-app") {
-    active = "Download App";
+  } else if (cleanPath === "/industries") {
+    active = "Industries";
   } else if (cleanPath === "/contact" || cleanPath === "/book-demo") {
     active = "Contact";
   } else if (cleanPath === "" || cleanPath === "/" || cleanPath === "/home") {
@@ -34,7 +34,7 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Solutions", href: "#", isDropdown: true, dropdownType: "solutions" },
     { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
-    { name: "Download App", href: "/download-app/" },
+    { name: "Industries", href: "/industries/" },
     { name: "Contact", href: "/contact/" },
     { name: "Pricing", href: "/pricing/" },
   ];
@@ -136,8 +136,11 @@ const Header = () => {
       e.preventDefault();
       return;
     }
-    e.preventDefault();
-    const shouldScroll = link.href === "/pricing/" || link.href === "/features/";
+    const shouldScroll =
+      link.href === "/pricing/" ||
+      link.href === "/features/" ||
+      link.href === "/industries/" ||
+      link.href === "/contact/";
     router.push(link.href, { scroll: shouldScroll });
     setIsMenuOpen(false);
   };
@@ -300,7 +303,7 @@ const Header = () => {
                         style={{ width: menuWidth, maxWidth: "calc(100vw - 32px)" }}
                       >
                         <div
-                          className="bg-white border border-gray-100 rounded-3xl shadow-2xl p-5 max-h-[calc(100vh-110px)] overflow-y-auto"
+                          className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5 max-h-[calc(100vh-110px)] overflow-y-auto"
                           style={{
                             display: "grid",
                             gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))`,
@@ -404,7 +407,7 @@ const Header = () => {
             : "opacity-0 -translate-y-4 invisible"
             }`}
         >
-          <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-100 p-3 flex flex-col gap-1 max-h-[calc(100vh-120px)] overflow-y-auto">
+          <div className="bg-white/95 backdrop-blur-md rounded-xl shadow-2xl border border-gray-100 p-3 flex flex-col gap-1 max-h-[calc(100vh-120px)] overflow-y-auto">
             {navLinks.map((link) => {
               const isActive = active === link.name;
               if (link.isDropdown) {

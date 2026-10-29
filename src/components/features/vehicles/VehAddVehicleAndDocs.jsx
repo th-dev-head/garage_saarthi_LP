@@ -95,7 +95,7 @@ export default function VehAddVehicleAndDocs() {
         {/* Dual Panel Layout: Add Vehicle Form + Digital Document Locker */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Panel: Add Vehicle Form Mockup (7 Cols) */}
-          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-3xl p-5 sm:p-7 shadow-lg space-y-5">
+          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-xl p-5 sm:p-7 shadow-lg space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-xl bg-orange-100 text-primary flex items-center justify-center font-bold">
@@ -229,7 +229,7 @@ export default function VehAddVehicleAndDocs() {
           </div>
 
           {/* Right Panel: Vehicle Documents Dialog Mockup (5 Cols) */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-3xl p-5 sm:p-6 shadow-xl space-y-4">
+          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-xl p-5 sm:p-6 shadow-xl space-y-4">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
                 <h3 className="text-sm font-bold text-slate-900 flex items-center gap-2">

@@ -83,7 +83,7 @@ export default function GPHero() {
 
         {/* Hero Visual Card / Mockup Presentation */}
         <div className="relative max-w-4xl mx-auto pt-4">
-          <div className="bg-slate-900/90 rounded-3xl border border-slate-700/80 shadow-2xl p-4 sm:p-6 md:p-8 backdrop-blur-xl">
+          <div className="bg-slate-900/90 rounded-xl border border-slate-700/80 shadow-2xl p-4 sm:p-6 md:p-8 backdrop-blur-xl">
             {/* Top Bar */}
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4 mb-6">
               <div className="flex items-center gap-3">

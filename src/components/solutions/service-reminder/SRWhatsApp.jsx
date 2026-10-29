@@ -20,7 +20,7 @@ import { trackEvent } from "@/src/utils/pixel"; export default function SRWhatsA
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 order-last lg:order-first">
-          <div className="bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-3xl p-6 shadow-xl border border-slate-800 relative">
+          <div className="bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-xl p-6 shadow-xl border border-slate-800 relative">
             {/* Header */}
             <div className="flex items-center gap-3 border-b border-slate-800 pb-4 mb-4">
               <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center font-bold text-white text-sm">GS</div>

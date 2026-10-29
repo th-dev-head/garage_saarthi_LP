@@ -25,7 +25,7 @@ export default function GADefinition() {
             GarageSaarthi provides a centralized, cloud-based attendance solution designed around workshop workflows. Manage daily check-ins, leaves, and staff rosters in the same system used to configure job cards and billing profiles.
           </p>
         </div>
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm space-y-4">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-xl p-8 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Manual Register Pitfalls</h3>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
             {pitfalls.map((item, idx) => (

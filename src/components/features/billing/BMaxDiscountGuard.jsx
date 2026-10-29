@@ -98,7 +98,7 @@ export default function BMaxDiscountGuard() {
         {/* Dual Panel Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Panel: Job Card Margin Breakdown (7 Cols) */}
-          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-3xl p-5 sm:p-7 shadow-sm space-y-4">
+          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-xl p-5 sm:p-7 shadow-sm space-y-4">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2">
                 <span className="w-8 h-8 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
@@ -159,7 +159,7 @@ export default function BMaxDiscountGuard() {
           </div>
 
           {/* Right Panel: Live Guardrail Action Dialog (5 Cols) */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-xl space-y-4">
+          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-xl p-6 sm:p-7 shadow-xl space-y-4">
             <div className="border-b border-slate-100 pb-3">
               <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
                 <FaLock className="text-primary" /> Discount Guardrail Active

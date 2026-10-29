@@ -36,7 +36,7 @@ export default function MBWebMobile() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-xl p-5 shadow-lg shadow-slate-100 space-y-4">
           {/* Header Bar */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <div className="flex items-center gap-2">

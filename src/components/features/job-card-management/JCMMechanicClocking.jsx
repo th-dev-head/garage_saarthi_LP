@@ -163,7 +163,7 @@ export default function JCMMechanicClocking() {
         </div>
 
         {/* Interactive Dual-Panel Showcase */}
-        <div className="bg-slate-50 rounded-3xl border border-slate-200/90 shadow-xl overflow-hidden">
+        <div className="bg-slate-50 rounded-xl border border-slate-200/90 shadow-xl overflow-hidden">
           {/* Top Bar */}
           <div className="p-4 md:p-6 bg-slate-900 text-white flex flex-wrap items-center justify-between gap-4 border-b border-slate-800">
             <div className="flex items-center gap-3">

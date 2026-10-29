@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function VehWorkshopTypes() {
+export default function VehWorkshopTypes({ bgClass = "bg-white" }) {
   const types = [
     { title: "Car Garages", desc: "Track model records, repair history logs, filter past invoices, and schedule car service records.", link: "/solutions/car-garage-software/" },
     { title: "Bike Workshops", desc: "Manage fast check-ins for scooters and bikes, oil change histories, and regular wash records.", link: "/solutions/bike-workshop-software/" },
@@ -14,7 +14,7 @@ export default function VehWorkshopTypes() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className={`py-16 md:py-24 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full inline-block mb-3">

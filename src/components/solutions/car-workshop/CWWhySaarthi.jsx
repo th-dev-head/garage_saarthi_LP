@@ -12,7 +12,7 @@ export default function CWWhySaarthi() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -28,7 +28,7 @@ export default function CWWhySaarthi() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {points.map((p, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-3">
+            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-xl p-6 shadow-sm space-y-3">
               <h3 className="text-base font-bold text-text-dark flex items-center gap-2">
                 <span className="text-primary">✓</span>
                 <span>{p.title}</span>

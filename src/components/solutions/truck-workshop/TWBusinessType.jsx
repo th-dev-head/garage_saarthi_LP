@@ -28,7 +28,7 @@ const businessTypes = [
 
 export default function TWBusinessType() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -49,7 +49,7 @@ export default function TWBusinessType() {
           {businessTypes.map((card, idx) => (
             <div
               key={idx}
-              className="bg-white p-6 rounded-3xl border border-slate-200/60 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+              className="bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-4 text-base">
@@ -62,7 +62,7 @@ export default function TWBusinessType() {
           ))}
         </div>
 
-        <div className="text-center bg-[#EFE9E7]/40 border border-primary/20 p-6 rounded-3xl max-w-2xl mx-auto">
+        <div className="text-center bg-[#EFE9E7]/40 border border-primary/20 p-6 rounded-xl max-w-2xl mx-auto">
           <p className="text-xs text-slate-700 leading-relaxed">
             Managing corporate transport fleets or contract repairs? Streamline your workflows centrally.{" "}
             <Link href="/solutions/fleet-workshop-software/" className="font-bold text-primary hover:underline">

@@ -25,9 +25,9 @@ export default function UserManagementFeature() {
       <UMAnnouncements />
       <UMWorkflow />
       <UMWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-white" />
-      <TestimonialsGrid bgClass="bg-slate-50" />
-      <UMFAQ />
+      <CloudAccessCommon bgClass="bg-slate-50" />
+      <TestimonialsGrid bgClass="bg-white" />
+      <UMFAQ className="bg-slate-50" />
       <UMFinalCTA />
     </PageLayout>
   );

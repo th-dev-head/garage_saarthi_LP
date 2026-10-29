@@ -38,7 +38,7 @@ export default function BWSWorkflow() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3"
+              className="bg-slate-50 border border-slate-200/60 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3"
             >
               <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
                 {step.icon}

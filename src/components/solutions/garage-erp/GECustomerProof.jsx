@@ -36,7 +36,7 @@ export default function GECustomerProof() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {reviews.map((r, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 relative flex flex-col justify-between hover:shadow-sm transition-all duration-200">
+            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-xl p-8 relative flex flex-col justify-between hover:shadow-sm transition-all duration-200">
               <FaQuoteLeft className="text-primary/10 w-12 h-12 absolute right-6 top-6" />
               <div className="space-y-4">
                 <div className="flex gap-1">

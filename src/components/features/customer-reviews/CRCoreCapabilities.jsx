@@ -62,7 +62,7 @@ export default function CRCoreCapabilities() {
             return (
               <div
                 key={idx}
-                className="bg-slate-50 border border-slate-200/80 p-6 rounded-3xl hover:border-primary/40 hover:shadow-lg transition-all duration-300 space-y-3"
+                className="bg-slate-50 border border-slate-200/80 p-6 rounded-xl hover:border-primary/40 hover:shadow-lg transition-all duration-300 space-y-3"
               >
                 <div className="w-10 h-10 rounded-2xl bg-orange-100/60 text-primary flex items-center justify-center font-bold">
                   <Icon className="w-5 h-5" />

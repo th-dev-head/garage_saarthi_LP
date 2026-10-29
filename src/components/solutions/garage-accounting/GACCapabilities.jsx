@@ -43,7 +43,7 @@ export default function GACCapabilities() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((c, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
+            <div key={idx} className="bg-white border border-slate-200/60 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
               <div className="space-y-3">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
                   {c.icon}

@@ -41,7 +41,7 @@ export default function GBGSTBilling() {
         </div>
 
         {/* Right UI snippet */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-4">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl space-y-4">
           <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tax summary view</span>
           <div className="bg-white border border-slate-100 p-4 rounded-xl space-y-2 text-xs">
             {taxRows.map((row, idx) => (

@@ -18,7 +18,7 @@ export default function GRASalesRevenue() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 order-last lg:order-first bg-white border border-slate-200/60 rounded-3xl p-8 shadow-sm">
+        <div className="lg:col-span-5 order-last lg:order-first bg-white border border-slate-200/60 rounded-xl p-8 shadow-sm">
           <h3 className="text-base font-bold text-text-dark mb-4">Financial Reports Supported:</h3>
           <ul className="space-y-3 text-xs md:text-sm text-slate-600">
             <li>• Daily sales billing summaries</li>

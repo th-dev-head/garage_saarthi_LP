@@ -9,7 +9,7 @@ import { FRONTEND_URL } from "@/src/config/env";
 import { trackEvent } from "@/src/utils/pixel";
 import GradientUnderline from "../../common/GradientUnderline";
 
-export default function GAWebMobile() {
+export default function GAWebMobile({ bgClass = "bg-white" }) {
   const handleTrialClick = () => {
     trackEvent("trial_cta_click", {
       page_path: "/solutions/garage-attendance-software/",
@@ -29,9 +29,9 @@ export default function GAWebMobile() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex items-center justify-center aspect-[4/3]">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/80 rounded-xl p-6 shadow-sm flex items-center justify-center aspect-[4/3]">
           <div className="text-center space-y-3">
             <span className="text-5xl">📱</span>
             <h3 className="text-base font-bold text-text-dark">Cloud Sync Active</h3>

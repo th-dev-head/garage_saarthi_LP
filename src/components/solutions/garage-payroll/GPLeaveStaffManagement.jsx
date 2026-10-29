@@ -40,7 +40,7 @@ export default function GPLeaveStaffManagement() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((s, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
               <div className="space-y-3">
                 <h3 className="text-base font-bold text-text-dark">{s.title}</h3>
                 <p className="text-slate-500 text-xs leading-relaxed">{s.desc}</p>

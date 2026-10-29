@@ -70,7 +70,7 @@ export default function BWJobCards() {
           </div>
 
           {/* Right Side Visual Block */}
-          <div className="lg:col-span-6 bg-slate-50 border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-sm">
+          <div className="lg:col-span-6 bg-slate-50 border border-slate-200/80 rounded-xl p-6 md:p-8 shadow-sm">
             <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wide border-b border-slate-200/60 pb-3 mb-4">
               Supported Two-Wheeler Services
             </h4>

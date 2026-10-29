@@ -7,7 +7,7 @@ import Button from "../../common/Button";
 import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 
-export default function GAEcosystem() {
+export default function GAEcosystem({ bgClass = "bg-slate-50" }) {
   const handleFeatureClick = (name, url) => {
     trackEvent("attendance_feature_click", {
       page_path: "/solutions/garage-attendance-software/",
@@ -27,7 +27,7 @@ export default function GAEcosystem() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-5xl w-full space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -43,7 +43,7 @@ export default function GAEcosystem() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {modules.map((m, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
               <div className="space-y-2">
                 <h3 className="text-base font-bold text-text-dark">{m.title}</h3>
                 <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{m.desc}</p>

@@ -37,7 +37,7 @@ export default function GSIPositioning() {
         {/* Comparison Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Left - Disconnected Reality */}
-          <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-4">
+          <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl space-y-4">
             <div className="flex items-center gap-3 text-red-700">
               <FaBookOpen className="text-xl flex-shrink-0" />
               <h3 className="text-base font-bold">The Disconnected Paper & Register Setup</h3>
@@ -53,7 +53,7 @@ export default function GSIPositioning() {
           </div>
 
           {/* Right - GarageSaarthi Unified Platform */}
-          <div className="bg-white border-2 border-primary/20 p-8 rounded-3xl space-y-4 shadow-sm">
+          <div className="bg-white border-2 border-primary/20 p-8 rounded-xl space-y-4 shadow-sm">
             <div className="flex items-center gap-3 text-primary">
               <FaLayerGroup className="text-xl flex-shrink-0" />
               <h3 className="text-base font-bold">The Unified GarageSaarthi Solution</h3>

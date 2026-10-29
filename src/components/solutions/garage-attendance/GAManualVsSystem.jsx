@@ -1,7 +1,7 @@
 import React from "react";
 import ComparisonTable from "../../common/ComparisonTable";
 
-export default function GAManualVsSystem() {
+export default function GAManualVsSystem({ bgClass = "bg-white" }) {
   const comparisons = [
     { label: "Registers", manual: "Paper attendance register or check-in books", digital: "Digital attendance records on secure cloud" },
     { label: "Check-ins", manual: "Manual staff entries written daily", digital: "Organized employee attendance logs" },
@@ -19,7 +19,7 @@ export default function GAManualVsSystem() {
       manualHeader="Manual Attendance Process"
       digitalHeader="With GarageSaarthi"
       comparisons={comparisons}
-      bgClass="bg-slate-50"
+      bgClass={bgClass}
     />
   );
 }
