@@ -47,7 +47,7 @@ export default function GBInventoryConnection() {
         </div>
 
         {/* Right card visualization */}
-        <div className="bg-white border border-slate-200/80 p-8 rounded-3xl space-y-4">
+        <div className="bg-white border border-slate-200/80 p-8 rounded-xl space-y-4">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-4">
             <FaBoxes className="text-primary w-5 h-5" />
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">Live Stock Adjustments</h3>

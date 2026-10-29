@@ -124,7 +124,7 @@ export default function SRInsurancePUCTracker() {
         {/* Dual Panel Layout: Interactive Table + Modal Preview */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Panel: Expiry Tracker Table Mockup (7 Cols) */}
-          <div className="lg:col-span-7 bg-slate-50 border border-slate-200/90 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
+          <div className="lg:col-span-7 bg-slate-50 border border-slate-200/90 rounded-xl p-5 sm:p-6 shadow-sm space-y-4">
             <div className="flex items-center justify-between border-b border-slate-200 pb-3">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse" />
@@ -226,7 +226,7 @@ export default function SRInsurancePUCTracker() {
           </div>
 
           {/* Right Panel: Log Follow-up & Remark Modal Mockup (5 Cols) */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-xl space-y-4 relative">
+          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-xl p-6 sm:p-7 shadow-xl space-y-4 relative">
             <div className="border-b border-slate-100 pb-3">
               <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
                 <FaCommentDots className="text-primary" /> Log Follow-up &amp; Remark

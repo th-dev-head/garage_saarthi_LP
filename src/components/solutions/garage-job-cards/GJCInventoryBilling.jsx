@@ -15,10 +15,10 @@ export default function GJCInventoryBilling() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left card composition */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-4 order-2 lg:order-1">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl space-y-4 order-2 lg:order-1">
           <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Real-time mapping</span>
           <div className="space-y-3">
             <div className="bg-white p-3 rounded-xl border border-slate-200/80 flex justify-between items-center text-xs">

@@ -14,7 +14,7 @@ export default function GCEReminders() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Visual Column Left (WhatsApp Alert Representation) */}
-          <div className="order-last lg:order-first bg-white border border-slate-200/80 rounded-3xl p-8 shadow-sm">
+          <div className="order-last lg:order-first bg-white border border-slate-200/80 rounded-xl p-8 shadow-sm">
             <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">
               WhatsApp Alert Layout
             </span>

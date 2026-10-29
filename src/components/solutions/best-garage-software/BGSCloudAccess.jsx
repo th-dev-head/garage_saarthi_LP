@@ -33,7 +33,7 @@ export default function BGSCloudAccess() {
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual block - Left Column */}
-          <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-8 shadow-sm flex flex-col justify-center min-h-[300px]">
+          <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-8 shadow-sm flex flex-col justify-center min-h-[300px]">
             <div className="max-w-xs w-full mx-auto space-y-6">
               {accessPoints.map((point, idx) => {
                 const Icon = point.icon;

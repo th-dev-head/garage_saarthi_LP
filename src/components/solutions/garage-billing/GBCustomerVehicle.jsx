@@ -39,7 +39,7 @@ export default function GBCustomerVehicle() {
         </div>
 
         {/* Right UI snippet */}
-        <div className="bg-white border border-slate-200/80 p-8 rounded-3xl space-y-4 shadow-sm">
+        <div className="bg-white border border-slate-200/80 p-8 rounded-xl space-y-4 shadow-sm">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-4">
             <FaHistory className="text-primary w-5 h-5" />
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">Historical Billing Logs</h3>

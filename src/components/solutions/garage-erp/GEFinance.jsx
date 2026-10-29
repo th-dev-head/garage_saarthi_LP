@@ -33,7 +33,7 @@ export default function GEFinance() {
         </div>
 
         {/* Right Card visual */}
-        <div className="bg-white border border-slate-200/80 p-8 rounded-3xl space-y-4">
+        <div className="bg-white border border-slate-200/80 p-8 rounded-xl space-y-4">
           <div className="flex items-center gap-3">
             <FaUserShield className="text-primary w-6 h-6" />
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">CA Access Portal</h3>

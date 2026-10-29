@@ -52,7 +52,7 @@ export default function BGSProductVisual() {
           {screenshots.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-4"
+              className="bg-white border border-slate-200/80 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-4"
             >
               <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
                 {item.icon}

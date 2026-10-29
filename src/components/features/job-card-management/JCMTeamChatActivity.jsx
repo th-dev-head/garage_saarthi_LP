@@ -90,9 +90,9 @@ const chatBenefits = [
   },
 ];
 
-export default function JCMTeamChatActivity() {
+export default function JCMTeamChatActivity({ bgClass = "bg-slate-50" }) {
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className={`py-16 md:py-24 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full space-y-16">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
@@ -109,7 +109,7 @@ export default function JCMTeamChatActivity() {
         </div>
 
         {/* Interactive Side Drawer Mockup */}
-        <div className="bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm max-w-2xl mx-auto space-y-5">
+        <div className="bg-white border border-slate-200/90 rounded-xl p-6 sm:p-8 shadow-sm max-w-2xl mx-auto space-y-5">
           {/* Drawer Top Header */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-3.5">
             <div className="flex items-center gap-2.5">

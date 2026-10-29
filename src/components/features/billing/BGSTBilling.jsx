@@ -35,7 +35,7 @@ export default function BGSTBilling() {
         </div>
 
         {/* Right UI snippet */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl shadow-sm space-y-4">
           <div className="flex justify-between items-center">
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tax Summary View — Live</span>
             <span className="text-[9px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full">B2B Verified</span>

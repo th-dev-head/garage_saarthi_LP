@@ -117,7 +117,7 @@ export default function BGatePassSecurity() {
         </div>
 
         {/* Interactive Dual-Panel Showcase */}
-        <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+        <div className="bg-white rounded-xl border border-slate-200 shadow-xl overflow-hidden">
           {/* Top Header */}
           <div className="p-4 md:p-6 bg-slate-900 text-white flex flex-wrap items-center justify-between gap-4 border-b border-slate-800">
             <div className="flex items-center gap-3">
@@ -155,7 +155,7 @@ export default function BGatePassSecurity() {
           {/* Dual Panel Body */}
           <div className="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Left Panel: Digital Gate Pass Slip Mockup (7 Cols) */}
-            <div className="lg:col-span-7 bg-slate-50 border border-slate-200/90 rounded-3xl p-6 space-y-6 shadow-sm">
+            <div className="lg:col-span-7 bg-slate-50 border border-slate-200/90 rounded-xl p-6 space-y-6 shadow-sm">
               <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-4">
                 {/* Gate Pass Header */}
                 <div className="flex flex-col sm:row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">

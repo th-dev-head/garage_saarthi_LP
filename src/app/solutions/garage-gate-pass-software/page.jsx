@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "QR-code enabled garage gate pass software for auto repair shops & workshops in India. Zero unauthorized vehicle exits, unpaid bill prevention, thermal slip printing, and mobile guard QR scanning.",
   keywords:
-    "garage gate pass software, workshop gate pass software, digital gate pass for garage, vehicle exit verification software, workshop gate pass generator, auto repair gate pass app, qr code gate pass garage, car service center gate pass, bike workshop gate pass, workshop security software, vehicle release software, thermal gate pass printer, vehicle exit ledger software, garage perimeter security app, auto workshop gate management, unpaid vehicle exit prevention",
+    "garage gate pass software, workshop gate pass software, digital gate pass for garage, vehicle exit verification software, workshop gate pass generator, auto repair gate pass app, qr code gate pass garage, car service center gate pass, bike workshop gate pass, workshop security software, vehicle release software, thermal gate pass printer, vehicle exit ledger software, garage perimeter security app, auto workshop gate management, unpaid vehicle exit prevention, restricted exit pass garage, mandatory delivery photo inspection software, payment lock gate pass garage, enforce media vehicle delivery app",
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/garage-gate-pass-software/",
   },

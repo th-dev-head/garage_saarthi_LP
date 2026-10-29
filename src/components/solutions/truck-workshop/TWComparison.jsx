@@ -53,7 +53,7 @@ export default function TWComparison() {
       manualHeader="Manual Truck Workshop"
       digitalHeader="With GarageSaarthi"
       comparisons={data}
-      bgClass="bg-white"
+      bgClass="bg-slate-50"
     />
   );
 }

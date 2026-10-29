@@ -58,7 +58,7 @@ export default function GWNFAQ() {
       title="Frequently Asked Questions About"
       titleHighlight="Garage WhatsApp Notification Software"
       faqs={data}
-      className="bg-slate-50"
+      className="bg-white"
     />
   );
 }

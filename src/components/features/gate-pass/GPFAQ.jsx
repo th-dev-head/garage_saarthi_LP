@@ -28,6 +28,14 @@ export default function GPFAQ({ className = "bg-white" }) {
       answer: "For insurance cashless repair jobs or approved credit accounts, the service manager can issue an authorized Gate Pass with notes, ensuring guards allow clearance while tracking the claim settlement."
     },
     {
+      question: "Can I make vehicle inspection and delivery photos mandatory before generating a gate pass?",
+      answer: "Yes! With GarageSaarthi's 'Enforce Media' setting, workshop managers can mandate that technicians upload a minimum number of photos (odometer reading, body panels, engine bay) before a job card can be closed and an exit pass generated, eliminating post-repair scratch and dent disputes."
+    },
+    {
+      question: "What is the Restricted Exit Pass feature?",
+      answer: "Restricted Exit Pass is an automated safety lock that prevents gate pass issuance whenever an invoice has an unsettled balance or missing inspection photos. Only an authorized workshop admin or manager with PIN credentials can override the restriction for corporate fleet accounts."
+    },
+    {
       question: "Is there a permanent record of all vehicle exits?",
       answer: "Yes. Every exit verification is permanently recorded in the cloud security ledger with guard name, vehicle registration number, exact timestamp, and odometer reading for 100% auditability."
     }

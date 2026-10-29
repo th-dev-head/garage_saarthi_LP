@@ -34,7 +34,7 @@ export default function GWNPlatform() {
         </div>
 
         {/* Connection flow block */}
-        <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 shadow-xs text-center space-y-6">
+        <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-8 shadow-xs text-center space-y-6">
           <h3 className="text-sm font-bold text-slate-900">Integrated Workshop Operational Modules</h3>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-xs">

@@ -14,8 +14,8 @@ const trialTruckBenefits = [
 
 export default function TWPricing() {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-5xl w-full bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white rounded-3xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+      <div className="mx-auto max-w-full lg:max-w-5xl w-full bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 text-white rounded-xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
         {/* Decorative Blur */}
         <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[200px] h-[200px] bg-orange-600/10 rounded-full blur-2xl pointer-events-none" />

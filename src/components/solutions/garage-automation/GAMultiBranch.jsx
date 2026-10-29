@@ -77,7 +77,7 @@ export default function GAMultiBranch() {
           </div>
 
           {/* Visual Column Right */}
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-8 shadow-sm">
+          <div className="bg-white border border-slate-200/80 rounded-xl p-8 shadow-sm">
             <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">
               Consolidated Branch Analytics
             </span>

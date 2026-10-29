@@ -42,7 +42,7 @@ export default function CAWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {caWorkshopTypes.map((ws, idx) => (
-            <div key={idx} className="bg-white border border-slate-200 p-6 rounded-3xl space-y-3 shadow-xs">
+            <div key={idx} className="bg-white border border-slate-200 p-6 rounded-xl space-y-3 shadow-xs">
               <span className="text-[10px] uppercase font-bold text-primary bg-orange-50 px-2.5 py-1 rounded-full inline-block">
                 {ws.badge}
               </span>

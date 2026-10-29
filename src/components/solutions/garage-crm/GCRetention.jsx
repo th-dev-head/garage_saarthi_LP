@@ -70,7 +70,7 @@ export default function GCRetention() {
         </div>
 
         {/* Right card mockup representation */}
-        <div className="bg-white border border-slate-200/80 p-8 rounded-3xl text-center space-y-4 shadow-sm">
+        <div className="bg-white border border-slate-200/80 p-8 rounded-xl text-center space-y-4 shadow-sm">
           <span className="text-[10px] uppercase font-bold text-slate-400">Retention Alert</span>
           <div className="border border-slate-100 p-6 rounded-2xl bg-slate-50/50 space-y-3">
             {retentionAlertRows.map((row, idx) => (

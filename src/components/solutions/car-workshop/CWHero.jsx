@@ -57,7 +57,7 @@ export default function CWHero() {
         </div>
 
         <div className="lg:col-span-5 flex justify-center">
-          <div className="bg-slate-800/80 border border-slate-700/50 rounded-3xl p-6 shadow-2xl w-full max-w-md relative overflow-hidden backdrop-blur-sm">
+          <div className="bg-slate-800/80 border border-slate-700/50 rounded-xl p-6 shadow-2xl w-full max-w-md relative overflow-hidden backdrop-blur-sm">
             <div className="flex items-center justify-between border-b border-slate-700/50 pb-4 mb-4">
               <span className="text-xs font-bold text-slate-400">Workshop Dashboard</span>
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />

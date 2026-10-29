@@ -44,7 +44,7 @@ export default function GIDefinition() {
         </div>
 
         {/* Right Column - Visual List */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-6 shadow-sm">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl space-y-6 shadow-sm">
           <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide border-b border-slate-200/60 pb-3 flex items-center gap-2">
             <FaBoxes className="text-primary w-4 h-4" />
             The Challenges of Manual Stock Keeping

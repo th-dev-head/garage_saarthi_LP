@@ -121,7 +121,7 @@ export default function BGSChecklist() {
           {checklistItems.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+              className="bg-white border border-slate-200/80 rounded-xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div className="space-y-3">
                 <div className="flex justify-between items-center">

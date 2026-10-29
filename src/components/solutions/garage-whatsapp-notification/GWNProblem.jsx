@@ -28,7 +28,7 @@ export default function GWNProblem() {
         </div>
 
         {/* Layout split */}
-        <div className="bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="bg-white border border-slate-200/80 rounded-xl p-8 md:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-slate-900">
               The Drawbacks of Paper Registers and Disconnected Tools

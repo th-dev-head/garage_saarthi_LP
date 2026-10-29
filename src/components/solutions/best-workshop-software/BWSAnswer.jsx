@@ -43,7 +43,7 @@ export default function BWSAnswer() {
           {evaluationPillars.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
                   <Icon />
                 </div>
@@ -57,7 +57,7 @@ export default function BWSAnswer() {
         </div>
 
         {/* Link callout */}
-        <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-3xl p-6 md:p-8 max-w-4xl mx-auto text-center space-y-2">
+        <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-xl p-6 md:p-8 max-w-4xl mx-auto text-center space-y-2">
           <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
             Exploring general workshop automation? Learn more about our comprehensive{" "}
             <Link href="/solutions/workshop-management-software/" className="font-bold text-primary hover:underline">

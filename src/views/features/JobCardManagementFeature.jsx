@@ -7,6 +7,7 @@ import JCMPaperVsDigital from "../../components/features/job-card-management/JCM
 import JCMCoreCapabilities from "../../components/features/job-card-management/JCMCoreCapabilities";
 import JCMDetails from "../../components/features/job-card-management/JCMDetails";
 import JCMMechanicClocking from "../../components/features/job-card-management/JCMMechanicClocking";
+import JCMStaffPrivacy from "../../components/features/job-card-management/JCMStaffPrivacy";
 import JCMResolutionAudit from "../../components/features/job-card-management/JCMResolutionAudit";
 import JCMTeamChatActivity from "../../components/features/job-card-management/JCMTeamChatActivity";
 import JCMWorkflow from "../../components/features/job-card-management/JCMWorkflow";
@@ -25,13 +26,14 @@ export default function JobCardManagementFeature() {
       <JCMCoreCapabilities />
       <JCMDetails />
       <JCMMechanicClocking />
-      <JCMResolutionAudit />
-      <JCMTeamChatActivity />
-      <JCMWorkflow />
-      <JCMWorkshopTypes />
-      <CloudAccessCommon bgClass="bg-slate-50" />
-      <TestimonialsGrid bgClass="bg-white" />
-      <JCMFAQ className="bg-slate-50" />
+      <JCMStaffPrivacy bgClass="bg-slate-50" />
+      <JCMResolutionAudit bgClass="bg-white" />
+      <JCMTeamChatActivity bgClass="bg-slate-50" />
+      <JCMWorkflow bgClass="bg-white" />
+      <JCMWorkshopTypes bgClass="bg-slate-50" />
+      <CloudAccessCommon bgClass="bg-white" />
+      <TestimonialsGrid bgClass="bg-slate-50" />
+      <JCMFAQ className="bg-white" />
       <JCMFinalCTA />
     </PageLayout>
   );

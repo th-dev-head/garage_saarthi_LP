@@ -63,7 +63,7 @@ export default function GPHero() {
         </div>
 
         <div className="lg:col-span-5 flex justify-center">
-          <div className="bg-slate-800/80 border border-slate-700/50 rounded-3xl p-6 shadow-2xl w-full max-w-md relative overflow-hidden backdrop-blur-sm">
+          <div className="bg-slate-800/80 border border-slate-700/50 rounded-xl p-6 shadow-2xl w-full max-w-md relative overflow-hidden backdrop-blur-sm">
             <div className="flex items-center justify-between border-b border-slate-700/50 pb-4 mb-4">
               <span className="text-xs font-bold text-slate-400">Employee Payroll Screen</span>
               <span className="bg-orange-500/30 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded-full border border-orange-500/20">Active</span>

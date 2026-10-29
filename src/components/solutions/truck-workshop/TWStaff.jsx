@@ -56,7 +56,7 @@ export default function TWStaff() {
           {truckStaffCards.map((card, idx) => {
             const Icon = card.icon;
             return (
-              <div key={idx} className="bg-white border border-slate-200/60 rounded-3xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div key={idx} className="bg-white border border-slate-200/60 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="w-9 h-9 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-sm">
                     <Icon />

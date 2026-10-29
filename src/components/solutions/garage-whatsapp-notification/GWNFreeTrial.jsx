@@ -21,7 +21,7 @@ export default function GWNFreeTrial() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center bg-white">
+    <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center bg-slate-50">
       <div className="mx-auto max-w-full lg:max-w-4xl w-full text-center space-y-6">
         <h2 className="text-2xl md:text-4xl font-bold text-text-dark leading-tight">
           Start Sending Organized Garage <GradientUnderline>Service Reminders</GradientUnderline>

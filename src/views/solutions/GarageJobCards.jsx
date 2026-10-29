@@ -26,16 +26,16 @@ export default function GarageJobCards() {
       <GJCWorkflow />
       <GJCPaperVsDigital />
       <GJCWorkOrders />
-      <GJCMechanicClocking />
+      <GJCMechanicClocking bgClass="bg-white" />
       <GJCBusinessType />
       <GJCCustomerVehicle />
       <GJCInventoryBilling />
-      <GJCCloudAccess />
-      <GJCBenefits />
-      <GJCProductContext />
-      <GJCCustomerProof />
-      <GJCFreeTrial />
-      <GJCFAQ />
+      <GJCCloudAccess bgClass="bg-white" />
+      <GJCBenefits bgClass="bg-slate-50" />
+      <GJCProductContext bgClass="bg-white" />
+      <GJCCustomerProof bgClass="bg-slate-50" />
+      <GJCFreeTrial bgClass="bg-white" />
+      <GJCFAQ className="bg-slate-50" />
       <GCFinalCTA />
     </PageLayout>
   );

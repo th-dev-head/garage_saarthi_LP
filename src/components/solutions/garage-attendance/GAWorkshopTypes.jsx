@@ -6,7 +6,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 import { trackEvent } from "@/src/utils/pixel";
 import { FaArrowRight } from "react-icons/fa";
 
-export default function GAWorkshopTypes() {
+export default function GAWorkshopTypes({ bgClass = "bg-white" }) {
   const handleSolutionClick = (name, url) => {
     trackEvent("attendance_feature_click", {
       page_path: "/solutions/garage-attendance-software/",
@@ -26,7 +26,7 @@ export default function GAWorkshopTypes() {
   ];
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-wider text-primary font-bold bg-[#EFE9E7] px-3 py-1 rounded-full">
@@ -42,7 +42,7 @@ export default function GAWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {types.map((t, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
+            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200">
               <div className="space-y-3">
                 <h3 className="text-lg font-bold text-text-dark">{t.title}</h3>
                 <p className="text-slate-500 text-xs md:text-sm leading-relaxed">{t.desc}</p>

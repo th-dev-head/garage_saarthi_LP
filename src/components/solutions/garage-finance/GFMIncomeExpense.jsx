@@ -63,7 +63,7 @@ export default function GFMIncomeExpense() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {incomeExpenseCards.map((card, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm space-y-4">
               <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-xl font-bold ${card.iconBg}`}>
                 {card.icon}
               </div>

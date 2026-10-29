@@ -93,7 +93,7 @@ export default function UMAnnouncements() {
       : announcements.filter((a) => a.priority === "NORMAL");
 
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         
         {/* Header */}

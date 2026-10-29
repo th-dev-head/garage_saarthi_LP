@@ -102,7 +102,7 @@ export default function GIGodownManagement() {
         {/* Dual Panel Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Panel: Live Transfer Mockup Card */}
-          <div className="lg:col-span-6 bg-white border border-slate-200/90 rounded-3xl p-6 md:p-8 shadow-md space-y-5">
+          <div className="lg:col-span-6 bg-white border border-slate-200/90 rounded-xl p-6 md:p-8 shadow-md space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2.5">
                 <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold">

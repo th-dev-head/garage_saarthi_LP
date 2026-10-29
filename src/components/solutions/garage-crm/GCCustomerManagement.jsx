@@ -63,7 +63,7 @@ export default function GCCustomerManagement() {
         </div>
 
         {/* Right card visual */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl space-y-4">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl space-y-4">
           <div className="flex items-center gap-2 border-b border-slate-200 pb-4">
             <FaAddressBook className="text-primary w-5 h-5" />
             <h3 className="text-sm font-bold text-text-dark uppercase tracking-wide">Customer database card</h3>

@@ -32,13 +32,13 @@ export default function TruckWorkshopSoftware() {
       <TWServiceAlerts />
       <TWStaff />
       <TWDashboardReports />
-      <TWCloudAccess />
+      <TWCloudAccess bgClass="bg-slate-50" />
       <TWBusinessType />
       <TWComparison />
-      <TWWhyUs />
-      <TWTestimonials />
-      <TWPricing />
-      <TWFAQ />
+      <TWWhyUs bgClass="bg-white" />
+      <TWTestimonials bgClass="bg-slate-50" />
+      <TWPricing bgClass="bg-white" />
+      <TWFAQ className="bg-slate-50" />
       <TWFinalCTA />
     </PageLayout>
   );

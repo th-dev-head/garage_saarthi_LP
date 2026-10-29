@@ -43,7 +43,7 @@ export default function BGSAnswer() {
           {evaluationFactors.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base mb-4">
                   <Icon />
                 </div>
@@ -57,7 +57,7 @@ export default function BGSAnswer() {
         </div>
 
         {/* Positioning Text */}
-        <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-3xl p-6 md:p-8 max-w-4xl mx-auto text-center space-y-3">
+        <div className="bg-[#EFE9E7]/40 border border-primary/20 rounded-xl p-6 md:p-8 max-w-4xl mx-auto text-center space-y-3">
           <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
             If your goal is to manage all these operational, customer, staff, and financial workflows inside one unified platform,{" "}
             <Link href="/" className="font-bold text-primary hover:underline">

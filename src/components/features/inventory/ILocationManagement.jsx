@@ -82,7 +82,7 @@ export default function ILocationManagement() {
         {/* 2-Column Mockups */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left: Location Manager Dialog Mockup */}
-          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
+          <div className="lg:col-span-7 bg-white border border-slate-200/90 rounded-xl p-6 sm:p-7 shadow-sm space-y-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <span className="w-8 h-8 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
@@ -157,7 +157,7 @@ export default function ILocationManagement() {
           </div>
 
           {/* Right: Live Part Locator Card */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
+          <div className="lg:col-span-5 bg-white border border-slate-200/90 rounded-xl p-6 sm:p-7 shadow-sm space-y-4">
             <div className="border-b border-slate-200 pb-3">
               <h3 className="text-sm font-bold text-slate-900 flex items-center gap-1.5">
                 <FaBoxes className="text-emerald-600" /> Live Inventory Part Locator

@@ -49,7 +49,7 @@ export default function BWBusinessType() {
           {businessTypes.map((card, idx) => (
             <div
               key={idx}
-              className="bg-slate-50 p-6 rounded-3xl border border-slate-200/60 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+              className="bg-slate-50 p-6 rounded-xl border border-slate-200/60 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-4 text-base">
@@ -62,7 +62,7 @@ export default function BWBusinessType() {
           ))}
         </div>
 
-        <div className="text-center bg-[#EFE9E7]/40 border border-primary/20 p-6 rounded-3xl max-w-2xl mx-auto">
+        <div className="text-center bg-[#EFE9E7]/40 border border-primary/20 p-6 rounded-xl max-w-2xl mx-auto">
           <p className="text-xs text-slate-700 leading-relaxed">
             Operating a growing workshop chain? Move from disconnected tools and paper records to a centralized digital system.{" "}
             <Link href="/solutions/multi-branch-garage-software/" className="font-bold text-primary hover:underline">

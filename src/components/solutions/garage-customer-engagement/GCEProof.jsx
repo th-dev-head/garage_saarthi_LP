@@ -17,7 +17,7 @@ export default function GCEProof() {
         </div>
 
         {/* Testimonial Box */}
-        <div className="bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
+        <div className="bg-white border border-slate-200/80 rounded-xl p-8 md:p-12 shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
           <div className="bg-orange-50 w-16 h-16 rounded-full flex items-center justify-center text-primary text-xl flex-shrink-0">
             <FaQuoteLeft />
           </div>

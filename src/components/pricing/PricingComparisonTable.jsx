@@ -162,7 +162,7 @@ export default function PricingComparisonTable({ plans }) {
         {/* Floating "Save On Plan" Column */}
         <div
           className={cn(
-            "absolute top-0 left-[62.5%] -translate-x-1/2 w-1/4 bg-white rounded-3xl border border-[#F1F1F4] transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] z-20 pointer-events-none hidden xl:block",
+            "absolute top-0 left-[62.5%] -translate-x-1/2 w-1/4 bg-white rounded-xl border border-[#F1F1F4] transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] z-20 pointer-events-none hidden xl:block",
             isVisible
               ? "opacity-100 scale-105 translate-y-[-15px]"
               : "opacity-0 scale-95 translate-y-8",

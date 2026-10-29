@@ -24,7 +24,7 @@ export default function FLServiceAlerts() {
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual block - Left Column */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-sm">
+          <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-xl p-6 md:p-8 shadow-sm">
             <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wide border-b border-slate-200/60 pb-3 mb-4">
               WhatsApp Alert Simulation
             </h4>

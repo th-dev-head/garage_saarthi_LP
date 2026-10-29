@@ -67,7 +67,7 @@ export default function GEIndiaPositioning() {
           </div>
 
           {/* Billing Card */}
-          <div className="bg-white border border-slate-200/80 p-6 rounded-3xl text-center space-y-4 flex-1">
+          <div className="bg-white border border-slate-200/80 p-6 rounded-xl text-center space-y-4 flex-1">
             <span className="text-[10px] uppercase font-bold text-slate-400">Indian Workshop Billing</span>
             <div className="border border-slate-100 p-4 rounded-2xl bg-slate-50/50 space-y-3">
               {billingCardRows.map((row, idx) => (

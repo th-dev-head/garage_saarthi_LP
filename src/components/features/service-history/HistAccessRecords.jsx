@@ -21,7 +21,7 @@ export default function HistAccessRecords() {
             <li className="flex items-center gap-2">✓ View complete chronologically sorted job checklists</li>
           </ul>
         </div>
-        <div className="md:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-5 shadow-lg shadow-slate-100 space-y-4">
+        <div className="md:col-span-5 bg-white border border-slate-200/80 rounded-xl p-5 shadow-lg shadow-slate-100 space-y-4">
           {/* Header Bar */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <div className="flex items-center gap-2">

@@ -66,7 +66,7 @@ export default function PricingFeaturesLayout() {
             key={idx}
             className="p-10 rounded-[22px] bg-[#F3F3F3CC] transition-all duration-500 flex flex-col items-start gap-8 border border-transparent shadow-md hover:bg-[#EFE9E7] hover:shadow-2xl hover:-translate-y-1"
           >
-            <div className="w-14 h-14 rounded-3xl bg-white shadow-sm flex items-center justify-center overflow-hidden p-3">
+            <div className="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center overflow-hidden p-3">
               <img
                 src={feature.icon}
                 alt="icon"

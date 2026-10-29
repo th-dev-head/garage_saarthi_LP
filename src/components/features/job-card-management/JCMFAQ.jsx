@@ -36,6 +36,14 @@ export default function JCMFAQ({ className = "bg-slate-50" }) {
       answer: "Yes! A persistent global floating timer bar stays at the bottom right across all app pages, allowing mechanics to check parts or inventory while keeping 1-tap Break, Resume, and Finish buttons immediately accessible."
     },
     {
+      question: "Can I hide spare part prices and billing totals from mechanics?",
+      answer: "Yes! GarageSaarthi provides a built-in 'Hide Pricing for Staff' toggle. When enabled, floor mechanics only see the repair task checklist, parts required, and instructions—protecting your workshop profit margins, supplier rates, and billed totals from unauthorized visibility."
+    },
+    {
+      question: "Can mechanics only see vehicles and job cards assigned to their bay?",
+      answer: "Yes. You can enable 'Restrict Staff to Assigned Only'. This ensures mechanics and helpers can only open job cards assigned to their specific name or bay, keeping other customer contact numbers and shop records private."
+    },
+    {
       question: "Can I attach before and after repair photos to a job card?",
       answer: "Yes! You can capture and upload vehicle inspection photos, scratch diagrams, and completed repair photos directly using the Android mobile app or web portal."
     },

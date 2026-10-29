@@ -41,7 +41,7 @@ export default function GRAReportsOverview() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reports.map((r, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/60 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div key={idx} className="bg-white border border-slate-200/60 rounded-xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow duration-200">
               <div>
                 <h3 className="text-sm font-bold text-text-dark mb-2">{r.title}</h3>
                 <p className="text-xs text-slate-500 mb-6 leading-relaxed">{r.desc}</p>

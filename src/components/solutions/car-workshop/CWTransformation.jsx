@@ -22,6 +22,7 @@ export default function CWTransformation() {
       manualHeader="Manual Workshop Process"
       digitalHeader="With GarageSaarthi"
       comparisons={comparisons}
+      bgClass="bg-slate-50"
     />
   );
 }

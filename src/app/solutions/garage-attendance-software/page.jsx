@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Track mechanic and staff attendance with GarageSaarthi garage attendance software. Manage daily attendance, leave and payroll records from one platform.",
   keywords:
-    "garage attendance software, workshop attendance software, mechanic attendance software, mechanic attendance app, attendance management software for garage, employee attendance software for garage, garage employee attendance system",
+    "garage attendance software, workshop attendance software, mechanic attendance software, mechanic attendance app, attendance management software for garage, employee attendance software for garage, garage employee attendance system, selfie attendance software for garage, mechanic photo punch in app, anti proxy workshop attendance, live staff roster garage",
   alternates: {
     canonical: "https://www.garagesaarthi.com/solutions/garage-attendance-software/",
   },

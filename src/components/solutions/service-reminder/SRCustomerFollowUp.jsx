@@ -45,7 +45,7 @@ export default function SRCustomerFollowUp() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {points.map((p, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+            <div key={idx} className="bg-slate-50 border border-slate-200/50 rounded-xl p-8 flex flex-col justify-between shadow-sm">
               <div className="space-y-4 mb-6">
                 <div className="w-10 h-10 rounded-2xl bg-white flex items-center justify-center shadow-sm border border-slate-100">{p.icon}</div>
                 <h3 className="text-base font-bold text-text-dark">{p.title}</h3>

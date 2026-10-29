@@ -80,7 +80,7 @@ export default function IBarcodeManagement() {
         {/* Interactive Dual Mockup Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Left Column: Thermal Barcode Sticker & Print Studio */}
-          <div className="lg:col-span-6 bg-slate-50 border border-slate-200/90 rounded-3xl p-6 sm:p-8 space-y-6 flex flex-col justify-between shadow-2xs">
+          <div className="lg:col-span-6 bg-slate-50 border border-slate-200/90 rounded-xl p-6 sm:p-8 space-y-6 flex flex-col justify-between shadow-2xs">
             <div className="space-y-4">
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-3">
                 <div className="flex items-center gap-2 text-slate-800 font-bold text-sm">
@@ -189,7 +189,7 @@ export default function IBarcodeManagement() {
           </div>
 
           {/* Right Column: Live Scanner Hub & Quick Stock-In */}
-          <div className="lg:col-span-6 bg-slate-900 text-white border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-5 flex flex-col justify-between shadow-xl">
+          <div className="lg:col-span-6 bg-slate-900 text-white border border-slate-800 rounded-xl p-6 sm:p-8 space-y-5 flex flex-col justify-between shadow-xl">
             <div className="space-y-4">
               {/* Header */}
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">

@@ -29,7 +29,7 @@ export default function GACConnected() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 pt-4">
           {steps.map((s, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-4.5 shadow-sm text-center space-y-3 relative hover:shadow-md transition-shadow duration-200 flex flex-col items-center">
+            <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-xl p-4.5 shadow-sm text-center space-y-3 relative hover:shadow-md transition-shadow duration-200 flex flex-col items-center">
               <div className="w-10 h-10 bg-white rounded-2xl flex items-center justify-center mx-auto shadow-sm border border-slate-100">
                 {s.icon}
               </div>

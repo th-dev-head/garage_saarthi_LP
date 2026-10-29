@@ -117,7 +117,7 @@ export default function CustDocumentsVault() {
         </div>
 
         {/* Interactive Modal-Style Showcase Window */}
-        <div className="bg-slate-900 rounded-3xl border border-slate-800 shadow-2xl p-4 sm:p-6 md:p-8 text-white space-y-6">
+        <div className="bg-slate-900 rounded-xl border border-slate-800 shadow-2xl p-4 sm:p-6 md:p-8 text-white space-y-6">
           {/* Modal Header inside Mockup */}
           <div className="bg-white text-slate-900 rounded-2xl p-5 md:p-6 shadow-xl border border-slate-200 space-y-6">
             {/* Top Bar: Customer Identity & Meta Badges */}

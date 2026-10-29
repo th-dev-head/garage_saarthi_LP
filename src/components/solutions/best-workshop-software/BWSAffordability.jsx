@@ -10,7 +10,7 @@ import GradientUnderline from "../../common/GradientUnderline";
 export default function BWSAffordability() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
-      <div className="mx-auto max-w-full lg:max-w-5xl w-full bg-slate-900 text-white rounded-3xl p-10 md:p-14 shadow-xl relative overflow-hidden">
+      <div className="mx-auto max-w-full lg:max-w-5xl w-full bg-slate-900 text-white rounded-xl p-10 md:p-14 shadow-xl relative overflow-hidden">
         <div className="relative z-10 max-w-3xl mx-auto space-y-6 text-center">
           <span className="text-xs uppercase tracking-wider text-orange-400 font-bold bg-orange-950/60 border border-orange-800/30 px-3 py-1 rounded-full inline-block">
             Value & Pricing Transparency

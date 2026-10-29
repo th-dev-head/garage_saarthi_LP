@@ -3,9 +3,9 @@ import GarageAttendanceSoftware from "@/src/views/solutions/GarageAttendanceSoft
 export const metadata = {
   title: "Garage Attendance Management Software for Workshops | GarageSaarthi",
   description:
-    "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Log check-in, check-out, leaves, and mechanic work hours from one platform.",
+    "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Live camera selfie punch-in/out, anti-proxy verification, leaves, and mechanic work hours from one platform.",
   keywords:
-    "garage attendance software, workshop attendance management, mechanic attendance app, garage staff attendance tracking, employee attendance software for garage, mechanic check in software India, garage leave and attendance manager",
+    "garage attendance software, selfie attendance software for garage, mechanic photo punch in app, workshop attendance management, mechanic attendance app, garage staff attendance tracking, employee attendance software for garage, mechanic check in software India, garage leave and attendance manager",
   alternates: {
     canonical: "https://www.garagesaarthi.com/features/attendance/",
   },
@@ -43,7 +43,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.garagesaarthi.com/features/attendance",
       "name": "Garage Attendance Management Software for Workshops | GarageSaarthi",
-      "description": "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Log check-in, check-out, leaves, and mechanic work hours from one platform.",
+      "description": "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Live camera selfie punch-in/out, anti-proxy verification, leaves, and mechanic work hours from one platform.",
       "url": "https://www.garagesaarthi.com/features/attendance",
       "isPartOf": { "@id": "https://www.garagesaarthi.com/#website" }
     },
@@ -53,7 +53,7 @@ const jsonLd = {
       "name": "Garage Attendance Management Software for Workshops | GarageSaarthi",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, Android",
-      "description": "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Log check-in, check-out, leaves, and mechanic work hours from one platform.",
+      "description": "Track mechanic and workshop staff attendance digitally with GarageSaarthi. Live camera selfie punch-in/out, anti-proxy verification, leaves, and mechanic work hours from one platform.",
       "url": "https://www.garagesaarthi.com/features/attendance"
     },
     {

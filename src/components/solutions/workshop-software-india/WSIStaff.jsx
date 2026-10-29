@@ -43,7 +43,7 @@ export default function WSIStaff() {
           {staffFeatures.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm space-y-3">
+              <div key={idx} className="bg-slate-50 border border-slate-200/60 rounded-xl p-6 shadow-sm space-y-3">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">
                   <Icon />
                 </div>

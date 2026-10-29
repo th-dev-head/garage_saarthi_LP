@@ -58,7 +58,7 @@ export default function CRMRetention() {
         </div>
 
         {/* Right card mockup */}
-        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
+        <div className="bg-slate-50 border border-slate-200/80 p-8 rounded-xl shadow-sm space-y-4">
           <span className="text-[10px] uppercase font-bold text-slate-400 block">Retention Alert — Live</span>
           <div className="border border-slate-100 p-6 rounded-2xl bg-white space-y-3">
             {retentionFields.map((field, idx) => (

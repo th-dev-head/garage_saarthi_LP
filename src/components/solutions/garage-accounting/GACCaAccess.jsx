@@ -42,7 +42,7 @@ export default function GACCaAccess() {
           </div>
         </div>
 
-        <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between aspect-[4/3]">
+        <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between aspect-[4/3]">
           <div className="space-y-4 my-auto">
             <div className="border-b border-slate-200/60 pb-3">
               <span className="text-xs text-slate-500 font-medium">CA User Settings</span>

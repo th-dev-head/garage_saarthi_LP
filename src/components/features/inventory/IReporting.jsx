@@ -58,7 +58,7 @@ export default function IReporting() {
         </div>
 
         {/* Right Side Visual Report Card Mockup */}
-        <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-3xl space-y-4 shadow-sm">
+        <div className="bg-slate-50 border border-slate-200/80 p-6 md:p-8 rounded-xl space-y-4 shadow-sm">
           <div className="flex items-center justify-between pb-3 border-b border-slate-100">
             <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wide">Valuation Dashboard</h4>
             <span className="text-[10px] text-slate-500 bg-slate-100 px-2 py-0.5 rounded font-medium">This Month</span>

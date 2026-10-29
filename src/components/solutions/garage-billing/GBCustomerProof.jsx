@@ -25,7 +25,7 @@ export default function GBCustomerProof() {
           How Indian Workshop Owners <GradientUnderline>Simplify Invoicing</GradientUnderline>
         </h2>
 
-        <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm text-left max-w-2xl mx-auto relative">
+        <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-8 md:p-12 shadow-sm text-left max-w-2xl mx-auto relative">
           <div className="flex gap-1 text-orange-400 mb-6 justify-center md:justify-start">
             {[...Array(5)].map((_, i) => (
               <FaStar key={i} className="w-5 h-5 fill-current" />

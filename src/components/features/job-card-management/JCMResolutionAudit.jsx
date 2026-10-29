@@ -89,9 +89,9 @@ const featureHighlights = [
   },
 ];
 
-export default function JCMResolutionAudit() {
+export default function JCMResolutionAudit({ bgClass = "bg-white" }) {
   return (
-    <section className="py-16 md:py-24 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className={`py-16 md:py-24 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full space-y-16">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
@@ -111,7 +111,7 @@ export default function JCMResolutionAudit() {
           {mockupSections.map((section, secIdx) => (
             <div
               key={secIdx}
-              className="bg-slate-50/70 border border-slate-200/90 rounded-3xl p-6 md:p-8 shadow-xs space-y-5"
+              className="bg-slate-50/70 border border-slate-200/90 rounded-xl p-6 md:p-8 shadow-xs space-y-5"
             >
               {/* Card Header */}
               <div className="flex items-center justify-between border-b border-slate-200 pb-3">

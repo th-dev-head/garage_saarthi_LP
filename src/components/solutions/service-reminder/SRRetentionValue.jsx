@@ -25,7 +25,7 @@ export default function SRRetentionValue() {
             Increasing repeat business doesn't require complex marketing. It comes down to structured consistency. Our reminder tools help you establish standard operational flows that track vehicle service cycles and simplify outreach efforts.
           </p>
         </div>
-        <div className="lg:col-span-5 bg-white border border-slate-200/60 rounded-3xl p-8 shadow-sm">
+        <div className="lg:col-span-5 bg-white border border-slate-200/60 rounded-xl p-8 shadow-sm">
           <h3 className="text-sm font-bold text-text-dark mb-4">How Reminders Help Your Garage:</h3>
           <ul className="space-y-3">
             {listItems.map((item, idx) => (

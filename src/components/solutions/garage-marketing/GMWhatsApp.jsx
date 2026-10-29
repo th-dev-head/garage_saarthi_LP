@@ -51,7 +51,7 @@ export default function GMWhatsApp() {
           </div>
 
           {/* Right Visual Box */}
-          <div className="lg:col-span-5 bg-emerald-900/90 text-white border border-emerald-700 rounded-3xl p-6 md:p-8 shadow-xl space-y-4">
+          <div className="lg:col-span-5 bg-emerald-900/90 text-white border border-emerald-700 rounded-xl p-6 md:p-8 shadow-xl space-y-4">
             <div className="flex items-center gap-3 border-b border-emerald-700 pb-3">
               <FaWhatsapp className="text-2xl text-emerald-400" />
               <h4 className="text-xs font-bold text-slate-100 uppercase tracking-wide">

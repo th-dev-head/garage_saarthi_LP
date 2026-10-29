@@ -62,7 +62,7 @@ export default function BGSFramework() {
           </div>
 
           {/* Right Column - Trial Steps */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-sm space-y-4">
+          <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-xl p-6 md:p-8 shadow-sm space-y-4">
             <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide border-b border-slate-200/60 pb-3">
               8 Tasks to Test During Your Trial
             </h3>

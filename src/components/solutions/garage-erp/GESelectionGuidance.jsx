@@ -44,7 +44,7 @@ export default function GESelectionGuidance() {
           {models.map((m, idx) => (
             <div
               key={idx}
-              className={`bg-white border rounded-3xl p-6 relative flex flex-col justify-between hover:shadow-md transition-all duration-200 ${
+              className={`bg-white border rounded-xl p-6 relative flex flex-col justify-between hover:shadow-md transition-all duration-200 ${
                 m.recommended ? "border-primary ring-2 ring-primary/10" : "border-slate-200/80"
               }`}
             >

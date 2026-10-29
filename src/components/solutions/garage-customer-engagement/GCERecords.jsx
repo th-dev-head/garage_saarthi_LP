@@ -78,7 +78,7 @@ export default function GCERecords() {
           </div>
 
           {/* Right Visual Representation Column */}
-          <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 shadow-sm">
+          <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-8 shadow-sm">
             <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block mb-4">
               Product Visual Context
             </span>

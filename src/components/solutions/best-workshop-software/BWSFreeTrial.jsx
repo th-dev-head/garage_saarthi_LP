@@ -46,7 +46,7 @@ export default function BWSFreeTrial() {
           </div>
 
           {/* Right Column - Checklist */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-sm space-y-4">
+          <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-xl p-6 md:p-8 shadow-sm space-y-4">
             <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wide border-b border-slate-200/60 pb-3">
               Tasks to Execute During Trial
             </h4>

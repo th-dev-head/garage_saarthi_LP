@@ -71,7 +71,7 @@ export default function BGSBusinessType() {
           {businessTypes.map((card, idx) => (
             <div
               key={idx}
-              className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+              className="bg-slate-50 border border-slate-200/60 rounded-xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base">

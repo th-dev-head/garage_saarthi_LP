@@ -25,7 +25,7 @@ export default function SRDefinition() {
             GarageSaarthi provides a structured <strong>service reminder system</strong> that links customer contacts and vehicle logs with automated service alerts. Access upcoming service lists in seconds and create a reliable follow-up routine that brings customers back to your bays.
           </p>
         </div>
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-3xl p-8 shadow-sm">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/60 rounded-xl p-8 shadow-sm">
           <h3 className="text-lg font-bold text-text-dark mb-4">Manual vs. Digital Alerts</h3>
           <ul className="space-y-4 text-xs md:text-sm text-slate-600">
             {alertsComparison.map((item, idx) => (

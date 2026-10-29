@@ -6,11 +6,11 @@ const trackingStats = [
   { label: "Helpers present", count: "3 Present", countClass: "font-bold text-slate-800" }
 ];
 
-export default function GAMechanicTracking() {
+export default function GAMechanicTracking({ bgClass = "bg-slate-50" }) {
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm flex flex-col justify-between aspect-[4/3] relative">
+        <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm flex flex-col justify-between aspect-[4/3] relative">
           <div className="space-y-4 my-auto">
             <div className="border-b border-slate-200/60 pb-3">
               <span className="text-xs text-slate-500 font-medium">Daily Roster</span>

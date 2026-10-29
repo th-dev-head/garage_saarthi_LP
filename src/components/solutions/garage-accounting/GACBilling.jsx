@@ -20,7 +20,7 @@ export default function GACBilling() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-6 shadow-sm space-y-4">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <span className="text-sm font-bold text-slate-800">Custom Invoice Prefix</span>
             <span className="text-xs text-primary font-bold">Series Active</span>

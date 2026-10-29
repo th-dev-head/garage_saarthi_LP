@@ -55,7 +55,7 @@ export default function SRWhatsAppIntegration() {
         </div>
 
         {/* Right Side WhatsApp Preview Mockup */}
-        <div className="bg-slate-900 rounded-3xl p-6 shadow-xl border border-slate-800 text-white space-y-4 max-w-md mx-auto w-full">
+        <div className="bg-slate-900 rounded-xl p-6 shadow-xl border border-slate-800 text-white space-y-4 max-w-md mx-auto w-full">
           <div className="flex items-center gap-3 pb-3 border-b border-slate-800">
             <div className="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center font-bold text-xs text-white">
               GS

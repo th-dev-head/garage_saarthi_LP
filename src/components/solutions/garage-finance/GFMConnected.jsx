@@ -41,7 +41,7 @@ export default function GFMConnected() {
           </p>
         </div>
 
-        <div className="border border-slate-200/60 rounded-3xl overflow-hidden shadow-sm bg-white">
+        <div className="border border-slate-200/60 rounded-xl overflow-hidden shadow-sm bg-white">
           <div className="grid grid-cols-3 bg-slate-50 px-6 py-4 border-b border-slate-100 text-xs md:text-sm font-bold text-left text-slate-500">
             <div>Operational Activity</div>
             <div>Description</div>

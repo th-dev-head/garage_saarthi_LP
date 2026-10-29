@@ -99,7 +99,7 @@ export default function GMOverview() {
             <Link
               key={idx}
               href={card.link}
-              className="bg-slate-50 border border-slate-200/60 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between cursor-pointer hover:-translate-y-1 hover:border-primary/30 transition-all duration-300 group text-left"
+              className="bg-slate-50 border border-slate-200/60 rounded-xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between cursor-pointer hover:-translate-y-1 hover:border-primary/30 transition-all duration-300 group text-left"
             >
               <div className="space-y-3">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary text-base group-hover:bg-primary group-hover:text-white transition-colors duration-300">

@@ -32,7 +32,7 @@ export default function GIFreeTrial() {
 
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 flex bg-white justify-center">
-      <div className="mx-auto max-w-full lg:max-w-4xl w-full bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-3xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
+      <div className="mx-auto max-w-full lg:max-w-4xl w-full bg-gradient-to-br from-slate-900 to-orange-950 text-white rounded-xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
         {/* Decorative Blur */}
         <div className="absolute top-0 right-0 w-[250px] h-[250px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 

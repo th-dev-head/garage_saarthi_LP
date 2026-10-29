@@ -64,7 +64,7 @@ export default function GApPickupDrop() {
           {livePickupCards.map((card, idx) => (
             <div
               key={idx}
-              className="bg-slate-50/80 border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-xs space-y-5"
+              className="bg-slate-50/80 border border-slate-200/90 rounded-xl p-6 sm:p-8 shadow-xs space-y-5"
             >
               <div className="flex items-center justify-between border-b border-slate-200 pb-3">
                 <div className="flex items-center gap-2">

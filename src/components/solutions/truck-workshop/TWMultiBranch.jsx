@@ -21,7 +21,7 @@ export default function TWMultiBranch() {
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual block - Left Column */}
-          <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
+          <div className="lg:col-span-5 bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm space-y-4">
             <div className="flex items-center justify-between border-b border-slate-200 pb-3">
               <span className="text-xs font-bold text-slate-800">Branch Management</span>
               <span className="bg-primary/10 text-primary text-[10px] font-bold px-2 py-0.5 rounded-full">3 Active</span>

@@ -23,7 +23,7 @@ export default function VehicleInspectionFeature() {
       <VIWorkshopTypes />
       <CloudAccessCommon bgClass="bg-slate-50" />
       <TestimonialsGrid bgClass="bg-white" />
-      <VIFAQ />
+      <VIFAQ className="bg-slate-50" />
       <VIFinalCTA />
     </PageLayout>
   );

@@ -28,7 +28,7 @@ export default function GWNAlerts() {
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Visual Column Left (Mock Service Alerts Screen) */}
-          <div className="order-last lg:order-first bg-white border border-slate-200/80 rounded-3xl p-4 sm:p-6 shadow-sm space-y-4">
+          <div className="order-last lg:order-first bg-white border border-slate-200/80 rounded-xl p-4 sm:p-6 shadow-sm space-y-4">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold">
                 Service Alerts Dashboard

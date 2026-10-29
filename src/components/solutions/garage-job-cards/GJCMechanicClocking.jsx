@@ -51,7 +51,7 @@ const sampleTask = {
   efficiency: "94%"
 };
 
-export default function GJCMechanicClocking() {
+export default function GJCMechanicClocking({ bgClass = "bg-white" }) {
   const [isPaused, setIsPaused] = useState(false);
   const [finished, setFinished] = useState(false);
 
@@ -67,7 +67,7 @@ export default function GJCMechanicClocking() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-slate-50 flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full space-y-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
@@ -86,7 +86,7 @@ export default function GJCMechanicClocking() {
         {/* Dual Panel Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Panel: Live Clocking Mockup Card */}
-          <div className="lg:col-span-6 bg-white border border-slate-200/90 rounded-3xl p-6 md:p-8 shadow-md space-y-5">
+          <div className="lg:col-span-6 bg-slate-50 border border-slate-200/90 rounded-xl p-6 md:p-8 shadow-md space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2.5">
                 <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold">

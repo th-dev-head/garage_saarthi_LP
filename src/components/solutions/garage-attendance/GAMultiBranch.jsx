@@ -12,7 +12,7 @@ const branchList = [
   { name: "Pune - East Branch", ratio: "88% Present Ratio" }
 ];
 
-export default function GAMultiBranch() {
+export default function GAMultiBranch({ bgClass = "bg-slate-50" }) {
   const handleSolutionClick = () => {
     trackEvent("multi_branch_solution_click", {
       page_path: "/solutions/garage-attendance-software/",
@@ -23,16 +23,16 @@ export default function GAMultiBranch() {
   };
 
   return (
-    <section className="py-20 px-4 lg:px-15 2xl:px-50 bg-white flex justify-center">
+    <section className={`py-20 px-4 lg:px-15 2xl:px-50 ${bgClass} flex justify-center`}>
       <div className="mx-auto max-w-full lg:max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
+        <div className="lg:col-span-5 bg-white border border-slate-200/80 rounded-xl p-6 shadow-sm space-y-4">
           <div className="flex items-center justify-between border-b border-slate-200 pb-3">
             <span className="text-sm font-bold text-slate-800">Branch Switcher</span>
             <span className="text-xs text-primary font-bold">Attendance Dashboard</span>
           </div>
           <div className="space-y-2 text-xs text-slate-600">
             {branchList.map((branch, idx) => (
-              <div key={idx} className="flex justify-between p-2 bg-white rounded-lg border border-slate-100">
+              <div key={idx} className="flex justify-between p-2 bg-slate-50 rounded-lg border border-slate-100">
                 <span>{branch.name}</span>
                 <span className="font-semibold text-slate-800">{branch.ratio}</span>
               </div>

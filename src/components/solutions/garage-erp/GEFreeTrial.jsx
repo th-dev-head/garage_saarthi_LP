@@ -43,7 +43,7 @@ export default function GEFreeTrial() {
   return (
     <section className="py-20 px-4 lg:px-15 2xl:px-50 flex justify-center">
       <div className="mx-auto max-w-full lg:max-w-6xl 2xl:max-w-full w-full">
-        <div className="bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm max-w-4xl mx-auto">
+        <div className="bg-white border border-slate-200/80 rounded-xl p-8 md:p-12 shadow-sm max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Left Side */}
             <div className="space-y-6">

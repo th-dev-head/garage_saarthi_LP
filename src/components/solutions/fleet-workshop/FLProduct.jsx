@@ -48,7 +48,7 @@ export default function FLProduct() {
           {flOperCards.map((card, idx) => (
             <div
               key={idx}
-              className="bg-slate-50 p-6 rounded-3xl border border-slate-200/60 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+              className="bg-slate-50 p-6 rounded-xl border border-slate-200/60 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="w-10 h-10 rounded-full bg-[#EFE9E7] flex items-center justify-center text-primary mb-4 text-base">

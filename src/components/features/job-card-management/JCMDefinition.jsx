@@ -28,7 +28,7 @@ export default function JCMDefinition() {
             </p>
           </div>
 
-          <div className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+          <div className="bg-slate-50 p-6 md:p-8 rounded-xl border border-slate-200/80 shadow-sm space-y-4">
             <h3 className="text-lg font-bold text-slate-900">
               Why Digital Job Cards Matter:
             </h3>

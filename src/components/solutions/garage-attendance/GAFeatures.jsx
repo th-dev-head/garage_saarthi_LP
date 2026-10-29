@@ -73,7 +73,7 @@ export default function GAFeatures() {
           {attendanceFeatures.map((item, idx) => (
             <div
               key={idx}
-              className={`bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm ${
+              className={`bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm ${
                 item.linkHref ? "flex flex-col justify-between hover:shadow-md transition-shadow duration-200" : "space-y-3"
               }`}
             >

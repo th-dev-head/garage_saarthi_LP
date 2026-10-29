@@ -26,7 +26,7 @@ export default function SRDueTracking() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {cards.map((card, idx) => (
-            <div key={idx} className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-sm">
+            <div key={idx} className="bg-white border border-slate-200/50 rounded-xl p-6 shadow-sm">
               <h3 className="text-sm font-bold text-text-dark mb-2">{card.title}</h3>
               <p className="text-xs text-slate-500 leading-relaxed">{card.desc}</p>
             </div>

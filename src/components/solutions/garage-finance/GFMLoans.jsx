@@ -48,7 +48,7 @@ export default function GFMLoans() {
           </div>
         </div>
 
-        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-3xl p-6 shadow-sm space-y-4">
+        <div className="lg:col-span-5 bg-slate-50 border border-slate-200/50 rounded-xl p-6 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-text-dark">Loan Outstanding Ledger</h3>
           <div className="space-y-3">
             {loanLedgerRows.map((row, idx) => (
