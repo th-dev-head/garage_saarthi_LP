@@ -61,7 +61,7 @@ export default function HistCoreCapabilities() {
           {capabilities.map((item, index) => (
             <div
               key={index}
-              className="p-6 md:p-8 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
+              className="p-6 md:p-8 rounded-xl bg-slate-50 border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">

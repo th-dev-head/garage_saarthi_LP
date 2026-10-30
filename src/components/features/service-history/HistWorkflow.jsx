@@ -55,7 +55,7 @@ export default function HistWorkflow() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between relative hover:border-primary/40 transition-colors"
+              className="p-6 rounded-xl bg-white border border-slate-200 flex flex-col justify-between relative hover:border-primary/40 transition-colors"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

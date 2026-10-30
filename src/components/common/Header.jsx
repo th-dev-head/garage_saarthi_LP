@@ -28,6 +28,8 @@ const Header = () => {
     active = "Solutions";
   } else if (cleanPath.startsWith("/features") || cleanPath.startsWith("/feature")) {
     active = "Features";
+  } else if (cleanPath.startsWith("/customers")) {
+    active = "Customers";
   }
 
   const navLinks = [
@@ -35,8 +37,9 @@ const Header = () => {
     { name: "Solutions", href: "#", isDropdown: true, dropdownType: "solutions" },
     { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
     { name: "Industries", href: "/industries/" },
-    { name: "Contact", href: "/contact/" },
+    { name: "Customers", href: "/customers/" },
     { name: "Pricing", href: "/pricing/" },
+    { name: "Contact", href: "/contact/" },
   ];
 
   const solutionsMegaMenu = {

@@ -1,5 +1,5 @@
 "use client";
-import { FRONTEND_URL } from "@/src/config/env";
+import { FRONTEND_URL, API_BASE_URL } from "@/src/config/env";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
@@ -8,19 +8,10 @@ import GLogo from "../../assets/icons/Glogo.webp";
 import Button from "./Button";
 import BgVector1 from "../../assets/icons/Bgvector-1.svg";
 import BgVector2 from "../../assets/icons/Bgvector-2.svg";
-
 import { trackEvent } from "../../utils/pixel";
 
 const getApiBaseUrl = () => {
-  if (typeof window !== "undefined") {
-    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-      return "http://localhost:3000";
-    }
-  }
-  return (
-    process.env.NEXT_PUBLIC_API_BASE_URL ||
-    "https://api-garagesaarthi.techifyhouse.in"
-  );
+  return API_BASE_URL;
 };
 
 const SOCIAL_LINKS = [
@@ -75,13 +66,13 @@ const Footer = () => {
     fetchContact();
   }, []);
 
-  const primaryPhoneClean = (contactInfo.phone || "+917574045260").replace(/[^0-9+]/g, "");
+  const primaryPhoneClean = (contactInfo.phone).replace(/[^0-9+]/g, "");
   const displayPhoneText =
     contactInfo.displayPhone ||
     (contactInfo.phone && contactInfo.secondaryPhone
       ? `${contactInfo.phone} | ${contactInfo.secondaryPhone}`
-      : contactInfo.phone || "+91 7574045260 | +91 8866484903");
-  const contactEmailText = contactInfo.email || "contact@garagesaarthi.com";
+      : contactInfo.phone);
+  const contactEmailText = contactInfo.email;
 
   return (
     <footer className="relative px-4 lg:px-15 2xl:px-50 py-12 bg-white overflow-hidden border-t border-gray-200/60">
@@ -144,6 +135,8 @@ const Footer = () => {
             <ul className="space-y-2.5 ">
               {[
                 { label: "Home", link: "/" },
+                { label: "Customer Stories", link: "/customers/" },
+                { label: "Trust Centre", link: "/trust/" },
                 { label: "Features", link: "/feature/" },
                 { label: "Pricing", link: "/pricing/" },
                 { label: "Book Demo", link: "/contact/" },
@@ -234,7 +227,10 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-8 text-slate-600">
+          <div className="flex items-center gap-6 sm:gap-8 text-slate-600">
+            <Link href="/trust/" className="text-sm hover:text-primary transition-colors">
+              Trust Centre
+            </Link>
             <Link href="/privacy-policy/" className="text-sm hover:text-primary transition-colors">
               Privacy Policy
             </Link>

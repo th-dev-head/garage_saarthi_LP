@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev --webpack -p 5173",
-    "build": "next build --webpack && node scripts/postbuild.js",
-    "start": "next start",
+    "dev": "node init && next dev --webpack -p 5173",
+    "build": "node init && next build --webpack && node scripts/postbuild.js",
+    "start": "node init && next start",
     "lint": "eslint ."
   },
   "dependencies": {

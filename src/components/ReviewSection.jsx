@@ -53,7 +53,7 @@ export default function ReviewSection() {
       titleHighlight="to Manage Daily Operations."
       subtitle="Hear from workshop and garage owners across India who are growing their businesses and simplifying operations with GarageSaarthi."
       reviews={reviews}
-      linkHref="/features/customer-reviews/"
+      linkHref="/customers/"
       linkLabel="View All Customer Stories"
     />
   );
