@@ -28,7 +28,7 @@ export default function HistWorkshopTypes() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {workshopTypes.map((type, idx) => (
-            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-150 hover:border-primary/30">
+            <div key={idx} className="bg-slate-50 border border-slate-200/80 rounded-xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-150 hover:border-primary/30">
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">{type.title}</h3>
                 <p className="text-xs text-slate-500 mb-6 leading-relaxed">{type.desc}</p>

@@ -66,7 +66,7 @@ export default function HistHero() {
 
           {/* Hero Right Visual Column */}
           <div className="flex justify-center md:justify-end w-full">
-            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-2xl w-full max-w-[340px] lg:max-w-md">
+            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow-2xl w-full max-w-[340px] lg:max-w-md">
               <div className="flex justify-between items-center pb-4 mb-4 border-b border-white/10">
                 <span className="text-xs font-bold text-white">Service History Logs</span>
                 <span className="text-[10px] text-green-400 bg-green-500/10 px-2 py-0.5 rounded font-semibold">MH-12-CD-5678</span>

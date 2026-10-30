@@ -144,6 +144,8 @@ const Footer = () => {
             <ul className="space-y-2.5 ">
               {[
                 { label: "Home", link: "/" },
+                { label: "Customer Stories", link: "/customers/" },
+                { label: "Trust Centre", link: "/trust/" },
                 { label: "Features", link: "/feature/" },
                 { label: "Pricing", link: "/pricing/" },
                 { label: "Book Demo", link: "/contact/" },
@@ -234,7 +236,10 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-8 text-slate-600">
+          <div className="flex items-center gap-6 sm:gap-8 text-slate-600">
+            <Link href="/trust/" className="text-sm hover:text-primary transition-colors">
+              Trust Centre
+            </Link>
             <Link href="/privacy-policy/" className="text-sm hover:text-primary transition-colors">
               Privacy Policy
             </Link>
