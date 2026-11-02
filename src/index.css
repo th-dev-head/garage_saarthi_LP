@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 @theme {
@@ -45,6 +46,7 @@ html {
 
 body {
   font-family: "Satoshi", sans-serif;
+  overflow-x: clip;
 }
 
 .pulse-border-effect {
