@@ -24,4 +24,10 @@ dist-ssr
 config.bat
 .next/
 out/
-out
+
+# Environment variables
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example

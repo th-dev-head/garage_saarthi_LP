@@ -227,7 +227,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-6 sm:gap-8 text-slate-600">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-slate-600">
             <Link href="/trust/" className="text-sm hover:text-primary transition-colors">
               Trust Centre
             </Link>
@@ -236,6 +236,12 @@ const Footer = () => {
             </Link>
             <Link href="/terms-and-conditions/" className="text-sm hover:text-primary transition-colors">
               Terms of Service
+            </Link>
+            <Link href="/dpa/" className="text-sm hover:text-primary transition-colors">
+              DPA
+            </Link>
+            <Link href="/refund-policy/" className="text-sm hover:text-primary transition-colors">
+              Refund Policy
             </Link>
           </div>
         </div>
