@@ -7,9 +7,11 @@ import { FaPlay, FaTimes, FaArrowRight } from "react-icons/fa";
 import Button from "./common/Button";
 import HeroBg from "../assets/optimized/GimageBg.webp";
 import { trackEvent } from "../utils/pixel";
+import { useVisitorCountry } from "@/src/hooks/useVisitorCountry";
 
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
+  const visitor = useVisitorCountry();
 
   useEffect(() => {
     if (showVideo) {
@@ -52,7 +54,7 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto">
           <h1 className="text-white font-extrabold leading-normal mb-6">
             <span className="block text-3xl md:text-5xl mb-2">Garage Management Software</span>
-            <span className="block text-white text-2xl md:text-4xl font-semibold">for Modern Workshops in India</span>
+            <span className="block text-white text-2xl md:text-4xl font-semibold">for Modern Workshops {visitor.inText}</span>
           </h1>
 
           <p className="text-white/80 text-base md:text-lg max-w-3xl mx-auto mb-10">

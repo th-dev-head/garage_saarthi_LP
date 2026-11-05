@@ -5,12 +5,14 @@ import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaTimes, FaArrowRight, FaChevronDown } from "react-icons/fa";
 import Button from "./Button";
+import CountryFlag from "./CountryFlag";
 import GLogo from "../../assets/icons/Glogo.webp";
 import { trackEvent } from "../../utils/pixel";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpenMobile, setIsSolutionsOpenMobile] = useState(false);
+  const [isLocationsOpenMobile, setIsLocationsOpenMobile] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -28,6 +30,8 @@ const Header = () => {
     active = "Solutions";
   } else if (cleanPath.startsWith("/features") || cleanPath.startsWith("/feature")) {
     active = "Features";
+  } else if (cleanPath.startsWith("/locations")) {
+    active = "Locations";
   } else if (cleanPath.startsWith("/customers")) {
     active = "Customers";
   }
@@ -37,9 +41,9 @@ const Header = () => {
     { name: "Solutions", href: "#", isDropdown: true, dropdownType: "solutions" },
     { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
     { name: "Industries", href: "/industries/" },
+    { name: "Locations", href: "#", isDropdown: true, dropdownType: "locations" },
     { name: "Customers", href: "/customers/" },
     { name: "Pricing", href: "/pricing/" },
-    { name: "Contact", href: "/contact/" },
   ];
 
   const solutionsMegaMenu = {
@@ -134,6 +138,17 @@ const Header = () => {
     ],
   };
 
+  const locationsList = [
+    { name: "United Arab Emirates", href: "/locations/united-arab-emirates/", code: "ae", currency: "AED", tax: "5% VAT" },
+    { name: "Saudi Arabia", href: "/locations/saudi-arabia/", code: "sa", currency: "SAR", tax: "15% ZATCA" },
+    { name: "India", href: "/locations/india/", code: "in", currency: "INR", tax: "18% GST" },
+    { name: "United States", href: "/locations/united-states/", code: "us", currency: "USD", tax: "Sales Tax" },
+    { name: "United Kingdom", href: "/locations/united-kingdom/", code: "gb", currency: "GBP", tax: "20% VAT" },
+    { name: "Australia", href: "/locations/australia/", code: "au", currency: "AUD", tax: "10% GST" },
+    { name: "Canada", href: "/locations/canada/", code: "ca", currency: "CAD", tax: "GST / HST" },
+    { name: "New Zealand", href: "/locations/new-zealand/", code: "nz", currency: "NZD", tax: "15% GST" },
+  ];
+
   const handleNavClick = (e, link) => {
     if (link.isDropdown) {
       e.preventDefault();
@@ -150,10 +165,12 @@ const Header = () => {
 
   const [isSolutionsOpenDesktop, setIsSolutionsOpenDesktop] = useState(false);
   const [isFeaturesOpenDesktop, setIsFeaturesOpenDesktop] = useState(false);
+  const [isLocationsOpenDesktop, setIsLocationsOpenDesktop] = useState(false);
   const [isFeaturesOpenMobile, setIsFeaturesOpenMobile] = useState(false);
 
   const solutionsRef = useRef(null);
   const featuresRef = useRef(null);
+  const locationsRef = useRef(null);
 
   useEffect(() => {
     const handleDocumentClick = (e) => {
@@ -162,6 +179,9 @@ const Header = () => {
       }
       if (featuresRef.current && !featuresRef.current.contains(e.target)) {
         setIsFeaturesOpenDesktop(false);
+      }
+      if (locationsRef.current && !locationsRef.current.contains(e.target)) {
+        setIsLocationsOpenDesktop(false);
       }
     };
     document.addEventListener("click", handleDocumentClick);
@@ -186,8 +206,10 @@ const Header = () => {
     setIsMenuOpen(false);
     setIsSolutionsOpenMobile(false);
     setIsFeaturesOpenMobile(false);
+    setIsLocationsOpenMobile(false);
     setIsSolutionsOpenDesktop(false);
     setIsFeaturesOpenDesktop(false);
+    setIsLocationsOpenDesktop(false);
   };
 
   const scrollToHome = () => {
@@ -253,21 +275,28 @@ const Header = () => {
             </div>
 
             {/* Nav Links */}
-            <ul className="flex items-center gap-4 xl:gap-8 2xl:gap-10">
+            <ul className="flex items-center gap-2 xl:gap-5 2xl:gap-8">
               {navLinks.map((link) => {
                 const isActive = active === link.name;
                 if (link.isDropdown) {
                   const isSolutions = link.dropdownType === "solutions";
-                  const isOpenDesktop = isSolutions ? isSolutionsOpenDesktop : isFeaturesOpenDesktop;
+                  const isLocations = link.dropdownType === "locations";
+                  const isOpenDesktop = isLocations ? isLocationsOpenDesktop : isSolutions ? isSolutionsOpenDesktop : isFeaturesOpenDesktop;
                   const menuData = isSolutions ? solutionsMegaMenu : featuresMegaMenu;
-                  const targetRef = isSolutions ? solutionsRef : featuresRef;
+                  const targetRef = isLocations ? locationsRef : isSolutions ? solutionsRef : featuresRef;
                   const toggleDesktop = () => {
-                    if (isSolutions) {
+                    if (isLocations) {
+                      setIsLocationsOpenDesktop((prev) => !prev);
+                      setIsSolutionsOpenDesktop(false);
+                      setIsFeaturesOpenDesktop(false);
+                    } else if (isSolutions) {
                       setIsSolutionsOpenDesktop((prev) => !prev);
                       setIsFeaturesOpenDesktop(false);
+                      setIsLocationsOpenDesktop(false);
                     } else {
                       setIsFeaturesOpenDesktop((prev) => !prev);
                       setIsSolutionsOpenDesktop(false);
+                      setIsLocationsOpenDesktop(false);
                     }
                   };
                   const colCount = isSolutions ? 4 : 5;
@@ -282,7 +311,7 @@ const Header = () => {
                             e.preventDefault();
                             toggleDesktop();
                           }}
-                          className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors cursor-pointer animate-none ${isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
+                          className={`text-xs xl:text-sm 2xl:text-base font-semibold pb-2 transition-colors cursor-pointer animate-none whitespace-nowrap ${isActive ? "text-[#B02E0C]" : "hover:text-[#B02E0C]"
                             }`}
                         >
                           {link.name}
@@ -301,47 +330,87 @@ const Header = () => {
                       </div>
 
                       {/* Dropdown Menu */}
-                      <div
-                        className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
-                        style={{ width: menuWidth, maxWidth: "calc(100vw - 32px)" }}
-                      >
+                      {isLocations ? (
                         <div
-                          className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5 max-h-[calc(100vh-110px)] overflow-y-auto"
-                          style={{
-                            display: "grid",
-                            gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))`,
-                            gap: isSolutions ? "18px" : "14px"
-                          }}
+                          className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
+                          style={{ width: "500px", maxWidth: "calc(100vw - 32px)" }}
                         >
-                          {Object.entries(menuData).map(([category, items]) => (
-                            <div key={category} className="space-y-2.5">
+                          <div className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5">
+                            <div className="space-y-2.5">
                               <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
-                                {category}
+                                Global Regions
                               </span>
-                              <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
-                                {items.map((item) => {
-                                  const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
+                              <div className="grid grid-cols-2 gap-x-3 gap-y-1 border-t border-slate-100 pt-2.5">
+                                {locationsList.map((loc) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === loc.href.replace(/\/$/, '');
                                   return (
                                     <Link
-                                      key={item.name}
-                                      href={item.href}
-                                      onClick={() => handleDropdownItemClick(item.href)}
-                                      className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
-                                        ? "bg-slate-50 text-primary"
-                                        : "text-slate-700 hover:bg-slate-50 hover:text-primary"
-                                        }`}
+                                      key={loc.name}
+                                      href={loc.href}
+                                      onClick={() => handleDropdownItemClick(loc.href)}
+                                      className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-center justify-between gap-2 ${
+                                        isCurrent
+                                          ? "bg-slate-50 text-primary"
+                                          : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                                      }`}
                                     >
-                                      <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${isCurrent ? "bg-primary" : "bg-primary/45"
-                                        }`} />
-                                      <span className="whitespace-normal break-words leading-snug">{item.name}</span>
+                                      <div className="flex items-center gap-2 truncate">
+                                        <CountryFlag code={loc.code} name={loc.name} className="w-4.5 h-3 rounded-[2px]" />
+                                        <span className="whitespace-normal break-words leading-snug">{loc.name}</span>
+                                      </div>
+                                      <span className={`text-[10px] font-mono shrink-0 ${isCurrent ? "text-primary/70 font-bold" : "text-slate-400"}`}>
+                                        {loc.currency}
+                                      </span>
                                     </Link>
                                   );
                                 })}
                               </div>
                             </div>
-                          ))}
+                          </div>
                         </div>
-                      </div>
+                      ) : (
+                        <div
+                          className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
+                          style={{ width: menuWidth, maxWidth: "calc(100vw - 32px)" }}
+                        >
+                          <div
+                            className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5 max-h-[calc(100vh-110px)] overflow-y-auto"
+                            style={{
+                              display: "grid",
+                              gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))`,
+                              gap: isSolutions ? "18px" : "14px"
+                            }}
+                          >
+                            {Object.entries(menuData).map(([category, items]) => (
+                              <div key={category} className="space-y-2.5">
+                                <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
+                                  {category}
+                                </span>
+                                <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
+                                  {items.map((item) => {
+                                    const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
+                                    return (
+                                      <Link
+                                        key={item.name}
+                                        href={item.href}
+                                        onClick={() => handleDropdownItemClick(item.href)}
+                                        className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${isCurrent
+                                          ? "bg-slate-50 text-primary"
+                                          : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                                          }`}
+                                      >
+                                        <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${isCurrent ? "bg-primary" : "bg-primary/45"
+                                          }`} />
+                                        <span className="whitespace-normal break-words leading-snug">{item.name}</span>
+                                      </Link>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </li>
                   );
                 }
@@ -415,12 +484,21 @@ const Header = () => {
               const isActive = active === link.name;
               if (link.isDropdown) {
                 const isSolutions = link.dropdownType === "solutions";
-                const isOpenMobile = isSolutions ? isSolutionsOpenMobile : isFeaturesOpenMobile;
+                const isLocations = link.dropdownType === "locations";
+                const isOpenMobile = isLocations ? isLocationsOpenMobile : isSolutions ? isSolutionsOpenMobile : isFeaturesOpenMobile;
                 const toggleMobile = () => {
-                  if (isSolutions) {
+                  if (isLocations) {
+                    setIsLocationsOpenMobile(!isLocationsOpenMobile);
+                    setIsSolutionsOpenMobile(false);
+                    setIsFeaturesOpenMobile(false);
+                  } else if (isSolutions) {
                     setIsSolutionsOpenMobile(!isSolutionsOpenMobile);
+                    setIsFeaturesOpenMobile(false);
+                    setIsLocationsOpenMobile(false);
                   } else {
                     setIsFeaturesOpenMobile(!isFeaturesOpenMobile);
+                    setIsSolutionsOpenMobile(false);
+                    setIsLocationsOpenMobile(false);
                   }
                 };
                 const menuData = isSolutions ? solutionsMegaMenu : featuresMegaMenu;
@@ -436,32 +514,59 @@ const Header = () => {
                       <FaChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isOpenMobile ? "rotate-180" : ""}`} />
                     </button>
                     {isOpenMobile && (
-                      <div className="pl-4 flex flex-col gap-3 mt-2 mb-2">
-                        {Object.entries(menuData).map(([category, items]) => (
-                          <div key={category} className="space-y-1">
-                            <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-4 block mb-1">
-                              {category}
-                            </span>
-                            <div className="flex flex-col gap-0.5 pl-2 border-l border-slate-100">
-                              {items.map((item) => {
-                                const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
-                                return (
-                                  <Link
-                                    key={item.name}
-                                    href={item.href}
-                                    onClick={() => handleDropdownItemClick(item.href)}
-                                    className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${isCurrent
-                                      ? "bg-slate-50 text-primary"
-                                      : "text-gray-600 hover:bg-gray-50"
-                                      }`}
-                                  >
-                                    {item.name}
-                                  </Link>
-                                );
-                              })}
-                            </div>
+                      <div className="pl-4 flex flex-col gap-2 mt-2 mb-2">
+                        {isLocations ? (
+                          <div className="flex flex-col gap-1 pl-2 border-l border-slate-100">
+                            {locationsList.map((loc) => {
+                              const isCurrent = pathname.replace(/\/$/, '') === loc.href.replace(/\/$/, '');
+                              return (
+                                <Link
+                                  key={loc.name}
+                                  href={loc.href}
+                                  onClick={() => handleDropdownItemClick(loc.href)}
+                                  className={`text-left px-4 py-2 rounded-xl text-xs font-semibold flex items-center justify-between active:scale-[0.98] ${isCurrent
+                                    ? "bg-slate-50 text-primary"
+                                    : "text-gray-600 hover:bg-gray-50"
+                                    }`}
+                                >
+                                  <span className="flex items-center gap-2.5">
+                                    <CountryFlag code={loc.code} name={loc.name} className="w-5 h-3.5 rounded-[2px]" />
+                                    <span>{loc.name}</span>
+                                  </span>
+                                  <span className="text-[10px] font-bold text-primary bg-[#EFE9E7] px-2 py-0.5 rounded-full">
+                                    {loc.currency}
+                                  </span>
+                                </Link>
+                              );
+                            })}
                           </div>
-                        ))}
+                        ) : (
+                          Object.entries(menuData).map(([category, items]) => (
+                            <div key={category} className="space-y-1">
+                              <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-4 block mb-1">
+                                {category}
+                              </span>
+                              <div className="flex flex-col gap-0.5 pl-2 border-l border-slate-100">
+                                {items.map((item) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === item.href.replace(/\/$/, '');
+                                  return (
+                                    <Link
+                                      key={item.name}
+                                      href={item.href}
+                                      onClick={() => handleDropdownItemClick(item.href)}
+                                      className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${isCurrent
+                                        ? "bg-slate-50 text-primary"
+                                        : "text-gray-600 hover:bg-gray-50"
+                                        }`}
+                                    >
+                                      {item.name}
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          ))
+                        )}
                       </div>
                     )}
                   </div>

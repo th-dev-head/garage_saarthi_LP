@@ -5,7 +5,7 @@ export default function IndustryFAQ({ className = "bg-slate-50" }) {
   const faqs = [
     {
       question: "What types of automotive businesses can use GarageSaarthi?",
-      answer: "GarageSaarthi is built for a wide variety of automotive service businesses across India, including multi-brand car workshops, independent car garages, two-wheeler bike service centres, commercial truck workshops, EV repair garages, detailing studios, auto repair shops, and fleet maintenance operations. You can explore each specific industry card on this page to view relevant workflows.",
+      answer: "GarageSaarthi is built for a wide variety of automotive service businesses globally, including multi-brand car workshops, independent car garages, two-wheeler bike service centres, commercial truck workshops, EV repair garages, detailing studios, auto repair shops, and fleet maintenance operations. You can explore each specific industry card on this page to view relevant workflows.",
     },
     {
       question: "Can GarageSaarthi help manage job cards and billing?",
