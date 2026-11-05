@@ -492,6 +492,62 @@ export default function sitemap() {
       priority: 0.8,
     },
 
+    // Global Locations (SEO Regional Hubs)
+    {
+      url: `${baseUrl}/locations/`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/united-arab-emirates/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/saudi-arabia/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/india/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/united-states/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/united-kingdom/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/australia/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/canada/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/locations/new-zealand/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+
     // Legal & Policy Pages
     {
       url: `${baseUrl}/privacy-policy/`,
