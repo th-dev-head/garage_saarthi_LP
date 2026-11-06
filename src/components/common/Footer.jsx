@@ -135,12 +135,13 @@ const Footer = () => {
             <ul className="space-y-2.5 ">
               {[
                 { label: "Home", link: "/" },
+                { label: "Resources Hub", link: "/resources/" },
+                { label: "Free Calculators", link: "/resources/tools/" },
                 { label: "Customer Stories", link: "/customers/" },
                 { label: "Trust Centre", link: "/trust/" },
                 { label: "Features", link: "/feature/" },
                 { label: "Pricing", link: "/pricing/" },
                 { label: "Book Demo", link: "/contact/" },
-                { label: "Contact", link: "/contact/" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link href={item.link} scroll={item.link === "/pricing/" || item.link === "/features/"} className="text-sm text-slate-600 hover:text-[#B02E0C] transition-colors font-medium cursor-pointer">
