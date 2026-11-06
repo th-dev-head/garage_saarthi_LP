@@ -13,6 +13,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpenMobile, setIsSolutionsOpenMobile] = useState(false);
   const [isLocationsOpenMobile, setIsLocationsOpenMobile] = useState(false);
+  const [isResourcesOpenMobile, setIsResourcesOpenMobile] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -32,6 +33,8 @@ const Header = () => {
     active = "Features";
   } else if (cleanPath.startsWith("/locations")) {
     active = "Locations";
+  } else if (cleanPath.startsWith("/resources")) {
+    active = "Resources";
   } else if (cleanPath.startsWith("/customers")) {
     active = "Customers";
   }
@@ -42,6 +45,7 @@ const Header = () => {
     { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
     { name: "Industries", href: "/industries/" },
     { name: "Locations", href: "#", isDropdown: true, dropdownType: "locations" },
+    { name: "Resources", href: "#", isDropdown: true, dropdownType: "resources" },
     { name: "Customers", href: "/customers/" },
     { name: "Pricing", href: "/pricing/" },
   ];
@@ -149,6 +153,13 @@ const Header = () => {
     { name: "New Zealand", href: "/locations/new-zealand/", code: "nz", currency: "NZD", tax: "15% GST" },
   ];
 
+  const resourcesMenu = [
+    { name: "Resources Hub", href: "/resources/" },
+    { name: "Blogs & Articles", href: "/resources/blogs/" },
+    { name: "Free Calculators", href: "/resources/tools/" },
+    { name: "Templates & Downloads", href: "/resources/templates/" },
+  ];
+
   const handleNavClick = (e, link) => {
     if (link.isDropdown) {
       e.preventDefault();
@@ -166,11 +177,13 @@ const Header = () => {
   const [isSolutionsOpenDesktop, setIsSolutionsOpenDesktop] = useState(false);
   const [isFeaturesOpenDesktop, setIsFeaturesOpenDesktop] = useState(false);
   const [isLocationsOpenDesktop, setIsLocationsOpenDesktop] = useState(false);
+  const [isResourcesOpenDesktop, setIsResourcesOpenDesktop] = useState(false);
   const [isFeaturesOpenMobile, setIsFeaturesOpenMobile] = useState(false);
 
   const solutionsRef = useRef(null);
   const featuresRef = useRef(null);
   const locationsRef = useRef(null);
+  const resourcesRef = useRef(null);
 
   useEffect(() => {
     const handleDocumentClick = (e) => {
@@ -182,6 +195,9 @@ const Header = () => {
       }
       if (locationsRef.current && !locationsRef.current.contains(e.target)) {
         setIsLocationsOpenDesktop(false);
+      }
+      if (resourcesRef.current && !resourcesRef.current.contains(e.target)) {
+        setIsResourcesOpenDesktop(false);
       }
     };
     document.addEventListener("click", handleDocumentClick);
@@ -281,20 +297,41 @@ const Header = () => {
                 if (link.isDropdown) {
                   const isSolutions = link.dropdownType === "solutions";
                   const isLocations = link.dropdownType === "locations";
-                  const isOpenDesktop = isLocations ? isLocationsOpenDesktop : isSolutions ? isSolutionsOpenDesktop : isFeaturesOpenDesktop;
+                  const isResources = link.dropdownType === "resources";
+                  const isOpenDesktop = isLocations
+                    ? isLocationsOpenDesktop
+                    : isResources
+                    ? isResourcesOpenDesktop
+                    : isSolutions
+                    ? isSolutionsOpenDesktop
+                    : isFeaturesOpenDesktop;
                   const menuData = isSolutions ? solutionsMegaMenu : featuresMegaMenu;
-                  const targetRef = isLocations ? locationsRef : isSolutions ? solutionsRef : featuresRef;
+                  const targetRef = isLocations
+                    ? locationsRef
+                    : isResources
+                    ? resourcesRef
+                    : isSolutions
+                    ? solutionsRef
+                    : featuresRef;
                   const toggleDesktop = () => {
                     if (isLocations) {
                       setIsLocationsOpenDesktop((prev) => !prev);
+                      setIsResourcesOpenDesktop(false);
+                      setIsSolutionsOpenDesktop(false);
+                      setIsFeaturesOpenDesktop(false);
+                    } else if (isResources) {
+                      setIsResourcesOpenDesktop((prev) => !prev);
+                      setIsLocationsOpenDesktop(false);
                       setIsSolutionsOpenDesktop(false);
                       setIsFeaturesOpenDesktop(false);
                     } else if (isSolutions) {
                       setIsSolutionsOpenDesktop((prev) => !prev);
+                      setIsResourcesOpenDesktop(false);
                       setIsFeaturesOpenDesktop(false);
                       setIsLocationsOpenDesktop(false);
                     } else {
                       setIsFeaturesOpenDesktop((prev) => !prev);
+                      setIsResourcesOpenDesktop(false);
                       setIsSolutionsOpenDesktop(false);
                       setIsLocationsOpenDesktop(false);
                     }
@@ -361,6 +398,43 @@ const Header = () => {
                                       <span className={`text-[10px] font-mono shrink-0 ${isCurrent ? "text-primary/70 font-bold" : "text-slate-400"}`}>
                                         {loc.currency}
                                       </span>
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ) : isResources ? (
+                        <div
+                          className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
+                          style={{ width: "230px", maxWidth: "calc(100vw - 32px)" }}
+                        >
+                          <div className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5">
+                            <div className="space-y-2.5">
+                              <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
+                                Workshop Resources
+                              </span>
+                              <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
+                                {resourcesMenu.map((res) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === res.href.replace(/\/$/, '');
+                                  return (
+                                    <Link
+                                      key={res.name}
+                                      href={res.href}
+                                      onClick={() => handleDropdownItemClick(res.href)}
+                                      className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${
+                                        isCurrent
+                                          ? "bg-slate-50 text-primary"
+                                          : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                                      }`}
+                                    >
+                                      <span
+                                        className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${
+                                          isCurrent ? "bg-primary" : "bg-primary/45"
+                                        }`}
+                                      />
+                                      <span className="whitespace-normal break-words leading-snug">{res.name}</span>
                                     </Link>
                                   );
                                 })}
@@ -485,18 +559,33 @@ const Header = () => {
               if (link.isDropdown) {
                 const isSolutions = link.dropdownType === "solutions";
                 const isLocations = link.dropdownType === "locations";
-                const isOpenMobile = isLocations ? isLocationsOpenMobile : isSolutions ? isSolutionsOpenMobile : isFeaturesOpenMobile;
+                const isResources = link.dropdownType === "resources";
+                const isOpenMobile = isLocations
+                  ? isLocationsOpenMobile
+                  : isResources
+                  ? isResourcesOpenMobile
+                  : isSolutions
+                  ? isSolutionsOpenMobile
+                  : isFeaturesOpenMobile;
                 const toggleMobile = () => {
                   if (isLocations) {
                     setIsLocationsOpenMobile(!isLocationsOpenMobile);
+                    setIsResourcesOpenMobile(false);
+                    setIsSolutionsOpenMobile(false);
+                    setIsFeaturesOpenMobile(false);
+                  } else if (isResources) {
+                    setIsResourcesOpenMobile(!isResourcesOpenMobile);
+                    setIsLocationsOpenMobile(false);
                     setIsSolutionsOpenMobile(false);
                     setIsFeaturesOpenMobile(false);
                   } else if (isSolutions) {
                     setIsSolutionsOpenMobile(!isSolutionsOpenMobile);
+                    setIsResourcesOpenMobile(false);
                     setIsFeaturesOpenMobile(false);
                     setIsLocationsOpenMobile(false);
                   } else {
                     setIsFeaturesOpenMobile(!isFeaturesOpenMobile);
+                    setIsResourcesOpenMobile(false);
                     setIsSolutionsOpenMobile(false);
                     setIsLocationsOpenMobile(false);
                   }
@@ -539,6 +628,31 @@ const Header = () => {
                                 </Link>
                               );
                             })}
+                          </div>
+                        ) : isResources ? (
+                          <div className="space-y-1">
+                            <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-4 block mb-1">
+                              Workshop Resources
+                            </span>
+                            <div className="flex flex-col gap-0.5 pl-2 border-l border-slate-100">
+                              {resourcesMenu.map((res) => {
+                                const isCurrent = pathname.replace(/\/$/, '') === res.href.replace(/\/$/, '');
+                                return (
+                                  <Link
+                                    key={res.name}
+                                    href={res.href}
+                                    onClick={() => handleDropdownItemClick(res.href)}
+                                    className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${
+                                      isCurrent
+                                        ? "bg-slate-50 text-primary"
+                                        : "text-gray-600 hover:bg-gray-50"
+                                    }`}
+                                  >
+                                    {res.name}
+                                  </Link>
+                                );
+                              })}
+                            </div>
                           </div>
                         ) : (
                           Object.entries(menuData).map(([category, items]) => (
