@@ -23,6 +23,8 @@ dist-ssr
 *.sw?
 config.bat
 init
+*.orc
+.vscode/tasks.json
 .next/
 out/
 
