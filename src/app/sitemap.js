@@ -548,6 +548,74 @@ export default function sitemap() {
       priority: 0.85,
     },
 
+    // Resources, Blogs & Tools (Phase 1)
+    {
+      url: `${baseUrl}/resources/`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/resources/blogs/`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/resources/blogs/how-to-calculate-garage-profit-margin/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/resources/blogs/complete-guide-to-workshop-job-cards/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/resources/blogs/auto-repair-inventory-management-guide/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/resources/tools/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/resources/tools/garage-profit-margin-calculator/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/resources/tools/workshop-labour-rate-calculator/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/resources/templates/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/resources/templates/vehicle-inspection-checklist/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/resources/templates/garage-job-card-template/`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
     // Legal & Policy Pages
     {
       url: `${baseUrl}/privacy-policy/`,

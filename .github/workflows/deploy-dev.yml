@@ -20,7 +20,6 @@ jobs:
             cd /var/www/garage-saarthi/garage_saarthi_LP
             git fetch origin
             git reset --hard origin/development
-            git clean -fd
             npm install
             CI=true npm run build
             sudo systemctl reload nginx

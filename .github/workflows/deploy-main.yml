@@ -23,7 +23,6 @@ jobs:
 
             git fetch origin
             git reset --hard origin/main
-            git clean -fd
 
             pnpm install
             CI=true pnpm build
