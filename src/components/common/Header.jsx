@@ -12,8 +12,8 @@ import { trackEvent } from "../../utils/pixel";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpenMobile, setIsSolutionsOpenMobile] = useState(false);
-  const [isLocationsOpenMobile, setIsLocationsOpenMobile] = useState(false);
-  const [isResourcesOpenMobile, setIsResourcesOpenMobile] = useState(false);
+  const [isFeaturesOpenMobile, setIsFeaturesOpenMobile] = useState(false);
+  const [isDiscoverOpenMobile, setIsDiscoverOpenMobile] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -22,7 +22,7 @@ const Header = () => {
   if (cleanPath === "/pricing") {
     active = "Pricing";
   } else if (cleanPath === "/industries") {
-    active = "Industries";
+    active = "Discover";
   } else if (cleanPath === "/contact" || cleanPath === "/book-demo") {
     active = "Contact";
   } else if (cleanPath === "" || cleanPath === "/" || cleanPath === "/home") {
@@ -31,10 +31,8 @@ const Header = () => {
     active = "Solutions";
   } else if (cleanPath.startsWith("/features") || cleanPath.startsWith("/feature")) {
     active = "Features";
-  } else if (cleanPath.startsWith("/locations")) {
-    active = "Locations";
-  } else if (cleanPath.startsWith("/resources")) {
-    active = "Resources";
+  } else if (cleanPath.startsWith("/locations") || cleanPath.startsWith("/resources")) {
+    active = "Discover";
   } else if (cleanPath.startsWith("/customers")) {
     active = "Customers";
   }
@@ -43,9 +41,7 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Solutions", href: "#", isDropdown: true, dropdownType: "solutions" },
     { name: "Features", href: "#", isDropdown: true, dropdownType: "features" },
-    { name: "Industries", href: "/industries/" },
-    { name: "Locations", href: "#", isDropdown: true, dropdownType: "locations" },
-    { name: "Resources", href: "#", isDropdown: true, dropdownType: "resources" },
+    { name: "Discover", href: "#", isDropdown: true, dropdownType: "discover" },
     { name: "Customers", href: "/customers/" },
     { name: "Pricing", href: "/pricing/" },
   ];
@@ -176,14 +172,11 @@ const Header = () => {
 
   const [isSolutionsOpenDesktop, setIsSolutionsOpenDesktop] = useState(false);
   const [isFeaturesOpenDesktop, setIsFeaturesOpenDesktop] = useState(false);
-  const [isLocationsOpenDesktop, setIsLocationsOpenDesktop] = useState(false);
-  const [isResourcesOpenDesktop, setIsResourcesOpenDesktop] = useState(false);
-  const [isFeaturesOpenMobile, setIsFeaturesOpenMobile] = useState(false);
+  const [isDiscoverOpenDesktop, setIsDiscoverOpenDesktop] = useState(false);
 
   const solutionsRef = useRef(null);
   const featuresRef = useRef(null);
-  const locationsRef = useRef(null);
-  const resourcesRef = useRef(null);
+  const discoverRef = useRef(null);
 
   useEffect(() => {
     const handleDocumentClick = (e) => {
@@ -193,11 +186,8 @@ const Header = () => {
       if (featuresRef.current && !featuresRef.current.contains(e.target)) {
         setIsFeaturesOpenDesktop(false);
       }
-      if (locationsRef.current && !locationsRef.current.contains(e.target)) {
-        setIsLocationsOpenDesktop(false);
-      }
-      if (resourcesRef.current && !resourcesRef.current.contains(e.target)) {
-        setIsResourcesOpenDesktop(false);
+      if (discoverRef.current && !discoverRef.current.contains(e.target)) {
+        setIsDiscoverOpenDesktop(false);
       }
     };
     document.addEventListener("click", handleDocumentClick);
@@ -222,10 +212,10 @@ const Header = () => {
     setIsMenuOpen(false);
     setIsSolutionsOpenMobile(false);
     setIsFeaturesOpenMobile(false);
-    setIsLocationsOpenMobile(false);
+    setIsDiscoverOpenMobile(false);
     setIsSolutionsOpenDesktop(false);
     setIsFeaturesOpenDesktop(false);
-    setIsLocationsOpenDesktop(false);
+    setIsDiscoverOpenDesktop(false);
   };
 
   const scrollToHome = () => {
@@ -296,44 +286,31 @@ const Header = () => {
                 const isActive = active === link.name;
                 if (link.isDropdown) {
                   const isSolutions = link.dropdownType === "solutions";
-                  const isLocations = link.dropdownType === "locations";
-                  const isResources = link.dropdownType === "resources";
-                  const isOpenDesktop = isLocations
-                    ? isLocationsOpenDesktop
-                    : isResources
-                    ? isResourcesOpenDesktop
+                  const isDiscover = link.dropdownType === "discover";
+                  const isOpenDesktop = isDiscover
+                    ? isDiscoverOpenDesktop
                     : isSolutions
                     ? isSolutionsOpenDesktop
                     : isFeaturesOpenDesktop;
                   const menuData = isSolutions ? solutionsMegaMenu : featuresMegaMenu;
-                  const targetRef = isLocations
-                    ? locationsRef
-                    : isResources
-                    ? resourcesRef
+                  const targetRef = isDiscover
+                    ? discoverRef
                     : isSolutions
                     ? solutionsRef
                     : featuresRef;
                   const toggleDesktop = () => {
-                    if (isLocations) {
-                      setIsLocationsOpenDesktop((prev) => !prev);
-                      setIsResourcesOpenDesktop(false);
-                      setIsSolutionsOpenDesktop(false);
-                      setIsFeaturesOpenDesktop(false);
-                    } else if (isResources) {
-                      setIsResourcesOpenDesktop((prev) => !prev);
-                      setIsLocationsOpenDesktop(false);
+                    if (isDiscover) {
+                      setIsDiscoverOpenDesktop((prev) => !prev);
                       setIsSolutionsOpenDesktop(false);
                       setIsFeaturesOpenDesktop(false);
                     } else if (isSolutions) {
                       setIsSolutionsOpenDesktop((prev) => !prev);
-                      setIsResourcesOpenDesktop(false);
+                      setIsDiscoverOpenDesktop(false);
                       setIsFeaturesOpenDesktop(false);
-                      setIsLocationsOpenDesktop(false);
                     } else {
                       setIsFeaturesOpenDesktop((prev) => !prev);
-                      setIsResourcesOpenDesktop(false);
+                      setIsDiscoverOpenDesktop(false);
                       setIsSolutionsOpenDesktop(false);
-                      setIsLocationsOpenDesktop(false);
                     }
                   };
                   const colCount = isSolutions ? 4 : 5;
@@ -367,77 +344,104 @@ const Header = () => {
                       </div>
 
                       {/* Dropdown Menu */}
-                      {isLocations ? (
+                      {isDiscover ? (
                         <div
                           className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
-                          style={{ width: "500px", maxWidth: "calc(100vw - 32px)" }}
+                          style={{ width: "750px", maxWidth: "calc(100vw - 32px)" }}
                         >
                           <div className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5">
-                            <div className="space-y-2.5">
-                              <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
-                                Global Regions
-                              </span>
-                              <div className="grid grid-cols-2 gap-x-3 gap-y-1 border-t border-slate-100 pt-2.5">
-                                {locationsList.map((loc) => {
-                                  const isCurrent = pathname.replace(/\/$/, '') === loc.href.replace(/\/$/, '');
-                                  return (
-                                    <Link
-                                      key={loc.name}
-                                      href={loc.href}
-                                      onClick={() => handleDropdownItemClick(loc.href)}
-                                      className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-center justify-between gap-2 ${
-                                        isCurrent
-                                          ? "bg-slate-50 text-primary"
-                                          : "text-slate-700 hover:bg-slate-50 hover:text-primary"
-                                      }`}
-                                    >
-                                      <div className="flex items-center gap-2 truncate">
-                                        <CountryFlag code={loc.code} name={loc.name} className="w-4.5 h-3 rounded-[2px]" />
-                                        <span className="whitespace-normal break-words leading-snug">{loc.name}</span>
-                                      </div>
-                                      <span className={`text-[10px] font-mono shrink-0 ${isCurrent ? "text-primary/70 font-bold" : "text-slate-400"}`}>
-                                        {loc.currency}
-                                      </span>
-                                    </Link>
-                                  );
-                                })}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      ) : isResources ? (
-                        <div
-                          className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
-                          style={{ width: "230px", maxWidth: "calc(100vw - 32px)" }}
-                        >
-                          <div className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5">
-                            <div className="space-y-2.5">
-                              <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
-                                Workshop Resources
-                              </span>
-                              <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
-                                {resourcesMenu.map((res) => {
-                                  const isCurrent = pathname.replace(/\/$/, '') === res.href.replace(/\/$/, '');
-                                  return (
-                                    <Link
-                                      key={res.name}
-                                      href={res.href}
-                                      onClick={() => handleDropdownItemClick(res.href)}
-                                      className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${
-                                        isCurrent
-                                          ? "bg-slate-50 text-primary"
-                                          : "text-slate-700 hover:bg-slate-50 hover:text-primary"
-                                      }`}
-                                    >
-                                      <span
-                                        className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${
-                                          isCurrent ? "bg-primary" : "bg-primary/45"
+                            <div className="grid grid-cols-12 gap-5 items-start">
+                              {/* 1. Workshop Resources Column */}
+                              <div className="col-span-4 space-y-2.5">
+                                <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
+                                  Workshop Resources
+                                </span>
+                                <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
+                                  {resourcesMenu.map((res) => {
+                                    const isCurrent = pathname.replace(/\/$/, '') === res.href.replace(/\/$/, '');
+                                    return (
+                                      <Link
+                                        key={res.name}
+                                        href={res.href}
+                                        onClick={() => handleDropdownItemClick(res.href)}
+                                        className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${
+                                          isCurrent
+                                            ? "bg-slate-50 text-primary"
+                                            : "text-slate-700 hover:bg-slate-50 hover:text-primary"
                                         }`}
-                                      />
-                                      <span className="whitespace-normal break-words leading-snug">{res.name}</span>
-                                    </Link>
-                                  );
-                                })}
+                                      >
+                                        <span
+                                          className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${
+                                            isCurrent ? "bg-primary" : "bg-primary/45"
+                                          }`}
+                                        />
+                                        <span className="whitespace-normal break-words leading-snug">{res.name}</span>
+                                      </Link>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+
+                              {/* 2. Industries Column (same top row) */}
+                              <div className="col-span-3 space-y-2.5">
+                                <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
+                                  Industries
+                                </span>
+                                <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
+                                  {(() => {
+                                    const isCurrent = pathname.replace(/\/$/, '') === "/industries";
+                                    return (
+                                      <Link
+                                        href="/industries/"
+                                        onClick={() => handleDropdownItemClick("/industries/")}
+                                        className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${
+                                          isCurrent
+                                            ? "bg-slate-50 text-primary"
+                                            : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                                        }`}
+                                      >
+                                        <span
+                                          className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${
+                                            isCurrent ? "bg-primary" : "bg-primary/45"
+                                          }`}
+                                        />
+                                        <span className="whitespace-normal break-words leading-snug">Industries</span>
+                                      </Link>
+                                    );
+                                  })()}
+                                </div>
+                              </div>
+
+                              {/* 3. Global Regions / Locations Column (same top row) */}
+                              <div className="col-span-5 space-y-2.5">
+                                <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
+                                  Global Regions
+                                </span>
+                                <div className="grid grid-cols-2 gap-x-2 gap-y-1 border-t border-slate-100 pt-2.5">
+                                  {locationsList.map((loc) => {
+                                    const isCurrent = pathname.replace(/\/$/, '') === loc.href.replace(/\/$/, '');
+                                    return (
+                                      <Link
+                                        key={loc.name}
+                                        href={loc.href}
+                                        onClick={() => handleDropdownItemClick(loc.href)}
+                                        className={`w-full text-left px-2 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-center justify-between gap-1.5 ${
+                                          isCurrent
+                                            ? "bg-slate-50 text-primary"
+                                            : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                                        }`}
+                                      >
+                                        <div className="flex items-center gap-2 truncate">
+                                          <CountryFlag code={loc.code} name={loc.name} className="w-4 h-2.5 rounded-[2px]" />
+                                          <span className="whitespace-normal break-words leading-snug text-[11.5px]">{loc.name}</span>
+                                        </div>
+                                        <span className={`text-[9.5px] font-mono shrink-0 ${isCurrent ? "text-primary/70 font-bold" : "text-slate-400"}`}>
+                                          {loc.currency}
+                                        </span>
+                                      </Link>
+                                    );
+                                  })}
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -558,36 +562,25 @@ const Header = () => {
               const isActive = active === link.name;
               if (link.isDropdown) {
                 const isSolutions = link.dropdownType === "solutions";
-                const isLocations = link.dropdownType === "locations";
-                const isResources = link.dropdownType === "resources";
-                const isOpenMobile = isLocations
-                  ? isLocationsOpenMobile
-                  : isResources
-                  ? isResourcesOpenMobile
+                const isDiscover = link.dropdownType === "discover";
+                const isOpenMobile = isDiscover
+                  ? isDiscoverOpenMobile
                   : isSolutions
                   ? isSolutionsOpenMobile
                   : isFeaturesOpenMobile;
                 const toggleMobile = () => {
-                  if (isLocations) {
-                    setIsLocationsOpenMobile(!isLocationsOpenMobile);
-                    setIsResourcesOpenMobile(false);
-                    setIsSolutionsOpenMobile(false);
-                    setIsFeaturesOpenMobile(false);
-                  } else if (isResources) {
-                    setIsResourcesOpenMobile(!isResourcesOpenMobile);
-                    setIsLocationsOpenMobile(false);
+                  if (isDiscover) {
+                    setIsDiscoverOpenMobile(!isDiscoverOpenMobile);
                     setIsSolutionsOpenMobile(false);
                     setIsFeaturesOpenMobile(false);
                   } else if (isSolutions) {
                     setIsSolutionsOpenMobile(!isSolutionsOpenMobile);
-                    setIsResourcesOpenMobile(false);
+                    setIsDiscoverOpenMobile(false);
                     setIsFeaturesOpenMobile(false);
-                    setIsLocationsOpenMobile(false);
                   } else {
                     setIsFeaturesOpenMobile(!isFeaturesOpenMobile);
-                    setIsResourcesOpenMobile(false);
+                    setIsDiscoverOpenMobile(false);
                     setIsSolutionsOpenMobile(false);
-                    setIsLocationsOpenMobile(false);
                   }
                 };
                 const menuData = isSolutions ? solutionsMegaMenu : featuresMegaMenu;
@@ -604,54 +597,76 @@ const Header = () => {
                     </button>
                     {isOpenMobile && (
                       <div className="pl-4 flex flex-col gap-2 mt-2 mb-2">
-                        {isLocations ? (
-                          <div className="flex flex-col gap-1 pl-2 border-l border-slate-100">
-                            {locationsList.map((loc) => {
-                              const isCurrent = pathname.replace(/\/$/, '') === loc.href.replace(/\/$/, '');
-                              return (
-                                <Link
-                                  key={loc.name}
-                                  href={loc.href}
-                                  onClick={() => handleDropdownItemClick(loc.href)}
-                                  className={`text-left px-4 py-2 rounded-xl text-xs font-semibold flex items-center justify-between active:scale-[0.98] ${isCurrent
-                                    ? "bg-slate-50 text-primary"
-                                    : "text-gray-600 hover:bg-gray-50"
-                                    }`}
-                                >
-                                  <span className="flex items-center gap-2.5">
-                                    <CountryFlag code={loc.code} name={loc.name} className="w-5 h-3.5 rounded-[2px]" />
-                                    <span>{loc.name}</span>
-                                  </span>
-                                  <span className="text-[10px] font-bold text-primary bg-[#EFE9E7] px-2 py-0.5 rounded-full">
-                                    {loc.currency}
-                                  </span>
-                                </Link>
-                              );
-                            })}
-                          </div>
-                        ) : isResources ? (
-                          <div className="space-y-1">
-                            <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-4 block mb-1">
-                              Workshop Resources
-                            </span>
-                            <div className="flex flex-col gap-0.5 pl-2 border-l border-slate-100">
-                              {resourcesMenu.map((res) => {
-                                const isCurrent = pathname.replace(/\/$/, '') === res.href.replace(/\/$/, '');
-                                return (
-                                  <Link
-                                    key={res.name}
-                                    href={res.href}
-                                    onClick={() => handleDropdownItemClick(res.href)}
-                                    className={`text-left px-4 py-2 rounded-xl text-xs font-semibold active:scale-[0.98] ${
-                                      isCurrent
-                                        ? "bg-slate-50 text-primary"
-                                        : "text-gray-600 hover:bg-gray-50"
-                                    }`}
-                                  >
-                                    {res.name}
-                                  </Link>
-                                );
-                              })}
+                        {isDiscover ? (
+                          <div className="flex flex-col gap-3 pl-2 border-l border-slate-100">
+                            {/* Workshop Resources */}
+                            <div className="space-y-1">
+                              <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-2 block">
+                                Workshop Resources
+                              </span>
+                              <div className="flex flex-col gap-0.5">
+                                {resourcesMenu.map((res) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === res.href.replace(/\/$/, '');
+                                  return (
+                                    <Link
+                                      key={res.name}
+                                      href={res.href}
+                                      onClick={() => handleDropdownItemClick(res.href)}
+                                      className={`text-left px-3 py-1.5 rounded-xl text-xs font-semibold active:scale-[0.98] ${
+                                        isCurrent ? "bg-slate-50 text-primary" : "text-gray-600 hover:bg-gray-50"
+                                      }`}
+                                    >
+                                      {res.name}
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+                            </div>
+
+                            {/* Industries */}
+                            <div className="space-y-1 pt-1 border-t border-slate-100">
+                              <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-2 block">
+                                Industries
+                              </span>
+                              <Link
+                                href="/industries/"
+                                onClick={() => handleDropdownItemClick("/industries/")}
+                                className={`text-left px-3 py-1.5 rounded-xl text-xs font-semibold active:scale-[0.98] ${
+                                  pathname.replace(/\/$/, '') === "/industries" ? "bg-slate-50 text-primary" : "text-gray-600 hover:bg-gray-50"
+                                }`}
+                              >
+                                Industries
+                              </Link>
+                            </div>
+
+                            {/* Global Regions */}
+                            <div className="space-y-1 pt-1 border-t border-slate-100">
+                              <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-2 block">
+                                Global Regions
+                              </span>
+                              <div className="flex flex-col gap-1">
+                                {locationsList.map((loc) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === loc.href.replace(/\/$/, '');
+                                  return (
+                                    <Link
+                                      key={loc.name}
+                                      href={loc.href}
+                                      onClick={() => handleDropdownItemClick(loc.href)}
+                                      className={`text-left px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center justify-between active:scale-[0.98] ${
+                                        isCurrent ? "bg-slate-50 text-primary" : "text-gray-600 hover:bg-gray-50"
+                                      }`}
+                                    >
+                                      <span className="flex items-center gap-2">
+                                        <CountryFlag code={loc.code} name={loc.name} className="w-4.5 h-3 rounded-[2px]" />
+                                        <span>{loc.name}</span>
+                                      </span>
+                                      <span className="text-[10px] font-bold text-primary bg-[#EFE9E7] px-2 py-0.5 rounded-full">
+                                        {loc.currency}
+                                      </span>
+                                    </Link>
+                                  );
+                                })}
+                              </div>
                             </div>
                           </div>
                         ) : (
