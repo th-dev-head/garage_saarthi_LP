@@ -24,7 +24,6 @@ dist-ssr
 config.bat
 init
 *.orc
-.vscode/tasks.json
 .next/
 out/
 
