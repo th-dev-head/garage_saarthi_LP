@@ -156,6 +156,18 @@ const Header = () => {
     { name: "Templates & Downloads", href: "/resources/templates/" },
   ];
 
+  const industriesMenu = [
+    { name: "Car Workshops", href: "/solutions/car-workshop-software/" },
+    { name: "Car Garages", href: "/solutions/car-garage-software/" },
+    { name: "Bike Workshops", href: "/solutions/bike-workshop-software/" },
+    { name: "Truck Workshops", href: "/solutions/truck-workshop-software/" },
+    { name: "EV Garages", href: "/solutions/ev-garage-management-software/" },
+    { name: "Fleet Workshops", href: "/solutions/fleet-workshop-software/" },
+    { name: "Car Detailing", href: "/solutions/car-detailing-software/" },
+    { name: "Auto Repair Shops", href: "/solutions/auto-repair-shop-software/" },
+    { name: "Automobile Workshops", href: "/solutions/automobile-workshop-software/" },
+  ];
+
   const handleNavClick = (e, link) => {
     if (link.isDropdown) {
       e.preventDefault();
@@ -347,12 +359,12 @@ const Header = () => {
                       {isDiscover ? (
                         <div
                           className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
-                          style={{ width: "820px", maxWidth: "calc(100vw - 32px)" }}
+                          style={{ width: "960px", maxWidth: "calc(100vw - 32px)" }}
                         >
                           <div className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5">
-                            <div className="grid grid-cols-12 gap-5 items-start">
+                            <div className="grid grid-cols-[200px_1fr_1fr] gap-6 items-start">
                               {/* 1. Workshop Resources Column */}
-                              <div className="col-span-3 space-y-2.5">
+                              <div className="space-y-2.5">
                                 <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                   Workshop Resources
                                 </span>
@@ -382,38 +394,39 @@ const Header = () => {
                                 </div>
                               </div>
 
-                              {/* 2. Industries Column (same top row) */}
-                              <div className="col-span-2 space-y-2.5">
+                              {/* 2. Industries Column (All Industries in 2-column grid) */}
+                              <div className="space-y-2.5">
                                 <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                   Industries
                                 </span>
-                                <div className="flex flex-col gap-1 border-t border-slate-100 pt-2.5">
-                                  {(() => {
-                                    const isCurrent = pathname.replace(/\/$/, '') === "/industries";
+                                <div className="grid grid-cols-2 gap-x-2 gap-y-1 border-t border-slate-100 pt-2.5">
+                                  {industriesMenu.map((ind) => {
+                                    const isCurrent = pathname.replace(/\/$/, '') === ind.href.replace(/\/$/, '');
                                     return (
                                       <Link
-                                        href="/industries/"
-                                        onClick={() => handleDropdownItemClick("/industries/")}
-                                        className={`w-full text-left px-2.5 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-start gap-2 ${
+                                        key={ind.name}
+                                        href={ind.href}
+                                        onClick={() => handleDropdownItemClick(ind.href)}
+                                        className={`w-full text-left px-2 py-1.5 h-8 text-[11.5px] font-semibold rounded-xl transition-colors cursor-pointer flex items-center gap-1.5 ${
                                           isCurrent
                                             ? "bg-slate-50 text-primary"
                                             : "text-slate-700 hover:bg-slate-50 hover:text-primary"
                                         }`}
                                       >
                                         <span
-                                          className={`w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5 ${
+                                          className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
                                             isCurrent ? "bg-primary" : "bg-primary/45"
                                           }`}
                                         />
-                                        <span className="whitespace-nowrap leading-snug">Industries</span>
+                                        <span className="whitespace-nowrap">{ind.name}</span>
                                       </Link>
                                     );
-                                  })()}
+                                  })}
                                 </div>
                               </div>
 
                               {/* 3. Global Regions / Locations Column (same top row with ample width & aligned height) */}
-                              <div className="col-span-7 space-y-2.5">
+                              <div className="space-y-2.5">
                                 <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                   Global Regions
                                 </span>
@@ -628,15 +641,23 @@ const Header = () => {
                               <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider pl-2 block">
                                 Industries
                               </span>
-                              <Link
-                                href="/industries/"
-                                onClick={() => handleDropdownItemClick("/industries/")}
-                                className={`text-left px-3 py-1.5 rounded-xl text-xs font-semibold active:scale-[0.98] ${
-                                  pathname.replace(/\/$/, '') === "/industries" ? "bg-slate-50 text-primary" : "text-gray-600 hover:bg-gray-50"
-                                }`}
-                              >
-                                Industries
-                              </Link>
+                              <div className="flex flex-col gap-1">
+                                {industriesMenu.map((ind) => {
+                                  const isCurrent = pathname.replace(/\/$/, '') === ind.href.replace(/\/$/, '');
+                                  return (
+                                    <Link
+                                      key={ind.name}
+                                      href={ind.href}
+                                      onClick={() => handleDropdownItemClick(ind.href)}
+                                      className={`text-left px-3 py-1.5 rounded-xl text-xs font-semibold active:scale-[0.98] ${
+                                        isCurrent ? "bg-slate-50 text-primary" : "text-gray-600 hover:bg-gray-50"
+                                      }`}
+                                    >
+                                      {ind.name}
+                                    </Link>
+                                  );
+                                })}
+                              </div>
                             </div>
 
                             {/* Global Regions */}
