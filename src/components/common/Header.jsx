@@ -130,7 +130,7 @@ const Header = () => {
       { name: "Leave Management", href: "/features/leave-management/" },
       { name: "User Management", href: "/features/user-management/" },
       { name: "Role-Based Access", href: "/features/role-based-access/" },
-      { name: "Multi-Branch Management", href: "/features/branches/" },
+      { name: "Multi-Branch Management", href: "/features/branches/" }, 
     ],
     "Marketing & Media": [
       { name: "Offers & Promotions", href: "/features/offers-promotions/" },
@@ -347,12 +347,12 @@ const Header = () => {
                       {isDiscover ? (
                         <div
                           className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
-                          style={{ width: "780px", maxWidth: "calc(100vw - 32px)" }}
+                          style={{ width: "820px", maxWidth: "calc(100vw - 32px)" }}
                         >
                           <div className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5">
                             <div className="grid grid-cols-12 gap-5 items-start">
                               {/* 1. Workshop Resources Column */}
-                              <div className="col-span-4 space-y-2.5">
+                              <div className="col-span-3 space-y-2.5">
                                 <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                   Workshop Resources
                                 </span>
@@ -375,7 +375,7 @@ const Header = () => {
                                             isCurrent ? "bg-primary" : "bg-primary/45"
                                           }`}
                                         />
-                                        <span className="whitespace-normal break-words leading-snug">{res.name}</span>
+                                        <span className="whitespace-nowrap leading-snug">{res.name}</span>
                                       </Link>
                                     );
                                   })}
@@ -405,7 +405,7 @@ const Header = () => {
                                             isCurrent ? "bg-primary" : "bg-primary/45"
                                           }`}
                                         />
-                                        <span className="whitespace-normal break-words leading-snug">Industries</span>
+                                        <span className="whitespace-nowrap leading-snug">Industries</span>
                                       </Link>
                                     );
                                   })()}
@@ -413,11 +413,11 @@ const Header = () => {
                               </div>
 
                               {/* 3. Global Regions / Locations Column (same top row with ample width & aligned height) */}
-                              <div className="col-span-6 space-y-2.5">
+                              <div className="col-span-7 space-y-2.5">
                                 <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                   Global Regions
                                 </span>
-                                <div className="grid grid-cols-2 gap-x-2 gap-y-1 border-t border-slate-100 pt-2.5">
+                                <div className="grid grid-cols-2 gap-x-3 gap-y-1 border-t border-slate-100 pt-2.5">
                                   {locationsList.map((loc) => {
                                     const isCurrent = pathname.replace(/\/$/, '') === loc.href.replace(/\/$/, '');
                                     return (
@@ -433,7 +433,7 @@ const Header = () => {
                                       >
                                         <div className="flex items-center gap-2 min-w-0">
                                           <CountryFlag code={loc.code} name={loc.name} className="w-4 h-2.5 rounded-[2px] shrink-0" />
-                                          <span className="whitespace-nowrap text-[11.5px] truncate">{loc.name}</span>
+                                          <span className="whitespace-nowrap text-[11.5px]">{loc.name}</span>
                                         </div>
                                         <span className={`text-[10px] font-mono shrink-0 pl-1 ${isCurrent ? "text-primary/70 font-bold" : "text-slate-400"}`}>
                                           {loc.currency}
