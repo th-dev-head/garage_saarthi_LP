@@ -347,7 +347,7 @@ const Header = () => {
                       {isDiscover ? (
                         <div
                           className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-200 z-50 ${isOpenDesktop ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}
-                          style={{ width: "750px", maxWidth: "calc(100vw - 32px)" }}
+                          style={{ width: "780px", maxWidth: "calc(100vw - 32px)" }}
                         >
                           <div className="bg-white border border-gray-100 rounded-xl shadow-2xl p-5">
                             <div className="grid grid-cols-12 gap-5 items-start">
@@ -383,7 +383,7 @@ const Header = () => {
                               </div>
 
                               {/* 2. Industries Column (same top row) */}
-                              <div className="col-span-3 space-y-2.5">
+                              <div className="col-span-2 space-y-2.5">
                                 <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                   Industries
                                 </span>
@@ -412,8 +412,8 @@ const Header = () => {
                                 </div>
                               </div>
 
-                              {/* 3. Global Regions / Locations Column (same top row) */}
-                              <div className="col-span-5 space-y-2.5">
+                              {/* 3. Global Regions / Locations Column (same top row with ample width & aligned height) */}
+                              <div className="col-span-6 space-y-2.5">
                                 <span className="text-[11.5px] font-bold text-primary bg-[#EFE9E7] px-3 py-1 rounded-full tracking-wider inline-block">
                                   Global Regions
                                 </span>
@@ -425,17 +425,17 @@ const Header = () => {
                                         key={loc.name}
                                         href={loc.href}
                                         onClick={() => handleDropdownItemClick(loc.href)}
-                                        className={`w-full text-left px-2 py-1.5 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-center justify-between gap-1.5 ${
+                                        className={`w-full text-left px-2.5 py-1.5 h-8 text-xs font-semibold rounded-xl transition-colors cursor-pointer flex items-center justify-between gap-1.5 ${
                                           isCurrent
                                             ? "bg-slate-50 text-primary"
                                             : "text-slate-700 hover:bg-slate-50 hover:text-primary"
                                         }`}
                                       >
-                                        <div className="flex items-center gap-2 truncate">
-                                          <CountryFlag code={loc.code} name={loc.name} className="w-4 h-2.5 rounded-[2px]" />
-                                          <span className="whitespace-normal break-words leading-snug text-[11.5px]">{loc.name}</span>
+                                        <div className="flex items-center gap-2 min-w-0">
+                                          <CountryFlag code={loc.code} name={loc.name} className="w-4 h-2.5 rounded-[2px] shrink-0" />
+                                          <span className="whitespace-nowrap text-[11.5px] truncate">{loc.name}</span>
                                         </div>
-                                        <span className={`text-[9.5px] font-mono shrink-0 ${isCurrent ? "text-primary/70 font-bold" : "text-slate-400"}`}>
+                                        <span className={`text-[10px] font-mono shrink-0 pl-1 ${isCurrent ? "text-primary/70 font-bold" : "text-slate-400"}`}>
                                           {loc.currency}
                                         </span>
                                       </Link>
